@@ -29,14 +29,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Dra. Mariana Demenciano',
+  name: 'A_Definir',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'marinademencianoadvocacia.com.br', // Sem "www"
+  domain: 'A_Definir', // Sem "www"
   phone: {
-    ddd: '19',
-    firstPart: '99438', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '7420', // Apenas os 4 últimos números
+    ddd: '00',
+    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0000', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -51,10 +51,10 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>Rua Padre Bernardo da Silva,</p>
-      <p>419, Sobreloja, São Bernardo,</p>
-      <p>Campinas - SP,</p>
-      <p>CEP: 13030-710</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -68,10 +68,10 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>9h às 17h</p>
+      <p>A_Definir</p>
     </div>
   ),
-  obs: <span className="italic">Online e presencial </span>,
+  obs: <span className="italic">A_Definir </span>,
   instagramProfile: '', // Sem o @
   facebookProfile: '',
   linkeDinProfile: '',
@@ -111,12 +111,12 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'NÃO PERCA SEU CARRO',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Seu veículo foi alvo de{' '}
+          A_Definir{' '}
           <span className="destaque relative italic font-light">
-            busca e apreensão
+            A_Definir
             {/* <span>
               <svg
                 className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-accent/30"
@@ -135,12 +135,7 @@ const content = {
           ?
         </h1>
       ),
-      subtitle: (
-        <p>
-          Te ajudamos a suspender o processo, ganhar tempo e defender seu bem
-          legalmente, mesmo que ele já tenha sido levado.
-        </p>
-      ),
+      subtitle: <p>A_Definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
@@ -150,7 +145,7 @@ const content = {
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Cada minuto importa, não deixe para amanhã!',
+        text: 'A_Definir',
         textTwo: '',
       },
       secondaryCta: 'Contato',
@@ -174,55 +169,47 @@ const content = {
       },
     },
     important: {
-      miniTag: 'Atenção',
-      title: 'O que é importante saber sobre busca e apreensão de veículos',
+      miniTag: 'A_Definir',
+      title: 'A_Definir',
       cards: {
         card1: {
-          title: 'Meu veículo foi apreendido. Posso fazer alguma coisa?',
-          paragraph:
-            'Sim! O ideal é apresentar defesa na ação de busca e apreensão o quanto antes. Após 5 dias, sem defesa, o banco assume a posse do veículo.',
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
         },
         card2: {
-          title: 'Mas eu tenho um prazo para recorrer?',
-          paragraph:
-            'Tem! O prazo para contestação da busca e apreensão é de 15 dias a partir da apreensão. Procure imediatamente um advogado especializado em busca e apreensão de veículos.',
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
         },
         card3: {
-          title: 'Se eu não fizer nada, o que pode acontecer?',
-          paragraph:
-            'Além de perder o bem, caso ele não seja suficiente para quitar sua dívida com o banco, você poderá sofrer penhora de outros bens até saldar o valor total da dívida.',
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
         },
         card4: {
-          title:
-            'Por que apresentar defesa no processo de busca e apreensão mesmo sabendo que eu estou devendo?',
-          paragraph:
-            'Porque muitas vezes os juros cobrados são abusivos - e podem tornar a busca e apreensão do veículo inválida. Agir rápido pode salvar seu carro e seu dinheiro.',
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
         },
       },
-      fraseObs:
-        'Entre em contato conosco e lhe daremos todo o suporte necessário',
-      ctaButtonText: 'Seja atendido agora no WhatsApp',
+      fraseObs: 'A_Definir',
+      ctaButtonText: 'A_Definir',
     },
     features: {
-      miniTag: 'Proteção do seu veículo',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Defesa
-          <span className="destaque italic font-light"> jurídica</span> para
-          impedir a perda do seu veículo
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir</span>
+          A_Definir
         </h1>
       ),
-      subtitle:
-        'Atuação estratégica para suspender a busca e apreensão, recuperar o veículo ou negociar a dívida, com segurança jurídica e rapidez.',
+      subtitle: 'A_Definir',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: 'Recupere',
-      subtitleMessageFeature: 'a sua paz e tranquilidade com seu veículo!',
+      titleMessageFeature: 'A_Definir',
+      subtitleMessageFeature: 'A_Definir',
       cards: {
         card1: {
-          title: 'Defesa em Ação de Busca e Apreensão',
-          subtitle:
-            'Agimos rapidamente para suspender o processo e impedir que o veículo seja levado.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -236,9 +223,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'Recuperação do Veículo Apreendido',
-          subtitle:
-            'Atuação emergencial para tentar reverter a apreensão e recuperar seu carro.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -252,9 +238,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: 'Negociação e Renegociação da Dívida',
-          subtitle:
-            'Buscamos acordos possíveis para manter o veículo e organizar o pagamento da dívida.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir <br />
@@ -267,9 +252,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: 'Revisão de Contrato e Juros Abusivos',
-          subtitle:
-            'Análise completa do contrato para identificar cobranças ilegais e reduzir o valor da dívida.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -283,7 +267,7 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card5: {
-          title: <p>A_Definir</p>,
+          title: 'A_Definir',
           subtitle: 'A_Definir',
           description: (
             <div>
@@ -360,31 +344,22 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'QUEM É A DRA. MARIANA DEMENCIANO',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Minha
-          <span className="destaque italic font-light"> atuação</span> na sua
-          defesa
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir</span>{' '}
+          A_Definir
         </h1>
       ),
       SecondPartTitle: '',
-      subtitle:
-        'Experiência consolidada na proteção de direitos e patrimônios com estratégia.',
+      subtitle: 'A_Definir',
       paragraph: (
         <div>
-          Com mais de 13 anos de experiência jurídica, a Dra. Mariana Demenciano
-          atua na defesa de pessoas que enfrentam ações de busca e apreensão,
-          oferecendo orientação segura em momentos de pressão e insegurança. Seu
-          trabalho é focado em proteger direitos, analisar contratos e buscar
-          soluções jurídicas eficazes.
+          A_Definir
           <br />
           <br />
-          Com atuação estratégica no Direito Cível e do Consumidor, une
-          conhecimento técnico, atendimento humanizado e comunicação clara. O
-          objetivo é evitar prejuízos desnecessários, reduzir impactos
-          financeiros e conduzir cada caso com responsabilidade, transparência e
-          foco em resultado.
+          A_Definir
         </div>
       ),
 
@@ -448,12 +423,12 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'COMO ATUAMOS NA DEFESA DO SEU VEÍCULO',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Defesa
-          <span className="destaque italic font-light"> estratégica </span>para
-          proteger seu carro na ação de busca e apreensão
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir </span>
+          A_Definir
         </h1>
       ),
       subtitle: '',
@@ -462,37 +437,33 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Análise do financiamento e da ação do banco',
-          cardDescription:
-            'Analisamos o contrato de financiamento do veículo, a notificação de atraso e a ação de busca e apreensão para identificar juros abusivos, cobranças irregulares e falhas que podem anular ou suspender o processo.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Medidas urgentes para evitar ou reverter a apreensão',
-          cardDescription:
-            'Com base na análise, adotamos as medidas jurídicas cabíveis para tentar impedir a apreensão do veículo ou buscar a devolução do carro quando ele já foi recolhido pelo banco.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Estratégia para reduzir a dívida ou viabilizar acordo',
-          cardDescription:
-            'Buscamos alternativas legais para revisão do valor financiado, redução do saldo devedor ou negociação direta com a instituição financeira, sempre focando em manter o veículo e aliviar o impacto financeiro.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Acompanhamento próximo e comunicação clara',
-          cardDescription:
-            'Você acompanha cada etapa do processo com explicações objetivas, prazos claros e orientações práticas, sabendo exatamente o que está sendo feito para proteger seu veículo.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
       },
-      ctaButtonText: 'Falar diretamente com a Dr. Marina',
+      ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
-      miniTag: 'FALE CONOSCO',
-      title: <h1>Prestes a perder seu veículo? </h1>,
+      miniTag: 'A_Definir',
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">Ainda dá tempo de agir.</p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
       container: (
@@ -530,15 +501,15 @@ const content = {
           </div>
         </div>
       ),
-      subtitleDireita: (
-        <p className="gap-3 flex font-mainFont opacity-60 mt-1">
-          <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
-        </p>
-      ),
-      titleDireita: (
-        <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
-      ),
-      ctaButtonText: 'Preciso de ajuda urgente',
+      // subtitleDireita: (
+      //   <p className="gap-3 flex font-mainFont opacity-60 mt-1">
+      //     <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
+      //   </p>
+      // ),
+      // titleDireita: (
+      //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
+      // ),
+      ctaButtonText: 'A_Definir',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
@@ -552,8 +523,8 @@ const content = {
     //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
     // },
     faq: {
-      miniTag: 'TIRE SUAS DÚVIDAS',
-      title: 'Perguntas Frequentes',
+      miniTag: 'A_Definir',
+      title: 'A_Definir',
       subtitle: 'A_Definir',
       questions: {
         question1: {

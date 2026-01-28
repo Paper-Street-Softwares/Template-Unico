@@ -72,7 +72,7 @@ export default function Index() {
               email={true}
               emailSecond={false}
               fraseFooter={true} // frase Google LLC
-              obs={true}
+              obs={false}
             />
             <WhatsappAnimated colorMode={colorMode} />
           </Suspense>

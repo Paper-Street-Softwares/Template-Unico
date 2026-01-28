@@ -3,9 +3,9 @@ import heroDefaultImg from '../assets/imgs/hero/lawHero.webp'
 import imgFeatures from '../assets/imgs/features/imgServices.webp'
 
 import aboutImg from '../assets/imgs/about/aboutImg.webp'
-import team1 from '../assets/imgs/team/team1.webp'
-import team2 from '../assets/imgs/team/team2.webp'
-import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
+// import team1 from '../assets/imgs/team/team1.webp'
+// import team2 from '../assets/imgs/team/team2.webp'
+// import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
 import imgSteps from '../assets/imgs/steps/imgSteps.webp'
 
@@ -17,7 +17,11 @@ import {
   Home,
   Key,
   LucideIdCard,
+  Lock,
   Scale,
+  Car,
+  HandCoins,
+  Check,
 } from 'lucide-react'
 import { Users } from 'lucide-react'
 import { FileText } from 'lucide-react'
@@ -47,7 +51,7 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>A_Definir</p>
+      <p>A_Definir,</p>
       <p>A_Definir,</p>
       <p>A_Definir,</p>
       <p>A_Definir</p>
@@ -63,11 +67,11 @@ export const infos = {
   ),
   expediente: (
     <div>
+      <p>Segunda a sexta-feira:</p>
       <p>A_Definir</p>
-      {/* <p>8h às 18h</p> */}
     </div>
   ),
-  obs: <span className="italic">A Definir</span>,
+  obs: <span className="italic">A_Definir </span>,
   instagramProfile: '', // Sem o @
   facebookProfile: '',
   linkeDinProfile: '',
@@ -96,12 +100,12 @@ const content = {
         'Início',
         'Serviços',
         'Sobre',
-        'Perguntas',
+        // 'Perguntas',
         // 'Blog',
         // 'Perguntas',
         // 'Mapa',
       ],
-      menuId: ['home', 'feature', 'about', 'faq'],
+      menuId: ['home', 'feature', 'about'],
       ariaLabel: 'Botão de Contato',
       ctaButtonText: 'Contato',
       ctaButtonTextResponsive: 'Contato',
@@ -110,12 +114,12 @@ const content = {
       miniTag: 'A_Definir',
       title: (
         <h1>
-          A_Definir
+          A_Definir{' '}
           <span className="destaque relative italic font-light">
             A_Definir
-            <span>
+            {/* <span>
               <svg
-                className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30"
+                className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-accent/30"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -126,8 +130,9 @@ const content = {
                   fill="none"
                 />
               </svg>
-            </span>
+            </span> */}
           </span>
+          ?
         </h1>
       ),
       subtitle: <p>A_Definir</p>,
@@ -135,7 +140,7 @@ const content = {
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Preciso de ajuda urgente',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
@@ -163,12 +168,37 @@ const content = {
         },
       },
     },
+    important: {
+      miniTag: 'A_Definir',
+      title: 'A_Definir',
+      cards: {
+        card1: {
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
+        },
+        card2: {
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
+        },
+        card3: {
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
+        },
+        card4: {
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
+        },
+      },
+      fraseObs: 'A_Definir',
+      ctaButtonText: 'A_Definir',
+    },
     features: {
       miniTag: 'A_Definir',
       title: (
         <h1>
           A_Definir
           <span className="destaque italic font-light"> A_Definir</span>
+          A_Definir
         </h1>
       ),
       subtitle: 'A_Definir',
@@ -188,7 +218,7 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Baby />,
+          icon: <Lock />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
@@ -203,7 +233,7 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <BriefcaseMedical />,
+          icon: <Car />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
@@ -217,7 +247,7 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <FileText />,
+          icon: <HandCoins />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
@@ -232,12 +262,12 @@ const content = {
               <br />
             </div>
           ),
-          icon: <Gavel />,
+          icon: <FileText />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card5: {
-          title: <p>A_Definir</p>,
+          title: 'A_Definir',
           subtitle: 'A_Definir',
           description: (
             <div>
@@ -301,6 +331,7 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
+      ctaButtonText: 'Recuperar minha paz ao dirigir',
     },
     maps: {
       minitag: 'A_Definir',
@@ -316,8 +347,9 @@ const content = {
       miniTag: 'A_Definir',
       title: (
         <h1>
-          Nossa
-          <span className="destaque italic font-light"> trajetória</span>
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir</span>{' '}
+          A_Definir
         </h1>
       ),
       SecondPartTitle: '',
@@ -326,14 +358,11 @@ const content = {
         <div>
           A_Definir
           <br />
-          A_Definir
-          <br />
-          A_Definir
-          <br />
           <br />
           A_Definir
         </div>
       ),
+
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="text-mutedForeground font-secondFont">
@@ -349,56 +378,57 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Entre em contato',
-      aboutSocial: {
-        img: {
-          img: aboutSocialImg,
-          alt: `Foto do Instagram do ${infos.name}`,
-          altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
-        },
-        miniTag: 'REDES SOCIAIS',
-        title: 'Conecte-se conosco',
-        subtitle:
-          'Aproveite nossas redes sociais para mantermos contato e ficar por dentro dos lançamentos, novidades e atualizações do mercado imobiliário.',
-        paragraph: <p></p>,
-        labelInstagram: 'Siga-nos no Instagram',
-        labelFacebook: 'Siga-nos no Facebook',
-        labelLinkedin: 'Siga-nos no LinkedIn',
-        labelX: 'Siga-nos no X',
-        labelTiktok: 'Siga-nos no Tik Tok',
-        labelYoutube: 'Siga-nos no Youtube',
-      },
+      ctaButtonText: 'Falar diretamente com a Dr. Marina',
+      // aboutSocial: {
+      //   img: {
+      //     img: aboutSocialImg,
+      //     alt: `Foto do Instagram do ${infos.name}`,
+      //     altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
+      //   },
+      //   miniTag: 'REDES SOCIAIS',
+      //   title: 'Conecte-se conosco',
+      //   subtitle:
+      //     'Aproveite nossas redes sociais para mantermos contato e ficar por dentro dos lançamentos, novidades e atualizações do mercado imobiliário.',
+      //   paragraph: <p></p>,
+      //   labelInstagram: 'Siga-nos no Instagram',
+      //   labelFacebook: 'Siga-nos no Facebook',
+      //   labelLinkedin: 'Siga-nos no LinkedIn',
+      //   labelX: 'Siga-nos no X',
+      //   labelTiktok: 'Siga-nos no Tik Tok',
+      //   labelYoutube: 'Siga-nos no Youtube',
+      // },
     },
-    team: {
-      miniTag: ' A_Definir',
-      title: (
-        <h1>
-          A_Definir <span className="italic text-primaryDark">A_Definir</span>
-          A_Definir
-        </h1>
-      ),
-      subtitle: 'A_Definir',
-      cards: {
-        card1: {
-          img1: team1,
-          alt: 'Imagens ilustrativa dos profissionais',
-          name: 'A_Definir',
-          description: <p>A_Definir</p>,
-        },
-        card2: {
-          img2: team2,
-          alt: 'Imagens ilustrativa dos profissionais',
-          name: 'A_Definir',
-          description: <p>A_Definir</p>,
-        },
-      },
-    },
+    // team: {
+    //   miniTag: ' A_Definir',
+    //   title: (
+    //     <h1>
+    //       A_Definir <span className="italic text-primaryDark">A_Definir</span>
+    //       A_Definir
+    //     </h1>
+    //   ),
+    //   subtitle: 'A_Definir',
+    //   cards: {
+    //     card1: {
+    //       img1: team1,
+    //       alt: 'Imagens ilustrativa dos profissionais',
+    //       name: 'A_Definir',
+    //       description: <p>A_Definir</p>,
+    //     },
+    //     card2: {
+    //       img2: team2,
+    //       alt: 'Imagens ilustrativa dos profissionais',
+    //       name: 'A_Definir',
+    //       description: <p>A_Definir</p>,
+    //     },
+    //   },
+    // },
     steps: {
-      miniTag: 'PASSO A PASSO',
+      miniTag: 'A_Definir',
       title: (
         <h1>
           A_Definir
-          <span className="destaque italic font-light"> A_Definir</span>
+          <span className="destaque italic font-light"> A_Definir </span>
+          A_Definir
         </h1>
       ),
       subtitle: '',
@@ -426,20 +456,60 @@ const content = {
           cardDescription: 'A_Definir',
         },
       },
+      ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
-      miniTag: 'FALE CONOSCO',
+      miniTag: 'A_Definir',
       title: <h1>A_Definir</h1>,
-      subtitle: 'A_Definir',
-      subtitleDireita: (
-        <p className="gap-3 flex font-mainFont opacity-60 mt-1">
-          <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
-        </p>
+      subtitle: (
+        <div>
+          <p className="mb-6 font-secondFont">A_Definir</p>
+        </div>
       ),
-      titleDireita: (
-        <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
+      container: (
+        <div className="flex flex-col gap-3">
+          <div className="flex items-start gap-2">
+            {' '}
+            <span className="bg-primaryDark rounded-full p-0.5">
+              <Check className="text-white" width={22} />
+            </span>{' '}
+            Análise imediata do seu caso e da possibilidade de suspender ou
+            reverter a apreensão
+          </div>
+          <div className="flex items-start gap-2">
+            {' '}
+            <span className="bg-primaryDark rounded-full p-0.5">
+              <Check className="text-white" width={22} />
+            </span>{' '}
+            Avaliação do contrato para identificar juros abusivos e falhas
+            legais
+          </div>
+          <div className="flex items-start gap-2">
+            {' '}
+            <span className="bg-primaryDark rounded-full p-0.5">
+              <Check className="text-white" width={22} />
+            </span>{' '}
+            Orientação clara sobre prazos, riscos e próximos passos
+          </div>
+          <div className="flex items-start gap-2">
+            {' '}
+            <span className="bg-primaryDark rounded-full p-0.5">
+              <Check className="text-white" width={22} />
+            </span>
+            Acompanhamento transparente e atuação responsável em todas as fases
+            do processo
+          </div>
+        </div>
       ),
-      ctaButtonText: 'Falar agora',
+      // subtitleDireita: (
+      //   <p className="gap-3 flex font-mainFont opacity-60 mt-1">
+      //     <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
+      //   </p>
+      // ),
+      // titleDireita: (
+      //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
+      // ),
+      ctaButtonText: 'A_Definir',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
@@ -453,8 +523,8 @@ const content = {
     //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
     // },
     faq: {
-      miniTag: 'TIRE SUAS DÚVIDAS',
-      title: 'Perguntas Frequentes',
+      miniTag: 'A_Definir',
+      title: 'A_Definir',
       subtitle: 'A_Definir',
       questions: {
         question1: {
@@ -1059,6 +1129,19 @@ const content = {
       obsFooter: infos.obs,
       footerNavegacaoText: 'NAVEGAÇÃO',
       footerDivulgacaoText: 'Gostaria de ter um site como este? Clique aqui',
+    },
+    svgs: {
+      wpp: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={18}
+          height={18}
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.197.297-.768.966-.94 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.007-.372-.009-.571-.009-.198 0-.52.074-.793.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.226 1.36.194 1.872.118.571-.085 1.758-.718 2.006-1.412.248-.694.248-1.288.173-1.412-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.896a9.825 9.825 0 012.893 6.994c-.002 5.45-4.436 9.884-9.884 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.158 11.892c0 2.096.547 4.142 1.588 5.94L0 24l6.305-1.654a11.882 11.882 0 005.732 1.463h.005c6.554 0 11.89-5.335 11.892-11.892a11.821 11.821 0 00-3.466-8.413" />
+        </svg>
+      ),
     },
   },
 }

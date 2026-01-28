@@ -33,7 +33,7 @@ export default {
 
         // hex botãoColor wpp
         wppLight: '#075e54',
-        wppDark: '#44AD3A',
+        wppDark: '#2E7027',
 
         // Minitags
         bgIcons: '#E0E2E9',
