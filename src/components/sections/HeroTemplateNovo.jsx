@@ -168,7 +168,7 @@ function HeroTemplateNovo({
                     </span>
                   </div>
                   {obsTwo && (
-                    <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground pt-6 w-full">
+                    <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground pt-2 w-full">
                       <div className="relative flex ">
                         {content.texts.hero.obsHero.iconTwo}
                       </div>
