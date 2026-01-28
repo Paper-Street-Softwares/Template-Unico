@@ -67,7 +67,7 @@ export default function Index() {
               colorMode={colorMode}
               mapa={false}
               phoneSecond={false}
-              expediente={true}
+              expediente={false}
               adress={true}
               email={true}
               emailSecond={false}
