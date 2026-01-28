@@ -7,6 +7,8 @@ import {
   Phone,
   ArrowRight,
   AlertTriangle,
+  HeartCrack,
+  Split,
 } from 'lucide-react'
 import content from '../../content/content'
 import SectionArea from '../sectionElements/SectionArea'
@@ -99,7 +101,9 @@ function HeroTemplateNovo({
               <div
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
               >
-                <span>{/* <MapPin className="w-4 h-4" /> */}🚨</span>
+                <span>
+                  <Split className="w-4 h-4" />
+                </span>
                 {content.texts.hero.miniTag}
               </div>
               <h1

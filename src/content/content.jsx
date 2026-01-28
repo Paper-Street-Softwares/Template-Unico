@@ -98,12 +98,11 @@ const content = {
         'Início',
         'Serviços',
         'Sobre',
-        // 'Perguntas',
+        'Perguntas',
         // 'Blog',
-        // 'Perguntas',
         // 'Mapa',
       ],
-      menuId: ['home', 'feature', 'about'],
+      menuId: ['home', 'feature', 'about', 'faq'],
       ariaLabel: 'Botão de Contato',
       ctaButtonText: 'Contato',
       ctaButtonTextResponsive: 'Contato',
@@ -117,7 +116,19 @@ const content = {
             ONLINE
             <span>
               <svg
-                className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30"
+                className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
+                viewBox="0 0 100 10"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M0 5 Q 50 10 100 5"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                />
+              </svg>
+              <svg
+                className="hero-underline absolute bottom-0 left-0 w-full h-3 text-accent/30 desktop1:hidden"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -129,7 +140,7 @@ const content = {
                 />
               </svg>
             </span>
-          </span>
+          </span>{' '}
           — RÁPIDO, SEGURO E SEM SAIR DE CASA
         </h1>
       ),
@@ -355,7 +366,7 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: '',
+      miniTag: 'BRASIL MATOS ADVOCACIA',
       title: (
         <h1>
           Por que escolher
@@ -478,7 +489,7 @@ const content = {
       ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
-      miniTag: '',
+      miniTag: 'FALE CONOSCO',
       title: <h1>Fale agora com uma advogada</h1>,
       subtitle: (
         <div>
@@ -569,7 +580,7 @@ const content = {
             'Na maioria dos casos, não. O divórcio pode ser resolvido sem audiências, evitando exposição e situações desconfortáveis.',
         },
         question4: {
-          question: 'A_DefPosso me divorciar mesmo sem acordo total?inir',
+          question: 'Posso me divorciar mesmo sem acordo total?',
           answer:
             'Sim. Mesmo sem acordo em todos os pontos, é possível dar entrada no divórcio. Cada caso é analisado com cuidado para garantir seus direitos e a melhor solução possível.',
         },

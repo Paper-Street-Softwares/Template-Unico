@@ -54,16 +54,18 @@ function Speed({ colorMode }) {
                   className="flex flex-col items-center text-center space-y-4"
                 >
                   <div className="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center">
-                    <item.icon className="w-6 h-6" />
+                    <item.icon className={`w-6 h-6 ${textOpacity}`} />
                   </div>
-                  <p className="font-medium font-secondFont">{item.text}</p>
+                  <p className={`font-medium font-secondFont ${text}`}>
+                    {item.text}
+                  </p>
                 </div>
               ))}
             </div>
 
             <div className="mt-10 text-center">
               <p
-                className={`text-sm font-medium font-secondFont inline-block px-4 py-1.5 rounded-full ${textOpacity}`}
+                className={`text-title2 font-medium font-secondFont inline-block px-4 py-1.5 rounded-full ${textOpacity}`}
               >
                 Tudo 100% conforme a lei.
               </p>
