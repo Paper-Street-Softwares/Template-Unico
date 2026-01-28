@@ -37,6 +37,7 @@ import { useColorMode } from '../context/UseContextArchive'
 import Cards from '../components/sections/Cards'
 import InventarioComparativo from '../components/sections/Tabela'
 import Important from '../components/sections/Important'
+import Speed from '../components/sections/Speed'
 
 export default function Index() {
   const { colorMode, setColorMode } = useColorMode()
@@ -58,15 +59,20 @@ export default function Index() {
               frasesDestaque={false}
               accordion={true}
             />
+            <Speed colorMode={colorMode} />
             {/* <Cards colorMode={colorMode} /> */}
             {/* <InventarioComparativo colorMode={colorMode} /> */}
             {/* <FeaturesSemImage colorMode={colorMode} /> */}
-            <AboutNovoTemplate colorMode={colorMode} ButtonModal={false} />
+            <AboutNovoTemplate
+              colorMode={colorMode}
+              ButtonModal={false}
+              benefits={false}
+            />
             {/* <TeamSectionNew colorMode={colorMode} /> */}
             {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             <CtaNovoTemplate colorMode={colorMode} />
-            <StepsNovoTemplate colorMode={colorMode} />
-            {/* <FaqNovoTemplate colorMode={colorMode} /> */}
+            {/* <StepsNovoTemplate colorMode={colorMode} /> */}
+            <FaqNovoTemplate colorMode={colorMode} />
             <FooterNovoTemplate
               colorMode={colorMode}
               mapa={false}

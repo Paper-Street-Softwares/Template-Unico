@@ -355,22 +355,30 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'A_Definir',
+      miniTag: '',
       title: (
         <h1>
-          A_Definir
-          <span className="destaque italic font-light"> A_Definir</span>{' '}
-          A_Definir
+          Por que escolher
+          <span className="destaque italic font-light"> nosso</span> escritório?
         </h1>
       ),
       SecondPartTitle: '',
-      subtitle: 'A_Definir',
+      subtitle:
+        'Nosso compromisso é tornar esse momento mais leve, rápido e seguro para você.',
       paragraph: (
         <div>
-          A_Definir
-          <br />
-          <br />
-          A_Definir
+          <span className="flex gap-2 items-center">
+            <Check /> <p>Atuação especializada em Direito de Família</p>
+          </span>
+          <span className="flex gap-2 items-center">
+            <Check /> <p>Experiência em divórcios online</p>
+          </span>
+          <span className="flex gap-2 items-center">
+            <Check /> <p>Atendimento ágil e personalizado</p>
+          </span>
+          <span className="flex gap-2 items-center">
+            <Check /> <p>Transparência em todas as etapas</p>
+          </span>
         </div>
       ),
 
@@ -389,7 +397,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Falar diretamente com a Dr. Marina',
+      ctaButtonText: 'Falar diretamente com as advogadas',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -470,45 +478,52 @@ const content = {
       ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
-      miniTag: 'A_Definir',
-      title: <h1>A_Definir</h1>,
+      miniTag: '',
+      title: <h1>Fale agora com uma advogada</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Se você está pensando em se divorciar ou precisa de orientação, fale
+            conosco agora.
+          </p>
         </div>
       ),
       container: (
         <div className="flex flex-col gap-3">
-          <div className="flex items-start gap-2">
+          <div className="flex items-start gap-2 mx-auto">
             {' '}
-            <span className="bg-primaryDark rounded-full p-0.5">
-              <Check className="text-white" width={22} />
+            <span className="border-2 rounded-full p-1">
+              <Check className="" width={17} height={17} />
             </span>{' '}
-            Análise imediata do seu caso e da possibilidade de suspender ou
-            reverter a apreensão
+            Orientação clara sobre seus direitos no divórcio
           </div>
-          <div className="flex items-start gap-2">
+          <div className="flex items-start gap-2 mx-auto">
             {' '}
-            <span className="bg-primaryDark rounded-full p-0.5">
-              <Check className="text-white" width={22} />
+            <span className="border-2 rounded-full p-1">
+              <Check className="" width={17} height={17} />
             </span>{' '}
-            Avaliação do contrato para identificar juros abusivos e falhas
-            legais
+            Atendimento humanizado e sigiloso com advogada especializada
           </div>
-          <div className="flex items-start gap-2">
+          <div className="flex items-start gap-2 mx-auto">
             {' '}
-            <span className="bg-primaryDark rounded-full p-0.5">
-              <Check className="text-white" width={22} />
+            <span className="border-2 rounded-full p-1">
+              <Check className="" width={17} height={17} />
             </span>{' '}
-            Orientação clara sobre prazos, riscos e próximos passos
+            Divórcio online, sem audiências e sem desgaste emocional
           </div>
-          <div className="flex items-start gap-2">
+          <div className="flex items-start gap-2 mx-auto">
             {' '}
-            <span className="bg-primaryDark rounded-full p-0.5">
-              <Check className="text-white" width={22} />
-            </span>
-            Acompanhamento transparente e atuação responsável em todas as fases
-            do processo
+            <span className="border-2 rounded-full p-1">
+              <Check className="" width={17} height={17} />
+            </span>{' '}
+            Acompanhamento rápido pelo WhatsApp, do início ao fim
+          </div>
+          <div className="flex items-start gap-2 mx-auto">
+            {' '}
+            <span className="border-2 rounded-full p-1">
+              <Check className="" width={17} height={17} />
+            </span>{' '}
+            Segurança para encerrar esse ciclo e seguir em frente
           </div>
         </div>
       ),
@@ -520,7 +535,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Quero iniciar meu divórcio online',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
@@ -534,25 +549,29 @@ const content = {
     //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
     // },
     faq: {
-      miniTag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
+      miniTag: 'TIRE SUAS DÚVIDAS',
+      title: 'Perguntas Frequentes',
+      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
       questions: {
         question1: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Preciso sair de casa?',
+          answer:
+            'Não. Todo o processo pode ser feito 100% online, sem deslocamentos, filas ou desgaste desnecessário. Você resolve tudo com segurança e conforto, de onde estiver.',
         },
         question2: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Quanto tempo demora?',
+          answer:
+            'O prazo varia conforme o tipo de divórcio, mas em muitos casos o processo é rápido e pode ser iniciado no mesmo dia após a análise da documentação.',
         },
         question3: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Precisa de audiência?',
+          answer:
+            'Na maioria dos casos, não. O divórcio pode ser resolvido sem audiências, evitando exposição e situações desconfortáveis.',
         },
         question4: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'A_DefPosso me divorciar mesmo sem acordo total?inir',
+          answer:
+            'Sim. Mesmo sem acordo em todos os pontos, é possível dar entrada no divórcio. Cada caso é analisado com cuidado para garantir seus direitos e a melhor solução possível.',
         },
       },
       paragraph: 'Clique aqui caso tenha mais dúvidas',

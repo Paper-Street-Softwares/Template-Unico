@@ -17,7 +17,7 @@ function CtaNovoTemplate({ colorMode }) {
     case 'light':
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-terciary/60'
       miniTagCtaDark = 'text-primaryDark'
       break
     case 'dark':

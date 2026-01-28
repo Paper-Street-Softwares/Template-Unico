@@ -10,7 +10,7 @@ import { Button } from '../interactives/ButtonNovoTemplate'
 import { Phone } from 'lucide-react'
 import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
 
-function AboutNovoTemplate({ ButtonModal, colorMode }) {
+function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
   const [visible, setVisible] = useState(false)
   const [modalTitle, setModalTitle] = useState('')
 
@@ -31,7 +31,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-terciary/60'
+      backgroundMode = 'bg-white'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
@@ -104,34 +104,36 @@ function AboutNovoTemplate({ ButtonModal, colorMode }) {
                 </div>
 
                 {/* Lista de benefícios */}
-                <div className="space-y-4">
-                  {[
-                    {
-                      title: 'Atendimento Personalizado',
-                      desc: 'Cada caso de busca e apreensão é analisado de forma individual, com estratégia jurídica sob medida.',
-                    },
-                    {
-                      title: 'Transparência Total',
-                      desc: 'Você entende o que está acontecendo e acompanha cada etapa do processo com clareza.',
-                    },
-                  ].map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-4">
-                      <div className={`p-2 rounded-lg ${iconBg} mt-1`}>
-                        <CheckCircle2 className="w-5 h-5" />
+                {benefits && (
+                  <div className="space-y-4">
+                    {[
+                      {
+                        title: 'Atendimento Personalizado',
+                        desc: 'Cada caso de busca e apreensão é analisado de forma individual, com estratégia jurídica sob medida.',
+                      },
+                      {
+                        title: 'Transparência Total',
+                        desc: 'Você entende o que está acontecendo e acompanha cada etapa do processo com clareza.',
+                      },
+                    ].map((item, idx) => (
+                      <div key={idx} className="flex items-start gap-4">
+                        <div className={`p-2 rounded-lg ${iconBg} mt-1`}>
+                          <CheckCircle2 className="w-5 h-5" />
+                        </div>
+                        <div>
+                          <h1 className={`font-bold font-secondFont ${text}`}>
+                            {item.title}
+                          </h1>
+                          <p
+                            className={`text-sm font-secondFont font-light ${textOpacity}`}
+                          >
+                            {item.desc}
+                          </p>
+                        </div>
                       </div>
-                      <div>
-                        <h1 className={`font-bold font-secondFont ${text}`}>
-                          {item.title}
-                        </h1>
-                        <p
-                          className={`text-sm font-secondFont font-light ${textOpacity}`}
-                        >
-                          {item.desc}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                    ))}
+                  </div>
+                )}
 
                 <div className="desktop1:flex flex-col gap-4 pt-4 w-fit justify-center items-start hidden ">
                   <ButtonReflexo
