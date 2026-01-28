@@ -67,7 +67,7 @@ function Speed({ colorMode }) {
               <p
                 className={`text-title2 font-medium font-secondFont inline-block px-4 py-1.5 rounded-full text-black/70`}
               >
-                Tudo 100% conforme a lei.
+                Tudo conforme a lei.
               </p>
             </div>
           </div>
