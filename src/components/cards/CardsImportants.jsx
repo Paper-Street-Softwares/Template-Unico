@@ -2,6 +2,7 @@ import React from 'react'
 import imgIcon from '../../assets/imgs/icons/exclamation.webp'
 
 function CardsImportants({ title, paragraph, colorMode }) {
+  //precisa fazer colorMode
   let bgCircle, bgCircleHover
   switch (colorMode) {
     case 'light':

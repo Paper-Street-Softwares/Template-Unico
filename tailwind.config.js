@@ -23,7 +23,7 @@ export default {
         terciary: '#F7F1F1',
         quartenary: '#FCFAFA',
         borderImage: '#292929',
-        corExclamationCard: '#AA954E',
+        corExclamationCard: '#350F0F',
 
         // Copys
         corTitulosBranca: '#FFFFFF',

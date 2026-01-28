@@ -16,7 +16,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 const features = Object.values(content.texts.features.cards)
 
-function FeaturesNovaTemplate({ colorMode }) {
+function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
   // Definindo classes dinamicamente conforme o colorMode
   let backgroundMode,
     text,
@@ -110,17 +110,18 @@ function FeaturesNovaTemplate({ colorMode }) {
                       height={798}
                     />
                   </div>
-
-                  <div
-                    className={`absolute -bottom-6 -left-6 ${bgObservation} ${textObservation} p-8 rounded-tr-3xl rounded-bl-3xl shadow-xl max-w-xs`}
-                  >
-                    <p className="font-secondFont text-2xl font-bold mb-2">
-                      {content.texts.features.titleMessageFeature}
-                    </p>
-                    <p className="text-sm font-secondFont font-light">
-                      {content.texts.features.subtitleMessageFeature}
-                    </p>
-                  </div>
+                  {frasesDestaque && (
+                    <div
+                      className={`absolute -bottom-6 -left-6 ${bgObservation} ${textObservation} p-8 rounded-tr-3xl rounded-bl-3xl shadow-xl max-w-xs`}
+                    >
+                      <p className="font-secondFont text-2xl font-bold mb-2">
+                        {content.texts.features.titleMessageFeature}
+                      </p>
+                      <p className="text-sm font-secondFont font-light">
+                        {content.texts.features.subtitleMessageFeature}
+                      </p>
+                    </div>
+                  )}
                 </motion.div>
                 <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-start desktop1:m-auto">
                   <ButtonReflexo
@@ -166,70 +167,71 @@ function FeaturesNovaTemplate({ colorMode }) {
                   type="article"
                   colorMode={colorMode}
                 />
-
-                {/* <div className="w-full">
-                  <div>
-                    {features.map((item, index) => (
-                      <Accordion
-                        key={index}
-                        expanded={expanded === index}
-                        onChange={() =>
-                          setExpanded(expanded === index ? false : index)
-                        }
-                      >
-                        <AccordionSummary
-                          expandIcon={
-                            <ExpandMoreIcon className={`${textDestaque}`} />
+                {accordion ? (
+                  <div className="w-full">
+                    <div>
+                      {features.map((item, index) => (
+                        <Accordion
+                          key={index}
+                          expanded={expanded === index}
+                          onChange={() =>
+                            setExpanded(expanded === index ? false : index)
                           }
-                          aria-controls={`panel-${index}-content`}
-                          id={`panel-${index}-header`}
-                          sx={{
-                            backgroundColor: bgAccordion,
-                          }}
                         >
-                          <Typography component="span" className={`${text}`}>
-                            {item.title}
-                          </Typography>
-                        </AccordionSummary>
+                          <AccordionSummary
+                            expandIcon={
+                              <ExpandMoreIcon className={`${textDestaque}`} />
+                            }
+                            aria-controls={`panel-${index}-content`}
+                            id={`panel-${index}-header`}
+                            sx={{
+                              backgroundColor: bgAccordion,
+                            }}
+                          >
+                            <Typography component="span" className={`${text}`}>
+                              {item.title}
+                            </Typography>
+                          </AccordionSummary>
 
-                        <AccordionDetails
-                          sx={{
-                            backgroundColor: bgAccordion,
-                          }}
+                          <AccordionDetails
+                            sx={{
+                              backgroundColor: bgAccordion,
+                            }}
+                          >
+                            <Typography className={`${textOpacity}`}>
+                              {item.subtitle}
+                            </Typography>
+                          </AccordionDetails>
+                        </Accordion>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="grid tablet1:grid-cols-2 gap-6">
+                    {features.slice(0, 4).map((feature, idx) => (
+                      <motion.div
+                        key={idx}
+                        className={`group p-6 rounded-xl ${cardBg} ${hoverCardBg} transition-all duration-700 cursor-pointer`}
+                      >
+                        <div
+                          className={`w-10 h-10 rounded-full ${iconBg} mb-4 flex items-center justify-center shadow-sm transition-transform`}
                         >
-                          <Typography className={`${textOpacity}`}>
-                            {item.subtitle}
-                          </Typography>
-                        </AccordionDetails>
-                      </Accordion>
+                          {feature.icon}
+                        </div>
+                        <h1
+                          className={`font-secondFont font-bold text-lg mb-2 ${text} ${hoverTextCard} transition-all`}
+                        >
+                          {feature.title}
+                        </h1>
+                        <p
+                          className={`text-sm font-secondFont font-light ${textOpacity} ${hoverTextCard} transition-all`}
+                        >
+                          {feature.subtitle}
+                        </p>
+                      </motion.div>
                     ))}
                   </div>
-                </div> */}
-
-                <div className="grid tablet1:grid-cols-2 gap-6">
-                  {features.slice(0, 4).map((feature, idx) => (
-                    <motion.div
-                      key={idx}
-                      className={`group p-6 rounded-xl ${cardBg} ${hoverCardBg} transition-all duration-700 cursor-pointer`}
-                    >
-                      <div
-                        className={`w-10 h-10 rounded-full ${iconBg} mb-4 flex items-center justify-center shadow-sm transition-transform`}
-                      >
-                        {feature.icon}
-                      </div>
-                      <h1
-                        className={`font-secondFont font-bold text-lg mb-2 ${text} ${hoverTextCard} transition-all`}
-                      >
-                        {feature.title}
-                      </h1>
-                      <p
-                        className={`text-sm font-secondFont font-light ${textOpacity} ${hoverTextCard} transition-all`}
-                      >
-                        {feature.subtitle}
-                      </p>
-                    </motion.div>
-                  ))}
-                </div>
+                )}
               </motion.div>
             </div>
           </div>
