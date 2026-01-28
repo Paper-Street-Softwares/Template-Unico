@@ -7,6 +7,8 @@ import {
   Phone,
   ArrowRight,
   AlertTriangle,
+  HeartCrack,
+  Split,
 } from 'lucide-react'
 import content from '../../content/content'
 import SectionArea from '../sectionElements/SectionArea'
@@ -27,6 +29,8 @@ function HeroTemplateNovo({
   bgAlertHero,
   textDestaque,
   borderColor,
+  obs,
+  obsTwo,
 }) {
   switch (colorMode) {
     case 'light':
@@ -97,7 +101,9 @@ function HeroTemplateNovo({
               <div
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
               >
-                <span>{/* <MapPin className="w-4 h-4" /> */}🚨</span>
+                <span>
+                  <Split className="w-4 h-4" />
+                </span>
                 {content.texts.hero.miniTag}
               </div>
               <h1
@@ -144,16 +150,37 @@ function HeroTemplateNovo({
                   colorMode === 'light' ? 'opacity-90' : 'opacity-20'
                 } w-full`}
               /> */}
-              <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground pt-6 w-full">
-                <div className="relative flex ">
-                  {/* <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
+              {obs && (
+                <div className="">
+                  <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground pt-6 w-full">
+                    {' '}
+                    <div className="relative flex ">
+                      {/* <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span> */}
-                  ⚠️
+                      <div className="relative flex ">
+                        {content.texts.hero.obsHero.icon}
+                      </div>
+                    </div>
+                    <span
+                      className={`font-secondFont font-light ${textOpacity}`}
+                    >
+                      {content.texts.hero.obsHero.text}
+                    </span>
+                  </div>
+                  {obsTwo && (
+                    <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground pt-6 w-full">
+                      <div className="relative flex ">
+                        {content.texts.hero.obsHero.iconTwo}
+                      </div>
+                      <span
+                        className={`font-secondFont font-light ${textOpacity}`}
+                      >
+                        {content.texts.hero.obsHero.textTwo}
+                      </span>
+                    </div>
+                  )}
                 </div>
-                <span className={`font-secondFont font-light ${textOpacity}`}>
-                  {content.texts.hero.obsHero.text}
-                </span>
-              </div>
+              )}
             </motion.div>
 
             {/* Image */}
@@ -164,14 +191,22 @@ function HeroTemplateNovo({
               className="relative order-1 lg:order-2"
             >
               <div
-                className={`relative rounded-[2.5rem] overflow-hidden aspect-[3/4] md:aspect-[4/5] shadow-2xl lg:aspect-[3/4] ring-1 ring-black/5 bg-gray-100 ${image}`}
+                className={`relative rounded-[2.5rem] overflow-hidden aspect-[3/2] shadow-2xl lg:aspect-[3/4] ring-1 ring-black/5 bg-gray-100 ${image}`}
               >
+                <img
+                  src={content.texts.hero.heroDefaultMobileImage}
+                  alt={content.texts.hero.alt}
+                  className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700 desktop1:hidden"
+                  width={621}
+                  height={414}
+                  fetchPriority="high"
+                />
                 <img
                   src={content.texts.hero.heroDefaultImage}
                   alt={content.texts.hero.alt}
-                  className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700"
-                  width={790}
-                  height={992}
+                  className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700 hidden desktop1:flex"
+                  width={630}
+                  height={495}
                   fetchPriority="high"
                 />
 

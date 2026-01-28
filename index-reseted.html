@@ -8,11 +8,7 @@
 
     <title>A_Definir</title>
     <meta name="description" content="A_Definir" />
-    <meta
-      name="keywords"
-      content="A_Definir
-"
-    />
+    <meta name="keywords" content="A_Definir" />
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -83,6 +79,22 @@
       href="/favico/favicon-16x16.png"
     />
     <link rel="manifest" href="/favico/manifest.json" />
+    <!-- Preload de imagem para LCP -->
+    <link
+      rel="preload"
+      as="image"
+      href="./src/assets/imgs/hero/lawHeroMobile.webp"
+      fetchpriority="high"
+      decoding="async"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./src/assets/imgs/hero/lawHero.webp"
+      fetchpriority="high"
+      decoding="async"
+    />
+    <!-- Fim do Preload de imagem para LCP -->
     <meta
       name="msapplication-TileImage"
       content="/favico/ms-icon-144x144.png"

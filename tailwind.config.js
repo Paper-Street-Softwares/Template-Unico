@@ -17,13 +17,13 @@ export default {
     extend: {
       colors: {
         // Principais
-        primaryLight: '#DA91D1',
-        primaryDark: '#370130',
-        secondary: '#E9E0E9',
-        terciary: '#F7F5F1',
-        quartenary: '#FCFBFA',
+        primaryLight: '#821F3B',
+        primaryDark: '#350F0F',
+        secondary: '#E9E0E0',
+        terciary: '#F7F1F1',
+        quartenary: '#FCFAFA',
         borderImage: '#292929',
-        corExclamationCard: '#AA954E',
+        corExclamationCard: '#350F0F',
 
         // Copys
         corTitulosBranca: '#FFFFFF',
