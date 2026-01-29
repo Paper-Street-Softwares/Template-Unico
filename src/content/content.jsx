@@ -82,7 +82,7 @@ export const infos = {
   tiktokProfile: '',
 
   whatsappDefaultMessage:
-    'Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.',
+    'Olá! Preciso da ajuda urgente de um advogado criminalista. Pode me ajudar?',
   whatsChatDefaultMessage:
     'Gostaria de falar conosco agora mesmo? Clque abaixo 👇',
   slogan: '',
@@ -496,7 +496,7 @@ const content = {
       ctaButtonText: 'Falar diretamente comigo',
     },
     ctaSecondary: {
-      miniTag: '',
+      miniTag: 'Estamos de plantão',
       title: <h1>Não espere mais para proteger sua liberdade</h1>,
       subtitle: (
         <div>

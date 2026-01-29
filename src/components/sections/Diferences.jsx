@@ -59,7 +59,7 @@ export function Diferences({ colorMode }) {
     >
       <SectionWrapper>
         <div className="container mx-auto relative z-10">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <div className="bg-black border-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-2xl">
               <div className="p-8 md:p-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
