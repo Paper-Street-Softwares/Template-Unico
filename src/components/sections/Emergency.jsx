@@ -56,7 +56,8 @@ function Emergency({ colorMode }) {
                   Atendimento Imediato em Casos Criminais
                 </h3>
                 <p
-                  className={`text-sm md:text-base max-w-2xl leading-relaxed ${textOpacity}`}
+                  className={`text-sm md:text-base max-w-2xl leading-relaxed ${text}`}
+                  //para site de cliente específico deixar copy totalmente preto
                 >
                   Se você ou um familiar foi preso ou está sendo investigado, o
                   atendimento deve ser imediato. Cada minuto é decisivo para
