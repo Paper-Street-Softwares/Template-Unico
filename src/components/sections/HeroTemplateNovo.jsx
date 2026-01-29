@@ -216,7 +216,7 @@ function HeroTemplateNovo({
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.6 }}
-                    className={`absolute bottom-1 phone3:bottom-8 left-6 right-6 md:left-8 md:right-8 backdrop-blur-md p-4 phone3:p-4 rounded-2xl shadow-lg border ${borderColor} z-10 ${bgAlertHero}`}
+                    className={`absolute bottom-1 tablet1:bottom-8 left-6 right-6 md:left-8 md:right-8 backdrop-blur-md p-4 phone3:p-4 rounded-2xl shadow-lg border ${borderColor} z-10 ${bgAlertHero}`}
                   >
                     <div className="flex items-center gap-4 phone3:gap-5 ">
                       <div>
