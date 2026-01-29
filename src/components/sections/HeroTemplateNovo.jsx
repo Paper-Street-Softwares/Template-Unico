@@ -190,7 +190,7 @@ function HeroTemplateNovo({
                 className={`relative rounded-[1.5rem] phone2:rounded-[2.5rem] overflow-hidden aspect-[2/1] phone2:aspect-[3/2] md:aspect-[3/2] shadow-2xl lg:aspect-[3/4] ring-1 ring-black/5 bg-gray-100 ${image}`}
               >
                 <img
-                  src={content.texts.hero.heroDefaultMobile}
+                  src={content.texts.hero.heroDefaulMobiletImg}
                   alt={content.texts.hero.alt}
                   className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700 desktop1:hidden"
                   width={790}

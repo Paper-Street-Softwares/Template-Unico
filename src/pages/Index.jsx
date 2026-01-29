@@ -59,7 +59,7 @@ export default function Index() {
               frasesDestaque={false}
               accordion={true}
             />
-            <Speed colorMode={colorMode} />
+            {/* <Speed colorMode={colorMode} /> */}
             {/* <Cards colorMode={colorMode} /> */}
             {/* <InventarioComparativo colorMode={colorMode} /> */}
             {/* <FeaturesSemImage colorMode={colorMode} /> */}
@@ -72,7 +72,7 @@ export default function Index() {
             {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             <CtaNovoTemplate colorMode={colorMode} />
             {/* <StepsNovoTemplate colorMode={colorMode} /> */}
-            <FaqNovoTemplate colorMode={colorMode} />
+            {/* <FaqNovoTemplate colorMode={colorMode} /> */}
             <FooterNovoTemplate
               colorMode={colorMode}
               mapa={false}
