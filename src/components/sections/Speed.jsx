@@ -37,8 +37,8 @@ function Speed({ colorMode }) {
             title="O que é importante saber"
             colorMode={colorMode}
           />
-          <div className="max-w-4xl mx-auto bg-terciary/20 rounded-3xl p-8 md:p-12 border">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="max-w-4xl mx-auto bg-black rounded-3xl p-8 md:p-12 border border-white/0">
+            <div className="grid sm:grid-cols-2 gap-8">
               {[
                 {
                   text: 'Fui preso. Posso ficar calado ou isso piora tudo?',
@@ -86,14 +86,14 @@ function Speed({ colorMode }) {
 
             <div className="mt-10 text-center">
               <p
-                className={`text-paragraph4 font-medium font-secondFont inline-block px-4 py-1 rounded-full ${text}`}
+                className={`text-paragraph2 font-medium font-secondFont inline-block px-4 py-1 rounded-full ${text}`}
               >
                 Cada caso é diferente. Agir rápido e com orientação jurídica
                 pode mudar completamente o rumo do processo.
               </p>
             </div>
 
-            <div className="flex flex-col gap-4 w-fit justify-center items-start desktop1:m-auto">
+            <div className="flex flex-col gap-4 w-fit mt-6 mx-auto justify-center items-start">
               <ButtonReflexo
                 icon={
                   <svg
@@ -109,7 +109,7 @@ function Speed({ colorMode }) {
                 link={content.texts.links.ctaWhatsapp}
                 label="Falar agora com um advogado criminalista"
                 colorMode={colorMode}
-                className="mt-12"
+                className=""
               />
               <ButtonReflexo
                 id="ligar"
