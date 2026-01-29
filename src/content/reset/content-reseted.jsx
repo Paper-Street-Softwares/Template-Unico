@@ -104,7 +104,6 @@ const content = {
         'Sobre',
         // 'Perguntas',
         // 'Blog',
-        // 'Perguntas',
         // 'Mapa',
       ],
       menuId: ['home', 'feature', 'about'],
