@@ -67,10 +67,10 @@ function CtaNovoTemplate({ colorMode }) {
               {lisContainer.map((item, index) => (
                 <div
                   key={index}
-                  className={`font-secondFont flex gap-2 justify-center`}
+                  className={`font-secondFont flex gap-2 justify-start desktop1:justify-center`}
                 >
-                  <span>{item.icon}</span>
-                  <p>{item.text}</p>
+                  <span className={`text-primaryLight`}>{item.icon}</span>
+                  <p className="text-white">{item.text}</p>
                 </div>
               ))}
             </div>

@@ -37,6 +37,7 @@ function Important({ colorMode }) {
     <SectionArea className={`${backgroundMode}`}>
       <SectionWrapper>
         <SectionHeaderNovo
+          miniTitle="atenção"
           title={content.texts.important.title}
           colorMode={colorMode}
         />

@@ -113,7 +113,7 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'ESTAMOS DE PLANTÃO - SEJA ATENDIDO AGORA',
+      miniTag: 'Plantão 24h - atendimento imediato',
       title: (
         <h1>
           Advogado{' '}
@@ -146,14 +146,14 @@ const content = {
               </svg>
             </span>
           </span>{' '}
-          em Sobradinho – Atendimento Imediato 24h
+          em Sobradinho
         </h1>
       ),
       subtitle: (
         <p>
-          Atuação URGENTE em casos de prisão em flagrante, audiência de
-          custódia, Habeas Corpus, liberdade provisória e medidas
-          emergenciais.{' '}
+          Atuação <strong className="text-primaryLight">URGENTE</strong> em
+          casos de prisão em flagrante, audiência de custódia, Habeas Corpus,
+          liberdade provisória e medidas emergenciais.{' '}
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -216,22 +216,22 @@ const content = {
       },
       fraseObs:
         'Cada caso é diferente. Agir rápido e com orientação jurídica pode mudar completamente o rumo do processo.',
-      ctaButtonText: 'Falar agora com um advogado criminalista',
+      ctaButtonText: 'Falar agora com um advogado',
     },
     features: {
-      miniTag: 'ATENDIMENTO IMEDIATO',
+      miniTag: 'COMO POSSO AJUDAR',
       title: (
         <h1>
-          Quando sua
-          <span className="destaque italic font-light"> liberdade</span> está em
-          risco, agir rápido é essencial
+          Apoio jurídico
+          <span className="destaque italic font-light"> imediato</span> para
+          quem precisa agir sem perder tempo
         </h1>
       ),
       subtitle: '',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: '100%',
-      subtitleMessageFeature: 'comprometido com a sua liberdade',
+      titleMessageFeature: 'Prisão não é o fim. ',
+      subtitleMessageFeature: 'Defesa imediata pode mudar tudo.',
       cards: {
         card1: {
           title: 'Acompanhamento em Delegacia e Prisão em Flagrante',
@@ -536,7 +536,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Converse agora com um advogado criminalista',
+      ctaButtonText: 'Converse agora com um advogado',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },

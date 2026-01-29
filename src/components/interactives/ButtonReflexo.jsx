@@ -15,11 +15,13 @@ export default function ButtonReflexo({
   const { colorMode, whatsAppColor } = useColorMode()
   const isLigar = id === 'ligar'
   const effectiveWhatsAppColor = isLigar ? false : whatsAppColor
-  const shadowClass = effectiveWhatsAppColor
-    ? 'shadow-wppDark/30'
-    : colorMode === 'dark'
-      ? 'shadow-black/30'
-      : 'shadow-primaryDark/20'
+  const shadowClass = isLigar
+    ? 'shadow-red-500/30'
+    : effectiveWhatsAppColor
+      ? 'shadow-wppDark/30'
+      : colorMode === 'dark'
+        ? 'shadow-black/30'
+        : 'shadow-primaryDark/20'
 
   const themes = {
     light: 'bg-primaryDark text-corTitulosBranca border border-primaryDark/20',

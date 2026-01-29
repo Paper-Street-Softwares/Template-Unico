@@ -23,7 +23,7 @@ export function ColorModeProvider({ children }) {
 
 export const whatsAppThemes = {
   light: 'bg-wppDark text-corTitulosBranca border-green-600/30',
-  dark: 'bg-green-500 text-black',
+  dark: 'bg-wppDark text-corTitulosBranca border-green-600/30',
   default: 'bg-green-500 text-black',
 }
 
@@ -35,7 +35,7 @@ export const defaultButtonThemes = {
 
 export const alertTheme = {
   light: 'bg-red-800 text-corTitulosBranca border border-primaryDark/20',
-  dark: 'bg-red-500 text-corTitulosPreto',
+  dark: 'bg-red-800 text-corTitulosBranca border border-primaryDark/20 shadow-white',
 }
 
 export function useColorMode() {

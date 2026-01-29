@@ -1,5 +1,5 @@
 import React from 'react'
-import { AlertTriangle, PhoneCall } from 'lucide-react'
+import { AlertTriangle, Phone } from 'lucide-react'
 import ButtonReflexo from '../interactives/ButtonReflexo'
 import content from '../../content/content'
 
@@ -68,12 +68,14 @@ function Emergency({ colorMode }) {
 
             <div className="w-full md:w-auto flex-shrink-0">
               <ButtonReflexo
-                icon={<PhoneCall className="mr-2 h-5 w-5" />}
-                label="Falar com Advogado Agora"
-                link={content.texts.links.ctaWhatsapp}
-                size="lg"
-                className="w-full md:w-auto bg-red-600 hover:bg-red-700 text-white font-bold border-2 border-red-500/50 shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_30px_rgba(220,38,38,0.5)] transition-all animate-bounce-subtle cursor-pointer"
-              ></ButtonReflexo>
+                id="ligar"
+                icon={<Phone width={20} />}
+                link={`tel:${content.texts.infos.phone}`}
+                label="Emergência? Ligue agora!"
+                colorMode={colorMode}
+                bgClass="bg-[#ff2c2c]"
+                className="text-white"
+              />
             </div>
           </div>
         </div>
