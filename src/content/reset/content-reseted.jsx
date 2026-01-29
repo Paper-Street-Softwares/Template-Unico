@@ -146,7 +146,7 @@ const content = {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
         text: 'A_Definir',
-        textTwo: '',
+        textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
       images: {

@@ -1,6 +1,5 @@
 import logo from '../assets/imgs/logo/logo.webp'
 import heroDefaultImg from '../assets/imgs/hero/lawHero.webp'
-import heroDefaultMobileImage from '../assets/imgs/hero/lawHeroMobile.webp'
 import imgFeatures from '../assets/imgs/features/imgServices.webp'
 
 import aboutImg from '../assets/imgs/about/aboutImg.webp'
@@ -30,14 +29,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Brasil Matos Advocacia',
+  name: 'A_Definir',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'divorcio.brasilmatos.com.br', // Sem "www"
+  domain: 'A_Definir', // Sem "www"
   phone: {
-    ddd: '11',
-    firstPart: '94772', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '5232', // Apenas os 4 últimos números
+    ddd: '00',
+    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0000', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -52,7 +51,10 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>São Paulo - SP</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -98,25 +100,26 @@ const content = {
         'Início',
         'Serviços',
         'Sobre',
-        'Perguntas',
+        // 'Perguntas',
         // 'Blog',
+        // 'Perguntas',
         // 'Mapa',
       ],
-      menuId: ['home', 'feature', 'about', 'faq'],
+      menuId: ['home', 'feature', 'about'],
       ariaLabel: 'Botão de Contato',
       ctaButtonText: 'Contato',
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'DIVÓRCIO SEM COMPLICAÇÃO',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          DIVÓRCIO{' '}
+          A_Definir{' '}
           <span className="destaque relative italic font-light">
-            ONLINE
-            <span>
+            A_Definir
+            {/* <span>
               <svg
-                className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
+                className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-accent/30"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -127,41 +130,23 @@ const content = {
                   fill="none"
                 />
               </svg>
-              <svg
-                className="hero-underline absolute bottom-0 left-0 w-full h-3 text-accent/30 desktop1:hidden"
-                viewBox="0 0 100 10"
-                preserveAspectRatio="none"
-              >
-                <path
-                  d="M0 5 Q 50 10 100 5"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  fill="none"
-                />
-              </svg>
-            </span>
-          </span>{' '}
-          — RÁPIDO, SEGURO E SEM SAIR DE CASA
+            </span> */}
+          </span>
+          ?
         </h1>
       ),
-      subtitle: (
-        <p>
-          Orientação jurídica especializada para resolver seu divórcio de forma
-          clara, organizada e sem desgaste emocional.
-        </p>
-      ),
+      subtitle: <p>A_Definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
-      heroDefaultMobileImage: heroDefaultMobileImage, // img da pessoa mobile
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Quero resolver meu divórcio agora',
+      ctaButtonText: 'Preciso de ajuda urgente',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
-        icon: <Check />,
-        iconTwo: <Check />,
-        text: ' Atendimento 100% online e sigiloso',
-        textTwo: ' Com orientação de advogada especializada',
+        icon: <LucideIdCard />,
+        iconTwo: <LucideIdCard />,
+        text: 'A_Definir',
+        textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
       images: {
@@ -208,25 +193,23 @@ const content = {
       ctaButtonText: 'A_Definir',
     },
     features: {
-      miniTag: 'Seu divórcio não precisa ser complicado',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Sabemos que o momento do divórcio é
-          <span className="destaque italic font-light"> delicado</span> e,
-          muitas vezes, doloroso.
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir</span>
+          A_Definir
         </h1>
       ),
-      subtitle:
-        'Por isso, oferecemos um atendimento humanizado, rápido e totalmente online, para que você resolva tudo com tranquilidade e sem burocracia. Você não precisa enfrentar filas, deslocamentos ou desgaste emocional. Nós cuidamos de tudo para você.',
+      subtitle: 'A_Definir',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
       titleMessageFeature: 'A_Definir',
       subtitleMessageFeature: 'A_Definir',
       cards: {
         card1: {
-          title: 'Divórcio extrajudicial',
-          subtitle:
-            'Resolvido em cartório, de forma rápida e sem processo judicial.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -240,9 +223,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'Divórcio consensual',
-          subtitle:
-            'Quando há acordo entre as partes, o divórcio acontece de forma simples e menos desgastante.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -256,9 +238,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: 'Divórcio judicial',
-          subtitle:
-            'Indicado quando não há acordo, com acompanhamento jurídico para proteger seus direitos.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir <br />
@@ -271,9 +252,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: 'Divórcio com ou sem filhos',
-          subtitle:
-            'Orientação completa, com atenção especial às questões que envolvem filhos e responsabilidades.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -287,9 +267,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card5: {
-          title: 'Divórcio com partilha de bens',
-          subtitle:
-            'A_DeAnálise e divisão justa dos bens, garantindo segurança em cada etapa do processo.finir',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -320,9 +299,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card6: {
-          title: 'Divórcio sem partilha imediata',
-          subtitle:
-            'Possibilidade de se divorciar agora e resolver a partilha em um momento posterior.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -366,30 +344,22 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'BRASIL MATOS ADVOCACIA',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Por que escolher
-          <span className="destaque italic font-light"> nosso</span> escritório?
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir</span>{' '}
+          A_Definir
         </h1>
       ),
       SecondPartTitle: '',
-      subtitle:
-        'Nosso compromisso é tornar esse momento mais leve, rápido e seguro para você.',
+      subtitle: 'A_Definir',
       paragraph: (
         <div>
-          <span className="flex gap-2 items-center">
-            <Check /> <p>Atuação especializada em Direito de Família</p>
-          </span>
-          <span className="flex gap-2 items-center">
-            <Check /> <p>Experiência em divórcios online</p>
-          </span>
-          <span className="flex gap-2 items-center">
-            <Check /> <p>Atendimento ágil e personalizado</p>
-          </span>
-          <span className="flex gap-2 items-center">
-            <Check /> <p>Transparência em todas as etapas</p>
-          </span>
+          A_Definir
+          <br />
+          <br />
+          A_Definir
         </div>
       ),
 
@@ -408,7 +378,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Falar diretamente com as advogadas',
+      ctaButtonText: 'Falar diretamente com a Dr. Marina',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -489,52 +459,45 @@ const content = {
       ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
-      miniTag: 'FALE CONOSCO',
-      title: <h1>Fale agora com uma advogada</h1>,
+      miniTag: 'A_Definir',
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Se você está pensando em se divorciar ou precisa de orientação, fale
-            conosco agora.
-          </p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
       container: (
         <div className="flex flex-col gap-3">
-          <div className="flex items-start gap-2 mx-auto">
+          <div className="flex items-start gap-2">
             {' '}
-            <span className="border-2 rounded-full p-1">
-              <Check className="" width={17} height={17} />
+            <span className="bg-primaryDark rounded-full p-0.5">
+              <Check className="text-white" width={22} />
             </span>{' '}
-            Orientação clara sobre seus direitos no divórcio
+            Análise imediata do seu caso e da possibilidade de suspender ou
+            reverter a apreensão
           </div>
-          <div className="flex items-start gap-2 mx-auto">
+          <div className="flex items-start gap-2">
             {' '}
-            <span className="border-2 rounded-full p-1">
-              <Check className="" width={17} height={17} />
+            <span className="bg-primaryDark rounded-full p-0.5">
+              <Check className="text-white" width={22} />
             </span>{' '}
-            Atendimento humanizado e sigiloso com advogada especializada
+            Avaliação do contrato para identificar juros abusivos e falhas
+            legais
           </div>
-          <div className="flex items-start gap-2 mx-auto">
+          <div className="flex items-start gap-2">
             {' '}
-            <span className="border-2 rounded-full p-1">
-              <Check className="" width={17} height={17} />
+            <span className="bg-primaryDark rounded-full p-0.5">
+              <Check className="text-white" width={22} />
             </span>{' '}
-            Divórcio online, sem audiências e sem desgaste emocional
+            Orientação clara sobre prazos, riscos e próximos passos
           </div>
-          <div className="flex items-start gap-2 mx-auto">
+          <div className="flex items-start gap-2">
             {' '}
-            <span className="border-2 rounded-full p-1">
-              <Check className="" width={17} height={17} />
-            </span>{' '}
-            Acompanhamento rápido pelo WhatsApp, do início ao fim
-          </div>
-          <div className="flex items-start gap-2 mx-auto">
-            {' '}
-            <span className="border-2 rounded-full p-1">
-              <Check className="" width={17} height={17} />
-            </span>{' '}
-            Segurança para encerrar esse ciclo e seguir em frente
+            <span className="bg-primaryDark rounded-full p-0.5">
+              <Check className="text-white" width={22} />
+            </span>
+            Acompanhamento transparente e atuação responsável em todas as fases
+            do processo
           </div>
         </div>
       ),
@@ -546,7 +509,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Quero iniciar meu divórcio online',
+      ctaButtonText: 'A_Definir',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
@@ -560,29 +523,25 @@ const content = {
     //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
     // },
     faq: {
-      miniTag: 'TIRE SUAS DÚVIDAS',
-      title: 'Perguntas Frequentes',
-      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
+      miniTag: 'A_Definir',
+      title: 'A_Definir',
+      subtitle: 'A_Definir',
       questions: {
         question1: {
-          question: 'Preciso sair de casa?',
-          answer:
-            'Não. Todo o processo pode ser feito 100% online, sem deslocamentos, filas ou desgaste desnecessário. Você resolve tudo com segurança e conforto, de onde estiver.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question2: {
-          question: 'Quanto tempo demora?',
-          answer:
-            'O prazo varia conforme o tipo de divórcio, mas em muitos casos o processo é rápido e pode ser iniciado no mesmo dia após a análise da documentação.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question3: {
-          question: 'Precisa de audiência?',
-          answer:
-            'Na maioria dos casos, não. O divórcio pode ser resolvido sem audiências, evitando exposição e situações desconfortáveis.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question4: {
-          question: 'Posso me divorciar mesmo sem acordo total?',
-          answer:
-            'Sim. Mesmo sem acordo em todos os pontos, é possível dar entrada no divórcio. Cada caso é analisado com cuidado para garantir seus direitos e a melhor solução possível.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
       },
       paragraph: 'Clique aqui caso tenha mais dúvidas',

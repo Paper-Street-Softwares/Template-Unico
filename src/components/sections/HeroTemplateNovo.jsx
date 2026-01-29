@@ -7,8 +7,6 @@ import {
   Phone,
   ArrowRight,
   AlertTriangle,
-  HeartCrack,
-  Split,
 } from 'lucide-react'
 import content from '../../content/content'
 import SectionArea from '../sectionElements/SectionArea'
@@ -39,7 +37,7 @@ function HeroTemplateNovo({
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
-      bgMinitag = 'bg-transparent border-primaryDark text-primaryDark'
+      bgMinitag = 'bg-white border-primaryDark text-primaryDark'
       // textObs = 'text-green-500'
       image = ' border-[8px] border-white'
       bgAlertHero = 'bg-white'
@@ -80,7 +78,7 @@ function HeroTemplateNovo({
       paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
-      <section className="relative min-h-[90vh] w-full pt-[120px] pb-[70px] phone3:pt-[130px] tablet1:pt-[170px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
+      <section className="relative min-h-[90vh] w-full pt-[60px] phone2:pt-[90px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] phone3:pt-[100px] tablet1:pt-[170px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
         {/* Abstract Background Shapes */}
         <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}
@@ -89,31 +87,29 @@ function HeroTemplateNovo({
           className={`absolute bottom-0 left-0 w-[40%] h-1/2 rounded-full blur-3xl -translate-x-1/4 translate-y-1/4 z-0 ${backgroundMode}`}
         />
         <SectionWrapper>
-          <div className="container relative z-10 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="container relative z-10 grid lg:grid-cols-2 gap-4 phone2:gap-6 lg:gap-20 items-center">
             {/* Content */}
 
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="space-y-8 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
+              className="space-y-2 desktop1:space-y-8 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
             >
               <div
-                className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
+                className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-[10px] phone2:text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
               >
-                <span>
-                  <Split className="w-4 h-4" />
-                </span>
+                <span>{/* <MapPin className="w-4 h-4" /> */}🚨</span>
                 {content.texts.hero.miniTag}
               </div>
               <h1
-                className={` desktop1:text-start text-[31px] phone2:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] ${text} `}
+                className={` desktop1:text-start text-[21px] phone2:text-[28px] phone3:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] ${text} `}
               >
                 {content.texts.hero.title}
               </h1>
 
               <p
-                className={`text-start desktop1:text-start text-lg md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
+                className={`text-start desktop1:text-start text-[12px] phone2:text-[12px] phone3:text-[14px] md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
               >
                 {content.texts.hero.subtitle}
               </p>
@@ -191,22 +187,23 @@ function HeroTemplateNovo({
               className="relative order-1 lg:order-2"
             >
               <div
-                className={`relative rounded-[2.5rem] overflow-hidden aspect-[3/2] shadow-2xl lg:aspect-[3/4] ring-1 ring-black/5 bg-gray-100 ${image}`}
+                className={`relative rounded-[1.5rem] phone2:rounded-[2.5rem] overflow-hidden aspect-[2/1] phone2:aspect-[3/2] md:aspect-[3/2] shadow-2xl lg:aspect-[3/4] ring-1 ring-black/5 bg-gray-100 ${image}`}
               >
                 <img
-                  src={content.texts.hero.heroDefaultMobileImage}
+                  src={content.texts.hero.heroDefaultMobile}
                   alt={content.texts.hero.alt}
                   className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700 desktop1:hidden"
-                  width={621}
-                  height={414}
+                  width={790}
+                  height={520}
                   fetchPriority="high"
                 />
+
                 <img
                   src={content.texts.hero.heroDefaultImage}
                   alt={content.texts.hero.alt}
                   className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700 hidden desktop1:flex"
-                  width={630}
-                  height={495}
+                  width={426}
+                  height={573}
                   fetchPriority="high"
                 />
 
