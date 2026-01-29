@@ -31,10 +31,10 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'A_Definir',
+  name: 'Dra. Adelia Almeida',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'A_Definir', // Sem "www"
+  domain: 'adeliaadv.com.br', // Sem "www"
   phone: {
     ddd: '00',
     firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
@@ -54,9 +54,6 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (

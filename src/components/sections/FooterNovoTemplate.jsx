@@ -10,6 +10,7 @@ import content from '../../content/content'
 function FooterNovoTemplate({
   mapa,
   colorMode,
+  phone,
   phoneSecond,
   expediente,
   adress,
@@ -64,7 +65,7 @@ function FooterNovoTemplate({
                 <img
                   src={content.texts.navbar.logo.img}
                   alt={content.texts.navbar.logo.alt}
-                  className="w-[50%]"
+                  className="w-[70%]"
                   width={187}
                   height={119}
                 />
@@ -152,12 +153,14 @@ function FooterNovoTemplate({
                         </span>
                       </li>
                     )}
-                    <li className="flex items-center gap-3">
-                      <Phone className={`w-5 h-5 shrink-0 ${iconColor}`} />
-                      <span className="font-secondFont font-light">
-                        {content.texts.infos.phone}
-                      </span>
-                    </li>
+                    {phone && (
+                      <li className="flex items-center gap-3">
+                        <Phone className={`w-5 h-5 shrink-0 ${iconColor}`} />
+                        <span className="font-secondFont font-light">
+                          {content.texts.infos.phone}
+                        </span>
+                      </li>
+                    )}
                     {phoneSecond && (
                       <li className="flex items-center gap-3">
                         <Phone className={`w-5 h-5 shrink-0 ${iconColor}`} />

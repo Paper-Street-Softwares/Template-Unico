@@ -77,6 +77,7 @@ export default function Index() {
             <FooterNovoTemplate
               colorMode={colorMode}
               mapa={false}
+              phone={true}
               phoneSecond={false}
               expediente={false}
               adress={true}
