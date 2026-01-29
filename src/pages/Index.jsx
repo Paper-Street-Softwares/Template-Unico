@@ -56,8 +56,8 @@ export default function Index() {
           {/* Lazy sections */}
           <Suspense fallback={null}>
             <Emergency colorMode={colorMode} />
-            {/* <Important colorMode={colorMode} /> */}
-            <Speed colorMode={colorMode} />
+            <Important colorMode={colorMode} />
+            {/* <Speed colorMode={colorMode} /> */}
             <FeaturesNovaTemplate
               colorMode={colorMode}
               frasesDestaque={true}

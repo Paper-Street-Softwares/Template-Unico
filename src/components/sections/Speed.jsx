@@ -33,35 +33,28 @@ function Speed({ colorMode }) {
     <SectionArea className={`${backgroundMode}`}>
       <SectionWrapper>
         <section className="">
-          <SectionHeaderNovo
-            title="O que é importante saber"
-            colorMode={colorMode}
-          />
+          <SectionHeaderNovo title="" colorMode={colorMode} />
           <div className="max-w-4xl mx-auto bg-black rounded-3xl p-8 md:p-12 border border-white/0">
             <div className="grid sm:grid-cols-2 gap-8">
               {[
                 {
-                  text: 'Fui preso. Posso ficar calado ou isso piora tudo?',
-                  subtitle:
-                    'Mantenha a calma e fique em silêncio. Não diga nada e entre em contato comigo agora mesmo. Falar sem orientação vai piorar tudo.',
+                  text: 'A_Definir',
+                  subtitle: 'A_Definir',
                   icon: Siren,
                 },
                 {
-                  text: 'Meu parente foi preso, o que posso fazer?',
-                  subtitle:
-                    'Descubra para onde ele foi levado e entre em contato imediatamente. As primeiras horas são decisivas para a liberdade dele.',
+                  text: 'A_Definir',
+                  subtitle: 'A_Definir',
                   icon: Users,
                 },
                 {
-                  text: 'Tem como soltar ele agora? ',
-                  subtitle:
-                    'Tem, mas o tempo é decisivo. Fale comigo agora para agir imediatamente.',
+                  text: 'A_Definir',
+                  subtitle: 'A_Definir',
                   icon: ShieldCheck,
                 },
                 {
-                  text: 'Quanto tempo eu tenho para me defender?',
-                  subtitle:
-                    'Cada minuto que passa sua situação se complica mais. Então não espere nada mais e conte com nossa ajuda imediata.',
+                  text: 'A_Definir',
+                  subtitle: 'A_Definir',
                   icon: Clock,
                 },
               ].map((item, idx) => (

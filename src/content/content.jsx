@@ -191,27 +191,32 @@ const content = {
     },
     important: {
       miniTag: 'A_Definir',
-      title: 'A_Definir',
+      title: 'O que é importante saber',
       cards: {
         card1: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Fui preso. Posso ficar calado ou isso piora tudo?',
+          paragraph:
+            'Mantenha a calma e fique em silêncio. Não diga nada e entre em contato comigo agora mesmo. Falar sem orientação vai piorar tudo.',
         },
         card2: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Meu parente foi preso, o que posso fazer?',
+          paragraph:
+            'Descubra para onde ele foi levado e entre em contato imediatamente. As primeiras horas são decisivas para a liberdade dele.',
         },
         card3: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Tem como soltar ele agora?',
+          paragraph:
+            'Tem, mas o tempo é decisivo. Fale comigo agora para agir imediatamente.',
         },
         card4: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Quanto tempo eu tenho para me defender?',
+          paragraph:
+            'Cada minuto que passa sua situação se complica mais. Então não espere nada mais e conte com nossa ajuda imediata.',
         },
       },
-      fraseObs: 'A_Definir',
-      ctaButtonText: 'A_Definir',
+      fraseObs:
+        'Cada caso é diferente. Agir rápido e com orientação jurídica pode mudar completamente o rumo do processo.',
+      ctaButtonText: 'Falar agora com um advogado criminalista',
     },
     features: {
       miniTag: 'ATENDIMENTO IMEDIATO',
