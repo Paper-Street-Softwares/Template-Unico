@@ -35,9 +35,9 @@ export const infos = {
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
   domain: 'A_Definir', // Sem "www"
   phone: {
-    ddd: '00',
-    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '0000', // Apenas os 4 últimos números
+    ddd: '51',
+    firstPart: '99803', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '4276', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -52,10 +52,7 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir</p>
+      <p>Sobradinho - RS</p>
     </div>
   ),
   enderecoSecundario: (
