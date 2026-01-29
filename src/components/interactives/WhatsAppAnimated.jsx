@@ -88,7 +88,7 @@ export default function WhatsappAnimated() {
   const themes = whatsAppColor ? whatsAppThemes : defaultButtonThemes
 
   const colorButton = themes[colorMode] || themes.default
-  const iconColor = colorMode === 'light' ? '#fff' : '#fff'
+  const iconColor = colorMode === 'light' ? '#fff' : '#000'
 
   console.log({
     whatsAppColor,
