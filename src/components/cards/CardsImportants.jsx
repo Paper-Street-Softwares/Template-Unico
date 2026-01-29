@@ -33,6 +33,8 @@ function CardsImportants({ title, paragraph, colorMode }) {
       <div className="absolute bg-primaryDark border-2 group-hover:bg-white group-hover:border-2 group-hover:border-black duration-700 transition-all rounded-full p-3 -top-6 left-6">
         <img
           src={imgIcon}
+          width={32}
+          height={32}
           alt="Ícone de exclamação"
           className="w-8 group-hover:invert duration-700 transition-all"
         />
