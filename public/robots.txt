@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.A_Definir/sitemap.xml
+Sitemap: https://www.mauriciobatista.adv.br//sitemap.xml

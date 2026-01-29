@@ -38,7 +38,7 @@ export const infos = {
   name: 'Dr. Maurício Batista',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'A_Definir', // Sem "www"
+  domain: 'mauriciobatista.adv.br', // Sem "www"
   phone: {
     ddd: '51',
     firstPart: '99803', // Apenas os 5 primeiros números (incluindo o 9)
