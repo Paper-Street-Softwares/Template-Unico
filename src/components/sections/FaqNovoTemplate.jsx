@@ -9,6 +9,7 @@ import {
 } from '../interactives/FaqNovo'
 import content from '../../content/content'
 import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
+import ButtonReflexo from '../../components/interactives/ButtonReflexo'
 
 function FaqNovoTemplate({ colorMode }) {
   const faqs = Object.values(content.texts.faq.questions)
@@ -75,6 +76,16 @@ function FaqNovoTemplate({ colorMode }) {
                 </AccordionItem>
               ))}
             </Accordion>
+          </div>
+
+          <div className="flex justify-center mt-12">
+            <ButtonReflexo
+              icon={content.texts.svgs.wpp}
+              link={content.texts.links.ctaWhatsapp}
+              label={content.texts.hero.ctaButtonText}
+              colorMode={colorMode}
+              className="my-0"
+            />
           </div>
         </section>
       </SectionWrapper>

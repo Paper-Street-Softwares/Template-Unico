@@ -38,6 +38,8 @@ import Cards from '../components/sections/Cards'
 import InventarioComparativo from '../components/sections/Tabela'
 import Important from '../components/sections/Important'
 import Speed from '../components/sections/Speed'
+import Emergency from '../components/sections/Emergency'
+import { Diferences } from '../components/sections/Diferences'
 
 export default function Index() {
   const { colorMode, setColorMode } = useColorMode()
@@ -50,28 +52,27 @@ export default function Index() {
 
         <main>
           {/* LCP — NÃO usar lazy */}
-          <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={true} />
+          <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
+            <Emergency colorMode={colorMode} />
             {/* <Important colorMode={colorMode} /> */}
+            <Speed colorMode={colorMode} />
             <FeaturesNovaTemplate
               colorMode={colorMode}
-              frasesDestaque={false}
-              accordion={true}
+              frasesDestaque={true}
+              accordion={false}
             />
-            <Speed colorMode={colorMode} />
+            <Diferences colorMode={colorMode} />
             {/* <Cards colorMode={colorMode} /> */}
-            {/* <InventarioComparativo colorMode={colorMode} /> */}
-            {/* <FeaturesSemImage colorMode={colorMode} /> */}
             <AboutNovoTemplate
               colorMode={colorMode}
               ButtonModal={false}
-              benefits={false}
+              benefits={true}
             />
-            {/* <TeamSectionNew colorMode={colorMode} /> */}
             {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             <CtaNovoTemplate colorMode={colorMode} />
-            {/* <StepsNovoTemplate colorMode={colorMode} /> */}
+            <StepsNovoTemplate colorMode={colorMode} />
             <FaqNovoTemplate colorMode={colorMode} />
             <FooterNovoTemplate
               colorMode={colorMode}
@@ -79,7 +80,7 @@ export default function Index() {
               phoneSecond={false}
               expediente={false}
               adress={true}
-              email={true}
+              email={false}
               emailSecond={false}
               fraseFooter={true} // frase Google LLC
               obs={false}

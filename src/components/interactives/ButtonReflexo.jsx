@@ -18,7 +18,7 @@ export default function ButtonReflexo({
   const shadowClass = effectiveWhatsAppColor
     ? 'shadow-wppDark/30'
     : colorMode === 'dark'
-      ? 'shadow-black'
+      ? 'shadow-black/30'
       : 'shadow-primaryDark/20'
 
   const themes = {

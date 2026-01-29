@@ -47,7 +47,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
       textObservation = 'text-white'
       break
     case 'dark':
-      backgroundMode = 'bg-darkOpacity'
+      backgroundMode = 'bg-black'
       bgAccordion = 'rgba(0,0,0,0.8)'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
@@ -100,7 +100,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                   className="relative order-2 lg:order-1 w-full m-auto"
                 >
                   <div
-                    className={`relative overflow-hidden rounded-3xl shadow-2xl  ${image}`}
+                    className={`relative overflow-hidden rounded-3xl shadow-2xl aspect-[4/5]  ${image}`}
                   >
                     <img
                       src={content.texts.features.imgFeatures}
@@ -123,7 +123,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                     </div>
                   )}
                 </motion.div>
-                <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-start desktop1:m-auto">
+                <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-center mx-auto">
                   <ButtonReflexo
                     icon={
                       <svg
