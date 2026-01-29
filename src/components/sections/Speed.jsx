@@ -1,7 +1,7 @@
 import React from 'react'
 import SectionArea from '../sectionElements/SectionArea'
 import SectionWrapper from '../sectionElements/SectionWrapper'
-import { Clock, Gavel, ShieldCheck, Phone } from 'lucide-react'
+import { Siren, Users, ShieldCheck, Clock, Phone } from 'lucide-react'
 import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
 import ButtonReflexo from '../interactives/ButtonReflexo'
 import content from '../../content/content'
@@ -44,13 +44,13 @@ function Speed({ colorMode }) {
                   text: 'Fui preso. Posso ficar calado ou isso piora tudo?',
                   subtitle:
                     'Mantenha a calma e fique em silêncio. Não diga nada e entre em contato comigo agora mesmo. Falar sem orientação vai piorar tudo.',
-                  icon: Clock,
+                  icon: Siren,
                 },
                 {
                   text: 'Meu parente foi preso, o que posso fazer?',
                   subtitle:
                     'Descubra para onde ele foi levado e entre em contato imediatamente. As primeiras horas são decisivas para a liberdade dele.',
-                  icon: Gavel,
+                  icon: Users,
                 },
                 {
                   text: 'Tem como soltar ele agora? ',
@@ -62,7 +62,7 @@ function Speed({ colorMode }) {
                   text: 'Quanto tempo eu tenho para me defender?',
                   subtitle:
                     'Cada minuto que passa sua situação se complica mais. Então não espere nada mais e conte com nossa ajuda imediata.',
-                  icon: ShieldCheck,
+                  icon: Clock,
                 },
               ].map((item, idx) => (
                 <div
@@ -84,7 +84,15 @@ function Speed({ colorMode }) {
               ))}
             </div>
 
-            <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-start desktop1:m-auto">
+            <div className="mt-10 text-center">
+              <p
+                className={`text-title2 font-medium font-secondFont inline-block px-4 py-1 rounded-full ${text}`}
+              >
+                Tudo conforme a lei.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-4 w-fit justify-center items-start desktop1:m-auto">
               <ButtonReflexo
                 icon={
                   <svg
