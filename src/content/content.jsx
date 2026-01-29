@@ -210,7 +210,7 @@ const content = {
           risco, agir rápido é essencial
         </h1>
       ),
-      subtitle: 'A_Definir',
+      subtitle: '',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
       titleMessageFeature: '100%',
