@@ -1,5 +1,6 @@
 import { useColorMode } from '../../context/UseContextArchive'
 import { whatsAppThemes } from '../../context/UseContextArchive'
+import { alertTheme } from '../../context/UseContextArchive'
 
 export default function ButtonReflexo({
   link,
@@ -35,9 +36,11 @@ export default function ButtonReflexo({
     default: 'bg-black/40',
   }
 
-  const colors = effectiveWhatsAppColor
-    ? whatsAppThemes[colorMode]
-    : (bgClass ?? themes[colorMode])
+  const colors = isLigar
+    ? alertTheme[colorMode]
+    : effectiveWhatsAppColor
+      ? whatsAppThemes[colorMode]
+      : (bgClass ?? themes[colorMode])
 
   const shineColor = shineThemes[colorMode]
   const spacing = padding || 'px-6 py-3'

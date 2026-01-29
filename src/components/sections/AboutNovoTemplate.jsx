@@ -158,7 +158,6 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                     link={`tel:${content.texts.infos.phone}`}
                     label="Emergência? Ligue agora!"
                     colorMode={colorMode}
-                    bgClass="bg-[#ff2c2c]"
                     className="text-white mx-auto desktop1:m-0"
                   />
                 </div>
@@ -210,7 +209,6 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                   link={`tel:${content.texts.infos.phone}`}
                   label="Emergência? Ligue agora!"
                   colorMode={colorMode}
-                  bgClass="bg-[#ff2c2c]"
                   className="text-white"
                 />
               </div>

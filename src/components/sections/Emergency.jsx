@@ -52,9 +52,9 @@ function Emergency({ colorMode }) {
                     Plantão Criminal 24 Horas
                   </span>
                 </div>
-                <h3 className={`text-xl md:text-2xl font-bold ${text} mb-2`}>
+                <h1 className={`text-xl md:text-2xl font-bold ${text} mb-2`}>
                   Atendimento Imediato em Casos Criminais
-                </h3>
+                </h1>
                 <p
                   className={`text-sm md:text-base max-w-2xl leading-relaxed ${text}`}
                   //para site de cliente específico deixar copy totalmente preto
@@ -73,7 +73,6 @@ function Emergency({ colorMode }) {
                 link={`tel:${content.texts.infos.phone}`}
                 label="Emergência? Ligue agora!"
                 colorMode={colorMode}
-                bgClass="bg-[#ff2c2c]"
                 className="text-white"
               />
             </div>
