@@ -86,9 +86,10 @@ function Speed({ colorMode }) {
 
             <div className="mt-10 text-center">
               <p
-                className={`text-title2 font-medium font-secondFont inline-block px-4 py-1 rounded-full ${text}`}
+                className={`text-paragraph4 font-medium font-secondFont inline-block px-4 py-1 rounded-full ${text}`}
               >
-                Tudo conforme a lei.
+                Cada caso é diferente. Agir rápido e com orientação jurídica
+                pode mudar completamente o rumo do processo.
               </p>
             </div>
 
