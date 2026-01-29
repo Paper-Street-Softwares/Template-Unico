@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.divorcio.brasilmatos.com.br/sitemap.xml
+Sitemap: https://www.A_Definir/sitemap.xml
