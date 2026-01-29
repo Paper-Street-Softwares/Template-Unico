@@ -470,41 +470,28 @@ const content = {
           <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
-      container: (
-        <div className="flex flex-col gap-3">
-          <div className="flex items-start gap-2">
-            {' '}
-            <span className="bg-primaryDark rounded-full p-0.5">
-              <Check className="text-white" width={22} />
-            </span>{' '}
-            Análise imediata do seu caso e da possibilidade de suspender ou
-            reverter a apreensão
-          </div>
-          <div className="flex items-start gap-2">
-            {' '}
-            <span className="bg-primaryDark rounded-full p-0.5">
-              <Check className="text-white" width={22} />
-            </span>{' '}
-            Avaliação do contrato para identificar juros abusivos e falhas
-            legais
-          </div>
-          <div className="flex items-start gap-2">
-            {' '}
-            <span className="bg-primaryDark rounded-full p-0.5">
-              <Check className="text-white" width={22} />
-            </span>{' '}
-            Orientação clara sobre prazos, riscos e próximos passos
-          </div>
-          <div className="flex items-start gap-2">
-            {' '}
-            <span className="bg-primaryDark rounded-full p-0.5">
-              <Check className="text-white" width={22} />
-            </span>
-            Acompanhamento transparente e atuação responsável em todas as fases
-            do processo
-          </div>
-        </div>
-      ),
+      container: {
+        label1: {
+          icon: <Check />,
+          text: ' Análise inicial do seu caso criminal',
+        },
+        label2: {
+          icon: <Check />,
+          text: ' Atendimento direto com advogado criminalista',
+        },
+        label3: {
+          icon: <Check />,
+          text: ' Resposta rápida e acompanhamento pelo WhatsApp',
+        },
+        label4: {
+          icon: <Check />,
+          text: ' Atuação iniciada imediatamente após a análise',
+        },
+        label5: {
+          icon: <Check />,
+          text: ' Mais segurança para você e sua família em um momento decisivo',
+        },
+      },
       // subtitleDireita: (
       //   <p className="gap-3 flex font-mainFont opacity-60 mt-1">
       //     <span>E N T R E </span> E M <span>C O N T A T O</span> V I A

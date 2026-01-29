@@ -108,12 +108,12 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                   <div className="space-y-4">
                     {[
                       {
-                        title: 'Atendimento Personalizado',
-                        desc: 'Cada caso de busca e apreensão é analisado de forma individual, com estratégia jurídica sob medida.',
+                        title: 'Defesa estratégica desde a primeira hora',
+                        desc: 'Atuação imediata para proteger sua liberdade em cada decisão do caso.',
                       },
                       {
-                        title: 'Transparência Total',
-                        desc: 'Você entende o que está acontecendo e acompanha cada etapa do processo com clareza.',
+                        title: 'Transparência Real ',
+                        desc: 'Você sabe exatamente o que pode acontecer, os riscos envolvidos e os próximos passos.',
                       },
                     ].map((item, idx) => (
                       <div key={idx} className="flex items-start gap-4">

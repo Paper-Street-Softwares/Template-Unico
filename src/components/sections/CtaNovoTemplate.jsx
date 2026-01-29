@@ -32,6 +32,8 @@ function CtaNovoTemplate({ colorMode }) {
       backgroundMode = 'bg-primaryDark'
   }
 
+  const lisContainer = Object.values(content.texts.ctaSecondary.container)
+
   return (
     <SectionArea className={`relative z-0 ${backgroundMode}`}>
       {/* Fundo decorativo */}
@@ -59,8 +61,18 @@ function CtaNovoTemplate({ colorMode }) {
               {content.texts.ctaSecondary.subtitle}
             </p>
 
-            <div className={`rounded-lg p-4 mb-4 text-start`}>
-              {content.texts.ctaSecondary.container}
+            <div
+              className={`rounded-lg p-4 mb-4 text-start flex flex-col justify-center ${textOpacity}`}
+            >
+              {lisContainer.map((item, index) => (
+                <div
+                  key={index}
+                  className={`font-secondFont flex gap-2 justify-center`}
+                >
+                  <span>{item.icon}</span>
+                  <p>{item.text}</p>
+                </div>
+              ))}
             </div>
 
             {/* <div>

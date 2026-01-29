@@ -100,7 +100,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                   className="relative order-2 lg:order-1 w-full m-auto"
                 >
                   <div
-                    className={`relative overflow-hidden rounded-3xl shadow-2xl  ${image}`}
+                    className={`relative overflow-hidden rounded-3xl shadow-2xl aspect-[4/5]  ${image}`}
                   >
                     <img
                       src={content.texts.features.imgFeatures}

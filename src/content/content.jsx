@@ -23,6 +23,11 @@ import {
   Car,
   HandCoins,
   Check,
+  Camera,
+  CameraIcon,
+  CameraOff,
+  SwitchCamera,
+  Cctv,
 } from 'lucide-react'
 import { Users } from 'lucide-react'
 import { FileText } from 'lucide-react'
@@ -109,12 +114,12 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'A_Definir',
+      miniTag: 'ESTAMOS DE PLANTÃO - SEJA ATENDIDO AGORA',
       title: (
         <h1>
-          A_Definir{' '}
+          Advogado{' '}
           <span className="destaque relative italic font-light">
-            A_Definir
+            Criminalista
             {/* <span>
               <svg
                 className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-accent/30"
@@ -129,22 +134,28 @@ const content = {
                 />
               </svg>
             </span> */}
-          </span>
-          ?
+          </span>{' '}
+          em Sobradinho – Atendimento Imediato 24h
         </h1>
       ),
-      subtitle: <p>A_Definir</p>,
+      subtitle: (
+        <p>
+          Atuação URGENTE em casos de prisão em flagrante, audiência de
+          custódia, Habeas Corpus, liberdade provisória e medidas
+          emergenciais.{' '}
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Preciso de ajuda urgente',
+      ctaButtonText: 'Seja atendido agora no WhatsApp',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'A_Definir',
+        text: 'Não espere nem mais um minuto, sua liberdade depende disso!',
         textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
@@ -192,23 +203,23 @@ const content = {
       ctaButtonText: 'A_Definir',
     },
     features: {
-      miniTag: 'A_Definir',
+      miniTag: 'ATENDIMENTO IMEDIATO',
       title: (
         <h1>
-          A_Definir
-          <span className="destaque italic font-light"> A_Definir</span>
-          A_Definir
+          Quando sua
+          <span className="destaque italic font-light"> liberdade</span> está em
+          risco, agir rápido é essencial
         </h1>
       ),
       subtitle: 'A_Definir',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: 'A_Definir',
-      subtitleMessageFeature: 'A_Definir',
+      titleMessageFeature: '100%',
+      subtitleMessageFeature: 'comprometido com a sua liberdade',
       cards: {
         card1: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Acompanhamento em Delegacia e Prisão em Flagrante',
+          subtitle: 'Advogado ao seu lado na delegacia e no flagrante.',
           description: (
             <div>
               A_Definir
@@ -217,13 +228,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Lock />,
+          icon: <Cctv />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Audiência de Custódia',
+          subtitle: 'Defesa para tentar garantir a liberdade já na audiência.',
           description: (
             <div>
               A_Definir
@@ -232,13 +243,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Car />,
+          icon: <Scale />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Tribunal do Júri',
+          subtitle: 'Atuação no julgamento que pode definir seu futuro.',
           description: (
             <div>
               A_Definir <br />
@@ -246,13 +257,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <HandCoins />,
+          icon: <Gavel />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Inquérito e Processo Criminal',
+          subtitle:
+            'Assistência jurídica do início da investigação até o fim do processo.',
           description: (
             <div>
               A_Definir
@@ -330,7 +342,7 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: 'Recuperar minha paz ao dirigir',
+      ctaButtonText: 'Receba orientação jurídica agora',
     },
     maps: {
       minitag: 'A_Definir',
@@ -343,22 +355,28 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'A_Definir',
+      miniTag: 'QUEM É O DR. MAURÍCIO BATISTA',
       title: (
         <h1>
-          A_Definir
-          <span className="destaque italic font-light"> A_Definir</span>{' '}
-          A_Definir
+          Referência em Direito
+          <span className="destaque italic font-light"> Penal</span>{' '}
         </h1>
       ),
       SecondPartTitle: '',
-      subtitle: 'A_Definir',
+      subtitle:
+        'Atuação responsável, estratégica e humana nos momentos mais críticos',
       paragraph: (
         <div>
-          A_Definir
+          Desde cedo, Maurício Batista escolheu o Direito como caminho. Com
+          formação em Direito Penal e Criminologia pela PUCRS e atuação
+          exclusiva na área criminal, construiu sua trajetória unindo técnica,
+          prática real e responsabilidade em cada caso atendido.
           <br />
-          <br />
-          A_Definir
+          <br />A atuação é pautada pela escuta ativa, empatia e estratégia
+          defensiva sólida, com presença constante ao lado do cliente e de sua
+          família. Com sedes no Rio Grande do Sul e atuação em todo o país, o
+          escritório reúne uma equipe preparada para lidar com processos
+          criminais com seriedade, ética e atenção individual.
         </div>
       ),
 
@@ -377,7 +395,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Falar diretamente com a Dr. Marina',
+      ctaButtonText: 'Falar diretamente com o advogado',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -422,12 +440,12 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'A_Definir',
+      miniTag: 'COMO ATUAMOS NO SEU CASO CRIMINAL',
       title: (
         <h1>
-          A_Definir
-          <span className="destaque italic font-light"> A_Definir </span>
-          A_Definir
+          Atuação
+          <span className="destaque italic font-light"> estratégica </span>
+          para proteger seus direitos e sua liberdade
         </h1>
       ),
       subtitle: '',
@@ -436,70 +454,64 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Análise imediata da situação criminal',
+          cardDescription:
+            'Analisamos o que já aconteceu no caso, como prisão, flagrante, intimação ou investigação, identificando riscos, ilegalidades e as melhores medidas a serem tomadas desde o início.',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Medidas urgentes para reduzir riscos imediatos',
+          cardDescription:
+            'Com base na análise, adotamos as providências jurídicas cabíveis para tentar garantir a liberdade, evitar prisões desnecessárias e corrigir falhas que possam prejudicar o processo.',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Definição da melhor estratégia de defesa',
+          cardDescription:
+            'Traçamos uma estratégia clara para o caso, avaliando provas, depoimentos e possibilidades legais, sempre focando na proteção dos direitos e na redução de danos ao longo do processo.',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Acompanhamento próximo e comunicação clara',
+          cardDescription:
+            'Você e sua família acompanham cada etapa com explicações objetivas, prazos definidos e orientação constante, sabendo exatamente o que está sendo feito e o que esperar.',
         },
       },
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Falar diretamente comigo',
     },
     ctaSecondary: {
-      miniTag: 'A_Definir',
-      title: <h1>A_Definir</h1>,
+      miniTag: '',
+      title: <h1>Não espere mais para proteger sua liberdade</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Cada decisão atrasada pode agravar o processo. Atuamos com rapidez,
+            estratégia e acompanhamento direto desde o primeiro momento.
+          </p>
         </div>
       ),
-      container: (
-        <div className="flex flex-col gap-3">
-          <div className="flex items-start gap-2">
-            {' '}
-            <span className="bg-primaryDark rounded-full p-0.5">
-              <Check className="text-white" width={22} />
-            </span>{' '}
-            Análise imediata do seu caso e da possibilidade de suspender ou
-            reverter a apreensão
-          </div>
-          <div className="flex items-start gap-2">
-            {' '}
-            <span className="bg-primaryDark rounded-full p-0.5">
-              <Check className="text-white" width={22} />
-            </span>{' '}
-            Avaliação do contrato para identificar juros abusivos e falhas
-            legais
-          </div>
-          <div className="flex items-start gap-2">
-            {' '}
-            <span className="bg-primaryDark rounded-full p-0.5">
-              <Check className="text-white" width={22} />
-            </span>{' '}
-            Orientação clara sobre prazos, riscos e próximos passos
-          </div>
-          <div className="flex items-start gap-2">
-            {' '}
-            <span className="bg-primaryDark rounded-full p-0.5">
-              <Check className="text-white" width={22} />
-            </span>
-            Acompanhamento transparente e atuação responsável em todas as fases
-            do processo
-          </div>
-        </div>
-      ),
+      container: {
+        label1: {
+          icon: <Check />,
+          text: ' Análise inicial do seu caso criminal',
+        },
+        label2: {
+          icon: <Check />,
+          text: ' Atendimento direto com advogado criminalista',
+        },
+        label3: {
+          icon: <Check />,
+          text: ' Resposta rápida e acompanhamento pelo WhatsApp',
+        },
+        label4: {
+          icon: <Check />,
+          text: ' Atuação iniciada imediatamente após a análise',
+        },
+        label5: {
+          icon: <Check />,
+          text: ' Mais segurança para você e sua família em um momento decisivo',
+        },
+      },
       // subtitleDireita: (
       //   <p className="gap-3 flex font-mainFont opacity-60 mt-1">
       //     <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
@@ -508,7 +520,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Converse agora com um advogado criminalista',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
@@ -522,25 +534,30 @@ const content = {
     //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
     // },
     faq: {
-      miniTag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
+      miniTag: 'TIRE SUAS DÚVIDAS',
+      title: 'Perguntas Frequentes',
+      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
       questions: {
         question1: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Como funciona a contratação e o atendimento?',
+          answer:
+            'O primeiro passo é o contato direto via WhatsApp para agendamento de uma consulta (presencial ou online). Analisaremos os fatos imediatamente para definir a viabilidade da defesa e o planejamento estratégico necessário.',
         },
         question2: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Quanto tempo dura um processo criminal?',
+          answer:
+            'O tempo é variável e depende do rito processual (comum, júri, especial) e da agilidade do Judiciário. Durante a análise do caso, apresentamos um panorama das etapas prováveis e trabalhamos para que não haja excesso de prazo na tramitação.',
         },
         question3: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Quais documentos são essenciais para a defesa?',
+          answer:
+            'É fundamental apresentar o Boletim de Ocorrência, cópia do Inquérito Policial (se houver), documentos pessoais e qualquer prova que ajude a desconstruir a acusação (fotos, mensagens, lista de testemunhas). Caso você não tenha o processo, nós realizamos a busca nos sistemas judiciais.',
         },
         question4: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question:
+            'O escritório atua com consultoria preventiva (Criminal Compliance)?',
+          answer:
+            'Sim. Atuamos de forma consultiva para empresas e indivíduos, visando mitigar riscos de investigações, garantir a conformidade com a lei e evitar que condutas do dia a dia sejam interpretadas como ilícitos penais.',
         },
       },
       paragraph: 'Clique aqui caso tenha mais dúvidas',
