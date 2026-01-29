@@ -119,7 +119,7 @@ const content = {
           Advogado{' '}
           <span className="destaque relative italic font-light">
             Criminalista
-            {/* <span>
+            <span>
               <svg
                 className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-accent/30"
                 viewBox="0 0 100 10"
@@ -132,7 +132,7 @@ const content = {
                   fill="none"
                 />
               </svg>
-            </span> */}
+            </span>
           </span>{' '}
           em Sobradinho – Atendimento Imediato 24h
         </h1>
