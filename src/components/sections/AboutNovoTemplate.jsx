@@ -135,7 +135,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                   </div>
                 )}
 
-                <div className="desktop1:flex flex-col gap-4 pt-4 w-fit justify-center items-start m-auto hidden">
+                <div className="desktop1:flex flex-col gap-4 pt-4 w-fit justify-center items-start m-auto desktop1:m-0 hidden">
                   <ButtonReflexo
                     icon={
                       <svg
@@ -159,7 +159,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                     label="Emergência? Ligue agora!"
                     colorMode={colorMode}
                     bgClass="bg-[#ff2c2c]"
-                    className="text-white mx-auto"
+                    className="text-white mx-auto desktop1:m-0"
                   />
                 </div>
               </motion.div>
@@ -187,7 +187,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                 </div>
               </motion.div>
 
-              <div className="flex flex-col gap-4 w-fit justify-center items-center desktop1:hidden">
+              <div className="flex flex-col gap-4 w-fit justify-center items-center mx-auto desktop1:hidden">
                 <ButtonReflexo
                   icon={
                     <svg
