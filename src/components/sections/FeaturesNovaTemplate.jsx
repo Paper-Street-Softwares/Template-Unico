@@ -47,7 +47,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
       textObservation = 'text-white'
       break
     case 'dark':
-      backgroundMode = 'bg-darkOpacity'
+      backgroundMode = 'bg-black'
       bgAccordion = 'rgba(0,0,0,0.8)'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'

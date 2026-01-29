@@ -80,7 +80,7 @@ export default function Index() {
               phoneSecond={false}
               expediente={false}
               adress={true}
-              email={true}
+              email={false}
               emailSecond={false}
               fraseFooter={true} // frase Google LLC
               obs={false}

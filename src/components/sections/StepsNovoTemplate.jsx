@@ -33,10 +33,9 @@ function StepsNovoTemplate({ colorMode }) {
       image = ' border-[8px] border-white'
       break
     case 'dark':
-      backgroundMode = 'bg-darkOpacity'
+      backgroundMode = 'bg-black'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
-      backgroundMode = 'bg-dark'
       stepNumberBg = 'bg-dark'
       stepNumberText = 'text-primaryLight'
       lineColor = 'bg-primaryLight/20'
@@ -48,7 +47,6 @@ function StepsNovoTemplate({ colorMode }) {
       backgroundMode = 'bg-secondary/60'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
-      backgroundMode = 'bg-secondary/60'
       stepNumberBg = 'bg-white'
       stepNumberText = 'text-primaryDark'
       lineColor = 'bg-primaryDark/20'
