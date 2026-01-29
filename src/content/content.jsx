@@ -121,7 +121,19 @@ const content = {
             Criminalista
             <span>
               <svg
-                className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-accent/30"
+                className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
+                viewBox="0 0 100 10"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M0 5 Q 50 10 100 5"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  fill="none"
+                />
+              </svg>
+              <svg
+                className="hero-underline absolute bottom-0 left-0 w-full h-3 text-accent/30 desktop1:hidden"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
