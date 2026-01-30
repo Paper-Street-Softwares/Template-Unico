@@ -95,7 +95,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                 {' '}
                 <MotionDivDownToUp className="relative order-2 lg:order-1 w-full m-auto">
                   <div
-                    className={`relative overflow-hidden rounded-3xl shadow-2xl aspect-[4/5]  ${image}`}
+                    className={`relative overflow-hidden rounded-3xl shadow-2xl aspect-[4/5] ${image}`}
                   >
                     <img
                       src={content.texts.features.imgFeatures}
@@ -110,12 +110,12 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                       className={`absolute -bottom-6 -left-6 ${bgObservation} ${textObservation} p-8 rounded-tr-3xl rounded-bl-3xl shadow-xl max-w-xs`}
                     >
                       <p
-                        className={`font-secondFont text-2xl font-bold mb-2 ${text}`}
+                        className={`font-secondFont text-2xl font-bold mb-2`}
                       >
                         {content.texts.features.titleMessageFeature}
                       </p>
                       <p
-                        className={`text-sm font-secondFont font-light ${text}`}
+                        className={`text-sm font-secondFont font-light`}
                       >
                         {content.texts.features.subtitleMessageFeature}
                       </p>
