@@ -8,6 +8,9 @@ import {
   ArrowRight,
   AlertTriangle,
   Check,
+  Clock,
+  CircleDollarSign,
+  Users,
   Globe,
 } from 'lucide-react'
 import content from '../../content/content'
@@ -74,7 +77,7 @@ function HeroTemplateNovo({
 
   const topicsCard = Object.values({
     card1: {
-      icon: <Check />,
+      icon: <Clock width={16} />,
       text: (
         <p>
           Recuperação do acesso em <strong>48 horas</strong> mediante tutela de
@@ -83,7 +86,7 @@ function HeroTemplateNovo({
       ),
     },
     card2: {
-      icon: <Check />,
+      icon: <CircleDollarSign width={16} />,
       text: (
         <p>
           Possibilidade de indenização por danos morais de até{' '}
@@ -92,7 +95,7 @@ function HeroTemplateNovo({
       ),
     },
     card3: {
-      icon: <Check />,
+      icon: <Users width={16} />,
       text: 'Contas pessoais e profissionais',
     },
   })
@@ -127,7 +130,7 @@ function HeroTemplateNovo({
               >
                 <span>
                   {/* <MapPin className="w-4 h-4" /> */}
-                  <Globe />
+                  <Globe width={14}  />
                 </span>
                 {content.texts.hero.miniTag}
               </div>
@@ -186,7 +189,7 @@ function HeroTemplateNovo({
                   colorMode === 'light' ? 'opacity-90' : 'opacity-20'
                 } w-full`}
               /> */}
-              <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground pt-6 w-full">
+              <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground w-full">
                 {/* <div className="relative flex ">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>

@@ -1,6 +1,7 @@
 import logo from '../assets/imgs/logo/logo.webp'
 import heroDefaultImg from '../assets/imgs/hero/lawHero.webp'
 import heroDefaultMobileImg from '../assets/imgs/hero/lawHeroMobile.webp'
+import bgInstagram from '../assets/imgs/hero/bgInstagram.webp'
 
 import imgFeatures from '../assets/imgs/features/imgServices.webp'
 
@@ -107,7 +108,7 @@ const content = {
       miniTag: 'Recuperação de redes sociais',
       title: (
         <h1>
-          Sua conta do Instagram foi{' '}
+          Sua conta do <span class="text-image">Instagram</span> foi{' '}
           <span className="destaque relative italic font-light">
             hackeada, invadida ou suspensa
             {/* <span>
