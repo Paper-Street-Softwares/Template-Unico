@@ -346,7 +346,7 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: 'Recuperar minha paz ao dirigir',
+      ctaButtonText: 'A_Definir',
     },
     maps: {
       minitag: 'A_Definir',
@@ -393,7 +393,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Falar diretamente com a Dr. Marina',
+      ctaButtonText: 'A_Definir',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
