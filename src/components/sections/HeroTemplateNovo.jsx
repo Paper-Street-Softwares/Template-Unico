@@ -34,7 +34,7 @@ function HeroTemplateNovo({
   switch (colorMode) {
     case 'light':
       backgroundMode = 'bg-white'
-      bgFaixaHero = 'bg-terciary'
+      bgFaixaHero = 'bg-secondary'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
@@ -46,7 +46,7 @@ function HeroTemplateNovo({
       break
     case 'dark':
       backgroundMode = 'bg-dark'
-      bgFaixaHero = 'bg-white/5'
+      bgFaixaHero = 'bg-secondary'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-primaryLight'
@@ -59,7 +59,7 @@ function HeroTemplateNovo({
       break
     case 'default':
       backgroundMode = 'bg-white'
-      bgFaixaHero = 'bg-terciary'
+      bgFaixaHero = 'bg-secondary'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-primaryDark'
