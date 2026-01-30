@@ -1,6 +1,8 @@
 import logo from '../assets/imgs/logo/logo.webp'
 import heroDefaultImg from '../assets/imgs/hero/lawHero.webp'
 import heroDefaultMobileImg from '../assets/imgs/hero/lawHeroMobile.webp'
+import bgInstagram from '../assets/imgs/hero/bgInstagram.webp'
+
 import imgFeatures from '../assets/imgs/features/imgServices.webp'
 
 import aboutImg from '../assets/imgs/about/aboutImg.webp'
@@ -11,38 +13,28 @@ import aboutImg from '../assets/imgs/about/aboutImg.webp'
 import imgSteps from '../assets/imgs/steps/imgSteps.webp'
 
 import {
-  Baby,
-  Briefcase,
-  BriefcaseMedical,
-  Gavel,
-  Home,
-  Key,
+  BriefcaseBusiness,
   LucideIdCard,
-  Lock,
   Scale,
-  Car,
-  HandCoins,
+  AlertTriangle,
   Check,
-  Camera,
-  CameraIcon,
-  CameraOff,
-  SwitchCamera,
-  Cctv,
+  Users,
+  User,
 } from 'lucide-react'
-import { Users } from 'lucide-react'
+
 import { FileText } from 'lucide-react'
 
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Dr. Maurício Batista',
+  name: 'Dra. Adelia Almeida',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'mauriciobatista.adv.br', // Sem "www"
+  domain: 'adeliaadv.com.br', // Sem "www"
   phone: {
-    ddd: '51',
-    firstPart: '99803', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '4276', // Apenas os 4 últimos números
+    ddd: '21',
+    firstPart: '97048', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '4958', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -57,7 +49,7 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>Sobradinho - RS</p>
+      <p>A_Definir,</p>
     </div>
   ),
   enderecoSecundario: (
@@ -82,7 +74,7 @@ export const infos = {
   tiktokProfile: '',
 
   whatsappDefaultMessage:
-    'Olá! Preciso da ajuda urgente de um advogado criminalista. Pode me ajudar?',
+    'Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.',
   whatsChatDefaultMessage:
     'Gostaria de falar conosco agora mesmo? Clque abaixo 👇',
   slogan: '',
@@ -103,23 +95,23 @@ const content = {
         'Início',
         'Serviços',
         'Sobre',
-        'Perguntas',
+        // 'Perguntas',
         // 'Blog',
         // 'Mapa',
       ],
-      menuId: ['home', 'feature', 'about', 'faq'],
+      menuId: ['home', 'feature', 'about'],
       ariaLabel: 'Botão de Contato',
       ctaButtonText: 'Contato',
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'Plantão 24h - atendimento imediato',
+      miniTag: 'Recuperação de redes sociais',
       title: (
         <h1>
-          Advogado{' '}
+          Sua conta do <span class="text-image">Instagram</span> foi{' '}
           <span className="destaque relative italic font-light">
-            Criminalista
-            <span>
+            hackeada, invadida ou suspensa
+            {/* <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
                 viewBox="0 0 100 10"
@@ -144,29 +136,30 @@ const content = {
                   fill="none"
                 />
               </svg>
-            </span>
-          </span>{' '}
-          em Sobradinho
+            </span> */}
+          </span>
+          ?
         </h1>
       ),
       subtitle: (
         <p>
-          Atuação <strong className="text-primaryLight">URGENTE</strong> em
-          casos de prisão em flagrante, audiência de custódia, Habeas Corpus,
-          liberdade provisória e medidas emergenciais.{' '}
+          Perder o controle da sua conta pode parecer o fim, mas estamos aqui
+          para resolver isso por você. <strong> Você tem direitos</strong>, e
+          nós sabemos exatamente como protegê-los!
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
+
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Seja atendido agora no WhatsApp',
+      ctaButtonText: 'Falar com uma advogada',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Não espere nem mais um minuto, sua liberdade depende disso!',
+        text: 'A_Definir',
         textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
@@ -190,52 +183,97 @@ const content = {
       },
     },
     important: {
-      miniTag: 'A_Definir',
-      title: 'O que é importante saber',
+      miniTag: 'Atenção',
+      title: (
+        <h1>
+          O que é importante saber ao{' '}
+          <span className="text-primaryDark">perder o acesso</span> à sua conta
+          online
+        </h1>
+      ),
       cards: {
         card1: {
-          title: 'Fui preso. Posso ficar calado ou isso piora tudo?',
-          paragraph:
-            'Mantenha a calma e fique em silêncio. Não diga nada e entre em contato comigo agora mesmo. Falar sem orientação vai piorar tudo.',
+          title:
+            'Minha conta foi invadida ou suspensa. Posso fazer alguma coisa?',
+          paragraph: (
+            <p>
+              Sim. Em muitos casos é possível <strong>recuperar a conta</strong>{' '}
+              e <strong>responsabilizar quem causou o dano</strong>,
+              principalmente quando há falha da plataforma ou uso indevido dos
+              seus dados. <br />
+              Quanto antes você agir, maiores são as chances de recuperação.
+            </p>
+          ),
         },
         card2: {
-          title: 'Meu parente foi preso, o que posso fazer?',
-          paragraph:
-            'Descubra para onde ele foi levado e entre em contato imediatamente. As primeiras horas são decisivas para a liberdade dele.',
+          title: 'Existe prazo para agir ou recorrer?',
+          paragraph: (
+            <p>
+              Sim. Quanto mais o tempo passa,{' '}
+              <strong>mais difícil fica provar o prejuízo</strong> e reverter a
+              situação. <br />
+              Além disso, deixar para depois pode fazer{' '}
+              <strong>você perder provas importantes</strong>. <br />
+              Por isso, o ideal é buscar orientação jurídica{' '}
+              <strong>imediatamente</strong>.
+            </p>
+          ),
         },
         card3: {
-          title: 'Tem como soltar ele agora?',
-          paragraph:
-            'Tem, mas o tempo é decisivo. Fale comigo agora para agir imediatamente.',
+          title: 'Se eu não fizer nada, o que pode acontecer?',
+          paragraph: (
+            <p>
+              Além de <strong>perder definitivamente a conta</strong>, seus
+              dados podem continuar sendo usados para golpes, sua imagem pode
+              ser prejudicada e você pode{' '}
+              <strong>sofrer prejuízos financeiros e profissionais</strong>{' '}
+              difíceis de reverter.
+            </p>
+          ),
         },
         card4: {
-          title: 'Quanto tempo eu tenho para me defender?',
-          paragraph:
-            'Cada minuto que passa sua situação se complica mais. Então não espere nada mais e conte com nossa ajuda imediata.',
+          title:
+            'Por que procurar ajuda mesmo achando que “não tem o que fazer”?',
+          paragraph: (
+            <p>
+              Porque muitas suspensões e invasões{' '}
+              <strong>não acontecem por culpa do usuário</strong>. <br />
+              Falhas de segurança, denúncias indevidas e abuso da plataforma são
+              comuns — e{' '}
+              <strong>
+                podem gerar direito à recuperação da conta e indenização
+              </strong>
+              .
+              <br />
+              <br />
+              Agir rápido pode evitar perdas maiores.
+            </p>
+          ),
         },
       },
       fraseObs:
-        'Cada caso é diferente. Agir rápido e com orientação jurídica pode mudar completamente o rumo do processo.',
-      ctaButtonText: 'Falar agora com um advogado',
+        'Entre em contato conosco e lhe daremos todo o suporte necessário',
+      ctaButtonText: 'Falar conosco agora pelo WhatsApp',
     },
     features: {
-      miniTag: 'COMO POSSO AJUDAR',
+      miniTag: 'O momento que sua conta é perdida',
       title: (
         <h1>
-          Apoio jurídico
-          <span className="destaque italic font-light"> imediato</span> para
-          quem precisa agir sem perder tempo
+          O problema não é perder uma conta. É tudo o que você
+          <span className="destaque italic font-light"> perde junto</span> com
+          ela.
         </h1>
       ),
       subtitle: '',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: 'Prisão não é o fim. ',
-      subtitleMessageFeature: 'Defesa imediata pode mudar tudo.',
+      titleMessageFeature: '100%',
+      subtitleMessageFeature: 'comprometida com sua vida digital',
       cards: {
         card1: {
-          title: 'Acompanhamento em Delegacia e Prisão em Flagrante',
-          subtitle: 'Advogado ao seu lado na delegacia e no flagrante.',
+          title: 'Quando usam sua foto e seus dados para aplicar golpes',
+          subtitle:
+            'Sua imagem vira arma para enganar outras pessoas — e a culpa pode cair no seu colo.',
           description: (
             <div>
               A_Definir
@@ -244,13 +282,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Cctv />,
+          icon: <User />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'Audiência de Custódia',
-          subtitle: 'Defesa para tentar garantir a liberdade já na audiência.',
+          title: 'Quando todo o seu conteúdo simplesmente some',
+          subtitle:
+            'Anos de posts, stories e provas do seu trabalho podem desaparecer em segundos.',
           description: (
             <div>
               A_Definir
@@ -259,13 +298,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Scale />,
+          icon: <AlertTriangle />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: 'Tribunal do Júri',
-          subtitle: 'Atuação no julgamento que pode definir seu futuro.',
+          title: 'Quando você perde todos os seguidores de uma vez',
+          subtitle:
+            'Toda a audiência que você construiu com esforço deixa de ser sua da noite pro dia.',
           description: (
             <div>
               A_Definir <br />
@@ -273,14 +313,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Gavel />,
+          icon: <Users />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: 'Inquérito e Processo Criminal',
+          title: 'Quando você fica sem sua principal ferramenta de trabalho',
           subtitle:
-            'Assistência jurídica do início da investigação até o fim do processo.',
+            'Você perde renda, visibilidade e o principal canal de contato com seu público.',
           description: (
             <div>
               A_Definir
@@ -289,7 +329,7 @@ const content = {
               <br />
             </div>
           ),
-          icon: <FileText />,
+          icon: <BriefcaseBusiness />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
@@ -358,7 +398,7 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: 'Receba orientação jurídica agora',
+      ctaButtonText: 'Veja como agir para proteger e recuperar sua conta',
     },
     maps: {
       minitag: 'A_Definir',
@@ -371,28 +411,30 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'QUEM É O DR. MAURÍCIO BATISTA',
+      miniTag: 'Quem está por trás da solução',
       title: (
         <h1>
-          Referência em Direito
-          <span className="destaque italic font-light"> Penal</span>{' '}
+          Especialista em
+          <span className="destaque italic font-light"> recuperar</span> contas
         </h1>
       ),
       SecondPartTitle: '',
       subtitle:
-        'Atuação responsável, estratégica e humana nos momentos mais críticos',
+        'Atuação jurídica focada em proteger negócios e perfis nas redes sociais',
       paragraph: (
         <div>
-          Desde cedo, Maurício Batista escolheu o Direito como caminho. Com
-          formação em Direito Penal e Criminologia pela PUCRS e atuação
-          exclusiva na área criminal, construiu sua trajetória unindo técnica,
-          prática real e responsabilidade em cada caso atendido.
+          Sou advogada com atuação em Direito Público e Privado, com foco em
+          questões que envolvem o ambiente digital. Atendo pessoas e empresas
+          que tiveram contas do Instagram, Facebook ou WhatsApp invadidas,
+          suspensas ou perdidas — especialmente quando essas plataformas são
+          ferramentas de trabalho.
           <br />
-          <br />A atuação é pautada pela escuta ativa, empatia e estratégia
-          defensiva sólida, com presença constante ao lado do cliente e de sua
-          família. Com sedes no Rio Grande do Sul e atuação em todo o país, o
-          escritório reúne uma equipe preparada para lidar com processos
-          criminais com seriedade, ética e atenção individual.
+          <br />
+          Meu trabalho é orientar, agir rápido e buscar a recuperação da conta e
+          a proteção dos direitos da cliente. Cada caso é tratado com
+          estratégia, clareza e responsabilidade, porque sei que perder uma rede
+          social não é só perder um perfil — é perder renda, contatos e
+          credibilidade.
         </div>
       ),
 
@@ -411,7 +453,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Falar diretamente com o advogado',
+      ctaButtonText: 'Falar diretamente comigo',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -456,12 +498,12 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'COMO ATUAMOS NO SEU CASO CRIMINAL',
+      miniTag: 'Por que agir agora',
       title: (
         <h1>
-          Atuação
-          <span className="destaque italic font-light"> estratégica </span>
-          para proteger seus direitos e sua liberdade
+          Mais do que recuperar sua conta, é
+          <span className="destaque italic font-light"> proteger </span>o que
+          você construiu
         </h1>
       ),
       subtitle: '',
@@ -470,62 +512,63 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Análise imediata da situação criminal',
+          cardTitle: 'Agilidade quando o tempo joga contra você',
           cardDescription:
-            'Analisamos o que já aconteceu no caso, como prisão, flagrante, intimação ou investigação, identificando riscos, ilegalidades e as melhores medidas a serem tomadas desde o início.',
+            'Quanto mais você demora, menores são as chances de recuperar a conta. Aqui, seu caso é analisado rapidamente para evitar prejuízos maiores.',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Medidas urgentes para reduzir riscos imediatos',
+          cardTitle: 'Você não enfrenta a plataforma só',
           cardDescription:
-            'Com base na análise, adotamos as providências jurídicas cabíveis para tentar garantir a liberdade, evitar prisões desnecessárias e corrigir falhas que possam prejudicar o processo.',
+            'Bloqueios injustos, invasões e falhas acontecem. Ter apoio jurídico muda o jogo e aumenta suas chances de resolver.',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Definição da melhor estratégia de defesa',
+          cardTitle: 'Proteção da sua imagem e do seu negócio',
           cardDescription:
-            'Traçamos uma estratégia clara para o caso, avaliando provas, depoimentos e possibilidades legais, sempre focando na proteção dos direitos e na redução de danos ao longo do processo.',
+            'Evite que seus dados e sua imagem continuem sendo usados de forma indevida, causando golpes, perdas financeiras e danos à sua reputação.',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Acompanhamento próximo e comunicação clara',
+          cardTitle: 'Clareza, estratégia e acompanhamento real',
           cardDescription:
-            'Você e sua família acompanham cada etapa com explicações objetivas, prazos definidos e orientação constante, sabendo exatamente o que está sendo feito e o que esperar.',
+            'Você sabe exatamente o que está sendo feito, quais são os próximos passos e acompanha tudo de perto, sem promessas vazias.',
         },
       },
-      ctaButtonText: 'Falar diretamente comigo',
+      ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
-      miniTag: 'Estamos de plantão',
-      title: <h1>Não espere mais para proteger sua liberdade</h1>,
+      miniTag: 'Fale conosco',
+      title: <h1>Não espere mais para recuperar sua conta</h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Cada decisão atrasada pode agravar o processo. Atuamos com rapidez,
-            estratégia e acompanhamento direto desde o primeiro momento.
+            Cada dia de atraso reduz as chances de recuperação e aumenta os
+            prejuízos. A gente cuida de tudo por você — com agilidade, segurança
+            e orientação jurídica.
           </p>
         </div>
       ),
       container: {
         label1: {
           icon: <Check />,
-          text: ' Análise inicial do seu caso criminal',
+          text: ' Avaliação jurídica sobre invasão, bloqueio ou suspensão da conta',
         },
         label2: {
           icon: <Check />,
-          text: ' Atendimento direto com advogado criminalista',
+          text: ' Orientação clara sobre provas, prazos e próximos passos',
         },
         label3: {
           icon: <Check />,
-          text: ' Resposta rápida e acompanhamento pelo WhatsApp',
+          text: 'Atuação para recuperação da conta e responsabilização da plataforma',
         },
         label4: {
           icon: <Check />,
-          text: ' Atuação iniciada imediatamente após a análise',
+          text: 'Proteção contra uso indevido da sua imagem e dos seus dados',
         },
         label5: {
           icon: <Check />,
-          text: ' Mais segurança para você e sua família em um momento decisivo',
+          text: 'Acompanhamento do caso até a solução, com comunicação direta',
         },
       },
       // subtitleDireita: (
@@ -536,7 +579,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Converse agora com um advogado',
+      ctaButtonText: 'Falar com a Dra Adelia Almeida agora mesmo',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
@@ -550,30 +593,25 @@ const content = {
     //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
     // },
     faq: {
-      miniTag: 'TIRE SUAS DÚVIDAS',
-      title: 'Perguntas Frequentes',
-      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
+      miniTag: 'A_Definir',
+      title: 'A_Definir',
+      subtitle: 'A_Definir',
       questions: {
         question1: {
-          question: 'Como funciona a contratação e o atendimento?',
-          answer:
-            'O primeiro passo é o contato direto via WhatsApp para agendamento de uma consulta (presencial ou online). Analisaremos os fatos imediatamente para definir a viabilidade da defesa e o planejamento estratégico necessário.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question2: {
-          question: 'Quanto tempo dura um processo criminal?',
-          answer:
-            'O tempo é variável e depende do rito processual (comum, júri, especial) e da agilidade do Judiciário. Durante a análise do caso, apresentamos um panorama das etapas prováveis e trabalhamos para que não haja excesso de prazo na tramitação.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question3: {
-          question: 'Quais documentos são essenciais para a defesa?',
-          answer:
-            'É fundamental apresentar o Boletim de Ocorrência, cópia do Inquérito Policial (se houver), documentos pessoais e qualquer prova que ajude a desconstruir a acusação (fotos, mensagens, lista de testemunhas). Caso você não tenha o processo, nós realizamos a busca nos sistemas judiciais.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question4: {
-          question:
-            'O escritório atua com consultoria preventiva (Criminal Compliance)?',
-          answer:
-            'Sim. Atuamos de forma consultiva para empresas e indivíduos, visando mitigar riscos de investigações, garantir a conformidade com a lei e evitar que condutas do dia a dia sejam interpretadas como ilícitos penais.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
       },
       paragraph: 'Clique aqui caso tenha mais dúvidas',

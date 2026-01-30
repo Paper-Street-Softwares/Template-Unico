@@ -8,27 +8,31 @@ import { whatsAppThemes } from '../../context/UseContextArchive'
 import { Phone } from 'lucide-react'
 import WhatsappForm from '../interactives/WhatsappForm'
 import FormAndAdress from '../interactives/Forms/FormAndAdress'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 
 function CtaNovoTemplate({ colorMode }) {
   // Classes dinâmicas conforme colorMode
-  let text, textOpacity, backgroundMode, miniTagCtaDark
+  let text, textOpacity, backgroundMode, miniTagCtaDark, textDestaque
 
   switch (colorMode) {
     case 'light':
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
+      textDestaque = 'text-primaryDark'
       backgroundMode = 'bg-terciary/60'
       miniTagCtaDark = 'text-primaryDark'
       break
     case 'dark':
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corTitulosBranca/60'
+      textDestaque = 'text-primaryLight'
       backgroundMode = 'bg-darkOpacity'
       miniTagCtaDark = 'text-primaryLight'
       break
     default:
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
+      textDestaque = 'text-primaryDark'
       backgroundMode = 'bg-primaryDark'
   }
 
@@ -39,12 +43,7 @@ function CtaNovoTemplate({ colorMode }) {
       {/* Fundo decorativo */}
       <SectionWrapper className="">
         <section className="relative text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="container mx-auto"
-          >
+          <MotionDivDownToUp className="container mx-auto">
             <span
               className={`font-bold font-secondFont tracking-wider uppercase text-xs mb-2 block ${miniTagCtaDark}`}
             >
@@ -69,8 +68,8 @@ function CtaNovoTemplate({ colorMode }) {
                   key={index}
                   className="font-secondFont flex gap-2 items-start w-full justify-start tablet1:justify-center text-start desktop1:text-start"
                 >
-                  <span className="text-primaryLight">{item.icon}</span>
-                  <p className="text-white">{item.text}</p>
+                  <span className={`${textDestaque}`}>{item.icon}</span>
+                  <p className={`${textOpacity}`}>{item.text}</p>
                 </div>
               ))}
             </div>
@@ -104,7 +103,7 @@ function CtaNovoTemplate({ colorMode }) {
                 className="text-white"
               />
             </div>
-          </motion.div>
+          </MotionDivDownToUp>
         </section>
       </SectionWrapper>
     </SectionArea>

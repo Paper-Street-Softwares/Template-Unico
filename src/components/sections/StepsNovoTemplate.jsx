@@ -7,6 +7,7 @@ import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
 import ButtonReflexo from '../interactives/ButtonReflexo'
 import ButtonAlert from '../interactives/ButtonAlert'
 import { Phone } from 'lucide-react'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 
 function StepsNovoTemplate({ colorMode }) {
   const steps = Object.values(content.texts.steps.cards)
@@ -61,7 +62,7 @@ function StepsNovoTemplate({ colorMode }) {
           <div className="container mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               {/* Imagem */}
-              <motion.div
+              <MotionDivDownToUp
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -87,7 +88,7 @@ function StepsNovoTemplate({ colorMode }) {
                   />
                 </div>
 
-                <div className="flex flex-col gap-4 pt-12 w-fit justify-center items-center m-auto desktop1:m-auto">
+                {/* <div className="flex flex-col gap-4 pt-12 w-fit justify-center items-center m-auto desktop1:m-auto">
                   <ButtonReflexo
                     icon={
                       <svg
@@ -112,11 +113,11 @@ function StepsNovoTemplate({ colorMode }) {
                     colorMode={colorMode}
                     className="text-white"
                   />
-                </div>
-              </motion.div>
+                </div> */}
+              </MotionDivDownToUp>
 
               {/* Passos */}
-              <motion.div
+              <MotionDivDownToUp
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
@@ -157,7 +158,7 @@ function StepsNovoTemplate({ colorMode }) {
                     </div>
                   ))}
                 </div>
-              </motion.div>
+              </MotionDivDownToUp>
             </div>
           </div>
         </section>

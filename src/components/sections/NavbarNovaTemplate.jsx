@@ -64,15 +64,15 @@ function NavbarNovaTemplate({
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent ${
           isScrolled
             ? `${backgrondMode} backdrop-blur-md py-2 shadow-sm border-shadowHero/10 h-auto`
-            : 'bg-transparent border-border/40 py-3 phone2:h-auto'
+            : 'bg-transparent border-border/40 py-3 tablet1:py-3 phone2:h-auto'
         }`}
       >
         <div className="container mx-auto flex items-center m-auto max-w-[1215px] h-full w-[90%] justify-between py-2">
           <div
             className={`flex flex-col z-20 relative  ${
               isScrolled
-                ? 'w-[20%] tablet1:w-[20%] tablet2:w-[15%] desktop1:w-[15%] desktop2:w-[10%] desktop3:w-[10%] transition-all duration-700'
-                : 'w-[30%] phone2:w-[30%] phone3:w-[35%] tablet1:w-[30%] tablet2:w-[20%] desktop1:w-[15%] desktop3:w-[15%] transition-all duration-700'
+                ? 'w-[50%] tablet1:w-[30%] tablet2:w-[30%] desktop1:w-[25%] desktop2:w-[20%] desktop3:w-[20%] transition-all duration-700'
+                : 'py-2 w-[60%] phone2:w-[60%] phone3:w-[60%] tablet1:w-[40%] tablet2:w-[40%] desktop1:w-[30%] desktop3:w-[25%] transition-all duration-700'
             }`}
           >
             {' '}

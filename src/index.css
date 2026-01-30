@@ -109,3 +109,15 @@ body {
   overflow-wrap: break-word;
   word-break: break-word;
 }
+
+.text-image {
+  background-image: url('../src/assets/imgs/hero/bgInstagram.webp');
+  background-size: contain;
+  background-position: top;
+
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  display: inline-block;
+}
