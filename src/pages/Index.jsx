@@ -55,38 +55,38 @@ export default function Index() {
           <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
-            <Emergency colorMode={colorMode} />
-            <Important colorMode={colorMode} />
-            {/* <Speed colorMode={colorMode} /> */}
             <FeaturesNovaTemplate
               colorMode={colorMode}
               frasesDestaque={true}
               accordion={false}
             />
-            <Diferences colorMode={colorMode} />
-            {/* <Cards colorMode={colorMode} /> */}
+            <Important colorMode={colorMode} />
             <AboutNovoTemplate
               colorMode={colorMode}
               ButtonModal={false}
-              benefits={true}
+              benefits={false}
             />
-            {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             <CtaNovoTemplate colorMode={colorMode} />
             <StepsNovoTemplate colorMode={colorMode} />
-            <FaqNovoTemplate colorMode={colorMode} />
             <FooterNovoTemplate
               colorMode={colorMode}
               mapa={false}
               phone={true}
               phoneSecond={false}
               expediente={false}
-              adress={true}
+              adress={false}
               email={true}
               emailSecond={false}
               fraseFooter={true} // frase Google LLC
               obs={false}
             />
             <WhatsappAnimated colorMode={colorMode} />
+            {/* <Diferences colorMode={colorMode} /> */}
+            {/* <Cards colorMode={colorMode} /> */}
+            {/* <Emergency colorMode={colorMode} /> */}
+            {/* <Speed colorMode={colorMode} /> */}
+            {/* <SocialMediaTemplate colorMode={colorMode} /> */}
+            {/* <FaqNovoTemplate colorMode={colorMode} /> */}
           </Suspense>
         </main>
       </ColorModeProvider>

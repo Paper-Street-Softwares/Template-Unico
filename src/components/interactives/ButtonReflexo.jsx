@@ -25,7 +25,7 @@ export default function ButtonReflexo({
         : 'shadow-primaryDark/20'
 
   const themes = {
-    light: 'bg-primaryDark text-corTitulosBranca border border-primaryDark/20',
+    light: 'bg-primaryDark text-corTitulosPreto border border-primaryDark/20',
     dark: 'bg-primaryLight text-corTitulosPreto',
     default: 'bg-secondary text-corTitulosPreto border border-primaryDark/20',
   }

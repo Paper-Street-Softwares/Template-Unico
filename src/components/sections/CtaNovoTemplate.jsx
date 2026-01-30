@@ -11,24 +11,27 @@ import FormAndAdress from '../interactives/Forms/FormAndAdress'
 
 function CtaNovoTemplate({ colorMode }) {
   // Classes dinâmicas conforme colorMode
-  let text, textOpacity, backgroundMode, miniTagCtaDark
+  let text, textOpacity, backgroundMode, miniTagCtaDark, textDestaque
 
   switch (colorMode) {
     case 'light':
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
+      textDestaque = 'text-primaryDark'
       backgroundMode = 'bg-terciary/60'
       miniTagCtaDark = 'text-primaryDark'
       break
     case 'dark':
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corTitulosBranca/60'
+      textDestaque = 'text-primaryLight'
       backgroundMode = 'bg-darkOpacity'
       miniTagCtaDark = 'text-primaryLight'
       break
     default:
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
+      textDestaque = 'text-primaryDark'
       backgroundMode = 'bg-primaryDark'
   }
 
@@ -69,8 +72,8 @@ function CtaNovoTemplate({ colorMode }) {
                   key={index}
                   className="font-secondFont flex gap-2 items-start w-full justify-start tablet1:justify-center text-start desktop1:text-start"
                 >
-                  <span className="text-primaryLight">{item.icon}</span>
-                  <p className="text-white">{item.text}</p>
+                  <span className={`${textDestaque}`}>{item.icon}</span>
+                  <p className={`${textOpacity}`}>{item.text}</p>
                 </div>
               ))}
             </div>

@@ -7,6 +7,8 @@ import {
   Phone,
   ArrowRight,
   AlertTriangle,
+  Check,
+  Globe,
 } from 'lucide-react'
 import content from '../../content/content'
 import SectionArea from '../sectionElements/SectionArea'
@@ -14,6 +16,7 @@ import SectionWrapper from '../sectionElements/SectionWrapper'
 import ButtonReflexo from '../interactives/ButtonReflexo'
 import ButtonAlert from '../interactives/ButtonAlert'
 import { useColorMode } from '../../context/UseContextArchive'
+import imgBottomHero from '../../assets/imgs/hero/imgHeroBottom.webp'
 
 function HeroTemplateNovo({
   colorMode,
@@ -69,6 +72,31 @@ function HeroTemplateNovo({
 
   const { showGlobalButton } = useColorMode()
 
+  const topicsCard = Object.values({
+    card1: {
+      icon: <Check />,
+      text: (
+        <p>
+          Recuperação do acesso em <strong>48 horas</strong> mediante tutela de
+          urgência
+        </p>
+      ),
+    },
+    card2: {
+      icon: <Check />,
+      text: (
+        <p>
+          Possibilidade de indenização por danos morais de até{' '}
+          <strong>R$15.000,00</strong>
+        </p>
+      ),
+    },
+    card3: {
+      icon: <Check />,
+      text: 'Contas pessoais e profissionais',
+    },
+  })
+
   return (
     <SectionArea
       data-theme={colorMode}
@@ -97,7 +125,10 @@ function HeroTemplateNovo({
               <div
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-[8px] phone2:text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
               >
-                <span>{/* <MapPin className="w-4 h-4" /> */}🚨</span>
+                <span>
+                  {/* <MapPin className="w-4 h-4" /> */}
+                  <Globe />
+                </span>
                 {content.texts.hero.miniTag}
               </div>
               <h1
@@ -111,6 +142,18 @@ function HeroTemplateNovo({
               >
                 {content.texts.hero.subtitle}
               </p>
+
+              <div
+                className={`border font-secondFont p-2 rounded-md border-primaryDark text-[8px] phone2:text-[12px] phone3:text-[14px]`}
+              >
+                {topicsCard.map((item, index) => (
+                  <div key={index} className="flex gap-2">
+                    <span className={`${textDestaque}`}>{item.icon}</span>
+                    <p>{item.text}</p>
+                  </div>
+                ))}
+              </div>
+
               <div className="flex flex-col gap-4 pt-4">
                 <ButtonReflexo
                   icon={
@@ -144,14 +187,18 @@ function HeroTemplateNovo({
                 } w-full`}
               /> */}
               <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground pt-6 w-full">
-                <div className="relative flex ">
-                  {/* <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span> */}
-                  ⚠️
+                {/* <div className="relative flex ">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
                 </div>
                 <span className={`font-secondFont font-light ${textOpacity}`}>
                   {content.texts.hero.obsHero.text}
-                </span>
+                </span> */}
+                <img
+                  src={imgBottomHero}
+                  alt="imagem ilustrativa de clientes"
+                  className="rounded-md"
+                />
               </div>
             </motion.div>
 

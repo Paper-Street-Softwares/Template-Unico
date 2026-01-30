@@ -87,7 +87,7 @@ function StepsNovoTemplate({ colorMode }) {
                   />
                 </div>
 
-                <div className="flex flex-col gap-4 pt-12 w-fit justify-center items-center m-auto desktop1:m-auto">
+                {/* <div className="flex flex-col gap-4 pt-12 w-fit justify-center items-center m-auto desktop1:m-auto">
                   <ButtonReflexo
                     icon={
                       <svg
@@ -112,7 +112,7 @@ function StepsNovoTemplate({ colorMode }) {
                     colorMode={colorMode}
                     className="text-white"
                   />
-                </div>
+                </div> */}
               </motion.div>
 
               {/* Passos */}

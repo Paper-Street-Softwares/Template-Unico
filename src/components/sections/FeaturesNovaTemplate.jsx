@@ -114,10 +114,14 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                     <div
                       className={`absolute -bottom-6 -left-6 ${bgObservation} ${textObservation} p-8 rounded-tr-3xl rounded-bl-3xl shadow-xl max-w-xs`}
                     >
-                      <p className="font-secondFont text-2xl font-bold mb-2">
+                      <p
+                        className={`font-secondFont text-2xl font-bold mb-2 ${text}`}
+                      >
                         {content.texts.features.titleMessageFeature}
                       </p>
-                      <p className="text-sm font-secondFont font-light">
+                      <p
+                        className={`text-sm font-secondFont font-light ${text}`}
+                      >
                         {content.texts.features.subtitleMessageFeature}
                       </p>
                     </div>

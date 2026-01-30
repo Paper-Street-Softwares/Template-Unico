@@ -37,7 +37,7 @@ function Important({ colorMode }) {
     <SectionArea className={`${backgroundMode}`}>
       <SectionWrapper>
         <SectionHeaderNovo
-          miniTitle="atenção"
+          miniTitle={content.texts.important.miniTag}
           title={content.texts.important.title}
           colorMode={colorMode}
         />
@@ -47,7 +47,7 @@ function Important({ colorMode }) {
           ))}
         </div>
         <p
-          className={`flex justify-center font-secondFont text-center w-full my-12 ${textOpacity}`}
+          className={`flex justify-center font-secondFont text-center w-full mt-6 mb-6 ${textOpacity}`}
         >
           {content.texts.important.fraseObs}
         </p>
