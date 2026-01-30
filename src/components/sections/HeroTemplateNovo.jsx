@@ -11,7 +11,8 @@ import {
   Clock,
   CircleDollarSign,
   Users,
-  Globe,
+  Split,
+  FileText,
 } from 'lucide-react'
 import content from '../../content/content'
 import SectionArea from '../sectionElements/SectionArea'
@@ -19,7 +20,7 @@ import SectionWrapper from '../sectionElements/SectionWrapper'
 import ButtonReflexo from '../interactives/ButtonReflexo'
 import ButtonAlert from '../interactives/ButtonAlert'
 import { useColorMode } from '../../context/UseContextArchive'
-import imgBottomHero from '../../assets/imgs/hero/imgHeroBottom.webp'
+import MotionDivToDownUp from '../animation/MotionDivDownToUp'
 
 function HeroTemplateNovo({
   colorMode,
@@ -33,6 +34,7 @@ function HeroTemplateNovo({
   bgAlertHero,
   textDestaque,
   borderColor,
+  obsTwo,
 }) {
   switch (colorMode) {
     case 'light':
@@ -75,30 +77,30 @@ function HeroTemplateNovo({
 
   const { showGlobalButton } = useColorMode()
 
-  const topicsCard = Object.values({
-    card1: {
-      icon: <Clock width={16} />,
-      text: (
-        <p>
-          Recuperação do acesso em <strong>48 horas</strong> mediante tutela de
-          urgência
-        </p>
-      ),
-    },
-    card2: {
-      icon: <CircleDollarSign width={16} />,
-      text: (
-        <p>
-          Possibilidade de indenização por danos morais de até{' '}
-          <strong>R$15.000,00</strong>
-        </p>
-      ),
-    },
-    card3: {
-      icon: <Users width={16} />,
-      text: 'Contas pessoais e profissionais',
-    },
-  })
+  // const topicsCard = Object.values({
+  //   card1: {
+  //     icon: <Clock width={16} />,
+  //     text: (
+  //       <p>
+  //         Recuperação do acesso em <strong>48 horas</strong> mediante tutela de
+  //         urgência
+  //       </p>
+  //     ),
+  //   },
+  //   card2: {
+  //     icon: <CircleDollarSign width={16} />,
+  //     text: (
+  //       <p>
+  //         Possibilidade de indenização por danos morais de até{' '}
+  //         <strong>R$15.000,00</strong>
+  //       </p>
+  //     ),
+  //   },
+  //   card3: {
+  //     icon: <Users width={16} />,
+  //     text: 'Contas pessoais e profissionais',
+  //   },
+  // })
 
   return (
     <SectionArea
@@ -119,7 +121,7 @@ function HeroTemplateNovo({
           <div className="container relative z-10 grid lg:grid-cols-2 gap-4 phone2:gap-6 lg:gap-20 items-center">
             {/* Content */}
 
-            <motion.div
+            <MotionDivToDownUp
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -130,7 +132,7 @@ function HeroTemplateNovo({
               >
                 <span>
                   {/* <MapPin className="w-4 h-4" /> */}
-                  <Globe width={14}  />
+                  <Split width={14} />
                 </span>
                 {content.texts.hero.miniTag}
               </div>
@@ -146,7 +148,7 @@ function HeroTemplateNovo({
                 {content.texts.hero.subtitle}
               </p>
 
-              <div
+              {/* <div
                 className={`border font-secondFont p-2 rounded-md border-primaryDark text-[8px] phone2:text-[12px] phone3:text-[14px]`}
               >
                 {topicsCard.map((item, index) => (
@@ -155,7 +157,7 @@ function HeroTemplateNovo({
                     <p>{item.text}</p>
                   </div>
                 ))}
-              </div>
+              </div> */}
 
               <div className="flex flex-col gap-4 pt-4">
                 <ButtonReflexo
@@ -189,24 +191,35 @@ function HeroTemplateNovo({
                   colorMode === 'light' ? 'opacity-90' : 'opacity-20'
                 } w-full`}
               /> */}
-              <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground w-full">
+              <div className="flex flex-col justify-start items-start gap-3 text-sm text-mutedForeground w-full">
                 {/* <div className="relative flex ">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
-                </div>
-                <span className={`font-secondFont font-light ${textOpacity}`}>
+                </div> */}
+                <span
+                  className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
+                >
+                  <span>
+                    <Check />
+                  </span>{' '}
                   {content.texts.hero.obsHero.text}
-                </span> */}
-                <img
-                  src={imgBottomHero}
-                  alt="imagem ilustrativa de clientes"
-                  className="rounded-md"
-                />
+                </span>
+
+                {obsTwo && (
+                  <span
+                    className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
+                  >
+                    <span>
+                      <FileText />
+                    </span>{' '}
+                    {content.texts.hero.obsHero.textTwo}
+                  </span>
+                )}
               </div>
-            </motion.div>
+            </MotionDivToDownUp>
 
             {/* Image */}
-            <motion.div
+            <MotionDivToDownUp
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
@@ -237,7 +250,7 @@ function HeroTemplateNovo({
 
                 {/* Floating Card */}
                 {/* {showGlobalButton && (
-                  <motion.div
+                  <MotionDivToDownUp
                     id="ligar"
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -268,10 +281,10 @@ function HeroTemplateNovo({
                         />
                       </div>
                     </div>
-                  </motion.div>
+                  </MotionDivToDownUp>
                 )} */}
               </div>
-            </motion.div>
+            </MotionDivToDownUp>
           </div>
         </SectionWrapper>
       </section>

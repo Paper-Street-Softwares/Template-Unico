@@ -17,7 +17,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 const features = Object.values(content.texts.features.cards)
 
-function FeaturesNovaTemplate({ colorMode }) {
+function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
   // Definindo classes dinamicamente conforme o colorMode
   let backgroundMode,
     text,
@@ -112,18 +112,20 @@ function FeaturesNovaTemplate({ colorMode }) {
                     />
                   </div>
 
-                  <div
-                    className={`absolute -bottom-6 -left-6 ${bgObservation} ${textObservation} p-8 rounded-tr-3xl rounded-bl-3xl shadow-xl max-w-xs`}
-                  >
-                    <p className="font-secondFont text-2xl font-bold mb-2">
-                      {content.texts.features.titleMessageFeature}
-                    </p>
-                    <p className="text-sm font-secondFont font-light">
-                      {content.texts.features.subtitleMessageFeature}
-                    </p>
-                  </div>
+                  {frasesDestaque && (
+                    <div
+                      className={`absolute -bottom-6 -left-6 ${bgObservation} ${textObservation} p-8 rounded-tr-3xl rounded-bl-3xl shadow-xl max-w-xs`}
+                    >
+                      <p className="font-secondFont text-2xl font-bold mb-2">
+                        {content.texts.features.titleMessageFeature}
+                      </p>
+                      <p className="text-sm font-secondFont font-light">
+                        {content.texts.features.subtitleMessageFeature}
+                      </p>
+                    </div>
+                  )}
                 </MotionDivDownToUp>
-                <MotionDivDownToUp>
+                {/* <MotionDivDownToUp>
                   <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-start desktop1:m-auto">
                     <ButtonReflexo
                       icon={
@@ -152,7 +154,7 @@ function FeaturesNovaTemplate({ colorMode }) {
                       className="text-white"
                     />
                   </div>
-                </MotionDivDownToUp>
+                </MotionDivDownToUp> */}
               </div>
 
               {/* Conteúdo das features */}
@@ -205,7 +207,7 @@ function FeaturesNovaTemplate({ colorMode }) {
                 </div> */}
 
                 <div className="grid tablet1:grid-cols-2 gap-6">
-                  {features.slice(0, 4).map((feature, idx) => (
+                  {features.slice(0, 6).map((feature, idx) => (
                     <MotionDivDownToUp>
                       <div
                         key={idx}
