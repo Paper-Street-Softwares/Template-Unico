@@ -8,6 +8,7 @@ import { whatsAppThemes } from '../../context/UseContextArchive'
 import { Phone } from 'lucide-react'
 import WhatsappForm from '../interactives/WhatsappForm'
 import FormAndAdress from '../interactives/Forms/FormAndAdress'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 
 function CtaNovoTemplate({ colorMode }) {
   // Classes dinâmicas conforme colorMode
@@ -42,12 +43,7 @@ function CtaNovoTemplate({ colorMode }) {
       {/* Fundo decorativo */}
       <SectionWrapper className="">
         <section className="relative text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="container mx-auto"
-          >
+          <MotionDivDownToUp className="container mx-auto">
             <span
               className={`font-bold font-secondFont tracking-wider uppercase text-xs mb-2 block ${miniTagCtaDark}`}
             >
@@ -107,7 +103,7 @@ function CtaNovoTemplate({ colorMode }) {
                 className="text-white"
               />
             </div>
-          </motion.div>
+          </MotionDivDownToUp>
         </section>
       </SectionWrapper>
     </SectionArea>
