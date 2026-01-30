@@ -52,7 +52,7 @@ export default function Index() {
 
         <main>
           {/* LCP — NÃO usar lazy */}
-          <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
+          <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={true} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
             <Important colorMode={colorMode} />
@@ -74,7 +74,7 @@ export default function Index() {
               phone={true}
               phoneSecond={false}
               expediente={false}
-              adress={false}
+              adress={true}
               email={true}
               emailSecond={false}
               fraseFooter={true} // frase Google LLC

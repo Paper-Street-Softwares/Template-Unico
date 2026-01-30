@@ -31,14 +31,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'A_Definir',
+  name: 'Dra. Luciana Soares',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'A_Definir', // Sem "www"
+  domain: 'lucianasoares.adv.br', // Sem "www"
   phone: {
-    ddd: '00',
-    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '0000', // Apenas os 4 últimos números
+    ddd: '61',
+    firstPart: '99286', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '9950', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -53,10 +53,7 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir</p>
+      <p>Brasília - DF</p>
     </div>
   ),
   enderecoSecundario: (
@@ -112,12 +109,12 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'A_Definir',
+      miniTag: 'DIVÓRCIO SEM COMPLICAÇÃO',
       title: (
         <h1>
-          A_Definir{' '}
+          Precisando de uma{' '}
           <span className="destaque relative italic font-light">
-            A_Definir
+            advogada
             <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
@@ -145,23 +142,28 @@ const content = {
               </svg>
             </span>
           </span>
-          ?
+          para seu divórcio?
         </h1>
       ),
-      subtitle: <p>A_Definir</p>,
+      subtitle: (
+        <p>
+          Orientação jurídica especializada para resolver seu divórcio de forma
+          clara, organizada e sem desgaste emocional.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Preciso de ajuda urgente',
+      ctaButtonText: 'Quero resolver meu divórcio agora',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'A_Definir',
-        textTwo: 'A_Definir',
+        text: 'Atendimento 100% online e sigiloso',
+        textTwo: 'Com orientação de advogada especializada',
       },
       secondaryCta: 'Contato',
       images: {
