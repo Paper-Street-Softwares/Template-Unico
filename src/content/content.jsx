@@ -1,7 +1,6 @@
 import logo from '../assets/imgs/logo/logo.webp'
 import heroDefaultImg from '../assets/imgs/hero/lawHero.webp'
 import heroDefaultMobileImg from '../assets/imgs/hero/lawHeroMobile.webp'
-import bgInstagram from '../assets/imgs/hero/bgInstagram.webp'
 
 import imgFeatures from '../assets/imgs/features/imgServices.webp'
 
@@ -13,28 +12,33 @@ import aboutImg from '../assets/imgs/about/aboutImg.webp'
 import imgSteps from '../assets/imgs/steps/imgSteps.webp'
 
 import {
-  BriefcaseBusiness,
+  Baby,
+  Briefcase,
+  BriefcaseMedical,
+  Gavel,
+  Home,
+  Key,
   LucideIdCard,
+  Lock,
   Scale,
-  AlertTriangle,
+  Car,
+  HandCoins,
   Check,
-  Users,
-  User,
 } from 'lucide-react'
-
+import { Users } from 'lucide-react'
 import { FileText } from 'lucide-react'
 
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Dra. Adelia Almeida',
+  name: 'A_Definir',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'adeliaadv.com.br', // Sem "www"
+  domain: 'A_Definir', // Sem "www"
   phone: {
-    ddd: '21',
-    firstPart: '97048', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '4958', // Apenas os 4 últimos números
+    ddd: '00',
+    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0000', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -50,6 +54,9 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -105,13 +112,13 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'Recuperação de redes sociais',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Sua conta do <span class="text-image">Instagram</span> foi{' '}
+          A_Definir{' '}
           <span className="destaque relative italic font-light">
-            hackeada, invadida ou suspensa
-            {/* <span>
+            A_Definir
+            <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
                 viewBox="0 0 100 10"
@@ -136,25 +143,19 @@ const content = {
                   fill="none"
                 />
               </svg>
-            </span> */}
+            </span>
           </span>
           ?
         </h1>
       ),
-      subtitle: (
-        <p>
-          Perder o controle da sua conta pode parecer o fim, mas estamos aqui
-          para resolver isso por você. <strong> Você tem direitos</strong>, e
-          nós sabemos exatamente como protegê-los!
-        </p>
-      ),
+      subtitle: <p>A_Definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Falar com uma advogada',
+      ctaButtonText: 'Preciso de ajuda urgente',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
@@ -183,97 +184,47 @@ const content = {
       },
     },
     important: {
-      miniTag: 'Atenção',
-      title: (
-        <h1>
-          O que é importante saber ao{' '}
-          <span className="text-primaryDark">perder o acesso</span> à sua conta
-          online
-        </h1>
-      ),
+      miniTag: 'A_Definir',
+      title: 'A_Definir',
       cards: {
         card1: {
-          title:
-            'Minha conta foi invadida ou suspensa. Posso fazer alguma coisa?',
-          paragraph: (
-            <p>
-              Sim. Em muitos casos é possível <strong>recuperar a conta</strong>{' '}
-              e <strong>responsabilizar quem causou o dano</strong>,
-              principalmente quando há falha da plataforma ou uso indevido dos
-              seus dados. <br />
-              Quanto antes você agir, maiores são as chances de recuperação.
-            </p>
-          ),
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
         },
         card2: {
-          title: 'Existe prazo para agir ou recorrer?',
-          paragraph: (
-            <p>
-              Sim. Quanto mais o tempo passa,{' '}
-              <strong>mais difícil fica provar o prejuízo</strong> e reverter a
-              situação. <br />
-              Além disso, deixar para depois pode fazer{' '}
-              <strong>você perder provas importantes</strong>. <br />
-              Por isso, o ideal é buscar orientação jurídica{' '}
-              <strong>imediatamente</strong>.
-            </p>
-          ),
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
         },
         card3: {
-          title: 'Se eu não fizer nada, o que pode acontecer?',
-          paragraph: (
-            <p>
-              Além de <strong>perder definitivamente a conta</strong>, seus
-              dados podem continuar sendo usados para golpes, sua imagem pode
-              ser prejudicada e você pode{' '}
-              <strong>sofrer prejuízos financeiros e profissionais</strong>{' '}
-              difíceis de reverter.
-            </p>
-          ),
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
         },
         card4: {
-          title:
-            'Por que procurar ajuda mesmo achando que “não tem o que fazer”?',
-          paragraph: (
-            <p>
-              Porque muitas suspensões e invasões{' '}
-              <strong>não acontecem por culpa do usuário</strong>. <br />
-              Falhas de segurança, denúncias indevidas e abuso da plataforma são
-              comuns — e{' '}
-              <strong>
-                podem gerar direito à recuperação da conta e indenização
-              </strong>
-              .
-              <br />
-              <br />
-              Agir rápido pode evitar perdas maiores.
-            </p>
-          ),
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
         },
       },
-      fraseObs:
-        'Entre em contato conosco e lhe daremos todo o suporte necessário',
-      ctaButtonText: 'Falar conosco agora pelo WhatsApp',
+      fraseObs: 'A_Definir',
+      ctaButtonText: 'A_Definir',
     },
     features: {
-      miniTag: 'O momento que sua conta é perdida',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          O problema não é perder uma conta. É tudo o que você
-          <span className="destaque italic font-light"> perde junto</span> com
-          ela.
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir</span>
+          A_Definir
         </h1>
       ),
-      subtitle: '',
+      subtitle: 'A_Definir',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: '100%',
-      subtitleMessageFeature: 'comprometida com sua vida digital',
+      titleMessageFeature: 'A_Definir',
+      subtitleMessageFeature: 'A_Definir',
       cards: {
         card1: {
-          title: 'Quando usam sua foto e seus dados para aplicar golpes',
-          subtitle:
-            'Sua imagem vira arma para enganar outras pessoas — e a culpa pode cair no seu colo.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -282,14 +233,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <User />,
+          icon: <Lock />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'Quando todo o seu conteúdo simplesmente some',
-          subtitle:
-            'Anos de posts, stories e provas do seu trabalho podem desaparecer em segundos.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -298,14 +248,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <AlertTriangle />,
+          icon: <Car />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: 'Quando você perde todos os seguidores de uma vez',
-          subtitle:
-            'Toda a audiência que você construiu com esforço deixa de ser sua da noite pro dia.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir <br />
@@ -313,14 +262,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Users />,
+          icon: <HandCoins />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: 'Quando você fica sem sua principal ferramenta de trabalho',
-          subtitle:
-            'Você perde renda, visibilidade e o principal canal de contato com seu público.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -329,7 +277,7 @@ const content = {
               <br />
             </div>
           ),
-          icon: <BriefcaseBusiness />,
+          icon: <FileText />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
@@ -398,7 +346,7 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: 'Veja como agir para proteger e recuperar sua conta',
+      ctaButtonText: 'A_Definir',
     },
     maps: {
       minitag: 'A_Definir',
@@ -411,30 +359,22 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'Quem está por trás da solução',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Especialista em
-          <span className="destaque italic font-light"> recuperar</span> contas
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir</span>{' '}
+          A_Definir
         </h1>
       ),
       SecondPartTitle: '',
-      subtitle:
-        'Atuação jurídica focada em proteger negócios e perfis nas redes sociais',
+      subtitle: 'A_Definir',
       paragraph: (
         <div>
-          Sou advogada com atuação em Direito Público e Privado, com foco em
-          questões que envolvem o ambiente digital. Atendo pessoas e empresas
-          que tiveram contas do Instagram, Facebook ou WhatsApp invadidas,
-          suspensas ou perdidas — especialmente quando essas plataformas são
-          ferramentas de trabalho.
+          A_Definir
           <br />
           <br />
-          Meu trabalho é orientar, agir rápido e buscar a recuperação da conta e
-          a proteção dos direitos da cliente. Cada caso é tratado com
-          estratégia, clareza e responsabilidade, porque sei que perder uma rede
-          social não é só perder um perfil — é perder renda, contatos e
-          credibilidade.
+          A_Definir
         </div>
       ),
 
@@ -453,7 +393,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Falar diretamente comigo',
+      ctaButtonText: 'A_Definir',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -498,12 +438,12 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'Por que agir agora',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Mais do que recuperar sua conta, é
-          <span className="destaque italic font-light"> proteger </span>o que
-          você construiu
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir </span>
+          A_Definir
         </h1>
       ),
       subtitle: '',
@@ -512,63 +452,55 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Agilidade quando o tempo joga contra você',
-          cardDescription:
-            'Quanto mais você demora, menores são as chances de recuperar a conta. Aqui, seu caso é analisado rapidamente para evitar prejuízos maiores.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Você não enfrenta a plataforma só',
-          cardDescription:
-            'Bloqueios injustos, invasões e falhas acontecem. Ter apoio jurídico muda o jogo e aumenta suas chances de resolver.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Proteção da sua imagem e do seu negócio',
-          cardDescription:
-            'Evite que seus dados e sua imagem continuem sendo usados de forma indevida, causando golpes, perdas financeiras e danos à sua reputação.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Clareza, estratégia e acompanhamento real',
-          cardDescription:
-            'Você sabe exatamente o que está sendo feito, quais são os próximos passos e acompanha tudo de perto, sem promessas vazias.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
       },
       ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
-      miniTag: 'Fale conosco',
-      title: <h1>Não espere mais para recuperar sua conta</h1>,
+      miniTag: 'A_Definir',
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Cada dia de atraso reduz as chances de recuperação e aumenta os
-            prejuízos. A gente cuida de tudo por você — com agilidade, segurança
-            e orientação jurídica.
-          </p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
       container: {
         label1: {
           icon: <Check />,
-          text: ' Avaliação jurídica sobre invasão, bloqueio ou suspensão da conta',
+          text: ' Análise inicial do seu caso criminal',
         },
         label2: {
           icon: <Check />,
-          text: ' Orientação clara sobre provas, prazos e próximos passos',
+          text: ' Atendimento direto com advogado criminalista',
         },
         label3: {
           icon: <Check />,
-          text: 'Atuação para recuperação da conta e responsabilização da plataforma',
+          text: ' Resposta rápida e acompanhamento pelo WhatsApp',
         },
         label4: {
           icon: <Check />,
-          text: 'Proteção contra uso indevido da sua imagem e dos seus dados',
+          text: ' Atuação iniciada imediatamente após a análise',
         },
         label5: {
           icon: <Check />,
-          text: 'Acompanhamento do caso até a solução, com comunicação direta',
+          text: ' Mais segurança para você e sua família em um momento decisivo',
         },
       },
       // subtitleDireita: (
@@ -579,7 +511,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Falar com a Dra Adelia Almeida agora mesmo',
+      ctaButtonText: 'A_Definir',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
