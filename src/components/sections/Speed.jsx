@@ -33,30 +33,34 @@ function Speed({ colorMode }) {
     <SectionArea className={`${backgroundMode}`}>
       <SectionWrapper>
         <section className="">
-          <SectionHeaderNovo title="" colorMode={colorMode} />
-          <div className="max-w-4xl mx-auto bg-black rounded-3xl p-8 md:p-12 border border-white/0">
-            <div className="grid sm:grid-cols-2 gap-8">
+          <SectionHeaderNovo
+            title="Dependendo do caso, o divórcio pode ser resolvido:"
+            miniTitle="Rapidez e praticidade"
+            colorMode={colorMode}
+          />
+          <div className="max-w-5xl mx-auto bg-white rounded-3xl p-8 md:p-12 border border-white/0">
+            <div className="grid sm:grid-cols-3 gap-8">
               {[
                 {
-                  text: 'A_Definir',
-                  subtitle: 'A_Definir',
+                  text: 'Em poucos dias, conforme o tipo de divórcio',
+                  subtitle: '',
                   icon: Siren,
                 },
                 {
-                  text: 'A_Definir',
-                  subtitle: 'A_Definir',
+                  text: 'Sem audiência, na maioria dos casos',
+                  subtitle: '',
                   icon: Users,
                 },
                 {
-                  text: 'A_Definir',
-                  subtitle: 'A_Definir',
+                  text: 'Sem necessidade de comparecimento presencial',
+                  subtitle: '',
                   icon: ShieldCheck,
                 },
-                {
-                  text: 'A_Definir',
-                  subtitle: 'A_Definir',
-                  icon: Clock,
-                },
+                // {
+                //   text: 'A_Definir',
+                //   subtitle: 'A_Definir',
+                //   icon: Clock,
+                // },
               ].map((item, idx) => (
                 <div
                   key={idx}
@@ -67,22 +71,21 @@ function Speed({ colorMode }) {
                   >
                     <item.icon className={`w-6 h-6 ${textOpacity}`} />
                   </div>
-                  <h1 className={`font-medium font-secondFont ${text}`}>
+                  <h1 className={`font-medium font-secondFont ${textOpacity}`}>
                     {item.text}
                   </h1>
-                  <p className={`font-secondFont text-sm ${textOpacity}`}>
+                  {/* <p className={`font-secondFont text-sm ${textOpacity}`}>
                     {item.subtitle}
-                  </p>
+                  </p> */}
                 </div>
               ))}
             </div>
 
             <div className="mt-10 text-center">
               <p
-                className={`text-paragraph2 font-medium font-secondFont inline-block px-4 py-1 rounded-full ${text}`}
+                className={`text-paragraph2 desktop1:text-paragraph3 font-medium font-secondFont inline-block px-4 py-1 rounded-full ${text}`}
               >
-                Cada caso é diferente. Agir rápido e com orientação jurídica
-                pode mudar completamente o rumo do processo.
+                Tudo conforme a lei.
               </p>
             </div>
 

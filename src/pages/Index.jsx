@@ -55,19 +55,21 @@ export default function Index() {
           <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={true} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
-            <Important colorMode={colorMode} />
             <FeaturesNovaTemplate
               colorMode={colorMode}
-              frasesDestaque={true}
+              frasesDestaque={false}
               accordion={false}
             />
+            <Speed colorMode={colorMode} />
+            {/* <Important colorMode={colorMode} /> */}
+
             <AboutNovoTemplate
               colorMode={colorMode}
               ButtonModal={false}
               benefits={false}
             />
             <CtaNovoTemplate colorMode={colorMode} />
-            <StepsNovoTemplate colorMode={colorMode} />
+            {/* <StepsNovoTemplate colorMode={colorMode} /> */}
             <FooterNovoTemplate
               colorMode={colorMode}
               mapa={false}
@@ -84,7 +86,6 @@ export default function Index() {
             {/* <Diferences colorMode={colorMode} /> */}
             {/* <Cards colorMode={colorMode} /> */}
             {/* <Emergency colorMode={colorMode} /> */}
-            {/* <Speed colorMode={colorMode} /> */}
             {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             {/* <FaqNovoTemplate colorMode={colorMode} /> */}
           </Suspense>

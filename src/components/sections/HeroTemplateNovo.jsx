@@ -11,7 +11,7 @@ import {
   Clock,
   CircleDollarSign,
   Users,
-  Globe,
+  Split,
   FileText,
 } from 'lucide-react'
 import content from '../../content/content'
@@ -132,7 +132,7 @@ function HeroTemplateNovo({
               >
                 <span>
                   {/* <MapPin className="w-4 h-4" /> */}
-                  <Globe width={14} />
+                  <Split width={14} />
                 </span>
                 {content.texts.hero.miniTag}
               </div>

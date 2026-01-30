@@ -24,6 +24,8 @@ import {
   Car,
   HandCoins,
   Check,
+  ClipboardCheck,
+  Handshake,
 } from 'lucide-react'
 import { Users } from 'lucide-react'
 import { FileText } from 'lucide-react'
@@ -210,23 +212,25 @@ const content = {
       ctaButtonText: 'A_Definir',
     },
     features: {
-      miniTag: 'A_Definir',
+      miniTag: 'Seu divórcio não precisa ser complicado',
       title: (
         <h1>
-          A_Definir
-          <span className="destaque italic font-light"> A_Definir</span>
-          A_Definir
+          Sabemos que o momento do divórcio é
+          <span className="destaque italic font-light"> delicado</span> e,
+          muitas vezes, doloroso.
         </h1>
       ),
-      subtitle: 'A_Definir',
+      subtitle:
+        'Por isso, oferecemos um atendimento humanizado, rápido e totalmente online, para que você resolva tudo com tranquilidade e sem burocracia. Você não precisa enfrentar filas, deslocamentos ou desgaste emocional. Nós cuidamos de tudo para você.',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
       titleMessageFeature: 'A_Definir',
       subtitleMessageFeature: 'A_Definir',
       cards: {
         card1: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Divórcio extrajudicial',
+          subtitle:
+            'Resolvido em cartório, de forma rápida e sem processo judicial.',
           description: (
             <div>
               A_Definir
@@ -235,13 +239,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Lock />,
+          icon: <ClipboardCheck />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Divórcio consensual',
+          subtitle:
+            'Quando há acordo entre as partes, o divórcio acontece de forma simples e menos desgastante.',
           description: (
             <div>
               A_Definir
@@ -250,13 +255,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Car />,
+          icon: <Handshake />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Divórcio judicial',
+          subtitle:
+            'Indicado quando não há acordo, com acompanhamento jurídico para proteger seus direitos.',
           description: (
             <div>
               A_Definir <br />
@@ -264,13 +270,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <HandCoins />,
+          icon: <Scale />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Divórcio com ou sem filhos',
+          subtitle:
+            'Orientação completa, com atenção especial às questões que envolvem filhos e responsabilidades.',
           description: (
             <div>
               A_Definir
@@ -279,13 +286,14 @@ const content = {
               <br />
             </div>
           ),
-          icon: <FileText />,
+          icon: <Users />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card5: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Divórcio com partilha de bens',
+          subtitle:
+            'Análise e divisão justa dos bens, garantindo segurança em cada etapa do processo.',
           description: (
             <div>
               A_Definir
@@ -316,8 +324,9 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card6: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Divórcio sem partilha imediata',
+          subtitle:
+            'Possibilidade de se divorciar agora e resolver a partilha em um momento posterior.',
           description: (
             <div>
               A_Definir
@@ -361,22 +370,30 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'A_Definir',
+      miniTag: 'Por que escolher nosso escritório?',
       title: (
         <h1>
-          A_Definir
-          <span className="destaque italic font-light"> A_Definir</span>{' '}
-          A_Definir
+          Nosso
+          <span className="destaque italic font-light"> compromisso</span>
+          {''} é tornar esse momento mais leve, rápido e seguro para você.
         </h1>
       ),
       SecondPartTitle: '',
-      subtitle: 'A_Definir',
+      subtitle: '',
       paragraph: (
         <div>
-          A_Definir
-          <br />
-          <br />
-          A_Definir
+          <span className="flex gap-2 items-center">
+            <Check /> Atuação especializada em Direito de Família
+          </span>
+          <span className="flex gap-2 items-center">
+            <Check /> Experiência em divórcios
+          </span>
+          <span className="flex gap-2 items-center">
+            <Check /> Atendimento ágil e personalizado
+          </span>
+          <span className="flex gap-2 items-center">
+            <Check /> Transparência em todas as etapas
+          </span>
         </div>
       ),
 
@@ -395,7 +412,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Falar diretamente com a advogada',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -476,33 +493,38 @@ const content = {
       ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
-      miniTag: 'A_Definir',
-      title: <h1>A_Definir</h1>,
+      miniTag: 'Fale agora com uma advogada',
+      title: (
+        <h1>
+          Se você está pensando em se divorciar ou precisa de orientação, fale
+          conosco agora.
+        </h1>
+      ),
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont"></p>
         </div>
       ),
       container: {
         label1: {
           icon: <Check />,
-          text: ' Análise inicial do seu caso criminal',
+          text: ' Orientação clara sobre seus direitos no divórcio',
         },
         label2: {
           icon: <Check />,
-          text: ' Atendimento direto com advogado criminalista',
+          text: ' Atendimento humanizado e sigiloso com advogada especializada',
         },
         label3: {
           icon: <Check />,
-          text: ' Resposta rápida e acompanhamento pelo WhatsApp',
+          text: ' Divórcio rápido, sem audiências e sem desgaste emocional',
         },
         label4: {
           icon: <Check />,
-          text: ' Atuação iniciada imediatamente após a análise',
+          text: ' Acompanhamento rápido pelo WhatsApp, do início ao fim',
         },
         label5: {
           icon: <Check />,
-          text: ' Mais segurança para você e sua família em um momento decisivo',
+          text: ' Segurança para encerrar esse ciclo e seguir em frente',
         },
       },
       // subtitleDireita: (
@@ -513,7 +535,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Quero iniciar meu divórcio',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
