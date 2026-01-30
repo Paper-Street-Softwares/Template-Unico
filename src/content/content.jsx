@@ -116,7 +116,7 @@ const content = {
         <h1>
           Precisando de uma{' '}
           <span className="destaque relative italic font-light">
-            advogada
+            advogada{' '}
             <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
