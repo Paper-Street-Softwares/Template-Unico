@@ -1,11 +1,12 @@
 import React, { useRef, useState } from 'react'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp.jsx'
+import { motion } from 'framer-motion'
 import content from '../../content/content'
 import SectionArea from '../sectionElements/SectionArea'
 import SectionWrapper from '../sectionElements/SectionWrapper'
 import ButtonReflexo from '../interactives/ButtonReflexo'
 import { ArrowLeft, ArrowRight, Phone, Scale } from 'lucide-react'
 import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 import { Button } from 'primereact/button'
 
 import Accordion from '@mui/material/Accordion'
@@ -16,7 +17,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 const features = Object.values(content.texts.features.cards)
 
-function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
+function FeaturesNovaTemplate({ colorMode }) {
   // Definindo classes dinamicamente conforme o colorMode
   let backgroundMode,
     text,
@@ -33,7 +34,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-terciary/60'
+      backgroundMode = 'bg-white'
       bgAccordion = '#fff'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
@@ -47,7 +48,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
       textObservation = 'text-white'
       break
     case 'dark':
-      backgroundMode = 'bg-black'
+      backgroundMode = 'bg-darkOpacity'
       bgAccordion = 'rgba(0,0,0,0.8)'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
@@ -93,9 +94,14 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
               {/* Imagem com destaque */}
               <div>
                 {' '}
-                <MotionDivDownToUp className="relative order-2 lg:order-1 w-full m-auto">
+                <MotionDivDownToUp
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, ease: 'easeOut' }}
+                  className="relative order-2 lg:order-1 w-full m-auto"
+                >
                   <div
-                    className={`relative overflow-hidden rounded-3xl shadow-2xl aspect-[4/5] ${image}`}
+                    className={`relative overflow-hidden rounded-3xl shadow-2xl  ${image}`}
                   >
                     <img
                       src={content.texts.features.imgFeatures}
@@ -105,21 +111,20 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                       height={798}
                     />
                   </div>
-                  {frasesDestaque && (
-                    <div
-                      className={`absolute -bottom-6 -left-6 ${bgObservation} ${textObservation} p-8 rounded-tr-3xl rounded-bl-3xl shadow-xl max-w-xs`}
-                    >
-                      <p className={`font-secondFont text-2xl font-bold mb-2`}>
-                        {content.texts.features.titleMessageFeature}
-                      </p>
-                      <p className={`text-sm font-secondFont font-light`}>
-                        {content.texts.features.subtitleMessageFeature}
-                      </p>
-                    </div>
-                  )}
+
+                  <div
+                    className={`absolute -bottom-6 -left-6 ${bgObservation} ${textObservation} p-8 rounded-tr-3xl rounded-bl-3xl shadow-xl max-w-xs`}
+                  >
+                    <p className="font-secondFont text-2xl font-bold mb-2">
+                      {content.texts.features.titleMessageFeature}
+                    </p>
+                    <p className="text-sm font-secondFont font-light">
+                      {content.texts.features.subtitleMessageFeature}
+                    </p>
+                  </div>
                 </MotionDivDownToUp>
                 <MotionDivDownToUp>
-                  <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-center mx-auto">
+                  <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-start desktop1:m-auto">
                     <ButtonReflexo
                       icon={
                         <svg
@@ -143,6 +148,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                       link={`tel:${content.texts.infos.phone}`}
                       label="Emergência? Ligue agora!"
                       colorMode={colorMode}
+                      bgClass="bg-[#ff2c2c]"
                       className="text-white"
                     />
                   </div>
@@ -158,78 +164,72 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                   type="article"
                   colorMode={colorMode}
                 />
-                {accordion ? (
-                  <MotionDivDownToUp>
-                    <div className="w-full">
-                      <div>
-                        {features.map((item, index) => (
-                          <Accordion
-                            key={index}
-                            expanded={expanded === index}
-                            onChange={() =>
-                              setExpanded(expanded === index ? false : index)
-                            }
-                          >
-                            <AccordionSummary
-                              expandIcon={
-                                <ExpandMoreIcon className={`${textDestaque}`} />
-                              }
-                              aria-controls={`panel-${index}-content`}
-                              id={`panel-${index}-header`}
-                              sx={{
-                                backgroundColor: bgAccordion,
-                              }}
-                            >
-                              <Typography
-                                component="span"
-                                className={`${text}`}
-                              >
-                                {item.title}
-                              </Typography>
-                            </AccordionSummary>
 
-                            <AccordionDetails
-                              sx={{
-                                backgroundColor: bgAccordion,
-                              }}
-                            >
-                              <Typography className={`${textOpacity}`}>
-                                {item.subtitle}
-                              </Typography>
-                            </AccordionDetails>
-                          </Accordion>
-                        ))}
-                      </div>
-                    </div>
-                  </MotionDivDownToUp>
-                ) : (
-                  <MotionDivDownToUp>
-                    <div className="grid tablet1:grid-cols-2 gap-6">
-                      {features.slice(0, 4).map((feature, idx) => (
-                        <div
-                          key={idx}
-                          className={`group p-6 rounded-xl ${cardBg} ${hoverCardBg} transition-all duration-700 cursor-pointer`}
+                {/* <div className="w-full">
+                  <div>
+                    {features.map((item, index) => (
+                      <Accordion
+                        key={index}
+                        expanded={expanded === index}
+                        onChange={() =>
+                          setExpanded(expanded === index ? false : index)
+                        }
+                      >
+                        <AccordionSummary
+                          expandIcon={
+                            <ExpandMoreIcon className={`${textDestaque}`} />
+                          }
+                          aria-controls={`panel-${index}-content`}
+                          id={`panel-${index}-header`}
+                          sx={{
+                            backgroundColor: bgAccordion,
+                          }}
                         >
-                          <div
-                            className={`w-10 h-10 rounded-full ${iconBg} mb-4 flex items-center justify-center shadow-sm transition-transform`}
-                          >
-                            {feature.icon}
-                          </div>
-                          <h1
-                            className={`font-secondFont font-bold text-lg mb-2 ${text} ${hoverTextCard} transition-all`}
-                          >
-                            {feature.title}
-                          </h1>
-                          <p
-                            className={`text-sm font-secondFont font-light ${textOpacity} ${hoverTextCard} transition-all`}
-                          >
-                            {feature.subtitle}
-                          </p>
+                          <Typography component="span" className={`${text}`}>
+                            {item.title}
+                          </Typography>
+                        </AccordionSummary>
+
+                        <AccordionDetails
+                          sx={{
+                            backgroundColor: bgAccordion,
+                          }}
+                        >
+                          <Typography className={`${textOpacity}`}>
+                            {item.subtitle}
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                    ))}
+                  </div>
+                </div> */}
+
+                <div className="grid tablet1:grid-cols-2 gap-6">
+                  {features.slice(0, 4).map((feature, idx) => (
+                    <MotionDivDownToUp>
+                      <div
+                        key={idx}
+                        className={`group p-6 rounded-xl ${cardBg} ${hoverCardBg} transition-all duration-700 cursor-pointer`}
+                      >
+                        <div
+                          className={`w-10 h-10 rounded-full ${iconBg} mb-4 flex items-center justify-center shadow-sm transition-transform`}
+                        >
+                          {feature.icon}
                         </div>
-                      ))}
-                    </div>
-                  </MotionDivDownToUp>
-                )}
+                        <h1
+                          className={`font-secondFont font-bold text-lg mb-2 ${text} ${hoverTextCard} transition-all`}
+                        >
+                          {feature.title}
+                        </h1>
+                        <p
+                          className={`text-sm font-secondFont font-light ${textOpacity} ${hoverTextCard} transition-all`}
+                        >
+                          {feature.subtitle}
+                        </p>
+                      </div>
+                    </MotionDivDownToUp>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
