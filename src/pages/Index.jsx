@@ -55,12 +55,12 @@ export default function Index() {
           <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
+            <Important colorMode={colorMode} />
             <FeaturesNovaTemplate
               colorMode={colorMode}
               frasesDestaque={true}
               accordion={false}
             />
-            <Important colorMode={colorMode} />
             <AboutNovoTemplate
               colorMode={colorMode}
               ButtonModal={false}

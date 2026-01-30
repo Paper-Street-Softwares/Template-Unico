@@ -33,7 +33,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-terciary/60'
       bgAccordion = '#fff'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
