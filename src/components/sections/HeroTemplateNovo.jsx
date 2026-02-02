@@ -22,20 +22,17 @@ import ButtonAlert from '../interactives/ButtonAlert'
 import { useColorMode } from '../../context/UseContextArchive'
 import MotionDivToDownUp from '../animation/MotionDivDownToUp'
 
-function HeroTemplateNovo({
-  colorMode,
-  text,
-  textOpacity,
-  backgroundMode,
-  bgFaixaHero,
-  bgMinitag,
-  textObs,
-  image,
-  bgAlertHero,
-  textDestaque,
-  borderColor,
-  obsTwo,
-}) {
+function HeroTemplateNovo({ colorMode, obsTwo }) {
+  let text,
+    textOpacity,
+    backgroundMode,
+    bgFaixaHero,
+    bgMinitag,
+    textObs,
+    image,
+    bgAlertHero,
+    textDestaque,
+    borderColor
   switch (colorMode) {
     case 'light':
       backgroundMode = 'bg-white'
@@ -109,7 +106,7 @@ function HeroTemplateNovo({
       paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
-      <section className="relative min-h-[90vh] w-full pt-[90px] phone2:pt-[90px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] phone3:pt-[100px] tablet1:pt-[170px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
+      <section className="relative w-full pt-[90px] phone2:pt-[90px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] phone3:pt-[100px] tablet1:pt-[170px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
         {/* Abstract Background Shapes */}
         <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}

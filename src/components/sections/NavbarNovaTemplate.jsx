@@ -79,9 +79,17 @@ function NavbarNovaTemplate({
             <img
               src={content.texts.navbar.logo.img}
               alt={content.texts.navbar.logo.alt}
-              className="w-[100%]"
+              className="w-[100%] desktop1:hidden"
               width={160}
-              height={102}
+              height={71}
+              fetchPriority="high"
+            />
+            <img
+              src={content.texts.navbar.logo.imgDesktop}
+              alt={content.texts.navbar.logo.alt}
+              className="w-[100%] hidden desktop1:flex"
+              width={243}
+              height={109}
               fetchPriority="high"
             />
           </div>
