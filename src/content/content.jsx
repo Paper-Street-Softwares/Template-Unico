@@ -1,31 +1,19 @@
 import logo from '../assets/imgs/logo/logo.webp'
-import logoDesktop from '../assets/imgs/logo/logoDesktop.webp'
-
 import heroDefaultImg from '../assets/imgs/hero/lawHero.webp'
 import heroDefaultMobileImg from '../assets/imgs/hero/lawHeroMobile.webp'
-
-import teamMemberImg1 from '../assets/imgs/team/team1.webp'
-import teamMemberImg2 from '../assets/imgs/team/team2.webp'
-import teamMemberImg3 from '../assets/imgs/team/team2.webp'
-
-import team1 from '../assets/imgs/team/team1.webp'
-import team2 from '../assets/imgs/team/team2.webp'
-import team3 from '../assets/imgs/team/team3.webp'
 
 import imgFeatures from '../assets/imgs/features/imgServices.webp'
 
 import aboutImg from '../assets/imgs/about/aboutImg.webp'
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-import aboutSocialImg from '../assets/imgs/about/aboutImgSocial.webp'
+// import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
 import imgSteps from '../assets/imgs/steps/imgSteps.webp'
 
 import {
   Baby,
-  Shield,
-  Accessibility,
-  BriefcaseBusiness,
+  Briefcase,
   BriefcaseMedical,
   Gavel,
   Home,
@@ -43,14 +31,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Daniela Paim Advocacia',
+  name: 'A_Definir',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'danielapaim.adv.br', // Sem "www"
+  domain: 'A_Definir', // Sem "www"
   phone: {
-    ddd: '18',
-    firstPart: '99171', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '7480', // Apenas os 4 últimos números
+    ddd: '00',
+    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0000', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -65,10 +53,10 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>Rua Djalma Dutra,</p>
-      <p>38-A, Centro,</p>
-      <p>Presidente Venceslau - SP,</p>
-      <p>CEP: 19400-053</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -82,11 +70,11 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>8:30 às 17:30</p>
+      <p>A_Definir</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: 'danipaimadvocacia', // Sem o @
+  instagramProfile: '', // Sem o @
   facebookProfile: '',
   linkeDinProfile: '',
   x: '',
@@ -104,7 +92,6 @@ const content = {
     navbar: {
       logo: {
         img: logo,
-        imgDesktop: logoDesktop,
         alt: `Logomarca ${infos.name}`,
       },
       solidLogo: {
@@ -125,11 +112,12 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'ESCRITÓRIO DE ADVOCACIA',
+      miniTag: 'A_Definir',
       title: (
         <h1>
+          A_Definir{' '}
           <span className="destaque relative italic font-light">
-            <span className="font-bold">Experiência</span>
+            A_Definir
             <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
@@ -156,28 +144,23 @@ const content = {
                 />
               </svg>
             </span>
-          </span>{' '}
-          jurídica a serviço do direito
+          </span>
+          ?
         </h1>
       ),
-      subtitle: (
-        <p>
-          Mais de 30 anos de experiência na defesa técnica e estratégica dos
-          seus direitos.
-        </p>
-      ),
+      subtitle: <p>A_Definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Falar com um advogado',
+      ctaButtonText: 'A_Definir',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Atendimento presencial e online para todo Brasil',
+        text: 'A_Definir',
         textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
@@ -225,23 +208,23 @@ const content = {
       ctaButtonText: 'A_Definir',
     },
     features: {
-      miniTag: 'Áreas de Atuação',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Soluções
-          <span className="destaque italic font-light"> jurídicas</span> para
-          cada fase da sua vida
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir</span>
+          A_Definir
         </h1>
       ),
-      subtitle: 'Experiência técnica para resolver seu problema com segurança.',
+      subtitle: 'A_Definir',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: '100%',
-      subtitleMessageFeature: 'dedicação à sua causa.',
+      titleMessageFeature: 'A_Definir',
+      subtitleMessageFeature: 'A_Definir',
       cards: {
         card1: {
-          title: 'Direito de Família',
-          subtitle: 'Soluções humanas para divórcios, guarda e pensão justa.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -250,13 +233,89 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Users />,
+          icon: <Lock />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'Direito Cível',
-          subtitle: 'Defesa dos seus direitos em conflitos do dia a dia.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Car />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card3: {
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
+          description: (
+            <div>
+              A_Definir <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <HandCoins />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card4: {
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
+            </div>
+          ),
+          icon: <FileText />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card5: {
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-dollar-sign-icon lucide-circle-dollar-sign"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
+              <path d="M12 18V6" />
+            </svg>
+          ),
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card6: {
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -266,70 +325,6 @@ const content = {
             </div>
           ),
           icon: <Scale />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card3: {
-          title: 'Direito Trabalhista',
-          subtitle: 'Proteção ao trabalhador em demissões e direitos legais.',
-          description: (
-            <div>
-              A_Definir <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <BriefcaseBusiness />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card4: {
-          title: 'Direito Previdenciário',
-          subtitle: 'Acesso a benefícios do INSS com orientação segura clara.',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <Gavel />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card5: {
-          title: 'Direito Criminal',
-          subtitle: 'Atuação firme na defesa da sua liberdade e direitos.',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Shield />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card6: {
-          title: (
-            <p>
-              Direito da Pessoa com Deficiência <br />
-              (Ênfase em Transtorno do Espectro Autista - TEA)
-            </p>
-          ),
-          subtitle: 'Garantia de direitos e inclusão para pessoas com TEA.',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Accessibility />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
@@ -351,7 +346,7 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: 'Entenda como podemos ajudar',
+      ctaButtonText: 'A_Definir',
     },
     maps: {
       minitag: 'A_Definir',
@@ -364,150 +359,91 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'QUEM É O DANIELA PAIM TAVELA ADVOCACIA',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Nossa
-          <span className="destaque italic font-light"> trajetória</span>{' '}
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir</span>{' '}
+          A_Definir
         </h1>
       ),
       SecondPartTitle: '',
-      subtitle:
-        'Mais de 30 anos de atuação jurídica sólida ética e técnica na defesa de direitos',
+      subtitle: 'A_Definir',
       paragraph: (
         <div>
-          O Escritório Daniela Paim Tavela Advocacia possui atuação consolidada
-          na região, construída ao longo de mais de três décadas de exercício
-          profissional pautado pela ética, responsabilidade e excelência
-          técnica. Sua trajetória é marcada pela condução rigorosa dos casos e
-          pelo compromisso permanente com a defesa dos direitos de seus
-          clientes.
+          A_Definir
+          <br />
+          <br />
+          A_Definir
         </div>
       ),
 
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="text-mutedForeground font-secondFont">
-          O Escritório Daniela Paim Tavela Advocacia possui atuação consolidada
-          na região, construída ao longo de mais de três décadas de exercício
-          profissional pautado pela ética, responsabilidade e excelência
-          técnica. Sua trajetória é marcada pela condução rigorosa dos casos e
-          pelo compromisso permanente com a defesa dos direitos de seus
-          clientes.
+          A_Definir
           <br />
           <br />
-          Com perfil full service, o escritório atua nas áreas de Direito de
-          Família, Cível, Trabalhista, Previdenciário e Criminal, prestando
-          assessoria e representação jurídica nas esferas consultiva e
-          contenciosa, sempre com atuação estratégica e foco na solução jurídica
-          adequada a cada demanda.
+          A_Definir
           <br />
           <br />
-          Ao longo de sua história, acumulou expressiva experiência
-          institucional, inclusive na assessoria jurídica de entidades
-          representativas de servidores públicos, com forte atuação em demandas
-          coletivas e individuais. Destaca-se ainda no Direito da Pessoa com
-          Deficiência, com ênfase no Transtorno do Espectro Autista (TEA),
-          adotando abordagem técnica fundamentada e conhecimento
-          multidisciplinar.
+          A_Definir
         </p>
       ),
       paragraphModalCta: 'Entre em contato',
-      titleModal: 'Nossa trajetória',
+      titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Saiba mais sobre nossa atuação',
-      aboutSocial: {
-        img: {
-          img: aboutSocialImg,
-          alt: `Foto do Instagram do ${infos.name}`,
-          altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
-        },
-        miniTag: 'REDES SOCIAIS',
-        title: 'Conecte-se conosco',
-        subtitle:
-          'Acompanhe nossas redes sociais para se manter informado sobre conteúdos jurídicos, atualizações e temas relevantes das áreas de atuação.',
-        paragraph: <p></p>,
-        labelInstagram: 'Siga-nos no Instagram',
-        labelFacebook: 'Siga-nos no Facebook',
-        labelLinkedin: 'Siga-nos no LinkedIn',
-        labelX: 'Siga-nos no X',
-        labelTiktok: 'Siga-nos no Tik Tok',
-        labelYoutube: 'Siga-nos no Youtube',
-      },
+      ctaButtonText: 'A_Definir',
+      // aboutSocial: {
+      //   img: {
+      //     img: aboutSocialImg,
+      //     alt: `Foto do Instagram do ${infos.name}`,
+      //     altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
+      //   },
+      //   miniTag: 'REDES SOCIAIS',
+      //   title: 'Conecte-se conosco',
+      //   subtitle:
+      //     'Aproveite nossas redes sociais para mantermos contato e ficar por dentro dos lançamentos, novidades e atualizações do mercado imobiliário.',
+      //   paragraph: <p></p>,
+      //   labelInstagram: 'Siga-nos no Instagram',
+      //   labelFacebook: 'Siga-nos no Facebook',
+      //   labelLinkedin: 'Siga-nos no LinkedIn',
+      //   labelX: 'Siga-nos no X',
+      //   labelTiktok: 'Siga-nos no Tik Tok',
+      //   labelYoutube: 'Siga-nos no Youtube',
+      // },
     },
-    team: {
-      miniTag: 'NOSSO TIME',
-      title: (
-        <h1>
-          Advogados que atuam com <span className="italic">excelência </span>
-        </h1>
-      ),
-      subtitle: 'Equipe experiente, pronta para te representar.',
-      cards: {
-        card1: {
-          img: team1,
-          alt: 'Imagens ilustrativa dos profissionais',
-          title: 'Sócia Fundadora ',
-          name: 'Dra. Daniela Paim Tavela',
-          description: (
-            <p>
-              Daniela Paim Tavela é advogada formada pela Universidade do Oeste
-              Paulista (UNOESTE) desde 1996, com mais de 30 anos de atuação na
-              advocacia. <br /> <br /> Possui experiência consolidada nas áreas
-              de Direito de Família, Civil, Trabalhista, Previdenciário e
-              Criminal, além de atuação especializada em Direito da Pessoa com
-              Deficiência, com ênfase no Transtorno do Espectro Autista (TEA).
-            </p>
-          ),
-        },
-        card2: {
-          img: team2,
-          alt: 'Imagens ilustrativa dos profissionais',
-          title: 'Advogada Associada ',
-          name: 'Dra. Thayrine Cavalcante Costa',
-          description: (
-            <p>
-              Thayrine Cavalcante Costa é advogada inscrita na OAB/SP sob nº
-              520.477, formada em Direito pela Universidade do Oeste Paulista
-              (UNOESTE) em 2020.
-              <br />
-              <br />
-              Atua com ênfase em Direito de Família e Sucessões, área na qual se
-              especializa, pautando sua prática profissional por atendimento
-              ético, responsável e humanizado, voltado à busca de soluções
-              jurídicas equilibradas e eficazes.
-            </p>
-          ),
-        },
-        card3: {
-          img: team3,
-          alt: 'Imagens ilustrativa dos profissionais',
-          title: 'Advogado Sócio ',
-          name: 'Dr. Rafael Agudo Freire',
-          description: (
-            <p>
-              Rafael Agudo Freire é advogado inscrito na OAB/SP sob nº 434.105,
-              com atuação consolidada nas áreas de Direito Civil, Direito do
-              Consumidor, Direito Bancário, Direito de Família, Direito
-              Previdenciário e Direito Penal.
-              <br />
-              <br />
-              Desenvolve sua prática profissional com foco na técnica jurídica,
-              na estratégia processual e na condução responsável das demandas,
-              prezando por soluções seguras, éticas e eficazes para seus
-              clientes.
-            </p>
-          ),
-        },
-      },
-    },
+    // team: {
+    //   miniTag: ' A_Definir',
+    //   title: (
+    //     <h1>
+    //       A_Definir <span className="italic text-primaryDark">A_Definir</span>
+    //       A_Definir
+    //     </h1>
+    //   ),
+    //   subtitle: 'A_Definir',
+    //   cards: {
+    //     card1: {
+    //       img1: team1,
+    //       alt: 'Imagens ilustrativa dos profissionais',
+    //       name: 'A_Definir',
+    //       description: <p>A_Definir</p>,
+    //     },
+    //     card2: {
+    //       img2: team2,
+    //       alt: 'Imagens ilustrativa dos profissionais',
+    //       name: 'A_Definir',
+    //       description: <p>A_Definir</p>,
+    //     },
+    //   },
+    // },
     steps: {
-      miniTag: 'PASSO A PASSO',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Como
-          <span className="destaque italic font-light"> funciona </span>
-          nosso atendimento?
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir </span>
+          A_Definir
         </h1>
       ),
       subtitle: '',
@@ -516,44 +452,33 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Consulta inicial',
-          cardDescription:
-            'Realizamos uma reunião para entender seu caso e identificar suas necessidades jurídicas.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Análise detalhada',
-          cardDescription:
-            'Examinamos todos os aspectos do seu caso, revisando documentos e evidências para obter uma visão completa.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Elaboração da estratégia',
-          cardDescription:
-            'Criamos uma estratégia jurídica personalizada para proteger seus interesses de maneira eficaz.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Ação legal',
-          cardDescription:
-            'Iniciamos e conduzimos as ações judiciais ou o serviço contratado, buscando justiça e soluções personalizadas conforme a necessidade do seu caso.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
       },
       ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
-      miniTag: 'FALE CONOSCO',
-      title: (
-        <h1>
-          Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
-        </h1>
-      ),
+      miniTag: 'A_Definir',
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Entre em contato agora para uma consulta especializada e comece a
-            encontrar a solução que você precisa.
-          </p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
       container: {
@@ -586,44 +511,39 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Entre em contato',
+      ctaButtonText: 'A_Definir',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
-    blog: {
-      miniTag: 'BLOG',
-      title: 'Informação jurídica ao seu alcance',
-      subtitle:
-        'Acompanhe conteúdos exclusivos para se manter sempre informado.',
-      img: imgSteps,
-      labelCards: 'Ver mais',
-      label: 'Clique aqui para ver todas as matérias',
-      blogLink: 'danielapaimadvbr.wordpress.com', //sem "https://"
-    },
+    // blog: {
+    //   miniTag: 'BLOG',
+    //   title: 'A_Definir',
+    //   subtitle: '',
+    //   img: imgSteps,
+    //   labelCards: 'Ver mais',
+    //   label: 'Clique aqui para ver todas as matérias',
+    //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
+    // },
     faq: {
-      miniTag: 'TIRE SUAS DÚVIDAS',
-      title: 'Perguntas Frequentes',
-      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
+      miniTag: 'A_Definir',
+      title: 'A_Definir',
+      subtitle: 'A_Definir',
       questions: {
         question1: {
-          question: 'Como posso contratar seus serviços?',
-          answer:
-            'Agende sua consulta conosco via WhatsApp e conversaremos sobre suas necessidades e avaliaremos os custos.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question2: {
-          question: 'Qual é o prazo médio para resolução de um caso?',
-          answer:
-            'O prazo médio varia conforme a complexidade, mas discutiremos uma estimativa durante a consulta inicial.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question3: {
-          question: 'Quais documentos devo levar para a consulta?',
-          answer:
-            'Traga os documentos relevantes ao seu caso, como contratos, correspondências e registros, além de documentos pessoais e comprovante de residência.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question4: {
-          question: 'Vocês oferecem serviços de consultoria preventiva?',
-          answer:
-            'Sim, oferecemos consultoria preventiva para evitar problemas futuros e garantir conformidade legal.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
       },
       paragraph: 'Clique aqui caso tenha mais dúvidas',
@@ -635,7 +555,6 @@ const content = {
     //   members: {
     //     member1: {
     //       img: {
-    //         img: teamMemberImg1,
     //         alt: 'Edison Matos',
     //       },
     //       name: 'Edison Matos',
@@ -832,67 +751,67 @@ const content = {
     //         link3: ' https://www.instagram.com/biel.souza.904',
     //       },
     //     },
-    //     // member4: {
-    //     //   img: {
-    //     //     img: teamMemberImg4,
-    //     //     alt: 'Luiz Felipe',
-    //     //   },
-    //     //   name: 'Luiz Felipe',
-    //     //   role: 'Designer Ourtsourcing',
-    //     //   socialMedia: {
-    //     //     icon1: (
-    //     //       <svg
-    //     //         xmlns="http://www.w3.org/2000/svg"
-    //     //         width="20"
-    //     //         height="20"
-    //     //         viewBox="0 0 24 24"
-    //     //         fill="none"
-    //     //         stroke="black"
-    //     //         stroke-width="2"
-    //     //         stroke-linecap="round"
-    //     //         stroke-linejoin="round"
-    //     //         class="lucide lucide-linkedin"
-    //     //       >
-    //     //         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    //     //         <rect width="4" height="12" x="2" y="9" />
-    //     //         <circle cx="4" cy="4" r="2" />
-    //     //       </svg>
-    //     //     ),
-    //     //     link1: 'https://www.linkedin.com/in/luiz-felipe-leite-95a246192/',
-    //     //     icon2: (
-    //     //       <svg
-    //     //         xmlns="http://www.w3.org/2000/svg"
-    //     //         width="20"
-    //     //         height="20"
-    //     //         viewBox="0 0 24 24"
-    //     //         fill="none"
-    //     //         stroke="black"
-    //     //         stroke-width="2"
-    //     //         stroke-linecap="round"
-    //     //         stroke-linejoin="round"
-    //     //         class="lucide lucide-instagram"
-    //     //       >
-    //     //         <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-    //     //         <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-    //     //         <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-    //     //       </svg>
-    //     //     ),
-    //     //     link2: 'https://www.instagram.com/luizleitedesigner/',
-    //     //     icon3: (
-    //     //       <svg
-    //     //         xmlns="http://www.w3.org/2000/svg"
-    //     //         width="20"
-    //     //         height="18"
-    //     //         fill="black"
-    //     //         className=" bi bi-whatsapp"
-    //     //         viewBox="0 0 16 16"
-    //     //       >
-    //     //         <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-    //     //       </svg>
-    //     //     ),
-    //     //     link3: 'https://wa.me/+556596241854',
-    //     //   },
-    //     // },
+    //     member4: {
+    //       img: {
+    //         img: teamMemberImg4,
+    //         alt: 'Luiz Felipe',
+    //       },
+    //       name: 'Luiz Felipe',
+    //       role: 'Designer Ourtsourcing',
+    //       socialMedia: {
+    //         icon1: (
+    //           <svg
+    //             xmlns="http://www.w3.org/2000/svg"
+    //             width="20"
+    //             height="20"
+    //             viewBox="0 0 24 24"
+    //             fill="none"
+    //             stroke="black"
+    //             stroke-width="2"
+    //             stroke-linecap="round"
+    //             stroke-linejoin="round"
+    //             class="lucide lucide-linkedin"
+    //           >
+    //             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+    //             <rect width="4" height="12" x="2" y="9" />
+    //             <circle cx="4" cy="4" r="2" />
+    //           </svg>
+    //         ),
+    //         link1: 'https://www.linkedin.com/in/luiz-felipe-leite-95a246192/',
+    //         icon2: (
+    //           <svg
+    //             xmlns="http://www.w3.org/2000/svg"
+    //             width="20"
+    //             height="20"
+    //             viewBox="0 0 24 24"
+    //             fill="none"
+    //             stroke="black"
+    //             stroke-width="2"
+    //             stroke-linecap="round"
+    //             stroke-linejoin="round"
+    //             class="lucide lucide-instagram"
+    //           >
+    //             <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+    //             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    //             <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+    //           </svg>
+    //         ),
+    //         link2: 'https://www.instagram.com/luizleitedesigner/',
+    //         icon3: (
+    //           <svg
+    //             xmlns="http://www.w3.org/2000/svg"
+    //             width="20"
+    //             height="18"
+    //             fill="black"
+    //             className=" bi bi-whatsapp"
+    //             viewBox="0 0 16 16"
+    //           >
+    //             <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+    //           </svg>
+    //         ),
+    //         link3: 'https://wa.me/+556596241854',
+    //       },
+    //     },
     //   },
     // },
     footer: {

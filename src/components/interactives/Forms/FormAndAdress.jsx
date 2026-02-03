@@ -38,7 +38,7 @@ export default function ContactForm() {
         'service_dd91cs4', // substitua pelo seu Service ID
         'template_7l1ejkm', // substitua pelo seu Template ID
         templateParams,
-        'bL24tpiXsEQJ9YhAB' // substitua pela sua Public Key
+        'bL24tpiXsEQJ9YhAB', // substitua pela sua Public Key
       )
       .then(
         () => {
@@ -54,7 +54,7 @@ export default function ContactForm() {
         (error) => {
           alert('Erro ao enviar email: ' + error.text)
           setIsSubmitting(false)
-        }
+        },
       )
   }
 
@@ -118,7 +118,7 @@ export default function ContactForm() {
                   if (value.length > 6) {
                     value = `(${value.substring(0, 2)}) ${value.substring(
                       2,
-                      7
+                      7,
                     )}-${value.substring(7)}`
                   } else if (value.length > 2) {
                     value = `(${value.substring(0, 2)}) ${value.substring(2)}`
@@ -162,7 +162,7 @@ export default function ContactForm() {
           </form>
 
           {/* INFO */}
-          <div className="flex flex-col justify-start text-center desktop1:text-start space-y-3 text-sm desktop1:text-xl leading-relaxed text-gray-200">
+          {/* <div className="flex flex-col justify-start text-center desktop1:text-start space-y-3 text-sm desktop1:text-xl leading-relaxed text-gray-200">
             <p>
               {' '}
               <p>
@@ -192,15 +192,15 @@ export default function ContactForm() {
                 <Instagram size={22} />
               </a>
 
-              {/* <a
+              <a
                 href="#"
                 aria-label="LinkedIn"
                 className="transition hover:text-blue-500"
               >
                 <Linkedin size={22} />
-              </a> */}
+              </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
