@@ -33,14 +33,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'A_Definir',
+  name: 'Dr. José Negreiros',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'A_Definir', // Sem "www"
+  domain: 'negreirosadvocaciajuridica.com.br', // Sem "www"
   phone: {
-    ddd: '00',
-    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '0000', // Apenas os 4 últimos números
+    ddd: '69',
+    firstPart: '98100', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0109', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -55,10 +55,10 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir</p>
+      <p>Rua Geraldo Siqueira,</p>
+      <p>nº 2690, Caladinho,</p>
+      <p>Porto Velho - RO,</p>
+      <p>CEP 76808-270</p>
     </div>
   ),
   enderecoSecundario: (
@@ -72,7 +72,7 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>A_Definir</p>
+      <p>Atendimento em regime de plantão 24h via WhatsApp</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
