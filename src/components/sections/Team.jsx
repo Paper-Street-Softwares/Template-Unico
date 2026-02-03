@@ -34,7 +34,7 @@ export default function Team({ colorMode }) {
 
         <SectionWrapper className="flex justify-center">
           <MotionDivDownToUp>
-            <div className="flex flex-wrap justify-center gap-6">
+            <div className="flex flex-wrap justify-center gap-10">
               {team.map((member, index) => (
                 <TeamMember
                   key={index}
