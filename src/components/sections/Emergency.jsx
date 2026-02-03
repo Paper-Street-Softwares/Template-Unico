@@ -70,7 +70,7 @@ function Emergency({ colorMode }) {
                 link={`tel:${content.texts.infos.phone}`}
                 label="Emergência? Ligue agora!"
                 colorMode={colorMode}
-                bgClass="bg-[#ff2c2c]"
+                bgClass="bg-red-800"
                 className="text-white shadow-red-500/80"
               />
             </div>

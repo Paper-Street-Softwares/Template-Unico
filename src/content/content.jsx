@@ -1,4 +1,5 @@
 import logo from '../assets/imgs/logo/logo.webp'
+import logoDesktop from '../assets/imgs/logo/logoDesktop.webp'
 import heroDefaultImg from '../assets/imgs/hero/lawHero.webp'
 import heroDefaultMobileImg from '../assets/imgs/hero/lawHeroMobile.webp'
 
@@ -94,6 +95,7 @@ const content = {
     navbar: {
       logo: {
         img: logo,
+        imgDesktop: logoDesktop,
         alt: `Logomarca ${infos.name}`,
       },
       solidLogo: {
