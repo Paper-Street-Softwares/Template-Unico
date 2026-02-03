@@ -104,7 +104,7 @@ function HeroTemplateNovo({
   return (
     <SectionArea
       data-theme={colorMode}
-      name="home"
+      id="home"
       paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
