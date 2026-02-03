@@ -19,8 +19,10 @@ import {
   Home,
   Key,
   LucideIdCard,
+  BriefcaseBusiness,
   Lock,
   Scale,
+  Shield,
   Car,
   HandCoins,
   Check,
@@ -112,12 +114,12 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'A_Definir',
+      miniTag: 'ESCRITÓRIO DE ADVOCACIA EM PORTO VELHO - RO',
       title: (
         <h1>
-          A_Definir{' '}
+          Precisa de auxílio de um{' '}
           <span className="destaque relative italic font-light">
-            A_Definir
+            Advogado
             <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
@@ -148,19 +150,24 @@ const content = {
           ?
         </h1>
       ),
-      subtitle: <p>A_Definir</p>,
+      subtitle: (
+        <p>
+          Atuamos com responsabilidade para orientar e defender você em decisões
+          importantes.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Seja atendido agora no WhatsApp',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'A_Definir',
+        text: 'Não espere nem mais um minuto, sua liberdade depende disso!',
         textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
@@ -184,138 +191,59 @@ const content = {
       },
     },
     important: {
-      miniTag: 'A_Definir',
-      title: 'A_Definir',
+      miniTag: 'Atenção',
+      title: 'O que é importante saber ',
       cards: {
         card1: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Preciso pagar alguma coisa para dar entrada no meu processo?',
+          paragraph:
+            'Depende do caso, mas esperar para descobrir sozinho costuma sair mais caro. Fale comigo agora para entender exatamente o que precisa ser feito e evitar prejuízos.',
         },
         card2: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title:
+            'Meu problema ainda não virou processo. Dá pra resolver antes?',
+          paragraph:
+            'Em muitos casos, sim. E agir antes pode mudar tudo. Entre em contato imediatamente para analisar sua situação enquanto ainda há tempo.',
         },
         card3: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Se eu esperar mais um pouco, isso pode piorar?',
+          paragraph:
+            'Pode. E geralmente piora. Quanto mais você demora, menos opções existem. Fale comigo agora para agir no momento certo.',
         },
         card4: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title:
+            'Posso tentar resolver isso sozinho ou preciso de advogado agora?',
+          paragraph:
+            'Tentar sozinho costuma gerar erros difíceis de corrigir depois. O ideal é orientação imediata para não comprometer seu caso desde o início.',
         },
       },
-      fraseObs: 'A_Definir',
-      ctaButtonText: 'A_Definir',
+      fraseObs:
+        'Cada caso é diferente. Agir rápido, com orientação jurídica, pode mudar completamente o rumo da sua situação.',
+      ctaButtonText: 'Falar agora com um advogado',
     },
     features: {
-      miniTag: 'A_Definir',
+      miniTag: 'ÁREAS DE ATUAÇÃO',
       title: (
         <h1>
-          A_Definir
-          <span className="destaque italic font-light"> A_Definir</span>
-          A_Definir
+          Atuação jurídica com
+          <span className="destaque italic font-light">
+            {' '}
+            responsabilidade
+          </span>{' '}
+          e<span className="destaque italic font-light"> proximidade</span>
         </h1>
       ),
-      subtitle: 'A_Definir',
+      subtitle:
+        'Unimos conhecimento técnico e atendimento humano para orientar você com clareza em cada etapa.',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: 'A_Definir',
-      subtitleMessageFeature: 'A_Definir',
+      titleMessageFeature: '100%',
+      subtitleMessageFeature: 'ética e responsabilidade',
       cards: {
         card1: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Lock />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card2: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Car />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card3: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
-          description: (
-            <div>
-              A_Definir <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <HandCoins />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card4: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <FileText />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card5: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-circle-dollar-sign-icon lucide-circle-dollar-sign"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
-              <path d="M12 18V6" />
-            </svg>
-          ),
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card6: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Direito Penal',
+          subtitle:
+            'Atuação firme e responsável para quem enfrenta acusações ou investigações criminais.',
           description: (
             <div>
               A_Definir
@@ -325,6 +253,85 @@ const content = {
             </div>
           ),
           icon: <Scale />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card2: {
+          title: 'Processo Penal',
+          subtitle:
+            'Acompanhamento cuidadoso em todas as etapas do processo, garantindo seus direitos.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Gavel />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card3: {
+          title: 'Direito de Família',
+          subtitle:
+            'Apoio jurídico em momentos delicados como divórcio, pensão, guarda e conflitos familiares.',
+          description: (
+            <div>
+              A_Definir <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Users />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card4: {
+          title: 'Direito Cível',
+          subtitle:
+            'Soluções jurídicas para conflitos do dia a dia, contratos, cobranças e indenizações.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
+            </div>
+          ),
+          icon: <Shield />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card5: {
+          title: <p>Direito do Trabalho</p>,
+          subtitle:
+            'Orientação e defesa em casos de demissão, verbas trabalhistas e direitos do trabalhador.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <BriefcaseBusiness />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card6: {
+          title: 'Orientação Jurídica Preventiva',
+          subtitle:
+            'Análise e orientação para evitar problemas jurídicos antes que eles aconteçam.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <FileText />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
@@ -346,7 +353,13 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: 'A_Definir',
+    },
+    emergency: {
+      minitag: 'Plantão Criminal 24 Horas',
+      title: 'Atendimento Imediato em Casos Criminais',
+      subtitle:
+        'Se você ou um familiar foi preso ou está sendo investigado, o atendimento deve ser imediato. Cada minuto é decisivo para garantir direitos, evitar abusos e preparar a defesa adequada.',
+      ctaButtonText: 'Falar com Advogado Agora',
     },
     maps: {
       minitag: 'A_Definir',
@@ -359,25 +372,31 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'A_Definir',
-      title: (
-        <h1>
-          A_Definir
-          <span className="destaque italic font-light"> A_Definir</span>{' '}
-          A_Definir
-        </h1>
+      miniTag: 'QUEM É O DR. JOSÉ NEGREIROS',
+      FirstPartTitle: 'Nossa',
+      DestaquePartTitle: (
+        <p>
+          <span className="italic"> trajetória</span>{' '}
+        </p>
       ),
       SecondPartTitle: '',
-      subtitle: 'A_Definir',
+      subtitle: '',
       paragraph: (
         <div>
-          A_Definir
+          Atuo na advocacia com foco em oferecer soluções jurídicas claras,
+          estratégicas e personalizadas. Acredito que cada cliente vive uma
+          situação única e, por isso, faço questão de ouvir com atenção,
+          compreender o problema e orientar com transparência e responsabilidade
+          desde o primeiro contato.
           <br />
+          Minha atuação vai além da representação legal. Trabalho com uma equipe
+          qualificada e comprometida em transformar desafios jurídicos em
+          soluções seguras, sempre priorizando ética, agilidade e resultados.
+          Aqui, o cliente encontra confiança, proximidade e um atendimento
+          realmente dedicado.
           <br />
-          A_Definir
         </div>
       ),
-
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="text-mutedForeground font-secondFont">
@@ -393,7 +412,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Entre em contato',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -413,37 +432,13 @@ const content = {
       //   labelYoutube: 'Siga-nos no Youtube',
       // },
     },
-    // team: {
-    //   miniTag: ' A_Definir',
-    //   title: (
-    //     <h1>
-    //       A_Definir <span className="italic text-primaryDark">A_Definir</span>
-    //       A_Definir
-    //     </h1>
-    //   ),
-    //   subtitle: 'A_Definir',
-    //   cards: {
-    //     card1: {
-    //       img1: team1,
-    //       alt: 'Imagens ilustrativa dos profissionais',
-    //       name: 'A_Definir',
-    //       description: <p>A_Definir</p>,
-    //     },
-    //     card2: {
-    //       img2: team2,
-    //       alt: 'Imagens ilustrativa dos profissionais',
-    //       name: 'A_Definir',
-    //       description: <p>A_Definir</p>,
-    //     },
-    //   },
-    // },
     steps: {
-      miniTag: 'A_Definir',
+      miniTag: 'PASSO A PASSO',
       title: (
         <h1>
-          A_Definir
-          <span className="destaque italic font-light"> A_Definir </span>
-          A_Definir
+          Como
+          <span className="destaque italic font-light"> protegemos</span> seus
+          direitos
         </h1>
       ),
       subtitle: '',
@@ -452,43 +447,54 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Análise Pessoal e Detalhada',
+          cardDescription:
+            'Estudo individual do seu caso para definir o caminho mais seguro e eficaz',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Atuação com Rigor Técnico',
+          cardDescription:
+            'Revisão de documentos, cálculos e provas para garantir a melhor solução legal.',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Atendimento Transparente e Ágil',
+          cardDescription:
+            'Informações claras e em tempo real, com toda a parte processual cuidada pelo escritório.',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Defesa Concreta e Eficiente',
+          cardDescription:
+            'Acompanhamento completo em todas as etapas, buscando resultados sólidos e seguros.',
         },
       },
-      ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
-      miniTag: 'A_Definir',
-      title: <h1>A_Definir</h1>,
-      subtitle: (
-        <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
-        </div>
+      miniTag: 'FALE CONOSCO',
+      title: <h1>Proteja seus direitos agora</h1>,
+      subtitle:
+        'Fale com um especialista e receba orientação estratégica imediata para o seu caso.',
+      subtitleDireita: (
+        <p className="gap-3 flex font-mainFont opacity-60 mt-1">
+          <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
+        </p>
       ),
+      titleDireita: (
+        <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
+      ),
+      ctaButtonText: 'Converse agora com um advogado',
+      ctaButtonAriaLabel:
+        'Botão para chamada de ação para contato pelo whatsapp',
       container: {
         label1: {
           icon: <Check />,
-          text: ' Análise inicial do seu caso criminal',
+          text: ' Análise inicial do seu caso',
         },
         label2: {
           icon: <Check />,
-          text: ' Atendimento direto com advogado criminalista',
+          text: ' Atendimento direto com advogado',
         },
         label3: {
           icon: <Check />,
@@ -503,17 +509,6 @@ const content = {
           text: ' Mais segurança para você e sua família em um momento decisivo',
         },
       },
-      // subtitleDireita: (
-      //   <p className="gap-3 flex font-mainFont opacity-60 mt-1">
-      //     <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
-      //   </p>
-      // ),
-      // titleDireita: (
-      //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
-      // ),
-      ctaButtonText: 'A_Definir',
-      ctaButtonAriaLabel:
-        'Botão para chamada de ação para contato pelo whatsapp',
     },
     // blog: {
     //   miniTag: 'BLOG',
@@ -525,25 +520,29 @@ const content = {
     //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
     // },
     faq: {
-      miniTag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
+      miniTag: 'TIRE SUAS DÚVIDAS',
+      title: 'Perguntas Frequentes',
+      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
       questions: {
         question1: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Como posso contratar seus serviços?',
+          answer:
+            'Agende sua consulta conosco via WhatsApp e conversaremos sobre suas necessidades e avaliaremos os custos.',
         },
         question2: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Qual é o prazo médio para resolução de um caso?',
+          answer:
+            'O prazo médio varia conforme a complexidade, mas discutiremos uma estimativa durante a consulta inicial.',
         },
         question3: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Quais documentos devo levar para a consulta?',
+          answer:
+            'Traga os documentos relevantes ao seu caso, como contratos, correspondências e registros, além de documentos pessoais e comprovante de residência.',
         },
         question4: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Vocês oferecem serviços de consultoria preventiva?',
+          answer:
+            'Sim, oferecemos consultoria preventiva para evitar problemas futuros e garantir conformidade legal.',
         },
       },
       paragraph: 'Clique aqui caso tenha mais dúvidas',

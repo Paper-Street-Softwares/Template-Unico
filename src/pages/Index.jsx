@@ -65,6 +65,7 @@ export default function Index() {
               colorMode={colorMode}
               frasesDestaque={true}
               accordion={false}
+              buttons={false}
             />
             <Emergency colorMode={colorMode} />
             <AboutNovoTemplate
@@ -73,7 +74,7 @@ export default function Index() {
               benefits={false}
             />
             <StepsNovoTemplate colorMode={colorMode} />
-            <CtaNovoTemplate colorMode={colorMode} container={false} />
+            <CtaNovoTemplate colorMode={colorMode} container={true} />
             <FaqNovoTemplate colorMode={colorMode} />
             <FooterNovoTemplate
               colorMode={colorMode}

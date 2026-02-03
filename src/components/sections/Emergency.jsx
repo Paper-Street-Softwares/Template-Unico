@@ -49,31 +49,29 @@ function Emergency({ colorMode }) {
                 <div className="flex items-center gap-2 mb-1">
                   <AlertTriangle className="h-5 w-5 text-red-800 sm:hidden" />
                   <span className="text-red-700 font-bold tracking-wider text-sm uppercase">
-                    Plantão Criminal 24 Horas
+                    {content.texts.emergency.minitag}
                   </span>
                 </div>
                 <h1 className={`text-xl md:text-2xl font-bold ${text} mb-2`}>
-                  Atendimento Imediato em Casos Criminais
+                  {content.texts.emergency.title}
                 </h1>
                 <p
                   className={`text-sm md:text-base max-w-2xl leading-relaxed ${text}`}
                   //para site de cliente específico deixar copy totalmente preto
                 >
-                  Se você ou um familiar foi preso ou está sendo investigado, o
-                  atendimento deve ser imediato. Cada minuto é decisivo para
-                  garantir direitos, evitar abusos e preparar a defesa adequada.
+                  {content.texts.emergency.subtitle}
                 </p>
               </div>
             </div>
 
             <div className="w-full md:w-auto flex-shrink-0">
               <ButtonReflexo
-                id="ligar"
                 icon={<Phone width={20} />}
                 link={`tel:${content.texts.infos.phone}`}
                 label="Emergência? Ligue agora!"
                 colorMode={colorMode}
-                className="text-white"
+                bgClass="bg-[#ff2c2c]"
+                className="text-white shadow-red-500/80"
               />
             </div>
           </div>

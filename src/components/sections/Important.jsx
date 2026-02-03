@@ -9,9 +9,30 @@ import MotionDivDownUp from '../animation/MotionDivDownToUp'
 
 function Important({ colorMode }) {
   const listCards = Object.values(content.texts.important.cards)
+  let backgroundMode, text, textOpacity, textDestaque
+
+  switch (colorMode) {
+    case 'light':
+      backgroundMode = 'bg-secondary/60'
+      text = 'text-corTitulosBranca'
+      textOpacity = 'text-corOutrosTextosBranca'
+      textDestaque = 'text-primaryDark'
+      break
+    case 'dark':
+      backgroundMode = 'bg-black'
+      text = 'text-corTitulosBranca'
+      textOpacity = 'text-corOutrosTextosBranca'
+      textDestaque = 'text-primaryDark'
+      break
+    default:
+      backgroundMode = 'bg-secondary/60'
+      text = 'text-corTitulosBranca'
+      textOpacity = 'text-corOutrosTextosBranca'
+      textDestaque = 'text-primaryDark'
+  }
 
   return (
-    <SectionArea className={`bg-terciary/60`}>
+    <SectionArea className={`${backgroundMode}`}>
       <SectionWrapper>
         <SectionHeaderNovo
           miniTitle={content.texts.important.miniTag}
@@ -21,12 +42,18 @@ function Important({ colorMode }) {
 
         <div className="grid gap-12 tablet1:grid-cols-2">
           {listCards.map((item) => (
-            <CardsImportants title={item.title} paragraph={item.paragraph} />
+            <CardsImportants
+              title={item.title}
+              paragraph={item.paragraph}
+              colorMode={colorMode}
+            />
           ))}
         </div>
 
         <MotionDivDownUp>
-          <p className="flex justify-center font-secondFont text-center w-full my-12 text-black/70">
+          <p
+            className={`flex justify-center font-secondFont text-center w-full my-12 ${textOpacity}`}
+          >
             {content.texts.important.fraseObs}
           </p>
         </MotionDivDownUp>

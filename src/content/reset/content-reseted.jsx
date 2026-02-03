@@ -348,6 +348,12 @@ const content = {
       },
       ctaButtonText: 'A_Definir',
     },
+    emergency: {
+      minitag: 'A_Definir',
+      title: 'A_Definir',
+      subtitle: 'A_Definir',
+      ctaButtonText: 'A_Definir',
+    },
     maps: {
       minitag: 'A_Definir',
       title: 'A_Definir',

@@ -7,23 +7,24 @@ export default {
     './src/utils/**/*.{js,ts,jsx,tsx}',
   ],
   safelist: [
+    'bg-green-900',
     'bg-green-800',
-    'bg-green-600',
     'bg-green-500',
-    'bg-red-800',
-    'bg-wppDark',
+    'text-black',
+    'border',
+    'border-green-600/30',
+    'bg-red-700',
   ],
   theme: {
     extend: {
       colors: {
         // Principais
-        primaryLight: '#e1cd9f',
-        primaryDark: '#5b461f',
-        secondary: '#e9e7e0',
-        terciary: '#f7f6f1',
-        quartenary: '#fcfcfa',
+        primaryLight: '#B99269',
+        primaryDark: '#233B6E',
+        secondary: '#E0E2E9',
+        terciary: '#f7f3f1',
+        quartenary: '#FAFBFC',
         borderImage: '#292929',
-        corExclamationCard: '#350F0F',
 
         // Copys
         corTitulosBranca: '#FFFFFF',
@@ -33,7 +34,7 @@ export default {
 
         // hex botãoColor wpp
         wppLight: '#075e54',
-        wppDark: '#2E7027',
+        wppDark: '#25d366',
 
         // Minitags
         bgIcons: '#E0E2E9',
