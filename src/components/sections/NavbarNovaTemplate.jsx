@@ -6,9 +6,9 @@ import { motion } from 'framer-motion'
 import SectionAria from '../../components/sectionElements/SectionArea'
 import SectionWrapper from '../../components/sectionElements/SectionWrapper'
 import content from '../../content/content'
+import { Link } from 'react-scroll'
 import ButtonReflexo from '../interactives/ButtonReflexo'
 import { useContext } from 'react'
-import { Link, animateScroll as scroll, scroller } from 'react-scroll'
 
 function NavbarNovaTemplate({
   colorMode,
@@ -64,32 +64,24 @@ function NavbarNovaTemplate({
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent ${
           isScrolled
             ? `${backgrondMode} backdrop-blur-md py-2 shadow-sm border-shadowHero/10 h-auto`
-            : 'bg-transparent border-border/40 py-3 tablet1:py-3 phone2:h-auto'
+            : 'bg-transparent border-border/40 py-3 phone2:h-auto'
         }`}
       >
         <div className="container mx-auto flex items-center m-auto max-w-[1215px] h-full w-[90%] justify-between py-2">
           <div
             className={`flex flex-col z-20 relative  ${
               isScrolled
-                ? 'w-[50%] tablet1:w-[30%] tablet2:w-[30%] desktop1:w-[25%] desktop2:w-[20%] desktop3:w-[20%] transition-all duration-700'
-                : 'py-2 w-[60%] phone2:w-[60%] phone3:w-[60%] tablet1:w-[40%] tablet2:w-[40%] desktop1:w-[30%] desktop3:w-[25%] transition-all duration-700'
+                ? 'w-[20%] tablet1:w-[20%] tablet2:w-[15%] desktop1:w-[15%] desktop2:w-[10%] desktop3:w-[10%] transition-all duration-700'
+                : 'w-[30%] phone2:w-[30%] phone3:w-[35%] tablet1:w-[30%] tablet2:w-[20%] desktop1:w-[15%] desktop3:w-[15%] transition-all duration-700'
             }`}
           >
             {' '}
             <img
               src={content.texts.navbar.logo.img}
               alt={content.texts.navbar.logo.alt}
-              className="w-[100%] desktop1:hidden"
+              className="w-[100%]"
               width={160}
-              height={71}
-              fetchPriority="high"
-            />
-            <img
-              src={content.texts.navbar.logo.imgDesktop}
-              alt={content.texts.navbar.logo.alt}
-              className="w-[100%] hidden desktop1:flex"
-              width={243}
-              height={58}
+              height={102}
               fetchPriority="high"
             />
           </div>
@@ -99,12 +91,15 @@ function NavbarNovaTemplate({
             {labels.map((item, index) => (
               <Link
                 to={ids[index]}
+                aria-label={`Link para ${item}`}
                 smooth={true}
                 duration={500}
                 offset={-90}
-                spy={false}
-                hashSpy={false}
-                className={`cursor-pointer bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity}`}
+                spy={true}
+                hashSpy={true}
+                tag="a"
+                href={`#${ids[index]}`}
+                className={`cursor-pointer ${hoverLinks} bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
               >
                 {item}
               </Link>
@@ -162,11 +157,14 @@ function NavbarNovaTemplate({
                   {labels.map((item, index) => (
                     <Link
                       to={ids[index]}
+                      aria-label={`Link para ${item}`}
                       smooth={true}
                       duration={500}
                       offset={-90}
-                      spy={false}
-                      hashSpy={false}
+                      spy={true}
+                      hashSpy={true}
+                      tag="a"
+                      href={`#${ids[index]}`}
                       className={`cursor-pointer transition-all w-full ${textOpacity}`}
                     >
                       {item}
