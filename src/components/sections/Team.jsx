@@ -1,49 +1,74 @@
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import SectionArea from "../sectionElements/SectionArea";
-import SectionHeader from "../sectionElements/SectionHeader";
-import SectionWrapper from "../sectionElements/SectionWrapper";
-import content from "../../content/content";
-import TeamMember from "../cards/TeamMember";
-import { useTranslation } from "react-i18next";
+import { useState } from 'react'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import SectionArea from '../sectionElements/SectionArea'
+import SectionHeader from '../sectionElements/SectionHeader'
+import SectionWrapper from '../sectionElements/SectionWrapper'
+import content from '../../content/content'
+import TeamMember from '../cards/TeamMember'
+import { Dialog } from 'primereact/dialog'
+import { X } from 'lucide-react'
+import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
 
-const whatsappContactLink = `${content.texts.links.ctaWhatsapp}`;
+export default function Team({ colorMode }) {
+  const team = Object.values(content.texts.team.cards)
 
-export default function Team() {
-  const team = Object.values(content.texts.team.members);
+  const [visible, setVisible] = useState(false)
+  const [modalTitle, setModalTitle] = useState('')
+  const [modalContent, setModalContent] = useState('')
+
+  const openModal = (member) => {
+    setModalTitle(member.name)
+    setModalContent(member.description)
+    setVisible(true)
+  }
+
   return (
-    <SectionArea
-      className="bg-bgSectionOpacityLight"
-      paddingtop={true}
-      id="team"
-    >
-      <SectionHeader
-        className="text-center mb-[26px] tablet1:mb-[40px] desktop1:mb-[72px]"
-        miniTitle={content.texts.team.miniTag}
-        sectionHeaderTitle={content.texts.team.title}
-        sectionHeaderSubtitle={content.texts.team.subtitle}
-        titleColorSet="text-black"
-        subtitleColorSet="text-black"
-      />
+    <>
+      <SectionArea className="bg-darkOpacity" paddingtop id="team">
+        <SectionHeaderNovo
+          miniTitle={content.texts.team.miniTag}
+          title={content.texts.team.title}
+          subtitle={content.texts.team.subtitle}
+          colorMode={colorMode}
+        />
 
-      <SectionWrapper className="flex justify-center">
-        <MotionDivDownToUp>
-          <div className="flex flex-col gap-[20px] tablet1:flex-wrap justify-evenly tablet1:items-start tablet1:gap-[20px]">
-            <div className="flex flex-wrap justify-center gap-6 items-start">
+        <SectionWrapper className="flex justify-center">
+          <MotionDivDownToUp>
+            <div className="flex flex-wrap justify-center gap-6">
               {team.map((member, index) => (
                 <TeamMember
                   key={index}
-                  img={member.img.img}
-                  alt={member.img.alt}
+                  img={member.img}
+                  alt={member.alt}
                   name={member.name}
-                  role={member.role}
-                  modalTitle={member.name}
-                  modalContent={member.description}
+                  role={member.title}
+                  work={member.work}
+                  onClick={() => openModal(member)}
                 />
               ))}
             </div>
-          </div>
-        </MotionDivDownToUp>
-      </SectionWrapper>
-    </SectionArea>
-  );
+          </MotionDivDownToUp>
+        </SectionWrapper>
+      </SectionArea>
+
+      {/* MODAL PRIME */}
+      <Dialog
+        className="font-secondFont bg-white p-4 rounded-md"
+        closeIcon={<X size={20} />}
+        header={<span className="font-secondFont px-4">{modalTitle}</span>}
+        visible={visible}
+        onHide={() => setVisible(false)}
+        style={{ width: '50vw' }}
+        breakpoints={{
+          '4000px': '641px',
+          '1024px': '641px',
+          '641px': '85vw',
+        }}
+      >
+        <div className="text-paragraph3 px-4 pb-4">
+          <p className="mt-[15px] mb-[20px] text-black/80">{modalContent}</p>
+        </div>
+      </Dialog>
+    </>
+  )
 }

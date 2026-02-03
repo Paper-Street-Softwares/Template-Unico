@@ -445,7 +445,7 @@ const content = {
       subtitle: 'Equipe experiente, pronta para te representar.',
       cards: {
         card1: {
-          img1: team1,
+          img: team1,
           alt: 'Imagens ilustrativa dos profissionais',
           title: 'Sócia Fundadora ',
           name: 'Dra. Daniela Paim Tavela',
@@ -461,7 +461,7 @@ const content = {
           ),
         },
         card2: {
-          img2: team2,
+          img: team2,
           alt: 'Imagens ilustrativa dos profissionais',
           title: 'Advogada Associada ',
           name: 'Dra. Thayrine Cavalcante Costa',
@@ -480,7 +480,7 @@ const content = {
           ),
         },
         card3: {
-          img3: team3,
+          img: team3,
           alt: 'Imagens ilustrativa dos profissionais',
           title: 'Advogado Sócio ',
           name: 'Dr. Rafael Agudo Freire',
@@ -586,7 +586,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Entre em contato',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },

@@ -20,6 +20,8 @@ const AboutNovoTemplate = lazy(
   () => import('../components/sections/AboutNovoTemplate'),
 )
 
+const Team = lazy(() => import('../components/sections/Team'))
+
 const TeamSectionNew = lazy(() => import('../components/sections/TeamSection'))
 
 const SocialMediaTemplate = lazy(
@@ -72,7 +74,8 @@ export default function Index() {
               benefits={false}
             />
             <SocialMediaTemplate colorMode={colorMode} />
-            <TeamSectionNew colorMode={colorMode} />
+            <Team colorMode={colorMode} />
+            {/* <TeamSectionNew colorMode={colorMode} /> */}
             <CtaNovoTemplate colorMode={colorMode} container={false} />
             <StepsNovoTemplate colorMode={colorMode} />
             <BlogPosts colorMode={colorMode} />
