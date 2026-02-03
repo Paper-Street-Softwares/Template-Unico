@@ -8,6 +8,8 @@ export default function TeamMember(props) {
       <img
         alt={alt}
         src={img}
+        width={215}
+        height={215}
         className="w-[215px] h-[215px] rounded-full mb-[24px]"
       />
 
