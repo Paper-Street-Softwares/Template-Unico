@@ -10,7 +10,7 @@ import WhatsappForm from '../interactives/WhatsappForm'
 import FormAndAdress from '../interactives/Forms/FormAndAdress'
 import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 
-function CtaNovoTemplate({ colorMode }) {
+function CtaNovoTemplate({ colorMode, container }) {
   // Classes dinâmicas conforme colorMode
   let text, textOpacity, backgroundMode, miniTagCtaDark, textDestaque
 
@@ -26,7 +26,7 @@ function CtaNovoTemplate({ colorMode }) {
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corTitulosBranca/60'
       textDestaque = 'text-primaryLight'
-      backgroundMode = 'bg-darkOpacity'
+      backgroundMode = 'bg-black'
       miniTagCtaDark = 'text-primaryLight'
       break
     default:
@@ -60,19 +60,21 @@ function CtaNovoTemplate({ colorMode }) {
               {content.texts.ctaSecondary.subtitle}
             </p>
 
-            <div
-              className={`rounded-lg p-4 mb-4 flex flex-col items-center ${textOpacity}`}
-            >
-              {lisContainer.map((item, index) => (
-                <div
-                  key={index}
-                  className="font-secondFont flex gap-2 items-start w-full justify-start tablet1:justify-center text-start desktop1:text-start"
-                >
-                  <span className={`${textDestaque}`}>{item.icon}</span>
-                  <p className={`${textOpacity}`}>{item.text}</p>
-                </div>
-              ))}
-            </div>
+            {container && (
+              <div
+                className={`rounded-lg p-4 mb-4 flex flex-col items-center ${textOpacity}`}
+              >
+                {lisContainer.map((item, index) => (
+                  <div
+                    key={index}
+                    className="font-secondFont flex gap-2 items-start w-full justify-start tablet1:justify-center text-start desktop1:text-start"
+                  >
+                    <span className={`${textDestaque}`}>{item.icon}</span>
+                    <p className={`${textOpacity}`}>{item.text}</p>
+                  </div>
+                ))}
+              </div>
+            )}
 
             {/* <div>
               <FormAndAdress />

@@ -22,17 +22,20 @@ import ButtonAlert from '../interactives/ButtonAlert'
 import { useColorMode } from '../../context/UseContextArchive'
 import MotionDivToDownUp from '../animation/MotionDivDownToUp'
 
-function HeroTemplateNovo({ colorMode, obsTwo }) {
-  let text,
-    textOpacity,
-    backgroundMode,
-    bgFaixaHero,
-    bgMinitag,
-    textObs,
-    image,
-    bgAlertHero,
-    textDestaque,
-    borderColor
+function HeroTemplateNovo({
+  colorMode,
+  text,
+  textOpacity,
+  backgroundMode,
+  bgFaixaHero,
+  bgMinitag,
+  textObs,
+  image,
+  bgAlertHero,
+  textDestaque,
+  borderColor,
+  obsTwo,
+}) {
   switch (colorMode) {
     case 'light':
       backgroundMode = 'bg-white'
@@ -48,7 +51,7 @@ function HeroTemplateNovo({ colorMode, obsTwo }) {
       break
     case 'dark':
       backgroundMode = 'bg-dark'
-      bgFaixaHero = 'bg-secondary'
+      bgFaixaHero = 'bg-darkOpacity'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-primaryLight'
@@ -128,8 +131,7 @@ function HeroTemplateNovo({ colorMode, obsTwo }) {
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-[8px] phone2:text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
               >
                 <span>
-                  {/* <MapPin className="w-4 h-4" /> */}
-                  <Split width={14} />
+                  <MapPin className="w-4 h-4" />
                 </span>
                 {content.texts.hero.miniTag}
               </div>
@@ -188,17 +190,17 @@ function HeroTemplateNovo({ colorMode, obsTwo }) {
                   colorMode === 'light' ? 'opacity-90' : 'opacity-20'
                 } w-full`}
               /> */}
-              <div className="flex flex-col justify-start items-start gap-3 text-sm text-mutedForeground w-full">
-                {/* <div className="relative flex ">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
-                </div> */}
+              <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground w-full">
+                <div className="relative flex ">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
+                </div>
                 <span
                   className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
                 >
-                  <span>
+                  {/* <span>
                     <Check />
-                  </span>{' '}
+                  </span>{' '} */}
                   {content.texts.hero.obsHero.text}
                 </span>
 

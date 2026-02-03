@@ -103,10 +103,10 @@ function NavbarNovaTemplate({
                 smooth={true}
                 duration={500}
                 offset={-90}
-                spy={true}
-                hashSpy={true}
-                tag="a"
-                href={`#${ids[index]}`}
+                // spy={true}
+                // hashSpy={true}
+                // tag="a"
+                // href={`#${ids[index]}`}
                 className={`cursor-pointer ${hoverLinks} bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
               >
                 {item}
@@ -169,10 +169,10 @@ function NavbarNovaTemplate({
                       smooth={true}
                       duration={500}
                       offset={-90}
-                      spy={true}
-                      hashSpy={true}
-                      tag="a"
-                      href={`#${ids[index]}`}
+                      // spy={true}
+                      // hashSpy={true}
+                      // tag="a"
+                      // href={`#${ids[index]}`}
                       className={`cursor-pointer transition-all w-full ${textOpacity}`}
                     >
                       {item}

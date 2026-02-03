@@ -164,7 +164,7 @@ function StepsNovoTemplate({ colorMode }) {
                   ))}
                 </div>
 
-                <MotionDivDownToUp>
+                {/* <MotionDivDownToUp>
                   <div className="desktop1:flex flex-col gap-4 pt-4 w-fit justify-center items-start hidden">
                     <ButtonReflexo
                       icon={
@@ -192,7 +192,7 @@ function StepsNovoTemplate({ colorMode }) {
                       className="text-white"
                     />
                   </div>
-                </MotionDivDownToUp>
+                </MotionDivDownToUp> */}
               </div>
             </div>
           </div>

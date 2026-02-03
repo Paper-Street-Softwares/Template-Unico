@@ -125,7 +125,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
                     </div>
                   )}
                 </MotionDivDownToUp>
-                {/* <MotionDivDownToUp>
+                <MotionDivDownToUp>
                   <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-start desktop1:m-auto">
                     <ButtonReflexo
                       icon={
@@ -154,7 +154,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
                       className="text-white"
                     />
                   </div>
-                </MotionDivDownToUp> */}
+                </MotionDivDownToUp>
               </div>
 
               {/* Conteúdo das features */}

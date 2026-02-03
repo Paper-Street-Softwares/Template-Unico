@@ -1,76 +1,64 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import { Dialog } from 'primereact/dialog'
+import { ArrowRight, X } from 'lucide-react'
+
 import SectionArea from '../sectionElements/SectionArea'
 import SectionWrapper from '../sectionElements/SectionWrapper'
-import { ArrowRight, CheckCircle2, X } from 'lucide-react'
-import { Dialog } from 'primereact/dialog'
-import content from '../../content/content'
+import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
 import ButtonReflexo from '../interactives/ButtonReflexo'
 import { Button } from '../interactives/ButtonNovoTemplate'
-import { Phone } from 'lucide-react'
-import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
+import content from '../../content/content'
 
-function TeamSectionNew({ ButtonModal, colorMode }) {
+function TeamSectionNew({ colorMode }) {
   const [visible, setVisible] = useState(false)
-  const [modalTitle, setModalTitle] = useState('')
+  const [activeCard, setActiveCard] = useState(null)
 
-  const onClick = () => {
-    setModalTitle(content.texts.about.title)
+  const openModal = (cardKey) => {
+    setActiveCard(cardKey)
     setVisible(true)
   }
 
-  // Definindo classes conforme colorMode
-  let backgroundMode,
-    text,
-    textOpacity,
-    cardBg,
-    iconBg,
-    buttonBg,
-    textDestaque,
-    image,
-    miniTagColor
+  const closeModal = () => {
+    setVisible(false)
+    setActiveCard(null)
+  }
+
+  let backgroundMode, text, textOpacity, textDestaque, image
 
   switch (colorMode) {
-    case 'light':
-      backgroundMode = 'bg-white'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      textDestaque = 'text-primaryDark'
-      cardBg = 'bg-white/10'
-      iconBg = 'bg-primaryDark/10 text-primaryDark'
-      buttonBg = 'bg-primaryDark'
-      miniTagColor = 'text-primaryDark'
-      image = ' border-[8px] border-white'
-      break
     case 'dark':
       backgroundMode = 'bg-darkOpacity'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-primaryLight'
-      cardBg = 'bg-gray-800/20'
-      iconBg = 'bg-primaryLight/20 text-primaryLight'
-      buttonBg = 'bg-primaryLight'
-      miniTagColor = 'text-primaryDark'
-      image = ' border-[8px] border-borderImage'
+      image = 'border-[8px] border-borderImage'
       break
     default:
       backgroundMode = 'bg-white'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
-      cardBg = 'bg-white/10'
-      iconBg = 'bg-primaryDark/10 text-primaryDark'
-      buttonBg = 'bg-primaryDark'
-      miniTagColor = 'text-primaryDark'
-      image = ' border-[8px] border-white'
+      image = 'border-[8px] border-white'
+  }
+
+  const modalContent = {
+    card1: {
+      title: content.texts.team.cards.card1.name,
+      text: content.texts.team.cards.card1.description,
+    },
+    card2: {
+      title: content.texts.team.cards.card2.name,
+      text: content.texts.team.cards.card2.description,
+    },
+    card3: {
+      title: content.texts.team.cards.card3.name,
+      text: content.texts.team.cards.card3.description,
+    },
   }
 
   return (
-    <SectionArea
-      data-theme={colorMode}
-      id="about"
-      className={`${backgroundMode}`}
-    >
+    <SectionArea data-theme={colorMode} className={backgroundMode}>
       <SectionWrapper className="desktop1:max-w-[900px]">
         <SectionHeaderNovo
           miniTitle={content.texts.team.miniTag}
@@ -79,132 +67,161 @@ function TeamSectionNew({ ButtonModal, colorMode }) {
           colorMode={colorMode}
         />
 
-        <section className="w-full relative overflow-visible">
-          <div className="mx-aut flex flex-col gap-12 relative z-10">
-            <div className="flex flex-col-reverse desktop1:flex-row-reverse desktop1:gap-16 items-center">
-              {/* Conteúdo textual */}
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
-                className="space-y-8"
+        <section className="flex flex-col gap-16 mt-12">
+          <div className="flex flex-col-reverse desktop1:flex-row-reverse gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="space-y-4 max-w-[380px]"
+            >
+              <span className={`uppercase font-bold ${textDestaque}`}>
+                {content.texts.team.cards.card1.title}
+              </span>
+
+              <h2 className={`text-3xl font-mainFont ${text}`}>
+                {content.texts.team.cards.card1.name}
+              </h2>
+
+              {/* <p className={`font-secondFont ${textOpacity}`}>
+                {content.texts.team.cards.card1.description}
+              </p> */}
+
+              <Button
+                onClick={() => openModal('card1')}
+                className={`bg-transparent px-0 uppercase font-bold flex items-center gap-2 border-none ${textDestaque} underline sclae-100 hover:scale-90 duration-500 transition-all`}
               >
-                <div className="max-w-[388px]">
-                  <span
-                    className={`font-secondFont text-paragraph2 uppercase font-bold ${textDestaque}`}
-                  >
-                    {content.texts.team.cards.card1.title}
-                  </span>
-                  <h1
-                    className={`text-3xl md:text-4xl font-mainFont font-medium flex flex-col gap-0 ${text}`}
-                  >
-                    {content.texts.team.cards.card1.name}
-                  </h1>
+                Saiba mais <ArrowRight size={20} />
+              </Button>
+            </motion.div>
 
-                  <p
-                    className={`font-secondFont font-light text-sm leading-relaxed mt-4 ${textOpacity}`}
-                  >
-                    {content.texts.team.cards.card1.description}
-                  </p>
-                </div>
-              </motion.div>
-
-              {/* Imagem com destaque */}
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-                className="relative w-full desktop1:max-w-[400px] m-auto overflow-visible mb-6 desktop1:mb-0"
-              >
-                <div className="relative rounded-3xl shadow-2xl ring-1 max-w-[386px] mx-auto ring-black/5">
-                  {/* CLIP DA IMAGEM */}
-                  <div
-                    className={`relative rounded-3xl overflow-hidden ${image}`}
-                  >
-                    <img
-                      src={content.texts.team.cards.card1.img1}
-                      alt={content.texts.team.cards.card1.alt}
-                      className="w-full max-h-96 object-cover scale-105 hover:scale-100 rounded-2xl transition-transform duration-700 "
-                      width={798}
-                      height={798}
-                    />
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-
-            <div className="flex flex-col-reverse desktop1:flex-row desktop1:gap-16 items-center">
-              {/* Conteúdo textual */}
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
-                className="space-y-8"
-              >
-                <div className="max-w-[388px]">
-                  <span
-                    className={`font-secondFont text-paragraph2 uppercase font-bold ${textDestaque}`}
-                  >
-                    {content.texts.team.cards.card1.title}
-                  </span>
-                  <h1
-                    className={`text-3xl md:text-4xl font-mainFont font-medium flex flex-col gap-0 ${text}`}
-                  >
-                    {content.texts.team.cards.card2.name}
-                  </h1>
-
-                  <p
-                    className={`font-secondFont font-light text-sm leading-relaxed mt-4 ${textOpacity}`}
-                  >
-                    {content.texts.team.cards.card2.description}
-                  </p>
-                </div>
-              </motion.div>
-
-              {/* Imagem com destaque */}
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-                className="relative w-full desktop1:max-w-[400px] m-auto overflow-visible mb-6 desktop1:mb-0"
-              >
-                <div className="relative rounded-3xl shadow-2xl ring-1 max-w-[386px] mx-auto ring-black/5">
-                  {/* CLIP DA IMAGEM */}
-                  <div
-                    className={`relative rounded-3xl overflow-hidden ${image}`}
-                  >
-                    <img
-                      src={content.texts.team.cards.card2.img2}
-                      alt={content.texts.team.cards.card2.alt}
-                      className="w-full max-h-96 object-cover scale-105 hover:scale-100 rounded-2xl transition-transform duration-700 "
-                      width={726}
-                      height={726}
-                    />
-                  </div>
-                </div>
-              </motion.div>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="max-w-[380px]"
+            >
+              <div className={`rounded-3xl overflow-hidden ${image}`}>
+                <img
+                  src={content.texts.team.cards.card1.img1}
+                  alt={content.texts.team.cards.card1.alt}
+                  className="w-full object-cover scale-105 hover:scale-100 transition-transform duration-700"
+                />
+              </div>
+            </motion.div>
           </div>
 
-          {/* Modal */}
-          <Dialog
-            className="font-secondFont bg-white p-4 rounded-md"
-            closeIcon={<X size={20} />}
-            header={
-              <span className="font-mainFont px-4">
-                {content.texts.about.titleModal}
+          <div className="flex flex-col-reverse desktop1:flex-row gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="space-y-4 max-w-[380px]"
+            >
+              <span className={`uppercase font-bold ${textDestaque}`}>
+                {content.texts.team.cards.card2.title}
               </span>
-            }
-            visible={visible}
-            onHide={() => setVisible(false)}
-            style={{ width: '50vw' }}
-            breakpoints={{
-              '4000px': '641px',
-              '1024px': '641px',
-              '641px': '85vw',
-            }}
-          ></Dialog>
+
+              <h2 className={`text-3xl font-mainFont ${text}`}>
+                {content.texts.team.cards.card2.name}
+              </h2>
+
+              {/* <p className={`font-secondFont ${textOpacity}`}>
+                {content.texts.team.cards.card2.description}
+              </p> */}
+
+              <Button
+                onClick={() => openModal('card2')}
+                className={`bg-transparent px-0 uppercase font-bold flex items-center gap-2 border-none ${textDestaque} underline sclae-100 hover:scale-90 duration-500 transition-all`}
+              >
+                Saiba mais <ArrowRight size={20} />
+              </Button>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="max-w-[380px]"
+            >
+              <div className={`rounded-3xl overflow-hidden ${image}`}>
+                <img
+                  src={content.texts.team.cards.card2.img2}
+                  alt={content.texts.team.cards.card2.alt}
+                  className="w-full object-cover scale-105 hover:scale-100 transition-transform duration-700"
+                />
+              </div>
+            </motion.div>
+          </div>
+
+          <div className="flex flex-col-reverse desktop1:flex-row-reverse gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="space-y-4 max-w-[380px]"
+            >
+              <span className={`uppercase font-bold ${textDestaque}`}>
+                {content.texts.team.cards.card3.title}
+              </span>
+
+              <h2 className={`text-3xl font-mainFont ${text}`}>
+                {content.texts.team.cards.card3.name}
+              </h2>
+
+              {/* <p className={`font-secondFont ${textOpacity}`}>
+                {content.texts.team.cards.card3.description}
+              </p> */}
+
+              <Button
+                onClick={() => openModal('card3')}
+                className={`bg-transparent px-0 uppercase font-bold flex items-center gap-2 border-none ${textDestaque} underline sclae-100 hover:scale-90 duration-500 transition-all`}
+              >
+                Saiba mais <ArrowRight size={20} />
+              </Button>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="max-w-[380px]"
+            >
+              <div className={`rounded-3xl overflow-hidden ${image}`}>
+                <img
+                  src={content.texts.team.cards.card3.img3}
+                  alt={content.texts.team.cards.card3.alt}
+                  className="w-full object-cover scale-105 hover:scale-100 transition-transform duration-700"
+                />
+              </div>
+            </motion.div>
+          </div>
         </section>
+
+        <Dialog
+          visible={visible}
+          onHide={closeModal}
+          closeIcon={<X size={20} />}
+          className="font-secondFont bg-white p-4 rounded-md"
+          header={
+            <span className="font-mainFont px-4 text-title1 font-bold">
+              {activeCard && modalContent[activeCard].title}
+            </span>
+          }
+          headerClassName="pb-3"
+          style={{ width: '50vw' }}
+          breakpoints={{
+            '4000px': '640px',
+            '1024px': '640px',
+            '641px': '85vw',
+          }}
+        >
+          {activeCard && (
+            <div className="px-4 pb-4 space-y-4">
+              <p className={`text-black`}>{modalContent[activeCard].text}</p>
+
+              {/* <ButtonReflexo
+                link={content.texts.links.ctaWhatsapp}
+                label="Falar com especialista"
+                colorMode={colorMode}
+              /> */}
+            </div>
+          )}
+        </Dialog>
       </SectionWrapper>
     </SectionArea>
   )
