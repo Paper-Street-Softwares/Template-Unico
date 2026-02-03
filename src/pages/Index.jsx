@@ -60,25 +60,21 @@ export default function Index() {
           <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
+            <Important colorMode={colorMode} />
             <FeaturesNovaTemplate
               colorMode={colorMode}
               frasesDestaque={true}
               accordion={false}
+              buttons={false}
             />
-            {/* <Speed colorMode={colorMode} /> */}
-            {/* <Important colorMode={colorMode} /> */}
-
+            <Emergency colorMode={colorMode} />
             <AboutNovoTemplate
               colorMode={colorMode}
               ButtonModal={true}
               benefits={false}
             />
-            <SocialMediaTemplate colorMode={colorMode} />
-            <Team colorMode={colorMode} />
-            {/* <TeamSectionNew colorMode={colorMode} /> */}
-            <CtaNovoTemplate colorMode={colorMode} container={false} />
             <StepsNovoTemplate colorMode={colorMode} />
-            <BlogPosts colorMode={colorMode} />
+            <CtaNovoTemplate colorMode={colorMode} container={true} />
             <FaqNovoTemplate colorMode={colorMode} />
             <FooterNovoTemplate
               colorMode={colorMode}
@@ -93,9 +89,14 @@ export default function Index() {
               obs={false}
             />
             <WhatsappAnimated colorMode={colorMode} />
+
             {/* <Diferences colorMode={colorMode} /> */}
+            {/* <Speed colorMode={colorMode} /> */}
+            {/* <SocialMediaTemplate colorMode={colorMode} /> */}
+            {/* <Team colorMode={colorMode} /> */}
+            {/* <TeamSectionNew colorMode={colorMode} /> */}
+            {/* <BlogPosts colorMode={colorMode} /> */}
             {/* <Cards colorMode={colorMode} /> */}
-            {/* <Emergency colorMode={colorMode} /> */}
           </Suspense>
         </main>
       </ColorModeProvider>

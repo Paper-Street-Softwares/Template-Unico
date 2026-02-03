@@ -124,7 +124,7 @@ function HeroTemplateNovo({
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="space-y-2 desktop1:space-y-8 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
+              className="space-y-4 desktop1:space-y-8 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
             >
               <div
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-[8px] phone2:text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
@@ -190,10 +190,11 @@ function HeroTemplateNovo({
                 } w-full`}
               /> */}
               <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground w-full">
-                <div className="relative flex ">
+                {/* <div className="relative flex ">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
-                </div>
+                </div> */}
+                ⚠️
                 <span
                   className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
                 >
@@ -202,7 +203,6 @@ function HeroTemplateNovo({
                   </span>{' '} */}
                   {content.texts.hero.obsHero.text}
                 </span>
-
                 {obsTwo && (
                   <span
                     className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
