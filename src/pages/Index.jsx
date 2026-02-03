@@ -20,6 +20,8 @@ const AboutNovoTemplate = lazy(
   () => import('../components/sections/AboutNovoTemplate'),
 )
 
+const Team = lazy(() => import('../components/sections/Team'))
+
 const TeamSectionNew = lazy(() => import('../components/sections/TeamSection'))
 
 const SocialMediaTemplate = lazy(
@@ -31,6 +33,9 @@ const FooterNovoTemplate = lazy(
 const WhatsappAnimated = lazy(
   () => import('../components/interactives/WhatsAppAnimated'),
 )
+
+const BlogPosts = lazy(() => import('../components/sections/BlogPosts'))
+
 import { useContext } from 'react'
 import { ColorModeProvider } from '../context/UseContextArchive'
 import { useColorMode } from '../context/UseContextArchive'
@@ -52,30 +57,35 @@ export default function Index() {
 
         <main>
           {/* LCP — NÃO usar lazy */}
-          <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={true} />
+          <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
             <FeaturesNovaTemplate
               colorMode={colorMode}
-              frasesDestaque={false}
+              frasesDestaque={true}
               accordion={false}
             />
-            <Speed colorMode={colorMode} />
+            {/* <Speed colorMode={colorMode} /> */}
             {/* <Important colorMode={colorMode} /> */}
 
             <AboutNovoTemplate
               colorMode={colorMode}
-              ButtonModal={false}
+              ButtonModal={true}
               benefits={false}
             />
-            <CtaNovoTemplate colorMode={colorMode} />
-            {/* <StepsNovoTemplate colorMode={colorMode} /> */}
+            <SocialMediaTemplate colorMode={colorMode} />
+            <Team colorMode={colorMode} />
+            {/* <TeamSectionNew colorMode={colorMode} /> */}
+            <CtaNovoTemplate colorMode={colorMode} container={false} />
+            <StepsNovoTemplate colorMode={colorMode} />
+            <BlogPosts colorMode={colorMode} />
+            <FaqNovoTemplate colorMode={colorMode} />
             <FooterNovoTemplate
               colorMode={colorMode}
               mapa={false}
               phone={true}
               phoneSecond={false}
-              expediente={false}
+              expediente={true}
               adress={true}
               email={true}
               emailSecond={false}
@@ -86,8 +96,6 @@ export default function Index() {
             {/* <Diferences colorMode={colorMode} /> */}
             {/* <Cards colorMode={colorMode} /> */}
             {/* <Emergency colorMode={colorMode} /> */}
-            {/* <SocialMediaTemplate colorMode={colorMode} /> */}
-            {/* <FaqNovoTemplate colorMode={colorMode} /> */}
           </Suspense>
         </main>
       </ColorModeProvider>

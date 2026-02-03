@@ -1,53 +1,73 @@
-import { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
-import WordPressBlogCard from "../cards/WordPressBlogCard";
-import SectionArea from "../sectionElements/SectionArea";
-import SectionWrapper from "../sectionElements/SectionWrapper";
-import SectionHeader from "../sectionElements/SectionHeader";
-import Paragraphs from "../sectionElements/Paragraphs";
-import MotionDivDownToUp from "../animation/MotionDivDownToUp";
-import content from "../../content/content";
+import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+import WordPressBlogCard from '../cards/WordPressBlogCard'
+import SectionArea from '../sectionElements/SectionArea'
+import SectionWrapper from '../sectionElements/SectionWrapper'
+import SectionHeader from '../sectionElements/SectionHeader'
+import Paragraphs from '../sectionElements/Paragraphs'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import content from '../../content/content'
+import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
 
-function BlogPosts() {
-  const [posts, setPosts] = useState([]);
-  const [visibleCount, setVisibleCount] = useState(3);
+function BlogPosts({ colorMode }) {
+  const [posts, setPosts] = useState([])
+  const [visibleCount, setVisibleCount] = useState(3)
+
+  let backgroundMode, titleColor, subtitleColor, linkColor
+
+  switch (colorMode) {
+    case 'light':
+      backgroundMode = 'bg-terciary/60'
+      titleColor = 'text-corTitulosPreto'
+      subtitleColor = 'text-corOutrosTextosPreto'
+      linkColor = 'text-primaryDark'
+      break
+    case 'dark':
+      backgroundMode = 'bg-black'
+      titleColor = 'text-corTitulosBranca'
+      subtitleColor = 'text-corOutrosTextosPreto'
+      linkColor = 'text-primaryLight'
+      break
+    default:
+      backgroundMode = 'bg-black'
+      titleColor = 'text-white'
+      subtitleColor = 'text-white/70'
+      linkColor = 'text-primaryLight'
+  }
 
   useEffect(() => {
     fetch(
-      `https://public-api.wordpress.com/rest/v1.1/sites/${content.texts.blog.blogLink}/posts/`
+      `https://public-api.wordpress.com/rest/v1.1/sites/${content.texts.blog.blogLink}/posts/`,
     )
       .then((response) => response.json())
       .then((data) => setPosts(data.posts || []))
-      .catch((error) => console.error("Erro ao buscar posts:", error));
-  }, []);
+      .catch((error) => console.error('Erro ao buscar posts:', error))
+  }, [])
 
   useEffect(() => {
     const updateVisibleCount = () => {
       if (window.innerWidth >= 1441) {
-        setVisibleCount(6);
+        setVisibleCount(6)
       } else {
-        setVisibleCount(3);
+        setVisibleCount(3)
       }
-    };
+    }
 
-    updateVisibleCount(); // roda ao carregar
-    window.addEventListener("resize", updateVisibleCount);
-    return () => window.removeEventListener("resize", updateVisibleCount);
-  }, []);
+    updateVisibleCount()
+    window.addEventListener('resize', updateVisibleCount)
+    return () => window.removeEventListener('resize', updateVisibleCount)
+  }, [])
 
   return (
     <div>
-      <SectionArea className="bg-bgSectionDark" id="blog">
+      <SectionArea className={backgroundMode} id="blog">
         <SectionWrapper>
-          <SectionHeader
+          <SectionHeaderNovo
             className="text-center mb-[26px] tablet1:mb-[40px] desktop1:mb-[72px]"
             miniTitle={content.texts.blog.miniTag}
-            sectionHeaderTitle={content.texts.blog.title}
-            sectionHeaderSubtitle={content.texts.blog.subtitle}
-            color=""
-            type=""
-            titleColorSet="text-white"
-            subtitleColorSet="text-white"
+            title={content.texts.blog.title}
+            subtitle={content.texts.blog.subtitle}
+            colorMode={colorMode}
           />
 
           <ul className="flex flex-wrap gap-[30px] justify-center mb-[80px]">
@@ -65,16 +85,17 @@ function BlogPosts() {
                   }
                   title={
                     <h1
-                      className=""
+                      className={titleColor}
                       dangerouslySetInnerHTML={{ __html: post.title }}
                     />
                   }
                   subtitle={
                     <p
+                      className={subtitleColor}
                       dangerouslySetInnerHTML={{
                         __html:
                           post.excerpt.length > 100
-                            ? post.excerpt.substring(0, 60) + "..."
+                            ? post.excerpt.substring(0, 60) + '...'
                             : post.excerpt,
                       }}
                     />
@@ -86,7 +107,9 @@ function BlogPosts() {
           </ul>
 
           <MotionDivDownToUp>
-            <Paragraphs className="text-center text-white underline transition hover:scale-110">
+            <Paragraphs
+              className={`text-center underline transition hover:scale-110 ${linkColor}`}
+            >
               <a
                 href={`https://${content.texts.blog.blogLink}`}
                 target="_blank"
@@ -99,7 +122,7 @@ function BlogPosts() {
         </SectionWrapper>
       </SectionArea>
     </div>
-  );
+  )
 }
 
-export default BlogPosts;
+export default BlogPosts

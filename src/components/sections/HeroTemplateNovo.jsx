@@ -51,7 +51,7 @@ function HeroTemplateNovo({
       break
     case 'dark':
       backgroundMode = 'bg-dark'
-      bgFaixaHero = 'bg-secondary'
+      bgFaixaHero = 'bg-darkOpacity'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-primaryLight'
@@ -105,11 +105,11 @@ function HeroTemplateNovo({
   return (
     <SectionArea
       data-theme={colorMode}
-      id="home"
+      name="home"
       paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
-      <section className="relative min-h-[90vh] w-full pt-[90px] phone2:pt-[90px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] phone3:pt-[100px] tablet1:pt-[170px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
+      <section className="relative w-full pt-[90px] phone2:pt-[90px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] phone3:pt-[100px] tablet1:pt-[170px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
         {/* Abstract Background Shapes */}
         <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}
@@ -131,8 +131,7 @@ function HeroTemplateNovo({
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-[8px] phone2:text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
               >
                 <span>
-                  {/* <MapPin className="w-4 h-4" /> */}
-                  <Split width={14} />
+                  <MapPin className="w-4 h-4" />
                 </span>
                 {content.texts.hero.miniTag}
               </div>
@@ -191,17 +190,17 @@ function HeroTemplateNovo({
                   colorMode === 'light' ? 'opacity-90' : 'opacity-20'
                 } w-full`}
               /> */}
-              <div className="flex flex-col justify-start items-start gap-3 text-sm text-mutedForeground w-full">
-                {/* <div className="relative flex ">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
-                </div> */}
+              <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground w-full">
+                <div className="relative flex ">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
+                </div>
                 <span
                   className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
                 >
-                  <span>
+                  {/* <span>
                     <Check />
-                  </span>{' '}
+                  </span>{' '} */}
                   {content.texts.hero.obsHero.text}
                 </span>
 

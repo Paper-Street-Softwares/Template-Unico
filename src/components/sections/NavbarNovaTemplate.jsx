@@ -6,9 +6,9 @@ import { motion } from 'framer-motion'
 import SectionAria from '../../components/sectionElements/SectionArea'
 import SectionWrapper from '../../components/sectionElements/SectionWrapper'
 import content from '../../content/content'
-import { Link } from 'react-scroll'
 import ButtonReflexo from '../interactives/ButtonReflexo'
 import { useContext } from 'react'
+import { Link, animateScroll as scroll, scroller } from 'react-scroll'
 
 function NavbarNovaTemplate({
   colorMode,
@@ -79,9 +79,17 @@ function NavbarNovaTemplate({
             <img
               src={content.texts.navbar.logo.img}
               alt={content.texts.navbar.logo.alt}
-              className="w-[100%]"
+              className="w-[100%] desktop1:hidden"
               width={160}
-              height={102}
+              height={71}
+              fetchPriority="high"
+            />
+            <img
+              src={content.texts.navbar.logo.imgDesktop}
+              alt={content.texts.navbar.logo.alt}
+              className="w-[100%] hidden desktop1:flex"
+              width={243}
+              height={109}
               fetchPriority="high"
             />
           </div>
@@ -91,15 +99,12 @@ function NavbarNovaTemplate({
             {labels.map((item, index) => (
               <Link
                 to={ids[index]}
-                aria-label={`Link para ${item}`}
                 smooth={true}
                 duration={500}
                 offset={-90}
-                spy={true}
-                hashSpy={true}
-                tag="a"
-                href={`#${ids[index]}`}
-                className={`cursor-pointer ${hoverLinks} bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
+                spy={false}
+                hashSpy={false}
+                className={`cursor-pointer bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity}`}
               >
                 {item}
               </Link>
@@ -157,14 +162,11 @@ function NavbarNovaTemplate({
                   {labels.map((item, index) => (
                     <Link
                       to={ids[index]}
-                      aria-label={`Link para ${item}`}
                       smooth={true}
                       duration={500}
                       offset={-90}
-                      spy={true}
-                      hashSpy={true}
-                      tag="a"
-                      href={`#${ids[index]}`}
+                      spy={false}
+                      hashSpy={false}
                       className={`cursor-pointer transition-all w-full ${textOpacity}`}
                     >
                       {item}

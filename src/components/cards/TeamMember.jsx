@@ -1,39 +1,32 @@
+import { ArrowRight } from 'lucide-react'
+
 export default function TeamMember(props) {
-  const {
-    img,
-    alt,
-    name,
-    role,
-    work,
-    icon1,
-    link1,
-    icon2,
-    link2,
-    icon3,
-    link3,
-  } = props;
+  const { img, alt, name, role, work, onClick } = props
 
   return (
-    <div className="flex flex-col items-center justify-between p-[20px] w-full tablet1:w-[45%] desktop1:w-[30%] desktop2:w-[25%] text-black">
-      <div className="">
-        <img
-          alt={alt}
-          src={img}
-          className="w-[215px] h-[215px] desktop1:w-auto desktop1:h-auto rounded-full mb-[24px] "
-        ></img>
-      </div>
-      <p className="text-center text-black tablet1:w-full mb-[8px] text-paragraph2">
-        {role}
-      </p>
-      <h1 className="text-paragraph5 leading-5 font-bold text-center">
-        {name}
-      </h1>
+    <div className="flex flex-col items-center p-[20px] w-full tablet1:w-[45%] desktop1:w-[30%] text-white font-secondFont">
+      <img
+        alt={alt}
+        src={img}
+        className="w-[215px] h-[215px] rounded-full mb-[24px]"
+      />
 
-      <div className="desktop2:h-[48px] mt-2 flex flex-col justify-center">
-        <p className="text-center text-paragraph2 text-black tablet1:w-[70%] m-auto">
-          {work}
-        </p>
+      <p className="text-center mb-[8px] font-bold">{role}</p>
+      <h1 className="font-medium text-center">{name}</h1>
+
+      <div className="mt-2 flex flex-col items-center">
+        <p className="text-center">{work}</p>
+
+        <button
+          onClick={onClick}
+          className="text-primaryLight/70 hover:scale-95 transition-all flex gap-2 items-center"
+        >
+          Saiba mais
+          <span>
+            <ArrowRight width={18} />
+          </span>{' '}
+        </button>
       </div>
     </div>
-  );
+  )
 }
