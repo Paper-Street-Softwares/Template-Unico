@@ -88,8 +88,8 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
       className={`${backgroundMode}`}
     >
       <SectionWrapper>
-        <section className="relative font-mainFont">
-          <div className="container mx-auto">
+        <section className="relative font-mainFont w-full">
+          <div className="mx-auto">
             <div className="flex flex-col-reverse desktop1:flex-row gap-16 items-center">
               {/* Imagem com destaque */}
               <div>
@@ -160,7 +160,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
               </div>
 
               {/* Conteúdo das features */}
-              <div className="order-1 lg:order-2 space-y-8 w-[90%] desktop1:w-[50%]">
+              <div className="order-1 lg:order-2 space-y-8 w-full desktop1:w-[50%]">
                 <SectionHeaderNovo
                   miniTitle={content.texts.features.miniTag}
                   title={content.texts.features.title}
