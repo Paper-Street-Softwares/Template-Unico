@@ -13,6 +13,7 @@ import {
   Users,
   Split,
   FileText,
+  ChartNoAxesCombined,
 } from 'lucide-react'
 import content from '../../content/content'
 import SectionArea from '../sectionElements/SectionArea'
@@ -130,12 +131,12 @@ function HeroTemplateNovo({
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-[8px] phone2:text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
               >
                 <span>
-                  <MapPin className="w-4 h-4" />
+                  <ChartNoAxesCombined className="w-4 h-4" />
                 </span>
                 {content.texts.hero.miniTag}
               </div>
               <h1
-                className={` desktop1:text-start text-[17px] phone2:text-[28px] phone3:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] ${text} `}
+                className={`desktop1:text-start text-[17px] phone2:text-[28px] phone3:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] ${text} `}
               >
                 {content.texts.hero.title}
               </h1>

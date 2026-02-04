@@ -19,7 +19,7 @@ export default function ButtonReflexo({
   const shadowClass = isLigar
     ? 'shadow-red-500/30'
     : effectiveWhatsAppColor
-      ? 'shadow-wppDark/30'
+      ? 'shadow-wppLight/30'
       : colorMode === 'dark'
         ? 'shadow-primaryLight/20'
         : 'shadow-primaryDark/20'
