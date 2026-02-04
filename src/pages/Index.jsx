@@ -60,22 +60,14 @@ export default function Index() {
           <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
-            <Important colorMode={colorMode} />
             <FeaturesNovaTemplate
               colorMode={colorMode}
               frasesDestaque={true}
               accordion={false}
               buttons={false}
             />
-            <Emergency colorMode={colorMode} />
-            <AboutNovoTemplate
-              colorMode={colorMode}
-              ButtonModal={true}
-              benefits={false}
-            />
             <StepsNovoTemplate colorMode={colorMode} />
             <CtaNovoTemplate colorMode={colorMode} container={true} />
-            <FaqNovoTemplate colorMode={colorMode} />
             <FooterNovoTemplate
               colorMode={colorMode}
               mapa={false}
@@ -90,6 +82,14 @@ export default function Index() {
             />
             <WhatsappAnimated colorMode={colorMode} />
 
+            {/* <AboutNovoTemplate
+              colorMode={colorMode}
+              ButtonModal={true}
+              benefits={false}
+            /> */}
+            {/* <FaqNovoTemplate colorMode={colorMode} /> */}
+            {/* <Emergency colorMode={colorMode} /> */}
+            {/* <Important colorMode={colorMode} /> */}
             {/* <Diferences colorMode={colorMode} /> */}
             {/* <Speed colorMode={colorMode} /> */}
             {/* <SocialMediaTemplate colorMode={colorMode} /> */}
