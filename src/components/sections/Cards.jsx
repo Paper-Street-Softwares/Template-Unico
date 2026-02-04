@@ -62,9 +62,9 @@ function Cards({ colorMode }) {
         <section id="">
           <div className="container mx-auto">
             <SectionHeaderNovo
-              miniTitle="Áreas de Atuação"
-              title="Atuação jurídica completa para proteger seus direitos"
-              subtitle="Soluções legais pensadas para prevenir conflitos, resolver problemas e garantir segurança jurídica em diferentes áreas do Direito."
+              miniTitle={content.texts.cardsSection.miniTag}
+              title={content.texts.cardsSection.title}
+              subtitle={content.texts.cardsSection.subtitle}
               colorMode={colorMode}
             />
 

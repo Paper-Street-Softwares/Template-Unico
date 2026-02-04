@@ -16,10 +16,12 @@ function CardsImportants({ title, paragraph, colorMode, className }) {
         'text-corOutrosTextosPreto group-hover:text-corOutrosTextosBranca'
       break
     case 'dark':
-      bgCard = 'bg-black hover:bg-primaryDark'
+      // bgCard = 'bg-black hover:bg-primaryDark'
+      bgCard = 'bg-black'
       bgCircle = 'bg-dark'
-      bgCircleHover =
-        'group-hover:bg-primaryDark group-hover:border-2 border-primaryLight group-hover:border-black'
+      // bgCircleHover =
+      //   'group-hover:bg-primaryDark group-hover:border-2 border-primaryLight group-hover:border-black'
+      bgCircleHover = ' border-primaryLight'
       titleMode = 'text-corTitulosBranca group-hover:text-corTitulosBranca'
       description =
         'text-corOutrosTextosBranca group-hover:text-corOutrosTextosBranca'
@@ -53,7 +55,8 @@ function CardsImportants({ title, paragraph, colorMode, className }) {
             width={32}
             height={32}
             alt="Ícone de exclamação"
-            className="w-8 group-hover:invert duration-700 transition-all"
+            // className="w-8 group-hover:invert duration-700 transition-all"
+            className="w-8 duration-700 transition-all"
           />
         </div>
       </div>

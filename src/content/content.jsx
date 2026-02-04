@@ -112,11 +112,11 @@ const content = {
         'Início',
         // 'Serviços',
         // 'Sobre',
-        // 'Perguntas',
+        'Perguntas',
         // 'Blog',
         // 'Mapa',
       ],
-      menuId: ['home', 'feature', 'about'],
+      menuId: ['home', 'faq'],
       ariaLabel: 'Botão de Contato',
       ctaButtonText: 'Contato',
       ctaButtonTextResponsive: 'Contato',
@@ -222,7 +222,7 @@ const content = {
           paragraph: (
             <p>
               Trabalhamos apenas com formatos e mensagens
-              <span className="font-bold">permitidas</span>, sem riscos éticos.
+              <span className="font-bold"> permitidas</span>, sem riscos éticos.
             </p>
           ),
         },
@@ -279,8 +279,8 @@ const content = {
           title: 'Transparência Total',
           paragraph: (
             <>
-              Você acompanha os números, investimentos e resultados. Sem
-              relatórios confusos. Sem caixa-preta.
+              Você acompanha os números, investimentos e resultados. <br />
+              Sem relatórios confusos. Sem caixa-preta.
             </>
           ),
         },
@@ -288,8 +288,8 @@ const content = {
           title: 'Visão de Negócio',
           paragraph: (
             <>
-              Nosso foco não é “anúncio bonito”. É ajudar seu escritório a
-              construir um sistema previsível de captação.
+              Nosso foco não é “anúncio bonito”. <br /> É ajudar seu escritório
+              a construir um sistema previsível de captação.
             </>
           ),
         },
@@ -439,10 +439,10 @@ const content = {
       ctaButtonText: 'A_Definir',
     },
     cardsSection: {
-      miniTag: 'Áreas de Atuação',
-      title: 'Atuação jurídica completa para proteger seus direitos',
+      miniTag: 'SE NADA MUDAR, O CENÁRIO É ESTE',
+      title: 'A instabilidade de hoje vira estagnação amanhã.',
       subtitle:
-        'Soluções legais pensadas para prevenir conflitos, resolver problemas e garantir segurança jurídica em diferentes áreas do Direito.',
+        'No mercado jurídico atual, depender apenas de indicações e tentativas aleatórias de marketing não sustenta crescimento.',
       cards: {
         card1: {
           title: 'Meses bons seguidos de meses fracos, sem previsibilidade',
