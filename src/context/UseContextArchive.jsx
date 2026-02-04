@@ -22,8 +22,8 @@ export function ColorModeProvider({ children }) {
 }
 
 export const whatsAppThemes = {
-  light: 'bg-wppDark text-corTitulosBranca border-green-600/30',
-  dark: 'bg-wppDark text-corTitulosBranca border-green-600/30',
+  light: 'bg-wppDark text-corTitulosPreto border-green-600/30',
+  dark: 'bg-wppLight text-corTitulosBranca border-green-600/30',
   default: 'bg-green-500 text-black',
 }
 

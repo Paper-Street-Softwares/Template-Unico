@@ -22,8 +22,6 @@ const AboutNovoTemplate = lazy(
 
 const Team = lazy(() => import('../components/sections/Team'))
 
-const TeamSectionNew = lazy(() => import('../components/sections/TeamSection'))
-
 const SocialMediaTemplate = lazy(
   () => import('../components/sections/SocialMediaTemplate'),
 )
@@ -42,6 +40,7 @@ import { useColorMode } from '../context/UseContextArchive'
 import Cards from '../components/sections/Cards'
 import InventarioComparativo from '../components/sections/Tabela'
 import Important from '../components/sections/Important'
+import Authority from '../components/sections/Authority'
 import Speed from '../components/sections/Speed'
 import Emergency from '../components/sections/Emergency'
 import { Diferences } from '../components/sections/Diferences'
@@ -60,43 +59,42 @@ export default function Index() {
           <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
-            <Important colorMode={colorMode} />
             <FeaturesNovaTemplate
               colorMode={colorMode}
-              frasesDestaque={true}
+              frasesDestaque={false}
               accordion={false}
               buttons={false}
             />
-            <Emergency colorMode={colorMode} />
-            <AboutNovoTemplate
-              colorMode={colorMode}
-              ButtonModal={true}
-              benefits={false}
-            />
+            <Cards colorMode={colorMode} />
             <StepsNovoTemplate colorMode={colorMode} />
+            <Authority colorMode={colorMode} />
             <CtaNovoTemplate colorMode={colorMode} container={true} />
+            <Important colorMode={colorMode} />
             <FaqNovoTemplate colorMode={colorMode} />
             <FooterNovoTemplate
               colorMode={colorMode}
               mapa={false}
-              phone={true}
+              phone={false}
               phoneSecond={false}
-              expediente={true}
-              adress={true}
-              email={true}
+              expediente={false}
+              adress={false}
+              email={false}
               emailSecond={false}
               fraseFooter={true} // frase Google LLC
               obs={false}
             />
             <WhatsappAnimated colorMode={colorMode} />
-
+            {/* <AboutNovoTemplate
+              colorMode={colorMode}
+              ButtonModal={true}
+              benefits={false}
+            /> */}
+            {/* <Emergency colorMode={colorMode} /> */}
             {/* <Diferences colorMode={colorMode} /> */}
             {/* <Speed colorMode={colorMode} /> */}
             {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             {/* <Team colorMode={colorMode} /> */}
-            {/* <TeamSectionNew colorMode={colorMode} /> */}
             {/* <BlogPosts colorMode={colorMode} /> */}
-            {/* <Cards colorMode={colorMode} /> */}
           </Suspense>
         </main>
       </ColorModeProvider>

@@ -14,17 +14,19 @@ export default {
     'border',
     'border-green-600/30',
     'bg-red-700',
+    'bg-wppDark',
+    'bg-wppLight',
   ],
   theme: {
     extend: {
       colors: {
         // Principais
-        primaryLight: '#B99269',
-        primaryDark: '#233B6E',
-        secondary: '#E0E2E9',
-        terciary: '#f7f3f1',
+        primaryLight: '#FACC15',
+        primaryDark: '#725E0D',
+        secondary: '#E9E7E0',
+        terciary: '#F7F6F1',
         quartenary: '#FAFBFC',
-        borderImage: '#292929',
+        borderImage: '#FCFBFA',
 
         // Copys
         corTitulosBranca: '#FFFFFF',

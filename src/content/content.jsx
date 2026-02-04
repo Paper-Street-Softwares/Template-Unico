@@ -14,19 +14,25 @@ import imgSteps from '../assets/imgs/steps/imgSteps.webp'
 
 import {
   Baby,
-  Briefcase,
+  BriefcaseBusiness,
   BriefcaseMedical,
   Gavel,
   Home,
   Key,
   LucideIdCard,
-  BriefcaseBusiness,
   Lock,
   Scale,
-  Shield,
   Car,
   HandCoins,
   Check,
+  MegaphoneOffIcon,
+  MegaphoneOff,
+  Timer,
+  AlertTriangle,
+  Hourglass,
+  Brain,
+  GrapeIcon,
+  ChartNoAxesCombined,
 } from 'lucide-react'
 import { Users } from 'lucide-react'
 import { FileText } from 'lucide-react'
@@ -34,14 +40,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Dr. José Negreiros',
+  name: 'Paper Street',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'negreirosadvocaciajuridica.com.br', // Sem "www"
+  domain: 'paperstreet.com.br', // Sem "www"
   phone: {
-    ddd: '69',
-    firstPart: '98100', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '0109', // Apenas os 4 últimos números
+    ddd: '11',
+    firstPart: '98821', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '7850', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -56,10 +62,10 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>Rua Geraldo Siqueira,</p>
-      <p>nº 2690, Caladinho,</p>
-      <p>Porto Velho - RO,</p>
-      <p>CEP 76808-270</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -73,7 +79,7 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>Atendimento em regime de plantão 24h via WhatsApp</p>
+      <p>A_Definir</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
@@ -104,24 +110,24 @@ const content = {
       },
       menuItems: [
         'Início',
-        'Serviços',
-        'Sobre',
-        // 'Perguntas',
+        // 'Serviços',
+        // 'Sobre',
+        'Perguntas',
         // 'Blog',
         // 'Mapa',
       ],
-      menuId: ['home', 'feature', 'about'],
+      menuId: ['home', 'faq'],
       ariaLabel: 'Botão de Contato',
       ctaButtonText: 'Contato',
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'ESCRITÓRIO DE ADVOCACIA EM PORTO VELHO - RO',
+      miniTag: 'CAPTAÇÃO DE CLIENTES PARA ADVOGADOS',
       title: (
         <h1>
-          Precisa de auxílio de um{' '}
+          Clientes para seu escritório, de forma{' '}
           <span className="destaque relative italic font-light">
-            Advogado
+            previsível
             <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
@@ -148,14 +154,16 @@ const content = {
                 />
               </svg>
             </span>
-          </span>
-          ?
+          </span>{' '}
+          — sem ferir as regras da OAB.
         </h1>
       ),
       subtitle: (
         <p>
-          Atuamos com responsabilidade para orientar e defender você em decisões
-          importantes.
+          Um método de tráfego pago feito{' '}
+          <span className="font-bold">exclusivamente para advogados</span>,
+          focado em atrair clientes qualificados, com segurança jurídica e total
+          transparência.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -164,12 +172,12 @@ const content = {
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Seja atendido agora no WhatsApp',
+      ctaButtonText: 'Quero entender como funciona para meu escritório',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Não espere nem mais um minuto, sua liberdade depende disso!',
+        text: 'Sem promessas irreais. Estratégia alinhada às normas da OAB e à realidade do seu escritório.',
         textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
@@ -193,94 +201,124 @@ const content = {
       },
     },
     important: {
-      miniTag: 'Atenção',
-      title: 'O que é importante saber ',
+      miniTag: 'DÚVIDAS E OBJEÇÕES COMUNS',
+      title:
+        'As principais preocupações dos advogados antes de investir em anúncios.',
+      subtitle:
+        'Esclarecemos os pontos que normalmente geram insegurança para que você avance com mais clareza e segurança.',
       cards: {
         card1: {
-          title: 'Preciso pagar alguma coisa para dar entrada no meu processo?',
-          paragraph:
-            'Depende do caso, mas esperar para descobrir sozinho costuma sair mais caro. Fale comigo agora para entender exatamente o que precisa ser feito e evitar prejuízos.',
+          title: 'Já tentei antes e não funcionou',
+          paragraph: (
+            <p>
+              Isso é mais comum do que parece. <br /> Na maioria dos casos, o
+              problema <span className="font-bold">não foi você</span>, foi a
+              estratégia errada.
+            </p>
+          ),
         },
         card2: {
-          title:
-            'Meu problema ainda não virou processo. Dá pra resolver antes?',
-          paragraph:
-            'Em muitos casos, sim. E agir antes pode mudar tudo. Entre em contato imediatamente para analisar sua situação enquanto ainda há tempo.',
+          title: 'Tenho medo das regras da OAB',
+          paragraph: (
+            <p>
+              Trabalhamos apenas com formatos e mensagens
+              <span className="font-bold"> permitidas</span>, sem riscos éticos.
+            </p>
+          ),
         },
         card3: {
-          title: 'Se eu esperar mais um pouco, isso pode piorar?',
-          paragraph:
-            'Pode. E geralmente piora. Quanto mais você demora, menos opções existem. Fale comigo agora para agir no momento certo.',
+          title: 'Não sei se anúncios funcionam para minha área',
+          paragraph: (
+            <p>
+              Funciona para advogados <span className="font-bold">comuns</span>,
+              não apenas para quem é famoso ou influencer.
+            </p>
+          ),
         },
         card4: {
-          title:
-            'Posso tentar resolver isso sozinho ou preciso de advogado agora?',
-          paragraph:
-            'Tentar sozinho costuma gerar erros difíceis de corrigir depois. O ideal é orientação imediata para não comprometer seu caso desde o início.',
+          title: 'Não quero investir sem ter clareza',
+          paragraph: (
+            <p>
+              Antes de qualquer passo, avaliamos se há demanda real e se a
+              estratégia <span className="font-bold">faz sentido</span> para o
+              seu caso.
+            </p>
+          ),
         },
       },
       fraseObs:
-        'Cada caso é diferente. Agir rápido, com orientação jurídica, pode mudar completamente o rumo da sua situação.',
-      ctaButtonText: 'Falar agora com um advogado',
+        'Entre em contato conosco e lhe daremos todo o suporte necessário',
+      ctaButtonText: 'Falar conosco agora pelo WhatsApp',
+    },
+    authority: {
+      miniTag: 'POR QUE CONFIAR NA PAPER STREET',
+      title: 'Especialistas em captação de clientes para advogados.',
+      subtitle:
+        'Não somos uma empresa genérica. Nosso trabalho é pensado para o mercado jurídico, com foco em previsibilidade, ética e estratégia.',
+      cards: {
+        card1: {
+          title: 'Especialização Jurídica',
+          paragraph: (
+            <>
+              Atendemos exclusivamente advogados e escritórios de advocacia.
+              Isso significa entender o público, a linguagem e os limites éticos
+              do setor.
+            </>
+          ),
+        },
+        card2: {
+          title: 'Conformidade com a OAB',
+          paragraph: (
+            <>
+              Toda a estratégia é construída respeitando o Código de Ética da
+              OAB, evitando riscos jurídicos e exposições desnecessárias.
+            </>
+          ),
+        },
+        card3: {
+          title: 'Transparência Total',
+          paragraph: (
+            <>
+              Você acompanha os números, investimentos e resultados. <br />
+              Sem relatórios confusos. Sem caixa-preta.
+            </>
+          ),
+        },
+        card4: {
+          title: 'Visão de Negócio',
+          paragraph: (
+            <>
+              Nosso foco não é “anúncio bonito”. <br /> É ajudar seu escritório
+              a construir um sistema previsível de captação.
+            </>
+          ),
+        },
+      },
+      ctaButtonText: 'Quero falar com um especialista',
     },
     features: {
-      miniTag: 'ÁREAS DE ATUAÇÃO',
+      miniTag: 'PARA ADVOGADOS QUE QUEREM CRESCER COM SEGURANÇA',
       title: (
         <h1>
-          Atuação jurídica com
-          <span className="destaque italic font-light">
-            {' '}
-            responsabilidade
-          </span>{' '}
-          e<span className="destaque italic font-light"> proximidade</span>
+          Conseguir
+          <span className="destaque italic font-light"> clientes </span>
+          na advocacia não deveria ser tão incerto.
         </h1>
       ),
       subtitle:
-        'Unimos conhecimento técnico e atendimento humano para orientar você com clareza em cada etapa.',
+        'Você trabalha, entrega resultado, tem clientes, mas nunca sabe quando o próximo caso vai entrar.',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: '100%',
-      subtitleMessageFeature: 'ética e responsabilidade',
+      titleMessageFeature: 'A_Definir',
+      subtitleMessageFeature: 'A_Definir',
       cards: {
         card1: {
-          title: 'Direito Penal',
-          subtitle:
-            'Atuação firme e responsável para quem enfrenta acusações ou investigações criminais.',
+          title: 'Dependência de indicação',
+          subtitle: 'Quando a indicação não vem, o caixa sente.',
           description: (
             <div>
               A_Definir
               <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Scale />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card2: {
-          title: 'Processo Penal',
-          subtitle:
-            'Acompanhamento cuidadoso em todas as etapas do processo, garantindo seus direitos.',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Gavel />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card3: {
-          title: 'Direito de Família',
-          subtitle:
-            'Apoio jurídico em momentos delicados como divórcio, pensão, guarda e conflitos familiares.',
-          description: (
-            <div>
-              A_Definir <br />
               <br />
               A_Definir
             </div>
@@ -289,54 +327,97 @@ const content = {
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
+        card2: {
+          title: 'Tentativas frustradas de marketing',
+          subtitle: 'Postei, anunciei, contratei… e nada funcionou.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <MegaphoneOff />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card3: {
+          title: 'Medo de investir errado',
+          subtitle: 'Não posso jogar dinheiro fora com promessa vazia.',
+          description: (
+            <div>
+              A_Definir <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <HandCoins />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
         card4: {
-          title: 'Direito Cível',
-          subtitle:
-            'Soluções jurídicas para conflitos do dia a dia, contratos, cobranças e indenizações.',
+          title: 'Insegurança com a OAB',
+          subtitle: 'Qualquer erro pode virar dor de cabeça ética.',
           description: (
             <div>
               A_Definir
               <br />
               A_Definir
               <br />
-            </div>
-          ),
-          icon: <Shield />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card5: {
-          title: <p>Direito do Trabalho</p>,
-          subtitle:
-            'Orientação e defesa em casos de demissão, verbas trabalhistas e direitos do trabalhador.',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <BriefcaseBusiness />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card6: {
-          title: 'Orientação Jurídica Preventiva',
-          subtitle:
-            'Análise e orientação para evitar problemas jurídicos antes que eles aconteçam.',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
             </div>
           ),
           icon: <FileText />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
+        card5: {
+          title: 'Estagnação do escritório',
+          subtitle: 'Trabalho muito, mas não consigo escalar.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-dollar-sign-icon lucide-circle-dollar-sign"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
+              <path d="M12 18V6" />
+            </svg>
+          ),
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        // card6: {
+        //   title: 'A_Definir',
+        //   subtitle: 'A_Definir',
+        //   description: (
+        //     <div>
+        //       A_Definir
+        //       <br />
+        //       <br />
+        //       A_Definir
+        //     </div>
+        //   ),
+        //   icon: <Scale />,
+        //   buttonLabelModal: 'Fale Conosco',
+        //   buttonLabel: 'Saiba Mais',
+        // },
       },
       moreFeatures: {
         card1: {
@@ -355,13 +436,52 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
+      ctaButtonText: 'A_Definir',
+    },
+    cardsSection: {
+      miniTag: 'SE NADA MUDAR, O CENÁRIO É ESTE',
+      title: 'A instabilidade de hoje vira estagnação amanhã.',
+      subtitle:
+        'No mercado jurídico atual, depender apenas de indicações e tentativas aleatórias de marketing não sustenta crescimento.',
+      cards: {
+        card1: {
+          title: 'Meses bons seguidos de meses fracos, sem previsibilidade',
+          icon: <ChartNoAxesCombined />,
+        },
+        card2: {
+          title: 'Mais horas trabalhadas para manter o mesmo faturamento',
+          icon: <Hourglass />,
+        },
+        card3: {
+          title: 'Decisões tomadas no cansaço, não na estratégia',
+          icon: <Brain />,
+        },
+        card4: {
+          title: 'Dificuldade de investir no crescimento do escritório',
+          icon: <BriefcaseBusiness />,
+        },
+        card5: {
+          title: 'Sensação constante de estar ficando para trás no mercado',
+          icon: <Scale />,
+        },
+      },
+      fraseText: (
+        <div>
+          <p>Indicação é importante.</p> <br />
+          <p>
+            Mas indicação{' '}
+            <span className="font-bold">não é estratégia de crescimento</span>.
+          </p>
+        </div>
+      ),
+      ctaButtonText: 'Existe uma forma mais segura de crescer',
+      // linkCtaButton: 'https://previa-principal.brasilmatos.com.br/',
     },
     emergency: {
-      minitag: 'Plantão Criminal 24 Horas',
-      title: 'Atendimento Imediato em Casos Criminais',
-      subtitle:
-        'Se você ou um familiar foi preso ou está sendo investigado, o atendimento deve ser imediato. Cada minuto é decisivo para garantir direitos, evitar abusos e preparar a defesa adequada.',
-      ctaButtonText: 'Falar com Advogado Agora',
+      minitag: 'A_Definir',
+      title: 'A_Definir',
+      subtitle: 'A_Definir',
+      ctaButtonText: 'A_Definir',
     },
     maps: {
       minitag: 'A_Definir',
@@ -374,31 +494,25 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'QUEM É O DR. JOSÉ NEGREIROS',
-      FirstPartTitle: 'Nossa',
-      DestaquePartTitle: (
-        <p>
-          <span className="italic"> trajetória</span>{' '}
-        </p>
+      miniTag: 'A_Definir',
+      title: (
+        <h1>
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir</span>{' '}
+          A_Definir
+        </h1>
       ),
       SecondPartTitle: '',
-      subtitle: '',
+      subtitle: 'A_Definir',
       paragraph: (
         <div>
-          Atuo na advocacia com foco em oferecer soluções jurídicas claras,
-          estratégicas e personalizadas. Acredito que cada cliente vive uma
-          situação única e, por isso, faço questão de ouvir com atenção,
-          compreender o problema e orientar com transparência e responsabilidade
-          desde o primeiro contato.
+          A_Definir
           <br />
-          Minha atuação vai além da representação legal. Trabalho com uma equipe
-          qualificada e comprometida em transformar desafios jurídicos em
-          soluções seguras, sempre priorizando ética, agilidade e resultados.
-          Aqui, o cliente encontra confiança, proximidade e um atendimento
-          realmente dedicado.
           <br />
+          A_Definir
         </div>
       ),
+
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="text-mutedForeground font-secondFont">
@@ -414,7 +528,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Entre em contato',
+      ctaButtonText: 'A_Definir',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -434,83 +548,118 @@ const content = {
       //   labelYoutube: 'Siga-nos no Youtube',
       // },
     },
+    // team: {
+    //   miniTag: ' A_Definir',
+    //   title: (
+    //     <h1>
+    //       A_Definir <span className="italic text-primaryDark">A_Definir</span>
+    //       A_Definir
+    //     </h1>
+    //   ),
+    //   subtitle: 'A_Definir',
+    //   cards: {
+    //     card1: {
+    //       img1: team1,
+    //       alt: 'Imagens ilustrativa dos profissionais',
+    //       name: 'A_Definir',
+    //       description: <p>A_Definir</p>,
+    //     },
+    //     card2: {
+    //       img2: team2,
+    //       alt: 'Imagens ilustrativa dos profissionais',
+    //       name: 'A_Definir',
+    //       description: <p>A_Definir</p>,
+    //     },
+    //   },
+    // },
     steps: {
-      miniTag: 'PASSO A PASSO',
+      miniTag: 'O CAMINHO MAIS SEGURO PARA CRESCER',
       title: (
         <h1>
-          Como
-          <span className="destaque italic font-light"> protegemos</span> seus
-          direitos
+          Um
+          <span className="destaque italic font-light"> método </span>
+          de captação de clientes feito para a advocacia.
         </h1>
       ),
-      subtitle: '',
+      subtitle:
+        'A Paper Street estrutura e gerencia campanhas de tráfego pago pensadas exclusivamente para advogados que querem previsibilidade, sem ferir as normas da OAB.',
       img: imgSteps,
       alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Análise Pessoal e Detalhada',
+          cardTitle: 'Diagnóstico Estratégico',
           cardDescription:
-            'Estudo individual do seu caso para definir o caminho mais seguro e eficaz',
+            'Analisamos sua área de atuação, tipo de cliente ideal e cenário competitivo para definir uma estratégia realista.',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Atuação com Rigor Técnico',
+          cardTitle: 'Estrutura Ética de Captação',
           cardDescription:
-            'Revisão de documentos, cálculos e provas para garantir a melhor solução legal.',
+            'Criamos anúncios, páginas e mensagens alinhadas ao Código de Ética da OAB, com linguagem profissional e segura.',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Atendimento Transparente e Ágil',
+          cardTitle: 'Anúncios com Intenção Real',
           cardDescription:
-            'Informações claras e em tempo real, com toda a parte processual cuidada pelo escritório.',
+            'Atuamos em canais onde o potencial cliente já está buscando um advogado, focando em qualidade, não volume vazio.',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Defesa Concreta e Eficiente',
+          cardTitle: 'Otimização e Transparência',
           cardDescription:
-            'Acompanhamento completo em todas as etapas, buscando resultados sólidos e seguros.',
+            'Acompanhamos resultados, ajustamos campanhas e entregamos clareza total dos números para você saber exatamente o que está acontecendo.',
         },
       },
+      ctaButtonText: 'Quero entender como aplicar isso no meu escritório',
     },
     ctaSecondary: {
-      miniTag: 'FALE CONOSCO',
-      title: <h1>Proteja seus direitos agora</h1>,
-      subtitle:
-        'Fale com um especialista e receba orientação estratégica imediata para o seu caso.',
-      subtitleDireita: (
-        <p className="gap-3 flex font-mainFont opacity-60 mt-1">
-          <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
-        </p>
+      miniTag: 'PRÓXIMO PASSO',
+      title: (
+        <h1>Descubra se o tráfego pago faz sentido para o seu escritório.</h1>
       ),
-      titleDireita: (
-        <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
+      subtitle: (
+        <div>
+          <p className="mb-6 font-secondFont">
+            Antes de qualquer proposta, fazemos uma conversa estratégica para
+            entender sua área, seus objetivos e avaliar se existe um caminho
+            seguro de captação para o seu caso.
+          </p>
+        </div>
       ),
-      ctaButtonText: 'Converse agora com um advogado',
-      ctaButtonAriaLabel:
-        'Botão para chamada de ação para contato pelo whatsapp',
       container: {
         label1: {
           icon: <Check />,
-          text: ' Análise inicial do seu caso',
+          text: 'Entender se o tráfego pago realmente funciona para a sua área do Direito',
         },
         label2: {
           icon: <Check />,
-          text: ' Atendimento direto com advogado',
+          text: 'Avaliar se existe demanda qualificada pelo seu serviço na internet',
         },
         label3: {
           icon: <Check />,
-          text: ' Resposta rápida e acompanhamento pelo WhatsApp',
+          text: 'Ter clareza sobre o que pode ou não ser feito dentro das regras da OAB',
         },
         label4: {
           icon: <Check />,
-          text: ' Atuação iniciada imediatamente após a análise',
+          text: 'Evitar investimentos sem estratégia ou tentativas no escuro',
         },
         label5: {
           icon: <Check />,
-          text: ' Mais segurança para você e sua família em um momento decisivo',
+          text: 'Tomar uma decisão mais segura antes de qualquer passo comercial',
         },
       },
+      // subtitleDireita: (
+      //   <p className="gap-3 flex font-mainFont opacity-60 mt-1">
+      //     <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
+      //   </p>
+      // ),
+      // titleDireita: (
+      //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
+      // ),
+      ctaButtonText: 'A_Definir',
+      ctaButtonAriaLabel:
+        'Botão para chamada de ação para contato pelo whatsapp',
     },
     // blog: {
     //   miniTag: 'BLOG',
@@ -527,24 +676,24 @@ const content = {
       subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
       questions: {
         question1: {
-          question: 'Como posso contratar seus serviços?',
+          question: 'O tráfego pago funciona para qualquer área do Direito?',
           answer:
-            'Agende sua consulta conosco via WhatsApp e conversaremos sobre suas necessidades e avaliaremos os custos.',
+            'Funciona para áreas onde já existe busca ativa por advogados. Na conversa estratégica avaliamos se há demanda real para a sua especialidade antes de qualquer investimento.',
         },
         question2: {
-          question: 'Qual é o prazo médio para resolução de um caso?',
+          question: 'Existe risco de ferir as regras da OAB?',
           answer:
-            'O prazo médio varia conforme a complexidade, mas discutiremos uma estimativa durante a consulta inicial.',
+            'Toda a estratégia é construída respeitando o Código de Ética da OAB, com linguagem profissional e formatos permitidos, evitando exposição ou riscos desnecessários.',
         },
         question3: {
-          question: 'Quais documentos devo levar para a consulta?',
+          question: 'Preciso aparecer ou produzir conteúdo?',
           answer:
-            'Traga os documentos relevantes ao seu caso, como contratos, correspondências e registros, além de documentos pessoais e comprovante de residência.',
+            'Não. A captação é feita por anúncios estratégicos, sem necessidade de vídeos, redes sociais ou exposição pessoal.',
         },
         question4: {
-          question: 'Vocês oferecem serviços de consultoria preventiva?',
+          question: 'Quanto tempo leva para avaliar se está funcionando?',
           answer:
-            'Sim, oferecemos consultoria preventiva para evitar problemas futuros e garantir conformidade legal.',
+            'Normalmente é possível ter indicadores claros nas primeiras semanas, o suficiente para entender se a estratégia faz sentido e ajustar o que for necessário.',
         },
       },
       paragraph: 'Clique aqui caso tenha mais dúvidas',

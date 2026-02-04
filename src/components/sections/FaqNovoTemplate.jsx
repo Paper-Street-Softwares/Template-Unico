@@ -28,7 +28,7 @@ function FaqNovoTemplate({ colorMode }) {
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       hoverText = 'hover:text-primaryLight'
-      backgroundMode = 'bg-darkOpacity'
+      backgroundMode = 'bg-black'
       break
     default:
       text = 'text-corTitulosBranca'

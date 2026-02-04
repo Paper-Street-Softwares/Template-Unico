@@ -7,8 +7,8 @@ import content from '../../content/content'
 import ButtonReflexo from '../../components/interactives/ButtonReflexo'
 import MotionDivDownUp from '../animation/MotionDivDownToUp'
 
-function Important({ colorMode }) {
-  const listCards = Object.values(content.texts.important.cards)
+function Authority({ colorMode }) {
+  const listCards = Object.values(content.texts.authority.cards)
   let backgroundMode, text, textOpacity, textDestaque
 
   switch (colorMode) {
@@ -35,9 +35,9 @@ function Important({ colorMode }) {
     <SectionArea className={`${backgroundMode}`}>
       <SectionWrapper>
         <SectionHeaderNovo
-          miniTitle={content.texts.important.miniTag}
-          title={content.texts.important.title}
-          subtitle={content.texts.important.subtitle}
+          miniTitle={content.texts.authority.miniTag}
+          title={content.texts.authority.title}
+          subtitle={content.texts.authority.subtitle}
           colorMode={colorMode}
         />
 
@@ -55,13 +55,13 @@ function Important({ colorMode }) {
           <p
             className={`flex justify-center font-secondFont text-center w-full my-12 ${textOpacity}`}
           >
-            {content.texts.important.fraseObs}
+            {content.texts.authority.fraseObs}
           </p>
         </MotionDivDownUp>
 
         <MotionDivDownUp>
           <ButtonReflexo
-            label={content.texts.important.ctaButtonText}
+            label={content.texts.authority.ctaButtonText}
             icon={content.texts.svgs.wpp}
             link={content.texts.links.ctaWhatsapp}
           />
@@ -71,4 +71,4 @@ function Important({ colorMode }) {
   )
 }
 
-export default Important
+export default Authority

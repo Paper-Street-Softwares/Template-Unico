@@ -79,7 +79,7 @@ function CtaNovoTemplate({ colorMode, container }) {
             {/* <div>
               <FormAndAdress />
             </div> */}
-            <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-center mx-auto">
+            {/* <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-center mx-auto">
               <ButtonReflexo
                 icon={
                   <svg
@@ -104,7 +104,7 @@ function CtaNovoTemplate({ colorMode, container }) {
                 colorMode={colorMode}
                 className="text-white"
               />
-            </div>
+            </div> */}
           </MotionDivDownToUp>
         </section>
       </SectionWrapper>
