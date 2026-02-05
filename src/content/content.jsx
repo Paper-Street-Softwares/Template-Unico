@@ -5,10 +5,10 @@ import heroDefaultMobileImg from '../assets/imgs/hero/lawHeroMobile.webp'
 
 import imgFeatures from '../assets/imgs/features/imgServices.webp'
 
-// import aboutImg from '../assets/imgs/about/aboutImg.webp'
+import aboutImg from '../assets/imgs/about/aboutImg.webp'
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-// import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
+import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
 import imgSteps from '../assets/imgs/steps/imgSteps.webp'
 
@@ -21,6 +21,7 @@ import {
   Key,
   LucideIdCard,
   Lock,
+  File,
   Scale,
   Car,
   HandCoins,
@@ -33,6 +34,7 @@ import {
   Brain,
   GrapeIcon,
   ChartNoAxesCombined,
+  User,
 } from 'lucide-react'
 import { Users } from 'lucide-react'
 import { FileText } from 'lucide-react'
@@ -40,14 +42,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Paper Street',
+  name: 'AJUMED-RO',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'paperstreet.com.br', // Sem "www"
+  domain: 'ajumedro.com.br', // Sem "www"
   phone: {
-    ddd: '11',
-    firstPart: '98821', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '7850', // Apenas os 4 últimos números
+    ddd: '69',
+    firstPart: '09397', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0126', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -62,10 +64,7 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir</p>
+      <p>Porto Velho – Rondônia,</p>
     </div>
   ),
   enderecoSecundario: (
@@ -83,7 +82,7 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: '', // Sem o @
+  instagramProfile: 'ajumedro', // Sem o @
   facebookProfile: '',
   linkeDinProfile: '',
   x: '',
@@ -110,24 +109,24 @@ const content = {
       },
       menuItems: [
         'Início',
-        // 'Serviços',
-        // 'Sobre',
+        'Serviços',
+        'Sobre',
         'Perguntas',
         // 'Blog',
         // 'Mapa',
       ],
-      menuId: ['home', 'faq'],
+      menuId: ['home', 'feature', 'about', 'faq'],
       ariaLabel: 'Botão de Contato',
       ctaButtonText: 'Contato',
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'CAPTAÇÃO DE CLIENTES PARA ADVOGADOS',
+      miniTag: 'Assessoria Jurídica Médica',
       title: (
         <h1>
-          Clientes para seu escritório, de forma{' '}
+          Proteção jurídica{' '}
           <span className="destaque relative italic font-light">
-            previsível
+            completa
             <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
@@ -155,15 +154,14 @@ const content = {
               </svg>
             </span>
           </span>{' '}
-          — sem ferir as regras da OAB.
+          para quem exerce a medicina
         </h1>
       ),
       subtitle: (
         <p>
-          Um método de tráfego pago feito{' '}
-          <span className="font-bold">exclusivamente para advogados</span>,
-          focado em atrair clientes qualificados, com segurança jurídica e total
-          transparência.
+          Atuação especializada, preventiva e contenciosa, voltada
+          exclusivamente às demandas profissionais e pessoais do médico, com
+          foco em segurança, estratégia e tranquilidade.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -172,12 +170,12 @@ const content = {
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Quero entender como funciona para meu escritório',
+      ctaButtonText: 'Falar com a assessoria jurídica da AJUMED-RO',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Sem promessas irreais. Estratégia alinhada às normas da OAB e à realidade do seu escritório.',
+        text: '',
         textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
@@ -297,24 +295,25 @@ const content = {
       ctaButtonText: 'Quero falar com um especialista',
     },
     features: {
-      miniTag: 'PARA ADVOGADOS QUE QUEREM CRESCER COM SEGURANÇA',
+      miniTag: 'Áreas de Atuação',
       title: (
         <h1>
-          Conseguir
-          <span className="destaque italic font-light"> clientes </span>
-          na advocacia não deveria ser tão incerto.
+          Atuação
+          <span className="destaque italic font-light"> jurídica </span>
+          especializada para médicos
         </h1>
       ),
       subtitle:
-        'Você trabalha, entrega resultado, tem clientes, mas nunca sabe quando o próximo caso vai entrar.',
+        'Suporte jurídico completo, preventivo e contencioso, voltado exclusivamente às demandas da classe médica.',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
       titleMessageFeature: 'A_Definir',
       subtitleMessageFeature: 'A_Definir',
       cards: {
         card1: {
-          title: 'Dependência de indicação',
-          subtitle: 'Quando a indicação não vem, o caixa sente.',
+          title: 'Defesa Administrativa do Direito Médico',
+          subtitle:
+            'Atuação técnica em processos administrativos e ético-disciplinares perante o CRM e o CFM, incluindo sindicâncias, fiscalizações e autos de infração.',
           description: (
             <div>
               A_Definir
@@ -323,13 +322,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Users />,
+          icon: <BriefcaseMedical />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'Tentativas frustradas de marketing',
-          subtitle: 'Postei, anunciei, contratei… e nada funcionou.',
+          title: 'Representação Civil e Penal',
+          subtitle:
+            'Defesa e representação em ações judiciais civis e penais, tanto relacionadas ao exercício da medicina quanto a demandas da vida privada do médico.',
           description: (
             <div>
               A_Definir
@@ -338,13 +338,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <MegaphoneOff />,
+          icon: <User />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: 'Medo de investir errado',
-          subtitle: 'Não posso jogar dinheiro fora com promessa vazia.',
+          title: 'Recuperação de Créditos e Ações de Cobrança',
+          subtitle:
+            'Atuação judicial e extrajudicial para garantir o recebimento de valores devidos por pacientes, clínicas, hospitais, convênios ou terceiros.',
           description: (
             <div>
               A_Definir <br />
@@ -357,8 +358,9 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: 'Insegurança com a OAB',
-          subtitle: 'Qualquer erro pode virar dor de cabeça ética.',
+          title: 'Direito do Trabalho',
+          subtitle:
+            'Assessoria e representação em demandas trabalhistas, tanto para médicos quanto para clínicas, consultórios e sociedades médicas.',
           description: (
             <div>
               A_Definir
@@ -367,13 +369,14 @@ const content = {
               <br />
             </div>
           ),
-          icon: <FileText />,
+          icon: <BriefcaseBusiness />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card5: {
-          title: 'Estagnação do escritório',
-          subtitle: 'Trabalho muito, mas não consigo escalar.',
+          title: 'Banca Jurídica Especializada',
+          subtitle:
+            'Atendimento por escritórios de advocacia especializados, selecionados estrategicamente para atuar conforme as particularidades da atividade médica.',
           description: (
             <div>
               A_Definir
@@ -382,42 +385,26 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-circle-dollar-sign-icon lucide-circle-dollar-sign"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
-              <path d="M12 18V6" />
-            </svg>
-          ),
+          icon: <Scale />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
-        // card6: {
-        //   title: 'A_Definir',
-        //   subtitle: 'A_Definir',
-        //   description: (
-        //     <div>
-        //       A_Definir
-        //       <br />
-        //       <br />
-        //       A_Definir
-        //     </div>
-        //   ),
-        //   icon: <Scale />,
-        //   buttonLabelModal: 'Fale Conosco',
-        //   buttonLabel: 'Saiba Mais',
-        // },
+        card6: {
+          title: 'Consultoria Jurídica Preventiva',
+          subtitle:
+            'Orientação jurídica contínua para prevenção de riscos, tomada de decisões seguras e proteção da atuação profissional do médico.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <File />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
       },
       moreFeatures: {
         card1: {
@@ -491,62 +478,77 @@ const content = {
     },
     about: {
       imagem: {
-        // img: aboutImg,
+        img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'A_Definir',
+      miniTag: 'QUEM É A AJUMED-RO',
       title: (
         <h1>
-          A_Definir
-          <span className="destaque italic font-light"> A_Definir</span>{' '}
-          A_Definir
+          Nossa
+          <span className="destaque italic font-light"> trajetória</span>{' '}
         </h1>
       ),
       SecondPartTitle: '',
-      subtitle: 'A_Definir',
+      subtitle:
+        'Criada para oferecer proteção jurídica especializada e permanente à classe médica',
       paragraph: (
         <div>
-          A_Definir
-          <br />
-          <br />
-          A_Definir
+          A AJUMED-RO nasceu da constatação de uma necessidade concreta da
+          classe médica: a ausência de uma proteção jurídica verdadeiramente
+          especializada, contínua e alinhada às particularidades do exercício da
+          medicina. O aumento de demandas administrativas, judiciais e
+          ético-disciplinares tornou evidente que soluções genéricas não
+          atendiam mais à realidade dos médicos.
         </div>
       ),
 
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="text-mutedForeground font-secondFont">
-          A_Definir
+          A AJUMED-RO nasceu da constatação de uma necessidade concreta da
+          classe médica: a ausência de uma proteção jurídica verdadeiramente
+          especializada, contínua e alinhada às particularidades do exercício da
+          medicina. O aumento de demandas administrativas, judiciais e
+          ético-disciplinares tornou evidente que soluções genéricas não
+          atendiam mais à realidade dos médicos.
           <br />
           <br />
-          A_Definir
+          Diante desse cenário, surgiu a iniciativa de estruturar uma associação
+          capaz de reunir uma banca jurídica qualificada, composta por
+          escritórios com experiência comprovada na defesa dos interesses
+          médicos. A proposta foi centralizar e profissionalizar a atuação
+          jurídica, garantindo estratégia, técnica e compreensão aprofundada dos
+          riscos envolvidos na atividade médica.
           <br />
-          <br />
-          A_Definir
+          <br />A AJUMED-RO foi criada com foco não apenas na reação a
+          conflitos, mas na atuação preventiva, na orientação estratégica e no
+          acompanhamento contínuo. O objetivo é permitir que o médico exerça sua
+          profissão com mais segurança, tranquilidade e respaldo jurídico,
+          protegendo sua carreira, seu patrimônio e sua reputação.
         </p>
       ),
       paragraphModalCta: 'Entre em contato',
-      titleModal: 'A_Definir',
+      titleModal: 'Nossa trajetória',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
       ctaButtonText: 'A_Definir',
-      // aboutSocial: {
-      //   img: {
-      //     img: aboutSocialImg,
-      //     alt: `Foto do Instagram do ${infos.name}`,
-      //     altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
-      //   },
-      //   miniTag: 'REDES SOCIAIS',
-      //   title: 'Conecte-se conosco',
-      //   subtitle:
-      //     'Aproveite nossas redes sociais para mantermos contato e ficar por dentro dos lançamentos, novidades e atualizações do mercado imobiliário.',
-      //   paragraph: <p></p>,
-      //   labelInstagram: 'Siga-nos no Instagram',
-      //   labelFacebook: 'Siga-nos no Facebook',
-      //   labelLinkedin: 'Siga-nos no LinkedIn',
-      //   labelX: 'Siga-nos no X',
-      //   labelTiktok: 'Siga-nos no Tik Tok',
-      //   labelYoutube: 'Siga-nos no Youtube',
-      // },
+      aboutSocial: {
+        img: {
+          img: aboutSocialImg,
+          alt: `Foto do Instagram do ${infos.name}`,
+          altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
+        },
+        miniTag: 'REDES SOCIAIS',
+        title: 'Conecte-se conosco',
+        subtitle:
+          'Acompanhe nossas redes sociais e fique atualizado sobre conteúdos jurídicos, orientações e temas relevantes para a atuação médica.',
+        paragraph: <p></p>,
+        labelInstagram: 'Siga-nos no Instagram',
+        labelFacebook: 'Siga-nos no Facebook',
+        labelLinkedin: 'Siga-nos no LinkedIn',
+        labelX: 'Siga-nos no X',
+        labelTiktok: 'Siga-nos no Tik Tok',
+        labelYoutube: 'Siga-nos no Youtube',
+      },
     },
     // team: {
     //   miniTag: ' A_Definir',
@@ -573,57 +575,57 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'O CAMINHO MAIS SEGURO PARA CRESCER',
+      miniTag: 'PASSO A PASSO',
       title: (
         <h1>
-          Um
-          <span className="destaque italic font-light"> método </span>
-          de captação de clientes feito para a advocacia.
+          Como
+          <span className="destaque italic font-light"> funciona </span>
+          nosso atendimento?
         </h1>
       ),
-      subtitle:
-        'A Paper Street estrutura e gerencia campanhas de tráfego pago pensadas exclusivamente para advogados que querem previsibilidade, sem ferir as normas da OAB.',
+      subtitle: 'Primeiro contato',
       img: imgSteps,
       alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Diagnóstico Estratégico',
+          cardTitle: 'Primeiro contato',
           cardDescription:
-            'Analisamos sua área de atuação, tipo de cliente ideal e cenário competitivo para definir uma estratégia realista.',
+            'O médico entra em contato com a AJUMED-RO e relata sua demanda. As informações iniciais são recebidas com confidencialidade e direcionadas para análise.',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Estrutura Ética de Captação',
+          cardTitle: 'Análise jurídica especializada',
           cardDescription:
-            'Criamos anúncios, páginas e mensagens alinhadas ao Código de Ética da OAB, com linguagem profissional e segura.',
+            'A situação é avaliada por profissionais com experiência na área médica, identificando riscos, possibilidades e a melhor estratégia jurídica para o caso.',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Anúncios com Intenção Real',
+          cardTitle: 'Definição da estratégia e encaminhamento',
           cardDescription:
-            'Atuamos em canais onde o potencial cliente já está buscando um advogado, focando em qualidade, não volume vazio.',
+            'Após a análise, o médico é orientado quanto às medidas cabíveis e, quando necessário, o caso é encaminhado à banca jurídica especializada mais adequada.',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Otimização e Transparência',
+          cardTitle: 'Acompanhamento contínuo',
           cardDescription:
-            'Acompanhamos resultados, ajustamos campanhas e entregamos clareza total dos números para você saber exatamente o que está acontecendo.',
+            'A AJUMED-RO acompanha o andamento do caso, mantendo o médico informado e oferecendo suporte jurídico contínuo durante todo o processo.',
         },
       },
       ctaButtonText: 'Quero entender como aplicar isso no meu escritório',
     },
     ctaSecondary: {
-      miniTag: 'PRÓXIMO PASSO',
+      miniTag: 'FALE CONOSCO',
       title: (
-        <h1>Descubra se o tráfego pago faz sentido para o seu escritório.</h1>
+        <h1>
+          Enfrentando um problema jurídico na medicina? Nós cuidamos disso.
+        </h1>
       ),
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Antes de qualquer proposta, fazemos uma conversa estratégica para
-            entender sua área, seus objetivos e avaliar se existe um caminho
-            seguro de captação para o seu caso.
+            Entre em contato para uma orientação jurídica especializada e receba
+            o suporte adequado para sua situação.
           </p>
         </div>
       ),
@@ -657,7 +659,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Falar com a assessoria jurídica',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
@@ -676,24 +678,25 @@ const content = {
       subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
       questions: {
         question1: {
-          question: 'O tráfego pago funciona para qualquer área do Direito?',
+          question: 'Quando eu devo procurar a AJUMED-RO?',
           answer:
-            'Funciona para áreas onde já existe busca ativa por advogados. Na conversa estratégica avaliamos se há demanda real para a sua especialidade antes de qualquer investimento.',
+            'Sempre que houver qualquer risco jurídico relacionado à sua atividade profissional médica, como notificações do CRM, processos ético-disciplinares, ações civis ou penais, ou dúvidas sobre contratos e condutas. A presença de apoio jurídico desde o início melhora as chances de um desfecho favorável.',
         },
         question2: {
-          question: 'Existe risco de ferir as regras da OAB?',
+          question:
+            'Posso continuar atendendo meus pacientes durante um processo?',
           answer:
-            'Toda a estratégia é construída respeitando o Código de Ética da OAB, com linguagem profissional e formatos permitidos, evitando exposição ou riscos desnecessários.',
+            'Sim, na maioria dos casos o exercício da medicina continua normalmente enquanto o processo corre, a menos que haja medida administrativa específica que suspenda atividades particulares. A AJUMED-RO ajuda a esclarecer essas situações e a preservar seu direito de trabalhar.',
         },
         question3: {
-          question: 'Preciso aparecer ou produzir conteúdo?',
+          question: 'A AJUMED-RO atua apenas em processos no CRM?',
           answer:
-            'Não. A captação é feita por anúncios estratégicos, sem necessidade de vídeos, redes sociais ou exposição pessoal.',
+            'Não. A associação presta suporte em diversas frentes jurídicas: processos ético-disciplinares no CRM, ações civis e penais, questões trabalhistas, cobranças e recuperação de créditos, além de consultoria preventiva para reduzir riscos futuros.',
         },
         question4: {
-          question: 'Quanto tempo leva para avaliar se está funcionando?',
+          question: 'Terei que enfrentar todo o processo sozinho?',
           answer:
-            'Normalmente é possível ter indicadores claros nas primeiras semanas, o suficiente para entender se a estratégia faz sentido e ajustar o que for necessário.',
+            'Não. Com a AJUMED-RO, você recebe orientação jurídica especializada em cada etapa. Isso inclui análise do caso, definição de estratégia, elaboração de peças e acompanhamento contínuo até a conclusão do procedimento.',
         },
       },
       paragraph: 'Clique aqui caso tenha mais dúvidas',
