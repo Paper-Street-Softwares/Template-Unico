@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.ajumedro.com.br/sitemap.xml
+Sitemap: https://www.silvaelopesadv.com.br/sitemap.xml

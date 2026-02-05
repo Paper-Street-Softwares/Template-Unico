@@ -17,7 +17,7 @@ function BlogPosts({ colorMode }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-terciary/60'
+      backgroundMode = 'bg-white'
       titleColor = 'text-corTitulosPreto'
       subtitleColor = 'text-corOutrosTextosPreto'
       linkColor = 'text-primaryDark'
