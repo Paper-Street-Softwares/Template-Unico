@@ -57,6 +57,7 @@ export default function Index() {
         <main>
           {/* LCP — NÃO usar lazy */}
           <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
+          <Important colorMode={colorMode} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
             <FeaturesNovaTemplate
@@ -67,18 +68,18 @@ export default function Index() {
             />
             {/* <Cards colorMode={colorMode} /> */}
 
-            <AboutNovoTemplate
+            {/* <AboutNovoTemplate
               colorMode={colorMode}
               ButtonModal={true}
               benefits={false}
-            />
-            <SocialMediaTemplate colorMode={colorMode} />
+            /> */}
+            {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             {/* <Authority colorMode={colorMode} /> */}
             <CtaNovoTemplate colorMode={colorMode} container={true} />
-            {/* <Important colorMode={colorMode} /> */}
+
             <StepsNovoTemplate colorMode={colorMode} />
-            <BlogPosts colorMode={colorMode} />
-            <FaqNovoTemplate colorMode={colorMode} />
+            {/* <BlogPosts colorMode={colorMode} /> */}
+            {/* <FaqNovoTemplate colorMode={colorMode} /> */}
             <FooterNovoTemplate
               colorMode={colorMode}
               mapa={false}

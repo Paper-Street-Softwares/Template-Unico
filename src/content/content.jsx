@@ -8,7 +8,7 @@ import imgFeatures from '../assets/imgs/features/imgServices.webp'
 import aboutImg from '../assets/imgs/about/aboutImg.webp'
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
+// import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
 import imgSteps from '../assets/imgs/steps/imgSteps.webp'
 
@@ -25,10 +25,6 @@ import {
   Car,
   HandCoins,
   Check,
-  HeartHandshake,
-  ClockAlert,
-  ShieldPlus,
-  Wallet,
 } from 'lucide-react'
 import { Users } from 'lucide-react'
 import { FileText } from 'lucide-react'
@@ -36,14 +32,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Silva e Lopes Sociedade de Advogados',
+  name: 'A_Definir',
   email: 'contato', // Email desejado pelo cliente
-  emailSecundario: 'silvaelopes.socadv', // Email desejado pelo cliente
-  domain: 'silvaelopesadv.com.br', // Sem "www"
+  emailSecundario: 'A_Definir', // Email desejado pelo cliente
+  domain: 'A_Definir', // Sem "www"
   phone: {
-    ddd: '48',
-    firstPart: '99126', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '2920', // Apenas os 4 últimos números
+    ddd: '00',
+    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0000', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -79,7 +75,7 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: 'silvaelopes.socadv', // Sem o @
+  instagramProfile: '', // Sem o @
   facebookProfile: '',
   linkeDinProfile: '',
   x: '',
@@ -108,22 +104,22 @@ const content = {
         'Início',
         'Serviços',
         'Sobre',
-        'Perguntas',
-        'Blog',
+        // 'Perguntas',
+        // 'Blog',
         // 'Mapa',
       ],
-      menuId: ['home', 'feature', 'about', 'faq', 'blog'],
+      menuId: ['home', 'feature', 'about'],
       ariaLabel: 'Botão de Contato',
       ctaButtonText: 'Contato',
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'ESCRITÓRIO DE ADVOCACIA',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Seu direito à saúde não pode{' '}
+          A_Definir{' '}
           <span className="destaque relative italic font-light">
-            esperar
+            A_Definir
             <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
@@ -151,26 +147,22 @@ const content = {
               </svg>
             </span>
           </span>
+          ?
         </h1>
       ),
-      subtitle: (
-        <p>
-          Atuamos contra negativas de planos de saúde para garantir terapias,
-          cirurgias e medicamentos.
-        </p>
-      ),
+      subtitle: <p>A_Definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Falar com advogado especialista',
+      ctaButtonText: 'A_Definir',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Atendimento online para todo Brasil',
+        text: 'A_Definir',
         textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
@@ -218,24 +210,23 @@ const content = {
       ctaButtonText: 'A_Definir',
     },
     features: {
-      miniTag: 'Nossas Atuações',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Defendemos
-          <span className="destaque italic font-light"> Seu </span>
-          Direito à Saúde
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir</span>
+          A_Definir
         </h1>
       ),
-      subtitle:
-        'Atuamos para garantir tratamentos, terapias e cuidados negados injustamente pelos planos de saúde.',
+      subtitle: 'A_Definir',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: '100%',
-      subtitleMessageFeature: 'Direito da Saúde',
+      titleMessageFeature: 'A_Definir',
+      subtitleMessageFeature: 'A_Definir',
       cards: {
         card1: {
-          title: 'Direito à Saúde Negado',
-          subtitle: 'Garantimos tratamentos negados injustamente pelos planos',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -244,13 +235,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <BriefcaseMedical />,
+          icon: <Lock />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'Tratamentos para TEA Sem Interrupções',
-          subtitle: 'Atuação firme para garantir terapias essenciais ao TEA',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -259,13 +250,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <HeartHandshake />,
+          icon: <Car />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: 'Cirurgias Que Não Podem Esperar',
-          subtitle: 'Defesa jurídica para liberar cirurgias urgentes negadas',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir <br />
@@ -273,14 +264,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <ClockAlert />,
-
+          icon: <HandCoins />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: 'Medicamentos Que Salvam Vidas',
-          subtitle: 'Ações para garantir medicamentos essenciais ao tratamento',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -289,13 +279,13 @@ const content = {
               <br />
             </div>
           ),
-          icon: <ShieldPlus />,
+          icon: <FileText />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card5: {
-          title: 'Contra Reajustes Abusivos',
-          subtitle: 'Proteção contra aumentos abusivos dos planos de saúde',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -304,13 +294,30 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Wallet />,
+          icon: (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-dollar-sign-icon lucide-circle-dollar-sign"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
+              <path d="M12 18V6" />
+            </svg>
+          ),
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card6: {
-          title: 'Empatia, Compromisso e Respeito ao Paciente',
-          subtitle: 'Atendimento humano com foco na dignidade do paciente',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -319,7 +326,7 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Users />,
+          icon: <Scale />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
@@ -360,71 +367,59 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'QUEM É O SILVA & LOPES',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Nossa
-          <span className="destaque italic font-light"> trajetória</span>{' '}
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir</span>{' '}
+          A_Definir
         </h1>
       ),
       SecondPartTitle: '',
-      subtitle:
-        'Uma advocacia especializada em Direito da Saúde, guiada por técnica, ética e humanidade.',
+      subtitle: 'A_Definir',
       paragraph: (
         <div>
-          A Silva & Lopes Sociedade de Advogados nasceu do compromisso com uma
-          advocacia técnica, ética e profundamente humana. Atuamos de forma
-          exclusiva no Direito aplicado aos Serviços de Saúde, com a convicção
-          de que cuidar da saúde é um direito fundamental que precisa ser
-          protegido.
+          A_Definir
+          <br />
+          <br />
+          A_Definir
         </div>
       ),
 
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="text-mutedForeground font-secondFont">
-          A Silva & Lopes Sociedade de Advogados nasceu do compromisso com uma
-          advocacia técnica, ética e profundamente humana. Atuamos de forma
-          exclusiva no Direito aplicado aos Serviços de Saúde, com a convicção
-          de que cuidar da saúde é um direito fundamental que precisa ser
-          protegido.
+          A_Definir
           <br />
           <br />
-          Estamos ao lado de pacientes e famílias que enfrentam negativas
-          injustas dos planos de saúde, lutando pelo acesso a terapias
-          essenciais para pessoas com TEA, cirurgias, medicamentos e contra
-          reajustes abusivos. Cada caso é tratado com seriedade, empatia e
-          respeito à dignidade do paciente.
+          A_Definir
           <br />
           <br />
-          Nossa atuação é especializada, atualizada e focada em resultados.
-          Atendemos de forma presencial e online, em todo o Brasil, com
-          processos 100% digitais e acompanhamento completo até a efetiva
-          garantia do direito reconhecido.
+          A_Definir
         </p>
       ),
       paragraphModalCta: 'Entre em contato',
-      titleModal: 'Nossa trajetória',
+      titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
       ctaButtonText: 'A_Definir',
-      aboutSocial: {
-        img: {
-          img: aboutSocialImg,
-          alt: `Foto do Instagram do ${infos.name}`,
-          altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
-        },
-        miniTag: 'REDES SOCIAIS',
-        title: 'Conecte-se conosco',
-        subtitle:
-          'Acompanhe nossas redes e fique por dentro de direitos do paciente, planos de saúde e atualizações jurídicas relevantes.',
-        paragraph: <p></p>,
-        labelInstagram: 'Siga-nos no Instagram',
-        labelFacebook: 'Siga-nos no Facebook',
-        labelLinkedin: 'Siga-nos no LinkedIn',
-        labelX: 'Siga-nos no X',
-        labelTiktok: 'Siga-nos no Tik Tok',
-        labelYoutube: 'Siga-nos no Youtube',
-      },
+      // aboutSocial: {
+      //   img: {
+      //     img: aboutSocialImg,
+      //     alt: `Foto do Instagram do ${infos.name}`,
+      //     altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
+      //   },
+      //   miniTag: 'REDES SOCIAIS',
+      //   title: 'Conecte-se conosco',
+      //   subtitle:
+      //     'Aproveite nossas redes sociais para mantermos contato e ficar por dentro dos lançamentos, novidades e atualizações do mercado imobiliário.',
+      //   paragraph: <p></p>,
+      //   labelInstagram: 'Siga-nos no Instagram',
+      //   labelFacebook: 'Siga-nos no Facebook',
+      //   labelLinkedin: 'Siga-nos no LinkedIn',
+      //   labelX: 'Siga-nos no X',
+      //   labelTiktok: 'Siga-nos no Tik Tok',
+      //   labelYoutube: 'Siga-nos no Youtube',
+      // },
     },
     // team: {
     //   miniTag: ' A_Definir',
@@ -451,12 +446,12 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'PASSO A PASSO',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Como
-          <span className="destaque italic font-light"> funciona </span>
-          nosso atendimento?
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir </span>
+          A_Definir
         </h1>
       ),
       subtitle: '',
@@ -465,42 +460,33 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Consulta especializada',
-          cardDescription:
-            'Ouvimos sua situação com atenção, esclarecemos dúvidas e indicamos o melhor caminho jurídico para seu caso.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Análise do caso',
-          cardDescription:
-            'Analisamos documentos, negativas do plano e laudos médicos para entender a fundo sua necessidade.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Definição da estratégia',
-          cardDescription:
-            'Construímos uma estratégia jurídica personalizada para garantir seu direito à saúde com segurança.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Atuação e acompanhamento',
-          cardDescription:
-            'Ingressamos com as medidas cabíveis e acompanhamos o caso até a efetiva garantia do seu direito.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
       },
       ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
-      miniTag: 'FALE CONOSCO',
-      title: (
-        <h1>Problemas com plano de saúde? Nós cuidamos do seu direito.</h1>
-      ),
+      miniTag: 'A_Definir',
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Fale com um advogado especialista em Direito da Saúde e receba
-            orientação clara e segura sobre seu caso.
-          </p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
       container: {
@@ -533,44 +519,39 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Falar com um especialista no WhatsApp',
+      ctaButtonText: 'A_Definir',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
-    blog: {
-      miniTag: 'BLOG',
-      title: 'Informação jurídica ao seu alcance',
-      subtitle:
-        'Acompanhe conteúdos exclusivos para manter-se sempre informado.',
-      img: imgSteps,
-      labelCards: 'Ver mais',
-      label: 'Clique aqui para ver todas as matérias',
-      blogLink: 'silvaelopesadv.wordpress.com', //sem "https://"
-    },
+    // blog: {
+    //   miniTag: 'BLOG',
+    //   title: 'A_Definir',
+    //   subtitle: '',
+    //   img: imgSteps,
+    //   labelCards: 'Ver mais',
+    //   label: 'Clique aqui para ver todas as matérias',
+    //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
+    // },
     faq: {
-      miniTag: 'TIRE SUAS DÚVIDAS',
-      title: 'Perguntas Frequentes',
-      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
+      miniTag: 'A_Definir',
+      title: 'A_Definir',
+      subtitle: 'A_Definir',
       questions: {
         question1: {
-          question: 'Como posso contratar seus serviços?',
-          answer:
-            'Agende sua consulta conosco via WhatsApp e conversaremos sobre suas necessidades e avaliaremos os custos.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question2: {
-          question: 'Qual é o prazo médio para resolução de um caso?',
-          answer:
-            'O prazo médio varia conforme a complexidade, mas discutiremos uma estimativa durante a consulta inicial.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question3: {
-          question: 'Quais documentos devo levar para a consulta?',
-          answer:
-            'Traga os documentos relevantes ao seu caso, como contratos, correspondências e registros, além de documentos pessoais e comprovante de residência.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question4: {
-          question: 'Vocês oferecem serviços de consultoria preventiva?',
-          answer:
-            'Sim, oferecemos consultoria preventiva para evitar problemas futuros e garantir conformidade legal.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
       },
       paragraph: 'Clique aqui caso tenha mais dúvidas',
