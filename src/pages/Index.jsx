@@ -57,28 +57,29 @@ export default function Index() {
         <main>
           {/* LCP — NÃO usar lazy */}
           <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
+          <Important colorMode={colorMode} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
             <FeaturesNovaTemplate
               colorMode={colorMode}
               frasesDestaque={true}
               accordion={false}
-              buttons={false}
+              buttons={true}
             />
             {/* <Cards colorMode={colorMode} /> */}
 
             <AboutNovoTemplate
               colorMode={colorMode}
-              ButtonModal={true}
+              ButtonModal={false}
               benefits={false}
             />
-            <SocialMediaTemplate colorMode={colorMode} />
+            {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             {/* <Authority colorMode={colorMode} /> */}
             <CtaNovoTemplate colorMode={colorMode} container={true} />
-            {/* <Important colorMode={colorMode} /> */}
+
             <StepsNovoTemplate colorMode={colorMode} />
-            <BlogPosts colorMode={colorMode} />
-            <FaqNovoTemplate colorMode={colorMode} />
+            {/* <BlogPosts colorMode={colorMode} /> */}
+            {/* <FaqNovoTemplate colorMode={colorMode} /> */}
             <FooterNovoTemplate
               colorMode={colorMode}
               mapa={false}
@@ -86,8 +87,8 @@ export default function Index() {
               phoneSecond={false}
               expediente={false}
               adress={false}
-              email={false}
-              emailSecond={true}
+              email={true}
+              emailSecond={false}
               fraseFooter={true} // frase Google LLC
               obs={false}
             />

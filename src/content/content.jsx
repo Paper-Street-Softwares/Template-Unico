@@ -8,7 +8,7 @@ import imgFeatures from '../assets/imgs/features/imgServices.webp'
 import aboutImg from '../assets/imgs/about/aboutImg.webp'
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
+// import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
 import imgSteps from '../assets/imgs/steps/imgSteps.webp'
 
@@ -25,10 +25,12 @@ import {
   Car,
   HandCoins,
   Check,
-  HeartHandshake,
-  ClockAlert,
-  ShieldPlus,
+  HeartCrack,
+  HomeIcon,
+  Shield,
   Wallet,
+  PieChart,
+  ShieldCheck,
 } from 'lucide-react'
 import { Users } from 'lucide-react'
 import { FileText } from 'lucide-react'
@@ -36,14 +38,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Silva e Lopes Sociedade de Advogados',
+  name: 'Dr. Victor Augusto',
   email: 'contato', // Email desejado pelo cliente
-  emailSecundario: 'silvaelopes.socadv', // Email desejado pelo cliente
-  domain: 'silvaelopesadv.com.br', // Sem "www"
+  emailSecundario: 'A_Definir', // Email desejado pelo cliente
+  domain: 'victoraugustoadv.com.br', // Sem "www"
   phone: {
-    ddd: '48',
-    firstPart: '99126', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '2920', // Apenas os 4 últimos números
+    ddd: '18',
+    firstPart: '99761', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '7220', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -79,7 +81,7 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: 'silvaelopes.socadv', // Sem o @
+  instagramProfile: '', // Sem o @
   facebookProfile: '',
   linkeDinProfile: '',
   x: '',
@@ -108,22 +110,22 @@ const content = {
         'Início',
         'Serviços',
         'Sobre',
-        'Perguntas',
-        'Blog',
+        // 'Perguntas',
+        // 'Blog',
         // 'Mapa',
       ],
-      menuId: ['home', 'feature', 'about', 'faq', 'blog'],
+      menuId: ['home', 'feature', 'about'],
       ariaLabel: 'Botão de Contato',
       ctaButtonText: 'Contato',
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'ESCRITÓRIO DE ADVOCACIA',
+      miniTag: 'Direito de Família',
       title: (
         <h1>
-          Seu direito à saúde não pode{' '}
+          Advocacia segura para decisões{' '}
           <span className="destaque relative italic font-light">
-            esperar
+            familiares
             <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
@@ -155,8 +157,8 @@ const content = {
       ),
       subtitle: (
         <p>
-          Atuamos contra negativas de planos de saúde para garantir terapias,
-          cirurgias e medicamentos.
+          Orientação clara e estratégica para divórcios, guarda, pensão e
+          patrimônio, com foco em resolver e proteger.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -165,12 +167,12 @@ const content = {
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Falar com advogado especialista',
+      ctaButtonText: 'Falar com um advogado',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Atendimento online para todo Brasil',
+        text: 'Adiar a orientação jurídica costuma custar mais do que agir agora.',
         textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
@@ -194,48 +196,53 @@ const content = {
       },
     },
     important: {
-      miniTag: 'A_Definir',
-      title: 'A_Definir',
+      miniTag: 'Atenção',
+      title: 'O que é importante saber sobre divórcio, pensões e partilhas',
       cards: {
         card1: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Preciso mesmo de advogado pra me divorciar?',
+          paragraph:
+            'Sim. Mesmo no divórcio consensual existem direitos, prazos e riscos que passam despercebidos. Um advogado garante que nada fique para trás. Falar com um profissional evita prejuízos futuros.',
         },
         card2: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Quem define o valor da pensão alimentícia?',
+          paragraph:
+            'O valor depende da necessidade de quem recebe e da possibilidade de quem paga. Cada caso é único e precisa de análise jurídica. Um advogado avalia corretamente e evita decisões injustas.',
         },
         card3: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'A guarda dos filhos é sempre compartilhada?',
+          paragraph:
+            'Não obrigatoriamente. A guarda deve atender ao melhor interesse da criança, e isso varia conforme a situação. Um advogado orienta qual modelo é mais seguro para proteger seus filhos.',
         },
         card4: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Como funciona a divisão dos bens no divórcio?',
+          paragraph:
+            'Depende do regime de bens e da situação do casal. Erros nessa etapa geram perdas irreversíveis. Com orientação jurídica, a partilha é feita de forma estratégica e correta.',
         },
       },
-      fraseObs: 'A_Definir',
-      ctaButtonText: 'A_Definir',
+      fraseObs:
+        'Entre em contato conosco e lhe daremos todo o suporte necessário',
+      ctaButtonText: 'Falar conosco agora pelo WhatsApp',
     },
     features: {
-      miniTag: 'Nossas Atuações',
+      miniTag: 'Direito de Família',
       title: (
         <h1>
-          Defendemos
-          <span className="destaque italic font-light"> Seu </span>
-          Direito à Saúde
+          Soluções
+          <span className="destaque italic font-light"> jurídicas </span>
+          firmes para conflitos familiares
         </h1>
       ),
       subtitle:
-        'Atuamos para garantir tratamentos, terapias e cuidados negados injustamente pelos planos de saúde.',
+        'Atuação estratégica para proteger seus direitos, seu patrimônio e o bem-estar da sua família em cada decisão importante.',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
       titleMessageFeature: '100%',
-      subtitleMessageFeature: 'Direito da Saúde',
+      subtitleMessageFeature: 'responsabilidade e confidencialidade',
       cards: {
         card1: {
-          title: 'Direito à Saúde Negado',
-          subtitle: 'Garantimos tratamentos negados injustamente pelos planos',
+          title: 'Divórcio consensual e litigioso',
+          subtitle: 'Resolução rápida, estratégica e segura do seu divórcio',
           description: (
             <div>
               A_Definir
@@ -244,13 +251,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <BriefcaseMedical />,
+          icon: <FileText />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'Tratamentos para TEA Sem Interrupções',
-          subtitle: 'Atuação firme para garantir terapias essenciais ao TEA',
+          title: 'Dissolução de união estável',
+          subtitle: 'Fim da união estável com direitos protegidos legalmente',
           description: (
             <div>
               A_Definir
@@ -259,13 +266,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <HeartHandshake />,
+          icon: <Home />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: 'Cirurgias Que Não Podem Esperar',
-          subtitle: 'Defesa jurídica para liberar cirurgias urgentes negadas',
+          title: 'Guarda de filhos',
+          subtitle: 'Decisões firmes para proteger o futuro dos filhos seguro',
           description: (
             <div>
               A_Definir <br />
@@ -273,44 +280,28 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <ClockAlert />,
-
+          icon: <Shield />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: 'Medicamentos Que Salvam Vidas',
-          subtitle: 'Ações para garantir medicamentos essenciais ao tratamento',
+          title: 'Pensão alimentícia',
+          subtitle: 'Pensão justa e eficiente sem atrasos ou prejuízos reais',
           description: (
             <div>
               A_Definir
               <br />
               A_Definir
               <br />
-            </div>
-          ),
-          icon: <ShieldPlus />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card5: {
-          title: 'Contra Reajustes Abusivos',
-          subtitle: 'Proteção contra aumentos abusivos dos planos de saúde',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
             </div>
           ),
           icon: <Wallet />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
-        card6: {
-          title: 'Empatia, Compromisso e Respeito ao Paciente',
-          subtitle: 'Atendimento humano com foco na dignidade do paciente',
+        card5: {
+          title: 'Partilha de bens e sobrepartilha',
+          subtitle: 'Divisão patrimonial estratégica para evitar perdas reais',
           description: (
             <div>
               A_Definir
@@ -319,7 +310,22 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Users />,
+          icon: <PieChart />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card6: {
+          title: 'Orientação patrimonial familiar',
+          subtitle: 'Planejamento familiar para proteger patrimônio futuro',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <ShieldCheck />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
@@ -341,7 +347,7 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Converse com um advogado',
     },
     emergency: {
       minitag: 'A_Definir',
@@ -360,71 +366,67 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'QUEM É O SILVA & LOPES',
+      miniTag: 'QUEM ESTÁ POR TRÁS DO SEU DIREITO',
       title: (
         <h1>
-          Nossa
-          <span className="destaque italic font-light"> trajetória</span>{' '}
+          Compromisso com quem
+          <span className="destaque italic font-light"> precisa</span>{' '}
         </h1>
       ),
       SecondPartTitle: '',
       subtitle:
-        'Uma advocacia especializada em Direito da Saúde, guiada por técnica, ética e humanidade.',
+        'Atuação estratégica, humana e individual para quem busca segurança jurídica real',
       paragraph: (
         <div>
-          A Silva & Lopes Sociedade de Advogados nasceu do compromisso com uma
-          advocacia técnica, ética e profundamente humana. Atuamos de forma
-          exclusiva no Direito aplicado aos Serviços de Saúde, com a convicção
-          de que cuidar da saúde é um direito fundamental que precisa ser
-          protegido.
+          O escritório nasceu da prática real da advocacia, atuando em situações
+          sensíveis como divórcios, conflitos familiares e decisões patrimoniais
+          complexas. A experiência mostrou que, além do problema jurídico,
+          muitos clientes enfrentam medo, insegurança e dúvidas sobre o futuro,
+          exigindo mais do que soluções automáticas.
+          <br />
+          <br />
+          Por isso, a atuação é baseada em análise individual, estratégia e
+          acompanhamento próximo. O foco não é litigar por litigar, mas orientar
+          com clareza, organizar caminhos e conduzir decisões seguras, com
+          linguagem simples, postura humana e firmeza técnica, evitando
+          desgastes e promessas irreais.
         </div>
       ),
 
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="text-mutedForeground font-secondFont">
-          A Silva & Lopes Sociedade de Advogados nasceu do compromisso com uma
-          advocacia técnica, ética e profundamente humana. Atuamos de forma
-          exclusiva no Direito aplicado aos Serviços de Saúde, com a convicção
-          de que cuidar da saúde é um direito fundamental que precisa ser
-          protegido.
+          A_Definir
           <br />
           <br />
-          Estamos ao lado de pacientes e famílias que enfrentam negativas
-          injustas dos planos de saúde, lutando pelo acesso a terapias
-          essenciais para pessoas com TEA, cirurgias, medicamentos e contra
-          reajustes abusivos. Cada caso é tratado com seriedade, empatia e
-          respeito à dignidade do paciente.
+          A_Definir
           <br />
           <br />
-          Nossa atuação é especializada, atualizada e focada em resultados.
-          Atendemos de forma presencial e online, em todo o Brasil, com
-          processos 100% digitais e acompanhamento completo até a efetiva
-          garantia do direito reconhecido.
+          A_Definir
         </p>
       ),
       paragraphModalCta: 'Entre em contato',
-      titleModal: 'Nossa trajetória',
+      titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'A_Definir',
-      aboutSocial: {
-        img: {
-          img: aboutSocialImg,
-          alt: `Foto do Instagram do ${infos.name}`,
-          altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
-        },
-        miniTag: 'REDES SOCIAIS',
-        title: 'Conecte-se conosco',
-        subtitle:
-          'Acompanhe nossas redes e fique por dentro de direitos do paciente, planos de saúde e atualizações jurídicas relevantes.',
-        paragraph: <p></p>,
-        labelInstagram: 'Siga-nos no Instagram',
-        labelFacebook: 'Siga-nos no Facebook',
-        labelLinkedin: 'Siga-nos no LinkedIn',
-        labelX: 'Siga-nos no X',
-        labelTiktok: 'Siga-nos no Tik Tok',
-        labelYoutube: 'Siga-nos no Youtube',
-      },
+      ctaButtonText: 'Falar diretamente com o advogado',
+      // aboutSocial: {
+      //   img: {
+      //     img: aboutSocialImg,
+      //     alt: `Foto do Instagram do ${infos.name}`,
+      //     altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
+      //   },
+      //   miniTag: 'REDES SOCIAIS',
+      //   title: 'Conecte-se conosco',
+      //   subtitle:
+      //     'Aproveite nossas redes sociais para mantermos contato e ficar por dentro dos lançamentos, novidades e atualizações do mercado imobiliário.',
+      //   paragraph: <p></p>,
+      //   labelInstagram: 'Siga-nos no Instagram',
+      //   labelFacebook: 'Siga-nos no Facebook',
+      //   labelLinkedin: 'Siga-nos no LinkedIn',
+      //   labelX: 'Siga-nos no X',
+      //   labelTiktok: 'Siga-nos no Tik Tok',
+      //   labelYoutube: 'Siga-nos no Youtube',
+      // },
     },
     // team: {
     //   miniTag: ' A_Definir',
@@ -451,78 +453,80 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'PASSO A PASSO',
+      miniTag: 'POR QUE TER UM ADVOGADO AO SEU LADO',
       title: (
         <h1>
-          Como
-          <span className="destaque italic font-light"> funciona </span>
-          nosso atendimento?
+          Decisões difíceis pedem
+          <span className="destaque italic font-light">
+            {' '}
+            orientação segura{' '}
+          </span>
         </h1>
       ),
-      subtitle: '',
+      subtitle:
+        'Evite erros, desgaste emocional e prejuízos tomando decisões com apoio jurídico desde o início',
       img: imgSteps,
       alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Consulta especializada',
+          cardTitle: 'Clareza antes do conflito',
           cardDescription:
-            'Ouvimos sua situação com atenção, esclarecemos dúvidas e indicamos o melhor caminho jurídico para seu caso.',
+            'Você entende exatamente seus direitos, riscos e possibilidades antes de qualquer decisão, evitando surpresas e arrependimentos no futuro.',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Análise do caso',
+          cardTitle: 'Proteção do seu patrimônio e da sua família',
           cardDescription:
-            'Analisamos documentos, negativas do plano e laudos médicos para entender a fundo sua necessidade.',
+            'Cada escolha é pensada para preservar bens, garantir segurança financeira e proteger quem realmente importa para você.',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Definição da estratégia',
+          cardTitle: 'Menos desgaste emocional',
           cardDescription:
-            'Construímos uma estratégia jurídica personalizada para garantir seu direito à saúde com segurança.',
+            'O advogado assume a parte técnica e estratégica, permitindo que você atravesse esse momento com mais tranquilidade e menos pressão.',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Atuação e acompanhamento',
+          cardTitle: 'Estratégia certa no momento certo',
           cardDescription:
-            'Ingressamos com as medidas cabíveis e acompanhamos o caso até a efetiva garantia do seu direito.',
+            'Nem todo caso precisa virar um processo longo. A orientação correta evita conflitos desnecessários e decisões precipitadas.',
         },
       },
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Converse agora com um advogado',
     },
     ctaSecondary: {
-      miniTag: 'FALE CONOSCO',
-      title: (
-        <h1>Problemas com plano de saúde? Nós cuidamos do seu direito.</h1>
-      ),
+      miniTag: 'Fale conosco',
+      title: <h1>Não adie a proteção dos seus direitos</h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Fale com um advogado especialista em Direito da Saúde e receba
-            orientação clara e segura sobre seu caso.
+            Cada decisão postergada pode gerar perdas difíceis de reverter.
+            Atuamos com estratégia, agilidade e orientação clara do início ao
+            fim.
           </p>
         </div>
       ),
       container: {
         label1: {
           icon: <Check />,
-          text: ' Análise inicial do seu caso criminal',
+          text: ' Análise inicial do seu caso com avaliação técnica',
         },
         label2: {
           icon: <Check />,
-          text: ' Atendimento direto com advogado criminalista',
+          text: ' Atendimento direto com advogado, sem intermediários',
         },
         label3: {
           icon: <Check />,
-          text: ' Resposta rápida e acompanhamento pelo WhatsApp',
+          text: ' Comunicação rápida e acompanhamento pelo WhatsApp',
         },
         label4: {
           icon: <Check />,
-          text: ' Atuação iniciada imediatamente após a análise',
+          text: ' Definição imediata da melhor estratégia jurídica',
         },
         label5: {
           icon: <Check />,
-          text: ' Mais segurança para você e sua família em um momento decisivo',
+          text: ' Mais segurança para decidir com clareza e confiança',
         },
       },
       // subtitleDireita: (
@@ -533,44 +537,39 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Falar com um especialista no WhatsApp',
+      ctaButtonText: 'Fale com a gente agora mesmo',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
-    blog: {
-      miniTag: 'BLOG',
-      title: 'Informação jurídica ao seu alcance',
-      subtitle:
-        'Acompanhe conteúdos exclusivos para manter-se sempre informado.',
-      img: imgSteps,
-      labelCards: 'Ver mais',
-      label: 'Clique aqui para ver todas as matérias',
-      blogLink: 'silvaelopesadv.wordpress.com', //sem "https://"
-    },
+    // blog: {
+    //   miniTag: 'BLOG',
+    //   title: 'A_Definir',
+    //   subtitle: '',
+    //   img: imgSteps,
+    //   labelCards: 'Ver mais',
+    //   label: 'Clique aqui para ver todas as matérias',
+    //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
+    // },
     faq: {
-      miniTag: 'TIRE SUAS DÚVIDAS',
-      title: 'Perguntas Frequentes',
-      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
+      miniTag: 'A_Definir',
+      title: 'A_Definir',
+      subtitle: 'A_Definir',
       questions: {
         question1: {
-          question: 'Como posso contratar seus serviços?',
-          answer:
-            'Agende sua consulta conosco via WhatsApp e conversaremos sobre suas necessidades e avaliaremos os custos.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question2: {
-          question: 'Qual é o prazo médio para resolução de um caso?',
-          answer:
-            'O prazo médio varia conforme a complexidade, mas discutiremos uma estimativa durante a consulta inicial.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question3: {
-          question: 'Quais documentos devo levar para a consulta?',
-          answer:
-            'Traga os documentos relevantes ao seu caso, como contratos, correspondências e registros, além de documentos pessoais e comprovante de residência.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question4: {
-          question: 'Vocês oferecem serviços de consultoria preventiva?',
-          answer:
-            'Sim, oferecemos consultoria preventiva para evitar problemas futuros e garantir conformidade legal.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
       },
       paragraph: 'Clique aqui caso tenha mais dúvidas',
