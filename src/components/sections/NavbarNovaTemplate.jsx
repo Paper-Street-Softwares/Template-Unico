@@ -80,16 +80,16 @@ function NavbarNovaTemplate({
               src={content.texts.navbar.logo.img}
               alt={content.texts.navbar.logo.alt}
               className="w-[100%] desktop1:hidden"
-              width={277}
-              height={60}
+              width={139}
+              height={139}
               fetchPriority="high"
             />
             <img
               src={content.texts.navbar.logo.imgDesktop}
               alt={content.texts.navbar.logo.alt}
               className="w-[100%] hidden desktop1:flex"
-              width={300}
-              height={65}
+              width={350}
+              height={351}
               fetchPriority="high"
             />
           </div>
