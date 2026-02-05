@@ -68,11 +68,11 @@ export default function Index() {
             />
             {/* <Cards colorMode={colorMode} /> */}
 
-            {/* <AboutNovoTemplate
+            <AboutNovoTemplate
               colorMode={colorMode}
               ButtonModal={true}
               benefits={false}
-            /> */}
+            />
             {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             {/* <Authority colorMode={colorMode} /> */}
             <CtaNovoTemplate colorMode={colorMode} container={true} />
