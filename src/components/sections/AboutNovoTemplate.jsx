@@ -32,7 +32,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-terciary/60'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
@@ -137,7 +137,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                   )}
                 </MotionDivDownToUp>
 
-                <MotionDivDownToUp>
+                {/* <MotionDivDownToUp>
                   <div className="desktop1:flex flex-col gap-4 pt-4 w-fit justify-center items-start m-auto desktop1:m-0 hidden">
                     <ButtonReflexo
                       icon={
@@ -164,7 +164,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                       className="text-white mx-auto desktop1:m-0"
                     />
                   </div>
-                </MotionDivDownToUp>
+                </MotionDivDownToUp> */}
               </div>
 
               {/* Imagem com destaque */}
@@ -190,7 +190,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                 </div>
               </MotionDivDownToUp>
 
-              <div className="flex flex-col gap-4 w-fit justify-center items-center mx-auto desktop1:hidden">
+              {/* <div className="flex flex-col gap-4 w-fit justify-center items-center mx-auto desktop1:hidden">
                 <ButtonReflexo
                   icon={
                     <svg
@@ -215,7 +215,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                   colorMode={colorMode}
                   className="text-white"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
 

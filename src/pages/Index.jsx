@@ -56,7 +56,7 @@ export default function Index() {
 
         <main>
           {/* LCP — NÃO usar lazy */}
-          <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
+          <HeroTemplateNovo colorMode={colorMode} obs={false} obsTwo={false} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
             <FeaturesNovaTemplate
@@ -65,11 +65,18 @@ export default function Index() {
               accordion={false}
               buttons={false}
             />
-            <Cards colorMode={colorMode} />
-            <StepsNovoTemplate colorMode={colorMode} />
-            <Authority colorMode={colorMode} />
+            {/* <Cards colorMode={colorMode} /> */}
+
+            <AboutNovoTemplate
+              colorMode={colorMode}
+              ButtonModal={true}
+              benefits={false}
+            />
+            <SocialMediaTemplate colorMode={colorMode} />
+            {/* <Authority colorMode={colorMode} /> */}
             <CtaNovoTemplate colorMode={colorMode} container={true} />
-            <Important colorMode={colorMode} />
+            {/* <Important colorMode={colorMode} /> */}
+            <StepsNovoTemplate colorMode={colorMode} />
             <FaqNovoTemplate colorMode={colorMode} />
             <FooterNovoTemplate
               colorMode={colorMode}
@@ -77,22 +84,18 @@ export default function Index() {
               phone={false}
               phoneSecond={false}
               expediente={false}
-              adress={false}
+              adress={true}
               email={false}
               emailSecond={false}
               fraseFooter={true} // frase Google LLC
               obs={false}
             />
             <WhatsappAnimated colorMode={colorMode} />
-            {/* <AboutNovoTemplate
-              colorMode={colorMode}
-              ButtonModal={true}
-              benefits={false}
-            /> */}
+
             {/* <Emergency colorMode={colorMode} /> */}
             {/* <Diferences colorMode={colorMode} /> */}
             {/* <Speed colorMode={colorMode} /> */}
-            {/* <SocialMediaTemplate colorMode={colorMode} /> */}
+
             {/* <Team colorMode={colorMode} /> */}
             {/* <BlogPosts colorMode={colorMode} /> */}
           </Suspense>
