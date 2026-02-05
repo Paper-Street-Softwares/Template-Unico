@@ -14,6 +14,7 @@ import {
   Split,
   FileText,
   ChartNoAxesCombined,
+  Scale,
 } from 'lucide-react'
 import content from '../../content/content'
 import SectionArea from '../sectionElements/SectionArea'
@@ -132,7 +133,7 @@ function HeroTemplateNovo({
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-[8px] phone2:text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
               >
                 <span>
-                  <ChartNoAxesCombined className="w-4 h-4" />
+                  <Scale className="w-4 h-4" />
                 </span>
                 {content.texts.hero.miniTag}
               </div>
@@ -147,15 +148,6 @@ function HeroTemplateNovo({
               >
                 {content.texts.hero.subtitle}
               </p>
-
-              <div className="font-secondFont">
-                <ul>
-                  <li> • Defesa ética e administrativa no CRM e CFM</li>
-                  <li> • Atuação civil, penal e trabalhista</li>
-                  <li> • Recuperação de créditos e cobrança médica</li>
-                  <li> • Banca jurídica especializada na área médica</li>
-                </ul>
-              </div>
 
               {/* <div
                 className={`border font-secondFont p-2 rounded-md border-primaryDark text-[8px] phone2:text-[12px] phone3:text-[14px]`}
@@ -202,11 +194,11 @@ function HeroTemplateNovo({
               /> */}
               {obs && (
                 <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground w-full">
-                  {/* <div className="relative flex ">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
-                </div> */}
-                  ⚠️
+                  <div className="relative flex ">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
+                  </div>
+                  {/* ⚠️ */}
                   <span
                     className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
                   >

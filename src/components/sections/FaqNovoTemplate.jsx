@@ -21,7 +21,7 @@ function FaqNovoTemplate({ colorMode }) {
       text = 'text-corTitulosPreto'
       text = 'text-corTitulosPreto'
       hoverText = 'hover:text-primaryDark'
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-terciary/60'
 
       break
     case 'dark':
@@ -30,6 +30,7 @@ function FaqNovoTemplate({ colorMode }) {
       hoverText = 'hover:text-primaryLight'
       backgroundMode = 'bg-black'
       break
+
     default:
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
@@ -79,9 +80,13 @@ function FaqNovoTemplate({ colorMode }) {
           </div>
 
           <div
-            className={`flex justify-center mt-12 scale-100 hover:scale-90 duration-500 transition-all cursor-pointer hover:underline ${textOpacity}`}
+            className={`flex justify-center mx-auto mt-12 scale-100 hover:scale-90 duration-500 w-fit transition-all cursor-pointer hover:underline ${textOpacity}`}
           >
-            <a href={content.texts.links.ctaWhatsapp} target="_blank">
+            <a
+              href={content.texts.links.ctaWhatsapp}
+              className="w-fit"
+              target="_blank"
+            >
               Clique aqui caso tenha mais dúvidas
             </a>
             {/* <ButtonReflexo

@@ -56,12 +56,12 @@ export default function Index() {
 
         <main>
           {/* LCP — NÃO usar lazy */}
-          <HeroTemplateNovo colorMode={colorMode} obs={false} obsTwo={false} />
+          <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
             <FeaturesNovaTemplate
               colorMode={colorMode}
-              frasesDestaque={false}
+              frasesDestaque={true}
               accordion={false}
               buttons={false}
             />
@@ -77,16 +77,17 @@ export default function Index() {
             <CtaNovoTemplate colorMode={colorMode} container={true} />
             {/* <Important colorMode={colorMode} /> */}
             <StepsNovoTemplate colorMode={colorMode} />
+            <BlogPosts colorMode={colorMode} />
             <FaqNovoTemplate colorMode={colorMode} />
             <FooterNovoTemplate
               colorMode={colorMode}
               mapa={false}
-              phone={false}
+              phone={true}
               phoneSecond={false}
               expediente={false}
-              adress={true}
+              adress={false}
               email={false}
-              emailSecond={false}
+              emailSecond={true}
               fraseFooter={true} // frase Google LLC
               obs={false}
             />
@@ -97,7 +98,6 @@ export default function Index() {
             {/* <Speed colorMode={colorMode} /> */}
 
             {/* <Team colorMode={colorMode} /> */}
-            {/* <BlogPosts colorMode={colorMode} /> */}
           </Suspense>
         </main>
       </ColorModeProvider>

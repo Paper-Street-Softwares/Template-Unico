@@ -21,11 +21,11 @@ export default {
     extend: {
       colors: {
         // Principais
-        primaryLight: '#38D83D',
-        primaryDark: '#236E26',
+        primaryLight: '#C9A24D',
+        primaryDark: '#0B3B3C',
         secondary: '#E0E9E2',
-        terciary: '#FAFCFA',
-        quartenary: '#FAFBFC',
+        terciary: '#F1F7F2',
+        quartenary: '#FAFCFA',
         borderImage: '#FCFBFA',
 
         // Copys
@@ -35,8 +35,8 @@ export default {
         corOutrosTextosPreto: '#666666',
 
         // hex botãoColor wpp
-        wppLight: '#075e54',
-        wppDark: '#25d366',
+        wppLight: '#2E7027',
+        wppDark: '#2E7027',
 
         // Minitags
         bgIcons: '#E0E2E9',
