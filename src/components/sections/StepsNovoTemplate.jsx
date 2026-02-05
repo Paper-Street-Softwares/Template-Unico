@@ -59,7 +59,7 @@ function StepsNovoTemplate({ colorMode }) {
     <SectionArea className={backgroundMode} data-theme={colorMode}>
       <SectionWrapper>
         <div className="mx-auto w-full">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-2 desktop1:gap-16 items-center">
             {/* Imagem */}
             <div
               initial={{ opacity: 0, x: -50 }}
@@ -161,7 +161,7 @@ function StepsNovoTemplate({ colorMode }) {
                 ))}
               </div>
 
-              {/* <MotionDivDownToUp>
+              <MotionDivDownToUp>
                 <div className="desktop1:flex flex-col gap-4 pt-4 w-fit justify-center items-start hidden">
                   <ButtonReflexo
                     icon={
@@ -189,7 +189,7 @@ function StepsNovoTemplate({ colorMode }) {
                     className="text-white"
                   />
                 </div>
-              </MotionDivDownToUp> */}
+              </MotionDivDownToUp>
             </div>
           </div>
         </div>

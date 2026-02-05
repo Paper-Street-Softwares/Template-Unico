@@ -90,7 +90,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
       <SectionWrapper>
         <section className="relative font-mainFont w-full">
           <div className="mx-auto">
-            <div className="flex flex-col-reverse desktop1:flex-row gap-16 items-center">
+            <div className="flex flex-col-reverse desktop1:flex-row gap-12 items-center">
               {/* Imagem com destaque */}
               <div>
                 {' '}

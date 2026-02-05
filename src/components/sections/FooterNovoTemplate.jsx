@@ -65,7 +65,7 @@ function FooterNovoTemplate({
                 <img
                   src={content.texts.navbar.logo.img}
                   alt={content.texts.navbar.logo.alt}
-                  className="w-[30%]"
+                  className="w-[50%]"
                   width={187}
                   height={119}
                 />
@@ -218,11 +218,11 @@ function FooterNovoTemplate({
               )}
             </div>
 
-            {/* <hr
+            <hr
               className={`pb-6 border-t ${text} ${
                 colorMode === 'light' ? 'opacity-90' : 'opacity-20'
               } w-full`}
-            /> */}
+            />
 
             {/* Footer Bottom */}
             <div

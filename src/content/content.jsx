@@ -25,6 +25,12 @@ import {
   Car,
   HandCoins,
   Check,
+  HeartCrack,
+  HomeIcon,
+  Shield,
+  Wallet,
+  PieChart,
+  ShieldCheck,
 } from 'lucide-react'
 import { Users } from 'lucide-react'
 import { FileText } from 'lucide-react'
@@ -32,14 +38,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'A_Definir',
+  name: 'Dr. Victor Augusto',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'A_Definir', // Sem "www"
+  domain: 'victoraugustoadv.com.br', // Sem "www"
   phone: {
-    ddd: '00',
-    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '0000', // Apenas os 4 últimos números
+    ddd: '18',
+    firstPart: '99761', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '7220', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -114,12 +120,12 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'A_Definir',
+      miniTag: 'Direito de Família',
       title: (
         <h1>
-          A_Definir{' '}
+          Advocacia segura para decisões{' '}
           <span className="destaque relative italic font-light">
-            A_Definir
+            familiares
             <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
@@ -147,22 +153,26 @@ const content = {
               </svg>
             </span>
           </span>
-          ?
         </h1>
       ),
-      subtitle: <p>A_Definir</p>,
+      subtitle: (
+        <p>
+          Orientação clara e estratégica para divórcios, guarda, pensão e
+          patrimônio, com foco em resolver e proteger.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Falar com um advogado',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'A_Definir',
+        text: 'Adiar a orientação jurídica costuma custar mais do que agir agora.',
         textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
@@ -186,47 +196,53 @@ const content = {
       },
     },
     important: {
-      miniTag: 'A_Definir',
-      title: 'A_Definir',
+      miniTag: 'Atenção',
+      title: 'O que é importante saber sobre divórcio, pensões e partilhas',
       cards: {
         card1: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Preciso mesmo de advogado pra me divorciar?',
+          paragraph:
+            'Sim. Mesmo no divórcio consensual existem direitos, prazos e riscos que passam despercebidos. Um advogado garante que nada fique para trás. Falar com um profissional evita prejuízos futuros.',
         },
         card2: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Quem define o valor da pensão alimentícia?',
+          paragraph:
+            'O valor depende da necessidade de quem recebe e da possibilidade de quem paga. Cada caso é único e precisa de análise jurídica. Um advogado avalia corretamente e evita decisões injustas.',
         },
         card3: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'A guarda dos filhos é sempre compartilhada?',
+          paragraph:
+            'Não obrigatoriamente. A guarda deve atender ao melhor interesse da criança, e isso varia conforme a situação. Um advogado orienta qual modelo é mais seguro para proteger seus filhos.',
         },
         card4: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Como funciona a divisão dos bens no divórcio?',
+          paragraph:
+            'Depende do regime de bens e da situação do casal. Erros nessa etapa geram perdas irreversíveis. Com orientação jurídica, a partilha é feita de forma estratégica e correta.',
         },
       },
-      fraseObs: 'A_Definir',
-      ctaButtonText: 'A_Definir',
+      fraseObs:
+        'Entre em contato conosco e lhe daremos todo o suporte necessário',
+      ctaButtonText: 'Falar conosco agora pelo WhatsApp',
     },
     features: {
-      miniTag: 'A_Definir',
+      miniTag: 'Direito de Família',
       title: (
         <h1>
-          A_Definir
-          <span className="destaque italic font-light"> A_Definir</span>
-          A_Definir
+          Soluções
+          <span className="destaque italic font-light"> jurídicas </span>
+          firmes para conflitos familiares
         </h1>
       ),
-      subtitle: 'A_Definir',
+      subtitle:
+        'Atuação estratégica para proteger seus direitos, seu patrimônio e o bem-estar da sua família em cada decisão importante.',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: 'A_Definir',
-      subtitleMessageFeature: 'A_Definir',
+      titleMessageFeature: '100%',
+      subtitleMessageFeature: 'responsabilidade e confidencialidade',
       cards: {
         card1: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Divórcio consensual e litigioso',
+          subtitle: 'Resolução rápida, estratégica e segura do seu divórcio',
           description: (
             <div>
               A_Definir
@@ -235,13 +251,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Lock />,
+          icon: <FileText />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Dissolução de união estável',
+          subtitle: 'Fim da união estável com direitos protegidos legalmente',
           description: (
             <div>
               A_Definir
@@ -250,13 +266,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Car />,
+          icon: <Home />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Guarda de filhos',
+          subtitle: 'Decisões firmes para proteger o futuro dos filhos seguro',
           description: (
             <div>
               A_Definir <br />
@@ -264,13 +280,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <HandCoins />,
+          icon: <Shield />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Pensão alimentícia',
+          subtitle: 'Pensão justa e eficiente sem atrasos ou prejuízos reais',
           description: (
             <div>
               A_Definir
@@ -279,13 +295,13 @@ const content = {
               <br />
             </div>
           ),
-          icon: <FileText />,
+          icon: <Wallet />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card5: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Partilha de bens e sobrepartilha',
+          subtitle: 'Divisão patrimonial estratégica para evitar perdas reais',
           description: (
             <div>
               A_Definir
@@ -294,30 +310,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-circle-dollar-sign-icon lucide-circle-dollar-sign"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
-              <path d="M12 18V6" />
-            </svg>
-          ),
+          icon: <PieChart />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card6: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Orientação patrimonial familiar',
+          subtitle: 'Planejamento familiar para proteger patrimônio futuro',
           description: (
             <div>
               A_Definir
@@ -326,7 +325,7 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Scale />,
+          icon: <ShieldCheck />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
@@ -348,7 +347,7 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Converse com um advogado',
     },
     emergency: {
       minitag: 'A_Definir',
@@ -367,22 +366,30 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'A_Definir',
+      miniTag: 'QUEM ESTÁ POR TRÁS DO SEU DIREITO',
       title: (
         <h1>
-          A_Definir
-          <span className="destaque italic font-light"> A_Definir</span>{' '}
-          A_Definir
+          Compromisso com quem
+          <span className="destaque italic font-light"> precisa</span>{' '}
         </h1>
       ),
       SecondPartTitle: '',
-      subtitle: 'A_Definir',
+      subtitle:
+        'Atuação estratégica, humana e individual para quem busca segurança jurídica real',
       paragraph: (
         <div>
-          A_Definir
+          O escritório nasceu da prática real da advocacia, atuando em situações
+          sensíveis como divórcios, conflitos familiares e decisões patrimoniais
+          complexas. A experiência mostrou que, além do problema jurídico,
+          muitos clientes enfrentam medo, insegurança e dúvidas sobre o futuro,
+          exigindo mais do que soluções automáticas.
           <br />
           <br />
-          A_Definir
+          Por isso, a atuação é baseada em análise individual, estratégia e
+          acompanhamento próximo. O foco não é litigar por litigar, mas orientar
+          com clareza, organizar caminhos e conduzir decisões seguras, com
+          linguagem simples, postura humana e firmeza técnica, evitando
+          desgastes e promessas irreais.
         </div>
       ),
 
@@ -401,7 +408,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Falar diretamente com o advogado',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -446,69 +453,80 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'A_Definir',
+      miniTag: 'POR QUE TER UM ADVOGADO AO SEU LADO',
       title: (
         <h1>
-          A_Definir
-          <span className="destaque italic font-light"> A_Definir </span>
-          A_Definir
+          Decisões difíceis pedem
+          <span className="destaque italic font-light">
+            {' '}
+            orientação segura{' '}
+          </span>
         </h1>
       ),
-      subtitle: '',
+      subtitle:
+        'Evite erros, desgaste emocional e prejuízos tomando decisões com apoio jurídico desde o início',
       img: imgSteps,
       alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Clareza antes do conflito',
+          cardDescription:
+            'Você entende exatamente seus direitos, riscos e possibilidades antes de qualquer decisão, evitando surpresas e arrependimentos no futuro.',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Proteção do seu patrimônio e da sua família',
+          cardDescription:
+            'Cada escolha é pensada para preservar bens, garantir segurança financeira e proteger quem realmente importa para você.',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Menos desgaste emocional',
+          cardDescription:
+            'O advogado assume a parte técnica e estratégica, permitindo que você atravesse esse momento com mais tranquilidade e menos pressão.',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Estratégia certa no momento certo',
+          cardDescription:
+            'Nem todo caso precisa virar um processo longo. A orientação correta evita conflitos desnecessários e decisões precipitadas.',
         },
       },
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Converse agora com um advogado',
     },
     ctaSecondary: {
-      miniTag: 'A_Definir',
-      title: <h1>A_Definir</h1>,
+      miniTag: 'Fale conosco',
+      title: <h1>Não adie a proteção dos seus direitos</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Cada decisão postergada pode gerar perdas difíceis de reverter.
+            Atuamos com estratégia, agilidade e orientação clara do início ao
+            fim.
+          </p>
         </div>
       ),
       container: {
         label1: {
           icon: <Check />,
-          text: ' Análise inicial do seu caso criminal',
+          text: ' Análise inicial do seu caso com avaliação técnica',
         },
         label2: {
           icon: <Check />,
-          text: ' Atendimento direto com advogado criminalista',
+          text: ' Atendimento direto com advogado, sem intermediários',
         },
         label3: {
           icon: <Check />,
-          text: ' Resposta rápida e acompanhamento pelo WhatsApp',
+          text: ' Comunicação rápida e acompanhamento pelo WhatsApp',
         },
         label4: {
           icon: <Check />,
-          text: ' Atuação iniciada imediatamente após a análise',
+          text: ' Definição imediata da melhor estratégia jurídica',
         },
         label5: {
           icon: <Check />,
-          text: ' Mais segurança para você e sua família em um momento decisivo',
+          text: ' Mais segurança para decidir com clareza e confiança',
         },
       },
       // subtitleDireita: (
@@ -519,7 +537,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Fale com a gente agora mesmo',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },

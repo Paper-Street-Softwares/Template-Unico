@@ -64,13 +64,13 @@ export default function Index() {
               colorMode={colorMode}
               frasesDestaque={true}
               accordion={false}
-              buttons={false}
+              buttons={true}
             />
             {/* <Cards colorMode={colorMode} /> */}
 
             <AboutNovoTemplate
               colorMode={colorMode}
-              ButtonModal={true}
+              ButtonModal={false}
               benefits={false}
             />
             {/* <SocialMediaTemplate colorMode={colorMode} /> */}
@@ -87,8 +87,8 @@ export default function Index() {
               phoneSecond={false}
               expediente={false}
               adress={false}
-              email={false}
-              emailSecond={true}
+              email={true}
+              emailSecond={false}
               fraseFooter={true} // frase Google LLC
               obs={false}
             />
