@@ -19,9 +19,9 @@ function CardsImportants({ title, paragraph, colorMode, className }) {
       // bgCard = 'bg-black hover:bg-primaryDark'
       bgCard = 'bg-black'
       bgCircle = 'bg-dark'
-      // bgCircleHover =
-      //   'group-hover:bg-primaryDark group-hover:border-2 border-primaryLight group-hover:border-black'
-      bgCircleHover = ' border-primaryLight'
+      bgCircleHover =
+        'group-hover:bg-white group-hover:border-2 group-hover:border-primaryDark'
+      // bgCircleHover = ' border-primaryLight'
       titleMode = 'text-corTitulosBranca group-hover:text-corTitulosBranca'
       description =
         'text-corOutrosTextosBranca group-hover:text-corOutrosTextosBranca'
