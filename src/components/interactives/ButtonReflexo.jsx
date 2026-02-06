@@ -55,6 +55,7 @@ export default function ButtonReflexo({
       target="_blank"
       rel="noopener noreferrer"
       href={link}
+      onClick={() => gtag_report_conversion()}
       aria-label="Botão de contato"
       className={`${className}
           relative
