@@ -113,7 +113,7 @@ function HeroTemplateNovo({
       paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
-      <section className="relative w-full pt-[110px] phone2:pt-[110px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] phone3:pt-[130px] tablet1:pt-[160px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
+      <section className="relative w-full pt-[110px] phone2:pt-[110px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] phone3:pt-[150px] tablet1:pt-[170px] tablet2:pt-[180px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
         {/* Abstract Background Shapes */}
         <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}

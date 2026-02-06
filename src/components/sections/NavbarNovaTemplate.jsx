@@ -78,18 +78,14 @@ function NavbarNovaTemplate({
             className={`flex flex-col z-20 relative  ${
               isScrolled
                 ? 'w-[20%] tablet1:w-[20%] tablet2:w-[15%] desktop1:w-[10%] desktop2:w-[10%] desktop3:w-[8%] transition-all duration-700'
-                : 'py-3 w-[30%] tablet1:w-[30%] tablet2:w-[30%] desktop1:w-[15%] desktop3:w-[15%] transition-all duration-700'
+                : 'py-3 w-[30%] tablet1:w-[30%] tablet2:w-[25%] desktop1:w-[15%] desktop3:w-[15%] transition-all duration-700'
             }`}
           >
-            <Link
-              smooth={true}
-              duration={500}
-              offset={-90}
-              // spy={true}
-              // hashSpy={true}
+            <a
               className="cursor-pointer"
-              aria-label="Link de retorno a Hero"
-              href="/home"
+              href="/"
+              onClick={() => window.location.reload()}
+              aria-label="recarregar página "
             >
               <img
                 src={content.texts.navbar.logo.img}
@@ -107,7 +103,7 @@ function NavbarNovaTemplate({
                 height={188}
                 fetchPriority="high"
               />
-            </Link>{' '}
+            </a>
           </div>
 
           {/* Desktop Nav */}
@@ -160,7 +156,8 @@ function NavbarNovaTemplate({
                 </svg>
               }
               colorMode={colorMode}
-              className={`text-sm mb-0 ${borderButtons}`}
+              className={`text-sm mb-0 ${borderButtons} bg-white text-corTitulosPreto border border-primaryDark/20`}
+              shineClass={`bg-primaryDark/20`}
             />
           </div>
 
@@ -243,7 +240,8 @@ function NavbarNovaTemplate({
                     link={content.texts.links.ctaWhatsapp}
                     label={content.texts.navbar.ctaButtonText}
                     colorMode={colorMode}
-                    className={`w-fit ${borderButtons}`}
+                    className={`w-fit text-sm mb-0 ${borderButtons} bg-white text-corTitulosPreto border border-primaryDark/20`}
+                    shineClass={`bg-primaryDark/20`}
                   />
                 </div>
               </motion.div>

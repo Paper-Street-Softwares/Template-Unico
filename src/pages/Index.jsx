@@ -70,12 +70,12 @@ export default function Index() {
 
             <AboutNovoTemplate
               colorMode={colorMode}
-              ButtonModal={false}
+              ButtonModal={true}
               benefits={false}
             />
             <SocialMediaTemplate colorMode={colorMode} />
             {/* <Authority colorMode={colorMode} /> */}
-            <CtaNovoTemplate colorMode={colorMode} container={true} />
+            <CtaNovoTemplate colorMode={colorMode} container={false} />
 
             <StepsNovoTemplate colorMode={colorMode} />
             {/* <BlogPosts colorMode={colorMode} /> */}

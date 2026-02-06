@@ -30,11 +30,11 @@ function CtaNovoTemplate({ colorMode, container }) {
       miniTagCtaDark = 'text-primaryLight'
       break
     default:
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
+      text = 'text-corTitulosBranca'
+      textOpacity = 'text-corTitulosBranca/60'
       textDestaque = 'text-primaryDark'
-      backgroundMode = 'bg-white'
-      miniTagCtaDark = 'text-primaryDark'
+      backgroundMode = 'bg-primaryDark'
+      miniTagCtaDark = 'text-white'
   }
 
   const lisContainer = Object.values(content.texts.ctaSecondary.container)
@@ -96,6 +96,8 @@ function CtaNovoTemplate({ colorMode, container }) {
                 link={content.texts.links.ctaWhatsapp}
                 label={content.texts.ctaSecondary.ctaButtonText}
                 colorMode={colorMode}
+                className={`text-sm mb-0 bg-white text-corTitulosPreto border border-primaryDark/20`}
+                shineClass={`bg-primaryDark/20`}
               />
               <ButtonReflexo
                 id="ligar"

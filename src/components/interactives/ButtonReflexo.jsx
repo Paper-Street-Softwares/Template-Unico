@@ -10,6 +10,7 @@ export default function ButtonReflexo({
   padding,
   className,
   bgClass,
+  shineClass,
   id,
   ...props
 }) {
@@ -27,8 +28,7 @@ export default function ButtonReflexo({
   const themes = {
     light: 'bg-primaryDark text-corTitulosBranca border border-primaryDark/20',
     dark: 'bg-primaryLight text-corTitulosPreto',
-    default:
-      'bg-primaryDark text-corTitulosBranca border border-primaryDark/20',
+    default: `bg-primaryDark text-corTitulosBranca border border-primaryDark/20 ${className}`,
   }
 
   const shineThemes = {
@@ -43,7 +43,7 @@ export default function ButtonReflexo({
       ? whatsAppThemes[colorMode]
       : (bgClass ?? themes[colorMode])
 
-  const shineColor = shineThemes[colorMode]
+  const shineColor = shineClass ?? shineThemes[colorMode]
   const spacing = padding || 'px-6 py-3'
 
   const { showGlobalButton } = useColorMode()
@@ -56,7 +56,6 @@ export default function ButtonReflexo({
       target="_blank"
       rel="noopener noreferrer"
       href={link}
-      onClick={() => gtag_report_conversion()}
       aria-label="Botão de contato"
       className={`${className}
           relative

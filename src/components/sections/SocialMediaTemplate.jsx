@@ -2,7 +2,7 @@ import React from 'react'
 import SectionArea from '../sectionElements/SectionArea'
 import SectionWrapper from '../sectionElements/SectionWrapper'
 import content from '../../content/content'
-import { Instagram, ArrowRight } from 'lucide-react'
+import { Instagram, ArrowRight, Facebook } from 'lucide-react'
 import iconTikTok from '../../assets/imgs/icons/tiktok.png'
 import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
 
@@ -92,6 +92,37 @@ function SocialMediaTemplate({ colorMode }) {
 
               {/* Cards sociais */}
               <div className="space-y-8">
+                {content.texts.links.facebook?.trim() && (
+                  <a
+                    href={content.texts.links.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Link para Instagram"
+                    className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:border-primary/30 hover:shadow-lg transition-all ${cardBg}`}
+                  >
+                    <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-blue-600 to-blue-500 text-white flex items-center justify-center shrink-0">
+                      <Facebook className="w-7 h-7" />
+                    </div>
+
+                    <div>
+                      <h1
+                        className={`font-bold font-secondFont text-lg ${text}`}
+                      >
+                        Facebook
+                      </h1>
+                      <p
+                        className={`font-secondFont font-light text-sm ${textOpacity}`}
+                      >
+                        Dicas diárias e bastidores
+                      </p>
+                    </div>
+
+                    <ArrowRight
+                      className={`ml-auto w-5 h-5 transition-colors ${arrowColor}`}
+                    />
+                  </a>
+                )}
+
                 {content.texts.links.instagram?.trim() && (
                   <a
                     href={content.texts.links.instagram}
