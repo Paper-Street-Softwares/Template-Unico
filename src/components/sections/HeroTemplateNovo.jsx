@@ -15,6 +15,8 @@ import {
   FileText,
   ChartNoAxesCombined,
   Scale,
+  BriefcaseMedical,
+  BriefcaseBusiness,
 } from 'lucide-react'
 import content from '../../content/content'
 import SectionArea from '../sectionElements/SectionArea'
@@ -111,7 +113,7 @@ function HeroTemplateNovo({
       paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
-      <section className="relative w-full pt-[110px] phone2:pt-[110px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] phone3:pt-[100px] tablet1:pt-[170px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
+      <section className="relative w-full pt-[110px] phone2:pt-[110px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] phone3:pt-[130px] tablet1:pt-[160px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
         {/* Abstract Background Shapes */}
         <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}
@@ -133,21 +135,53 @@ function HeroTemplateNovo({
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-[8px] phone2:text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
               >
                 <span>
-                  <Scale className="w-4 h-4" />
+                  <BriefcaseBusiness className="w-4 h-4" />
                 </span>
                 {content.texts.hero.miniTag}
               </div>
               <h1
-                className={`desktop1:text-start text-[17px] phone2:text-[28px] phone3:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] ${text} `}
+                className={`desktop1:text-start text-[17px] phone2:text-[28px] phone3:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-medium leading-[1.1] ${text} `}
               >
                 {content.texts.hero.title}
               </h1>
 
-              <p
+              {/* <p
                 className={`text-start desktop1:text-start text-[8px] phone2:text-[12px] phone3:text-[14px] md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
               >
                 {content.texts.hero.subtitle}
-              </p>
+              </p> */}
+
+              <ul
+                className={`text-start desktop1:text-start text-[8px] phone2:text-[12px] phone3:text-[14px] md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
+              >
+                <li className="flex items-center gap-2">
+                  <span>
+                    <Check />
+                  </span>
+                  Atendimento direto
+                </li>
+                <li className="flex items-center gap-2">
+                  {' '}
+                  <span>
+                    <Check />
+                  </span>
+                  Linguagem simples
+                </li>
+                <li className="flex items-center gap-2">
+                  {' '}
+                  <span>
+                    <Check />
+                  </span>{' '}
+                  Sem termos técnicos
+                </li>
+                <li className="flex items-center gap-2">
+                  {' '}
+                  <span>
+                    <Check />
+                  </span>
+                  Sem surpresas
+                </li>
+              </ul>
 
               {/* <div
                 className={`border font-secondFont p-2 rounded-md border-primaryDark text-[8px] phone2:text-[12px] phone3:text-[14px]`}
@@ -194,11 +228,11 @@ function HeroTemplateNovo({
               /> */}
               {obs && (
                 <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground w-full">
-                  {/* <div className="relative flex ">
+                  <div className="relative flex ">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
-                  </div> */}
-                  ⚠️
+                  </div>
+                  {/* ⚠️ */}
                   <span
                     className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
                   >
