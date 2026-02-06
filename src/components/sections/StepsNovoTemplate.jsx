@@ -45,9 +45,9 @@ function StepsNovoTemplate({ colorMode }) {
 
       break
     default:
-      backgroundMode = 'bg-secondary/60'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
+      backgroundMode = 'bg-terciary/60'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
       stepNumberBg = 'bg-white'
       stepNumberText = 'text-primaryDark'
       lineColor = 'bg-primaryDark/20'
@@ -89,7 +89,7 @@ function StepsNovoTemplate({ colorMode }) {
                 </div>
               </MotionDivDownToUp>
 
-              <MotionDivDownToUp>
+              {/* <MotionDivDownToUp>
                 <div className="flex flex-col gap-4 pt-12 w-fit justify-center items-start desktop1:hidden">
                   <ButtonReflexo
                     icon={
@@ -117,7 +117,7 @@ function StepsNovoTemplate({ colorMode }) {
                     className="text-white"
                   />
                 </div>
-              </MotionDivDownToUp>
+              </MotionDivDownToUp> */}
             </div>
 
             {/* Passos */}
@@ -161,7 +161,7 @@ function StepsNovoTemplate({ colorMode }) {
                 ))}
               </div>
 
-              <MotionDivDownToUp>
+              {/* <MotionDivDownToUp>
                 <div className="desktop1:flex flex-col gap-4 pt-4 w-fit justify-center items-start hidden">
                   <ButtonReflexo
                     icon={
@@ -189,7 +189,7 @@ function StepsNovoTemplate({ colorMode }) {
                     className="text-white"
                   />
                 </div>
-              </MotionDivDownToUp>
+              </MotionDivDownToUp> */}
             </div>
           </div>
         </div>

@@ -52,9 +52,9 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
       image = ' border-[8px] border-borderImage'
       break
     default:
-      backgroundMode = 'bg-white'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
+      backgroundMode = 'bg-terciary/60'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
       cardBg = 'bg-white/10'
       iconBg = 'bg-primaryDark/10 text-primaryDark'
@@ -94,7 +94,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                     {ButtonModal && (
                       <Button
                         onClick={onClick}
-                        className={`bg-transparent mt-4 border-none shadow-primary/20 font-secondFont py-0 uppercase font-bold transition-all px-0 hover:underline outline-none flex items-center gap-2 ${textDestaque}`}
+                        className={`bg-transparent mt-4 border-none shadow-primary/20 font-secondFont py-0 uppercase font-bold transition-all px-0 scale-100 hover:scale-95 duration-500 outline-none flex items-center gap-2 ${textDestaque}`}
                       >
                         {content.texts.about.buttonModalLabelAbout}
                         <ArrowRight width={24} height={24} />
@@ -137,7 +137,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                   )}
                 </MotionDivDownToUp>
 
-                <MotionDivDownToUp>
+                {/* <MotionDivDownToUp>
                   <div className="desktop1:flex flex-col gap-4 pt-4 w-fit justify-center items-start m-auto desktop1:m-0 hidden">
                     <ButtonReflexo
                       icon={
@@ -164,7 +164,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                       className="text-white mx-auto desktop1:m-0"
                     />
                   </div>
-                </MotionDivDownToUp>
+                </MotionDivDownToUp> */}
               </div>
 
               {/* Imagem com destaque */}
@@ -190,7 +190,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                 </div>
               </MotionDivDownToUp>
 
-              <div className="flex flex-col gap-4 w-fit justify-center items-center mx-auto desktop1:hidden">
+              {/* <div className="flex flex-col gap-4 w-fit justify-center items-center mx-auto desktop1:hidden">
                 <ButtonReflexo
                   icon={
                     <svg
@@ -215,7 +215,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                   colorMode={colorMode}
                   className="text-white"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
 

@@ -10,6 +10,7 @@ export default function ButtonReflexo({
   padding,
   className,
   bgClass,
+  shineClass,
   id,
   ...props
 }) {
@@ -27,13 +28,13 @@ export default function ButtonReflexo({
   const themes = {
     light: 'bg-primaryDark text-corTitulosBranca border border-primaryDark/20',
     dark: 'bg-primaryLight text-corTitulosPreto',
-    default: 'bg-secondary text-corTitulosPreto border border-primaryDark/20',
+    default: `bg-primaryDark text-corTitulosBranca border border-primaryDark/20 ${className}`,
   }
 
   const shineThemes = {
     light: 'bg-white/40',
     dark: 'bg-white/40',
-    default: 'bg-black/40',
+    default: 'bg-white/40',
   }
 
   const colors = isLigar
@@ -42,7 +43,7 @@ export default function ButtonReflexo({
       ? whatsAppThemes[colorMode]
       : (bgClass ?? themes[colorMode])
 
-  const shineColor = shineThemes[colorMode]
+  const shineColor = shineClass ?? shineThemes[colorMode]
   const spacing = padding || 'px-6 py-3'
 
   const { showGlobalButton } = useColorMode()
@@ -55,7 +56,6 @@ export default function ButtonReflexo({
       target="_blank"
       rel="noopener noreferrer"
       href={link}
-      onClick={() => gtag_report_conversion()}
       aria-label="Botão de contato"
       className={`${className}
           relative

@@ -69,14 +69,14 @@ function HeroTemplateNovo({
     case 'default':
       backgroundMode = 'bg-white'
       bgFaixaHero = 'bg-secondary'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
-      bgMinitag = 'bg-transparent border-primaryDark text-primaryDark'
+      bgMinitag = 'bg-white border-primaryDark text-primaryDark'
       // textObs = 'text-green-500'
       image = ' border-[8px] border-white'
       bgAlertHero = 'bg-white'
-      borderColor = 'border-white'
+      borderColor = 'bg-white'
   }
 
   const { showGlobalButton } = useColorMode()
@@ -113,7 +113,7 @@ function HeroTemplateNovo({
       paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
-      <section className="relative w-full pt-[110px] phone2:pt-[110px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] phone3:pt-[130px] tablet1:pt-[160px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
+      <section className="relative w-full pt-[110px] phone2:pt-[110px] pb-[30px] tablet1:pb-[64px] desktop1:pb-[96px] phone3:pt-[150px] tablet1:pt-[170px] tablet2:pt-[180px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
         {/* Abstract Background Shapes */}
         <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}
@@ -145,43 +145,11 @@ function HeroTemplateNovo({
                 {content.texts.hero.title}
               </h1>
 
-              {/* <p
+              <p
                 className={`text-start desktop1:text-start text-[8px] phone2:text-[12px] phone3:text-[14px] md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
               >
                 {content.texts.hero.subtitle}
-              </p> */}
-
-              <ul
-                className={`text-start desktop1:text-start text-[8px] phone2:text-[12px] phone3:text-[14px] md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
-              >
-                <li className="flex items-center gap-2">
-                  <span>
-                    <Check />
-                  </span>
-                  Atendimento direto
-                </li>
-                <li className="flex items-center gap-2">
-                  {' '}
-                  <span>
-                    <Check />
-                  </span>
-                  Linguagem simples
-                </li>
-                <li className="flex items-center gap-2">
-                  {' '}
-                  <span>
-                    <Check />
-                  </span>{' '}
-                  Sem termos técnicos
-                </li>
-                <li className="flex items-center gap-2">
-                  {' '}
-                  <span>
-                    <Check />
-                  </span>
-                  Sem surpresas
-                </li>
-              </ul>
+              </p>
 
               {/* <div
                 className={`border font-secondFont p-2 rounded-md border-primaryDark text-[8px] phone2:text-[12px] phone3:text-[14px]`}

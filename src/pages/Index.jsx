@@ -57,36 +57,36 @@ export default function Index() {
         <main>
           {/* LCP — NÃO usar lazy */}
           <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
-          <Important colorMode={colorMode} />
+          {/* <Important colorMode={colorMode} /> */}
           {/* Lazy sections */}
           <Suspense fallback={null}>
             <FeaturesNovaTemplate
               colorMode={colorMode}
               frasesDestaque={true}
               accordion={false}
-              buttons={true}
+              buttons={false}
             />
             {/* <Cards colorMode={colorMode} /> */}
 
             <AboutNovoTemplate
               colorMode={colorMode}
-              ButtonModal={false}
+              ButtonModal={true}
               benefits={false}
             />
-            {/* <SocialMediaTemplate colorMode={colorMode} /> */}
+            <SocialMediaTemplate colorMode={colorMode} />
             {/* <Authority colorMode={colorMode} /> */}
-            <CtaNovoTemplate colorMode={colorMode} container={true} />
+            <CtaNovoTemplate colorMode={colorMode} container={false} />
 
             <StepsNovoTemplate colorMode={colorMode} />
             {/* <BlogPosts colorMode={colorMode} /> */}
-            {/* <FaqNovoTemplate colorMode={colorMode} /> */}
+            <FaqNovoTemplate colorMode={colorMode} />
             <FooterNovoTemplate
               colorMode={colorMode}
               mapa={false}
               phone={true}
               phoneSecond={false}
-              expediente={false}
-              adress={false}
+              expediente={true}
+              adress={true}
               email={true}
               emailSecond={false}
               fraseFooter={true} // frase Google LLC

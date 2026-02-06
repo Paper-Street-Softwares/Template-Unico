@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://contador.edancontabilidade.com.br/sitemap.xml
+Sitemap: https://www.mendersonrufino.adv.br/sitemap.xml
