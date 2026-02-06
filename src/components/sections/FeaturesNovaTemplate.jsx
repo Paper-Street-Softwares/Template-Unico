@@ -63,10 +63,10 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
 
       break
     default:
-      backgroundMode = 'bg-secondary/60'
+      backgroundMode = 'bg-white'
       bgAccordion = '#fff'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
       cardBg = 'bg-quartenary'
       iconBg = 'bg-white text-primaryDark'

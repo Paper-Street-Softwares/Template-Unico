@@ -40,14 +40,14 @@ function SocialMediaTemplate({ colorMode }) {
       break
 
     default:
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-terciary/60'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       cardBg = 'bg-white'
       borderCard = 'border-border'
       arrowColor = 'text-mutedForeground group-hover:text-primaryDark'
       imageBorder = 'border-white'
-      miniTag = 'text-primaryLight'
+      miniTag = 'text-primaryDark'
   }
 
   return (

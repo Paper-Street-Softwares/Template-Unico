@@ -52,9 +52,9 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
       image = ' border-[8px] border-borderImage'
       break
     default:
-      backgroundMode = 'bg-white'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
+      backgroundMode = 'bg-terciary/60'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
       cardBg = 'bg-white/10'
       iconBg = 'bg-primaryDark/10 text-primaryDark'

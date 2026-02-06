@@ -45,9 +45,9 @@ function StepsNovoTemplate({ colorMode }) {
 
       break
     default:
-      backgroundMode = 'bg-secondary/60'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
+      backgroundMode = 'bg-terciary/60'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
       stepNumberBg = 'bg-white'
       stepNumberText = 'text-primaryDark'
       lineColor = 'bg-primaryDark/20'

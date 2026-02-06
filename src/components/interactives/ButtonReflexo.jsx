@@ -27,13 +27,14 @@ export default function ButtonReflexo({
   const themes = {
     light: 'bg-primaryDark text-corTitulosBranca border border-primaryDark/20',
     dark: 'bg-primaryLight text-corTitulosPreto',
-    default: 'bg-secondary text-corTitulosPreto border border-primaryDark/20',
+    default:
+      'bg-primaryDark text-corTitulosBranca border border-primaryDark/20',
   }
 
   const shineThemes = {
     light: 'bg-white/40',
     dark: 'bg-white/40',
-    default: 'bg-black/40',
+    default: 'bg-white/40',
   }
 
   const colors = isLigar
