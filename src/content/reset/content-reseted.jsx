@@ -454,7 +454,7 @@ const content = {
           A_Definir
         </h1>
       ),
-      subtitle: '',
+      subtitle: 'A_Definir',
       img: imgSteps,
       alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
@@ -492,23 +492,23 @@ const content = {
       container: {
         label1: {
           icon: <Check />,
-          text: ' Análise inicial do seu caso criminal',
+          text: 'A_Definir',
         },
         label2: {
           icon: <Check />,
-          text: ' Atendimento direto com advogado criminalista',
+          text: 'A_Definir',
         },
         label3: {
           icon: <Check />,
-          text: ' Resposta rápida e acompanhamento pelo WhatsApp',
+          text: 'A_Definir',
         },
         label4: {
           icon: <Check />,
-          text: ' Atuação iniciada imediatamente após a análise',
+          text: 'A_Definir',
         },
         label5: {
           icon: <Check />,
-          text: ' Mais segurança para você e sua família em um momento decisivo',
+          text: 'A_Definir',
         },
       },
       // subtitleDireita: (

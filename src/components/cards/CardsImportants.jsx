@@ -10,7 +10,7 @@ function CardsImportants({ title, paragraph, colorMode, className }) {
       bgCard = 'bg-terciary hover:bg-primaryDark'
       bgCircle = 'bg-primaryDark'
       bgCircleHover =
-        'group-hover:bg-white group-hover:border-2 group-hover:border-black'
+        'group-hover:bg-white group-hover:border-2 group-hover:border-primaryDark'
       titleMode = 'text-corTitulosPreto group-hover:text-corTitulosBranca'
       description =
         'text-corOutrosTextosPreto group-hover:text-corOutrosTextosBranca'
