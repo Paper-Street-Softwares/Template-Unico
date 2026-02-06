@@ -25,8 +25,6 @@ import {
   Car,
   HandCoins,
   Check,
-  Building,
-  MessageCircle,
 } from 'lucide-react'
 import { Users } from 'lucide-react'
 import { FileText } from 'lucide-react'
@@ -34,14 +32,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Edan Contabilidade em Ilhéus – BA',
+  name: 'A_Definir',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'contador.edancontabilidade.com.br', // Sem "www"
+  domain: 'A_Definir', // Sem "www"
   phone: {
-    ddd: '73',
-    firstPart: '98230', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '2451', // Apenas os 4 últimos números
+    ddd: '00',
+    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0000', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -56,7 +54,10 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>Ilhéus - BA,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -113,12 +114,12 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'Contabilidade para cuidar da sua empresa',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Há mais de{' '}
+          A_Definir{' '}
           <span className="destaque relative italic font-light">
-            40 anos
+            A_Definir
             <span>
               <svg
                 className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
@@ -145,23 +146,23 @@ const content = {
                 />
               </svg>
             </span>
-          </span>{' '}
-          cuidando da sua contabilidade. Da sua tranquilidade também.
+          </span>
+          ?
         </h1>
       ),
-      subtitle: <p></p>,
+      subtitle: <p>A_Definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Falar com Contador',
+      ctaButtonText: 'A_Definir',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Atendimento em todo território nacional.',
+        text: 'A_Definir',
         textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
@@ -185,54 +186,47 @@ const content = {
       },
     },
     important: {
-      miniTag: 'Dúvidas comuns',
-      title:
-        'Se você já se fez alguma dessas perguntas, sua contabilidade merece atenção agora.',
+      miniTag: 'A_Definir',
+      title: 'A_Definir',
       cards: {
         card1: {
-          title: 'Será que estou pagando imposto a mais?',
-          paragraph:
-            'Na maioria das empresas, sim — não por erro do empresário, mas por falta de análise. Sem revisar o regime tributário e os números com frequência, é comum pagar mais do que o necessário. O problema é que quanto mais o tempo passa, mais dinheiro você perde. Isso precisa ser analisado o quanto antes.',
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
         },
         card2: {
-          title: 'Meu contador só me manda as guias… isso é normal?',
-          paragraph:
-            'Isso é muito comum, mas não deveria ser. A contabilidade precisa orientar, explicar e ajudar você a tomar decisões. Quando o contador só envia boletos, você fica no escuro — e empresa no escuro corre riscos. Esse tipo de relação costuma gerar multas e prejuízos silenciosos.',
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
         },
         card3: {
-          title: 'Empresa pequena também precisa de contabilidade organizada?',
-          paragraph:
-            'Principalmente empresa pequena. É no começo que os erros mais caros acontecem. Uma contabilidade bem feita desde já evita multas, organiza o caixa e prepara a empresa para crescer sem sustos. Esperar “ficar grande” costuma sair muito mais caro depois.',
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
         },
         card4: {
-          title: 'E se eu já estiver fazendo algo errado sem saber?',
-          paragraph:
-            'Isso acontece com mais empresários do que você imagina — e quase sempre tem solução. Quanto antes identificar e corrigir, menores são os riscos e custos. O perigo está em ignorar e deixar o problema crescer. Por isso, a orientação certa no momento certo faz toda a diferença.',
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
         },
       },
-      fraseObs:
-        'Entre em contato conosco e lhe daremos todo o suporte necessário',
-      ctaButtonText: 'Falar conosco agora',
+      fraseObs: 'A_Definir',
+      ctaButtonText: 'A_Definir',
     },
     features: {
-      miniTag: 'O que você realmente ganha',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Entregamos
-          <span className="destaque italic font-light"> tranquilidade </span>
-          para tocar sua empresa
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir</span>
+          A_Definir
         </h1>
       ),
-      subtitle:
-        'Quando a contabilidade é bem feita, você entende seus números, evita riscos e consegue planejar o crescimento com segurança.',
+      subtitle: 'A_Definir',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: '100%',
-      subtitleMessageFeature: 'paz para empreender',
+      titleMessageFeature: 'A_Definir',
+      subtitleMessageFeature: 'A_Definir',
       cards: {
         card1: {
-          title: 'Impostos sem sustos',
-          subtitle: 'Cálculo certo, prazos em dia e menos impostos pagos',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -241,17 +235,31 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <FileText />,
+          icon: <Lock />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'Contabilidade que explica',
-          subtitle: 'Números claros para você entender e decidir melhor',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
               <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Car />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card3: {
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
+          description: (
+            <div>
+              A_Definir <br />
               <br />
               A_Definir
             </div>
@@ -260,23 +268,9 @@ const content = {
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
-        card3: {
-          title: 'Empresa organizada de verdade',
-          subtitle: 'Organização contábil que evita erros e prejuízos',
-          description: (
-            <div>
-              A_Definir <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Building />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
         card4: {
-          title: 'Acompanhamento próximo',
-          subtitle: 'Orientação constante para você nunca ficar perdido',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -285,57 +279,57 @@ const content = {
               <br />
             </div>
           ),
-          icon: <MessageCircle />,
+          icon: <FileText />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
-        // card5: {
-        //   title: 'A_Definir',
-        //   subtitle: 'A_Definir',
-        //   description: (
-        //     <div>
-        //       A_Definir
-        //       <br />
-        //       <br />
-        //       A_Definir
-        //     </div>
-        //   ),
-        //   icon: (
-        //     <svg
-        //       xmlns="http://www.w3.org/2000/svg"
-        //       width="24"
-        //       height="24"
-        //       viewBox="0 0 24 24"
-        //       fill="none"
-        //       stroke="currentColor"
-        //       stroke-width="2"
-        //       stroke-linecap="round"
-        //       stroke-linejoin="round"
-        //       class="lucide lucide-circle-dollar-sign-icon lucide-circle-dollar-sign"
-        //     >
-        //       <circle cx="12" cy="12" r="10" />
-        //       <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
-        //       <path d="M12 18V6" />
-        //     </svg>
-        //   ),
-        //   buttonLabelModal: 'Fale Conosco',
-        //   buttonLabel: 'Saiba Mais',
-        // },
-        // card6: {
-        //   title: 'A_Definir',
-        //   subtitle: 'A_Definir',
-        //   description: (
-        //     <div>
-        //       A_Definir
-        //       <br />
-        //       <br />
-        //       A_Definir
-        //     </div>
-        //   ),
-        //   icon: <Scale />,
-        //   buttonLabelModal: 'Fale Conosco',
-        //   buttonLabel: 'Saiba Mais',
-        // },
+        card5: {
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-dollar-sign-icon lucide-circle-dollar-sign"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" />
+              <path d="M12 18V6" />
+            </svg>
+          ),
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card6: {
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Scale />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
       },
       moreFeatures: {
         card1: {
@@ -354,7 +348,7 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: 'Falar com a Edan',
+      ctaButtonText: 'A_Definir',
     },
     emergency: {
       minitag: 'A_Definir',
@@ -373,29 +367,22 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'Quem cuida da sua empresa',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          Compromisso com seu
-          <span className="destaque italic font-light"> negócio</span>{' '}
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir</span>{' '}
+          A_Definir
         </h1>
       ),
       SecondPartTitle: '',
-      subtitle:
-        'Atendimento humano e estratégico para proteger sua empresa e seus números.',
+      subtitle: 'A_Definir',
       paragraph: (
         <div>
-          Há mais de 40 anos, a Edan Contabilidade atua com excelência no
-          cuidado das obrigações contábeis e fiscais de pessoas físicas e
-          jurídicas. Nosso foco vai além de cumprir prazos: trabalhamos para
-          trazer clareza, controle e segurança para empresários que querem
-          crescer sem medo de erros ou multas.
+          A_Definir
           <br />
           <br />
-          Cada empresa é acompanhada de forma próxima e responsável, com
-          orientação clara e linguagem simples. Nosso objetivo é tirar o peso da
-          contabilidade das suas costas, evitar riscos e ajudar você a tomar
-          decisões melhores para o futuro do seu negócio.
+          A_Definir
         </div>
       ),
 
@@ -414,7 +401,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Falar com a Edan agora',
+      ctaButtonText: 'A_Definir',
       // aboutSocial: {
       //   img: {
       //     img: aboutSocialImg,
@@ -459,78 +446,69 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'Por que escolher a Edan',
+      miniTag: 'A_Definir',
       title: (
         <h1>
-          O que
-          <span className="destaque italic font-light"> muda </span>
-          quando a Edan cuida da sua contabilidade
+          A_Definir
+          <span className="destaque italic font-light"> A_Definir </span>
+          A_Definir
         </h1>
       ),
-      subtitle:
-        'Menos preocupação no dia a dia. Mais controle, segurança e tempo pra focar no que importa.',
+      subtitle: 'A_Definir',
       img: imgSteps,
       alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Adeus medo de multas',
-          cardDescription:
-            'Você deixa de viver preocupado com prazos e fiscalizações. A Edan cuida de tudo e mantém sua empresa em dia, evitando erros que geram multas e prejuízos silenciosos.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Impostos mais justos',
-          cardDescription:
-            'Analisamos sua empresa para evitar pagamentos desnecessários. Você passa a pagar apenas o que é devido, de forma legal, sem surpresas no fim do mês.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Números que fazem sentido',
-          cardDescription:
-            'Você entende quanto sua empresa realmente fatura, lucra e pode investir. Nada de relatórios confusos ou respostas vagas quando você pergunta.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Tranquilidade para crescer',
-          cardDescription:
-            'Com a contabilidade organizada, você planeja o futuro da empresa com segurança, dorme melhor e tem mais tempo para a família.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
       },
-      ctaButtonText: 'Quero essa tranquilidade',
+      ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
-      miniTag: 'Fale conosco',
-      title: <h1>Não deixe sua contabilidade virar um problema</h1>,
+      miniTag: 'A_Definir',
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Cada mês sem organização pode gerar erros, multas e impostos pagos à
-            toa. A Edan resolve isso por você — com clareza, segurança e sem
-            burocracia.
-          </p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
       container: {
         label1: {
           icon: <Check />,
-          text: ' Análise inicial da sua situação contábil',
+          text: 'A_Definir',
         },
         label2: {
           icon: <Check />,
-          text: 'Atendimento direto com especialistas da Edan',
+          text: 'A_Definir',
         },
         label3: {
           icon: <Check />,
-          text: 'Orientação clara, sem “contabilês”',
+          text: 'A_Definir',
         },
         label4: {
           icon: <Check />,
-          text: ' Organização e regularização sem dor de cabeça',
+          text: 'A_Definir',
         },
         label5: {
           icon: <Check />,
-          text: ' Você no controle da empresa, sem medo de multas',
+          text: 'A_Definir',
         },
       },
       // subtitleDireita: (
@@ -541,7 +519,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Fale com a gente agora mesmo',
+      ctaButtonText: 'A_Definir',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
