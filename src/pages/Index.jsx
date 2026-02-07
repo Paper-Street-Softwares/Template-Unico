@@ -48,6 +48,8 @@ import { Diferences } from '../components/sections/Diferences'
 export default function Index() {
   const { colorMode, setColorMode } = useColorMode()
 
+  
+
   return (
     <>
       <ColorModeProvider>
@@ -64,7 +66,6 @@ export default function Index() {
               colorMode={colorMode}
               frasesDestaque={true}
               accordion={false}
-              buttons={false}
             />
             {/* <Cards colorMode={colorMode} /> */}
 

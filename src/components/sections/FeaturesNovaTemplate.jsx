@@ -1,23 +1,23 @@
-import React, { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
+import { Button } from 'primereact/button'
 import content from '../../content/content'
+import Accordion from '@mui/material/Accordion'
+import React, { useRef, useState } from 'react'
+import Typography from '@mui/material/Typography'
 import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
 import ButtonReflexo from '../interactives/ButtonReflexo'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import { ButtonsLps } from '../../context/UseContextArchive'
+import AccordionDetails from '@mui/material/AccordionDetails'
+import AccordionSummary from '@mui/material/AccordionSummary'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import SectionWrapper from '../sectionElements/SectionWrapper'
 import { ArrowLeft, ArrowRight, Phone, Scale } from 'lucide-react'
 import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
-import { Button } from 'primereact/button'
-
-import Accordion from '@mui/material/Accordion'
-import AccordionSummary from '@mui/material/AccordionSummary'
-import AccordionDetails from '@mui/material/AccordionDetails'
-import Typography from '@mui/material/Typography'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 const features = Object.values(content.texts.features.cards)
 
-function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
+function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
   // Definindo classes dinamicamente conforme o colorMode
   let backgroundMode,
     text,
@@ -76,6 +76,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
       bgObservation = 'bg-primaryDark'
       textObservation = 'text-white'
   }
+  const { showGlobalButtonsLps } = ButtonsLps()
 
   const features = Object.values(content.texts.features.cards)
 
@@ -125,9 +126,9 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, buttons }) {
                     </div>
                   )}
                 </MotionDivDownToUp>
-                {buttons && (
+                {showGlobalButtonsLps && (
                   <MotionDivDownToUp>
-                    <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-start desktop1:m-auto">
+                    <div className="flex flex-col gap-4 pt-4 w-fit justify-center items-start m-auto">
                       <ButtonReflexo
                         icon={
                           <svg

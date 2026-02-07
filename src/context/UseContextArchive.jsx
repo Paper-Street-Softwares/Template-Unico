@@ -21,6 +21,15 @@ export function ColorModeProvider({ children }) {
   )
 }
 
+export function ButtonsLps() {
+  const [showGlobalButtonsLps, setShowGlobalButtonsLps] = useState(false) // ativa as os botões da lps
+
+  return {
+    showGlobalButtonsLps,
+    setShowGlobalButtonsLps,
+  }
+}
+
 export const whatsAppThemes = {
   light: 'bg-wppDark text-corTitulosPreto border-green-600/30',
   dark: 'bg-wppLight text-corTitulosBranca border-green-600/30',

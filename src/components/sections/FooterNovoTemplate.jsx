@@ -48,7 +48,7 @@ function FooterNovoTemplate({
     default:
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
-      iconColor = 'text-primaryDark/60'
+      iconColor = 'text-white/60'
       backgroundMode = 'bg-primaryDark'
   }
 
