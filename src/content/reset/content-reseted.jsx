@@ -472,28 +472,6 @@ const content = {
           <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
-      container: {
-        label1: {
-          icon: <Check />,
-          text: 'A_Definir',
-        },
-        label2: {
-          icon: <Check />,
-          text: 'A_Definir',
-        },
-        label3: {
-          icon: <Check />,
-          text: 'A_Definir',
-        },
-        label4: {
-          icon: <Check />,
-          text: 'A_Definir',
-        },
-        label5: {
-          icon: <Check />,
-          text: 'A_Definir',
-        },
-      },
       // subtitleDireita: (
       //   <p className="gap-3 flex font-mainFont opacity-60 mt-1">
       //     <span>E N T R E </span> E M <span>C O N T A T O</span> V I A

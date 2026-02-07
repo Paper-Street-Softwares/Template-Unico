@@ -9,6 +9,7 @@ import { Phone } from 'lucide-react'
 import WhatsappForm from '../interactives/WhatsappForm'
 import FormAndAdress from '../interactives/Forms/FormAndAdress'
 import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import { Check } from 'lucide-react'
 
 function CtaNovoTemplate({ colorMode, container }) {
   // Classes dinâmicas conforme colorMode
@@ -32,12 +33,33 @@ function CtaNovoTemplate({ colorMode, container }) {
     default:
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corTitulosBranca/60'
-      textDestaque = 'text-primaryDark'
+      textDestaque = 'text-primaryLight'
       backgroundMode = 'bg-primaryDark'
-      miniTagCtaDark = 'text-white'
+      miniTagCtaDark = 'text-primaryLight'
   }
 
-  const lisContainer = Object.values(content.texts.ctaSecondary.container)
+  const containerList = [
+    {
+      icon: <Check className={`${textDestaque}`} />,
+      text: ' Análise inicial do seu caso criminal',
+    },
+    {
+      icon: <Check className={`${textDestaque}`} />,
+      text: ' Atendimento direto com advogado criminalista',
+    },
+    {
+      icon: <Check className={`${textDestaque}`} />,
+      text: ' Resposta rápida e acompanhamento pelo WhatsApp',
+    },
+    {
+      icon: <Check className={`${textDestaque}`} />,
+      text: ' Atuação iniciada imediatamente após a análise',
+    },
+    {
+      icon: <Check className={`${textDestaque}`} />,
+      text: ' Mais segurança para você e sua família em um momento decisivo',
+    },
+  ]
 
   return (
     <SectionArea className={`relative z-0 ${backgroundMode}`}>
@@ -65,7 +87,7 @@ function CtaNovoTemplate({ colorMode, container }) {
               <div
                 className={`rounded-lg p-4 mb-4 flex flex-col items-center ${textOpacity}`}
               >
-                {lisContainer.map((item, index) => (
+                {containerList.map((item, index) => (
                   <div
                     key={index}
                     className="font-secondFont flex gap-2 items-start w-full justify-start tablet1:justify-center text-start desktop1:text-start"
@@ -96,8 +118,6 @@ function CtaNovoTemplate({ colorMode, container }) {
                 link={content.texts.links.ctaWhatsapp}
                 label={content.texts.ctaSecondary.ctaButtonText}
                 colorMode={colorMode}
-                className={`text-sm mb-0 bg-white text-corTitulosPreto border border-primaryDark/20`}
-                shineClass={`bg-primaryDark/20`}
               />
               <ButtonReflexo
                 id="ligar"
