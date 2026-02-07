@@ -1,4 +1,5 @@
 import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import BlogButton from '../interactives/BlogButton'
 import Button from '../interactives/Button'
 
 export default function WordPressBlogCard({ img, title, subtitle, link }) {
@@ -13,19 +14,19 @@ export default function WordPressBlogCard({ img, title, subtitle, link }) {
             <div className="w-full">{img}</div>
           </div>
           <h1
-            className="mt-4 text-title1 leading-[25px] font-medium mb-[12px] text-white"
+            className="mt-4 text-title1 leading-[25px] font-medium font-secondFont mb-[12px] text-white"
             title="blogTitle"
           >
             {title}
           </h1>
           <h2
-            className="text-paragraph2 desktop2:text-paragraph3 mb-[32px] text-white/60 leading-[18px] desktop1:leading-[21px]  "
+            className="text-paragraph2 desktop2:text-paragraph3 font-secondFont mb-[32px] text-white/60 leading-[18px] desktop1:leading-[21px]  "
             title="blogSubtitle"
           >
             {subtitle}
           </h2>
           <div className="flex ">
-            <Button
+            <BlogButton
               label="Ver matéria completa"
               buttonLink={link}
               className="text-labelButtons bg-transparent pl-0"
