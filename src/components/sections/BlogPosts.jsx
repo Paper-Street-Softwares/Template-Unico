@@ -63,7 +63,7 @@ function BlogPosts({ colorMode }) {
       <SectionArea className={backgroundMode} id="blog">
         <SectionWrapper>
           <SectionHeaderNovo
-            className="text-center mb-[26px] tablet1:mb-[40px] desktop1:mb-[72px]"
+            className="text-center"
             miniTitle={content.texts.blog.miniTag}
             title={content.texts.blog.title}
             subtitle={content.texts.blog.subtitle}
