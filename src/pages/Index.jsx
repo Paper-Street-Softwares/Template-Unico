@@ -86,8 +86,8 @@ export default function Index() {
               mapa={false}
               phone={true}
               phoneSecond={false}
-              expediente={true}
-              adress={true}
+              expediente={false}
+              adress={false}
               email={true}
               emailSecond={false}
               fraseFooter={true} // frase Google LLC

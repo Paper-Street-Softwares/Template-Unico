@@ -32,14 +32,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'A_Definir',
+  name: 'Funakawa Advogado',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'A_Definir', // Sem "www"
+  domain: 'ssfadv.com.br', // Sem "www"
   phone: {
-    ddd: '00',
-    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '0000', // Apenas os 4 últimos números
+    ddd: '11',
+    firstPart: '95087', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '4527', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -75,8 +75,8 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: '', // Sem o @
-  facebookProfile: '',
+  instagramProfile: 'souzafunakawa', // Sem o @
+  facebookProfile: 'share/1GMy48ZeSb/',
   linkeDinProfile: '',
   x: '',
   tiktokProfile: '',
@@ -104,25 +104,25 @@ const content = {
         'Início',
         'Serviços',
         'Sobre',
-        // 'Perguntas',
+        'Perguntas',
         // 'Blog',
         // 'Mapa',
       ],
-      menuId: ['home', 'feature', 'about'],
+      menuId: ['home', 'feature', 'about', 'faq'],
       ariaLabel: 'Botão de Contato',
       ctaButtonText: 'Contato',
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'A_Definir',
+      miniTag: 'ESCRITÓRIO DE ADVOCACIA',
       title: (
         <h1>
-          A_Definir{' '}
+          Análise jurídica clara para decisões{' '}
           <span className="destaque relative italic font-light">
-            A_Definir
+            seguras
             <span>
               <svg
-                className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
+                className="hero-underline absolute bottom-2 left-0 w-full h-3 text-white hidden desktop1:flex"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -134,7 +134,7 @@ const content = {
                 />
               </svg>
               <svg
-                className="hero-underline absolute bottom-0 left-0 w-full h-3 text-accent/30 desktop1:hidden"
+                className="hero-underline absolute bottom-0 left-0 w-full h-3 text-white desktop1:hidden"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -147,22 +147,26 @@ const content = {
               </svg>
             </span>
           </span>
-          ?
         </h1>
       ),
-      subtitle: <p>A_Definir</p>,
+      subtitle: (
+        <p>
+          Atendimento jurídico com orientação técnica, ética profissional e
+          acompanhamento responsável em cada demanda.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Solicitar atendimento',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'A_Definir',
+        text: 'Atendimento presencial e online para todo Brasil.',
         textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
