@@ -61,7 +61,7 @@ function NavbarNovaTemplate({
       colorMenu = 'text-white'
       bgOpacitySidebar = 'bg-white/70'
       backgrondModeActive = 'bg-primaryDark'
-      borderButtons = 'border-2 border-terciary/60'
+      backgrondModeActive = 'bg-transparent'
   }
 
   return (
@@ -156,8 +156,6 @@ function NavbarNovaTemplate({
                 </svg>
               }
               colorMode={colorMode}
-              className={`text-sm mb-0 ${borderButtons} bg-white text-corTitulosPreto border border-primaryDark/20`}
-              shineClass={`bg-primaryDark/20`}
             />
           </div>
 
@@ -240,8 +238,7 @@ function NavbarNovaTemplate({
                     link={content.texts.links.ctaWhatsapp}
                     label={content.texts.navbar.ctaButtonText}
                     colorMode={colorMode}
-                    className={`w-fit text-sm mb-0 ${borderButtons} bg-white text-corTitulosPreto border border-primaryDark/20`}
-                    shineClass={`bg-primaryDark/20`}
+                 
                   />
                 </div>
               </motion.div>

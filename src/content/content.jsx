@@ -380,7 +380,7 @@ const content = {
 
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
-        <p className="text-mutedForeground font-secondFont">
+        <p className="font-secondFont">
           Atuo nas áreas de Direito de Família e Direito do Trabalho, com uma
           advocacia construída sobre técnica, responsabilidade e compromisso com
           cada cliente atendido. Minha atuação é pautada por orientação jurídica

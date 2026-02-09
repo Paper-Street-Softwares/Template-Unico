@@ -371,7 +371,7 @@ const content = {
 
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
-        <p className="text-mutedForeground font-secondFont">
+        <p className="font-secondFont">
           A_Definir
           <br />
           <br />

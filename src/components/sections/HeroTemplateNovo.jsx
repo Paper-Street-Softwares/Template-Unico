@@ -68,7 +68,7 @@ function HeroTemplateNovo({
       break
     case 'default':
       backgroundMode = 'bg-primaryDark'
-      bgFaixaHero = 'bg-[#0D2525]'
+      bgFaixaHero = 'bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-primaryLight'
@@ -110,17 +110,15 @@ function HeroTemplateNovo({
     <SectionArea
       data-theme={colorMode}
       id="home"
-      paddingTopAndBottom={false}
+    paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
-      <section className="relative w-full pt-[110px] phone2:pt-[110px] pb-[64px] desktop1:pb-[96px] phone3:pt-[150px] tablet1:pt-[170px] tablet2:pt-[180px] desktop1:pt-[180px] flex items-center justify-center overflow-hidden font-mainFont">
+      <section className="relative w-full pt-[130px] phone2:pt-[140px] phone3:pt-[160px] tablet1:pt-[164px] tablet2:pt-[177px] desktop1:pt-[195px] desktop2:pt-[220px] pb-[64px] desktop1:pb-[96px] flex items-center justify-center overflow-hidden font-mainFont">
         {/* Abstract Background Shapes */}
         <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}
         />
-        <div
-          className={`absolute bottom-0 left-0 w-[40%] h-1/2 rounded-full blur-3xl -translate-x-1/4 translate-y-1/4 z-0 ${backgroundMode}`}
-        />
+
         <SectionWrapper>
           <div className="container relative z-10 grid lg:grid-cols-2 gap-4 phone2:gap-6 lg:gap-20 items-center">
             {/* Content */}

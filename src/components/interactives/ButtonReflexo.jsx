@@ -1,6 +1,7 @@
 import { useColorMode } from '../../context/UseContextArchive'
 import { whatsAppThemes } from '../../context/UseContextArchive'
 import { alertTheme } from '../../context/UseContextArchive'
+import { defaultButtonThemes } from '../../context/UseContextArchive'
 
 export default function ButtonReflexo({
   link,
@@ -25,11 +26,11 @@ export default function ButtonReflexo({
         ? 'shadow-primaryLight/20'
         : 'shadow-primaryDark/20'
 
-  const themes = {
-    light: 'bg-primaryDark text-corTitulosBranca border border-primaryDark/20',
-    dark: 'bg-primaryLight text-corTitulosPreto',
-    default: `bg-primaryLight text-corTitulosPreto ${className}`,
-  }
+  // const themes = {
+  //   light: 'bg-primaryDark text-corTitulosBranca border border-primaryDark/20',
+  //   dark: 'bg-primaryLight text-corTitulosPreto',
+  //   default: `bg-primaryLight text-corTitulosPreto ${className}`,
+  // }
 
   const shineThemes = {
     light: 'bg-white/40',
@@ -41,7 +42,7 @@ export default function ButtonReflexo({
     ? alertTheme[colorMode]
     : effectiveWhatsAppColor
       ? whatsAppThemes[colorMode]
-      : (bgClass ?? themes[colorMode])
+      : (bgClass ?? defaultButtonThemes[colorMode])
 
   const shineColor = shineClass ?? shineThemes[colorMode]
   const spacing = padding || 'px-6 py-3'
