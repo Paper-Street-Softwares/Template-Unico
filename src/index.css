@@ -10,6 +10,10 @@
   [data-theme='dark'] .destaque {
     @apply text-primaryLight;
   }
+
+   [data-theme='default'] .destaque {
+    @apply text-primaryLight;
+  }
 }
 
 /* default (light) */

@@ -21,28 +21,28 @@ import {
   Key,
   LucideIdCard,
   Lock,
+  MessageSquare,
   Scale,
+  Users,
+  User,
   Car,
   HandCoins,
   Check,
-  PieChart,
-  BriefcaseBusiness,
-  HardHat,
 } from 'lucide-react'
-import { Users } from 'lucide-react'
+
 import { FileText } from 'lucide-react'
 
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Dr. Menderson Rufino',
+  name: 'Funakawa Advogado',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'mendersonrufino.adv.br', // Sem "www"
+  domain: 'ssfadv.com.br', // Sem "www"
   phone: {
-    ddd: '31',
-    firstPart: '97513', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '3858', // Apenas os 4 últimos números
+    ddd: '11',
+    firstPart: '95087', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '4527', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -57,10 +57,10 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>Rua Tamoios nº 462,</p>
-      <p>sala 802,8º andar,</p>
-      <p>Belo Horizonte - MG,</p>
-      <p>CEP: 30120-050</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -74,12 +74,12 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>8h às 17h</p>
+      <p>A_Definir</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: 'mendersonrufino', // Sem o @
-  facebookProfile: 'menderson.rufino',
+  instagramProfile: 'souzafunakawa', // Sem o @
+  facebookProfile: 'share/1GMy48ZeSb/',
   linkeDinProfile: '',
   x: '',
   tiktokProfile: '',
@@ -117,15 +117,15 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'ADVOCACIA EM FAMÍLIA E TRABALHO',
+      miniTag: 'ESCRITÓRIO DE ADVOCACIA',
       title: (
         <h1>
-          Direito não se perde, se{' '}
+          Análise jurídica clara para decisões{' '}
           <span className="destaque relative italic font-light">
-            defende
+            seguras
             <span>
               <svg
-                className="hero-underline absolute bottom-2 left-0 w-full h-3 text-accent/30 hidden desktop1:flex"
+                className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-white hidden desktop1:flex"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -137,7 +137,7 @@ const content = {
                 />
               </svg>
               <svg
-                className="hero-underline absolute bottom-0 left-0 w-full h-3 text-accent/30 desktop1:hidden"
+                className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-white desktop1:hidden"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -154,8 +154,8 @@ const content = {
       ),
       subtitle: (
         <p>
-          Atuação que já ajudou famílias e trabalhadores a garantir direitos com
-          segurança jurídica
+          Atendimento jurídico com orientação técnica, ética profissional e
+          acompanhamento responsável em cada demanda.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -164,12 +164,12 @@ const content = {
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Falar com o Dr. Menderson Rufino',
+      ctaButtonText: 'Solicitar atendimento',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Atendimento presencial e online para todo Brasil',
+        text: 'Atendimento presencial e online para todo Brasil.',
         textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
@@ -193,48 +193,52 @@ const content = {
       },
     },
     important: {
-      miniTag: 'A_Definir',
-      title: 'A_Definir',
+      miniTag: 'Atenção',
+      title: 'O que é importante saber sobre atendimento jurídico',
       cards: {
         card1: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Preciso mesmo de um advogado para esse tipo de problema?',
+          paragraph:
+            'A orientação jurídica permite avaliar sua situação com mais segurança e entender quais caminhos são adequados ao seu caso. Para saber como isso se aplica à sua realidade, o ideal é conversar diretamente com um advogado.',
         },
         card2: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Meu caso é simples, vale a pena procurar um advogado?',
+          paragraph:
+            'Situações consideradas simples podem ter detalhes importantes que passam despercebidos. Uma análise profissional ajuda a esclarecer essas questões e indicar a melhor forma de condução. Entre em contato para uma avaliação inicial.',
         },
         card3: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Quanto tempo esse tipo de caso costuma levar?',
+          paragraph:
+            'Os prazos variam conforme o tipo de demanda e os órgãos envolvidos. Cada caso possui particularidades que precisam ser analisadas individualmente, o que pode ser esclarecido em um atendimento direto.',
         },
         card4: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: 'Vou precisar entrar com processo ou dá pra resolver antes?',
+          paragraph:
+            'Existem diferentes possibilidades de solução, que dependem da análise do caso concreto. A orientação jurídica permite avaliar alternativas e definir o caminho mais adequado. Para isso, é importante falar com um advogado.',
         },
       },
-      fraseObs: 'A_Definir',
-      ctaButtonText: 'A_Definir',
+      fraseObs:
+        'Entre em contato conosco e lhe daremos todo o suporte necessário',
+      ctaButtonText: 'Falar conosco agora pelo WhatsApp',
     },
     features: {
-      miniTag: 'Como posso ajudar',
+      miniTag: 'ÁREAS DE ATUAÇÃO',
       title: (
         <h1>
-          Você
-          <span className="destaque italic font-light"> não precisa </span>
-          enfrentar isso sozinho
+          Atuação
+          <span className="destaque italic font-light"> jurídica</span> em
+          diferentes áreas do Direito
         </h1>
       ),
-      subtitle: 'Apoio jurídico claro e firme quando você mais precisa',
+      subtitle: 'Atendimento jurídico com ética, técnica e responsabilidade.',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
       titleMessageFeature: '100%',
-      subtitleMessageFeature: 'foco no cliente',
+      subtitleMessageFeature: 'compromisso profissional',
       cards: {
         card1: {
-          title: 'Divórcio sem Dor de Cabeça',
-          subtitle:
-            'Divórcios resolvidos com agilidade e menos desgaste emocional',
+          title: 'Direito Trabalhista',
+          subtitle: 'Defesa técnica em questões e direitos trabalhistas.',
           description: (
             <div>
               A_Definir
@@ -243,13 +247,58 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Scale />,
+          icon: <Briefcase />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'Pensão e Guarda dos Filhos',
-          subtitle: 'Proteção dos direitos dos filhos com decisões justas',
+          title: 'Direito Cível',
+          subtitle: 'Assessoria em demandas cíveis e relações patrimoniais.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <User />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card3: {
+          title: 'Direito Previdenciário',
+          subtitle:
+            'Assessoria em benefícios previdenciários e aposentadorias.',
+          description: (
+            <div>
+              A_Definir <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Scale />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card4: {
+          title: 'Direito Criminal',
+          subtitle: 'Defesa técnica em processos e investigações criminais.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
+            </div>
+          ),
+          icon: <Gavel />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card5: {
+          title: 'Direito de Família e Sucessões',
+          subtitle: 'Assessoria em questões familiares e sucessórias.',
           description: (
             <div>
               A_Definir
@@ -262,54 +311,9 @@ const content = {
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
-        card3: {
-          title: 'Inventário e Partilha de Bens',
-          subtitle: 'Inventário e partilha de bens sem conflitos ou atrasos',
-          description: (
-            <div>
-              A_Definir <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <PieChart />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card4: {
-          title: 'Direitos do Trabalhador',
-          subtitle: 'Garantia de verbas trabalhistas e direitos do empregado',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <BriefcaseBusiness />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card5: {
-          title: 'Reclamação Trabalhista',
-          subtitle:
-            'Busca por indenizações e correção de injustiças no trabalho',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <HardHat />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
         card6: {
-          title: 'Acordos Trabalhistas Inteligentes',
-          subtitle: 'Acordos rápidos para resolver conflitos trabalhistas',
+          title: 'Consultoria Jurídica',
+          subtitle: 'Orientação jurídica preventiva e consultiva contínua.',
           description: (
             <div>
               A_Definir
@@ -318,7 +322,7 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <FileText />,
+          icon: <MessageSquare />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
@@ -340,7 +344,7 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Entrar em contato',
     },
     emergency: {
       minitag: 'A_Definir',
@@ -359,51 +363,50 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'QUEM É O DR. MENDERSON RUFINO',
+      miniTag: 'QUEM ESTÁ POR TRÁS DO SEU DIREITO',
       title: (
         <h1>
-          Nossa
-          <span className="destaque italic font-light"> trajetória</span>{' '}
+          Profissionais a serviço
+          <span className="destaque italic font-light"> do Direito</span>{' '}
         </h1>
       ),
       SecondPartTitle: '',
       subtitle:
-        'Atuação técnica e humanizada em Direito de Família e Trabalhista com foco humano',
+        'Experiência jurídica construída com ética, técnica e compromisso profissional.',
       paragraph: (
         <div>
-          Atuo nas áreas de Direito de Família e Direito do Trabalho, com uma
-          advocacia construída sobre técnica, responsabilidade e compromisso com
-          cada cliente atendido. Minha atuação é pautada por orientação jurídica
-          clara, fundamentada e ética.
+          Nossa equipe é constituída por profissionais dedicados e experientes
+          em diversas áreas do Direito.
+          <br />
+          <br />
+          Atuando nas áreas Cível, Trabalhista, Criminal, Previdenciária e de
+          Família, nossos advogados oferecem soluções estratégicas e
+          personalizadas, garantindo que cada cliente tenha seus problemas
+          jurídicos resolvidos com eficiência e segurança.
+          <br />
+          <br />
+          Com anos de atuação prática, nosso escritório busca oferecer
+          atendimento ético, humano e focado em resultados, sempre priorizando a
+          tranquilidade e os interesses dos nossos clientes.
         </div>
       ),
 
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="font-secondFont">
-          Atuo nas áreas de Direito de Família e Direito do Trabalho, com uma
-          advocacia construída sobre técnica, responsabilidade e compromisso com
-          cada cliente atendido. Minha atuação é pautada por orientação jurídica
-          clara, fundamentada e ética.
+          A_Definir
           <br />
           <br />
-          No Direito de Família, desenvolvo um trabalho sensível e respeitoso,
-          compreendendo que cada caso envolve histórias, emoções e realidades
-          diferentes. Busco soluções jurídicas que preservem a dignidade das
-          pessoas, com atenção especial às mulheres que enfrentam momentos
-          delicados em suas vidas.
+          A_Definir
           <br />
           <br />
-          Já no Direito do Trabalho, minha atuação é orientada pelo equilíbrio
-          das relações laborais e pela correta aplicação da legislação. O
-          objetivo é garantir direitos, prevenir injustiças e oferecer segurança
-          jurídica a trabalhadores que precisam de informação e apoio confiável.
+          A_Definir
         </p>
       ),
       paragraphModalCta: 'Entre em contato',
-      titleModal: 'Nossa trajetória',
+      titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Falar diretamente com o escritório',
       aboutSocial: {
         img: {
           img: aboutSocialImg,
@@ -448,57 +451,53 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'PASSO A PASSO',
+      miniTag: 'POR QUE CONTAR COM UM ADVOGADO',
       title: (
         <h1>
-          Como
-          <span className="destaque italic font-light"> funciona </span>
-          nosso atendimento?
+          Segurança jurídica em
+          <span className="destaque italic font-light"> cada decisão </span>
         </h1>
       ),
-      subtitle: '',
+      subtitle:
+        'Atuação profissional para orientar, prevenir riscos e conduzir demandas com responsabilidade',
       img: imgSteps,
       alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Consulta inicial',
+          cardTitle: 'Evite erros que geram prejuízos',
           cardDescription:
-            'Realizamos uma reunião para entender seu caso e identificar suas necessidades jurídicas.',
+            'A falta de orientação jurídica adequada pode resultar em perdas financeiras, nulidades e decisões desfavoráveis. A atuação de um advogado contribui para a condução correta das questões legais.',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Análise detalhada',
+          cardTitle: 'Tenha clareza sobre seus direitos',
           cardDescription:
-            'Examinamos todos os aspectos do seu caso, revisando documentos e evidências para obter uma visão completa.',
+            'O acompanhamento profissional permite compreender deveres, direitos e possibilidades jurídicas, auxiliando na tomada de decisões mais conscientes e fundamentadas.',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Elaboração da estratégia',
+          cardTitle: 'Atendimento técnico e individualizado',
           cardDescription:
-            'Criamos uma estratégia jurídica personalizada para proteger seus interesses de maneira eficaz.',
+            'Cada caso possui particularidades que exigem análise cuidadosa. A assessoria jurídica adequada considera o contexto específico de cada situação apresentada.',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Ação legal',
+          cardTitle: 'Mais tranquilidade durante o processo',
           cardDescription:
-            'Iniciamos e conduzimos as ações judiciais ou o serviço contratado, buscando justiça e soluções personalizadas conforme a necessidade do seu caso.',
+            'Contar com um advogado proporciona maior segurança na condução de demandas jurídicas, reduzindo incertezas e garantindo acompanhamento técnico em todas as etapas.',
         },
       },
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Entrar em contato agora',
     },
     ctaSecondary: {
       miniTag: 'FALE CONOSCO',
-      title: (
-        <h1>
-          Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
-        </h1>
-      ),
+      title: <h1>Não espere mais pra garantir o que é seu</h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Entre em contato agora para uma consulta especializada e comece a
-            encontrar a solução que você precisa.
+            Cada dia de atraso é um dia a menos de benefício recebido. A gente
+            resolve isso por você — rápido, seguro e sem burocracia.
           </p>
         </div>
       ),
@@ -510,7 +509,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Entrar em contato',
+      ctaButtonText: 'Fale com a gente agora mesmo',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },

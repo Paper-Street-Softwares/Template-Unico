@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.mendersonrufino.adv.br/sitemap.xml
+Sitemap: https://www.ssfadv.com.br/sitemap.xml

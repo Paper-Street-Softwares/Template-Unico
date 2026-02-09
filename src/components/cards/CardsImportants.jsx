@@ -4,36 +4,25 @@ import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 
 function CardsImportants({ title, paragraph, colorMode, className }) {
   //precisa fazer colorMode
-  let bgCircle, bgCircleHover, bgCard, titleMode, description
+  let bgCircle, bgCard, titleMode, description
   switch (colorMode) {
     case 'light':
-      bgCard = 'bg-terciary hover:bg-primaryDark'
+      bgCard = 'bg-terciary'
       bgCircle = 'bg-primaryDark'
-      bgCircleHover =
-        'group-hover:bg-white group-hover:border-2 group-hover:border-primaryDark'
-      titleMode = 'text-corTitulosPreto group-hover:text-corTitulosBranca'
-      description =
-        'text-corOutrosTextosPreto group-hover:text-corOutrosTextosBranca'
+      titleMode = 'text-corTitulosPreto'
+      description = 'text-corOutrosTextosPreto'
       break
     case 'dark':
-      // bgCard = 'bg-black hover:bg-primaryDark'
       bgCard = 'bg-black'
       bgCircle = 'bg-dark'
-      bgCircleHover =
-        'group-hover:bg-white group-hover:border-2 group-hover:border-primaryDark'
-      // bgCircleHover = ' border-primaryLight'
-      titleMode = 'text-corTitulosBranca group-hover:text-corTitulosBranca'
-      description =
-        'text-corOutrosTextosBranca group-hover:text-corOutrosTextosBranca'
+      titleMode = 'text-corTitulosBranca'
+      description = 'text-corOutrosTextosBranca'
       break
     default:
-      bgCard = 'bg-white hover:bg-black'
-      bgCircle = 'bg-primaryDark'
-      bgCircleHover =
-        'group-hover:bg-white group-hover:border-2 group-hover:border-black'
-      titleMode = 'text-corTitulosPreto group-hover:text-corTitulosBranca'
-      description =
-        'text-corOutrosTextosBranca group-hover:text-corOutrosTextosBranca'
+      bgCard = 'bg-white'
+      bgCircle = 'bg-primaryLight'
+      titleMode = 'text-corTitulosPreto'
+      description = 'text-corOutrosTextosPreto'
   }
   return (
     <MotionDivDownToUp>
@@ -48,16 +37,35 @@ function CardsImportants({ title, paragraph, colorMode, className }) {
         <p className={`text-start ${description} duration-700`}>{paragraph}</p>
 
         <div
-          className={`absolute border-2 duration-700 transition-all rounded-full p-3 -top-6 left-6 ${bgCircle} ${bgCircleHover}`}
+          className={`absolute border-2 duration-700 transition-all rounded-full p-3 -top-6 left-6 ${bgCircle}`}
         >
-          <img
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            {/* <circle cx="12" cy="12" r="10" /> */}
+
+            {/* traço principal maior */}
+            <line x1="12" y1="0" x2="12" y2="14.5" />
+
+            {/* ponto do ! bem maior */}
+            <line x1="12" y1="20" x2="12.01" y2="20" />
+          </svg>
+
+          {/* <img
             src={imgIcon}
             width={32}
             height={32}
             alt="Ícone de exclamação"
-            className="w-8 group-hover:invert duration-700 transition-all"
-            // className="w-8 duration-700 transition-all"
-          />
+            className="w-8"
+          /> */}
         </div>
       </div>
     </MotionDivDownToUp>

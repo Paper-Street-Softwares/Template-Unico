@@ -26,8 +26,8 @@ function Important({ colorMode }) {
       break
     default:
       backgroundMode = 'bg-secondary/60'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosPreto'
       textDestaque = 'text-primaryDark'
   }
 
