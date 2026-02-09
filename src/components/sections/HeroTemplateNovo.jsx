@@ -234,8 +234,8 @@ function HeroTemplateNovo({
                   src={content.texts.hero.heroDefaulMobiletImg}
                   alt={content.texts.hero.alt}
                   className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700 desktop1:hidden"
-                  width={790}
-                  height={520}
+                  width={621}
+                  height={350}
                   fetchPriority="high"
                 />
 
@@ -243,8 +243,8 @@ function HeroTemplateNovo({
                   src={content.texts.hero.heroDefaultImage}
                   alt={content.texts.hero.alt}
                   className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700 hidden desktop1:flex"
-                  width={426}
-                  height={573}
+                  width={621}
+                  height={826}
                   fetchPriority="high"
                 />
 

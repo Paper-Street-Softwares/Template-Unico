@@ -9,6 +9,7 @@ import content from '../../content/content'
 import { Link } from 'react-scroll'
 import ButtonReflexo from '../interactives/ButtonReflexo'
 import { useContext } from 'react'
+import SidebarSocial from '../sectionElements/SidebarSocial'
 
 function NavbarNovaTemplate({
   colorMode,
@@ -92,7 +93,7 @@ function NavbarNovaTemplate({
                 alt={content.texts.navbar.logo.alt}
                 className="w-[100%] desktop1:hidden"
                 width={195}
-                height={105}
+                height={113}
                 fetchPriority="high"
               />
               <img
@@ -100,7 +101,7 @@ function NavbarNovaTemplate({
                 alt={content.texts.navbar.logo.alt}
                 className="w-[100%] hidden desktop1:flex"
                 width={350}
-                height={188}
+                height={203}
                 fetchPriority="high"
               />
             </a>
@@ -159,8 +160,12 @@ function NavbarNovaTemplate({
             />
           </div>
 
+          <div className=" lg:hidden ">
+            <SidebarSocial />
+          </div>
+
           {/* Mobile Toggle */}
-          <button
+          {/* <button
             className="desktop1:hidden p-2 z-50 relative text-foreground "
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
@@ -177,10 +182,10 @@ function NavbarNovaTemplate({
                 className={`${colorMenu}`}
               />
             )}
-          </button>
+          </button> */}
 
           {/* Mobile Menu */}
-          {isMobileMenuOpen && (
+          {/* {isMobileMenuOpen && (
             <div className="fixed inset-0 pt-24 px-6 desktop1:hidden z-40 w-full">
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -238,7 +243,6 @@ function NavbarNovaTemplate({
                     link={content.texts.links.ctaWhatsapp}
                     label={content.texts.navbar.ctaButtonText}
                     colorMode={colorMode}
-                 
                   />
                 </div>
               </motion.div>
@@ -246,7 +250,7 @@ function NavbarNovaTemplate({
                 className={`absolute z-0 inset-0 ${bgOpacitySidebar} h-screen`}
               ></div>
             </div>
-          )}
+          )} */}
         </div>
       </nav>
     </SectionWrapper>

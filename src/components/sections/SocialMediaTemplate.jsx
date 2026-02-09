@@ -83,8 +83,8 @@ function SocialMediaTemplate({ colorMode }) {
                       src={content.texts.about.aboutSocial.img.img}
                       alt={content.texts.about.aboutSocial.img.alt}
                       className="w-full scale-105 hover:scale-100 transition-transform duration-700 rounded-[1.5rem]"
-                      width={448}
-                      height={618}
+                      width={621}
+                      height={861}
                     />
                   </div>
                 </div>
