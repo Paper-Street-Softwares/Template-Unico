@@ -125,7 +125,7 @@ const content = {
             seguras
             <span>
               <svg
-                className="hero-underline absolute bottom-2 left-0 w-full h-3 text-white hidden desktop1:flex"
+                className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-white hidden desktop1:flex"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -137,7 +137,7 @@ const content = {
                 />
               </svg>
               <svg
-                className="hero-underline absolute bottom-0 left-0 w-full h-3 text-white desktop1:hidden"
+                className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-white desktop1:hidden"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
