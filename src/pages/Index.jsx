@@ -48,8 +48,6 @@ import { Diferences } from '../components/sections/Diferences'
 export default function Index() {
   const { colorMode, setColorMode } = useColorMode()
 
-  
-
   return (
     <>
       <ColorModeProvider>
@@ -59,7 +57,7 @@ export default function Index() {
         <main>
           {/* LCP — NÃO usar lazy */}
           <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
-          {/* <Important colorMode={colorMode} /> */}
+          <Important colorMode={colorMode} />
           {/* Lazy sections */}
           <Suspense fallback={null}>
             <FeaturesNovaTemplate
@@ -71,12 +69,12 @@ export default function Index() {
 
             <AboutNovoTemplate
               colorMode={colorMode}
-              ButtonModal={true}
+              ButtonModal={false}
               benefits={false}
             />
             <SocialMediaTemplate colorMode={colorMode} />
             {/* <Authority colorMode={colorMode} /> */}
-            <CtaNovoTemplate colorMode={colorMode} container={false} />
+            <CtaNovoTemplate colorMode={colorMode} container={true} />
 
             <StepsNovoTemplate colorMode={colorMode} />
             {/* <BlogPosts colorMode={colorMode} /> */}

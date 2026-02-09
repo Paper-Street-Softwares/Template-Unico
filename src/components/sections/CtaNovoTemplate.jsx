@@ -41,11 +41,11 @@ function CtaNovoTemplate({ colorMode, container }) {
   const containerList = [
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Análise inicial do seu caso criminal',
+      text: ' Análise gratuita do seu caso',
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Atendimento direto com advogado criminalista',
+      text: ' Atendimento direto com o advogado, sem intermediários',
     },
     {
       icon: <Check className={`${textDestaque}`} />,
@@ -53,11 +53,11 @@ function CtaNovoTemplate({ colorMode, container }) {
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Atuação iniciada imediatamente após a análise',
+      text: ' Processo iniciado no mesmo dia da análise',
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Mais segurança para você e sua família em um momento decisivo',
+      text: ' Você mais perto de receber o que é seu, sem sair de casa',
     },
   ]
 
