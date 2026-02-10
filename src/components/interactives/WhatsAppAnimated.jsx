@@ -103,7 +103,7 @@ export default function WhatsappAnimated() {
         href={content.texts.links.ctaWhatsapp}
         target="_blanck"
         rel="noopener noreferrer"
-        className={`fixed bottom-4 right-4 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full border border-white/30 ${colorButton}`}
+        className={`fixed clickevent bottom-4 right-4 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full border border-white/30 ${colorButton}`}
         aria-label="Botão flutuante de WhatsApp para contato"
       >
         <div

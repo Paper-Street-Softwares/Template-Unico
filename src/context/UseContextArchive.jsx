@@ -64,15 +64,3 @@ export function useColorMode() {
   }
   return context
 }
-
-export default function MeuBotao({ children }) {
-  const { enableClickEvent } = useColorMode()
-
-  function handleClick() {
-    if (!enableClickEvent) return
-
-    console.log('Evento disparado!')
-  }
-
-  return <button onClick={handleClick}>{children}</button>
-}
