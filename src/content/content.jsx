@@ -35,14 +35,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Funakawa Advogado',
+  name: 'A_Definir',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'ssfadv.com.br', // Sem "www"
+  domain: 'A_Definir', // Sem "www"
   phone: {
-    ddd: '11',
-    firstPart: '95087', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '4527', // Apenas os 4 últimos números
+    ddd: '00',
+    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0000', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -78,8 +78,8 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: 'souzafunakawa', // Sem o @
-  facebookProfile: 'share/1GMy48ZeSb/',
+  instagramProfile: '', // Sem o @
+  facebookProfile: '',
   linkeDinProfile: '',
   x: '',
   tiktokProfile: '',
@@ -117,14 +117,14 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'ESCRITÓRIO DE ADVOCACIA',
-      FirstPart: <span>Análise jurídica clara para decisões </span>,
+      miniTag: 'A_Definir',
+      FirstPart: <span>A_Definir </span>,
       Destaque: (
-        <span className="relative italic font-light">
-          seguras
+        <span className="destaque relative italic font-light">
+          A_Definir{' '}
           <span>
             <svg
-              className=" destaque absolute -bottom-2 left-0 w-full h-3 text-black hidden desktop1:flex"
+              className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-black hidden desktop1:flex"
               viewBox="0 0 100 10"
               preserveAspectRatio="none"
             >
@@ -136,7 +136,7 @@ const content = {
               />
             </svg>
             <svg
-              className="destaque absolute -bottom-2 left-0 w-full h-3 text-black desktop1:hidden"
+              className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-black desktop1:hidden"
               viewBox="0 0 100 10"
               preserveAspectRatio="none"
             >
@@ -151,24 +151,19 @@ const content = {
         </span>
       ),
       SecondPart: <span></span>,
-      subtitle: (
-        <p>
-          Atendimento jurídico com orientação técnica, ética profissional e
-          acompanhamento responsável em cada demanda.
-        </p>
-      ),
+      subtitle: <p>A_Definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Solicitar atendimento',
+      ctaButtonText: 'A_Definir',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Atendimento presencial e online para todo Brasil.',
+        text: 'A_Definir',
         textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
@@ -192,48 +187,43 @@ const content = {
       },
     },
     important: {
-      miniTag: 'Atenção',
-      title: 'O que é importante saber sobre atendimento jurídico',
+      miniTag: 'A_Definir',
+      title: 'A_Definir',
       cards: {
         card1: {
-          title: 'Preciso mesmo de um advogado para esse tipo de problema?',
-          paragraph:
-            'A orientação jurídica permite avaliar sua situação com mais segurança e entender quais caminhos são adequados ao seu caso. Para saber como isso se aplica à sua realidade, o ideal é conversar diretamente com um advogado.',
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
         },
         card2: {
-          title: 'Meu caso é simples, vale a pena procurar um advogado?',
-          paragraph:
-            'Situações consideradas simples podem ter detalhes importantes que passam despercebidos. Uma análise profissional ajuda a esclarecer essas questões e indicar a melhor forma de condução. Entre em contato para uma avaliação inicial.',
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
         },
         card3: {
-          title: 'Quanto tempo esse tipo de caso costuma levar?',
-          paragraph:
-            'Os prazos variam conforme o tipo de demanda e os órgãos envolvidos. Cada caso possui particularidades que precisam ser analisadas individualmente, o que pode ser esclarecido em um atendimento direto.',
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
         },
         card4: {
-          title: 'Vou precisar entrar com processo ou dá pra resolver antes?',
-          paragraph:
-            'Existem diferentes possibilidades de solução, que dependem da análise do caso concreto. A orientação jurídica permite avaliar alternativas e definir o caminho mais adequado. Para isso, é importante falar com um advogado.',
+          title: 'A_Definir',
+          paragraph: 'A_Definir',
         },
       },
-      fraseObs:
-        'Entre em contato conosco e lhe daremos todo o suporte necessário',
-      ctaButtonText: 'Falar conosco agora pelo WhatsApp',
+      fraseObs: 'A_Definir',
+      ctaButtonText: 'A_Definir',
     },
     features: {
-      miniTag: 'ÁREAS DE ATUAÇÃO',
-      FirstPart: <span>Atuação </span>,
-      Destaque: <span className="italic font-light"> jurídica</span>,
-      SecondPart: <span>em diferentes áreas do Direito</span>,
-      subtitle: 'Atendimento jurídico com ética, técnica e responsabilidade.',
+      miniTag: 'A_Definir',
+      FirstPart: <span>A_Definir </span>,
+      Destaque: <span className="italic font-light"> A_Definir</span>,
+      SecondPart: <span>A_Definir</span>,
+      subtitle: 'A_Definir',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: '100%',
-      subtitleMessageFeature: 'compromisso profissional',
+      titleMessageFeature: 'A_Definir',
+      subtitleMessageFeature: 'A_Definir',
       cards: {
         card1: {
-          title: 'Direito Trabalhista',
-          subtitle: 'Defesa técnica em questões e direitos trabalhistas.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -247,8 +237,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'Direito Cível',
-          subtitle: 'Assessoria em demandas cíveis e relações patrimoniais.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -262,9 +252,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: 'Direito Previdenciário',
-          subtitle:
-            'Assessoria em benefícios previdenciários e aposentadorias.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir <br />
@@ -277,8 +266,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: 'Direito Criminal',
-          subtitle: 'Defesa técnica em processos e investigações criminais.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -292,8 +281,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card5: {
-          title: 'Direito de Família e Sucessões',
-          subtitle: 'Assessoria em questões familiares e sucessórias.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -307,8 +296,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card6: {
-          title: 'Consultoria Jurídica',
-          subtitle: 'Orientação jurídica preventiva e consultiva contínua.',
+          title: 'A_Definir',
+          subtitle: 'A_Definir',
           description: (
             <div>
               A_Definir
@@ -358,29 +347,22 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'QUEM ESTÁ POR TRÁS DO SEU DIREITO',
-      FirstPart: <span> Profissionais a serviço </span>,
+      miniTag: 'A_Definir',
+      FirstPart: <span> A_Definir </span>,
       Destaque: <span className="italic font-light"> do Direito</span>,
       SecondPart: <span></span>,
 
       SecondPartTitle: '',
-      subtitle:
-        'Experiência jurídica construída com ética, técnica e compromisso profissional.',
+      subtitle: 'A_Definir',
       paragraph: (
         <div>
-          Nossa equipe é constituída por profissionais dedicados e experientes
-          em diversas áreas do Direito.
+          A_Definir
           <br />
           <br />
-          Atuando nas áreas Cível, Trabalhista, Criminal, Previdenciária e de
-          Família, nossos advogados oferecem soluções estratégicas e
-          personalizadas, garantindo que cada cliente tenha seus problemas
-          jurídicos resolvidos com eficiência e segurança.
+          A_Definir
           <br />
           <br />
-          Com anos de atuação prática, nosso escritório busca oferecer
-          atendimento ético, humano e focado em resultados, sempre priorizando a
-          tranquilidade e os interesses dos nossos clientes.
+          A_Definir
         </div>
       ),
 
@@ -408,8 +390,7 @@ const content = {
         },
         miniTag: 'REDES SOCIAIS',
         title: 'Conecte-se conosco',
-        subtitle:
-          'Acompanhe nossas redes sociais para se manter informado sobre conteúdos jurídicos, atualizações e temas relevantes das áreas de atuação.',
+        subtitle: 'A_Definir',
         paragraph: <p></p>,
         labelInstagram: 'Siga-nos no Instagram',
         labelFacebook: 'Siga-nos no Facebook',
@@ -444,52 +425,44 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'POR QUE CONTAR COM UM ADVOGADO',
-      FirstPart: <span> Segurança jurídica em </span>,
-      Destaque: <span className="italic font-light"> cada decisão</span>,
+      miniTag: 'A_Definir',
+      FirstPart: <span> A_Definir </span>,
+      Destaque: <span className="italic font-light"> A_Definir</span>,
       SecondPart: <span></span>,
 
-      subtitle:
-        'Atuação profissional para orientar, prevenir riscos e conduzir demandas com responsabilidade',
+      subtitle: 'A_Definir',
       img: imgSteps,
       alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Evite erros que geram prejuízos',
-          cardDescription:
-            'A falta de orientação jurídica adequada pode resultar em perdas financeiras, nulidades e decisões desfavoráveis. A atuação de um advogado contribui para a condução correta das questões legais.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Tenha clareza sobre seus direitos',
-          cardDescription:
-            'O acompanhamento profissional permite compreender deveres, direitos e possibilidades jurídicas, auxiliando na tomada de decisões mais conscientes e fundamentadas.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Atendimento técnico e individualizado',
-          cardDescription:
-            'Cada caso possui particularidades que exigem análise cuidadosa. A assessoria jurídica adequada considera o contexto específico de cada situação apresentada.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Mais tranquilidade durante o processo',
-          cardDescription:
-            'Contar com um advogado proporciona maior segurança na condução de demandas jurídicas, reduzindo incertezas e garantindo acompanhamento técnico em todas as etapas.',
+          cardTitle: 'A_Definir',
+          cardDescription: 'A_Definir',
         },
       },
-      ctaButtonText: 'Entrar em contato agora',
+      ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
       miniTag: 'FALE CONOSCO',
-      title: <h1>Não espere mais pra garantir o que é seu</h1>,
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Cada dia de atraso é um dia a menos de benefício recebido. A gente
-            resolve isso por você — rápido, seguro e sem burocracia.
-          </p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
       // subtitleDireita: (
@@ -511,32 +484,28 @@ const content = {
       img: imgSteps,
       labelCards: 'Ver mais',
       label: 'Clique aqui para ver todas as matérias',
-      blogLink: 'mauromoncao.wordpress.com', //sem "https://"
+      blogLink: 'A_Definir', //sem "https://"
     },
     faq: {
       miniTag: 'TIRE SUAS DÚVIDAS',
       title: 'Perguntas Frequentes',
-      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
+      subtitle: 'A_Definir',
       questions: {
         question1: {
-          question: 'Como posso contratar seus serviços?',
-          answer:
-            'Agende sua consulta conosco via WhatsApp e conversaremos sobre suas necessidades e avaliaremos os custos.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question2: {
-          question: 'Qual é o prazo médio para resolução de um caso?',
-          answer:
-            'O prazo médio varia conforme a complexidade, mas discutiremos uma estimativa durante a consulta inicial.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question3: {
-          question: 'Quais documentos devo levar para a consulta?',
-          answer:
-            'Traga os documentos relevantes ao seu caso, como contratos, correspondências e registros, além de documentos pessoais e comprovante de residência.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
         question4: {
-          question: 'Vocês oferecem serviços de consultoria preventiva?',
-          answer:
-            'Sim, oferecemos consultoria preventiva para evitar problemas futuros e garantir conformidade legal.',
+          question: 'A_Definir',
+          answer: 'A_Definir',
         },
       },
       paragraph: 'Clique aqui caso tenha mais dúvidas',
