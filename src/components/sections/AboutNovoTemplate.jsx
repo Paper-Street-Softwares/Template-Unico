@@ -32,7 +32,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-terciary/60'
+      backgroundMode = 'bg-transparent'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
@@ -42,7 +42,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
       image = ' border-[8px] border-white'
       break
     case 'dark':
-      backgroundMode = 'bg-darkOpacity'
+      backgroundMode = 'bg-transparent'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-primaryLight'
@@ -52,7 +52,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
       image = ' border-[8px] border-borderImage'
       break
     default:
-      backgroundMode = 'bg-terciary/60'
+      backgroundMode = 'bg-transparent'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'

@@ -20,21 +20,21 @@ function CtaNovoTemplate({ colorMode, container }) {
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-transparent'
       miniTagCtaDark = 'text-primaryDark'
       break
     case 'dark':
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corTitulosBranca/60'
       textDestaque = 'text-primaryLight'
-      backgroundMode = 'bg-black'
+      backgroundMode = 'bg-transparent'
       miniTagCtaDark = 'text-primaryLight'
       break
     default:
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corTitulosBranca/60'
       textDestaque = 'text-primaryLight'
-      backgroundMode = 'bg-primaryDark'
+      backgroundMode = 'bg-transparent'
       miniTagCtaDark = 'text-primaryLight'
   }
 

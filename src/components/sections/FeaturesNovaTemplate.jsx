@@ -34,7 +34,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-transparent'
       bgAccordion = '#fff'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
@@ -46,7 +46,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
       textObservation = 'text-white'
       break
     case 'dark':
-      backgroundMode = 'bg-black'
+      backgroundMode = 'bg-transparent'
       bgAccordion = 'rgba(0,0,0,0.8)'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
@@ -59,7 +59,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
 
       break
     default:
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-transparent'
       bgAccordion = '#fff'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'

@@ -42,7 +42,7 @@ function HeroTemplateNovo({
 }) {
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-transparent'
       bgFaixaHero = 'bg-terciary'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
@@ -54,7 +54,7 @@ function HeroTemplateNovo({
       borderColor = 'bg-white'
       break
     case 'dark':
-      backgroundMode = 'bg-dark'
+      backgroundMode = 'bg-transparent'
       bgFaixaHero = 'bg-white/5'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
@@ -67,7 +67,7 @@ function HeroTemplateNovo({
 
       break
     case 'default':
-      backgroundMode = 'bg-primaryDark'
+      backgroundMode = 'bg-transparent'
       bgFaixaHero = 'bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
@@ -113,7 +113,7 @@ function HeroTemplateNovo({
       paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
-      <section className="relative w-full pt-[130px] phone2:pt-[140px] phone3:pt-[160px] tablet1:pt-[164px] tablet2:pt-[177px] desktop1:pt-[195px] desktop2:pt-[220px] pb-[64px] desktop1:pb-[96px] flex items-center justify-center overflow-hidden font-mainFont">
+      <section className="relative w-full pt-[130px] phone2:pt-[140px] phone3:pt-[160px] tablet1:pt-[164px] tablet2:pt-[177px] desktop1:pt-[195px] desktop2:pt-[235px] pb-[64px] desktop1:pb-[96px] flex items-center justify-center overflow-hidden font-mainFont">
         {/* Abstract Background Shapes */}
         <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}

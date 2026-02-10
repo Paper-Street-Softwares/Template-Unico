@@ -22,21 +22,21 @@ function FaqNovoTemplate({ colorMode }) {
       text = 'text-corTitulosPreto'
       text = 'text-corTitulosPreto'
       hoverText = 'hover:text-primaryDark'
-      backgroundMode = 'bg-terciary/60'
+      backgroundMode = 'bg-transparent'
 
       break
     case 'dark':
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       hoverText = 'hover:text-primaryLight'
-      backgroundMode = 'bg-darkOpacity'
+      backgroundMode = 'bg-transparent'
       break
 
     default:
       text = 'text-corTitulosPreto'
       text = 'text-corTitulosPreto'
       hoverText = 'hover:text-primaryDark'
-      backgroundMode = 'bg-terciary/60'
+      backgroundMode = 'bg-transparent'
   }
 
   return (

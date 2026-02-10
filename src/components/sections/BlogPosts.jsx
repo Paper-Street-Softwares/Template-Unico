@@ -17,19 +17,19 @@ function BlogPosts({ colorMode }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-transparent'
       titleColor = 'text-corTitulosPreto'
       subtitleColor = 'text-corOutrosTextosPreto'
       linkColor = 'text-primaryDark'
       break
     case 'dark':
-      backgroundMode = 'bg-black'
+      backgroundMode = 'bg-transparent'
       titleColor = 'text-corTitulosBranca'
       subtitleColor = 'text-corOutrosTextosPreto'
       linkColor = 'text-primaryLight'
       break
     default:
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-transparent'
       titleColor = 'text-corTitulosPreto'
       subtitleColor = 'text-corOutrosTextosPreto'
       linkColor = 'text-primaryDark'

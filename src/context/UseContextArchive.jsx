@@ -4,6 +4,8 @@ const ColorModeContext = createContext(null)
 
 export function ColorModeProvider({ children }) {
   const [colorMode, setColorMode] = useState('dark') // default, light, dark
+  const [defaultIsDark, setDefaultIsDark] = useState(true) // false = defaultLight | true = defaultDark
+
   const [whatsAppColor] = useState(false) // ativa cor do WhatsApp
   const [showGlobalButton] = useState(false) // ativa as os botões e caixa de alerta
   const [enableClickEvent, setEnableClickEvent] = useState(true) // Dispara evento de clique
@@ -17,6 +19,8 @@ export function ColorModeProvider({ children }) {
         showGlobalButton,
         enableClickEvent,
         setEnableClickEvent,
+        defaultIsDark,
+        setDefaultIsDark,
       }}
     >
       {children}

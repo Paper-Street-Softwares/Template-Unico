@@ -30,9 +30,9 @@ export default {
 
         // Copys
         corTitulosBranca: '#FFFFFF',
-        corOutrosTextosBranca: '#FFFFFF99',
+        corOutrosTextosBranca: '#F5F5F5',
         corTitulosPreto: ' #000000',
-        corOutrosTextosPreto: '#666666',
+        corOutrosTextosPreto: '#4C4C4C',
 
         // hex botãoColor wpp
         wppLight: '#2E7027',

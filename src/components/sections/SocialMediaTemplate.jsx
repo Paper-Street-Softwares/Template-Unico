@@ -18,7 +18,7 @@ function SocialMediaTemplate({ colorMode }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-terciary/60'
+      backgroundMode = 'bg-transparent'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       cardBg = 'bg-white'
@@ -29,7 +29,7 @@ function SocialMediaTemplate({ colorMode }) {
       break
 
     case 'dark':
-      backgroundMode = 'bg-darkOpacity'
+      backgroundMode = 'bg-transparent'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       cardBg = 'bg-gray-900'
@@ -40,7 +40,7 @@ function SocialMediaTemplate({ colorMode }) {
       break
 
     default:
-      backgroundMode = 'bg-terciary/60'
+      backgroundMode = 'bg-transparent'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       cardBg = 'bg-white'
