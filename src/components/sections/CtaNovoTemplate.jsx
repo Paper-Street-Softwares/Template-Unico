@@ -49,23 +49,23 @@ function CtaNovoTemplate({ colorMode, container }) {
   const containerList = [
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Análise gratuita do seu caso',
+      text: ' Orientação clara sobre seus direitos no divórcio',
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Atendimento direto com o advogado, sem intermediários',
+      text: ' Atendimento humanizado e sigiloso com advogada especializada',
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Resposta rápida e acompanhamento pelo WhatsApp',
+      text: ' Divórcio online, sem audiências e sem desgaste emocional',
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Processo iniciado no mesmo dia da análise',
+      text: ' Acompanhamento rápido pelo WhatsApp, do início ao fim',
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Você mais perto de receber o que é seu, sem sair de casa',
+      text: ' Segurança para encerrar esse ciclo e seguir em frente',
     },
   ]
 

@@ -7,7 +7,10 @@ import Typography from '@mui/material/Typography'
 import SectionArea from '../sectionElements/SectionArea'
 import ButtonReflexo from '../interactives/ButtonReflexo'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import { ButtonsLps } from '../../context/UseContextArchive'
+import {
+  ButtonsLps,
+  defaultButtonThemes,
+} from '../../context/UseContextArchive'
 import AccordionDetails from '@mui/material/AccordionDetails'
 import AccordionSummary from '@mui/material/AccordionSummary'
 import MotionDivDownToUp from '../animation/MotionDivDownToUp'
@@ -150,7 +153,11 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
                         }
                         link={content.texts.links.ctaWhatsapp}
                         label={content.texts.features.ctaButtonText}
-                        colorMode={colorMode}
+                        bgClass={
+                          colorMode === 'defaultDark' || colorMode === 'light'
+                            ? defaultButtonThemes.light
+                            : defaultButtonThemes.dark
+                        }
                         className="clickevent mt-12"
                       />
                       <ButtonReflexo

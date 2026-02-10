@@ -25,6 +25,8 @@ import {
   Scale,
   Users,
   User,
+  Wallet,
+  Clock,
   Car,
   HandCoins,
   Check,
@@ -117,12 +119,12 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'A_Definir',
-      FirstPart: <span>A_Definir </span>,
+      miniTag: 'DIVÓRCIO SEM COMPLICAÇÃO',
+      FirstPart: <span></span>,
       Destaque: (
         <span className="destaque relative italic font-light">
-          A_Definir{' '}
-          <span>
+          DIVÓRCIO ONLINE{' '}
+          {/* <span>
             <svg
               className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-black hidden desktop1:flex"
               viewBox="0 0 100 10"
@@ -147,24 +149,29 @@ const content = {
                 fill="none"
               />
             </svg>
-          </span>
+          </span> */}
         </span>
       ),
-      SecondPart: <span></span>,
-      subtitle: <p>A_Definir</p>,
+      SecondPart: <span>— RÁPIDO, SEGURO E SEM SAIR DE CASA</span>,
+      subtitle: (
+        <p>
+          Orientação jurídica especializada para resolver seu divórcio de forma
+          clara, organizada e sem desgaste emocional.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Quero resolver meu divórcio agora',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'A_Definir',
-        textTwo: 'A_Definir',
+        text: 'Atendimento 100% online e sigiloso',
+        textTwo: 'Com orientação de advogada especializada',
       },
       secondaryCta: 'Contato',
       images: {
@@ -211,19 +218,21 @@ const content = {
       ctaButtonText: 'A_Definir',
     },
     features: {
-      miniTag: 'A_Definir',
-      FirstPart: <span>A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
-      subtitle: 'A_Definir',
+      miniTag: 'Seu divórcio não precisa ser complicado',
+      FirstPart: <span>Sabemos que o momento do divórcio </span>,
+      Destaque: <span className="italic font-light"> é delicado</span>,
+      SecondPart: <span> e, muitas vezes, doloroso.</span>,
+      subtitle:
+        'Por isso, oferecemos um atendimento humanizado, rápido e totalmente online, para que você resolva tudo com tranquilidade e sem burocracia. Você não precisa enfrentar filas, deslocamentos ou desgaste emocional. Nós cuidamos de tudo para você.',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: 'A_Definir',
-      subtitleMessageFeature: 'A_Definir',
+      titleMessageFeature: '100%',
+      subtitleMessageFeature: 'orientação profissional',
       cards: {
         card1: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Divórcio extrajudicial',
+          subtitle:
+            'Resolvido em cartório, de forma rápida e sem processo judicial.',
           description: (
             <div>
               A_Definir
@@ -232,57 +241,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Briefcase />,
+          icon: <FileText />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <User />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card3: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
-          description: (
-            <div>
-              A_Definir <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Scale />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card4: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <Gavel />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card5: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Divórcio consensual',
+          subtitle:
+            'Quando há acordo entre as partes, o divórcio acontece de forma simples e menos desgastante.',
           description: (
             <div>
               A_Definir
@@ -295,9 +261,41 @@ const content = {
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
-        card6: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+        card3: {
+          title: 'Divórcio judicial',
+          subtitle:
+            'Indicado quando não há acordo, com acompanhamento jurídico para proteger seus direitos.',
+          description: (
+            <div>
+              A_Definir <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Scale />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card4: {
+          title: 'Divórcio com ou sem filhos',
+          subtitle:
+            'Orientação completa, com atenção especial às questões que envolvem filhos e responsabilidades.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
+            </div>
+          ),
+          icon: <User />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card5: {
+          title: 'Divórcio com partilha de bens',
+          subtitle:
+            'Análise e divisão justa dos bens, garantindo segurança em cada etapa do processo.',
           description: (
             <div>
               A_Definir
@@ -306,11 +304,28 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <MessageSquare />,
+          icon: <Wallet />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card6: {
+          title: 'Divórcio sem partilha imediata',
+          subtitle:
+            'Possibilidade de se divorciar agora e resolver a partilha em um momento posterior.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Clock />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
       },
+
       moreFeatures: {
         card1: {
           ico: 'A_Definir',
@@ -328,7 +343,7 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: 'Entrar em contato',
+      ctaButtonText: 'Recuperar minha paz',
     },
     emergency: {
       minitag: 'A_Definir',
@@ -347,22 +362,44 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'A_Definir',
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> do Direito</span>,
+      miniTag: 'Fernandes & Vieira Advocacia e Consultoria',
+      FirstPart: <span> Por que escolher </span>,
+      Destaque: <span className="italic font-light"> nosso escritório?</span>,
       SecondPart: <span></span>,
-
-      SecondPartTitle: '',
-      subtitle: 'A_Definir',
+      subtitle:
+        'Nosso compromisso é tornar esse momento mais leve, rápido e seguro para você.',
       paragraph: (
         <div>
-          A_Definir
-          <br />
-          <br />
-          A_Definir
-          <br />
-          <br />
-          A_Definir
+          <ul>
+            <li className="font-secondFont flex gap-2">
+              <span>
+                {' '}
+                <Check />
+              </span>{' '}
+              Atuação especializada em Direito de Família
+            </li>
+            <li className="font-secondFont flex gap-2">
+              <span>
+                {' '}
+                <Check />
+              </span>{' '}
+              Experiência em divórcios online
+            </li>
+            <li className="font-secondFont flex gap-2">
+              <span>
+                {' '}
+                <Check />
+              </span>{' '}
+              Atendimento ágil e personalizado
+            </li>
+            <li className="font-secondFont flex gap-2">
+              <span>
+                {' '}
+                <Check />
+              </span>{' '}
+              Transparência em todas as etapas
+            </li>
+          </ul>
         </div>
       ),
 
@@ -381,7 +418,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Falar diretamente com o escritório',
+      ctaButtonText: 'Falar diretamente com as Advogadas',
       aboutSocial: {
         img: {
           img: aboutSocialImg,
@@ -459,10 +496,13 @@ const content = {
     },
     ctaSecondary: {
       miniTag: 'FALE CONOSCO',
-      title: <h1>A_Definir</h1>,
+      title: <h1>Fale agora com uma Advogada</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Se você está pensando em se divorciar ou precisa de orientação, fale
+            conosco agora.
+          </p>
         </div>
       ),
       // subtitleDireita: (
@@ -473,7 +513,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Fale com a gente agora mesmo',
+      ctaButtonText: 'Quero iniciar meu divórcio online',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
@@ -489,25 +529,30 @@ const content = {
     faq: {
       miniTag: 'TIRE SUAS DÚVIDAS',
       title: 'Perguntas Frequentes',
-      subtitle: 'A_Definir',
+      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
       questions: {
         question1: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Preciso sair de casa?',
+          answer:
+            'Não. Todo o processo pode ser feito 100% online, sem deslocamentos, filas ou desgaste desnecessário. Você resolve tudo com segurança e conforto, de onde estiver.',
         },
         question2: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Quanto tempo demora?',
+          answer:
+            'O prazo varia conforme o tipo de divórcio, mas em muitos casos o processo é rápido e pode ser iniciado no mesmo dia após a análise da documentação.',
         },
         question3: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Precisa de audiência?',
+          answer:
+            'Na maioria dos casos, não. O divórcio pode ser resolvido sem audiências, evitando exposição e situações desconfortáveis.',
         },
         question4: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Posso me divorciar mesmo sem acordo total?',
+          answer:
+            'Sim. Mesmo sem acordo em todos os pontos, é possível dar entrada no divórcio. Cada caso é analisado com cuidado para garantir seus direitos e a melhor solução possível.',
         },
       },
+
       paragraph: 'Clique aqui caso tenha mais dúvidas',
     },
     // team: {

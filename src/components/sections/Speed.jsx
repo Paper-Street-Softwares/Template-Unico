@@ -35,8 +35,8 @@ function Speed({ colorMode }) {
       <SectionWrapper>
         <section className="">
           <SectionHeaderNovo
-            title="Dependendo do caso, o divórcio pode ser resolvido:"
             miniTitle="Rapidez e praticidade"
+            title="Dependendo do caso, o divórcio pode ser resolvido:"
             colorMode={colorMode}
           />
           <MotionDivDownToUp>
@@ -46,7 +46,7 @@ function Speed({ colorMode }) {
                   {
                     text: 'Em poucos dias, conforme o tipo de divórcio',
                     subtitle: '',
-                    icon: Siren,
+                    icon: Clock,
                   },
                   {
                     text: 'Sem audiência, na maioria dos casos',
@@ -97,7 +97,7 @@ function Speed({ colorMode }) {
                 </div>
               </MotionDivDownToUp>
 
-              <MotionDivDownToUp>
+              {/* <MotionDivDownToUp>
                 <div className="flex flex-col gap-4 w-fit mt-6 mx-auto justify-center items-start">
                   <ButtonReflexo
                     icon={
@@ -125,7 +125,7 @@ function Speed({ colorMode }) {
                     className="text-white mx-auto"
                   />
                 </div>
-              </MotionDivDownToUp>
+              </MotionDivDownToUp> */}
             </div>
           </MotionDivDownToUp>
         </section>

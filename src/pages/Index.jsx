@@ -57,12 +57,12 @@ export default function Index() {
 
         <main>
           <AlternatingSection index={0} colorMode={colorMode} forcePrimaryDark>
-            <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
+            <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={true} />
           </AlternatingSection>
 
-          <AlternatingSection index={1} colorMode={colorMode}>
+          {/* <AlternatingSection index={1} colorMode={colorMode}>
             <Important colorMode={colorMode} />
-          </AlternatingSection>
+          </AlternatingSection> */}
 
           <AlternatingSection index={2} colorMode={colorMode}>
             <Suspense>
@@ -75,27 +75,31 @@ export default function Index() {
           </AlternatingSection>
 
           <AlternatingSection index={3} colorMode={colorMode}>
+            <Speed colorMode={colorMode} />
+          </AlternatingSection>
+
+          <AlternatingSection index={4} colorMode={colorMode}>
             <Suspense>
               <AboutNovoTemplate
                 colorMode={colorMode}
                 ButtonModal={false}
                 benefits={false}
               />
-              <SocialMediaTemplate colorMode={colorMode} />
+              {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={4} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={5} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
-              <CtaNovoTemplate colorMode={colorMode} container={false} />
+              <CtaNovoTemplate colorMode={colorMode} container={true} />
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={5} colorMode={colorMode}>
+          {/* <AlternatingSection index={5} colorMode={colorMode}>
             <Suspense>
               <StepsNovoTemplate colorMode={colorMode} />
             </Suspense>
-          </AlternatingSection>
+          </AlternatingSection> */}
 
           <AlternatingSection index={6} colorMode={colorMode}>
             <Suspense>
@@ -125,7 +129,7 @@ export default function Index() {
 
             {/* <Emergency colorMode={colorMode} /> */}
             {/* <Diferences colorMode={colorMode} /> */}
-            {/* <Speed colorMode={colorMode} /> */}
+
             {/* <Cards colorMode={colorMode} /> */}
             {/* <Team colorMode={colorMode} /> */}
             {/* <Authority colorMode={colorMode} /> */}
