@@ -35,14 +35,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'A_Definir',
+  name: 'Fernandes & Vieira Advocacia',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'A_Definir', // Sem "www"
+  domain: 'divorcio.fernandesevieiraadvocacia.com.br', // Sem "www"
   phone: {
-    ddd: '00',
-    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '0000', // Apenas os 4 últimos números
+    ddd: '31',
+    firstPart: '99638', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '5637', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -57,7 +57,7 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>A_Definir,</p>
+      <p>Belo Horizonte - MG,</p>
       <p>A_Definir,</p>
       <p>A_Definir,</p>
       <p>A_Definir</p>
