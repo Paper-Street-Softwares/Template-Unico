@@ -5,7 +5,10 @@ import content from '../../content/content'
 import SectionArea from '../sectionElements/SectionArea'
 import ButtonReflexo from '../interactives/ButtonReflexo'
 import { ArrowRight, CheckCircle2, X } from 'lucide-react'
-import { ButtonsLps } from '../../context/UseContextArchive'
+import {
+  ButtonsLps,
+  defaultButtonThemes,
+} from '../../context/UseContextArchive'
 import { Button } from '../interactives/ButtonNovoTemplate'
 import SectionWrapper from '../sectionElements/SectionWrapper'
 import MotionDivDownToUp from '../animation/MotionDivDownToUp'
@@ -168,7 +171,11 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                         }
                         link={content.texts.links.ctaWhatsapp}
                         label={content.texts.about.ctaButtonText}
-                        colorMode={colorMode}
+                        bgClass={
+                          colorMode === 'defaultDark' || colorMode === 'light'
+                            ? defaultButtonThemes.light
+                            : defaultButtonThemes.dark
+                        }
                         className={`clickevent`}
                       />
                       <ButtonReflexo

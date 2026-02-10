@@ -49,7 +49,7 @@ function HeroTemplateNovo({
       textDestaque = 'text-primaryDark'
       bgMinitag = 'bg-transparent border-primaryDark text-primaryDark'
       // textObs = 'text-green-500'
-      image = ' border-[8px] border-white'
+      image = ' border-[8px]'
       bgAlertHero = 'bg-white'
       borderColor = 'bg-white'
       break
@@ -61,22 +61,22 @@ function HeroTemplateNovo({
       textDestaque = 'text-primaryLight'
       bgMinitag = 'bg-transparent border-primaryLight text-primaryLight'
       // textObs = 'text-green-500'
-      image = ' border-[8px] border-borderImage'
+      image = ' border-[8px]'
       bgAlertHero = 'bg-black text-white/60'
       borderColor = 'border-borderImage'
 
       break
     case 'defaultDark':
-      backgroundMode = 'bg-transparent'
-      bgFaixaHero = 'bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
+      backgroundMode = 'bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
+      bgFaixaHero = 'bg-primaryDark'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-primaryLight'
       bgMinitag = 'bg-transparent border-primaryLight text-primaryLight'
       // textObs = 'text-green-500'
-      image = ' border-[8px] border-primaryLight'
+      image = ' border-[8px]'
       bgAlertHero = 'bg-black text-white/60'
-      borderColor = 'border-primaryLight'
+      borderColor = 'border-primaryDark'
 
       break
 
@@ -88,7 +88,7 @@ function HeroTemplateNovo({
       textDestaque = 'text-primaryDark'
       bgMinitag = 'bg-transparent border-primaryDark text-primaryDark'
       // textObs = 'text-green-500'
-      image = ' border-[8px] border-white'
+      image = ' border-[8px]'
       bgAlertHero = 'bg-white'
       borderColor = 'bg-white'
   }
@@ -211,18 +211,18 @@ function HeroTemplateNovo({
                 } w-full`}
               /> */}
               {obs && (
-                <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground w-full">
-                  <div className="relative flex ">
+                <div className="flex flex-col justify-start items-start gap-3 text-sm text-mutedForeground w-full">
+                  {/* <div className="relative flex ">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
-                  </div>
+                  </div> */}
                   {/* ⚠️ */}
                   <span
                     className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
                   >
-                    {/* <span>
-                    <Check />
-                  </span>{' '} */}
+                    <span>
+                      <Check />
+                    </span>{' '}
                     {content.texts.hero.obsHero.text}
                   </span>
                   {obsTwo && (
@@ -230,7 +230,7 @@ function HeroTemplateNovo({
                       className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
                     >
                       <span>
-                        <FileText />
+                        <Check />
                       </span>{' '}
                       {content.texts.hero.obsHero.textTwo}
                     </span>
