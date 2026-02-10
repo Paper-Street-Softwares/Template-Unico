@@ -106,7 +106,7 @@ function SocialMediaTemplate({ colorMode }) {
 
                 {/* Cards sociais */}
                 <div className="space-y-8">
-                  {content.texts.links.facebook?.trim() && (
+                  {/* {content.texts.links.facebook?.trim() && (
                     <a
                       href={content.texts.links.facebook}
                       target="_blank"
@@ -135,7 +135,7 @@ function SocialMediaTemplate({ colorMode }) {
                         className={`ml-auto w-5 h-5 transition-colors ${arrowColor}`}
                       />
                     </a>
-                  )}
+                  )} */}
 
                   {content.texts.links.instagram?.trim() && (
                     <a
