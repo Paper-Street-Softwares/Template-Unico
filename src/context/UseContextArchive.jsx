@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from 'react'
 const ColorModeContext = createContext(null)
 
 export function ColorModeProvider({ children }) {
-  const [colorMode, setColorMode] = useState('dark') // default, light, dark
+  const [colorMode, setColorMode] = useState('default') // default, light, dark
   const [defaultIsDark, setDefaultIsDark] = useState(true) // false = defaultLight | true = defaultDark
 
   const [whatsAppColor] = useState(false) // ativa cor do WhatsApp
@@ -52,6 +52,8 @@ export const defaultButtonThemes = {
 export const alertTheme = {
   light: 'bg-red-800 text-corTitulosBranca border border-primaryDark/20',
   dark: 'bg-red-800 text-corTitulosBranca border border-primaryDark/20 shadow-white',
+  default:
+    'bg-red-800 text-corTitulosBranca border border-primaryDark/20 shadow-white',
 }
 
 export function useColorMode() {

@@ -13,24 +13,23 @@ export default function ButtonReflexo({
   bgClass,
   shineClass,
   id,
+  variant = 'primary',
   ...props
 }) {
-  const { colorMode, whatsAppColor } = useColorMode()
+  const { colorMode, whatsAppColor, showGlobalButton } = useColorMode()
   const isLigar = id === 'ligar'
   const effectiveWhatsAppColor = isLigar ? false : whatsAppColor
-  const shadowClass = isLigar
-    ? 'shadow-red-500/30'
-    : effectiveWhatsAppColor
-      ? 'shadow-wppLight/30'
-      : colorMode === 'dark'
-        ? 'shadow-primaryLight/20'
-        : 'shadow-primaryDark/20'
 
-  // const themes = {
-  //   light: 'bg-primaryDark text-corTitulosBranca border border-primaryDark/20',
-  //   dark: 'bg-primaryLight text-corTitulosPreto',
-  //   default: `bg-primaryLight text-corTitulosPreto ${className}`,
-  // }
+  const shadowClass =
+    variant === 'secondary'
+      ? 'shadow-none'
+      : isLigar
+        ? 'shadow-red-500/30'
+        : effectiveWhatsAppColor
+          ? 'shadow-wppLight/30'
+          : colorMode === 'dark'
+            ? 'shadow-primaryLight/20'
+            : 'shadow-primaryDark/20'
 
   const shineThemes = {
     light: 'bg-white/40',
@@ -38,53 +37,53 @@ export default function ButtonReflexo({
     default: 'bg-white/40',
   }
 
-  const colors = isLigar
+  const primaryColors = isLigar
     ? alertTheme[colorMode]
     : effectiveWhatsAppColor
       ? whatsAppThemes[colorMode]
       : (bgClass ?? defaultButtonThemes[colorMode])
 
+  const secondaryColors = bgClass ?? defaultButtonThemes[colorMode]
+
+  const colors = variant === 'secondary' ? secondaryColors : primaryColors
+
   const shineColor = shineClass ?? shineThemes[colorMode]
   const spacing = padding || 'px-6 py-3'
-
-  const { showGlobalButton } = useColorMode()
 
   if (id === 'ligar' && !showGlobalButton) {
     return null
   }
+
   return (
     <a
       target="_blank"
       rel="noopener noreferrer"
       href={link}
-      aria-label="Botão de contato"
+      aria-label="Botão"
       className={`${className}
-          relative
-          overflow-hidden
-          inline-flex
-          items-center
-          justify-center
-          ${colors} 
-          ${spacing}
-          font-normal font-secondFont rounded-full text-lg 
-          transition-all scale-100 hover:scale-90 duration-500 shadow-lg ${shadowClass} gap-3 text-paragraph3 tablet1:text-paragraph4
-          min-w-[10px] 
-          text-center 
-        `}
+        relative overflow-hidden inline-flex items-center justify-center
+        ${colors}
+        ${spacing}
+        font-normal font-secondFont rounded-full text-lg
+        transition-all scale-100 hover:scale-90 duration-500
+        ${shadowClass}
+        gap-3 text-paragraph3 tablet1:text-paragraph4
+        min-w-[10px] text-center cursor-pointer
+      `}
+      {...props}
     >
       {reflexAnimation && (
         <span
           className={`
-              absolute top-0 left-0 w-full h-full 
-              ${shineColor} animate-shine-loop
-              z-0
-              pointer-events-none
-            `}
+            absolute top-0 left-0 w-full h-full
+            ${shineColor} animate-shine-loop
+            z-0 pointer-events-none
+          `}
         />
       )}
 
-      <span className="relative z-10 flex items-center gap-3 ">
-        <span> {icon}</span>
+      <span className="relative z-10 flex items-center gap-3">
+        {icon && <span>{icon}</span>}
         {label}
       </span>
     </a>

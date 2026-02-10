@@ -179,6 +179,7 @@ function HeroTemplateNovo({
                   colorMode={colorMode}
                   className="clickevent my-0 text-[8px] phone2:text-paragraph3 tablet1:text-paragraph4"
                 />
+
                 <ButtonReflexo
                   id="ligar"
                   icon={<Phone width={20} />}
