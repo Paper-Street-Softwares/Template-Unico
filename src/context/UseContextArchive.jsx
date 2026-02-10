@@ -3,9 +3,11 @@ import { createContext, useContext, useState } from 'react'
 const ColorModeContext = createContext(null)
 
 export function ColorModeProvider({ children }) {
-  const [colorMode, setColorMode] = useState('default') // default, light, dark
+  const [colorMode, setColorMode] = useState('dark') // defaultDark, defaultLight, light, dark
+
   const [whatsAppColor] = useState(false) // ativa cor do WhatsApp
   const [showGlobalButton] = useState(false) // ativa as os botões e caixa de alerta
+  const [enableClickEvent, setEnableClickEvent] = useState(true) // Dispara evento de clique
 
   return (
     <ColorModeContext.Provider
@@ -14,6 +16,8 @@ export function ColorModeProvider({ children }) {
         setColorMode,
         whatsAppColor,
         showGlobalButton,
+        enableClickEvent,
+        setEnableClickEvent,
       }}
     >
       {children}
@@ -33,18 +37,24 @@ export function ButtonsLps() {
 export const whatsAppThemes = {
   light: 'bg-wppDark text-corTitulosPreto border-green-600/30',
   dark: 'bg-wppLight text-corTitulosBranca border-green-600/30',
-  default: 'bg-wppDark text-corTitulosPreto border-green-600/30',
+  defaultDark: 'bg-wppDark text-corTitulosPreto border-green-600/30',
+  defaultLight: 'bg-wppDark text-corTitulosPreto border-green-600/30',
 }
 
 export const defaultButtonThemes = {
   light: 'bg-primaryDark text-corTitulosBranca border border-primaryDark/20 ',
   dark: 'bg-primaryLight text-corTitulosPreto',
-  default: 'bg-primaryLight text-corTitulosPreto ',
+  defaultDark:
+    'bg-primaryDark text-corTitulosBranca border border-primaryDark/20 ',
+  defaultLight:
+    'bg-primaryDark text-corTitulosBranca border border-primaryDark/20 ',
 }
 
 export const alertTheme = {
   light: 'bg-red-800 text-corTitulosBranca border border-primaryDark/20',
   dark: 'bg-red-800 text-corTitulosBranca border border-primaryDark/20 shadow-white',
+  defaultDark: 'bg-red-800 text-corTitulosBranca border border-primaryDark/20',
+  defaultLight: 'bg-red-800 text-corTitulosBranca border border-primaryDark/20',
 }
 
 export function useColorMode() {

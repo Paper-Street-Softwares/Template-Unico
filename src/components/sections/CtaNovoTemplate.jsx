@@ -20,22 +20,30 @@ function CtaNovoTemplate({ colorMode, container }) {
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-transparent'
       miniTagCtaDark = 'text-primaryDark'
       break
     case 'dark':
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corTitulosBranca/60'
       textDestaque = 'text-primaryLight'
-      backgroundMode = 'bg-black'
+      backgroundMode = 'bg-transparent'
       miniTagCtaDark = 'text-primaryLight'
       break
-    default:
+    case 'defaultDark':
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corTitulosBranca/60'
       textDestaque = 'text-primaryLight'
-      backgroundMode = 'bg-primaryDark'
+      backgroundMode = 'bg-transparent'
       miniTagCtaDark = 'text-primaryLight'
+      break
+
+    case 'defaultLight':
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
+      textDestaque = 'text-primaryDark'
+      backgroundMode = 'bg-transparent'
+      miniTagCtaDark = 'text-primaryDark'
   }
 
   const containerList = [
@@ -118,7 +126,9 @@ function CtaNovoTemplate({ colorMode, container }) {
                 link={content.texts.links.ctaWhatsapp}
                 label={content.texts.ctaSecondary.ctaButtonText}
                 colorMode={colorMode}
+                className={`clickevent`}
               />
+
               <ButtonReflexo
                 id="ligar"
                 icon={<Phone width={20} />}

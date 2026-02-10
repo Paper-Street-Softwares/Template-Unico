@@ -55,13 +55,22 @@ function NavbarNovaTemplate({
       backgrondModeActive = 'bg-transparent'
 
       break
-    case 'default':
+    case 'defaultDark':
       backgrondMode = 'bg-primaryDark'
       textOpacity = 'text-corTitulosBranca'
       hoverLinks = ' bg-gradient-to-r from-white to-white '
       colorMenu = 'text-white'
       bgOpacitySidebar = 'bg-white/70'
       backgrondModeActive = 'bg-primaryDark'
+      backgrondModeActive = 'bg-transparent'
+      break
+
+    case 'defaultLight':
+      backgrondMode = 'bg-white'
+      textOpacity = 'text-corTitulosPreto'
+      hoverLinks = ' bg-gradient-to-r from-primaryDark to-primaryDark '
+      colorMenu = 'text-primaryDark'
+      bgOpacitySidebar = 'bg-white/70'
       backgrondModeActive = 'bg-transparent'
   }
 
@@ -78,8 +87,8 @@ function NavbarNovaTemplate({
           <div
             className={`flex flex-col z-20 relative  ${
               isScrolled
-                ? 'w-[20%] tablet1:w-[20%] tablet2:w-[15%] desktop1:w-[10%] desktop2:w-[10%] desktop3:w-[8%] transition-all duration-700'
-                : 'py-3 w-[30%] tablet1:w-[30%] tablet2:w-[25%] desktop1:w-[15%] desktop3:w-[15%] transition-all duration-700'
+                ? 'w-[20%] tablet1:w-[15%] tablet2:w-[15%] desktop1:w-[10%] desktop2:w-[10%] desktop3:w-[8%] transition-all duration-700'
+                : 'py-3 w-[30%] tablet1:w-[20%] tablet2:w-[20%] desktop1:w-[15%] desktop3:w-[15%] transition-all duration-700'
             }`}
           >
             <a
@@ -121,7 +130,7 @@ function NavbarNovaTemplate({
                       aria-label={`Link para ${item}`}
                       title={item}
                       data-track={id}
-                      className={`cursor-pointer ${hoverLinks} bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
+                      className={`cursor-pointer ${hoverLinks} bg-[length:0%_2px] bg-no-repeat bg-left-bottom pb-1 transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
                       onClick={(e) => {
                         e.preventDefault()
                         const el = document.getElementById(id)
@@ -157,11 +166,12 @@ function NavbarNovaTemplate({
                 </svg>
               }
               colorMode={colorMode}
+              className="clickevent text-sm mb-0"
             />
           </div>
 
           <div className=" lg:hidden ">
-            <SidebarSocial />
+            <SidebarSocial colorMode={colorMode} />
           </div>
 
           {/* Mobile Toggle */}

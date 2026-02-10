@@ -32,7 +32,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-terciary/60'
+      backgroundMode = 'bg-transparent'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
@@ -42,7 +42,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
       image = ' border-[8px] border-white'
       break
     case 'dark':
-      backgroundMode = 'bg-black'
+      backgroundMode = 'bg-transparent'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-primaryLight'
@@ -51,8 +51,18 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
       buttonBg = 'bg-primaryLight'
       image = ' border-[8px] border-borderImage'
       break
-    default:
-      backgroundMode = 'bg-terciary/60'
+    case 'defaultDark':
+      backgroundMode = 'bg-transparent'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
+      textDestaque = 'text-primaryDark'
+      cardBg = 'bg-white/10'
+      iconBg = 'bg-primaryDark/10 text-primaryDark'
+      buttonBg = 'bg-primaryDark'
+      image = ' border-[8px] border-white'
+      break
+    case 'defaultLight':
+      backgroundMode = 'bg-transparent'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
@@ -79,7 +89,9 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                 <div>
                   <SectionHeaderNovo
                     miniTitle={content.texts.about.miniTag}
-                    title={content.texts.about.title}
+                    title={content.texts.about.FirstPart}
+                    destaque={content.texts.about.Destaque}
+                    secondPart={content.texts.about.SecondPart}
                     subtitle={content.texts.about.subtitle}
                     type="article"
                     colorMode={colorMode}
@@ -157,6 +169,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                         link={content.texts.links.ctaWhatsapp}
                         label={content.texts.about.ctaButtonText}
                         colorMode={colorMode}
+                        className={`clickevent`}
                       />
                       <ButtonReflexo
                         id="ligar"
@@ -211,6 +224,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                     link={content.texts.links.ctaWhatsapp}
                     label={content.texts.about.ctaButtonText}
                     colorMode={colorMode}
+                    className={`clickevent`}
                   />
                   <ButtonReflexo
                     id="ligar"
@@ -262,6 +276,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                 link={content.texts.links.ctaWhatsapp}
                 label={content.texts.navbar.ctaButtonText}
                 colorMode={colorMode}
+                className={`clickevent`}
               />
             </div>
           </Dialog>

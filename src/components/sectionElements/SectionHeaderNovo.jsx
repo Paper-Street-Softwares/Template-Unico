@@ -4,13 +4,15 @@ import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 function SectionHeaderNovo({
   miniTitle,
   title,
+  destaque,
+  secondPart,
   subtitle,
   colorMode,
   type,
   usage,
   className,
 }) {
-  let backgroundMode,
+  let textDestaque,
     text,
     textOpacity,
     cardBg,
@@ -21,7 +23,7 @@ function SectionHeaderNovo({
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-secondary/60'
+      textDestaque = 'text-primaryDark'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       cardBg = 'bg-white'
@@ -32,7 +34,7 @@ function SectionHeaderNovo({
       break
 
     case 'dark':
-      backgroundMode = 'bg-black'
+      textDestaque = 'text-primaryLight'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       cardBg = 'bg-gray-900'
@@ -42,8 +44,19 @@ function SectionHeaderNovo({
       miniTag = 'text-primaryLight'
       break
 
-    default:
-      backgroundMode = 'bg-secondary/60'
+    case 'defaultDark':
+      textDestaque = 'text-primaryDark'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
+      cardBg = 'bg-white'
+      borderCard = 'border-border'
+      arrowColor = 'text-mutedForeground group-hover:text-primaryDark'
+      imageBorder = 'border-white'
+      miniTag = 'text-primaryDark'
+      break
+
+    case 'defaultLight':
+      textDestaque = 'text-primaryDark'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       cardBg = 'bg-white'
@@ -74,7 +87,8 @@ function SectionHeaderNovo({
           <h2
             className={`text-3xl md:text-4xl font-mainFont font-medium mb-4 ${text}`}
           >
-            {title}
+            {title} <span className={`italic ${textDestaque}`}>{destaque}</span>{' '}
+            {secondPart}
           </h2>
         )}
 

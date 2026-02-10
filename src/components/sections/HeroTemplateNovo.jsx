@@ -42,20 +42,20 @@ function HeroTemplateNovo({
 }) {
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-primaryDark'
-      bgFaixaHero = 'bg-transparent'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
+      backgroundMode = 'bg-transparent'
+      bgFaixaHero = 'bg-terciary'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
-      bgMinitag = 'bg-primaryDark border-white text-white'
+      bgMinitag = 'bg-transparent border-primaryDark text-primaryDark'
       // textObs = 'text-green-500'
       image = ' border-[8px] border-white'
       bgAlertHero = 'bg-white'
       borderColor = 'bg-white'
       break
     case 'dark':
-      backgroundMode = 'bg-dark'
-      bgFaixaHero = 'bg-darkOpacity'
+      backgroundMode = 'bg-transparent'
+      bgFaixaHero = 'bg-white/5'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-primaryLight'
@@ -66,17 +66,31 @@ function HeroTemplateNovo({
       borderColor = 'border-borderImage'
 
       break
-    case 'default':
-      backgroundMode = 'bg-primaryDark'
+    case 'defaultDark':
+      backgroundMode = 'bg-transparent'
       bgFaixaHero = 'bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-primaryLight'
       bgMinitag = 'bg-transparent border-primaryLight text-primaryLight'
       // textObs = 'text-green-500'
-      image = ' border-[8px] border-borderImage'
+      image = ' border-[8px] border-primaryLight'
       bgAlertHero = 'bg-black text-white/60'
-      borderColor = 'border-terciary'
+      borderColor = 'border-primaryLight'
+
+      break
+
+    case 'defaultLight':
+      backgroundMode = 'bg-transparent'
+      bgFaixaHero = 'bg-terciary'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
+      textDestaque = 'text-primaryDark'
+      bgMinitag = 'bg-transparent border-primaryDark text-primaryDark'
+      // textObs = 'text-green-500'
+      image = ' border-[8px] border-white'
+      bgAlertHero = 'bg-white'
+      borderColor = 'bg-white'
   }
 
   const { showGlobalButton } = useColorMode()
@@ -110,10 +124,10 @@ function HeroTemplateNovo({
     <SectionArea
       data-theme={colorMode}
       id="home"
-    paddingTopAndBottom={false}
+      paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
-      <section className="relative w-full pt-[130px] phone2:pt-[140px] phone3:pt-[160px] tablet1:pt-[164px] tablet2:pt-[177px] desktop1:pt-[195px] desktop2:pt-[220px] pb-[64px] desktop1:pb-[96px] flex items-center justify-center overflow-hidden font-mainFont">
+      <section className="relative w-full pt-[130px] phone2:pt-[140px] phone3:pt-[160px] tablet1:pt-[164px] tablet2:pt-[177px] desktop1:pt-[195px] desktop2:pt-[235px] pb-[64px] desktop1:pb-[96px] flex items-center justify-center overflow-hidden font-mainFont">
         {/* Abstract Background Shapes */}
         <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}
@@ -127,7 +141,7 @@ function HeroTemplateNovo({
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="space-y-4 desktop1:space-y-8 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
+              className="space-y-8 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
             >
               <div
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-[8px] phone2:text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
@@ -138,13 +152,17 @@ function HeroTemplateNovo({
                 {content.texts.hero.miniTag}
               </div>
               <h1
-                className={`desktop1:text-start text-[17px] phone2:text-[28px] phone3:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-medium leading-[1.1] ${text} `}
+                className={` desktop1:text-start text-[31px] phone2:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] ${text} `}
               >
-                {content.texts.hero.title}
+                {content.texts.hero.FirstPart}{' '}
+                <span className={`${textDestaque}`}>
+                  {content.texts.hero.Destaque}
+                </span>{' '}
+                {content.texts.hero.SecondPart}
               </h1>
 
               <p
-                className={`text-start desktop1:text-start text-[8px] phone2:text-[12px] phone3:text-[14px] md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
+                className={`text-start desktop1:text-start text-lg md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
               >
                 {content.texts.hero.subtitle}
               </p>
@@ -176,8 +194,9 @@ function HeroTemplateNovo({
                   link={content.texts.links.ctaWhatsapp}
                   label={content.texts.hero.ctaButtonText}
                   colorMode={colorMode}
-                  className="my-0 text-[8px] phone2:text-paragraph3 tablet1:text-paragraph4"
+                  className="clickevent my-0 text-[8px] phone2:text-paragraph3 tablet1:text-paragraph4"
                 />
+
                 <ButtonReflexo
                   id="ligar"
                   icon={<Phone width={20} />}

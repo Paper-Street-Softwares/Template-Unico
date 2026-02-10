@@ -118,40 +118,39 @@ const content = {
     },
     hero: {
       miniTag: 'ESCRITÓRIO DE ADVOCACIA',
-      title: (
-        <h1>
-          Análise jurídica clara para decisões{' '}
-          <span className="destaque relative italic font-light">
-            seguras
-            <span>
-              <svg
-                className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-white hidden desktop1:flex"
-                viewBox="0 0 100 10"
-                preserveAspectRatio="none"
-              >
-                <path
-                  d="M0 5 Q 50 10 100 5"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  fill="none"
-                />
-              </svg>
-              <svg
-                className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-white desktop1:hidden"
-                viewBox="0 0 100 10"
-                preserveAspectRatio="none"
-              >
-                <path
-                  d="M0 5 Q 50 10 100 5"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  fill="none"
-                />
-              </svg>
-            </span>
+      FirstPart: <span>Análise jurídica clara para decisões </span>,
+      Destaque: (
+        <span className="relative italic font-light">
+          seguras
+          <span>
+            <svg
+              className=" destaque absolute -bottom-2 left-0 w-full h-3 text-black hidden desktop1:flex"
+              viewBox="0 0 100 10"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0 5 Q 50 10 100 5"
+                stroke="currentColor"
+                strokeWidth="2"
+                fill="none"
+              />
+            </svg>
+            <svg
+              className="destaque absolute -bottom-2 left-0 w-full h-3 text-black desktop1:hidden"
+              viewBox="0 0 100 10"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M0 5 Q 50 10 100 5"
+                stroke="currentColor"
+                strokeWidth="2"
+                fill="none"
+              />
+            </svg>
           </span>
-        </h1>
+        </span>
       ),
+      SecondPart: <span></span>,
       subtitle: (
         <p>
           Atendimento jurídico com orientação técnica, ética profissional e
@@ -223,13 +222,9 @@ const content = {
     },
     features: {
       miniTag: 'ÁREAS DE ATUAÇÃO',
-      title: (
-        <h1>
-          Atuação
-          <span className="destaque italic font-light"> jurídica</span> em
-          diferentes áreas do Direito
-        </h1>
-      ),
+      FirstPart: <span>Atuação </span>,
+      Destaque: <span className="italic font-light"> jurídica</span>,
+      SecondPart: <span>em diferentes áreas do Direito</span>,
       subtitle: 'Atendimento jurídico com ética, técnica e responsabilidade.',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
@@ -364,12 +359,10 @@ const content = {
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
       miniTag: 'QUEM ESTÁ POR TRÁS DO SEU DIREITO',
-      title: (
-        <h1>
-          Profissionais a serviço
-          <span className="destaque italic font-light"> do Direito</span>{' '}
-        </h1>
-      ),
+      FirstPart: <span> Profissionais a serviço </span>,
+      Destaque: <span className="italic font-light"> do Direito</span>,
+      SecondPart: <span></span>,
+
       SecondPartTitle: '',
       subtitle:
         'Experiência jurídica construída com ética, técnica e compromisso profissional.',
@@ -452,12 +445,10 @@ const content = {
     // },
     steps: {
       miniTag: 'POR QUE CONTAR COM UM ADVOGADO',
-      title: (
-        <h1>
-          Segurança jurídica em
-          <span className="destaque italic font-light"> cada decisão </span>
-        </h1>
-      ),
+      FirstPart: <span> Segurança jurídica em </span>,
+      Destaque: <span className="italic font-light"> cada decisão</span>,
+      SecondPart: <span></span>,
+
       subtitle:
         'Atuação profissional para orientar, prevenir riscos e conduzir demandas com responsabilidade',
       img: imgSteps,
@@ -513,15 +504,15 @@ const content = {
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
-    // blog: {
-    //   miniTag: 'BLOG',
-    //   title: 'A_Definir',
-    //   subtitle: '',
-    //   img: imgSteps,
-    //   labelCards: 'Ver mais',
-    //   label: 'Clique aqui para ver todas as matérias',
-    //   blogLink: 'mauromoncao.wordpress.com', //sem "https://"
-    // },
+    blog: {
+      miniTag: 'BLOG',
+      title: 'A_Definir',
+      subtitle: '',
+      img: imgSteps,
+      labelCards: 'Ver mais',
+      label: 'Clique aqui para ver todas as matérias',
+      blogLink: 'mauromoncao.wordpress.com', //sem "https://"
+    },
     faq: {
       miniTag: 'TIRE SUAS DÚVIDAS',
       title: 'Perguntas Frequentes',

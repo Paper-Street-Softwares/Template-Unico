@@ -26,7 +26,7 @@ function StepsNovoTemplate({ colorMode }) {
 
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-terciary/60'
+      backgroundMode = 'bg-transparent'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       stepNumberBg = 'bg-white'
@@ -36,7 +36,7 @@ function StepsNovoTemplate({ colorMode }) {
       image = ' border-[8px] border-white'
       break
     case 'dark':
-      backgroundMode = 'bg-black'
+      backgroundMode = 'bg-transparent'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       stepNumberBg = 'bg-dark'
@@ -46,8 +46,20 @@ function StepsNovoTemplate({ colorMode }) {
       image = ' border-[8px] border-borderImage'
 
       break
-    default:
-      backgroundMode = 'bg-terciary/60'
+    case 'defaultDark':
+      backgroundMode = 'bg-transparent'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
+      stepNumberBg = 'bg-white'
+      stepNumberText = 'text-primaryDark'
+      lineColor = 'bg-primaryDark/20'
+      textDestaque = 'text-primaryDark'
+      image = ' border-[8px] border-white'
+
+      break
+
+    case 'defaultLight':
+      backgroundMode = 'bg-transparent'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       stepNumberBg = 'bg-white'
@@ -109,6 +121,7 @@ function StepsNovoTemplate({ colorMode }) {
                       link={content.texts.links.ctaWhatsapp}
                       label={content.texts.steps.ctaButtonText}
                       colorMode={colorMode}
+                      className={`clickevent`}
                     />
                     <ButtonReflexo
                       id="ligar"
@@ -128,7 +141,9 @@ function StepsNovoTemplate({ colorMode }) {
             <div className="order-1 lg:order-2 space-y-12">
               <SectionHeaderNovo
                 miniTitle={content.texts.steps.miniTag}
-                title={content.texts.steps.title}
+                title={content.texts.steps.FirstPart}
+                destaque={content.texts.steps.Destaque}
+                secondPart={content.texts.steps.SecondPart}
                 subtitle={content.texts.steps.subtitle}
                 colorMode={colorMode}
                 type="article"
@@ -183,6 +198,7 @@ function StepsNovoTemplate({ colorMode }) {
                       link={content.texts.links.ctaWhatsapp}
                       label={content.texts.steps.ctaButtonText}
                       colorMode={colorMode}
+                      className={`clickevent`}
                     />
                     <ButtonReflexo
                       id="ligar"

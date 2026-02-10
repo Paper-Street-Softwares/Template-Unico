@@ -21,18 +21,18 @@ export default {
     extend: {
       colors: {
         // Principais
-        primaryLight: '#BF75E6',
+        primaryLight: '#F1CB73',
         primaryDark: '#110617',
         secondary: '#E9E0E9',
         terciary: '#F7F5F1',
         quartenary: '#FCFBFA',
-        borderImage: '#FCFBFA',
+        borderImage: '#292929',
 
         // Copys
         corTitulosBranca: '#FFFFFF',
-        corOutrosTextosBranca: '#FFFFFF99',
+        corOutrosTextosBranca: '#F5F5F5',
         corTitulosPreto: ' #000000',
-        corOutrosTextosPreto: '#666666',
+        corOutrosTextosPreto: '#4C4C4C',
 
         // hex botãoColor wpp
         wppLight: '#2E7027',

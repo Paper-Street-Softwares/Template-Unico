@@ -37,19 +37,26 @@ function FooterNovoTemplate({
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       iconColor = 'text-primaryDark/60'
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-transparent'
       break
     case 'dark':
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       iconColor = 'text-primaryLight/80'
-      backgroundMode = 'bg-darkOpacity'
+      backgroundMode = 'bg-transparent'
       break
-    default:
+    case 'defaultDark':
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       iconColor = 'text-white/60'
-      backgroundMode = 'bg-primaryDark'
+      backgroundMode = 'bg-transparent'
+      break
+
+    case 'defaultLight':
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
+      iconColor = 'text-primaryDark/60'
+      backgroundMode = 'bg-transparent'
   }
 
   return (
@@ -132,7 +139,7 @@ function FooterNovoTemplate({
                             aria-label={`Link para ${item}`}
                             title={item}
                             data-track={id}
-                            className={`cursor-pointer bg-gradient-to-r from-white to-white  bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
+                            className={`cursor-pointer bg-gradient-to-r from-white to-white pb-1 bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
                             onClick={(e) => {
                               e.preventDefault()
                               const el = document.getElementById(id)

@@ -7,14 +7,14 @@ function CardsImportants({ title, paragraph, colorMode, className }) {
   let bgCircle, bgCard, titleMode, description
   switch (colorMode) {
     case 'light':
-      bgCard = 'bg-terciary'
-      bgCircle = 'bg-primaryDark'
+      bgCard = 'bg-white'
+      bgCircle = 'bg-terciary'
       titleMode = 'text-corTitulosPreto'
       description = 'text-corOutrosTextosPreto'
       break
     case 'dark':
       bgCard = 'bg-black'
-      bgCircle = 'bg-dark'
+      bgCircle = 'bg-primaryLight'
       titleMode = 'text-corTitulosBranca'
       description = 'text-corOutrosTextosBranca'
       break
@@ -27,7 +27,7 @@ function CardsImportants({ title, paragraph, colorMode, className }) {
   return (
     <MotionDivDownToUp>
       <div
-        className={`relative h-fit shadow-lg max-w-[400px] py-12 px-10 rounded-[18px] flex flex-col gap-4 font-secondFont group transition-all duration-700 ${className ?? bgCard} `}
+        className={`relative h-fit shadow-lg max-w-[400px] py-12 px-10 rounded-[18px] flex flex-col gap-4 font-secondFont group transition-all duration-700 hover:scale-105 ${className ?? bgCard} `}
       >
         <h1
           className={`text-start font-bold duration-700 ${className ?? titleMode}`}
@@ -37,7 +37,7 @@ function CardsImportants({ title, paragraph, colorMode, className }) {
         <p className={`text-start ${description} duration-700`}>{paragraph}</p>
 
         <div
-          className={`absolute border-2 duration-700 transition-all rounded-full p-3 -top-6 left-6 ${bgCircle}`}
+          className={`absolute border-2 border-primaryDark duration-700 transition-all rounded-full p-3 -top-6 left-6 ${bgCircle}`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

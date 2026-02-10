@@ -22,21 +22,28 @@ function FaqNovoTemplate({ colorMode }) {
       text = 'text-corTitulosPreto'
       text = 'text-corTitulosPreto'
       hoverText = 'hover:text-primaryDark'
-      backgroundMode = 'bg-terciary/60'
+      backgroundMode = 'bg-transparent'
 
       break
     case 'dark':
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       hoverText = 'hover:text-primaryLight'
-      backgroundMode = 'bg-black'
+      backgroundMode = 'bg-transparent'
       break
 
-    default:
+    case 'defaultDark':
       text = 'text-corTitulosPreto'
       text = 'text-corTitulosPreto'
       hoverText = 'hover:text-primaryDark'
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-transparent'
+      break
+
+    case 'defaultLight':
+      text = 'text-corTitulosPreto'
+      text = 'text-corTitulosPreto'
+      hoverText = 'hover:text-primaryDark'
+      backgroundMode = 'bg-transparent'
   }
 
   return (
@@ -87,7 +94,7 @@ function FaqNovoTemplate({ colorMode }) {
           >
             <a
               href={content.texts.links.ctaWhatsapp}
-              className="w-fit"
+              className="clickevent w-fit"
               target="_blank"
             >
               Clique aqui caso tenha mais dúvidas
@@ -97,7 +104,7 @@ function FaqNovoTemplate({ colorMode }) {
               link={content.texts.links.ctaWhatsapp}
               label={content.texts.hero.ctaButtonText}
               colorMode={colorMode}
-              className="my-0"
+              className="clickevent my-0"
             /> */}
           </div>
         </section>
