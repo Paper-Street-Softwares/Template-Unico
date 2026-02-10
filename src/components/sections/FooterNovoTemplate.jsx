@@ -31,25 +31,30 @@ function FooterNovoTemplate({
   const grid = mapa ? 'lg:grid-cols-4' : 'lg:grid-cols-3'
 
   // Classes dinâmicas de acordo com colorMode
-  let text, textOpacity, iconColor, backgroundMode
+  let text, textOpacity, iconColor, backgroundMode, hoverLinks
   switch (colorMode) {
     case 'light':
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
       iconColor = 'text-primaryDark/60'
       backgroundMode = 'bg-transparent'
+      hoverLinks = ' bg-gradient-to-r from-primaryDark to-primaryDark '
+
       break
     case 'dark':
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       iconColor = 'text-primaryLight/80'
       backgroundMode = 'bg-transparent'
+      hoverLinks = ' bg-gradient-to-r from-primaryLight to-primaryLight '
       break
     case 'defaultDark':
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       iconColor = 'text-white/60'
       backgroundMode = 'bg-transparent'
+      hoverLinks = ' bg-gradient-to-r from-white to-white '
+
       break
 
     case 'defaultLight':
@@ -57,6 +62,7 @@ function FooterNovoTemplate({
       textOpacity = 'text-corOutrosTextosPreto'
       iconColor = 'text-primaryDark/60'
       backgroundMode = 'bg-transparent'
+      hoverLinks = ' bg-gradient-to-r from-primaryDark to-primaryDark '
   }
 
   return (
@@ -139,7 +145,7 @@ function FooterNovoTemplate({
                             aria-label={`Link para ${item}`}
                             title={item}
                             data-track={id}
-                            className={`cursor-pointer bg-gradient-to-r from-white to-white pb-1 bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
+                            className={`cursor-pointer bg-gradient-to-r ${hoverLinks} pb-1 bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
                             onClick={(e) => {
                               e.preventDefault()
                               const el = document.getElementById(id)
