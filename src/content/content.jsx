@@ -35,14 +35,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'A_Definir',
+  name: 'Oliveira Teixeira Advocacia',
   email: 'contato', // Email desejado pelo cliente
-  emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'A_Definir', // Sem "www"
+  emailSecundario: 'kaio@kaio.com.br', // Email desejado pelo cliente
+  domain: 'otadvocacia.com.br', // Sem "www"
   phone: {
-    ddd: '00',
-    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '0000', // Apenas os 4 últimos números
+    ddd: '61',
+    firstPart: '99689', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '4436', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -57,10 +57,10 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir</p>
+      <p>SCN Quadra 02, Bloco D,</p>
+      <p>Sala 1027, Torre A – Shopping Liberty Mall,</p>
+      <p>Brasília - DF,,</p>
+      <p>CEP: 70712-903</p>
     </div>
   ),
   enderecoSecundario: (
@@ -74,11 +74,11 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>A_Definir</p>
+      <p>8h às 18h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: '', // Sem o @
+  instagramProfile: 'otadvocacia', // Sem o @
   facebookProfile: '',
   linkeDinProfile: '',
   x: '',

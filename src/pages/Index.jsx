@@ -114,10 +114,10 @@ export default function Index() {
                 mapa={false}
                 phone={true}
                 phoneSecond={false}
-                expediente={false}
-                adress={false}
-                email={true}
-                emailSecond={false}
+                expediente={true}
+                adress={true}
+                email={false}
+                emailSecond={true}
                 fraseFooter={true} // frase Google LLC
                 obs={false}
               />
