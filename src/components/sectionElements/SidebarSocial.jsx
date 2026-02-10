@@ -20,7 +20,6 @@ export default function SidebarSocial({ colorMode, mode = 'blog' }) {
   const [visible, setVisible] = useState(false)
   const [visibleSections, setVisibleSections] = useState([])
   const [scrolled, setScrolled] = useState(false)
-  //dsadfasf
 
   const toggleSidebar = () => setVisible(!visible)
 
@@ -36,8 +35,7 @@ export default function SidebarSocial({ colorMode, mode = 'blog' }) {
     if (mode === 'site') {
       setVisibleSections(paired)
     } else {
-      const filtered = paired.filter(({ id }) => !!document.getElementById(id))
-      setVisibleSections(filtered)
+      setVisibleSections(paired)
     }
   }, [mode])
 
