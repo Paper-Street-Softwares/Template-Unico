@@ -157,6 +157,7 @@ function NavbarNovaTemplate({
                 </svg>
               }
               colorMode={colorMode}
+              className="text-sm mb-0"
             />
           </div>
 

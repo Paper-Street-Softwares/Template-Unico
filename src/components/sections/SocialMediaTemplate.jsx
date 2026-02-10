@@ -29,7 +29,7 @@ function SocialMediaTemplate({ colorMode }) {
       break
 
     case 'dark':
-      backgroundMode = 'bg-black'
+      backgroundMode = 'bg-darkOpacity'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       cardBg = 'bg-gray-900'

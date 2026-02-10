@@ -42,7 +42,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
       image = ' border-[8px] border-white'
       break
     case 'dark':
-      backgroundMode = 'bg-black'
+      backgroundMode = 'bg-darkOpacity'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-primaryLight'
@@ -79,7 +79,9 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                 <div>
                   <SectionHeaderNovo
                     miniTitle={content.texts.about.miniTag}
-                    title={content.texts.about.title}
+                    title={content.texts.about.FirstPart}
+                    destaque={content.texts.about.Destaque}
+                    secondPart={content.texts.about.SecondPart}
                     subtitle={content.texts.about.subtitle}
                     type="article"
                     colorMode={colorMode}

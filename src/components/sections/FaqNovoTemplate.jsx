@@ -29,14 +29,14 @@ function FaqNovoTemplate({ colorMode }) {
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       hoverText = 'hover:text-primaryLight'
-      backgroundMode = 'bg-black'
+      backgroundMode = 'bg-darkOpacity'
       break
 
     default:
       text = 'text-corTitulosPreto'
       text = 'text-corTitulosPreto'
       hoverText = 'hover:text-primaryDark'
-      backgroundMode = 'bg-white'
+      backgroundMode = 'bg-terciary/60'
   }
 
   return (

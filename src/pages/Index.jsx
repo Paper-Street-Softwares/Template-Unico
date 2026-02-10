@@ -77,7 +77,7 @@ export default function Index() {
             <CtaNovoTemplate colorMode={colorMode} container={true} />
 
             <StepsNovoTemplate colorMode={colorMode} />
-            {/* <BlogPosts colorMode={colorMode} /> */}
+            <BlogPosts colorMode={colorMode} />
             <FaqNovoTemplate colorMode={colorMode} />
             <FooterNovoTemplate
               colorMode={colorMode}

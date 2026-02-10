@@ -4,6 +4,8 @@ import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 function SectionHeaderNovo({
   miniTitle,
   title,
+  destaque,
+  secondPart,
   subtitle,
   colorMode,
   type,
@@ -74,7 +76,7 @@ function SectionHeaderNovo({
           <h2
             className={`text-3xl md:text-4xl font-mainFont font-medium mb-4 ${text}`}
           >
-            {title}
+            {title} <span className="italic">{destaque}</span> {secondPart}
           </h2>
         )}
 

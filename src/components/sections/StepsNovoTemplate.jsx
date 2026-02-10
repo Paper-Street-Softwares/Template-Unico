@@ -36,7 +36,7 @@ function StepsNovoTemplate({ colorMode }) {
       image = ' border-[8px] border-white'
       break
     case 'dark':
-      backgroundMode = 'bg-black'
+      backgroundMode = 'bg-darkOpacity'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       stepNumberBg = 'bg-dark'
@@ -128,7 +128,9 @@ function StepsNovoTemplate({ colorMode }) {
             <div className="order-1 lg:order-2 space-y-12">
               <SectionHeaderNovo
                 miniTitle={content.texts.steps.miniTag}
-                title={content.texts.steps.title}
+                title={content.texts.steps.FirstPart}
+                destaque={content.texts.steps.Destaque}
+                secondPart={content.texts.steps.SecondPart}
                 subtitle={content.texts.steps.subtitle}
                 colorMode={colorMode}
                 type="article"

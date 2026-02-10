@@ -46,11 +46,11 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
       textObservation = 'text-white'
       break
     case 'dark':
-      backgroundMode = 'bg-darkOpacity'
+      backgroundMode = 'bg-black'
       bgAccordion = 'rgba(0,0,0,0.8)'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
-      textDestaque = 'text-primaryLight'
+      textDestaque = 'text-primaryDark'
       cardBg = 'bg-dark'
       iconBg = 'bg-darkOpacity text-primaryLight'
       image = ' border-[8px] border-borderImage'
@@ -158,7 +158,9 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
               <div className="order-1 lg:order-2 space-y-8 w-full desktop1:w-[50%]">
                 <SectionHeaderNovo
                   miniTitle={content.texts.features.miniTag}
-                  title={content.texts.features.title}
+                  title={content.texts.features.FirstPart}
+                  destaque={content.texts.features.Destaque}
+                  secondPart={content.texts.features.SecondPart}
                   subtitle={content.texts.features.subtitle}
                   type="article"
                   colorMode={colorMode}
@@ -208,7 +210,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
                     <MotionDivDownToUp>
                       <div
                         key={idx}
-                        className={`group p-6 rounded-xl ${cardBg} ${hoverCardBg} transition-all duration-700`}
+                        className={`group p-6 rounded-xl ${cardBg} hover:scale-105 transition-all duration-700`}
                       >
                         <div
                           className={`w-10 h-10 rounded-full ${iconBg} mb-4 flex items-center justify-center shadow-sm transition-transform`}
@@ -216,12 +218,12 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
                           {feature.icon}
                         </div>
                         <h1
-                          className={`font-secondFont font-bold text-lg mb-2 ${text} ${hoverTextCard} transition-all`}
+                          className={`font-secondFont font-bold text-lg mb-2 ${text} transition-all`}
                         >
                           {feature.title}
                         </h1>
                         <p
-                          className={`text-sm font-secondFont font-light ${textOpacity} ${hoverTextCard} transition-all`}
+                          className={`text-sm font-secondFont font-light ${textOpacity} transition-all`}
                         >
                           {feature.subtitle}
                         </p>

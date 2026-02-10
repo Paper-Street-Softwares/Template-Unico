@@ -42,12 +42,12 @@ function HeroTemplateNovo({
 }) {
   switch (colorMode) {
     case 'light':
-      backgroundMode = 'bg-primaryDark'
-      bgFaixaHero = 'bg-transparent'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
+      backgroundMode = 'bg-white'
+      bgFaixaHero = 'bg-terciary'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
-      bgMinitag = 'bg-primaryDark border-white text-white'
+      bgMinitag = 'bg-transparent border-primaryDark text-primaryDark'
       // textObs = 'text-green-500'
       image = ' border-[8px] border-white'
       bgAlertHero = 'bg-white'
@@ -55,7 +55,7 @@ function HeroTemplateNovo({
       break
     case 'dark':
       backgroundMode = 'bg-dark'
-      bgFaixaHero = 'bg-darkOpacity'
+      bgFaixaHero = 'bg-white/5'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-primaryLight'
@@ -74,9 +74,9 @@ function HeroTemplateNovo({
       textDestaque = 'text-primaryLight'
       bgMinitag = 'bg-transparent border-primaryLight text-primaryLight'
       // textObs = 'text-green-500'
-      image = ' border-[8px] border-borderImage'
+      image = ' border-[8px] border-primaryLight'
       bgAlertHero = 'bg-black text-white/60'
-      borderColor = 'border-terciary'
+      borderColor = 'border-primaryLight'
   }
 
   const { showGlobalButton } = useColorMode()
@@ -110,7 +110,7 @@ function HeroTemplateNovo({
     <SectionArea
       data-theme={colorMode}
       id="home"
-    paddingTopAndBottom={false}
+      paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
       <section className="relative w-full pt-[130px] phone2:pt-[140px] phone3:pt-[160px] tablet1:pt-[164px] tablet2:pt-[177px] desktop1:pt-[195px] desktop2:pt-[220px] pb-[64px] desktop1:pb-[96px] flex items-center justify-center overflow-hidden font-mainFont">
@@ -127,7 +127,7 @@ function HeroTemplateNovo({
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="space-y-4 desktop1:space-y-8 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
+              className="space-y-8 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
             >
               <div
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-[8px] phone2:text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
@@ -138,13 +138,14 @@ function HeroTemplateNovo({
                 {content.texts.hero.miniTag}
               </div>
               <h1
-                className={`desktop1:text-start text-[17px] phone2:text-[28px] phone3:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-medium leading-[1.1] ${text} `}
+                className={` desktop1:text-start text-[31px] phone2:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] ${text} `}
               >
-                {content.texts.hero.title}
+                {content.texts.hero.FirstPart} {content.texts.hero.Destaque}{' '}
+                {content.texts.hero.SecondPart}
               </h1>
 
               <p
-                className={`text-start desktop1:text-start text-[8px] phone2:text-[12px] phone3:text-[14px] md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
+                className={`text-start desktop1:text-start text-lg md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
               >
                 {content.texts.hero.subtitle}
               </p>

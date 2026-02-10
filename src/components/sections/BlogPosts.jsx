@@ -29,10 +29,10 @@ function BlogPosts({ colorMode }) {
       linkColor = 'text-primaryLight'
       break
     default:
-      backgroundMode = 'bg-black'
-      titleColor = 'text-white'
-      subtitleColor = 'text-white/70'
-      linkColor = 'text-primaryLight'
+      backgroundMode = 'bg-white'
+      titleColor = 'text-corTitulosPreto'
+      subtitleColor = 'text-corOutrosTextosPreto'
+      linkColor = 'text-primaryDark'
   }
 
   useEffect(() => {
@@ -70,10 +70,11 @@ function BlogPosts({ colorMode }) {
             colorMode={colorMode}
           />
 
-          <ul className="flex flex-wrap gap-[30px] justify-center mb-[80px]">
+          <ul className="flex flex-wrap gap-[30px] justify-center">
             {posts.slice(0, visibleCount).map((post) => (
               <li key={post.ID}>
                 <WordPressBlogCard
+                  colorMode={colorMode}
                   img={
                     post.featured_image && (
                       <img
@@ -108,7 +109,7 @@ function BlogPosts({ colorMode }) {
 
           <MotionDivDownToUp>
             <Paragraphs
-              className={`text-center underline transition hover:scale-110 ${linkColor}`}
+              className={`flex justify-center mx-auto mt-12 scale-100 hover:scale-90 duration-500 w-fit transition-all cursor-pointer `}
             >
               <a
                 href={`https://${content.texts.blog.blogLink}`}
