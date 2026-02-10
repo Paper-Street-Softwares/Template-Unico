@@ -55,13 +55,22 @@ function NavbarNovaTemplate({
       backgrondModeActive = 'bg-transparent'
 
       break
-    case 'default':
+    case 'defaultDark':
       backgrondMode = 'bg-primaryDark'
       textOpacity = 'text-corTitulosBranca'
       hoverLinks = ' bg-gradient-to-r from-white to-white '
       colorMenu = 'text-white'
       bgOpacitySidebar = 'bg-white/70'
       backgrondModeActive = 'bg-primaryDark'
+      backgrondModeActive = 'bg-transparent'
+      break
+
+    case 'defaultLight':
+      backgrondMode = 'bg-white'
+      textOpacity = 'text-corTitulosPreto'
+      hoverLinks = ' bg-gradient-to-r from-primaryDark to-primaryDark '
+      colorMenu = 'text-primaryDark'
+      bgOpacitySidebar = 'bg-white/70'
       backgrondModeActive = 'bg-transparent'
   }
 

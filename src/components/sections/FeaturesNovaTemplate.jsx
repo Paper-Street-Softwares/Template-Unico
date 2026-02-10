@@ -58,7 +58,20 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
       textObservation = 'text-black'
 
       break
-    default:
+    case 'defaultDark':
+      backgroundMode = 'bg-transparent'
+      bgAccordion = '#fff'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
+      textDestaque = 'text-primaryDark'
+      cardBg = 'bg-quartenary'
+      iconBg = 'bg-white text-primaryDark'
+      image = ' border-[8px] border-white'
+      bgObservation = 'bg-primaryDark'
+      textObservation = 'text-white'
+      break
+
+    case 'defaultLight':
       backgroundMode = 'bg-transparent'
       bgAccordion = '#fff'
       text = 'text-corTitulosPreto'

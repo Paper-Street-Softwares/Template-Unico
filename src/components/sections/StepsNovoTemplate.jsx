@@ -46,7 +46,19 @@ function StepsNovoTemplate({ colorMode }) {
       image = ' border-[8px] border-borderImage'
 
       break
-    default:
+    case 'defaultDark':
+      backgroundMode = 'bg-transparent'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
+      stepNumberBg = 'bg-white'
+      stepNumberText = 'text-primaryDark'
+      lineColor = 'bg-primaryDark/20'
+      textDestaque = 'text-primaryDark'
+      image = ' border-[8px] border-white'
+
+      break
+
+    case 'defaultLight':
       backgroundMode = 'bg-transparent'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'

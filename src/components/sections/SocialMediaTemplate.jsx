@@ -39,7 +39,18 @@ function SocialMediaTemplate({ colorMode }) {
       miniTag = 'text-primaryLight'
       break
 
-    default:
+    case 'defaultDark':
+      backgroundMode = 'bg-transparent'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
+      cardBg = 'bg-white'
+      borderCard = 'border-border'
+      arrowColor = 'text-mutedForeground group-hover:text-primaryDark'
+      imageBorder = 'border-white'
+      miniTag = 'text-primaryDark'
+      break
+
+    case 'defaultLight':
       backgroundMode = 'bg-transparent'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'

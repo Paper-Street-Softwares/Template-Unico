@@ -49,18 +49,32 @@ export default function SidebarSocial({ colorMode, mode = 'blog' }) {
     <MapPin />,
   ]
 
-  let colorButton
+  let colorButton, bgSidebar, textColor, border
 
   switch (colorMode) {
     case 'light':
       colorButton = 'text-black'
+      bgSidebar = 'bg-white'
+      textColor = 'text-corTitulosPreto'
+      border = 'border-black'
       break
     case 'dark':
       colorButton = 'text-primaryLight'
-
+      bgSidebar = 'bg-darkOpacity'
+      textColor = 'text-corTitulosBranca'
+      border = 'border-white'
       break
-    default:
+    case 'defaultDark':
       colorButton = 'text-white'
+      bgSidebar = 'bg-primaryDark'
+      textColor = 'text-corTitulosBranca'
+      border = 'border-primaryLight'
+      break
+    case 'defaultLight':
+      colorButton = 'text-black'
+      bgSidebar = 'bg-white'
+      textColor = 'text-corTitulosPreto'
+      border = 'border-black'
   }
 
   return (
@@ -86,11 +100,7 @@ export default function SidebarSocial({ colorMode, mode = 'blog' }) {
           content={({ closeIconRef, hide }) => (
             <div
               id="app-sidebar-2"
-              className={`${
-                colorMode
-                  ? 'bg-primaryDark'
-                  : 'absolute top-0 left-0 flex-shrink-0 h-screen border-r-[1px] select-none bg-primaryDark surface-section lg:hidden lg:static z-1 surface-border border-neutral-700'
-              }`}
+              className={`absolute top-0 left-0 flex-shrink-0 h-screen border-r-[1px] select-none surface-section lg:hidden lg:static z-1 surface-border border-neutral-700 ${bgSidebar}`}
               style={{ width: '280px' }}
             >
               <div className="flex flex-col h-full">
@@ -109,7 +119,7 @@ export default function SidebarSocial({ colorMode, mode = 'blog' }) {
                       onClick={(e) => hide(e)}
                       rounded
                       outlined
-                      className={`${colorMode ? 'text-white' : 'text-white'}`}
+                      className={`${colorButton}`}
                     >
                       <X size={32} />
                     </Button>
@@ -117,11 +127,13 @@ export default function SidebarSocial({ colorMode, mode = 'blog' }) {
                 </div>
 
                 <div className="h-screen overflow-y-auto">
-                  <hr className="m-5 mx-3 border-top-1 surface-border border-white" />
+                  <hr
+                    className={`m-5 mx-3 border-top-1 surface-border ${border}`}
+                  />
                   <ul className="p-3 m-0 list-none">
                     <li>
                       <ul
-                        className={`p-0 m-0 -mt-[16px] overflow-hidden font-medium text-white list-none text-paragraph3 font-secondFont`}
+                        className={`p-0 m-0 -mt-[16px] overflow-hidden font-medium ${textColor} list-none text-paragraph3 font-secondFont`}
                       >
                         {visibleSections.map(({ id, label }, index) => (
                           <li key={id}>

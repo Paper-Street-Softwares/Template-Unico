@@ -66,7 +66,7 @@ function HeroTemplateNovo({
       borderColor = 'border-borderImage'
 
       break
-    case 'default':
+    case 'defaultDark':
       backgroundMode = 'bg-transparent'
       bgFaixaHero = 'bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
       text = 'text-corTitulosBranca'
@@ -77,6 +77,20 @@ function HeroTemplateNovo({
       image = ' border-[8px] border-primaryLight'
       bgAlertHero = 'bg-black text-white/60'
       borderColor = 'border-primaryLight'
+
+      break
+
+    case 'defaultLight':
+      backgroundMode = 'bg-transparent'
+      bgFaixaHero = 'bg-terciary'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
+      textDestaque = 'text-primaryDark'
+      bgMinitag = 'bg-transparent border-primaryDark text-primaryDark'
+      // textObs = 'text-green-500'
+      image = ' border-[8px] border-white'
+      bgAlertHero = 'bg-white'
+      borderColor = 'bg-white'
   }
 
   const { showGlobalButton } = useColorMode()
@@ -140,7 +154,10 @@ function HeroTemplateNovo({
               <h1
                 className={` desktop1:text-start text-[31px] phone2:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] ${text} `}
               >
-                {content.texts.hero.FirstPart} {content.texts.hero.Destaque}{' '}
+                {content.texts.hero.FirstPart}{' '}
+                <span className={`${textDestaque}`}>
+                  {content.texts.hero.Destaque}
+                </span>{' '}
                 {content.texts.hero.SecondPart}
               </h1>
 

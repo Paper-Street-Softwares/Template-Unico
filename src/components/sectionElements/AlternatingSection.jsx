@@ -6,13 +6,18 @@ export function AlternatingSection({
 }) {
   const colors = {
     light: ['bg-white', 'bg-terciary'],
-    default: ['bg-white', 'bg-terciary'],
+    defaultDark: ['bg-white', 'bg-terciary'],
+    defaultLight: ['bg-white', 'bg-terciary'],
     dark: ['bg-black', 'bg-darkOpacity'],
   }
 
   // caso especial do default
-  if (colorMode === 'default' && forcePrimaryDark) {
+  if (colorMode === 'defaultDark' && forcePrimaryDark) {
     return <section className="bg-primaryDark">{children}</section>
+  }
+
+  if (colorMode === 'defaultLight' && forcePrimaryDark) {
+    return <section className="bg-white">{children}</section>
   }
 
   const bgClass = colors[colorMode][index % 2]

@@ -31,8 +31,14 @@ const AccordionTrigger = React.forwardRef(
         activeText = 'data-[state=open]:text-primaryLight'
         break
 
-      default:
-        textBase = 'text-corTitulosBranca'
+      case 'defaultDark':
+        textBase = 'text-corTitulosPreto'
+        hoverText = 'hover:text-primaryDark'
+        activeText = 'data-[state=open]:text-primaryDark'
+        break
+
+      case 'defaultLight':
+        textBase = 'text-corTitulosPreto'
         hoverText = 'hover:text-primaryDark'
         activeText = 'data-[state=open]:text-primaryDark'
     }
@@ -54,7 +60,7 @@ const AccordionTrigger = React.forwardRef(
             // rotação do ícone
             '[&[data-state=open]>svg]:rotate-180',
 
-            className
+            className,
           )}
         >
           {children}
@@ -62,7 +68,7 @@ const AccordionTrigger = React.forwardRef(
         </AccordionPrimitive.Trigger>
       </AccordionPrimitive.Header>
     )
-  }
+  },
 )
 
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName
@@ -76,12 +82,12 @@ const AccordionContent = React.forwardRef(
         'overflow-hidden text-sm font-secondFont transition-all',
         'data-[state=open]:animate-accordion-down',
         'data-[state=closed]:animate-accordion-up',
-        className
+        className,
       )}
     >
       <div className="pb-6 pt-0">{children}</div>
     </AccordionPrimitive.Content>
-  )
+  ),
 )
 
 AccordionContent.displayName = AccordionPrimitive.Content.displayName

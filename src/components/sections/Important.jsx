@@ -24,10 +24,16 @@ function Important({ colorMode }) {
       textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-primaryDark'
       break
-    default:
+    case 'defaultDark':
       backgroundMode = 'bg-transparent'
       text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
+      textDestaque = 'text-primaryDark'
+      break
+    case 'defaultLight':
+      backgroundMode = 'bg-transparent'
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
   }
 

@@ -28,7 +28,13 @@ function BlogPosts({ colorMode }) {
       subtitleColor = 'text-corOutrosTextosPreto'
       linkColor = 'text-primaryLight'
       break
-    default:
+    case 'defaultDark':
+      backgroundMode = 'bg-transparent'
+      titleColor = 'text-corTitulosPreto'
+      subtitleColor = 'text-corOutrosTextosPreto'
+      linkColor = 'text-primaryDark'
+      break
+    case 'defaultLight':
       backgroundMode = 'bg-transparent'
       titleColor = 'text-corTitulosPreto'
       subtitleColor = 'text-corOutrosTextosPreto'
@@ -109,7 +115,7 @@ function BlogPosts({ colorMode }) {
 
           <MotionDivDownToUp>
             <Paragraphs
-              className={`flex justify-center mx-auto mt-12 scale-100 hover:scale-90 duration-500 w-fit transition-all cursor-pointer `}
+              className={`flex justify-center mx-auto mt-12 scale-100 hover:scale-90 duration-500 w-fit transition-all cursor-pointer ${titleColor} `}
             >
               <a
                 href={`https://${content.texts.blog.blogLink}`}

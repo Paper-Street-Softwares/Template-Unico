@@ -30,12 +30,20 @@ function CtaNovoTemplate({ colorMode, container }) {
       backgroundMode = 'bg-transparent'
       miniTagCtaDark = 'text-primaryLight'
       break
-    default:
+    case 'defaultDark':
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corTitulosBranca/60'
       textDestaque = 'text-primaryLight'
       backgroundMode = 'bg-transparent'
       miniTagCtaDark = 'text-primaryLight'
+      break
+
+    case 'defaultLight':
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
+      textDestaque = 'text-primaryDark'
+      backgroundMode = 'bg-transparent'
+      miniTagCtaDark = 'text-primaryDark'
   }
 
   const containerList = [

@@ -23,7 +23,14 @@ export default function WordPressBlogCard({
       colorTextOpacity = 'text-corOutrosTextosBranca'
 
       break
-    default:
+    case 'defaultDark':
+      colorBg = 'bg-terciary'
+      colorText = 'text-corTitulosPreto'
+      colorTextOpacity = 'text-corOutrosTextosPreto'
+      break
+      break
+
+    case 'defaultLight':
       colorBg = 'bg-terciary'
       colorText = 'text-corTitulosPreto'
       colorTextOpacity = 'text-corOutrosTextosPreto'

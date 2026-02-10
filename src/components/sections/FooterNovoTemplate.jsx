@@ -45,10 +45,17 @@ function FooterNovoTemplate({
       iconColor = 'text-primaryLight/80'
       backgroundMode = 'bg-transparent'
       break
-    default:
+    case 'defaultDark':
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       iconColor = 'text-white/60'
+      backgroundMode = 'bg-transparent'
+      break
+
+    case 'defaultLight':
+      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosPreto'
+      iconColor = 'text-primaryDark/60'
       backgroundMode = 'bg-transparent'
   }
 

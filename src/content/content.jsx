@@ -120,11 +120,11 @@ const content = {
       miniTag: 'ESCRITÓRIO DE ADVOCACIA',
       FirstPart: <span>Análise jurídica clara para decisões </span>,
       Destaque: (
-        <span className="destaque relative italic font-light">
+        <span className="relative italic font-light">
           seguras
           <span>
             <svg
-              className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-black hidden desktop1:flex"
+              className=" destaque absolute -bottom-2 left-0 w-full h-3 text-black hidden desktop1:flex"
               viewBox="0 0 100 10"
               preserveAspectRatio="none"
             >
@@ -136,7 +136,7 @@ const content = {
               />
             </svg>
             <svg
-              className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-black desktop1:hidden"
+              className="destaque absolute -bottom-2 left-0 w-full h-3 text-black desktop1:hidden"
               viewBox="0 0 100 10"
               preserveAspectRatio="none"
             >
