@@ -121,7 +121,7 @@ function NavbarNovaTemplate({
                       aria-label={`Link para ${item}`}
                       title={item}
                       data-track={id}
-                      className={`cursor-pointer ${hoverLinks} bg-[length:0%_2px] bg-no-repeat bg-left-bottom transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
+                      className={`cursor-pointer ${hoverLinks} bg-[length:0%_2px] bg-no-repeat bg-left-bottom pb-1 transition-[background-size] duration-300 hover:bg-[length:100%_2px] ${textOpacity} font-secondFont`}
                       onClick={(e) => {
                         e.preventDefault()
                         const el = document.getElementById(id)
