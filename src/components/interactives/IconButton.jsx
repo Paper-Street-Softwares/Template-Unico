@@ -3,7 +3,7 @@ export default function IconButton(props) {
 
   return (
     <button
-      className={`${className} w-10 h-10 rounded-full bg-primaryLight/10 hover:bg-primaryLight hover:text-white transition-all duration-500 flex items-center justify-center`}
+      className={`${className} w-10 h-10 rounded-full bg-primaryLight/10 hover:scale-105 transition-all duration-500 flex items-center justify-center`}
       aria-label={ariaLabel}
     >
       <div className="flex items-center text-center gap-[10px]">
