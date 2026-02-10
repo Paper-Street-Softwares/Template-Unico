@@ -87,7 +87,7 @@ function FaqNovoTemplate({ colorMode }) {
           >
             <a
               href={content.texts.links.ctaWhatsapp}
-              className="w-fit"
+              className="clickevent w-fit"
               target="_blank"
             >
               Clique aqui caso tenha mais dúvidas
@@ -97,7 +97,7 @@ function FaqNovoTemplate({ colorMode }) {
               link={content.texts.links.ctaWhatsapp}
               label={content.texts.hero.ctaButtonText}
               colorMode={colorMode}
-              className="my-0"
+              className="clickevent my-0"
             /> */}
           </div>
         </section>

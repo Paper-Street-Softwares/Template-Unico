@@ -177,7 +177,7 @@ function HeroTemplateNovo({
                   link={content.texts.links.ctaWhatsapp}
                   label={content.texts.hero.ctaButtonText}
                   colorMode={colorMode}
-                  className="my-0 text-[8px] phone2:text-paragraph3 tablet1:text-paragraph4"
+                  className="clickevent my-0 text-[8px] phone2:text-paragraph3 tablet1:text-paragraph4"
                 />
                 <ButtonReflexo
                   id="ligar"

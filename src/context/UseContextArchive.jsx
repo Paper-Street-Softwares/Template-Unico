@@ -3,9 +3,10 @@ import { createContext, useContext, useState } from 'react'
 const ColorModeContext = createContext(null)
 
 export function ColorModeProvider({ children }) {
-  const [colorMode, setColorMode] = useState('light') // default, light, dark
+  const [colorMode, setColorMode] = useState('dark') // default, light, dark
   const [whatsAppColor] = useState(false) // ativa cor do WhatsApp
   const [showGlobalButton] = useState(false) // ativa as os botões e caixa de alerta
+  const [enableClickEvent, setEnableClickEvent] = useState(true) // Dispara evento de clique
 
   return (
     <ColorModeContext.Provider
@@ -14,6 +15,8 @@ export function ColorModeProvider({ children }) {
         setColorMode,
         whatsAppColor,
         showGlobalButton,
+        enableClickEvent,
+        setEnableClickEvent,
       }}
     >
       {children}
@@ -53,4 +56,16 @@ export function useColorMode() {
     throw new Error('useColorMode must be used within ColorModeProvider')
   }
   return context
+}
+
+export default function MeuBotao({ children }) {
+  const { enableClickEvent } = useColorMode()
+
+  function handleClick() {
+    if (!enableClickEvent) return
+
+    console.log('Evento disparado!')
+  }
+
+  return <button onClick={handleClick}>{children}</button>
 }

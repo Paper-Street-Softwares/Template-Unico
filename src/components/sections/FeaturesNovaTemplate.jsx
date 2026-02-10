@@ -138,7 +138,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque }) {
                         link={content.texts.links.ctaWhatsapp}
                         label={content.texts.features.ctaButtonText}
                         colorMode={colorMode}
-                        className="mt-12"
+                        className="clickevent mt-12"
                       />
                       <ButtonReflexo
                         id="ligar"

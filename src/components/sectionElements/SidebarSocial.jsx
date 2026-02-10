@@ -49,6 +49,20 @@ export default function SidebarSocial({ colorMode, mode = 'blog' }) {
     <MapPin />,
   ]
 
+  let colorButton
+
+  switch (colorMode) {
+    case 'light':
+      colorButton = 'text-black'
+      break
+    case 'dark':
+      colorButton = 'text-primaryLight'
+
+      break
+    default:
+      colorButton = 'text-white'
+  }
+
   return (
     <div className="inset-0 z-10 flex">
       <div
@@ -60,9 +74,8 @@ export default function SidebarSocial({ colorMode, mode = 'blog' }) {
 
       <div className="flex justify-center card">
         <AlignJustify
-          className={`p-button-rounded p-button-outlined lg:hidden ${
-            colorMode ? 'text-white' : 'text-white'
-          } w-[30px] h-[30px]`}
+          className={`p-button-rounded p-button-outlined lg:hidden ${colorButton}
+           w-[30px] h-[30px]`}
           onClick={() => setVisible(true)}
         />
 

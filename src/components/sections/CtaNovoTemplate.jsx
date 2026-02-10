@@ -118,6 +118,7 @@ function CtaNovoTemplate({ colorMode, container }) {
                 link={content.texts.links.ctaWhatsapp}
                 label={content.texts.ctaSecondary.ctaButtonText}
                 colorMode={colorMode}
+                className={`clickevent`}
               />
               <ButtonReflexo
                 id="ligar"

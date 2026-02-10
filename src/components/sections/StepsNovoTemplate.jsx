@@ -109,6 +109,7 @@ function StepsNovoTemplate({ colorMode }) {
                       link={content.texts.links.ctaWhatsapp}
                       label={content.texts.steps.ctaButtonText}
                       colorMode={colorMode}
+                      className={`clickevent`}
                     />
                     <ButtonReflexo
                       id="ligar"
@@ -185,6 +186,7 @@ function StepsNovoTemplate({ colorMode }) {
                       link={content.texts.links.ctaWhatsapp}
                       label={content.texts.steps.ctaButtonText}
                       colorMode={colorMode}
+                      className={`clickevent`}
                     />
                     <ButtonReflexo
                       id="ligar"

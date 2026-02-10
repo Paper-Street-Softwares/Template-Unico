@@ -64,6 +64,7 @@ function Important({ colorMode }) {
             label={content.texts.important.ctaButtonText}
             icon={content.texts.svgs.wpp}
             link={content.texts.links.ctaWhatsapp}
+            className={`clickevent`}
           />
         </MotionDivDownUp>
       </SectionWrapper>

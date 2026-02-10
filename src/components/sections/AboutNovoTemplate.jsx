@@ -159,6 +159,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                         link={content.texts.links.ctaWhatsapp}
                         label={content.texts.about.ctaButtonText}
                         colorMode={colorMode}
+                        className={`clickevent`}
                       />
                       <ButtonReflexo
                         id="ligar"
@@ -213,6 +214,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                     link={content.texts.links.ctaWhatsapp}
                     label={content.texts.about.ctaButtonText}
                     colorMode={colorMode}
+                    className={`clickevent`}
                   />
                   <ButtonReflexo
                     id="ligar"
@@ -264,6 +266,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                 link={content.texts.links.ctaWhatsapp}
                 label={content.texts.navbar.ctaButtonText}
                 colorMode={colorMode}
+                className={`clickevent`}
               />
             </div>
           </Dialog>

@@ -157,12 +157,12 @@ function NavbarNovaTemplate({
                 </svg>
               }
               colorMode={colorMode}
-              className="text-sm mb-0"
+              className="clickevent text-sm mb-0"
             />
           </div>
 
           <div className=" lg:hidden ">
-            <SidebarSocial />
+            <SidebarSocial colorMode={colorMode} />
           </div>
 
           {/* Mobile Toggle */}
