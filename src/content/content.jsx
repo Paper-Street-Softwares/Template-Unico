@@ -25,11 +25,10 @@ import {
   Scale,
   Users,
   User,
-  Wallet,
-  Clock,
   Car,
   HandCoins,
   Check,
+  Shield,
 } from 'lucide-react'
 
 import { FileText } from 'lucide-react'
@@ -37,14 +36,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Fernandes & Vieira Advocacia',
+  name: 'Oliveira Teixeira Advocacia',
   email: 'contato', // Email desejado pelo cliente
-  emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'divorcio.fernandesevieiraadvocacia.com.br', // Sem "www"
+  emailSecundario: 'kaio@kaio.com.br', // Email desejado pelo cliente
+  domain: 'otadvocacia.com.br', // Sem "www"
   phone: {
-    ddd: '31',
-    firstPart: '99638', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '5637', // Apenas os 4 últimos números
+    ddd: '61',
+    firstPart: '99689', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '4436', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: 'A_Definir',
@@ -59,10 +58,10 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>Belo Horizonte - MG,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir</p>
+      <p>SCN Quadra 02, Bloco D,</p>
+      <p>Sala 1027, Torre A – Shopping Liberty Mall,</p>
+      <p>Brasília - DF,,</p>
+      <p>CEP: 70712-903</p>
     </div>
   ),
   enderecoSecundario: (
@@ -76,11 +75,11 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>A_Definir</p>
+      <p>8h às 18h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: '', // Sem o @
+  instagramProfile: 'otadvocacia', // Sem o @
   facebookProfile: '',
   linkeDinProfile: '',
   x: '',
@@ -119,12 +118,12 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'DIVÓRCIO SEM COMPLICAÇÃO',
-      FirstPart: <span></span>,
+      miniTag: 'Advogado Especialista em Direito Público',
+      FirstPart: <span>Direito Público sem erros</span>,
       Destaque: (
         <span className="destaque relative italic font-light">
-          DIVÓRCIO ONLINE{' '}
-          {/* <span>
+          nem riscos{' '}
+          <span>
             <svg
               className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-black hidden desktop1:flex"
               viewBox="0 0 100 10"
@@ -149,14 +148,14 @@ const content = {
                 fill="none"
               />
             </svg>
-          </span> */}
+          </span>
         </span>
       ),
-      SecondPart: <span>— RÁPIDO, SEGURO E SEM SAIR DE CASA</span>,
+      SecondPart: <span></span>,
       subtitle: (
         <p>
-          Orientação jurídica especializada para resolver seu divórcio de forma
-          clara, organizada e sem desgaste emocional.
+          Transformamos decisões complexas em segurança jurídica e resultados
+          concretos para você.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -165,13 +164,13 @@ const content = {
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Quero resolver meu divórcio agora',
+      ctaButtonText: 'Falar com o Dr. Kaio Oliveira',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Atendimento 100% online e sigiloso',
-        textTwo: 'Com orientação de advogada especializada',
+        text: 'Atendimento presencial e online (videoconferência, WhatsApp e e-mail)',
+        textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
       images: {
@@ -218,21 +217,21 @@ const content = {
       ctaButtonText: 'A_Definir',
     },
     features: {
-      miniTag: 'Seu divórcio não precisa ser complicado',
-      FirstPart: <span>Sabemos que o momento do divórcio </span>,
-      Destaque: <span className="italic font-light"> é delicado</span>,
-      SecondPart: <span> e, muitas vezes, doloroso.</span>,
+      miniTag: 'Áreas de Atuação',
+      FirstPart: <span>Especialidades </span>,
+      Destaque: <span className="italic font-light"> Jurídicas</span>,
+      SecondPart: <span>do Escritório</span>,
       subtitle:
-        'Por isso, oferecemos um atendimento humanizado, rápido e totalmente online, para que você resolva tudo com tranquilidade e sem burocracia. Você não precisa enfrentar filas, deslocamentos ou desgaste emocional. Nós cuidamos de tudo para você.',
+        'Oferecemos assessoria completa e estratégica, unindo experiência técnica à visão prática para proteger seus interesses.',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
       titleMessageFeature: '100%',
-      subtitleMessageFeature: 'orientação profissional',
+      subtitleMessageFeature: 'Direito Público',
       cards: {
         card1: {
-          title: 'Divórcio extrajudicial',
+          title: 'Direito Administrativo',
           subtitle:
-            'Resolvido em cartório, de forma rápida e sem processo judicial.',
+            'Atuação consultiva e contenciosa em matérias envolvendo a Administração Pública, contratos, licitações e atos administrativos.',
           description: (
             <div>
               A_Definir
@@ -241,14 +240,62 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <FileText />,
+          icon: <Briefcase />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'Divórcio consensual',
+          title: 'Direito Constitucional',
           subtitle:
-            'Quando há acordo entre as partes, o divórcio acontece de forma simples e menos desgastante.',
+            'Atuação estratégica em demandas constitucionais, controle de constitucionalidade e defesa de direitos fundamentais.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <User />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card3: {
+          title: 'Controle Externo e Tribunais de Contas (TCU e TCEs)',
+          subtitle:
+            'Atuação especializada em processos de controle externo, tomadas de contas, auditorias e responsabilização.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Scale />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card4: {
+          title: 'Direito Urbanístico e Regularização Fundiária',
+          subtitle:
+            'Assessoria jurídica em ordenamento urbano, uso e ocupação do solo, regularização fundiária e projetos imobiliários.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
+            </div>
+          ),
+          icon: <Gavel />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card5: {
+          title: 'Direito Econômico e Regulatório',
+          subtitle:
+            'Consultoria jurídica e econômica em setores regulados, análise de impacto regulatório e segurança jurídica em decisões estratégicas.',
           description: (
             <div>
               A_Definir
@@ -261,57 +308,10 @@ const content = {
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
-        card3: {
-          title: 'Divórcio judicial',
-          subtitle:
-            'Indicado quando não há acordo, com acompanhamento jurídico para proteger seus direitos.',
-          description: (
-            <div>
-              A_Definir <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Scale />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card4: {
-          title: 'Divórcio com ou sem filhos',
-          subtitle:
-            'Orientação completa, com atenção especial às questões que envolvem filhos e responsabilidades.',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <User />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card5: {
-          title: 'Divórcio com partilha de bens',
-          subtitle:
-            'Análise e divisão justa dos bens, garantindo segurança em cada etapa do processo.',
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Wallet />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
         card6: {
-          title: 'Divórcio sem partilha imediata',
+          title: 'Consultoria Jurídica para Prefeituras e Entes Públicos',
           subtitle:
-            'Possibilidade de se divorciar agora e resolver a partilha em um momento posterior.',
+            'Assessoria contínua a gestores públicos em planejamento, governança, conformidade e tomada de decisão.',
           description: (
             <div>
               A_Definir
@@ -320,7 +320,55 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Clock />,
+          icon: <MessageSquare />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card7: {
+          title: 'Compliance, Governança e ESG',
+          subtitle:
+            'Estruturação de programas de integridade, governança corporativa e práticas ESG no setor público e privado.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Shield />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card8: {
+          title: 'Direito Empresarial',
+          subtitle:
+            'Assessoria jurídica a empresas em contratos, estruturação societária e gestão de riscos jurídicos.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Briefcase />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card9: {
+          title: 'Direito Civil',
+          subtitle:
+            'Atuação em demandas cíveis estratégicas, contratos, responsabilidade civil e relações patrimoniais.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <FileText />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
@@ -343,7 +391,7 @@ const content = {
           subtitle: 'A_Definir',
         },
       },
-      ctaButtonText: 'Recuperar minha paz',
+      ctaButtonText: 'Entrar em contato',
     },
     emergency: {
       minitag: 'A_Definir',
@@ -362,63 +410,58 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'Fernandes & Vieira Advocacia e Consultoria',
-      FirstPart: <span> Por que escolher </span>,
-      Destaque: <span className="italic font-light"> nosso escritório?</span>,
+      miniTag: 'QUEM É O OLIVEIRA TEIXEIRA ADVOCACIA',
+      FirstPart: <span> Nossa </span>,
+      Destaque: <span className="italic font-light"> trajetória</span>,
       SecondPart: <span></span>,
       subtitle:
-        'Nosso compromisso é tornar esse momento mais leve, rápido e seguro para você.',
+        'Experiência e estratégia em Direito Público e decisões jurídicas complexas.',
       paragraph: (
         <div>
-          <ul>
-            <li className="font-secondFont flex gap-2">
-              <span>
-                {' '}
-                <Check />
-              </span>{' '}
-              Atuação especializada em Direito de Família
-            </li>
-            <li className="font-secondFont flex gap-2">
-              <span>
-                {' '}
-                <Check />
-              </span>{' '}
-              Experiência em divórcios online
-            </li>
-            <li className="font-secondFont flex gap-2">
-              <span>
-                {' '}
-                <Check />
-              </span>{' '}
-              Atendimento ágil e personalizado
-            </li>
-            <li className="font-secondFont flex gap-2">
-              <span>
-                {' '}
-                <Check />
-              </span>{' '}
-              Transparência em todas as etapas
-            </li>
-          </ul>
+          O Oliveira Teixeira Advocacia é resultado de uma trajetória construída
+          ao longo de mais de duas décadas de atuação técnica, institucional e
+          estratégica no Direito Público e na análise econômica aplicada às
+          decisões jurídicas.
         </div>
       ),
 
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="font-secondFont">
-          A_Definir
+          O Oliveira Teixeira Advocacia é resultado de uma trajetória construída
+          ao longo de mais de duas décadas de atuação técnica, institucional e
+          estratégica no Direito Público e na análise econômica aplicada às
+          decisões jurídicas.
           <br />
           <br />
-          A_Definir
+          Fundado por Kaio de Oliveira Teixeira, advogado com sólida formação
+          acadêmica — Mestre em Economia e Doutorando em Economia pelo IDP — o
+          escritório nasce da convergência entre experiência prática na
+          Administração Pública, atuação em projetos de alta complexidade e
+          visão jurídica orientada à segurança decisória.
           <br />
           <br />
-          A_Definir
+          Ao longo de sua carreira, o fundador ocupou cargos estratégicos no
+          setor público, participou da estruturação de projetos institucionais
+          relevantes e atuou diretamente na formulação, análise e controle de
+          políticas públicas, contratos e decisões administrativas de alto
+          impacto. Essa vivência conferiu ao escritório uma leitura aprofundada
+          dos mecanismos de funcionamento do Estado, dos órgãos de controle e do
+          ambiente regulatório.
+          <br />
+          <br />
+          Com atuação técnica, independente e altamente especializada, o
+          Oliveira Teixeira Advocacia se posiciona como um escritório focado em
+          estratégia jurídica, governança, análise de risco e soluções
+          juridicamente sustentáveis, atendendo clientes que demandam rigor
+          técnico, visão institucional e atuação responsável em contextos
+          complexos.
         </p>
       ),
       paragraphModalCta: 'Entre em contato',
-      titleModal: 'A_Definir',
+      titleModal: 'Nossa trajetória',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Falar diretamente com as Advogadas',
+      ctaButtonText: 'Falar diretamente com o escritório',
       aboutSocial: {
         img: {
           img: aboutSocialImg,
@@ -427,7 +470,8 @@ const content = {
         },
         miniTag: 'REDES SOCIAIS',
         title: 'Conecte-se conosco',
-        subtitle: 'A_Definir',
+        subtitle:
+          'Acompanhe nossas redes sociais para se manter informado sobre conteúdos jurídicos, atualizações e temas relevantes das áreas de atuação.',
         paragraph: <p></p>,
         labelInstagram: 'Siga-nos no Instagram',
         labelFacebook: 'Siga-nos no Facebook',
@@ -462,46 +506,54 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'A_Definir',
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span></span>,
+      miniTag: 'PASSO A PASSO',
+      FirstPart: <span> Como </span>,
+      Destaque: <span className="italic font-light"> funciona</span>,
+      SecondPart: <span>nosso atendimento?</span>,
 
-      subtitle: 'A_Definir',
+      subtitle: '',
       img: imgSteps,
       alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Consulta inicial',
+          cardDescription:
+            'Realizamos uma reunião para entender seu caso e identificar suas necessidades jurídicas.',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Análise detalhada',
+          cardDescription:
+            'Examinamos todos os aspectos do seu caso, revisando documentos e evidências para obter uma visão completa.',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Elaboração da estratégia',
+          cardDescription:
+            'Criamos uma estratégia jurídica personalizada para proteger seus interesses de maneira eficaz.',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Ação legal',
+          cardDescription:
+            'Iniciamos e conduzimos as ações judiciais ou o serviço contratado, buscando justiça e soluções personalizadas conforme a necessidade do seu caso.',
         },
       },
       ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
       miniTag: 'FALE CONOSCO',
-      title: <h1>Fale agora com uma Advogada</h1>,
+      title: (
+        <h1>
+          Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
+        </h1>
+      ),
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Se você está pensando em se divorciar ou precisa de orientação, fale
-            conosco agora.
+            Entre em contato agora para uma consulta especializada e comece a
+            encontrar a solução que você precisa.
           </p>
         </div>
       ),
@@ -513,7 +565,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: 'Quero iniciar meu divórcio online',
+      ctaButtonText: 'Fale com a gente agora mesmo',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
@@ -532,24 +584,24 @@ const content = {
       subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
       questions: {
         question1: {
-          question: 'Preciso sair de casa?',
+          question: 'Como posso contratar seus serviços?',
           answer:
-            'Não. Todo o processo pode ser feito 100% online, sem deslocamentos, filas ou desgaste desnecessário. Você resolve tudo com segurança e conforto, de onde estiver.',
+            'Agende sua consulta conosco via WhatsApp e conversaremos sobre suas necessidades e avaliaremos os custos.',
         },
         question2: {
-          question: 'Quanto tempo demora?',
+          question: 'Qual é o prazo médio para resolução de um caso?',
           answer:
-            'O prazo varia conforme o tipo de divórcio, mas em muitos casos o processo é rápido e pode ser iniciado no mesmo dia após a análise da documentação.',
+            'O prazo médio varia conforme a complexidade, mas discutiremos uma estimativa durante a consulta inicial.',
         },
         question3: {
-          question: 'Precisa de audiência?',
+          question: 'Quais documentos devo levar para a consulta?',
           answer:
-            'Na maioria dos casos, não. O divórcio pode ser resolvido sem audiências, evitando exposição e situações desconfortáveis.',
+            'Traga os documentos relevantes ao seu caso, como contratos, correspondências e registros, além de documentos pessoais e comprovante de residência.',
         },
         question4: {
-          question: 'Posso me divorciar mesmo sem acordo total?',
+          question: 'Vocês oferecem serviços de consultoria preventiva?',
           answer:
-            'Sim. Mesmo sem acordo em todos os pontos, é possível dar entrada no divórcio. Cada caso é analisado com cuidado para garantir seus direitos e a melhor solução possível.',
+            'Sim, oferecemos consultoria preventiva para evitar problemas futuros e garantir conformidade legal.',
         },
       },
 

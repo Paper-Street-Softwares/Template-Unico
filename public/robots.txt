@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://divorcio.fernandesevieiraadvocacia.com.br/sitemap.xml
+Sitemap: https://www.otadvocacia.com.br/sitemap.xml

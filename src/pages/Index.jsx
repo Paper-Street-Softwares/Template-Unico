@@ -57,7 +57,7 @@ export default function Index() {
 
         <main>
           <AlternatingSection index={0} colorMode={colorMode} forcePrimaryDark>
-            <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={true} />
+            <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
           </AlternatingSection>
 
           {/* <AlternatingSection index={1} colorMode={colorMode}>
@@ -69,37 +69,37 @@ export default function Index() {
               <FeaturesNovaTemplate
                 colorMode={colorMode}
                 frasesDestaque={true}
-                accordion={false}
+                accordion={true}
               />
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={3} colorMode={colorMode}>
+          {/* <AlternatingSection index={3} colorMode={colorMode}>
             <Speed colorMode={colorMode} />
-          </AlternatingSection>
+          </AlternatingSection> */}
 
-          <AlternatingSection index={4} colorMode={colorMode}>
+          <AlternatingSection index={3} colorMode={colorMode}>
             <Suspense>
               <AboutNovoTemplate
                 colorMode={colorMode}
-                ButtonModal={false}
+                ButtonModal={true}
                 benefits={false}
               />
-              {/* <SocialMediaTemplate colorMode={colorMode} /> */}
+              <SocialMediaTemplate colorMode={colorMode} />
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={5} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={4} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
-              <CtaNovoTemplate colorMode={colorMode} container={true} />
+              <CtaNovoTemplate colorMode={colorMode} container={false} />
             </Suspense>
           </AlternatingSection>
 
-          {/* <AlternatingSection index={5} colorMode={colorMode}>
+          <AlternatingSection index={5} colorMode={colorMode}>
             <Suspense>
               <StepsNovoTemplate colorMode={colorMode} />
             </Suspense>
-          </AlternatingSection> */}
+          </AlternatingSection>
 
           <AlternatingSection index={6} colorMode={colorMode}>
             <Suspense>
@@ -114,10 +114,10 @@ export default function Index() {
                 mapa={false}
                 phone={true}
                 phoneSecond={false}
-                expediente={false}
-                adress={false}
-                email={true}
-                emailSecond={false}
+                expediente={true}
+                adress={true}
+                email={false}
+                emailSecond={true}
                 fraseFooter={true} // frase Google LLC
                 obs={false}
               />
