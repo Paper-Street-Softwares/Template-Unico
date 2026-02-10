@@ -28,6 +28,7 @@ import {
   Car,
   HandCoins,
   Check,
+  Shield,
 } from 'lucide-react'
 
 import { FileText } from 'lucide-react'
@@ -117,11 +118,11 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'A_Definir',
-      FirstPart: <span>A_Definir </span>,
+      miniTag: 'Advogado Especialista em Direito Público',
+      FirstPart: <span>Direito Público sem erros</span>,
       Destaque: (
         <span className="destaque relative italic font-light">
-          A_Definir{' '}
+          nem riscos{' '}
           <span>
             <svg
               className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-black hidden desktop1:flex"
@@ -151,19 +152,24 @@ const content = {
         </span>
       ),
       SecondPart: <span></span>,
-      subtitle: <p>A_Definir</p>,
+      subtitle: (
+        <p>
+          Transformamos decisões complexas em segurança jurídica e resultados
+          concretos para você.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: 'Falar com o Dr. Kaio Oliveira',
       ctaButtonTextSecondary: 'A_Definir',
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'A_Definir',
+        text: 'Atendimento presencial e online (videoconferência, WhatsApp e e-mail)',
         textTwo: 'A_Definir',
       },
       secondaryCta: 'Contato',
@@ -211,19 +217,21 @@ const content = {
       ctaButtonText: 'A_Definir',
     },
     features: {
-      miniTag: 'A_Definir',
-      FirstPart: <span>A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
-      subtitle: 'A_Definir',
+      miniTag: 'Áreas de Atuação',
+      FirstPart: <span>Especialidades </span>,
+      Destaque: <span className="italic font-light"> Jurídicas</span>,
+      SecondPart: <span>do Escritório</span>,
+      subtitle:
+        'Oferecemos assessoria completa e estratégica, unindo experiência técnica à visão prática para proteger seus interesses.',
       imgFeatures: imgFeatures,
       alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: 'A_Definir',
-      subtitleMessageFeature: 'A_Definir',
+      titleMessageFeature: '100%',
+      subtitleMessageFeature: 'Direito Público',
       cards: {
         card1: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Direito Administrativo',
+          subtitle:
+            'Atuação consultiva e contenciosa em matérias envolvendo a Administração Pública, contratos, licitações e atos administrativos.',
           description: (
             <div>
               A_Definir
@@ -237,8 +245,9 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Direito Constitucional',
+          subtitle:
+            'Atuação estratégica em demandas constitucionais, controle de constitucionalidade e defesa de direitos fundamentais.',
           description: (
             <div>
               A_Definir
@@ -252,11 +261,13 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Controle Externo e Tribunais de Contas (TCU e TCEs)',
+          subtitle:
+            'Atuação especializada em processos de controle externo, tomadas de contas, auditorias e responsabilização.',
           description: (
             <div>
-              A_Definir <br />
+              A_Definir
+              <br />
               <br />
               A_Definir
             </div>
@@ -266,8 +277,9 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Direito Urbanístico e Regularização Fundiária',
+          subtitle:
+            'Assessoria jurídica em ordenamento urbano, uso e ocupação do solo, regularização fundiária e projetos imobiliários.',
           description: (
             <div>
               A_Definir
@@ -281,8 +293,9 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card5: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Direito Econômico e Regulatório',
+          subtitle:
+            'Consultoria jurídica e econômica em setores regulados, análise de impacto regulatório e segurança jurídica em decisões estratégicas.',
           description: (
             <div>
               A_Definir
@@ -296,8 +309,9 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card6: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: 'Consultoria Jurídica para Prefeituras e Entes Públicos',
+          subtitle:
+            'Assessoria contínua a gestores públicos em planejamento, governança, conformidade e tomada de decisão.',
           description: (
             <div>
               A_Definir
@@ -310,7 +324,56 @@ const content = {
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
+        card7: {
+          title: 'Compliance, Governança e ESG',
+          subtitle:
+            'Estruturação de programas de integridade, governança corporativa e práticas ESG no setor público e privado.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Shield />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card8: {
+          title: 'Direito Empresarial',
+          subtitle:
+            'Assessoria jurídica a empresas em contratos, estruturação societária e gestão de riscos jurídicos.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Briefcase />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card9: {
+          title: 'Direito Civil',
+          subtitle:
+            'Atuação em demandas cíveis estratégicas, contratos, responsabilidade civil e relações patrimoniais.',
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <FileText />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
       },
+
       moreFeatures: {
         card1: {
           ico: 'A_Definir',
@@ -347,35 +410,52 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'A_Definir',
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> do Direito</span>,
+      miniTag: 'QUEM É O OLIVEIRA TEIXEIRA ADVOCACIA',
+      FirstPart: <span> Nossa </span>,
+      Destaque: <span className="italic font-light"> trajetória</span>,
       SecondPart: <span></span>,
-
-      SecondPartTitle: '',
-      subtitle: 'A_Definir',
+      subtitle:
+        'Experiência e estratégia em Direito Público e decisões jurídicas complexas.',
       paragraph: (
         <div>
-          A_Definir
-          <br />
-          <br />
-          A_Definir
-          <br />
-          <br />
-          A_Definir
+          O Oliveira Teixeira Advocacia é resultado de uma trajetória construída
+          ao longo de mais de duas décadas de atuação técnica, institucional e
+          estratégica no Direito Público e na análise econômica aplicada às
+          decisões jurídicas.
         </div>
       ),
 
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="font-secondFont">
-          A_Definir
+          O Oliveira Teixeira Advocacia é resultado de uma trajetória construída
+          ao longo de mais de duas décadas de atuação técnica, institucional e
+          estratégica no Direito Público e na análise econômica aplicada às
+          decisões jurídicas.
           <br />
           <br />
-          A_Definir
+          Fundado por Kaio de Oliveira Teixeira, advogado com sólida formação
+          acadêmica — Mestre em Economia e Doutorando em Economia pelo IDP — o
+          escritório nasce da convergência entre experiência prática na
+          Administração Pública, atuação em projetos de alta complexidade e
+          visão jurídica orientada à segurança decisória.
           <br />
           <br />
-          A_Definir
+          Ao longo de sua carreira, o fundador ocupou cargos estratégicos no
+          setor público, participou da estruturação de projetos institucionais
+          relevantes e atuou diretamente na formulação, análise e controle de
+          políticas públicas, contratos e decisões administrativas de alto
+          impacto. Essa vivência conferiu ao escritório uma leitura aprofundada
+          dos mecanismos de funcionamento do Estado, dos órgãos de controle e do
+          ambiente regulatório.
+          <br />
+          <br />
+          Com atuação técnica, independente e altamente especializada, o
+          Oliveira Teixeira Advocacia se posiciona como um escritório focado em
+          estratégia jurídica, governança, análise de risco e soluções
+          juridicamente sustentáveis, atendendo clientes que demandam rigor
+          técnico, visão institucional e atuação responsável em contextos
+          complexos.
         </p>
       ),
       paragraphModalCta: 'Entre em contato',
@@ -390,7 +470,8 @@ const content = {
         },
         miniTag: 'REDES SOCIAIS',
         title: 'Conecte-se conosco',
-        subtitle: 'A_Definir',
+        subtitle:
+          'Acompanhe nossas redes sociais para se manter informado sobre conteúdos jurídicos, atualizações e temas relevantes das áreas de atuação',
         paragraph: <p></p>,
         labelInstagram: 'Siga-nos no Instagram',
         labelFacebook: 'Siga-nos no Facebook',
@@ -425,44 +506,55 @@ const content = {
     //   },
     // },
     steps: {
-      miniTag: 'A_Definir',
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span></span>,
+      miniTag: 'PASSO A PASSO',
+      FirstPart: <span> Como </span>,
+      Destaque: <span className="italic font-light"> funciona</span>,
+      SecondPart: <span>nosso atendimento?</span>,
 
-      subtitle: 'A_Definir',
+      subtitle: '',
       img: imgSteps,
       alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Consulta inicial',
+          cardDescription:
+            'Realizamos uma reunião para entender seu caso e identificar suas necessidades jurídicas.',
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Análise detalhada',
+          cardDescription:
+            'Examinamos todos os aspectos do seu caso, revisando documentos e evidências para obter uma visão completa.',
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Elaboração da estratégia',
+          cardDescription:
+            'Criamos uma estratégia jurídica personalizada para proteger seus interesses de maneira eficaz.',
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: 'Ação legal',
+          cardDescription:
+            'Iniciamos e conduzimos as ações judiciais ou o serviço contratado, buscando justiça e soluções personalizadas conforme a necessidade do seu caso.',
         },
       },
       ctaButtonText: 'A_Definir',
     },
     ctaSecondary: {
       miniTag: 'FALE CONOSCO',
-      title: <h1>A_Definir</h1>,
+      title: (
+        <h1>
+          Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
+        </h1>
+      ),
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Entre em contato agora para uma consulta especializada e comece a
+            encontrar a solução que você precisa.
+          </p>
         </div>
       ),
       // subtitleDireita: (
@@ -489,25 +581,30 @@ const content = {
     faq: {
       miniTag: 'TIRE SUAS DÚVIDAS',
       title: 'Perguntas Frequentes',
-      subtitle: 'A_Definir',
+      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
       questions: {
         question1: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Como posso contratar seus serviços?',
+          answer:
+            'Agende sua consulta conosco via WhatsApp e conversaremos sobre suas necessidades e avaliaremos os custos.',
         },
         question2: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Qual é o prazo médio para resolução de um caso?',
+          answer:
+            'O prazo médio varia conforme a complexidade, mas discutiremos uma estimativa durante a consulta inicial.',
         },
         question3: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Quais documentos devo levar para a consulta?',
+          answer:
+            'Traga os documentos relevantes ao seu caso, como contratos, correspondências e registros, além de documentos pessoais e comprovante de residência.',
         },
         question4: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: 'Vocês oferecem serviços de consultoria preventiva?',
+          answer:
+            'Sim, oferecemos consultoria preventiva para evitar problemas futuros e garantir conformidade legal.',
         },
       },
+
       paragraph: 'Clique aqui caso tenha mais dúvidas',
     },
     // team: {
