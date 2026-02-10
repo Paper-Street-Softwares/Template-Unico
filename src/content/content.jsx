@@ -459,7 +459,7 @@ const content = {
         </p>
       ),
       paragraphModalCta: 'Entre em contato',
-      titleModal: 'A_Definir',
+      titleModal: 'Nossa trajetória',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
       ctaButtonText: 'Falar diretamente com o escritório',
       aboutSocial: {
@@ -471,7 +471,7 @@ const content = {
         miniTag: 'REDES SOCIAIS',
         title: 'Conecte-se conosco',
         subtitle:
-          'Acompanhe nossas redes sociais para se manter informado sobre conteúdos jurídicos, atualizações e temas relevantes das áreas de atuação',
+          'Acompanhe nossas redes sociais para se manter informado sobre conteúdos jurídicos, atualizações e temas relevantes das áreas de atuação.',
         paragraph: <p></p>,
         labelInstagram: 'Siga-nos no Instagram',
         labelFacebook: 'Siga-nos no Facebook',
