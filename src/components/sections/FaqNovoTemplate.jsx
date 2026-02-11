@@ -12,6 +12,7 @@ import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
 import ButtonReflexo from '../../components/interactives/ButtonReflexo'
 import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 import { ButtonsLps } from '../../context/UseContextArchive'
+import { defaultButtonThemes } from '../../context/UseContextArchive'
 
 function FaqNovoTemplate({ colorMode }) {
   const faqs = Object.values(content.texts.faq.questions)
@@ -99,7 +100,11 @@ function FaqNovoTemplate({ colorMode }) {
                   icon={content.texts.svgs.wpp}
                   link={content.texts.links.ctaWhatsapp}
                   label={content.texts.faq.paragraph}
-                  colorMode={colorMode}
+                  bgClass={
+                    colorMode === 'defaultDark' || colorMode === 'light'
+                      ? defaultButtonThemes.light
+                      : defaultButtonThemes.dark
+                  }
                   className="clickevent my-0"
                 />
               </div>
