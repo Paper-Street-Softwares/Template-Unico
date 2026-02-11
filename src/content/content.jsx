@@ -119,11 +119,9 @@ const content = {
     },
     hero: {
       miniTag: <>A_definir</>,
-      FirstPart: <span>Especialistas em Direito </span>,
+      FirstPart: <span>A_definir </span>,
       Destaque: (
-        <span className="destaque relative italic font-light">
-          Previdenciário
-        </span>
+        <span className="destaque relative italic font-light">A_definir</span>
       ),
       SecondPart: <span></span>,
       subtitle: <p>A_definir</p>,
