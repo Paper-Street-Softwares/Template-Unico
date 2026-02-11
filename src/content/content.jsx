@@ -36,14 +36,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'A_Definir',
+  name: 'Dr. Emanuell Felipe',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'A_Definir', // Sem "www"
+  domain: 'efmradvogado.adv.br', // Sem "www"
   phone: {
-    ddd: '00',
-    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '0000', // Apenas os 4 últimos números
+    ddd: '44',
+    firstPart: '98462', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '4107', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: <>A_Definir</>,

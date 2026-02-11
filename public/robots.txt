@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.otadvocacia.com.br/sitemap.xml
+Sitemap: https://www.efmradvogado.adv.br/sitemap.xml
