@@ -2,6 +2,7 @@ import React from 'react'
 import MotionDivDownToUp from '../../animation/MotionDivDownToUp'
 import IconButton from '../../interactives/IconButton'
 import { infos } from '../../../content/content'
+import content from '../../../content/content'
 
 const icons = {
   facebook: {
@@ -23,6 +24,26 @@ const icons = {
     ),
   },
   instagram: {
+    aria: 'Instagram',
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="transparent"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+      </svg>
+    ),
+  },
+  instagramSecundario: {
     aria: 'Instagram',
     svg: (
       <svg
@@ -111,6 +132,7 @@ function FooterSocialIcons({ withAnimation = true }) {
     facebook: infos.facebookProfile,
     tiktok: infos.tiktokProfile,
     instagram: infos.instagramProfile,
+    instagramSecundario: infos.instagramProfileSecundario,
     linkedin: infos.linkeDinProfile,
     x: infos.x,
     youtube: infos.youtubeProfile,
@@ -125,14 +147,16 @@ function FooterSocialIcons({ withAnimation = true }) {
 
         const link =
           key === 'x'
-            ? `https://twitter.com/${profile}`
+            ? `https://twitter.com/${cleanedProfile}`
             : key === 'linkedin'
-            ? `https://www.linkedin.com/in/${profile}`
-            : key === 'tiktok'
-            ? `https://www.tiktok.com/@${cleanedProfile}`
-            : key === 'youtube'
-            ? `https://youtube.com/${infos.youtubeProfile}`
-            : `https://www.${key}.com/${cleanedProfile}`
+              ? `https://www.linkedin.com/in/${cleanedProfile}`
+              : key === 'tiktok'
+                ? `https://www.tiktok.com/@${cleanedProfile}`
+                : key === 'youtube'
+                  ? `https://youtube.com/${cleanedProfile}`
+                  : key === 'instagram' || key === 'instagramSecundario'
+                    ? `https://www.instagram.com/${cleanedProfile}`
+                    : `https://www.${key}.com/${cleanedProfile}`
 
         const { aria, svg } = icons[key]
 

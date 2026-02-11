@@ -71,6 +71,11 @@ function Important({ colorMode }) {
             icon={content.texts.svgs.wpp}
             link={content.texts.links.ctaWhatsapp}
             className={`clickevent`}
+            bgClass={
+              colorMode === 'defaultDark' || colorMode === 'light'
+                ? defaultButtonThemes.light
+                : defaultButtonThemes.dark
+            }
           />
         </MotionDivDownUp>
       </SectionWrapper>

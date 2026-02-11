@@ -153,7 +153,38 @@ function SocialMediaTemplate({ colorMode }) {
                         <h1
                           className={`font-bold font-secondFont text-lg ${text}`}
                         >
-                          Instagram
+                          Instagram pessoal
+                        </h1>
+                        <p
+                          className={`font-secondFont font-light text-sm ${textOpacity}`}
+                        >
+                          Dicas diárias e bastidores
+                        </p>
+                      </div>
+
+                      <ArrowRight
+                        className={`ml-auto w-5 h-5 transition-colors ${arrowColor}`}
+                      />
+                    </a>
+                  )}
+
+                  {content.texts.links.instagramSecundario?.trim() && (
+                    <a
+                      href={content.texts.links.instagramSecundario}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Link para Instagram"
+                      className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:border-primary/30 hover:shadow-lg transition-all ${cardBg}`}
+                    >
+                      <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-purple-600 to-orange-500 text-white flex items-center justify-center shrink-0">
+                        <Instagram className="w-7 h-7" />
+                      </div>
+
+                      <div>
+                        <h1
+                          className={`font-bold font-secondFont text-lg ${text}`}
+                        >
+                          Instagram profissional
                         </h1>
                         <p
                           className={`font-secondFont font-light text-sm ${textOpacity}`}
