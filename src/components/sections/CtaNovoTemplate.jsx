@@ -49,23 +49,23 @@ function CtaNovoTemplate({ colorMode, container }) {
   const containerList = [
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Orientação clara sobre seus direitos no divórcio',
+      text: <>Análise gratuita do seu caso</>,
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Atendimento humanizado e sigiloso com advogada especializada',
+      text: <>Atendimento direto com o advogado, sem intermediários</>,
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Divórcio online, sem audiências e sem desgaste emocional',
+      text: <>Resposta rápida e acompanhamento pelo WhatsApp</>,
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Acompanhamento rápido pelo WhatsApp, do início ao fim',
+      text: <>Processo iniciado no mesmo dia da análise</>,
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Segurança para encerrar esse ciclo e seguir em frente',
+      text: <>Você mais perto de receber o que é seu, sem sair de casa</>,
     },
   ]
 
@@ -78,17 +78,17 @@ function CtaNovoTemplate({ colorMode, container }) {
             <span
               className={`font-bold font-secondFont tracking-wider uppercase text-xs mb-2 block ${miniTagCtaDark}`}
             >
-              {content.texts.ctaSecondary.miniTag}
+              {content.texts.ctaSection.miniTag}
             </span>
             <h2
               className={`text-4xl md:text-[48px] leading-[48px] font-mainFont font-light mb-6 ${text}`}
             >
-              {content.texts.ctaSecondary.title}
+              {content.texts.ctaSection.title}
             </h2>
             <p
               className={`text-lg font-secondFont font-light md:text-xl max-w-2xl mx-auto mb-10 ${textOpacity}`}
             >
-              {content.texts.ctaSecondary.subtitle}
+              {content.texts.ctaSection.subtitle}
             </p>
 
             {container && (
@@ -124,7 +124,7 @@ function CtaNovoTemplate({ colorMode, container }) {
                   </svg>
                 }
                 link={content.texts.links.ctaWhatsapp}
-                label={content.texts.ctaSecondary.ctaButtonText}
+                label={content.texts.ctaSection.ctaButtonText}
                 colorMode={colorMode}
                 className={`clickevent`}
               />
