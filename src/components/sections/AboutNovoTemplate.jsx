@@ -213,7 +213,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                       alt={content.texts.about.imagem.alt}
                       className="w-full scale-105 hover:scale-100 transition-transform duration-700 rounded-[1rem]"
                       width={621}
-                      height={832}
+                      height={829}
                     />
                   </div>
                 </div>

@@ -119,7 +119,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                       alt={content.texts.features.alt}
                       className="w-full h-full object-cover scale-105 hover:scale-100 rounded-2xl transition-transform duration-700"
                       width={621}
-                      height={622}
+                      height={621}
                     />
                   </div>
 

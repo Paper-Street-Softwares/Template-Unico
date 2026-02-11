@@ -55,9 +55,9 @@ export default function Index() {
             <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
           </AlternatingSection>
 
-          {/* <AlternatingSection index={1} colorMode={colorMode}>
+          <AlternatingSection index={1} colorMode={colorMode}>
             <Important colorMode={colorMode} />
-          </AlternatingSection> */}
+          </AlternatingSection>
 
           <AlternatingSection index={2} colorMode={colorMode}>
             <Suspense>
@@ -77,16 +77,16 @@ export default function Index() {
             <Suspense>
               <AboutNovoTemplate
                 colorMode={colorMode}
-                ButtonModal={true}
+                ButtonModal={false}
                 benefits={false}
               />
-              <SocialMediaTemplate colorMode={colorMode} />
+              {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             </Suspense>
           </AlternatingSection>
 
           <AlternatingSection index={4} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
-              <CtaNovoTemplate colorMode={colorMode} container={false} />
+              <CtaNovoTemplate colorMode={colorMode} container={true} />
             </Suspense>
           </AlternatingSection>
 
@@ -109,10 +109,10 @@ export default function Index() {
                 mapa={false}
                 phone={true}
                 phoneSecond={false}
-                expediente={true}
-                adress={true}
-                email={false}
-                emailSecond={true}
+                expediente={false}
+                adress={false}
+                email={true}
+                emailSecond={false}
                 fraseFooter={true} // frase Google LLC
                 obs={false}
               />

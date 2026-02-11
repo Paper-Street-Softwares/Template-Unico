@@ -172,7 +172,7 @@ const content = {
       SecondPart: <span>A_Definir</span>,
       subtitle: <>A_Definir</>,
       imgFeatures: imgFeatures,
-      alt: <>A_Definir</>,
+      alt: <>Imagem ilustrativa da Features</>,
       titleMessageFeature: <>A_Definir</>,
       subtitleMessageFeature: <>A_Definir</>,
       cards: {
@@ -337,7 +337,7 @@ const content = {
       SecondPart: <span>A_Definir</span>,
       subtitle: <>A_Definir</>,
       paragraph: <div>A_Definir</div>,
-
+      ctaButtonText: <>A_Definir</>,
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="font-secondFont">
@@ -356,7 +356,7 @@ const content = {
       paragraphModalCta: 'Entre em contato',
       titleModal: <>A_Definir</>,
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: <>A_Definir</>,
+
       aboutSocial: {
         img: {
           img: aboutSocialImg,
@@ -381,7 +381,7 @@ const content = {
       Destaque: <span className="italic font-light"> A_Definir</span>,
       SecondPart: <span>A_Definir</span>,
 
-      subtitle: '',
+      subtitle: <>A_Definir</>,
       img: imgSteps,
       alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
