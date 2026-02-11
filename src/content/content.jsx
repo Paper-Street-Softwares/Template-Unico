@@ -36,10 +36,10 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: <>A_Definir</>,
+  name: 'A_Definir',
   email: 'contato', // Email desejado pelo cliente
-  emailSecundario: <>A_Definir</>, // Email desejado pelo cliente
-  domain: <>A_Definir</>, // Sem "www"
+  emailSecundario: 'A_Definir', // Email desejado pelo cliente
+  domain: 'A_Definir', // Sem "www"
   phone: {
     ddd: '00',
     firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
@@ -119,9 +119,11 @@ const content = {
     },
     hero: {
       miniTag: <>A_definir</>,
-      FirstPart: <span>A_definir</span>,
+      FirstPart: <span>Especialistas em Direito </span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_definir</span>
+        <span className="destaque relative italic font-light">
+          Previdenciário
+        </span>
       ),
       SecondPart: <span></span>,
       subtitle: <p>A_definir</p>,
