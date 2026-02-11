@@ -408,7 +408,7 @@ const content = {
       },
       ctaButtonText: <>A_Definir</>,
     },
-    ctaSecondary: {
+    ctaSection: {
       miniTag: <>A_Definir</>,
       title: <h1>A_Definir</h1>,
       subtitle: (
