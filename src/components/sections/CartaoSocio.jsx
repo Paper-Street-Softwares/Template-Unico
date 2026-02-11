@@ -5,7 +5,6 @@ import { X } from 'lucide-react'
 import content from '../../content/content'
 import SalvarContatoButton from '../interactives/Cartao/SalvarContato'
 import CartaoRedeSocial from '../interactives/Cartao/CartaoRedeSocial'
-import Button from '../interactives/Button'
 
 function CartaoSocio() {
   const { nome } = useParams() // pega a rota
@@ -44,7 +43,7 @@ function CartaoSocio() {
         </a>
         <a
           href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-            url
+            url,
           )}`}
           target="_blank"
           rel="noreferrer"
@@ -54,7 +53,7 @@ function CartaoSocio() {
         </a>
         <a
           href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
-            url
+            url,
           )}`}
           target="_blank"
           rel="noreferrer"
