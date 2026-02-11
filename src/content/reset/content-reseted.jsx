@@ -28,6 +28,7 @@ import {
   Car,
   HandCoins,
   Check,
+  Shield,
 } from 'lucide-react'
 
 import { FileText } from 'lucide-react'
@@ -35,24 +36,24 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'A_Definir',
+  name: <>A_Definir</>,
   email: 'contato', // Email desejado pelo cliente
-  emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'A_Definir', // Sem "www"
+  emailSecundario: <>A_Definir</>, // Email desejado pelo cliente
+  domain: <>A_Definir</>, // Sem "www"
   phone: {
     ddd: '00',
     firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
     secondPart: '0000', // Apenas os 4 últimos números
   },
   phoneSecundario: {
-    ddd: 'A_Definir',
-    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: 'A_Definir', // Apenas os 4 últimos números
+    ddd: <>A_Definir</>,
+    firstPart: <>A_Definir</>, // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: <>A_Definir</>, // Apenas os 4 últimos números
   },
   phoneTerciario: {
-    ddd: 'A_Definir',
-    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: 'A_Definir', // Apenas os 4 últimos números
+    ddd: <>A_Definir</>,
+    firstPart: <>A_Definir</>, // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: <>A_Definir</>, // Apenas os 4 últimos números
   },
   endereco: (
     <div>
@@ -60,7 +61,7 @@ export const infos = {
       <p>A_Definir,</p>
       <p>A_Definir,</p>
       <p>A_Definir,</p>
-      <p>A_Definir</p>
+      <p>A_Definir,</p>
     </div>
   ),
   enderecoSecundario: (
@@ -74,11 +75,11 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>A_Definir</p>
+      <p>8h às 18h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: '', // Sem o @
+  instagramProfile: 'otadvocacia', // Sem o @
   facebookProfile: '',
   linkeDinProfile: '',
   x: '',
@@ -117,113 +118,67 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'A_Definir',
-      FirstPart: <span>A_Definir </span>,
+      miniTag: <>A_definir</>,
+      FirstPart: <span>A_definir</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">
-          A_Definir{' '}
-          <span>
-            <svg
-              className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-black hidden desktop1:flex"
-              viewBox="0 0 100 10"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M0 5 Q 50 10 100 5"
-                stroke="currentColor"
-                strokeWidth="2"
-                fill="none"
-              />
-            </svg>
-            <svg
-              className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-black desktop1:hidden"
-              viewBox="0 0 100 10"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M0 5 Q 50 10 100 5"
-                stroke="currentColor"
-                strokeWidth="2"
-                fill="none"
-              />
-            </svg>
-          </span>
-        </span>
+        <span className="destaque relative italic font-light">A_definir</span>
       ),
       SecondPart: <span></span>,
-      subtitle: <p>A_Definir</p>,
+      subtitle: <p>A_definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'A_Definir',
-      ctaButtonTextSecondary: 'A_Definir',
+      ctaButtonText: <>A_Definir</>,
+      ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'A_Definir',
-        textTwo: 'A_Definir',
+        text: <>A_Definir</>,
+        textTwo: <>A_Definir</>,
       },
       secondaryCta: 'Contato',
-      images: {
-        static: {
-          img: {},
-          alt: '',
-        },
-        slide1: {
-          img: {},
-          alt: '',
-        },
-        slide2: {
-          img: {},
-          alt: '',
-        },
-        slide3: {
-          img: {},
-          alt: '',
-        },
-      },
     },
     important: {
-      miniTag: 'A_Definir',
-      title: 'A_Definir',
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
       cards: {
         card1: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card2: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card3: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card4: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
       },
-      fraseObs: 'A_Definir',
-      ctaButtonText: 'A_Definir',
+      fraseObs: <>A_Definir</>,
+      ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: 'A_Definir',
-      FirstPart: <span>A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
+      Destaque: <span className="italic font-light">A_Definir</span>,
       SecondPart: <span>A_Definir</span>,
-      subtitle: 'A_Definir',
+      subtitle: <>A_Definir</>,
       imgFeatures: imgFeatures,
-      alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: 'A_Definir',
-      subtitleMessageFeature: 'A_Definir',
+      alt: <>A_Definir</>,
+      titleMessageFeature: <>A_Definir</>,
+      subtitleMessageFeature: <>A_Definir</>,
       cards: {
         card1: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -237,8 +192,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -252,11 +207,12 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
-              A_Definir <br />
+              A_Definir
+              <br />
               <br />
               A_Definir
             </div>
@@ -266,8 +222,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -281,8 +237,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card5: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -296,8 +252,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card6: {
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -310,61 +266,77 @@ const content = {
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
+        card7: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Shield />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card8: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Briefcase />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
+        card9: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <FileText />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
+        },
       },
-      moreFeatures: {
-        card1: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
-        },
-        card2: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
-        },
-        card3: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
-        },
-      },
-      ctaButtonText: 'Entrar em contato',
+      ctaButtonText: <>A_Definir</>,
     },
     emergency: {
-      minitag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
-      ctaButtonText: 'A_Definir',
+      minitag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
+      ctaButtonText: <>A_Definir</>,
     },
     maps: {
-      minitag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
-      embedsrc: 'A_Definir',
+      minitag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
+      embedsrc: <>A_Definir</>,
     },
     about: {
       imagem: {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'A_Definir',
+      miniTag: <>A_Definir</>,
       FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> do Direito</span>,
-      SecondPart: <span></span>,
-
-      SecondPartTitle: '',
-      subtitle: 'A_Definir',
-      paragraph: (
-        <div>
-          A_Definir
-          <br />
-          <br />
-          A_Definir
-          <br />
-          <br />
-          A_Definir
-        </div>
-      ),
+      Destaque: <span className="italic font-light"> A_Definir</span>,
+      SecondPart: <span>A_Definir</span>,
+      subtitle: <>A_Definir</>,
+      paragraph: <div>A_Definir</div>,
 
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
@@ -376,21 +348,24 @@ const content = {
           <br />
           <br />
           A_Definir
+          <br />
+          <br />
+          A_Definir
         </p>
       ),
       paragraphModalCta: 'Entre em contato',
-      titleModal: 'A_Definir',
+      titleModal: <>A_Definir</>,
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Falar diretamente com o escritório',
+      ctaButtonText: <>A_Definir</>,
       aboutSocial: {
         img: {
           img: aboutSocialImg,
           alt: `Foto do Instagram do ${infos.name}`,
           altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
         },
-        miniTag: 'REDES SOCIAIS',
-        title: 'Conecte-se conosco',
-        subtitle: 'A_Definir',
+        miniTag: <>A_Definir</>,
+        title: <>A_Definir</>,
+        subtitle: <>A_Definir</>,
         paragraph: <p></p>,
         labelInstagram: 'Siga-nos no Instagram',
         labelFacebook: 'Siga-nos no Facebook',
@@ -400,120 +375,90 @@ const content = {
         labelYoutube: 'Siga-nos no Youtube',
       },
     },
-    // team: {
-    //   miniTag: ' A_Definir',
-    //   title: (
-    //     <h1>
-    //       A_Definir <span className="italic text-primaryDark">A_Definir</span>
-    //       A_Definir
-    //     </h1>
-    //   ),
-    //   subtitle: 'A_Definir',
-    //   cards: {
-    //     card1: {
-    //       img1: team1,
-    //       alt: 'Imagens ilustrativa dos profissionais',
-    //       name: 'A_Definir',
-    //       description: <p>A_Definir</p>,
-    //     },
-    //     card2: {
-    //       img2: team2,
-    //       alt: 'Imagens ilustrativa dos profissionais',
-    //       name: 'A_Definir',
-    //       description: <p>A_Definir</p>,
-    //     },
-    //   },
-    // },
     steps: {
-      miniTag: 'A_Definir',
+      miniTag: <>A_Definir</>,
       FirstPart: <span> A_Definir </span>,
       Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span></span>,
+      SecondPart: <span>A_Definir</span>,
 
-      subtitle: 'A_Definir',
+      subtitle: '',
       img: imgSteps,
       alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'A_Definir',
-          cardDescription: 'A_Definir',
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
       },
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: <>A_Definir</>,
     },
     ctaSecondary: {
-      miniTag: 'FALE CONOSCO',
+      miniTag: <>A_Definir</>,
       title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
-      // subtitleDireita: (
-      //   <p className="gap-3 flex font-mainFont opacity-60 mt-1">
-      //     <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
-      //   </p>
-      // ),
-      // titleDireita: (
-      //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
-      // ),
-      ctaButtonText: 'Fale com a gente agora mesmo',
+      ctaButtonText: <>A_Definir</>,
+
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
     blog: {
-      miniTag: 'BLOG',
-      title: 'A_Definir',
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
       subtitle: '',
       img: imgSteps,
       labelCards: 'Ver mais',
       label: 'Clique aqui para ver todas as matérias',
-      blogLink: 'A_Definir', //sem "https://"
+      blogLink: <>A_Definir</>, //sem "https://"
     },
     faq: {
-      miniTag: 'TIRE SUAS DÚVIDAS',
-      title: 'Perguntas Frequentes',
-      subtitle: 'A_Definir',
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       questions: {
         question1: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question2: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question3: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question4: {
-          question: 'A_Definir',
-          answer: 'A_Definir',
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
       },
+
       paragraph: 'Clique aqui caso tenha mais dúvidas',
     },
     // team: {
-    //   miniTag: 'A_Definir',
-    //   title: 'A_Definir',
-    //   subtitle: 'A_Definir',
+    //   miniTag: <>A_Definir</>,
+    //   title: <>A_Definir</>,
+    //   subtitle: <>A_Definir</>,
     //   members: {
     //     member1: {
     //       img: {
@@ -1024,11 +969,11 @@ const content = {
     },
     // socios: {
     //   socio1: {
-    //     nome: 'A_Definir',
-    //     rota: 'A_Definir',
+    //     nome: <>A_Definir</>,
+    //     rota: <>A_Definir</>,
     //     sobrenome: '',
-    //     telefone: 'A_Definir',
-    //     whatsapp: 'A_Definir',
+    //     telefone: <>A_Definir</>,
+    //     whatsapp: <>A_Definir</>,
     //     email: '',
     //     social: {
     //       instagram: '',
@@ -1039,8 +984,8 @@ const content = {
     //     },
     //   },
     //   socio2: {
-    //     nome: 'A_Definir',
-    //     rota: 'A_Definir',
+    //     nome: <>A_Definir</>,
+    //     rota: <>A_Definir</>,
     //     sobrenome: '',
     //     telefone: '00000000000',
     //     whatsapp: '00000000000',
@@ -1054,11 +999,11 @@ const content = {
     //     },
     //   },
     //   socio4: {
-    //     nome: 'A_Definir',
-    //     rota: 'A_Definir',
+    //     nome: <>A_Definir</>,
+    //     rota: <>A_Definir</>,
     //     sobrenome: '',
-    //     telefone: 'A_Definir',
-    //     whatsapp: 'A_Definir',
+    //     telefone: <>A_Definir</>,
+    //     whatsapp: <>A_Definir</>,
     //     email: '',
     //     social: {
     //       instagram: '',

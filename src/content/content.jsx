@@ -36,32 +36,32 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Oliveira Teixeira Advocacia',
+  name: <>A_Definir</>,
   email: 'contato', // Email desejado pelo cliente
-  emailSecundario: 'kaio@kaio.com.br', // Email desejado pelo cliente
-  domain: 'otadvocacia.com.br', // Sem "www"
+  emailSecundario: <>A_Definir</>, // Email desejado pelo cliente
+  domain: <>A_Definir</>, // Sem "www"
   phone: {
-    ddd: '61',
-    firstPart: '99689', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '4436', // Apenas os 4 últimos números
+    ddd: '00',
+    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0000', // Apenas os 4 últimos números
   },
   phoneSecundario: {
-    ddd: 'A_Definir',
-    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: 'A_Definir', // Apenas os 4 últimos números
+    ddd: <>A_Definir</>,
+    firstPart: <>A_Definir</>, // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: <>A_Definir</>, // Apenas os 4 últimos números
   },
   phoneTerciario: {
-    ddd: 'A_Definir',
-    firstPart: 'A_Definir', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: 'A_Definir', // Apenas os 4 últimos números
+    ddd: <>A_Definir</>,
+    firstPart: <>A_Definir</>, // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: <>A_Definir</>, // Apenas os 4 últimos números
   },
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>SCN Quadra 02, Bloco D,</p>
-      <p>Sala 1027, Torre A – Shopping Liberty Mall,</p>
-      <p>Brasília - DF,,</p>
-      <p>CEP: 70712-903</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
+      <p>A_Definir,</p>
     </div>
   ),
   enderecoSecundario: (
@@ -118,120 +118,67 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'Advogado Especialista em Direito Público',
-      FirstPart: <span>Direito Público sem erros</span>,
+      miniTag: <>A_definir</>,
+      FirstPart: <span>A_definir</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">
-          nem riscos{' '}
-          <span>
-            <svg
-              className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-black hidden desktop1:flex"
-              viewBox="0 0 100 10"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M0 5 Q 50 10 100 5"
-                stroke="currentColor"
-                strokeWidth="2"
-                fill="none"
-              />
-            </svg>
-            <svg
-              className="hero-underline absolute -bottom-2 left-0 w-full h-3 text-black desktop1:hidden"
-              viewBox="0 0 100 10"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M0 5 Q 50 10 100 5"
-                stroke="currentColor"
-                strokeWidth="2"
-                fill="none"
-              />
-            </svg>
-          </span>
-        </span>
+        <span className="destaque relative italic font-light">A_definir</span>
       ),
       SecondPart: <span></span>,
-      subtitle: (
-        <p>
-          Transformamos decisões complexas em segurança jurídica e resultados
-          concretos para você.
-        </p>
-      ),
+      subtitle: <p>A_definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: 'Falar com o Dr. Kaio Oliveira',
-      ctaButtonTextSecondary: 'A_Definir',
+      ctaButtonText: <>A_Definir</>,
+      ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: 'Atendimento presencial e online (videoconferência, WhatsApp e e-mail)',
-        textTwo: 'A_Definir',
+        text: <>A_Definir</>,
+        textTwo: <>A_Definir</>,
       },
       secondaryCta: 'Contato',
-      images: {
-        static: {
-          img: {},
-          alt: '',
-        },
-        slide1: {
-          img: {},
-          alt: '',
-        },
-        slide2: {
-          img: {},
-          alt: '',
-        },
-        slide3: {
-          img: {},
-          alt: '',
-        },
-      },
     },
     important: {
-      miniTag: 'A_Definir',
-      title: 'A_Definir',
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
       cards: {
         card1: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card2: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card3: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card4: {
-          title: 'A_Definir',
-          paragraph: 'A_Definir',
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
       },
-      fraseObs: 'A_Definir',
-      ctaButtonText: 'A_Definir',
+      fraseObs: <>A_Definir</>,
+      ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: 'Áreas de Atuação',
-      FirstPart: <span>Especialidades </span>,
-      Destaque: <span className="italic font-light"> Jurídicas</span>,
-      SecondPart: <span>do Escritório</span>,
-      subtitle:
-        'Oferecemos assessoria completa e estratégica, unindo experiência técnica à visão prática para proteger seus interesses.',
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
+      Destaque: <span className="italic font-light">A_Definir</span>,
+      SecondPart: <span>A_Definir</span>,
+      subtitle: <>A_Definir</>,
       imgFeatures: imgFeatures,
-      alt: 'imagem representativa da Seção Serviços',
-      titleMessageFeature: '100%',
-      subtitleMessageFeature: 'Direito Público',
+      alt: <>A_Definir</>,
+      titleMessageFeature: <>A_Definir</>,
+      subtitleMessageFeature: <>A_Definir</>,
       cards: {
         card1: {
-          title: 'Direito Administrativo',
-          subtitle:
-            'Atuação consultiva e contenciosa em matérias envolvendo a Administração Pública, contratos, licitações e atos administrativos.',
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -245,9 +192,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: 'Direito Constitucional',
-          subtitle:
-            'Atuação estratégica em demandas constitucionais, controle de constitucionalidade e defesa de direitos fundamentais.',
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -261,9 +207,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: 'Controle Externo e Tribunais de Contas (TCU e TCEs)',
-          subtitle:
-            'Atuação especializada em processos de controle externo, tomadas de contas, auditorias e responsabilização.',
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -277,9 +222,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: 'Direito Urbanístico e Regularização Fundiária',
-          subtitle:
-            'Assessoria jurídica em ordenamento urbano, uso e ocupação do solo, regularização fundiária e projetos imobiliários.',
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -293,9 +237,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card5: {
-          title: 'Direito Econômico e Regulatório',
-          subtitle:
-            'Consultoria jurídica e econômica em setores regulados, análise de impacto regulatório e segurança jurídica em decisões estratégicas.',
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -309,9 +252,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card6: {
-          title: 'Consultoria Jurídica para Prefeituras e Entes Públicos',
-          subtitle:
-            'Assessoria contínua a gestores públicos em planejamento, governança, conformidade e tomada de decisão.',
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -325,9 +267,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card7: {
-          title: 'Compliance, Governança e ESG',
-          subtitle:
-            'Estruturação de programas de integridade, governança corporativa e práticas ESG no setor público e privado.',
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -341,9 +282,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card8: {
-          title: 'Direito Empresarial',
-          subtitle:
-            'Assessoria jurídica a empresas em contratos, estruturação societária e gestão de riscos jurídicos.',
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -357,9 +297,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card9: {
-          title: 'Direito Civil',
-          subtitle:
-            'Atuação em demandas cíveis estratégicas, contratos, responsabilidade civil e relações patrimoniais.',
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -373,105 +312,60 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
       },
-
-      moreFeatures: {
-        card1: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
-        },
-        card2: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
-        },
-        card3: {
-          ico: 'A_Definir',
-          title: 'A_Definir',
-          subtitle: 'A_Definir',
-        },
-      },
-      ctaButtonText: 'Entrar em contato',
+      ctaButtonText: <>A_Definir</>,
     },
     emergency: {
-      minitag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
-      ctaButtonText: 'A_Definir',
+      minitag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
+      ctaButtonText: <>A_Definir</>,
     },
     maps: {
-      minitag: 'A_Definir',
-      title: 'A_Definir',
-      subtitle: 'A_Definir',
-      embedsrc: 'A_Definir',
+      minitag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
+      embedsrc: <>A_Definir</>,
     },
     about: {
       imagem: {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: 'QUEM É O OLIVEIRA TEIXEIRA ADVOCACIA',
-      FirstPart: <span> Nossa </span>,
-      Destaque: <span className="italic font-light"> trajetória</span>,
-      SecondPart: <span></span>,
-      subtitle:
-        'Experiência e estratégia em Direito Público e decisões jurídicas complexas.',
-      paragraph: (
-        <div>
-          O Oliveira Teixeira Advocacia é resultado de uma trajetória construída
-          ao longo de mais de duas décadas de atuação técnica, institucional e
-          estratégica no Direito Público e na análise econômica aplicada às
-          decisões jurídicas.
-        </div>
-      ),
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir </span>,
+      Destaque: <span className="italic font-light"> A_Definir</span>,
+      SecondPart: <span>A_Definir</span>,
+      subtitle: <>A_Definir</>,
+      paragraph: <div>A_Definir</div>,
 
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="font-secondFont">
-          O Oliveira Teixeira Advocacia é resultado de uma trajetória construída
-          ao longo de mais de duas décadas de atuação técnica, institucional e
-          estratégica no Direito Público e na análise econômica aplicada às
-          decisões jurídicas.
+          A_Definir
           <br />
           <br />
-          Fundado por Kaio de Oliveira Teixeira, advogado com sólida formação
-          acadêmica — Mestre em Economia e Doutorando em Economia pelo IDP — o
-          escritório nasce da convergência entre experiência prática na
-          Administração Pública, atuação em projetos de alta complexidade e
-          visão jurídica orientada à segurança decisória.
+          A_Definir
           <br />
           <br />
-          Ao longo de sua carreira, o fundador ocupou cargos estratégicos no
-          setor público, participou da estruturação de projetos institucionais
-          relevantes e atuou diretamente na formulação, análise e controle de
-          políticas públicas, contratos e decisões administrativas de alto
-          impacto. Essa vivência conferiu ao escritório uma leitura aprofundada
-          dos mecanismos de funcionamento do Estado, dos órgãos de controle e do
-          ambiente regulatório.
+          A_Definir
           <br />
           <br />
-          Com atuação técnica, independente e altamente especializada, o
-          Oliveira Teixeira Advocacia se posiciona como um escritório focado em
-          estratégia jurídica, governança, análise de risco e soluções
-          juridicamente sustentáveis, atendendo clientes que demandam rigor
-          técnico, visão institucional e atuação responsável em contextos
-          complexos.
+          A_Definir
         </p>
       ),
       paragraphModalCta: 'Entre em contato',
-      titleModal: 'Nossa trajetória',
+      titleModal: <>A_Definir</>,
       ctaButtonAriaLabel: 'Botão para entrar em contato',
-      ctaButtonText: 'Falar diretamente com o escritório',
+      ctaButtonText: <>A_Definir</>,
       aboutSocial: {
         img: {
           img: aboutSocialImg,
           alt: `Foto do Instagram do ${infos.name}`,
           altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
         },
-        miniTag: 'REDES SOCIAIS',
-        title: 'Conecte-se conosco',
-        subtitle:
-          'Acompanhe nossas redes sociais para se manter informado sobre conteúdos jurídicos, atualizações e temas relevantes das áreas de atuação.',
+        miniTag: <>A_Definir</>,
+        title: <>A_Definir</>,
+        subtitle: <>A_Definir</>,
         paragraph: <p></p>,
         labelInstagram: 'Siga-nos no Instagram',
         labelFacebook: 'Siga-nos no Facebook',
@@ -481,35 +375,11 @@ const content = {
         labelYoutube: 'Siga-nos no Youtube',
       },
     },
-    // team: {
-    //   miniTag: ' A_Definir',
-    //   title: (
-    //     <h1>
-    //       A_Definir <span className="italic text-primaryDark">A_Definir</span>
-    //       A_Definir
-    //     </h1>
-    //   ),
-    //   subtitle: 'A_Definir',
-    //   cards: {
-    //     card1: {
-    //       img1: team1,
-    //       alt: 'Imagens ilustrativa dos profissionais',
-    //       name: 'A_Definir',
-    //       description: <p>A_Definir</p>,
-    //     },
-    //     card2: {
-    //       img2: team2,
-    //       alt: 'Imagens ilustrativa dos profissionais',
-    //       name: 'A_Definir',
-    //       description: <p>A_Definir</p>,
-    //     },
-    //   },
-    // },
     steps: {
-      miniTag: 'PASSO A PASSO',
-      FirstPart: <span> Como </span>,
-      Destaque: <span className="italic font-light"> funciona</span>,
-      SecondPart: <span>nosso atendimento?</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir </span>,
+      Destaque: <span className="italic font-light"> A_Definir</span>,
+      SecondPart: <span>A_Definir</span>,
 
       subtitle: '',
       img: imgSteps,
@@ -517,100 +387,78 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: 'Consulta inicial',
-          cardDescription:
-            'Realizamos uma reunião para entender seu caso e identificar suas necessidades jurídicas.',
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card2: {
           stepNumber: 2,
-          cardTitle: 'Análise detalhada',
-          cardDescription:
-            'Examinamos todos os aspectos do seu caso, revisando documentos e evidências para obter uma visão completa.',
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card3: {
           stepNumber: 3,
-          cardTitle: 'Elaboração da estratégia',
-          cardDescription:
-            'Criamos uma estratégia jurídica personalizada para proteger seus interesses de maneira eficaz.',
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card4: {
           stepNumber: 4,
-          cardTitle: 'Ação legal',
-          cardDescription:
-            'Iniciamos e conduzimos as ações judiciais ou o serviço contratado, buscando justiça e soluções personalizadas conforme a necessidade do seu caso.',
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
       },
-      ctaButtonText: 'A_Definir',
+      ctaButtonText: <>A_Definir</>,
     },
     ctaSecondary: {
-      miniTag: 'FALE CONOSCO',
-      title: (
-        <h1>
-          Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
-        </h1>
-      ),
+      miniTag: <>A_Definir</>,
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Entre em contato agora para uma consulta especializada e comece a
-            encontrar a solução que você precisa.
-          </p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
-      // subtitleDireita: (
-      //   <p className="gap-3 flex font-mainFont opacity-60 mt-1">
-      //     <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
-      //   </p>
-      // ),
-      // titleDireita: (
-      //   <h1 className="text-title5 my-3 font-mainFont">WhatsApp</h1>
-      // ),
-      ctaButtonText: 'Fale com a gente agora mesmo',
+      ctaButtonText: <>A_Definir</>,
+
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
     blog: {
-      miniTag: 'BLOG',
-      title: 'A_Definir',
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
       subtitle: '',
       img: imgSteps,
       labelCards: 'Ver mais',
       label: 'Clique aqui para ver todas as matérias',
-      blogLink: 'A_Definir', //sem "https://"
+      blogLink: <>A_Definir</>, //sem "https://"
     },
     faq: {
-      miniTag: 'TIRE SUAS DÚVIDAS',
-      title: 'Perguntas Frequentes',
-      subtitle: 'Confira as perguntas abaixo para esclarecer suas dúvidas. ',
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       questions: {
         question1: {
-          question: 'Como posso contratar seus serviços?',
-          answer:
-            'Agende sua consulta conosco via WhatsApp e conversaremos sobre suas necessidades e avaliaremos os custos.',
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question2: {
-          question: 'Qual é o prazo médio para resolução de um caso?',
-          answer:
-            'O prazo médio varia conforme a complexidade, mas discutiremos uma estimativa durante a consulta inicial.',
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question3: {
-          question: 'Quais documentos devo levar para a consulta?',
-          answer:
-            'Traga os documentos relevantes ao seu caso, como contratos, correspondências e registros, além de documentos pessoais e comprovante de residência.',
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question4: {
-          question: 'Vocês oferecem serviços de consultoria preventiva?',
-          answer:
-            'Sim, oferecemos consultoria preventiva para evitar problemas futuros e garantir conformidade legal.',
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
       },
 
       paragraph: 'Clique aqui caso tenha mais dúvidas',
     },
     // team: {
-    //   miniTag: 'A_Definir',
-    //   title: 'A_Definir',
-    //   subtitle: 'A_Definir',
+    //   miniTag: <>A_Definir</>,
+    //   title: <>A_Definir</>,
+    //   subtitle: <>A_Definir</>,
     //   members: {
     //     member1: {
     //       img: {
@@ -1121,11 +969,11 @@ const content = {
     },
     // socios: {
     //   socio1: {
-    //     nome: 'A_Definir',
-    //     rota: 'A_Definir',
+    //     nome: <>A_Definir</>,
+    //     rota: <>A_Definir</>,
     //     sobrenome: '',
-    //     telefone: 'A_Definir',
-    //     whatsapp: 'A_Definir',
+    //     telefone: <>A_Definir</>,
+    //     whatsapp: <>A_Definir</>,
     //     email: '',
     //     social: {
     //       instagram: '',
@@ -1136,8 +984,8 @@ const content = {
     //     },
     //   },
     //   socio2: {
-    //     nome: 'A_Definir',
-    //     rota: 'A_Definir',
+    //     nome: <>A_Definir</>,
+    //     rota: <>A_Definir</>,
     //     sobrenome: '',
     //     telefone: '00000000000',
     //     whatsapp: '00000000000',
@@ -1151,11 +999,11 @@ const content = {
     //     },
     //   },
     //   socio4: {
-    //     nome: 'A_Definir',
-    //     rota: 'A_Definir',
+    //     nome: <>A_Definir</>,
+    //     rota: <>A_Definir</>,
     //     sobrenome: '',
-    //     telefone: 'A_Definir',
-    //     whatsapp: 'A_Definir',
+    //     telefone: <>A_Definir</>,
+    //     whatsapp: <>A_Definir</>,
     //     email: '',
     //     social: {
     //       instagram: '',

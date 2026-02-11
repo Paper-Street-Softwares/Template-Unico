@@ -51,7 +51,7 @@ function FooterNovoTemplate({
     case 'defaultDark':
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
-      iconColor = 'text-white/60'
+      iconColor = 'text-primaryLight'
       backgroundMode = 'bg-transparent'
       hoverLinks = ' bg-gradient-to-r from-white to-white '
 

@@ -5,9 +5,9 @@ export function AlternatingSection({
   forcePrimaryDark = false,
 }) {
   const colors = {
-    light: ['bg-white', 'bg-terciary'],
+    light: ['bg-white', 'bg-neutral-50'],
     defaultDark: ['bg-white', 'bg-terciary'],
-    defaultLight: ['bg-white', 'bg-terciary'],
+    defaultLight: ['bg-neutral-50', 'bg-neutral-100'],
     dark: ['bg-black', 'bg-darkOpacity'],
   }
 
