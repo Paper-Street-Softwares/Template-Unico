@@ -23,7 +23,7 @@ function FaqNovoTemplate({ colorMode }) {
   switch (colorMode) {
     case 'light':
       text = 'text-corTitulosPreto'
-      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosBranca'
       hoverText = 'hover:text-primaryDark'
       backgroundMode = 'bg-transparent'
 
@@ -37,15 +37,15 @@ function FaqNovoTemplate({ colorMode }) {
 
     case 'defaultDark':
       text = 'text-corTitulosPreto'
-      text = 'text-corTitulosPreto'
+      textOpacity = 'text-corOutrosTextosBranca'
       hoverText = 'hover:text-primaryDark'
       backgroundMode = 'bg-transparent'
       break
 
     case 'defaultLight':
-      text = 'text-corTitulosPreto'
-      text = 'text-corTitulosPreto'
-      hoverText = 'hover:text-primaryDark'
+      text = 'text-corTitulosBranca'
+      textOpacity = 'text-corOutrosTextosBranca'
+      hoverText = 'hover:text-white'
       backgroundMode = 'bg-transparent'
   }
 

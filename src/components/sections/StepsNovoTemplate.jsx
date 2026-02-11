@@ -61,12 +61,12 @@ function StepsNovoTemplate({ colorMode }) {
 
     case 'defaultLight':
       backgroundMode = 'bg-transparent'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
+      text = 'text-corTitulosBranca'
+      textOpacity = 'text-corOutrosTextosBranca'
       stepNumberBg = 'bg-white'
-      stepNumberText = 'text-primaryDark'
-      lineColor = 'bg-primaryDark/20'
-      textDestaque = 'text-primaryDark'
+      stepNumberText = 'text-primaryLight'
+      lineColor = 'bg-white/20'
+      textDestaque = 'text-primaryLight'
       image = ' border-[8px] border-white'
   }
 

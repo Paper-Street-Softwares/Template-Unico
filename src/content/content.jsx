@@ -39,7 +39,7 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: <> Dr. Vladimir Vitti</>,
+  name: 'Dr. Vladimir Vitti',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
   domain: 'vvjrconsultoria.com', // Sem "www"

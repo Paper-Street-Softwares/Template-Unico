@@ -76,14 +76,14 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
 
     case 'defaultLight':
       backgroundMode = 'bg-transparent'
-      bgAccordion = '#fff'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      textDestaque = 'text-primaryDark'
-      cardBg = 'bg-quartenary'
-      iconBg = 'bg-white text-primaryDark'
-      image = ' border-[8px] border-white'
-      bgObservation = 'bg-primaryDark'
+      bgAccordion = 'rgba(0,0,0,0.8)'
+      text = 'text-corTitulosBranca'
+      textOpacity = 'text-corOutrosTextosBranca'
+      textDestaque = 'text-white'
+      cardBg = 'bg-primaryLight'
+      iconBg = 'bg-white text-primaryLight'
+      image = ' border-[8px] border-primaryLight'
+      bgObservation = 'bg-primaryLight'
       textObservation = 'text-white'
   }
   const { showGlobalButtonsLps } = ButtonsLps()

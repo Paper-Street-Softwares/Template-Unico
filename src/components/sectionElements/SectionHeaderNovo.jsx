@@ -56,14 +56,14 @@ function SectionHeaderNovo({
       break
 
     case 'defaultLight':
-      textDestaque = 'text-primaryDark'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      cardBg = 'bg-white'
-      borderCard = 'border-border'
-      arrowColor = 'text-mutedForeground group-hover:text-primaryDark'
-      imageBorder = 'border-white'
-      miniTag = 'text-primaryDark'
+      textDestaque = 'text-white'
+      text = 'text-corTitulosBranca'
+      textOpacity = 'text-corOutrosTextosBranca'
+      cardBg = 'bg-gray-900'
+      borderCard = 'border-gray-700'
+      arrowColor = 'text-mutedForeground group-hover:text-primaryLight'
+      imageBorder = 'border-borderImage'
+      miniTag = 'text-white'
   }
 
   if (type === 'article') {

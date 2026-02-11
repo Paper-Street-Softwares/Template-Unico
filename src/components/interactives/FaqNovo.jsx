@@ -38,9 +38,9 @@ const AccordionTrigger = React.forwardRef(
         break
 
       case 'defaultLight':
-        textBase = 'text-corTitulosPreto'
-        hoverText = 'hover:text-primaryDark'
-        activeText = 'data-[state=open]:text-primaryDark'
+        textBase = 'text-corTitulosBranca'
+        hoverText = 'hover:text-primaryLight'
+        activeText = 'data-[state=open]:text-white'
     }
 
     return (

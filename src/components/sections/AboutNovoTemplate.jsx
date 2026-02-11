@@ -71,9 +71,9 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
     case 'defaultLight':
       backgroundMode = 'bg-transparent'
       text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
+      textOpacity = 'text-corOutrosTextosBranca'
       textOpacityModal = 'text-corOutrosPreto'
-      textDestaque = 'text-primaryDark'
+      textDestaque = 'text-white'
       cardBg = 'bg-white/10'
       iconBg = 'bg-primaryDark/10 text-primaryDark'
       buttonBg = 'bg-primaryDark'
