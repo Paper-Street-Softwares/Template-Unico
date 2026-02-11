@@ -8,7 +8,7 @@ import imgFeatures from '../assets/imgs/features/imgServices.webp'
 import aboutImg from '../assets/imgs/about/aboutImg.webp'
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-// import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
+import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
 import imgSteps from '../assets/imgs/steps/imgSteps.webp'
 
@@ -36,14 +36,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Dr. Emanuell Felipe',
+  name: <>A_Definir</>,
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'efmrAdvogado.adv.br', // Sem "www"
+  domain: 'A_Definir', // Sem "www"
   phone: {
-    ddd: '44',
-    firstPart: '98462', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '4107', // Apenas os 4 últimos números
+    ddd: '00',
+    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0000', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: <>A_Definir</>,
@@ -118,214 +118,201 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: <>Advocacia Especializada em Concursos Públicos</>,
-      FirstPart: <span>Não perca sua </span>,
+      miniTag: <>A_definir</>,
+      FirstPart: <span>A_definir</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">vaga</span>
+        <span className="destaque relative italic font-light">A_definir</span>
       ),
-      SecondPart: <span>por injustiça</span>,
-      subtitle: (
-        <p>
-          Uma decisão errada pode acabar com anos de estudo. Defenda seu direito
-          com Advogado especialista em concursos
-        </p>
-      ),
+      SecondPart: <span></span>,
+      subtitle: <p>A_definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: <>Defender minha vaga agora</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: <>Atendimento exclusivamente on-line.</>,
+        text: <>A_Definir</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: 'Contato',
     },
     important: {
-      miniTag: <>Atenção</>,
-      title: <>O que é importante saber sobre concursos públicos</>,
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
       cards: {
         card1: {
-          title: (
-            <>
-              Fui eliminado injustamente do concurso. Ainda dá tempo de fazer
-              algo?
-            </>
-          ),
-          paragraph: (
-            <>
-              Na maioria dos casos, sim. Existem prazos curtos para recursos
-              administrativos e ações judiciais. Quanto antes o Advogado
-              analisar o edital e o ato de eliminação, maiores são as chances de
-              reverter a decisão. Por isso, o ideal é buscar orientação
-              imediatamente.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card2: {
-          title: <>Qualquer Advogado pode cuidar de caso de concurso?</>,
-          paragraph: (
-            <>
-              Tecnicamente, sim. Mas concursos públicos têm regras próprias,
-              prazos rígidos e entendimentos específicos dos tribunais. Um
-              Advogado especializado conhece as falhas mais comuns das bancas e
-              sabe qual estratégia aplicar em cada situação.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card3: {
-          title: (
-            <>
-              Problemas em TAF ou heteroidentificação costumam ser revertidos?
-            </>
-          ),
-          paragraph: (
-            <>
-              Sim, quando há ilegalidade, falta de critérios objetivos ou
-              violação ao edital. Esses são casos sensíveis e exigem atuação
-              técnica e rápida, com provas bem construídas. A análise individual
-              do caso é essencial.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card4: {
-          title: <>Entrar na Justiça pode me prejudicar no concurso?</>,
-          paragraph: (
-            <>
-              Não. Buscar seus direitos é legítimo e não pode gerar retaliação.
-              Pelo contrário: a atuação correta garante tratamento isonômico e
-              respeito às regras do edital. O acompanhamento jurídico traz
-              segurança em todo o processo.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
       },
-      fraseObs: (
-        <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
-      ),
-      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
+      fraseObs: <>A_Definir</>,
+      ctaButtonText: <>A_Definir</>,
     },
-
     features: {
-      miniTag: <>ATUAÇÃO</>,
-      FirstPart: <span>Veja como posso </span>,
-      Destaque: <span className="italic font-light">te ajudar</span>,
-      SecondPart: <span></span>,
-      subtitle: <>Atendimento ágil, técnico e humanizado</>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
+      Destaque: <span className="italic font-light">A_Definir</span>,
+      SecondPart: <span>A_Definir</span>,
+      subtitle: <>A_Definir</>,
       imgFeatures: imgFeatures,
-      alt: <>Imagem Ilustrativa da Features</>,
-      titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>comprometido com seu sonho</>,
+      alt: <>Imagem ilustrativa da Features</>,
+      titleMessageFeature: <>A_Definir</>,
+      subtitleMessageFeature: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>Impugnação de Editais</>,
-          subtitle: (
-            <>
-              Análise criteriosa dos editais para identificar cláusulas abusivas
-              ou ilegais, assegurando o respeito aos princípios da legalidade,
-              isonomia e vinculação ao instrumento convocatório.
-            </>
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
           ),
+          icon: <Briefcase />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: <>Recursos Administrativos</>,
-          subtitle: (
-            <>
-              Elaboração de recursos contra questões mal formuladas, erros de
-              correção, critérios subjetivos e demais irregularidades praticadas
-              pelas bancas examinadoras.
-            </>
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
           ),
+          icon: <User />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: <>Ações Judiciais para Nomeação</>,
-          subtitle: (
-            <>
-              Defesa de candidatos aprovados dentro do número de vagas que não
-              foram nomeados, com atuação estratégica para garantir o direito
-              líquido e certo à nomeação.
-            </>
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
           ),
+          icon: <Scale />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: <>Revisão e Correção de Provas Discursivas</>,
-          subtitle: (
-            <>
-              Impugnação de correções injustas em provas discursivas, pareceres
-              técnicos e provas práticas, buscando avaliações objetivas,
-              motivadas e transparentes.
-            </>
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
+            </div>
           ),
+          icon: <Gavel />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card5: {
-          title: <>Reintegração de Candidatos Eliminados Indevidamente</>,
-          subtitle: (
-            <>
-              Atuação em casos de eliminação ilegal em exames médicos,
-              sindicância de vida pregressa, avaliação psicológica e demais
-              fases do certame.
-            </>
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
           ),
+          icon: <Users />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card6: {
-          title: <>Defesa em Heteroidentificação (Cotas Raciais)</>,
-          subtitle: (
-            <>
-              Atuação especializada na defesa de candidatos indevidamente
-              excluídos em comissões de heteroidentificação, combatendo decisões
-              arbitrárias, ausência de motivação, critérios subjetivos ou
-              violação ao contraditório e à ampla defesa.
-            </>
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
           ),
+          icon: <MessageSquare />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card7: {
-          title: <>Defesa em Teste de Aptidão Física (TAF)</>,
-          subtitle: (
-            <>
-              Defesa técnica em casos de reprovação injusta no TAF, como erros
-              de contagem, falhas na aplicação dos testes, ausência de
-              padronização, desrespeito ao edital ou condições inadequadas de
-              execução.
-            </>
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
           ),
+          icon: <Shield />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card8: {
-          title: <>Defesa contra Exclusão em Cotas e Critérios de Desempate</>,
-          subtitle: (
-            <>
-              Atuação para garantir direitos de candidatos prejudicados por
-              indeferimento indevido de cotas ou aplicação incorreta de
-              critérios de desempate.
-            </>
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
           ),
+          icon: <Briefcase />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
         card9: {
-          title: <>Mandado de Segurança para Garantia de Direitos</>,
-          subtitle: (
-            <>
-              Ajuizamento de mandado de segurança para corrigir atos ilegais das
-              bancas examinadoras e assegurar a participação ou continuidade do
-              candidato no concurso.
-            </>
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
           ),
-        },
-        card10: {
-          title: <>Consultoria Preventiva para Concursandos</>,
-          subtitle: (
-            <>
-              Assessoria jurídica personalizada para candidatos que desejam se
-              preparar com segurança jurídica desde o início do certame.
-            </>
-          ),
+          icon: <FileText />,
+          buttonLabelModal: 'Fale Conosco',
+          buttonLabel: 'Saiba Mais',
         },
       },
-
-      ctaButtonText: <>Falar com o Advogado</>,
+      ctaButtonText: <>A_Definir</>,
     },
     emergency: {
       minitag: <>A_Definir</>,
@@ -344,31 +331,13 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: <>QUEM ESTÁ POR TRÁS DO SEU DIREITO</>,
-      FirstPart: <span> Quem</span>,
-      Destaque: <span className="italic font-light"> defende</span>,
-      SecondPart: <span>seu sonho</span>,
-      subtitle: (
-        <>
-          Advogado especialista que protege seu direito quando decisões injustas
-          ameaçam sua vaga
-        </>
-      ),
-      paragraph: (
-        <div>
-          Sou Advogado desde 2015 e também fui concurseiro. Vivi na pele a
-          pressão, a espera e o medo de ver anos de estudo serem destruídos por
-          decisões arbitrárias de bancas e comissões. Por isso, atuo de forma
-          técnica, rápida e estratégica para impedir injustiças.
-          <br />
-          <br />
-          Minha missão é defender seu direito com firmeza e humanidade. Atuo em
-          casos de eliminação indevida, TAF e heteroidentificação, buscando a
-          reversão administrativa ou judicial. Seu sonho não pode ficar nas mãos
-          de terceiros sem defesa.
-        </div>
-      ),
-      ctaButtonText: <>Falar diretamente com o Advogado</>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir </span>,
+      Destaque: <span className="italic font-light"> A_Definir</span>,
+      SecondPart: <span>A_Definir</span>,
+      subtitle: <>A_Definir</>,
+      paragraph: <div>A_Definir</div>,
+      ctaButtonText: <>A_Definir</>,
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="font-secondFont">
@@ -388,102 +357,66 @@ const content = {
       titleModal: <>A_Definir</>,
       ctaButtonAriaLabel: 'Botão para entrar em contato',
 
-      // aboutSocial: {
-      //   img: {
-      //     img: aboutSocialImg,
-      //     alt: `Foto do Instagram do ${infos.name}`,
-      //     altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
-      //   },
-      //   miniTag: <>A_Definir</>,
-      //   title: <>A_Definir</>,
-      //   subtitle: <>A_Definir</>,
-      //   paragraph: <p></p>,
-      //   labelInstagram: 'Siga-nos no Instagram',
-      //   labelFacebook: 'Siga-nos no Facebook',
-      //   labelLinkedin: 'Siga-nos no LinkedIn',
-      //   labelX: 'Siga-nos no X',
-      //   labelTiktok: 'Siga-nos no Tik Tok',
-      //   labelYoutube: 'Siga-nos no Youtube',
-      // },
+      aboutSocial: {
+        img: {
+          img: aboutSocialImg,
+          alt: `Foto do Instagram do ${infos.name}`,
+          altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
+        },
+        miniTag: <>A_Definir</>,
+        title: <>A_Definir</>,
+        subtitle: <>A_Definir</>,
+        paragraph: <p></p>,
+        labelInstagram: 'Siga-nos no Instagram',
+        labelFacebook: 'Siga-nos no Facebook',
+        labelLinkedin: 'Siga-nos no LinkedIn',
+        labelX: 'Siga-nos no X',
+        labelTiktok: 'Siga-nos no Tik Tok',
+        labelYoutube: 'Siga-nos no Youtube',
+      },
     },
     steps: {
-      miniTag: <>Por que fazer comigo</>,
-      FirstPart: <span> Seu </span>,
-      Destaque: <span className="italic font-light"> direito</span>,
-      SecondPart: <span> não pode esperar</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir </span>,
+      Destaque: <span className="italic font-light"> A_Definir</span>,
+      SecondPart: <span>A_Definir</span>,
 
-      subtitle: (
-        <>
-          Quando anos de estudo estão em risco, você precisa de alguém que saiba
-          exatamente o que fazer
-        </>
-      ),
+      subtitle: <>A_Definir</>,
       img: imgSteps,
       alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Eu já estive no seu lugar</>,
-          cardDescription: (
-            <>
-              Não falo só como Advogado, mas como ex-concurseiro. Eu sei o
-              desespero de ver um sonho ameaçado por uma decisão injusta. Essa
-              vivência me permite agir com empatia, urgência e foco total no que
-              realmente importa: proteger sua vaga.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Atuação rápida nos momentos decisivos</>,
-          cardDescription: (
-            <>
-              Em concursos, o tempo é um inimigo silencioso. Prazos são curtos e
-              erros custam caro. Minha atuação é estratégica desde o primeiro
-              contato, evitando perda de prazo e aumentando as chances de
-              reversão do ato ilegal.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Especialização em casos sensíveis</>,
-          cardDescription: (
-            <>
-              TAF, heteroidentificação e eliminações indevidas exigem técnica e
-              experiência prática. Conheço os padrões das bancas, os argumentos
-              que funcionam e como construir uma defesa sólida sem promessas
-              irreais.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Defesa firme, humana e transparente</>,
-          cardDescription: (
-            <>
-              Aqui você não é apenas um processo. Você entende cada passo, cada
-              possibilidade e cada risco. Meu compromisso é com a verdade, com o
-              seu direito e com uma condução clara até o final.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
       },
-
-      ctaButtonText: <>Fale comigo agora</>,
+      ctaButtonText: <>A_Definir</>,
     },
-    ctaSection: {
-      miniTag: <>FALE CONOSCO</>,
-      title: <h1>Não espere mais pra garantir o que é seu</h1>,
+    ctaSecondary: {
+      miniTag: <>A_Definir</>,
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Cada dia de atraso é um dia a menos de benefício recebido. A gente
-            resolve isso por você — rápido, seguro e sem burocracia.
-          </p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
-      ctaButtonText: <>Fale com a gente agora mesmo</>,
+      ctaButtonText: <>A_Definir</>,
 
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
@@ -498,65 +431,25 @@ const content = {
       blogLink: <>A_Definir</>, //sem "https://"
     },
     faq: {
-      miniTag: <>TIRE SUAS DÚVIDAS</>,
-      title: <>Perguntas Frequentes</>,
-      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       questions: {
         question1: {
-          question: (
-            <>
-              Perdi o prazo do recurso administrativo. Ainda posso procurar um
-              Advogado?
-            </>
-          ),
-          answer: (
-            <>
-              Sim, em muitos casos ainda é possível agir judicialmente. A
-              viabilidade depende do edital, do tipo de eliminação e da prova do
-              erro cometido pela banca. Uma análise rápida do caso é essencial
-              para não perder outras oportunidades de defesa.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question2: {
-          question: (
-            <>
-              Só vale a pena entrar com ação se eu tiver certeza que fui
-              prejudicado?
-            </>
-          ),
-          answer: (
-            <>
-              Não. Muitas ilegalidades só ficam claras após a análise técnica do
-              edital e do ato administrativo. O Advogado identifica falhas que
-              passam despercebidas pelo candidato e orienta sobre riscos e
-              chances reais antes de qualquer medida.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question3: {
-          question: <>Quanto antes eu procurar um Advogado, melhor?</>,
-          answer: (
-            <>
-              Com certeza. Em concursos públicos, o tempo é decisivo. Quanto
-              mais cedo o caso é analisado, maiores são as opções estratégicas,
-              tanto na via administrativa quanto judicial. Esperar pode limitar
-              ou até impedir a atuação.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question4: {
-          question: (
-            <>Meu caso é simples. Preciso mesmo de um Advogado especializado?</>
-          ),
-          answer: (
-            <>
-              Casos aparentemente simples podem esconder detalhes técnicos que
-              fazem toda a diferença. A especialização garante uma atuação
-              direcionada, segura e adequada às exigências específicas de
-              concursos públicos.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
       },
 
