@@ -31,13 +31,15 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
     iconBg,
     buttonBg,
     textDestaque,
-    image
+    image,
+    textOpacityModal
 
   switch (colorMode) {
     case 'light':
       backgroundMode = 'bg-transparent'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
+      textOpacityModal = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryDark'
       cardBg = 'bg-white/10'
       iconBg = 'bg-primaryDark/10 text-primaryDark'
@@ -48,6 +50,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
       backgroundMode = 'bg-transparent'
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
+      textOpacityModal = 'text-corOutrosTextosPreto'
       textDestaque = 'text-primaryLight'
       cardBg = 'bg-gray-800/20'
       iconBg = 'bg-primaryLight/20 text-primaryLight'
@@ -58,6 +61,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
       backgroundMode = 'bg-transparent'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
+      textOpacityModal = 'text-corOutrosPreto'
       textDestaque = 'text-primaryDark'
       cardBg = 'bg-white/10'
       iconBg = 'bg-primaryDark/10 text-primaryDark'
@@ -68,6 +72,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
       backgroundMode = 'bg-transparent'
       text = 'text-corTitulosPreto'
       textOpacity = 'text-corOutrosTextosPreto'
+      textOpacityModal = 'text-corOutrosPreto'
       textDestaque = 'text-primaryDark'
       cardBg = 'bg-white/10'
       iconBg = 'bg-primaryDark/10 text-primaryDark'
@@ -265,7 +270,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
             }}
           >
             <div className="text-paragraph3 px-4 pb-4">
-              <p className={`mt-[15px] mb-[20px] ${textOpacity}`}>
+              <p className={`mt-[15px] mb-[20px] ${textOpacityModal}`}>
                 {content.texts.about.modal}
               </p>
               <ButtonReflexo
@@ -282,7 +287,11 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                 }
                 link={content.texts.links.ctaWhatsapp}
                 label={content.texts.navbar.ctaButtonText}
-                colorMode={colorMode}
+                bgClass={
+                  colorMode === 'defaultDark' || colorMode === 'defaultLight'
+                    ? defaultButtonThemes.light
+                    : defaultButtonThemes.dark
+                }
                 className={`clickevent`}
               />
             </div>

@@ -3,8 +3,7 @@ import { useTranslation } from 'react-i18next'
 import WordPressBlogCard from '../cards/WordPressBlogCard'
 import SectionArea from '../sectionElements/SectionArea'
 import SectionWrapper from '../sectionElements/SectionWrapper'
-import SectionHeader from '../sectionElements/SectionHeader'
-import Paragraphs from '../sectionElements/Paragraphs'
+
 import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 import content from '../../content/content'
 import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
@@ -114,7 +113,7 @@ function BlogPosts({ colorMode }) {
           </ul>
 
           <MotionDivDownToUp>
-            <Paragraphs
+            <p
               className={`flex justify-center mx-auto mt-12 scale-100 hover:scale-90 duration-500 w-fit transition-all cursor-pointer ${titleColor} `}
             >
               <a
@@ -124,7 +123,7 @@ function BlogPosts({ colorMode }) {
               >
                 {content.texts.blog.label}
               </a>
-            </Paragraphs>
+            </p>
           </MotionDivDownToUp>
         </SectionWrapper>
       </SectionArea>

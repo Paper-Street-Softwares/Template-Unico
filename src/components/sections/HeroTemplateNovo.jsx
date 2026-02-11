@@ -134,7 +134,7 @@ function HeroTemplateNovo({
         />
 
         <SectionWrapper>
-          <div className="container relative z-10 grid lg:grid-cols-2 gap-4 phone2:gap-6 lg:gap-20 items-center">
+          <div className="relative z-10 grid lg:grid-cols-2 gap-4 phone2:gap-6 lg:gap-20 items-center w-full">
             {/* Content */}
 
             <div

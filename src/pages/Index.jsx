@@ -10,17 +10,12 @@ import FaqNovoTemplate from '../components/sections/FaqNovoTemplate'
 const FeaturesNovaTemplate = lazy(
   () => import('../components/sections/FeaturesNovaTemplate'),
 )
-// const FeaturesSemImage = lazy(() =>
-//   import('../components/sections/FeaturesSemImage')
-// )
 const CtaNovoTemplate = lazy(
   () => import('../components/sections/CtaNovoTemplate'),
 )
 const AboutNovoTemplate = lazy(
   () => import('../components/sections/AboutNovoTemplate'),
 )
-
-const Team = lazy(() => import('../components/sections/Team'))
 
 const SocialMediaTemplate = lazy(
   () => import('../components/sections/SocialMediaTemplate'),

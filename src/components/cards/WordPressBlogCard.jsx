@@ -1,6 +1,6 @@
 import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 import BlogButton from '../interactives/BlogButton'
-import Button from '../interactives/Button'
+
 
 export default function WordPressBlogCard({
   img,
