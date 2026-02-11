@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import WordPressBlogCard from '../cards/WordPressBlogCard'
 import SectionArea from '../sectionElements/SectionArea'
 import SectionWrapper from '../sectionElements/SectionWrapper'
-import SectionHeader from '../sectionElements/SectionHeader'
+
 import Paragraphs from '../sectionElements/Paragraphs'
 import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 import content from '../../content/content'
