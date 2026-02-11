@@ -53,7 +53,7 @@ function CtaNovoTemplate({ colorMode, container }) {
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: <>Atendimento direto com o advogado, sem intermediários</>,
+      text: <>Atendimento direto com o Advogado, sem intermediários</>,
     },
     {
       icon: <Check className={`${textDestaque}`} />,

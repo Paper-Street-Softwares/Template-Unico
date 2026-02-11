@@ -39,7 +39,7 @@ export const infos = {
   name: 'Dr. Emanuell Felipe',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'efmradvogado.adv.br', // Sem "www"
+  domain: 'efmrAdvogado.adv.br', // Sem "www"
   phone: {
     ddd: '44',
     firstPart: '98462', // Apenas os 5 primeiros números (incluindo o 9)
@@ -127,7 +127,7 @@ const content = {
       subtitle: (
         <p>
           Uma decisão errada pode acabar com anos de estudo. Defenda seu direito
-          com advogado especialista em concursos
+          com Advogado especialista em concursos
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -160,7 +160,7 @@ const content = {
           paragraph: (
             <>
               Na maioria dos casos, sim. Existem prazos curtos para recursos
-              administrativos e ações judiciais. Quanto antes o advogado
+              administrativos e ações judiciais. Quanto antes o Advogado
               analisar o edital e o ato de eliminação, maiores são as chances de
               reverter a decisão. Por isso, o ideal é buscar orientação
               imediatamente.
@@ -168,12 +168,12 @@ const content = {
           ),
         },
         card2: {
-          title: <>Qualquer advogado pode cuidar de caso de concurso?</>,
+          title: <>Qualquer Advogado pode cuidar de caso de concurso?</>,
           paragraph: (
             <>
               Tecnicamente, sim. Mas concursos públicos têm regras próprias,
               prazos rígidos e entendimentos específicos dos tribunais. Um
-              advogado especializado conhece as falhas mais comuns das bancas e
+              Advogado especializado conhece as falhas mais comuns das bancas e
               sabe qual estratégia aplicar em cada situação.
             </>
           ),
@@ -356,7 +356,7 @@ const content = {
       ),
       paragraph: (
         <div>
-          Sou advogado desde 2015 e também fui concurseiro. Vivi na pele a
+          Sou Advogado desde 2015 e também fui concurseiro. Vivi na pele a
           pressão, a espera e o medo de ver anos de estudo serem destruídos por
           decisões arbitrárias de bancas e comissões. Por isso, atuo de forma
           técnica, rápida e estratégica para impedir injustiças.
@@ -368,7 +368,7 @@ const content = {
           de terceiros sem defesa.
         </div>
       ),
-      ctaButtonText: <>Falar diretamente com o advogado</>,
+      ctaButtonText: <>Falar diretamente com o Advogado</>,
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="font-secondFont">
@@ -426,7 +426,7 @@ const content = {
           cardTitle: <>Eu já estive no seu lugar</>,
           cardDescription: (
             <>
-              Não falo só como advogado, mas como ex-concurseiro. Eu sei o
+              Não falo só como Advogado, mas como ex-concurseiro. Eu sei o
               desespero de ver um sonho ameaçado por uma decisão injusta. Essa
               vivência me permite agir com empatia, urgência e foco total no que
               realmente importa: proteger sua vaga.
@@ -506,7 +506,7 @@ const content = {
           question: (
             <>
               Perdi o prazo do recurso administrativo. Ainda posso procurar um
-              advogado?
+              Advogado?
             </>
           ),
           answer: (
@@ -528,14 +528,14 @@ const content = {
           answer: (
             <>
               Não. Muitas ilegalidades só ficam claras após a análise técnica do
-              edital e do ato administrativo. O advogado identifica falhas que
+              edital e do ato administrativo. O Advogado identifica falhas que
               passam despercebidas pelo candidato e orienta sobre riscos e
               chances reais antes de qualquer medida.
             </>
           ),
         },
         question3: {
-          question: <>Quanto antes eu procurar um advogado, melhor?</>,
+          question: <>Quanto antes eu procurar um Advogado, melhor?</>,
           answer: (
             <>
               Com certeza. Em concursos públicos, o tempo é decisivo. Quanto
@@ -547,7 +547,7 @@ const content = {
         },
         question4: {
           question: (
-            <>Meu caso é simples. Preciso mesmo de um advogado especializado?</>
+            <>Meu caso é simples. Preciso mesmo de um Advogado especializado?</>
           ),
           answer: (
             <>

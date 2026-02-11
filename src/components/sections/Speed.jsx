@@ -112,7 +112,7 @@ function Speed({ colorMode }) {
                       </svg>
                     }
                     link={content.texts.links.ctaWhatsapp}
-                    label="Falar agora com um advogado criminalista"
+                    label="Falar agora com um Advogado criminalista"
                     colorMode={colorMode}
                     className=""
                   />

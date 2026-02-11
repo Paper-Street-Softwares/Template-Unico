@@ -86,7 +86,7 @@ export function Diferences({ colorMode }) {
                       transition={{ duration: 0.8, ease: 'easeOut' }}
                       className={`text-lg leading-relaxed border-l-2 ${borderSVG} font-secondFont pl-6 ${textOpacity}`}
                     >
-                      Atendimento direto com advogado criminalista experiente,
+                      Atendimento direto com Advogado criminalista experiente,
                       com atuação estratégica desde a fase policial até o
                       processo judicial.
                     </motion.p>

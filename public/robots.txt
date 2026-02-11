@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.efmradvogado.adv.br/sitemap.xml
+Sitemap: https://www.efmrAdvogado.adv.br/sitemap.xml
