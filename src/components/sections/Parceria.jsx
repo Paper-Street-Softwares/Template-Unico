@@ -4,6 +4,7 @@ import SectionWrapper from '../sectionElements/SectionWrapper'
 import ParceriaCard from '../cards/CardParceria'
 import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
 import content from '../../content/content'
+import MotionDivDownToUp from '../animation/MotionDivDownToUp'
 
 function Parceria({ colorMode }) {
   const imgList = Object.values(content.texts.parceria.images)
@@ -49,16 +50,18 @@ function Parceria({ colorMode }) {
 
         <div className="flex flex-wrap gap-4 justify-center">
           {imgList.map((item, index) => (
-            <ParceriaCard
-              key={index}
-              img={item.img}
-              alt={item.alt}
-              text={item.description}
-              name={item.name}
-              colorMode={colorMode}
-              textClass={text}
-              textOpacityClass={textOpacity}
-            />
+            <MotionDivDownToUp>
+              <ParceriaCard
+                key={index}
+                img={item.img}
+                alt={item.alt}
+                text={item.description}
+                name={item.name}
+                colorMode={colorMode}
+                textClass={text}
+                textOpacityClass={textOpacity}
+              />
+            </MotionDivDownToUp>
           ))}
         </div>
       </SectionWrapper>
