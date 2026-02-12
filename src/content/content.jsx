@@ -376,16 +376,13 @@ const content = {
       ),
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">Entre em contato agora para uma consulta especializada e comece a encontrar a solução que você precisa.
-</p>
+          <p className="mb-6 font-secondFont">
+            Entre em contato agora para uma consulta especializada e comece a
+            encontrar a solução que você precisa.
+          </p>
         </div>
       ),
-      ctaButtonText: (
-        <>
-          Entre em contato agora para uma consulta especializada e comece a
-          encontrar a solução que você precisa.
-        </>
-      ),
+      ctaButtonText: <>Entrar em contato</>,
 
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
