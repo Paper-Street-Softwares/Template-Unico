@@ -6,6 +6,7 @@ import SectionWrapper from '../sectionElements/SectionWrapper'
 import { Link } from 'react-scroll'
 import FooterSocialIcons from '../sectionElements/footer/FooterSocialIcons'
 import content from '../../content/content'
+import { ButtonsLps } from '../../context/UseContextArchive'
 
 function FooterNovoTemplate({
   mapa,
@@ -18,6 +19,7 @@ function FooterNovoTemplate({
   emailSecond,
   fraseFooter,
   obs,
+  lps,
 }) {
   const labels = content.texts.navbar.menuItems
   const ids = content.texts.navbar.menuId
@@ -29,6 +31,7 @@ function FooterNovoTemplate({
   }
 
   const grid = mapa ? 'lg:grid-cols-4' : 'lg:grid-cols-3'
+  const { showGlobalButtonsLps } = ButtonsLps()
 
   // Classes dinâmicas de acordo com colorMode
   let text, textOpacity, iconColor, backgroundMode, hoverLinks
@@ -66,12 +69,15 @@ function FooterNovoTemplate({
   }
 
   return (
-    <SectionArea className={`${backgroundMode} pb-4`} paddingbot={false}>
+    <SectionArea
+      className={`${backgroundMode} pb-4`}
+      paddingtop={!showGlobalButtonsLps}
+    >
       <SectionWrapper>
         <footer className={`${textOpacity}`}>
           <div className="container mx-auto">
             <div
-              className={`grid sm:grid-cols-2 lg:grid-cols-3 ${grid} items-start gap-12 tablet2:gap-2 desktop1:gap-12 mb-8 w-full`}
+              className={`grid sm:grid-cols-2 lg:grid-cols-3 ${grid} items-start gap-12 tablet2:gap-2 desktop1:gap-12 mb-8 w-full ${showGlobalButtonsLps ? 'hidden' : 'flex'}`}
             >
               {/* Logo e infos */}
               <div className="space-y-6">
@@ -240,7 +246,7 @@ function FooterNovoTemplate({
             </div>
 
             <hr
-              className={`pb-6 border-t ${text} ${
+              className={`pb-6 border-t ${lps ? 'hidden' : 'flex'} ${text} ${
                 colorMode === 'light' ? 'opacity-90' : 'opacity-20'
               } w-full`}
             />
