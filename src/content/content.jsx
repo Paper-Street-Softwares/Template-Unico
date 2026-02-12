@@ -304,7 +304,7 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Recuperar minha paz ao dirigir</>,
     },
 
     about: {
