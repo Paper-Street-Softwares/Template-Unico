@@ -89,7 +89,7 @@ export const infos = {
   tiktokProfile: '',
 
   whatsappDefaultMessage:
-    'Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.',
+    'Olá! Vim do Google e preciso de ajuda com Divórcio. Pode me atender?',
   whatsChatDefaultMessage:
     'Gostaria de falar conosco agora mesmo? Clque abaixo 👇',
   slogan: '',
@@ -304,7 +304,7 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
       },
-      ctaButtonText: <>Recuperar minha paz ao dirigir</>,
+      ctaButtonText: <>A_Definir</>,
     },
 
     about: {
@@ -340,7 +340,7 @@ const content = {
           quem confia em nosso trabalho.
         </div>
       ),
-      ctaButtonText: <>Falar diretamente com a Dra. Marina</>,
+      ctaButtonText: <>Avaliar meu caso agora</>,
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="font-secondFont">
@@ -445,7 +445,7 @@ const content = {
           ),
         },
       },
-      ctaButtonText: <>Falar diretamente com a Dra. Marina</>,
+      ctaButtonText: <>Falar diretamente conosco</>,
     },
     faq: {
       miniTag: <>TIRE SUAS DÚVIDAS</>,
