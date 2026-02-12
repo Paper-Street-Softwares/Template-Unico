@@ -49,23 +49,35 @@ function CtaNovoTemplate({ colorMode, container }) {
   const containerList = [
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: <>Análise gratuita do seu caso</>,
+      text: (
+        <>
+          {' '}
+          Análise imediata do seu caso e da possibilidade de suspender ou
+          reverter a apreensão
+        </>
+      ),
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: <>Atendimento direto com o Advogado, sem intermediários</>,
+      text: (
+        <>
+          {' '}
+          Avaliação do contrato para identificar juros abusivos e falhas legais
+        </>
+      ),
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: <>Resposta rápida e acompanhamento pelo WhatsApp</>,
+      text: <>Orientação clara sobre prazos, riscos e próximos passos</>,
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: <>Processo iniciado no mesmo dia da análise</>,
-    },
-    {
-      icon: <Check className={`${textDestaque}`} />,
-      text: <>Você mais perto de receber o que é seu, sem sair de casa</>,
+      text: (
+        <>
+          Acompanhamento transparente e atuação responsável em todas as fases do
+          processo
+        </>
+      ),
     },
   ]
 
