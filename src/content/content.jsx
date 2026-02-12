@@ -129,12 +129,7 @@ const content = {
         </span>
       ),
       SecondPart: <span></span>,
-      subtitle: (
-        <p>
-          Saiba agora como suspender o processo, ganhar tempo e defender seu bem
-          legalmente, antes que ele seja levado.
-        </p>
-      ),
+      subtitle: <p>Cada minuto importa, não deixe para amanhã!</p>,
       heroDefaultImage: heroDefaultImg,
       heroDefaulMobiletImg: heroDefaultMobileImg,
       alt: 'Imagem ilustrativa da Seção Início',
@@ -204,7 +199,7 @@ const content = {
       fraseObs: (
         <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
       ),
-      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
+      ctaButtonText: <>Seja atendido agora pelo WhatsApp</>,
     },
 
     features: {
@@ -239,7 +234,7 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Shield />,
+          icon: <Lock />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
@@ -279,7 +274,7 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <FileText />,
+          icon: <HandCoins />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
@@ -299,7 +294,7 @@ const content = {
               <br />
             </div>
           ),
-          icon: <Gavel />,
+          icon: <FileText />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },

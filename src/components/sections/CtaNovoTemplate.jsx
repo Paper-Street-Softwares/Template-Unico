@@ -48,7 +48,7 @@ function CtaNovoTemplate({ colorMode, container }) {
 
   const containerList = [
     {
-      icon: <Check className={`${textDestaque}`} />,
+      icon: <Check className={` text-white`} />,
       text: (
         <>
           {' '}
@@ -58,7 +58,7 @@ function CtaNovoTemplate({ colorMode, container }) {
       ),
     },
     {
-      icon: <Check className={`${textDestaque}`} />,
+      icon: <Check className={` text-white`} />,
       text: (
         <>
           {' '}
@@ -67,11 +67,11 @@ function CtaNovoTemplate({ colorMode, container }) {
       ),
     },
     {
-      icon: <Check className={`${textDestaque}`} />,
+      icon: <Check className={` text-white`} />,
       text: <>Orientação clara sobre prazos, riscos e próximos passos</>,
     },
     {
-      icon: <Check className={`${textDestaque}`} />,
+      icon: <Check className={` text-white`} />,
       text: (
         <>
           Acompanhamento transparente e atuação responsável em todas as fases do
@@ -105,14 +105,16 @@ function CtaNovoTemplate({ colorMode, container }) {
 
             {container && (
               <div
-                className={`rounded-lg p-4 mb-4 flex flex-col items-center ${textOpacity}`}
+                className={`rounded-lg p-4 mb-4 flex flex-col items-center gap-4 ${textOpacity}`}
               >
                 {containerList.map((item, index) => (
                   <div
                     key={index}
-                    className="font-secondFont flex gap-2 items-start w-full justify-start tablet1:justify-center text-start desktop1:text-start"
+                    className="font-secondFont flex gap-2 items-start w-full justify-start tablet1:justify-start text-start desktop1:text-start"
                   >
-                    <span className={`${textDestaque}`}>{item.icon}</span>
+                    <span className={` bg-primaryDark rounded-full p-0.5`}>
+                      {item.icon}
+                    </span>
                     <p className={`${textOpacity}`}>{item.text}</p>
                   </div>
                 ))}
