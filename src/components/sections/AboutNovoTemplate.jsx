@@ -77,7 +77,8 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
       cardBg = 'bg-white/10'
       iconBg = 'bg-primaryDark/10 text-primaryDark'
       buttonBg = 'bg-primaryDark'
-      image = ' border-[8px] border-[color-mix(in_srgb,var(--primaryDark),black_60%)]'
+      image =
+        ' border-[8px] border-[color-mix(in_srgb,var(--primaryDark),black_60%)]'
   }
 
   const { showGlobalButtonsLps } = ButtonsLps()
@@ -253,11 +254,17 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
 
           {/* Modal */}
           <Dialog
-            className="font-secondFont bg-white p-4 rounded-md"
-            closeIcon={<X size={20} />}
+            className={`font-secondFont p-4 rounded-md ${colorMode === 'dark' ? 'bg-darkOpacity' : 'bg-white'}`}
+            closeIcon={
+              <X
+                size={20}
+                className={colorMode === 'dark' ? 'text-white' : 'text-black'}
+              />
+            }
             header={
-              <span className="font-secondFont px-4">
-                {content.texts.about.titleModal}
+              <span className={`font-secondFont px-4 ${text}`}>
+                {content.texts.about.FirstPart} {content.texts.about.Destaque}{' '}
+                {content.texts.about.SecondPart}
               </span>
             }
             visible={visible}
