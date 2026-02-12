@@ -24,7 +24,7 @@ function SocialMediaTemplate({ colorMode }) {
       textOpacity = 'text-corOutrosTextosPreto'
       cardBg = 'bg-white'
       borderCard = 'border-border'
-      arrowColor = 'text-mutedForeground group-hover:text-primaryDark'
+      arrowColor = 'text-white'
       imageBorder = 'border-white'
       miniTag = 'text-primaryDark'
       break
@@ -35,7 +35,7 @@ function SocialMediaTemplate({ colorMode }) {
       textOpacity = 'text-corOutrosTextosBranca'
       cardBg = 'bg-gray-900'
       borderCard = 'border-gray-700'
-      arrowColor = 'text-mutedForeground group-hover:text-primaryLight'
+      arrowColor = 'text-white'
       imageBorder = 'border-borderImage'
       miniTag = 'text-primaryLight'
       break
@@ -46,18 +46,18 @@ function SocialMediaTemplate({ colorMode }) {
       textOpacity = 'text-corOutrosTextosPreto'
       cardBg = 'bg-white'
       borderCard = 'border-border'
-      arrowColor = 'text-mutedForeground group-hover:text-primaryDark'
+      arrowColor = 'text-white'
       imageBorder = 'border-white'
       miniTag = 'text-primaryDark'
       break
 
     case 'defaultLight':
       backgroundMode = 'bg-transparent'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      cardBg = 'bg-white'
+      text = 'text-corTitulosBranca'
+      textOpacity = 'text-corOutrosTextosBranca'
+      cardBg = 'bg-[color-mix(in_srgb,var(--primaryDark),black_60%)]'
       borderCard = 'border-border'
-      arrowColor = 'text-mutedForeground group-hover:text-primaryDark'
+      arrowColor = 'text-white'
       imageBorder =
         ' border-[8px] border-[color-mix(in_srgb,var(--primaryDark),black_60%)]'
       miniTag = 'text-primaryDark'
@@ -113,7 +113,7 @@ function SocialMediaTemplate({ colorMode }) {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Link para Instagram"
-                      className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:border-primary/30 hover:shadow-lg transition-all ${cardBg}`}
+                      className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:shadow-lg transition-all ${cardBg}`}
                     >
                       <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-blue-600 to-blue-500 text-white flex items-center justify-center shrink-0">
                         <Facebook className="w-7 h-7" />
@@ -133,7 +133,7 @@ function SocialMediaTemplate({ colorMode }) {
                       </div>
 
                       <ArrowRight
-                        className={`ml-auto w-5 h-5 transition-colors ${arrowColor}`}
+                        className={`ml-auto w-5 h-5 ${arrowColor}`}
                       />
                     </a>
                   )} */}
@@ -144,7 +144,7 @@ function SocialMediaTemplate({ colorMode }) {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Link para Instagram"
-                      className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:border-primary/30 hover:shadow-lg transition-all ${cardBg}`}
+                      className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:shadow-lg transition-all ${cardBg} hover:scale-105 hover:duration-500`}
                     >
                       <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-purple-600 to-orange-500 text-white flex items-center justify-center shrink-0">
                         <Instagram className="w-7 h-7" />
@@ -163,9 +163,7 @@ function SocialMediaTemplate({ colorMode }) {
                         </p>
                       </div>
 
-                      <ArrowRight
-                        className={`ml-auto w-5 h-5 transition-colors ${arrowColor}`}
-                      />
+                      <ArrowRight className={`ml-auto w-5 h-5 ${arrowColor}`} />
                     </a>
                   )}
 
@@ -175,7 +173,7 @@ function SocialMediaTemplate({ colorMode }) {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Link para Instagram"
-                      className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:border-primary/30 hover:shadow-lg transition-all ${cardBg}`}
+                      className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:shadow-lg transition-all ${cardBg} hover:scale-105 hover:duration-500`}
                     >
                       <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-purple-600 to-orange-500 text-white flex items-center justify-center shrink-0">
                         <Instagram className="w-7 h-7" />
@@ -194,9 +192,7 @@ function SocialMediaTemplate({ colorMode }) {
                         </p>
                       </div>
 
-                      <ArrowRight
-                        className={`ml-auto w-5 h-5 transition-colors ${arrowColor}`}
-                      />
+                      <ArrowRight className={`ml-auto w-5 h-5 ${arrowColor}`} />
                     </a>
                   )}
 
@@ -206,7 +202,7 @@ function SocialMediaTemplate({ colorMode }) {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Link para TikTok"
-                    className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:border-primary/30 hover:shadow-lg transition-all ${cardBg}`}
+                    className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:shadow-lg transition-all ${cardBg}`}
                   >
                     <div className="w-14 h-14 rounded-full bg-blue-700 text-white flex items-center justify-center shrink-0">
                       <img src={iconTikTok} className="invert w-8" alt="" />
@@ -224,7 +220,7 @@ function SocialMediaTemplate({ colorMode }) {
                     </div>
 
                     <ArrowRight
-                      className={`ml-auto w-5 h-5 transition-colors ${arrowColor}`}
+                      className={`ml-auto w-5 h-5 ${arrowColor}`}
                     />
                   </a>
                 )} */}
