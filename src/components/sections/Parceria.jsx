@@ -50,9 +50,10 @@ function Parceria({ colorMode }) {
 
         <div className="flex flex-wrap gap-4 justify-center">
           {imgList.map((item, index) => (
-            <MotionDivDownToUp>
+            <MotionDivDownToUp className={`w-fit`}>
               <ParceriaCard
                 key={index}
+                role={item.role}
                 img={item.img}
                 alt={item.alt}
                 text={item.description}

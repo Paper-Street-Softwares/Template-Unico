@@ -511,6 +511,7 @@ const content = {
       ),
       images: [
         {
+          role: 'Business',
           img: logo1,
           alt: 'Logomarca parceira',
           description:
@@ -518,6 +519,7 @@ const content = {
           name: '— Sócio-diretor de empresa comercial',
         },
         {
+          role: 'Advocate Logo',
           img: logo2,
           alt: 'Logomarca parceira',
           description:
@@ -525,6 +527,7 @@ const content = {
           name: '— Advogada parceira',
         },
         {
+          role: 'Mechanical Engineer',
           img: logo3,
           alt: 'Logomarca parceira',
           description:

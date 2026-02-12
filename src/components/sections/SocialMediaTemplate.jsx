@@ -58,7 +58,8 @@ function SocialMediaTemplate({ colorMode }) {
       cardBg = 'bg-white'
       borderCard = 'border-border'
       arrowColor = 'text-mutedForeground group-hover:text-primaryDark'
-      imageBorder = 'border-white'
+      imageBorder =
+        ' border-[8px] border-[color-mix(in_srgb,var(--primaryDark),black_60%)]'
       miniTag = 'text-primaryDark'
   }
 

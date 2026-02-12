@@ -77,7 +77,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
       cardBg = 'bg-white/10'
       iconBg = 'bg-primaryDark/10 text-primaryDark'
       buttonBg = 'bg-primaryDark'
-      image = ' border-[8px] border-white'
+      image = ' border-[8px] border-[color-mix(in_srgb,var(--primaryDark),black_60%)]'
   }
 
   const { showGlobalButtonsLps } = ButtonsLps()

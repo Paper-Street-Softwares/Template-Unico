@@ -80,10 +80,11 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
       text = 'text-corTitulosBranca'
       textOpacity = 'text-corOutrosTextosBranca'
       textDestaque = 'text-white'
-      cardBg = 'bg-primaryLight'
+      cardBg = 'bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
       iconBg = 'bg-white text-primaryLight'
-      image = ' border-[8px] border-primaryLight'
-      bgObservation = 'bg-primaryLight'
+      image =
+        ' border-[8px] border-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
+      bgObservation = 'bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
       textObservation = 'text-white'
   }
   const { showGlobalButtonsLps } = ButtonsLps()

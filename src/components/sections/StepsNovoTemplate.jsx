@@ -67,7 +67,8 @@ function StepsNovoTemplate({ colorMode }) {
       stepNumberText = 'text-primaryLight'
       lineColor = 'bg-white/20'
       textDestaque = 'text-primaryLight'
-      image = ' border-[8px] border-white'
+      image =
+        ' border-[8px] border-[color-mix(in_srgb,var(--primaryDark),black_60%)]'
   }
 
   return (

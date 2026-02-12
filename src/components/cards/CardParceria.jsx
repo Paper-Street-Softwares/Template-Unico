@@ -1,28 +1,62 @@
 import React from 'react'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
 
-function ParceriaCard({ img, alt, text, name, role }) {
+function ParceriaCard({ img, alt, text, name, role, colorMode }) {
+  let titleColor, descrptionColor, bgCard
+  switch (colorMode) {
+    case 'light':
+      titleColor = 'text-corTitulosBranca'
+      descrptionColor = 'text-corOutrosTextosBranca'
+      bgCard = 'bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
+
+      break
+    case 'dark':
+      titleColor = 'text-corTitulosPreto'
+      descrptionColor = 'text-corOutrosTextosPreto'
+      bgCard = 'bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
+      break
+    case 'defaultDark':
+      titleColor = 'text-corTitulosBranca'
+      descrptionColor = 'text-corOutrosTextosBranca'
+      bgCard = 'bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
+      break
+    case 'defaultLight':
+      titleColor = 'text-corTitulosBranca'
+      descrptionColor = 'text-corOutrosTextosBranca'
+      bgCard = 'bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
+  }
   return (
-    <div>
-      <div className="flex font-secondFont flex-col p-6 md:p-4 max-w-[300px] md:w-fit bg-primaryLight rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300">
-        {/* Imagem */}
-        <div className="w-full h-fit overflow-hidden mb-6">
-          <img src={img} alt={alt} className="w-full h-full object-cover" />
-        </div>
+    <div
+      className={`font-secondFont flex flex-col justify-between 
+      p-[52px] 
+      w-full max-w-[426px] h-[400px]
+     rounded-sm shadow-sm ${bgCard}`}
+    >
+      {/* Logo */}
+      <div className="w-16 phone3:w-16 phone3:h-16 mb-6">
+        <img src={img} alt={alt} className="w-full h-full object-contain" />
+      </div>
 
-        {/* Conteúdo */}
-        <div className="flex flex-col justify-between ">
-          {/* Texto */}
-          <p className="text-corOutrosTextosBranca text-base leading-relaxed italic">
-            “{text}”
-          </p>
+      {/* Role */}
+      <div className="mb-4">
+        <p
+          className={`font-semibold text-paragraph4 phone3:text-title1 leading-6 ${titleColor}`}
+        >
+          {role}
+        </p>
+      </div>
 
-          {/* Rodapé */}
-          <div className="mt-6 border-t pt-4">
-            <p className="font-semibold text-white">{name}</p>
-          </div>
-        </div>
+      {/* Description */}
+      <div className="flex-1">
+        <p
+          className={`text-base leading-relaxed text-paragraph2 phone3:text-paragraph4 ${descrptionColor}`}
+        >
+          {text}
+        </p>
+      </div>
+
+      {/* Name */}
+      <div className="mt-6">
+        <p className={`font-semibold text-paragraph3 ${titleColor}`}>{name}.</p>
       </div>
     </div>
   )
