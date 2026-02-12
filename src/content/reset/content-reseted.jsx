@@ -11,6 +11,9 @@ import aboutImg from '../assets/imgs/about/aboutImg.webp'
 import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
 import imgSteps from '../assets/imgs/steps/imgSteps.webp'
+// import logo1 from '../assets/imgs/parceria/Logo1.webp'
+// import logo2 from '../assets/imgs/parceria/Logo2.webp'
+// import logo3 from '../assets/imgs/parceria/Logo3.webp'
 
 import {
   Baby,
@@ -36,7 +39,7 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: <>A_Definir</>,
+  name: 'A_Definir',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
   domain: 'A_Definir', // Sem "www"
@@ -46,14 +49,14 @@ export const infos = {
     secondPart: '0000', // Apenas os 4 últimos números
   },
   phoneSecundario: {
-    ddd: <>A_Definir</>,
-    firstPart: <>A_Definir</>, // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: <>A_Definir</>, // Apenas os 4 últimos números
+    ddd: '00',
+    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0000', // Apenas os 4 últimos números
   },
   phoneTerciario: {
-    ddd: <>A_Definir</>,
-    firstPart: <>A_Definir</>, // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: <>A_Definir</>, // Apenas os 4 últimos números
+    ddd: '00',
+    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0000', // Apenas os 4 últimos números
   },
   endereco: (
     <div>
@@ -354,7 +357,6 @@ const content = {
         </p>
       ),
       paragraphModalCta: 'Entre em contato',
-      titleModal: <>A_Definir</>,
       ctaButtonAriaLabel: 'Botão para entrar em contato',
 
       aboutSocial: {
@@ -374,6 +376,19 @@ const content = {
         labelTiktok: 'Siga-nos no Tik Tok',
         labelYoutube: 'Siga-nos no Youtube',
       },
+    },
+    ctaSection: {
+      miniTag: <>A_Definir</>,
+      title: <h1>A_Definir</h1>,
+      subtitle: (
+        <div>
+          <p className="mb-6 font-secondFont">A_Definir</p>
+        </div>
+      ),
+      ctaButtonText: <>A_Definir</>,
+
+      ctaButtonAriaLabel:
+        'Botão para chamada de ação para contato pelo whatsapp',
     },
     steps: {
       miniTag: <>A_Definir</>,
@@ -408,19 +423,7 @@ const content = {
       },
       ctaButtonText: <>A_Definir</>,
     },
-    ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
-      subtitle: (
-        <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
-        </div>
-      ),
-      ctaButtonText: <>A_Definir</>,
 
-      ctaButtonAriaLabel:
-        'Botão para chamada de ação para contato pelo whatsapp',
-    },
     blog: {
       miniTag: <>A_Definir</>,
       title: <>A_Definir</>,
@@ -429,6 +432,34 @@ const content = {
       labelCards: 'Ver mais',
       label: 'Clique aqui para ver todas as matérias',
       blogLink: <>A_Definir</>, //sem "https://"
+    },
+    parceria: {
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
+      images: [
+        {
+          role: 'A_Definir',
+          // img: logo1,
+          alt: 'Logomarca parceira',
+          description: 'A_Definir',
+          name: 'A_Definir',
+        },
+        {
+          role: 'A_Definir',
+          // img: logo2,
+          alt: 'Logomarca parceira',
+          description: 'A_Definir',
+          name: 'A_Definir',
+        },
+        {
+          role: 'A_Definir',
+          // img: logo3,
+          alt: 'Logomarca parceira',
+          description: 'A_Definir',
+          name: 'A_Definir',
+        },
+      ],
     },
     faq: {
       miniTag: <>A_Definir</>,

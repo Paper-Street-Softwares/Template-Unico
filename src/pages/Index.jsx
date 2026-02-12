@@ -97,25 +97,25 @@ export default function Index() {
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={5} colorMode={colorMode}>
+          {/* <AlternatingSection index={5} colorMode={colorMode}>
             <Suspense>
               <Parceria colorMode={colorMode} />
             </Suspense>
-          </AlternatingSection>
+          </AlternatingSection> */}
 
-          <AlternatingSection index={6} colorMode={colorMode}>
+          <AlternatingSection index={5} colorMode={colorMode}>
             <Suspense>
               <FaqNovoTemplate colorMode={colorMode} />
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={7} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={6} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <FooterNovoTemplate
                 colorMode={colorMode}
                 mapa={false}
                 phone={true}
-                phoneSecond={false}
+                phoneSecond={true}
                 expediente={true}
                 adress={true}
                 email={true}

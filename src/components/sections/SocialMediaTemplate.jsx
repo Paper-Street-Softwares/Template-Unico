@@ -107,13 +107,13 @@ function SocialMediaTemplate({ colorMode }) {
 
                 {/* Cards sociais */}
                 <div className="space-y-8">
-                  {/* {content.texts.links.facebook?.trim() && (
+                  {content.texts.links.facebook?.trim() && (
                     <a
                       href={content.texts.links.facebook}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Link para Instagram"
-                      className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:shadow-lg transition-all ${cardBg}`}
+                      className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:shadow-lg transition-all ${cardBg} hover:scale-105 hover:duration-500`}
                     >
                       <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-blue-600 to-blue-500 text-white flex items-center justify-center shrink-0">
                         <Facebook className="w-7 h-7" />
@@ -132,11 +132,9 @@ function SocialMediaTemplate({ colorMode }) {
                         </p>
                       </div>
 
-                      <ArrowRight
-                        className={`ml-auto w-5 h-5 ${arrowColor}`}
-                      />
+                      <ArrowRight className={`ml-auto w-5 h-5 ${arrowColor}`} />
                     </a>
-                  )} */}
+                  )}
 
                   {content.texts.links.instagram?.trim() && (
                     <a
@@ -167,7 +165,7 @@ function SocialMediaTemplate({ colorMode }) {
                     </a>
                   )}
 
-                  {content.texts.links.instagramSecundario?.trim() && (
+                  {/* {content.texts.links.instagramSecundario?.trim() && (
                     <a
                       href={content.texts.links.instagramSecundario}
                       target="_blank"
@@ -194,7 +192,7 @@ function SocialMediaTemplate({ colorMode }) {
 
                       <ArrowRight className={`ml-auto w-5 h-5 ${arrowColor}`} />
                     </a>
-                  )}
+                  )} */}
 
                   {/* {content.texts.links.tiktok?.trim() && (
                   <a
@@ -202,7 +200,7 @@ function SocialMediaTemplate({ colorMode }) {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Link para TikTok"
-                    className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:shadow-lg transition-all ${cardBg}`}
+                      className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:shadow-lg transition-all ${cardBg} hover:scale-105 hover:duration-500`}
                   >
                     <div className="w-14 h-14 rounded-full bg-blue-700 text-white flex items-center justify-center shrink-0">
                       <img src={iconTikTok} className="invert w-8" alt="" />

@@ -9,16 +9,18 @@ import aboutImg from '../assets/imgs/about/aboutImg.webp'
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
 import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
-import logo1 from '../assets/imgs/parceria/Logo1.webp'
-import logo2 from '../assets/imgs/parceria/Logo2.webp'
-import logo3 from '../assets/imgs/parceria/Logo3.webp'
 
 import imgSteps from '../assets/imgs/steps/imgSteps.webp'
+// import logo1 from '../assets/imgs/parceria/Logo1.webp'
+// import logo2 from '../assets/imgs/parceria/Logo2.webp'
+// import logo3 from '../assets/imgs/parceria/Logo3.webp'
 
 import {
   Baby,
   Briefcase,
   BriefcaseMedical,
+  Building,
+  Landmark,
   Gavel,
   Home,
   Key,
@@ -39,29 +41,32 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Dr. Vladimir Vitti',
+  name: 'Dra. Patrícia Ribeiro Machado',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'vvjrconsultoria.com', // Sem "www"
+  domain: 'patriciamachadoadvocacia.com.br', // Sem "www"
   phone: {
-    ddd: '11',
-    firstPart: '99681', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '0390', // Apenas os 4 últimos números
+    ddd: '48',
+    firstPart: '99191', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0060', // Apenas os 4 últimos números
   },
   phoneSecundario: {
-    ddd: <>A_Definir</>,
-    firstPart: <>A_Definir</>, // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: <>A_Definir</>, // Apenas os 4 últimos números
+    ddd: '48',
+    firstPart: '3413', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '4357', // Apenas os 4 últimos números
   },
   phoneTerciario: {
-    ddd: <>A_Definir</>,
-    firstPart: <>A_Definir</>, // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: <>A_Definir</>, // Apenas os 4 últimos números
+    ddd: '00',
+    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0000', // Apenas os 4 últimos números
   },
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>Santo André - SP,</p>
+      <p>Rua Gonçalves Ledo, nº 130,</p>
+      <p>Sala 310, Centro,</p>
+      <p>Criciúma - SC,</p>
+      <p>CEP 88802-120</p>
     </div>
   ),
   enderecoSecundario: (
@@ -75,13 +80,13 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>8h às 18h</p>
+      <p>9h às 12h</p>
+      <p>13h às 17h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: 'vittijradv', // Sem o @
-  instagramProfileSecundario: 'vvjrcompliance', // Sem o @
-  facebookProfile: '',
+  instagramProfile: 'ribeiromachadoadvocacia', // Sem o @
+  facebookProfile: 'ribeiromachadoadvocacia',
   linkeDinProfile: '',
   x: '',
   tiktokProfile: '',
@@ -119,18 +124,16 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: <>ADVOCACIA DE COMPLIANCE</>,
-      FirstPart: <span>O melhor da advocacia com a</span>,
+      miniTag: <>ESCRITÓRIO DE ADVOCACIA</>,
+      FirstPart: <span>Direitos</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">
-          inteligência
-        </span>
+        <span className="destaque relative italic font-light">defendidos</span>
       ),
-      SecondPart: <span>do compliance</span>,
+      SecondPart: <span>com firmeza</span>,
       subtitle: (
         <p>
-          Defesa jurídica e prevenção de riscos integradas para proteger sua
-          empresa antes que o problema apareça.
+          Atuação jurídica estratégica em Previdência, Saúde e Imóveis para
+          proteger o que é seu
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -139,14 +142,12 @@ const content = {
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: <>Proteja sua empresa agora</>,
+      ctaButtonText: <>Falar com a Advogada agora</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: (
-          <>Atendimento prioritariamente online via Google Meet e WhatsApp.</>
-        ),
+        text: <>Atendimento presencial e online para todo Brasil.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: 'Contato',
@@ -176,29 +177,19 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>Como podemos ajudar</>,
-      FirstPart: <span>Atuação </span>,
-      Destaque: <span className="italic font-light">jurídica</span>,
-      SecondPart: <span>e compliance integradas</span>,
-      subtitle: (
-        <>
-          Soluções completas para prevenir riscos, resolver conflitos e garantir
-          segurança jurídica à sua empresa.
-        </>
-      ),
+      miniTag: <>Áreas de atuação</>,
+      FirstPart: <span>Especialidades jurídicas para</span>,
+      Destaque: <span className="italic font-light">proteger</span>,
+      SecondPart: <span>seus direitos</span>,
+      subtitle: <>Soluções jurídicas seguras para decisões importantes</>,
       imgFeatures: imgFeatures,
       alt: <>Imagem ilustrativa da Features</>,
       titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>advocacia e compliance</>,
+      subtitleMessageFeature: <>firmeza jurídica</>,
       cards: {
         card1: {
-          title: <>Compliance e Direito Sancionatório</>,
-          subtitle: (
-            <>
-              Atuação jurídica especializada para proteger empresas e gestores
-              em processos administrativos e criminais.
-            </>
-          ),
+          title: <>Direito Previdenciário</>,
+          subtitle: <>Aposente-se com segurança e receba o que é seu por lei</>,
           description: (
             <div>
               A_Definir
@@ -207,19 +198,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Briefcase />,
+          icon: <Landmark />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
-
         card2: {
-          title: <>Consultoria de Integridade e Prevenção</>,
-          subtitle: (
-            <>
-              Estruturação de programas de compliance para reduzir riscos,
-              evitar sanções e fortalecer a governança da empresa.
-            </>
-          ),
+          title: <>Direito da saúde</>,
+          subtitle: <>Garanta tratamentos e medicamentos quando mais precisa</>,
           description: (
             <div>
               A_Definir
@@ -228,20 +213,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <FileText />,
-
+          icon: <BriefcaseMedical />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
-
         card3: {
-          title: <>Prevenção de Riscos Jurídicos</>,
-          subtitle: (
-            <>
-              Análise estratégica das operações para identificar falhas antes
-              que elas se transformem em problemas legais.
-            </>
-          ),
+          title: <>Direito Civil</>,
+          subtitle: <>Soluções jurídicas para proteger seus direitos diários</>,
           description: (
             <div>
               A_Definir
@@ -250,19 +228,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Scale />,
+          icon: <Users />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
-
         card4: {
-          title: <>Gestão Jurídica de Crises</>,
-          subtitle: (
-            <>
-              Assessoria imediata em situações críticas para minimizar impactos
-              legais, financeiros e reputacionais.
-            </>
-          ),
+          title: <>Usucapião</>,
+          subtitle: <>Regularize seu imóvel e conquiste a posse legal plena</>,
           description: (
             <div>
               A_Definir
@@ -275,15 +247,9 @@ const content = {
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
-
         card5: {
-          title: <>Defesa em Processos Sancionatórios</>,
-          subtitle: (
-            <>
-              Atuação firme e estratégica em processos que envolvem multas,
-              interdições, penalidades e responsabilizações.
-            </>
-          ),
+          title: <>Adjudicação compulsória</>,
+          subtitle: <>Escritura definitiva mesmo sem cooperação do vendedor</>,
           description: (
             <div>
               A_Definir
@@ -292,18 +258,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Shield />,
+          icon: <Scale />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
-
         card6: {
-          title: <>Atuação em Casos de Alta Complexidade</>,
+          title: <>Direito Imobiliário</>,
           subtitle: (
-            <>
-              Defesa jurídica completa em cenários que envolvem risco de prisão,
-              sanções severas e exposição institucional.
-            </>
+            <>Segurança jurídica em contratos e negócios imobiliários</>
           ),
           description: (
             <div>
@@ -313,7 +275,7 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <MessageSquare />,
+          icon: <Building />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
@@ -338,53 +300,47 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: <>QUEM É O DR. VLADIMIR VITTI</>,
-      FirstPart: <span> Minha</span>,
+      miniTag: <>QUEM É A DRA. PATRÍCIA RIBEIRO MACHADO</>,
+      FirstPart: <span> Minha </span>,
       Destaque: <span className="italic font-light"> trajetória</span>,
       SecondPart: <span></span>,
       subtitle: (
         <>
-          Da visão do Estado à proteção completa de pessoas e empresas em risco
-          jurídico.
+          Uma história construída na defesa da dignidade, da vida e do
+          patrimônio
         </>
       ),
       paragraph: (
         <div>
-          Desde a graduação, minha formação foi guiada por situações reais de
-          risco. Atuei em ambientes onde punições, acusações e decisões do
-          Estado fazem parte do dia a dia, passando por instituições como a
-          Polícia Militar e o Ministério Público de São Paulo. Essa vivência me
-          deu algo raro: a compreensão prática de como pensa quem acusa.
+          Minha trajetória profissional foi construída a partir da atuação nas
+          áreas Previdenciária, da Saúde e da Usucapião, ramos do Direito que
+          impactam diretamente a segurança, a subsistência e o futuro das
+          pessoas.
         </div>
       ),
       ctaButtonText: <>A_Definir</>,
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="font-secondFont">
-          Desde a graduação, minha formação foi guiada por situações reais de
-          risco. Atuei em ambientes onde punições, acusações e decisões do
-          Estado fazem parte do dia a dia, passando por instituições como a
-          Polícia Militar e o Ministério Público de São Paulo. Essa vivência me
-          deu algo raro: a compreensão prática de como pensa quem acusa.
+          Minha trajetória profissional foi construída a partir da atuação nas
+          áreas Previdenciária, da Saúde e da Usucapião, ramos do Direito que
+          impactam diretamente a segurança, a subsistência e o futuro das
+          pessoas.
           <br />
           <br />
-          A partir de 2014, levei essa visão para a advocacia. Passei a defender
-          pessoas injustamente acusadas, vítimas sem amparo estatal e empresas
-          impactadas por autuações desproporcionais. Atendi desde cidadãos em
-          extrema vulnerabilidade até empresários de pequenas e médias empresas
-          enfrentando riscos reais à sua liberdade e ao seu negócio.
+          Atuo diariamente para garantir benefícios previdenciários essenciais e
+          o direito à saúde, buscando assegurar tratamentos, medicamentos e,
+          muitas vezes, a própria preservação da vida, sempre com
+          responsabilidade e compromisso.
           <br />
           <br />
-          Em 2018, o Compliance ampliou minha atuação. Deixei de apenas reagir a
-          crises para ajudar clientes a evitá-las. Com certificações em
-          conformidade e LGPD, passei a oferecer um trabalho completo: prevenção
-          de riscos, assessoria estratégica e defesa firme em processos
-          judiciais e administrativos, atuando também em parceria com
-          escritórios e consultorias especializadas.
+          No Direito Imobiliário e na Usucapião, meu trabalho é proteger o
+          patrimônio conquistado com esforço, evitando perdas causadas pela
+          falta de informação ou regularização, com uma atuação justa, eficiente
+          e dentro da lei.
         </p>
       ),
       paragraphModalCta: 'Entre em contato',
-      titleModal: <>Minha trajetória</>,
       ctaButtonAriaLabel: 'Botão para entrar em contato',
 
       aboutSocial: {
@@ -411,86 +367,82 @@ const content = {
         labelYoutube: 'Siga-nos no Youtube',
       },
     },
-    steps: {
-      miniTag: <>PASSO A PASSO</>,
-      FirstPart: <span> Como </span>,
-      Destaque: <span className="italic font-light"> funciona</span>,
-      SecondPart: <span>nosso atendimento estratégico</span>,
-
-      subtitle: (
-        <>
-          Um processo claro, preventivo e focado em reduzir riscos antes que
-          eles se tornem problemas.
-        </>
-      ),
-      img: imgSteps,
-      alt: 'Imagem ilustrativa da Seção Passo a Passo',
-      cards: {
-        card1: {
-          stepNumber: 1,
-          cardTitle: <>Diagnóstico inicial</>,
-          cardDescription: (
-            <>
-              Realizamos uma conversa estratégica para entender o cenário, os
-              riscos envolvidos e suas reais necessidades jurídicas.
-            </>
-          ),
-        },
-        card2: {
-          stepNumber: 2,
-          cardTitle: <>Análise jurídica e de conformidade</>,
-          cardDescription: (
-            <>
-              Analisamos documentos, condutas e processos para identificar
-              vulnerabilidades, exposições legais e oportunidades de prevenção.
-            </>
-          ),
-        },
-        card3: {
-          stepNumber: 3,
-          cardTitle: <>Definição da estratégia</>,
-          cardDescription: (
-            <>
-              Construímos uma estratégia personalizada, unindo defesa jurídica e
-              prevenção para proteger seus interesses de forma eficaz.
-            </>
-          ),
-        },
-        card4: {
-          stepNumber: 4,
-          cardTitle: <>Execução e acompanhamento</>,
-          cardDescription: (
-            <>
-              Atuamos na implementação da estratégia, seja na prevenção, na
-              assessoria contínua ou na condução de processos judiciais e
-              administrativos.
-            </>
-          ),
-        },
-      },
-      ctaButtonText: <>A_Definir</>,
-    },
     ctaSection: {
       miniTag: <>FALE CONOSCO</>,
       title: (
         <h1>
-          Enfrentando um risco jurídico? Deixe que cuidemos disso com
-          estratégia.
+          Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
         </h1>
       ),
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Fale com um especialista para entender seu cenário e agir antes que
-            o problema avance.
+            Entre em contato agora para uma consulta especializada e comece a
+            encontrar a solução que você precisa.
           </p>
         </div>
       ),
-      ctaButtonText: <>Falar com um especialista</>,
+      ctaButtonText: <>Entrar em contato</>,
 
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
+    steps: {
+      miniTag: <>PASSO A PASSO</>,
+      FirstPart: <span> Como </span>,
+      Destaque: <span className="italic font-light"> funciona</span>,
+      SecondPart: <span>nosso atendimento?</span>,
+
+      subtitle: <></>,
+      img: imgSteps,
+      alt: 'Imagem ilustrativa da Seção Passo a Passo',
+      cards: {
+        card1: {
+          stepNumber: 1,
+          cardTitle: <>Consulta inicial</>,
+          cardDescription: (
+            <>
+              Realizamos uma reunião para entender seu caso e identificar suas
+              necessidades jurídicas.
+            </>
+          ),
+        },
+        card2: {
+          stepNumber: 2,
+          cardTitle: <>Análise detalhada</>,
+          cardDescription: (
+            <>
+              Examinamos todos os aspectos do seu caso, revisando documentos e
+              evidências para obter uma visão completa.
+            </>
+          ),
+        },
+        card3: {
+          stepNumber: 3,
+          cardTitle: <>Elaboração da estratégia</>,
+          cardDescription: (
+            <>
+              Criamos uma estratégia jurídica personalizada para proteger seus
+              interesses de maneira eficaz.
+            </>
+          ),
+        },
+        card4: {
+          stepNumber: 4,
+          cardTitle: <>Ação legal</>,
+          cardDescription: (
+            <>
+              Iniciamos e conduzimos as ações judiciais ou o serviço contratado,
+              buscando justiça e soluções personalizadas conforme a necessidade
+              do seu caso.
+            </>
+          ),
+        },
+      },
+
+      ctaButtonText: <>A_Definir</>,
+    },
+
     blog: {
       miniTag: <>A_Definir</>,
       title: <>A_Definir</>,
@@ -501,38 +453,30 @@ const content = {
       blogLink: <>A_Definir</>, //sem "https://"
     },
     parceria: {
-      miniTag: <>Parceiros e reconhecimentos</>,
-      title: <>Parcerias que reforçam nossa credibilidade</>,
-      subtitle: (
-        <>
-          Atuação conjunta com escritórios, consultorias e empresas que
-          valorizam conformidade, estratégia e segurança jurídica.
-        </>
-      ),
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       images: [
         {
-          role: 'Business',
-          img: logo1,
+          role: 'A_Definir',
+          // img: logo1,
           alt: 'Logomarca parceira',
-          description:
-            'Trabalho técnico, estratégico e extremamente responsável. A atuação preventiva trouxe mais segurança para nossas decisões e reduziu riscos relevantes.',
-          name: '— Sócio-diretor de empresa comercial',
+          description: 'A_Definir',
+          name: 'A_Definir',
         },
         {
-          role: 'Advocate Logo',
-          img: logo2,
+          role: 'A_Definir',
+          // img: logo2,
           alt: 'Logomarca parceira',
-          description:
-            'Atuação clara e objetiva em um momento delicado. A combinação entre advocacia e compliance fez toda a diferença na condução do caso.',
-          name: '— Advogada parceira',
+          description: 'A_Definir',
+          name: 'A_Definir',
         },
         {
-          role: 'Mechanical Engineer',
-          img: logo3,
+          role: 'A_Definir',
+          // img: logo3,
           alt: 'Logomarca parceira',
-          description:
-            'Ser orientado antes do problema se transformar em processo mudou completamente nossa forma de lidar com riscos jurídicos.',
-          name: '— Empresário do setor industrial',
+          description: 'A_Definir',
+          name: 'A_Definir',
         },
       ],
     },
@@ -545,9 +489,8 @@ const content = {
           question: <>Como posso contratar seus serviços?</>,
           answer: (
             <>
-              O primeiro passo é agendar uma conversa estratégica via WhatsApp.
-              Nela, entendemos seu cenário, avaliamos os riscos envolvidos e
-              apresentamos as possibilidades de atuação e valores.
+              Agende sua consulta conosco via WhatsApp e conversaremos sobre
+              suas necessidades e avaliaremos os custos.
             </>
           ),
         },
@@ -555,9 +498,8 @@ const content = {
           question: <>Qual é o prazo médio para resolução de um caso?</>,
           answer: (
             <>
-              O prazo varia conforme a complexidade e o tipo de demanda. Durante
-              a consulta inicial, explicamos as etapas do processo e
-              apresentamos uma estimativa realista.
+              O prazo médio varia conforme a complexidade, mas discutiremos uma
+              estimativa durante a consulta inicial.
             </>
           ),
         },
@@ -565,10 +507,9 @@ const content = {
           question: <>Quais documentos devo levar para a consulta?</>,
           answer: (
             <>
-              Reúna todos os documentos relacionados ao caso, como contratos,
-              notificações, autos de infração, comunicações oficiais e
-              documentos pessoais. Quanto mais informações, mais precisa será a
-              análise.
+              Traga os documentos relevantes ao seu caso, como contratos,
+              correspondências e registros, além de documentos pessoais e
+              comprovante de residência.
             </>
           ),
         },
@@ -576,14 +517,12 @@ const content = {
           question: <>Vocês oferecem serviços de consultoria preventiva?</>,
           answer: (
             <>
-              Sim. Atuamos de forma preventiva por meio de consultoria em
-              compliance e conformidade, ajudando a reduzir riscos e evitar que
-              problemas jurídicos se transformem em processos.
+              Sim, oferecemos consultoria preventiva para evitar problemas
+              futuros e garantir conformidade legal.
             </>
           ),
         },
       },
-
       paragraph: 'Clique aqui caso tenha mais dúvidas',
     },
     // team: {
@@ -1147,7 +1086,6 @@ const content = {
     // },
     links: {
       instagram: `https://www.instagram.com/${infos.instagramProfile}/`,
-      instagramSecundario: `https://www.instagram.com/${infos.instagramProfileSecundario}/`,
       ctaWhatsapp: `https://wa.me/+55${infos.phone.ddd}${infos.phone.firstPart}${infos.phone.secondPart}?text=${infos.whatsappDefaultMessage}`,
       phoneSecundario: `https://wa.me/+55${infos.phoneSecundario.ddd}${infos.phoneSecundario.firstPart}${infos.phoneSecundario.secondPart}?text=${infos.whatsappDefaultMessage}`,
       phoneTerciario: `https://wa.me/+55${infos.phoneTerciario.ddd}${infos.phoneTerciario.firstPart}${infos.phoneTerciario.secondPart}?text=${infos.whatsappDefaultMessage}`,
