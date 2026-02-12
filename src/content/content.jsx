@@ -39,32 +39,32 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: <>A_Definir</>,
+  name: 'Dra. Patrícia Ribeiro Machado',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'A_Definir', // Sem "www"
+  domain: 'patriciamachadoadvocacia.com.br', // Sem "www"
   phone: {
+    ddd: '48',
+    firstPart: '99191', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '0060', // Apenas os 4 últimos números
+  },
+  phoneSecundario: {
+    ddd: '48',
+    firstPart: '3413', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '4357', // Apenas os 4 últimos números
+  },
+  phoneTerciario: {
     ddd: '00',
     firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
     secondPart: '0000', // Apenas os 4 últimos números
   },
-  phoneSecundario: {
-    ddd: <>A_Definir</>,
-    firstPart: <>A_Definir</>, // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: <>A_Definir</>, // Apenas os 4 últimos números
-  },
-  phoneTerciario: {
-    ddd: <>A_Definir</>,
-    firstPart: <>A_Definir</>, // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: <>A_Definir</>, // Apenas os 4 últimos números
-  },
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
+      <p>Rua Gonçalves Ledo, nº 130,</p>
+      <p>Sala 310, Centro,</p>
+      <p>Criciúma - SC,</p>
+      <p>CEP 88802-120</p>
     </div>
   ),
   enderecoSecundario: (
@@ -78,12 +78,13 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>8h às 18h</p>
+      <p>9h às 12h</p>
+      <p>13h às 17h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: '', // Sem o @
-  facebookProfile: '',
+  instagramProfile: 'ribeiromachadoadvocacia', // Sem o @
+  facebookProfile: 'ribeiromachadoadvocacia',
   linkeDinProfile: '',
   x: '',
   tiktokProfile: '',
