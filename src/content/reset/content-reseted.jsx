@@ -11,6 +11,9 @@ import aboutImg from '../assets/imgs/about/aboutImg.webp'
 import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
 import imgSteps from '../assets/imgs/steps/imgSteps.webp'
+// import logo1 from '../assets/imgs/parceria/Logo1.webp'
+// import logo2 from '../assets/imgs/parceria/Logo2.webp'
+// import logo3 from '../assets/imgs/parceria/Logo3.webp'
 
 import {
   Baby,
@@ -429,6 +432,34 @@ const content = {
       labelCards: 'Ver mais',
       label: 'Clique aqui para ver todas as matérias',
       blogLink: <>A_Definir</>, //sem "https://"
+    },
+    parceria: {
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
+      images: [
+        {
+          role: 'A_Definir',
+          // img: logo1,
+          alt: 'Logomarca parceira',
+          description: 'A_Definir',
+          name: 'A_Definir',
+        },
+        {
+          role: 'A_Definir',
+          // img: logo2,
+          alt: 'Logomarca parceira',
+          description: 'A_Definir',
+          name: 'A_Definir',
+        },
+        {
+          role: 'A_Definir',
+          // img: logo3,
+          alt: 'Logomarca parceira',
+          description: 'A_Definir',
+          name: 'A_Definir',
+        },
+      ],
     },
     faq: {
       miniTag: <>A_Definir</>,
