@@ -72,6 +72,7 @@ function FooterNovoTemplate({
     <SectionArea
       className={`${backgroundMode} pb-4`}
       paddingtop={!showGlobalButtonsLps}
+      paddingbot={false}
     >
       <SectionWrapper>
         <footer className={`${textOpacity}`}>
@@ -245,15 +246,17 @@ function FooterNovoTemplate({
               )} */}
             </div>
 
-            <hr
-              className={`pb-6 border-t ${lps ? 'hidden' : 'flex'} ${text} ${
-                colorMode === 'light' ? 'opacity-90' : 'opacity-20'
-              } w-full`}
-            />
+            {!showGlobalButtonsLps && (
+              <hr
+                className={`border-t pb-6  ${text} ${
+                  colorMode === 'light' ? 'opacity-90' : 'opacity-20'
+                } w-full`}
+              />
+            )}
 
             {/* Footer Bottom */}
             <div
-              className={` text-center font-secondFont text-sm ${textOpacity}`}
+              className={`text-center font-secondFont text-sm ${textOpacity} ${showGlobalButtonsLps ? 'pt-6' : ''}`}
             >
               <p>&copy; {content.texts.footer.copyrightLine}</p>
               <br />

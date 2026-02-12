@@ -48,24 +48,36 @@ function CtaNovoTemplate({ colorMode, container }) {
 
   const containerList = [
     {
-      icon: <Check className={`${textDestaque}`} />,
-      text: <>Análise gratuita do seu caso</>,
+      icon: <Check className={` text-white`} />,
+      text: (
+        <>
+          {' '}
+          Análise imediata do seu caso e da possibilidade de suspender ou
+          reverter a apreensão
+        </>
+      ),
     },
     {
-      icon: <Check className={`${textDestaque}`} />,
-      text: <>Atendimento direto com o Advogado, sem intermediários</>,
+      icon: <Check className={` text-white`} />,
+      text: (
+        <>
+          {' '}
+          Avaliação do contrato para identificar juros abusivos e falhas legais
+        </>
+      ),
     },
     {
-      icon: <Check className={`${textDestaque}`} />,
-      text: <>Resposta rápida e acompanhamento pelo WhatsApp</>,
+      icon: <Check className={` text-white`} />,
+      text: <>Orientação clara sobre prazos, riscos e próximos passos</>,
     },
     {
-      icon: <Check className={`${textDestaque}`} />,
-      text: <>Processo iniciado no mesmo dia da análise</>,
-    },
-    {
-      icon: <Check className={`${textDestaque}`} />,
-      text: <>Você mais perto de receber o que é seu, sem sair de casa</>,
+      icon: <Check className={` text-white`} />,
+      text: (
+        <>
+          Acompanhamento transparente e atuação responsável em todas as fases do
+          processo
+        </>
+      ),
     },
   ]
 
@@ -93,14 +105,16 @@ function CtaNovoTemplate({ colorMode, container }) {
 
             {container && (
               <div
-                className={`rounded-lg p-4 mb-4 flex flex-col items-center ${textOpacity}`}
+                className={`rounded-lg p-4 mb-4 flex flex-col items-center gap-4 ${textOpacity}`}
               >
                 {containerList.map((item, index) => (
                   <div
                     key={index}
-                    className="font-secondFont flex gap-2 items-start w-full justify-start tablet1:justify-center text-start desktop1:text-start"
+                    className="font-secondFont flex gap-2 items-start w-full justify-start tablet1:justify-start text-start desktop1:text-start"
                   >
-                    <span className={`${textDestaque}`}>{item.icon}</span>
+                    <span className={` bg-primaryDark rounded-full p-0.5`}>
+                      {item.icon}
+                    </span>
                     <p className={`${textOpacity}`}>{item.text}</p>
                   </div>
                 ))}
