@@ -19,6 +19,8 @@ import {
   Baby,
   Briefcase,
   BriefcaseMedical,
+  Building,
+  Landmark,
   Gavel,
   Home,
   Key,
@@ -122,25 +124,30 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: <>A_definir</>,
-      FirstPart: <span>A_definir</span>,
+      miniTag: <>ESCRITÓRIO DE ADVOCACIA</>,
+      FirstPart: <span>Direitos</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_definir</span>
+        <span className="destaque relative italic font-light">defendidos</span>
       ),
-      SecondPart: <span></span>,
-      subtitle: <p>A_definir</p>,
+      SecondPart: <span>com firmeza</span>,
+      subtitle: (
+        <p>
+          Atuação jurídica estratégica em Previdência, Saúde e Imóveis para
+          proteger o que é seu
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com a Advogada agora</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: <>A_Definir</>,
+        text: <>Atendimento presencial e online para todo Brasil.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: 'Contato',
@@ -170,19 +177,19 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
-      Destaque: <span className="italic font-light">A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>Áreas de atuação</>,
+      FirstPart: <span>Especialidades jurídicas para</span>,
+      Destaque: <span className="italic font-light">proteger</span>,
+      SecondPart: <span>seus direitos</span>,
+      subtitle: <>Soluções jurídicas seguras para decisões importantes</>,
       imgFeatures: imgFeatures,
       alt: <>Imagem ilustrativa da Features</>,
-      titleMessageFeature: <>A_Definir</>,
-      subtitleMessageFeature: <>A_Definir</>,
+      titleMessageFeature: <>100%</>,
+      subtitleMessageFeature: <>firmeza jurídica</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito Previdenciário</>,
+          subtitle: <>Aposente-se com segurança e receba o que é seu por lei</>,
           description: (
             <div>
               A_Definir
@@ -191,13 +198,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Briefcase />,
+          icon: <Landmark />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito da saúde</>,
+          subtitle: <>Garanta tratamentos e medicamentos quando mais precisa</>,
           description: (
             <div>
               A_Definir
@@ -206,13 +213,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <User />,
+          icon: <BriefcaseMedical />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito Civil</>,
+          subtitle: <>Soluções jurídicas para proteger seus direitos diários</>,
           description: (
             <div>
               A_Definir
@@ -221,13 +228,13 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Scale />,
+          icon: <Users />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Usucapião</>,
+          subtitle: <>Regularize seu imóvel e conquiste a posse legal plena</>,
           description: (
             <div>
               A_Definir
@@ -241,8 +248,8 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card5: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Adjudicação compulsória</>,
+          subtitle: <>Escritura definitiva mesmo sem cooperação do vendedor</>,
           description: (
             <div>
               A_Definir
@@ -251,13 +258,15 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Users />,
+          icon: <Scale />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card6: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito Imobiliário</>,
+          subtitle: (
+            <>Segurança jurídica em contratos e negócios imobiliários</>
+          ),
           description: (
             <div>
               A_Definir
@@ -266,56 +275,12 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <MessageSquare />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card7: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Shield />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card8: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card9: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <FileText />,
+          icon: <Building />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
       },
+
       ctaButtonText: <>A_Definir</>,
     },
     emergency: {
@@ -335,30 +300,47 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: <>A_Definir</>,
+      miniTag: <>QUEM É A DRA. PATRÍCIA RIBEIRO MACHADO</>,
       FirstPart: <span> Minha </span>,
       Destaque: <span className="italic font-light"> trajetória</span>,
       SecondPart: <span></span>,
-      subtitle: <>A_Definir</>,
-      paragraph: <div>A_Definir</div>,
+      subtitle: (
+        <>
+          Uma história construída na defesa da dignidade, da vida e do
+          patrimônio
+        </>
+      ),
+      paragraph: (
+        <div>
+          Minha trajetória profissional foi construída a partir da atuação nas
+          áreas Previdenciária, da Saúde e da Usucapião, ramos do Direito que
+          impactam diretamente a segurança, a subsistência e o futuro das
+          pessoas.
+        </div>
+      ),
       ctaButtonText: <>A_Definir</>,
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="font-secondFont">
-          A_Definir
+          Minha trajetória profissional foi construída a partir da atuação nas
+          áreas Previdenciária, da Saúde e da Usucapião, ramos do Direito que
+          impactam diretamente a segurança, a subsistência e o futuro das
+          pessoas.
           <br />
           <br />
-          A_Definir
+          Atuo diariamente para garantir benefícios previdenciários essenciais e
+          o direito à saúde, buscando assegurar tratamentos, medicamentos e,
+          muitas vezes, a própria preservação da vida, sempre com
+          responsabilidade e compromisso.
           <br />
           <br />
-          A_Definir
-          <br />
-          <br />
-          A_Definir
+          No Direito Imobiliário e na Usucapião, meu trabalho é proteger o
+          patrimônio conquistado com esforço, evitando perdas causadas pela
+          falta de informação ou regularização, com uma atuação justa, eficiente
+          e dentro da lei.
         </p>
       ),
       paragraphModalCta: 'Entre em contato',
-      titleModal: <>A_Definir</>,
       ctaButtonAriaLabel: 'Botão para entrar em contato',
 
       aboutSocial: {
@@ -367,9 +349,15 @@ const content = {
           alt: `Foto do Instagram do ${infos.name}`,
           altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
         },
-        miniTag: <>A_Definir</>,
-        title: <>A_Definir</>,
-        subtitle: <>A_Definir</>,
+        miniTag: <>Redes sociais</>,
+        title: <>Conecte-se conosco</>,
+        subtitle: (
+          <>
+            Acompanhe nossas redes sociais para se manter informado sobre
+            conteúdos jurídicos, atualizações e temas relevantes das áreas de
+            atuação.
+          </>
+        ),
         paragraph: <p></p>,
         labelInstagram: 'Siga-nos no Instagram',
         labelFacebook: 'Siga-nos no Facebook',
@@ -379,52 +367,84 @@ const content = {
         labelYoutube: 'Siga-nos no Youtube',
       },
     },
-    steps: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
-
-      subtitle: <>A_Definir</>,
-      img: imgSteps,
-      alt: 'Imagem ilustrativa da Seção Passo a Passo',
-      cards: {
-        card1: {
-          stepNumber: 1,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
-        },
-        card2: {
-          stepNumber: 2,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
-        },
-        card3: {
-          stepNumber: 3,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
-        },
-        card4: {
-          stepNumber: 4,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
-        },
-      },
-      ctaButtonText: <>A_Definir</>,
-    },
     ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>FALE CONOSCO</>,
+      title: (
+        <h1>
+          Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
+        </h1>
+      ),
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: (
+        <>
+          Entre em contato agora para uma consulta especializada e comece a
+          encontrar a solução que você precisa.
+        </>
+      ),
 
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
     },
+    steps: {
+      miniTag: <>PASSO A PASSO</>,
+      FirstPart: <span> Como </span>,
+      Destaque: <span className="italic font-light"> funciona</span>,
+      SecondPart: <span>nosso atendimento?</span>,
+
+      subtitle: <></>,
+      img: imgSteps,
+      alt: 'Imagem ilustrativa da Seção Passo a Passo',
+      cards: {
+        card1: {
+          stepNumber: 1,
+          cardTitle: <>Consulta inicial</>,
+          cardDescription: (
+            <>
+              Realizamos uma reunião para entender seu caso e identificar suas
+              necessidades jurídicas.
+            </>
+          ),
+        },
+        card2: {
+          stepNumber: 2,
+          cardTitle: <>Análise detalhada</>,
+          cardDescription: (
+            <>
+              Examinamos todos os aspectos do seu caso, revisando documentos e
+              evidências para obter uma visão completa.
+            </>
+          ),
+        },
+        card3: {
+          stepNumber: 3,
+          cardTitle: <>Elaboração da estratégia</>,
+          cardDescription: (
+            <>
+              Criamos uma estratégia jurídica personalizada para proteger seus
+              interesses de maneira eficaz.
+            </>
+          ),
+        },
+        card4: {
+          stepNumber: 4,
+          cardTitle: <>Ação legal</>,
+          cardDescription: (
+            <>
+              Iniciamos e conduzimos as ações judiciais ou o serviço contratado,
+              buscando justiça e soluções personalizadas conforme a necessidade
+              do seu caso.
+            </>
+          ),
+        },
+      },
+
+      ctaButtonText: <>A_Definir</>,
+    },
+
     blog: {
       miniTag: <>A_Definir</>,
       title: <>A_Definir</>,
@@ -463,28 +483,48 @@ const content = {
       ],
     },
     faq: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>TIRE SUAS DÚVIDAS</>,
+      title: <>Perguntas Frequentes</>,
+      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Como posso contratar seus serviços?</>,
+          answer: (
+            <>
+              Agende sua consulta conosco via WhatsApp e conversaremos sobre
+              suas necessidades e avaliaremos os custos.
+            </>
+          ),
         },
         question2: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Qual é o prazo médio para resolução de um caso?</>,
+          answer: (
+            <>
+              O prazo médio varia conforme a complexidade, mas discutiremos uma
+              estimativa durante a consulta inicial.
+            </>
+          ),
         },
         question3: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Quais documentos devo levar para a consulta?</>,
+          answer: (
+            <>
+              Traga os documentos relevantes ao seu caso, como contratos,
+              correspondências e registros, além de documentos pessoais e
+              comprovante de residência.
+            </>
+          ),
         },
         question4: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Vocês oferecem serviços de consultoria preventiva?</>,
+          answer: (
+            <>
+              Sim, oferecemos consultoria preventiva para evitar problemas
+              futuros e garantir conformidade legal.
+            </>
+          ),
         },
       },
-
       paragraph: 'Clique aqui caso tenha mais dúvidas',
     },
     // team: {

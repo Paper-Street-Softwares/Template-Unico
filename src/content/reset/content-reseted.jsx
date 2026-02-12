@@ -357,7 +357,6 @@ const content = {
         </p>
       ),
       paragraphModalCta: 'Entre em contato',
-      titleModal: <>A_Definir</>,
       ctaButtonAriaLabel: 'Botão para entrar em contato',
 
       aboutSocial: {
@@ -377,6 +376,19 @@ const content = {
         labelTiktok: 'Siga-nos no Tik Tok',
         labelYoutube: 'Siga-nos no Youtube',
       },
+    },
+    ctaSection: {
+      miniTag: <>A_Definir</>,
+      title: <h1>A_Definir</h1>,
+      subtitle: (
+        <div>
+          <p className="mb-6 font-secondFont">A_Definir</p>
+        </div>
+      ),
+      ctaButtonText: <>A_Definir</>,
+
+      ctaButtonAriaLabel:
+        'Botão para chamada de ação para contato pelo whatsapp',
     },
     steps: {
       miniTag: <>A_Definir</>,
@@ -411,19 +423,7 @@ const content = {
       },
       ctaButtonText: <>A_Definir</>,
     },
-    ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
-      subtitle: (
-        <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
-        </div>
-      ),
-      ctaButtonText: <>A_Definir</>,
 
-      ctaButtonAriaLabel:
-        'Botão para chamada de ação para contato pelo whatsapp',
-    },
     blog: {
       miniTag: <>A_Definir</>,
       title: <>A_Definir</>,
