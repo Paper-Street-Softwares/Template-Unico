@@ -17,6 +17,8 @@ import {
   Scale,
   BriefcaseMedical,
   BriefcaseBusiness,
+  Search,
+  MapIcon,
 } from 'lucide-react'
 import content from '../../content/content'
 import SectionArea from '../sectionElements/SectionArea'
@@ -148,7 +150,8 @@ function HeroTemplateNovo({
               >
                 <span>
                   {/* <BriefcaseBusiness className="w-4 h-4" /> */}
-                  🚨
+                  <MapPin className="w-4 h-4" />
+                  {/* 🚨 */}
                 </span>
                 {content.texts.hero.miniTag}
               </div>
