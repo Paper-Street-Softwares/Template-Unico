@@ -174,19 +174,36 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
-      Destaque: <span className="italic font-light">A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>Áreas de Atuação</>,
+      FirstPart: <span>Soluções jurídicas que</span>,
+      Destaque: <span className="italic font-light">protegem</span>,
+      SecondPart: <span>seus direitos</span>,
+      subtitle: (
+        <>
+          Atuação estratégica, atendimento próximo e foco total em resultado.
+          Defendemos você com seriedade, agilidade e máxima dedicação.
+        </>
+      ),
       imgFeatures: imgFeatures,
       alt: <>Imagem ilustrativa da Features</>,
-      titleMessageFeature: <>A_Definir</>,
-      subtitleMessageFeature: <>A_Definir</>,
+      titleMessageFeature: <>100%</>,
+      subtitleMessageFeature: <>foco no resultado</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito de Trânsito</>,
+          subtitle: (
+            <>
+              {' '}
+              • Defesa em processos administrativos (CNH, suspensão e cassação)
+              <br />
+              • Recursos de multas
+              <br />
+              • Acidentes de trânsito
+              <br />
+              • Responsabilidade civil decorrente de acidentes
+              <br />• Indenizações por danos materiais, morais e estéticos
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -200,8 +217,26 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito Securitário</>,
+          subtitle: (
+            <>
+              {' '}
+              • Ações contra seguradoras por negativa indevida de cobertura
+              <br />
+              • Revisão de cláusulas abusivas
+              <br />
+              • Indenizações securitárias
+              <br />
+              • Atuação contra associações de proteção veicular
+              <br />
+              • Cobrança de indenizações e cumprimento contratual
+              <br />
+              • Reparação de danos materiais, morais e estéticos
+              <br />
+              • Atuação judicial e extrajudicial
+              <br />• Estratégias para maximização de indenizações{' '}
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -215,8 +250,20 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito do Consumidor</>,
+          subtitle: (
+            <>
+              {' '}
+              • Falha na prestação de serviços
+              <br />
+              • Cobranças indevidas
+              <br />
+              • Vícios de produtos
+              <br />
+              • Indenizações por danos ao consumidor
+              <br />
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -230,8 +277,20 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito do Consumidor</>,
+          subtitle: (
+            <>
+              {' '}
+              • Divórcio judicial e extrajudicial
+              <br />
+              • Pensão alimentícia
+              <br />
+              • Guarda e regulamentação de visitas
+              <br />
+              • Partilha de bens
+              <br />• Inventário{' '}
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -241,81 +300,6 @@ const content = {
             </div>
           ),
           icon: <Gavel />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card5: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Users />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card6: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <MessageSquare />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card7: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Shield />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card8: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
-          buttonLabelModal: 'Fale Conosco',
-          buttonLabel: 'Saiba Mais',
-        },
-        card9: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <FileText />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },

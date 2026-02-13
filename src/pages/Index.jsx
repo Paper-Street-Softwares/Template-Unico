@@ -65,7 +65,7 @@ export default function Index() {
               <FeaturesNovaTemplate
                 colorMode={colorMode}
                 frasesDestaque={true}
-                accordion={false}
+                accordion={true}
               />
             </Suspense>
           </AlternatingSection>
