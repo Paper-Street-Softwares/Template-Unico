@@ -279,7 +279,7 @@ const content = {
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: <>Direito do Consumidor</>,
+          title: <>Direito de Família</>,
           subtitle: (
             <>
               {' '}
