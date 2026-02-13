@@ -231,6 +231,8 @@ const content = {
               <br />
               • Cobrança de indenizações e cumprimento contratual
               <br />
+              • Responsabilidade Civil
+              <br />
               • Reparação de danos materiais, morais e estéticos
               <br />
               • Atuação judicial e extrajudicial
