@@ -37,7 +37,7 @@ function FaqNovoTemplate({ colorMode }) {
 
     case 'defaultDark':
       text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosBranca'
+      textOpacity = 'text-corOutrosTextosPreto'
       hoverText = 'hover:text-primaryDark'
       backgroundMode = 'bg-transparent'
       break

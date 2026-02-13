@@ -39,14 +39,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'Fernandes & Vieira Advocacia e Consultoria',
+  name: 'Dr. Sérgio Antonio',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'divorcio.fernandesevieiraadvocacia.com.br', // Sem "www"
+  domain: 'sergioantonioadvocacia.com.br', // Sem "www"
   phone: {
     ddd: '31',
-    firstPart: '99638', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '5637', // Apenas os 4 últimos números
+    firstPart: '99429', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '4125', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: '00',
@@ -61,10 +61,10 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
+      <p>Rua Maria Amélia Maia,</p>
+      <p>1081, São Bernardo,</p>
+      <p>Belo Horizonte - MG,</p>
+      <p>CEP: 31740-000,</p>
     </div>
   ),
   enderecoSecundario: (
@@ -78,7 +78,7 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>8h às 18h</p>
+      <p>8h às 20h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
@@ -89,7 +89,7 @@ export const infos = {
   tiktokProfile: '',
 
   whatsappDefaultMessage:
-    'Olá! Vim do Google e preciso de ajuda com Divórcio. Pode me atender?',
+    'Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.',
   whatsChatDefaultMessage:
     'Gostaria de falar conosco agora mesmo? Clque abaixo 👇',
   slogan: '',
@@ -111,124 +111,97 @@ const content = {
         'Início',
         'Serviços',
         'Sobre',
-        // 'Perguntas',
+        'Perguntas',
         // 'Blog',
         // 'Mapa',
       ],
-      menuId: ['home', 'feature', 'about'],
+      menuId: ['home', 'feature', 'about', 'faq'],
       ariaLabel: 'Botão de Contato',
       ctaButtonText: 'Contato',
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: 'NÃO PERCA SEU CARRO',
-      FirstPart: <span>Seu veículo foi alvo de</span>,
+      miniTag: <>ESCRITÓRIO DE ADVOCACIA</>,
+      FirstPart: <span>Seus</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">
-          busca e apreensão?
-        </span>
+        <span className="destaque relative italic font-light">direitos</span>
       ),
-      SecondPart: <span></span>,
+      SecondPart: <span>não são negociáveis</span>,
       subtitle: (
         <p>
-          Te ajudamos a suspender o processo, ganhar tempo e defender seu bem
-          legalmente, mesmo que ele já tenha sido levado.
+          Defesa estratégica e personalizada para proteger seu patrimônio, sua
+          família e sua tranquilidade.
         </p>
       ),
-      heroDefaultImage: heroDefaultImg,
+      heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
+
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: <>Preciso de ajuda urgente</>,
+      ctaButtonText: <>Falar com o Dr. Sérgio Antonio</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: <>Cada minuto importa, não deixe para amanhã!</>,
-        textTwo: <></>,
+        text: <>Atendimento online para todo Brasil.</>,
+        textTwo: <>A_Definir</>,
       },
       secondaryCta: 'Contato',
     },
-
     important: {
-      miniTag: <>Atenção</>,
-      title: <>O que é importante saber sobre busca e apreensão de veículos</>,
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>Meu veículo foi apreendido. Posso fazer alguma coisa?</>,
-          paragraph: (
-            <>
-              Sim! O ideal é apresentar defesa na ação de busca e apreensão o
-              quanto antes. Após 5 dias, sem defesa, o banco assume a posse do
-              veículo.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card2: {
-          title: <>Mas eu tenho um prazo para recorrer?</>,
-          paragraph: (
-            <>
-              Tem! O prazo para contestação da busca e apreensão é de 15 dias a
-              partir da apreensão. Procure imediatamente um advogado
-              especializado em busca e apreensão de veículos.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card3: {
-          title: <>Se eu não fizer nada, o que pode acontecer?</>,
-          paragraph: (
-            <>
-              Além de perder o bem, caso ele não seja suficiente para quitar sua
-              dívida com o banco, você poderá sofrer penhora de outros bens até
-              saldar o valor total da dívida.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card4: {
-          title: (
-            <>
-              Por que apresentar defesa no processo de busca e apreensão mesmo
-              sabendo que eu estou devendo?
-            </>
-          ),
-          paragraph: (
-            <>
-              Porque muitas vezes os juros cobrados são abusivos - e podem
-              tornar a busca e apreensão do veículo inválida. Agir rápido pode
-              salvar seu carro e seu dinheiro.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
       },
-      fraseObs: (
-        <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
-      ),
-      ctaButtonText: <>Seja atendido agora pelo WhatsApp</>,
+      fraseObs: <>A_Definir</>,
+      ctaButtonText: <>A_Definir</>,
     },
-
     features: {
-      miniTag: <>Proteção do seu veículo</>,
-      FirstPart: <span>Defesa</span>,
-      Destaque: <span className="italic font-light"> jurídica</span>,
-      SecondPart: <span> para impedir a perda do seu veículo</span>,
+      miniTag: <>Áreas de Atuação</>,
+      FirstPart: <span>Soluções jurídicas que</span>,
+      Destaque: <span className="italic font-light">protegem</span>,
+      SecondPart: <span>seus direitos</span>,
       subtitle: (
         <>
-          Atuação estratégica para suspender a busca e apreensão, recuperar o
-          veículo ou negociar a dívida, com segurança jurídica e rapidez.
+          Atuação estratégica, atendimento próximo e foco total em resultado.
+          Defendemos você com seriedade, agilidade e máxima dedicação.
         </>
       ),
       imgFeatures: imgFeatures,
-      alt: <>Imagem representativa da Seção Serviços</>,
+      alt: <>Imagem ilustrativa da Features</>,
       titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>foco em proteger o que é seu</>,
+      subtitleMessageFeature: <>foco no resultado</>,
       cards: {
         card1: {
-          title: <>Defesa em Ação de Busca e Apreensão</>,
+          title: <>Direito de Trânsito</>,
           subtitle: (
             <>
-              Agimos rapidamente para suspender o processo e impedir que o
-              veículo seja levado.
+              {' '}
+              • Defesa em processos administrativos (CNH, suspensão e cassação)
+              <br />
+              • Recursos de multas
+              <br />
+              • Acidentes de trânsito
+              <br />
+              • Responsabilidade civil decorrente de acidentes
+              <br />• Indenizações por danos materiais, morais e estéticos
             </>
           ),
           description: (
@@ -239,16 +212,31 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Lock />,
+          icon: <Briefcase />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card2: {
-          title: <>Recuperação do Veículo Apreendido</>,
+          title: <>Direito Securitário</>,
           subtitle: (
             <>
-              Atuação emergencial para tentar reverter a apreensão e recuperar
-              seu carro.
+              {' '}
+              • Ações contra seguradoras por negativa indevida de cobertura
+              <br />
+              • Revisão de cláusulas abusivas
+              <br />
+              • Indenizações securitárias
+              <br />
+              • Atuação contra associações de proteção veicular
+              <br />
+              • Cobrança de indenizações e cumprimento contratual
+              <br />
+              • Responsabilidade Civil
+              <br />
+              • Reparação de danos materiais, morais e estéticos
+              <br />
+              • Atuação judicial e extrajudicial
+              <br />• Estratégias para maximização de indenizações{' '}
             </>
           ),
           description: (
@@ -259,16 +247,23 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Car />,
+          icon: <User />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card3: {
-          title: <>Negociação e Renegociação da Dívida</>,
+          title: <>Direito do Consumidor</>,
           subtitle: (
             <>
-              Buscamos acordos possíveis para manter o veículo e organizar o
-              pagamento da dívida.
+              {' '}
+              • Falha na prestação de serviços
+              <br />
+              • Cobranças indevidas
+              <br />
+              • Vícios de produtos
+              <br />
+              • Indenizações por danos ao consumidor
+              <br />
             </>
           ),
           description: (
@@ -279,16 +274,23 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <HandCoins />,
+          icon: <Scale />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
         card4: {
-          title: <>Revisão de Contrato e Juros Abusivos</>,
+          title: <>Direito de Família</>,
           subtitle: (
             <>
-              Análise completa do contrato para identificar cobranças ilegais e
-              reduzir o valor da dívida.
+              {' '}
+              • Divórcio judicial e extrajudicial
+              <br />
+              • Pensão alimentícia
+              <br />
+              • Guarda e regulamentação de visitas
+              <br />
+              • Partilha de bens
+              <br />• Inventário{' '}
             </>
           ),
           description: (
@@ -299,178 +301,167 @@ const content = {
               <br />
             </div>
           ),
-          icon: <FileText />,
+          icon: <Gavel />,
           buttonLabelModal: 'Fale Conosco',
           buttonLabel: 'Saiba Mais',
         },
       },
-      ctaButtonText: <>Recuperar minha paz ao dirigir</>,
+      ctaButtonText: <>A_Definir</>,
     },
-
+    emergency: {
+      minitag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
+      ctaButtonText: <>A_Definir</>,
+    },
+    maps: {
+      minitag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
+      embedsrc: <>A_Definir</>,
+    },
     about: {
       imagem: {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: <>QUEM É O FERNANDES & VIEIRA</>,
-      FirstPart: <span>Nossa atuação</span>,
-      Destaque: <span className="italic font-light"> na sua defesa</span>,
+      miniTag: <>QUEM É O DR. SÉRGIO ANTONIO</>,
+      FirstPart: <span> Minha</span>,
+      Destaque: <span className="italic font-light"> trajetória</span>,
       SecondPart: <span></span>,
       subtitle: (
-        <>
-          Experiência consolidada na proteção de direitos e patrimônios com
-          estratégia.
-        </>
+        <>Uma década defendendo direitos com estratégia, firmeza e resultado</>
       ),
       paragraph: (
         <div>
-          Somos as advogadas Ana Carolina Vieira e Jéssica Fernandes e
-          acreditamos que cada direito representa mais do que um benefício:
-          representa segurança, dignidade e tranquilidade para o futuro.
-          <br />
-          <br />
-          Aqui, cada cliente é ouvido com atenção, orientado com clareza e
-          acompanhado de perto. Atuamos com empatia, responsabilidade e
-          transparência, explicando cada etapa do processo de forma simples,
-          porque entendemos que confiança se constrói com presença e verdade.
-          <br />
-          <br />
-          Mais do que processos, cuidamos de pessoas. Nosso compromisso é
-          transformar informação em proteção e direito em segurança real para
-          quem confia em nosso trabalho.
+          Com 10 anos de atuação na advocacia, construí minha trajetória
+          defendendo pessoas que enfrentam situações que impactam diretamente
+          sua vida financeira e familiar. Atuo de forma estratégica e
+          personalizada nas áreas de Direito de Trânsito, Direito Securitário,
+          Direito de Família, Direito do Consumidor e Responsabilidade Civil.
         </div>
       ),
-      ctaButtonText: <>Avaliar meu caso agora</>,
+      ctaButtonText: <>A_Definir</>,
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="font-secondFont">
-          A_Definir
+          Com 10 anos de atuação na advocacia, construí minha trajetória
+          defendendo pessoas que enfrentam situações que impactam diretamente
+          sua vida financeira e familiar. Atuo de forma estratégica e
+          personalizada nas áreas de Direito de Trânsito, Direito Securitário,
+          Direito de Família, Direito do Consumidor e Responsabilidade Civil.
           <br />
           <br />
-          A_Definir
+          Tenho forte experiência em casos de acidentes de trânsito e em ações
+          contra seguradoras e associações de proteção veicular, especialmente
+          quando há negativa indevida de cobertura ou cláusulas abusivas. Ao
+          longo dos anos, conduzi processos envolvendo indenizações por danos
+          materiais, morais e estéticos, sempre com análise técnica detalhada e
+          estratégia jurídica consistente.
           <br />
           <br />
-          A_Definir
-          <br />
-          <br />
-          A_Definir
+          No Direito de Família e nas demandas do consumidor, atuo com firmeza,
+          equilíbrio e proximidade. Meu compromisso é oferecer atendimento
+          transparente, orientação clara e atuação combativa, com foco real na
+          proteção dos seus direitos e na solução efetiva do seu problema.
         </p>
       ),
       paragraphModalCta: 'Entre em contato',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
 
-      aboutSocial: {
-        img: {
-          // img: aboutSocialImg,
-          alt: `Foto do Instagram do ${infos.name}`,
-          altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
-        },
-        miniTag: <>A_Definir</>,
-        title: <>A_Definir</>,
-        subtitle: <>A_Definir</>,
-        paragraph: <p></p>,
-        labelInstagram: 'Siga-nos no Instagram',
-        labelFacebook: 'Siga-nos no Facebook',
-        labelLinkedin: 'Siga-nos no LinkedIn',
-        labelX: 'Siga-nos no X',
-        labelTiktok: 'Siga-nos no Tik Tok',
-        labelYoutube: 'Siga-nos no Youtube',
-      },
+      // aboutSocial: {
+      //   img: {
+      //     img: aboutSocialImg,
+      //     alt: `Foto do Instagram do ${infos.name}`,
+      //     altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
+      //   },
+      //   miniTag: <>A_Definir</>,
+      //   title: <>A_Definir</>,
+      //   subtitle: <>A_Definir</>,
+      //   paragraph: <p></p>,
+      //   labelInstagram: 'Siga-nos no Instagram',
+      //   labelFacebook: 'Siga-nos no Facebook',
+      //   labelLinkedin: 'Siga-nos no LinkedIn',
+      //   labelX: 'Siga-nos no X',
+      //   labelTiktok: 'Siga-nos no Tik Tok',
+      //   labelYoutube: 'Siga-nos no Youtube',
+      // },
     },
     ctaSection: {
-      miniTag: 'FALE CONOSCO',
-      title: <h1>Prestes a perder o veículo?</h1>,
+      miniTag: <>FALE CONOSCO</>,
+      title: (
+        <h1>
+          Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
+        </h1>
+      ),
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">Ainda dá tempo de agir.</p>
+          <p className="mb-6 font-secondFont">
+            Entre em contato agora para uma consulta especializada e comece a
+            encontrar a solução que você precisa.
+          </p>
         </div>
       ),
-      ctaButtonText: 'Falar agora com uma advogada e entenda suas opções',
+      ctaButtonText: <>Entrar em Contato</>,
+
+      ctaButtonAriaLabel:
+        'Botão para chamada de ação para contato pelo whatsapp',
     },
     steps: {
-      miniTag: <>COMO ATUAMOS NA DEFESA DO SEU VEÍCULO</>,
-      FirstPart: <span>Defesa</span>,
-      Destaque: <span className="italic font-light"> estratégica </span>,
-      SecondPart: (
-        <span>para proteger seu carro na ação de busca e apreensão</span>
-      ),
+      miniTag: <>PASSO A PASSO</>,
+      FirstPart: <span> Como </span>,
+      Destaque: <span className="italic font-light"> funciona</span>,
+      SecondPart: <span>nosso atendimento?</span>,
+
       subtitle: <></>,
       img: imgSteps,
       alt: 'Imagem ilustrativa da Seção Passo a Passo',
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Análise do financiamento e da ação do banco</>,
+          cardTitle: <>Consulta inicial</>,
           cardDescription: (
             <>
-              Analisamos o contrato de financiamento do veículo, a notificação
-              de atraso e a ação de busca e apreensão para identificar juros
-              abusivos, cobranças irregulares e falhas que podem anular ou
-              suspender o processo.
+              Realizamos uma reunião para entender seu caso e identificar suas
+              necessidades jurídicas.
             </>
           ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Medidas urgentes para evitar ou reverter a apreensão</>,
+          cardTitle: <>Análise detalhada</>,
           cardDescription: (
             <>
-              Com base na análise, adotamos as medidas jurídicas cabíveis para
-              tentar impedir a apreensão do veículo ou buscar a devolução do
-              carro quando ele já foi recolhido pelo banco.
+              Examinamos todos os aspectos do seu caso, revisando documentos e
+              evidências para obter uma visão completa.
             </>
           ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Estratégia para reduzir a dívida ou viabilizar acordo</>,
+          cardTitle: <>Elaboração da estratégia</>,
           cardDescription: (
             <>
-              Buscamos alternativas legais para revisão do valor financiado,
-              redução do saldo devedor ou negociação direta com a instituição
-              financeira, sempre focando em manter o veículo e aliviar o impacto
-              financeiro.
+              Criamos uma estratégia jurídica personalizada para proteger seus
+              interesses de maneira eficaz.
             </>
           ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Acompanhamento próximo e comunicação clara</>,
+          cardTitle: <>Ação legal</>,
           cardDescription: (
             <>
-              Você acompanha cada etapa do processo com explicações objetivas,
-              prazos claros e orientações práticas, sabendo exatamente o que
-              está sendo feito para proteger seu veículo.
+              Iniciamos e conduzimos as ações judiciais ou o serviço contratado,
+              buscando justiça e soluções personalizadas conforme a necessidade
+              do seu caso.
             </>
           ),
         },
       },
-      ctaButtonText: <>Falar diretamente conosco</>,
+      ctaButtonText: <>A_Definir</>,
     },
-    faq: {
-      miniTag: <>TIRE SUAS DÚVIDAS</>,
-      title: <>Perguntas Frequentes</>,
-      subtitle: <>A_Definir</>,
-      questions: {
-        question1: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
-        },
-        question2: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
-        },
-        question3: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
-        },
-        question4: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
-        },
-      },
-      paragraph: 'Clique aqui caso tenha mais dúvidas',
-    },
+
     blog: {
       miniTag: <>A_Definir</>,
       title: <>A_Definir</>,
@@ -507,6 +498,52 @@ const content = {
           name: 'A_Definir',
         },
       ],
+    },
+    faq: {
+      miniTag: <>TIRE SUAS DÚVIDAS</>,
+      title: <>Perguntas Frequentes</>,
+      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
+      questions: {
+        question1: {
+          question: <>Como posso contratar seus serviços?</>,
+          answer: (
+            <>
+              Agende sua consulta conosco via WhatsApp e conversaremos sobre
+              suas necessidades e avaliaremos os custos.
+            </>
+          ),
+        },
+        question2: {
+          question: <>Qual é o prazo médio para resolução de um caso?</>,
+          answer: (
+            <>
+              O prazo médio varia conforme a complexidade, mas discutiremos uma
+              estimativa durante a consulta inicial.
+            </>
+          ),
+        },
+        question3: {
+          question: <>Quais documentos devo levar para a consulta?</>,
+          answer: (
+            <>
+              Traga os documentos relevantes ao seu caso, como contratos,
+              correspondências e registros, além de documentos pessoais e
+              comprovante de residência.
+            </>
+          ),
+        },
+        question4: {
+          question: <>Vocês oferecem serviços de consultoria preventiva?</>,
+          answer: (
+            <>
+              Sim, oferecemos consultoria preventiva para evitar problemas
+              futuros e garantir conformidade legal.
+            </>
+          ),
+        },
+      },
+
+      paragraph: 'Clique aqui caso tenha mais dúvidas',
     },
     // team: {
     //   miniTag: <>A_Definir</>,

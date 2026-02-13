@@ -17,6 +17,8 @@ import {
   Scale,
   BriefcaseMedical,
   BriefcaseBusiness,
+  Search,
+  MapIcon,
 } from 'lucide-react'
 import content from '../../content/content'
 import SectionArea from '../sectionElements/SectionArea'
@@ -76,7 +78,7 @@ function HeroTemplateNovo({
       // textObs = 'text-green-500'
       image = ' border-[8px]'
       bgAlertHero = 'bg-black text-white/60'
-      borderColor = 'border-primaryDark'
+      borderColor = ' border-[color-mix(in_srgb,var(--primaryDark),black_40%)]'
 
       break
 
@@ -148,7 +150,8 @@ function HeroTemplateNovo({
               >
                 <span>
                   {/* <BriefcaseBusiness className="w-4 h-4" /> */}
-                  🚨
+                  <MapPin className="w-4 h-4" />
+                  {/* 🚨 */}
                 </span>
                 {content.texts.hero.miniTag}
               </div>
@@ -213,11 +216,11 @@ function HeroTemplateNovo({
               /> */}
               {obs && (
                 <div className="flex justify-start items-center gap-3 text-sm text-mutedForeground w-full">
-                  {/* <div className="relative flex ">
+                  <div className="relative flex ">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
-                  </div> */}
-                  ⚠️
+                  </div>
+                  {/* ⚠️ */}
                   <span
                     className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
                   >

@@ -56,16 +56,16 @@ export default function Index() {
             <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
           </AlternatingSection>
 
-          <AlternatingSection index={1} colorMode={colorMode}>
+          {/* <AlternatingSection index={1} colorMode={colorMode}>
             <Important colorMode={colorMode} />
-          </AlternatingSection>
+          </AlternatingSection> */}
 
           <AlternatingSection index={2} colorMode={colorMode}>
             <Suspense>
               <FeaturesNovaTemplate
                 colorMode={colorMode}
                 frasesDestaque={true}
-                accordion={false}
+                accordion={true}
               />
             </Suspense>
           </AlternatingSection>
@@ -78,8 +78,8 @@ export default function Index() {
             <Suspense>
               <AboutNovoTemplate
                 colorMode={colorMode}
-                ButtonModal={false}
-                benefits={true}
+                ButtonModal={true}
+                benefits={false}
               />
               {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             </Suspense>
@@ -87,7 +87,7 @@ export default function Index() {
 
           <AlternatingSection index={4} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
-              <CtaNovoTemplate colorMode={colorMode} container={true} />
+              <CtaNovoTemplate colorMode={colorMode} container={false} />
             </Suspense>
           </AlternatingSection>
 
@@ -103,11 +103,11 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          {/* <AlternatingSection index={6} colorMode={colorMode}>
+          <AlternatingSection index={6} colorMode={colorMode}>
             <Suspense>
               <FaqNovoTemplate colorMode={colorMode} />
             </Suspense>
-          </AlternatingSection> */}
+          </AlternatingSection>
 
           <AlternatingSection index={6} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
@@ -115,9 +115,9 @@ export default function Index() {
                 colorMode={colorMode}
                 mapa={false}
                 phone={true}
-                phoneSecond={true}
+                phoneSecond={false}
                 expediente={true}
-                adress={false}
+                adress={true}
                 email={true}
                 emailSecond={false}
                 fraseFooter={true} // frase Google LLC
