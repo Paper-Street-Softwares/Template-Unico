@@ -121,25 +121,30 @@ const content = {
       ctaButtonTextResponsive: 'Contato',
     },
     hero: {
-      miniTag: <>A_definir</>,
-      FirstPart: <span>A_definir</span>,
+      miniTag: <>ESCRITÓRIO DE ADVOCACIA</>,
+      FirstPart: <span>Seus</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_definir</span>
+        <span className="destaque relative italic font-light">direitos</span>
       ),
-      SecondPart: <span></span>,
-      subtitle: <p>A_definir</p>,
+      SecondPart: <span>não são negociáveis</span>,
+      subtitle: (
+        <p>
+          Defesa estratégica e personalizada para proteger seu patrimônio, sua
+          família e sua tranquilidade.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: 'Imagem ilustrativa da Seção Início',
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com o Dr. Sérgio Antonio</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: <>A_Definir</>,
+        text: <>Atendimento online para todo Brasil.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: 'Contato',
