@@ -78,8 +78,8 @@ export default function Index() {
             <Suspense>
               <AboutNovoTemplate
                 colorMode={colorMode}
-                ButtonModal={false}
-                benefits={true}
+                ButtonModal={true}
+                benefits={false}
               />
               {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             </Suspense>
@@ -87,7 +87,7 @@ export default function Index() {
 
           <AlternatingSection index={4} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
-              <CtaNovoTemplate colorMode={colorMode} container={true} />
+              <CtaNovoTemplate colorMode={colorMode} container={false} />
             </Suspense>
           </AlternatingSection>
 

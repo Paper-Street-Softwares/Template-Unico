@@ -323,26 +323,45 @@ const content = {
         img: aboutImg,
         alt: 'Imagem ilustrativa da Seção Sobre',
       },
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
-      subtitle: <>A_Definir</>,
-      paragraph: <div>A_Definir</div>,
+      miniTag: <>QUEM É O DR. SÉRGIO ANTONIO</>,
+      FirstPart: <span> Minha</span>,
+      Destaque: <span className="italic font-light"> trajetória</span>,
+      SecondPart: <span></span>,
+      subtitle: (
+        <>Uma década defendendo direitos com estratégia, firmeza e resultado</>
+      ),
+      paragraph: (
+        <div>
+          Com 10 anos de atuação na advocacia, construí minha trajetória
+          defendendo pessoas que enfrentam situações que impactam diretamente
+          sua vida financeira e familiar. Atuo de forma estratégica e
+          personalizada nas áreas de Direito de Trânsito, Direito Securitário,
+          Direito de Família, Direito do Consumidor e Responsabilidade Civil.
+        </div>
+      ),
       ctaButtonText: <>A_Definir</>,
       buttonModalLabelAbout: 'Continuar lendo',
       modal: (
         <p className="font-secondFont">
-          A_Definir
+          Com 10 anos de atuação na advocacia, construí minha trajetória
+          defendendo pessoas que enfrentam situações que impactam diretamente
+          sua vida financeira e familiar. Atuo de forma estratégica e
+          personalizada nas áreas de Direito de Trânsito, Direito Securitário,
+          Direito de Família, Direito do Consumidor e Responsabilidade Civil.
           <br />
           <br />
-          A_Definir
+          Tenho forte experiência em casos de acidentes de trânsito e em ações
+          contra seguradoras e associações de proteção veicular, especialmente
+          quando há negativa indevida de cobertura ou cláusulas abusivas. Ao
+          longo dos anos, conduzi processos envolvendo indenizações por danos
+          materiais, morais e estéticos, sempre com análise técnica detalhada e
+          estratégia jurídica consistente.
           <br />
           <br />
-          A_Definir
-          <br />
-          <br />
-          A_Definir
+          No Direito de Família e nas demandas do consumidor, atuo com firmeza,
+          equilíbrio e proximidade. Meu compromisso é oferecer atendimento
+          transparente, orientação clara e atuação combativa, com foco real na
+          proteção dos seus direitos e na solução efetiva do seu problema.
         </p>
       ),
       paragraphModalCta: 'Entre em contato',
@@ -367,14 +386,21 @@ const content = {
       // },
     },
     ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>FALE CONOSCO</>,
+      title: (
+        <h1>
+          Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
+        </h1>
+      ),
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Entre em contato agora para uma consulta especializada e comece a
+            encontrar a solução que você precisa.
+          </p>
         </div>
       ),
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Entrar em Contato</>,
 
       ctaButtonAriaLabel:
         'Botão para chamada de ação para contato pelo whatsapp',
