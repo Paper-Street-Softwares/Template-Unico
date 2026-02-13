@@ -110,7 +110,7 @@ function NavbarNovaTemplate({
                 alt={content.texts.navbar.logo.alt}
                 className="hidden desktop1:flex w-fit max-h-full object-contain"
                 width={350}
-                height={166}
+                height={194}
                 fetchPriority="high"
               />
             </a>
