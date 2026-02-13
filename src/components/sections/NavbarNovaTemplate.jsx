@@ -87,20 +87,20 @@ function NavbarNovaTemplate({
           <div
             className={`flex flex-col z-20 relative  ${
               isScrolled
-                ? 'w-[40%] tablet1:w-[20%] desktop1:w-[10%] transition-all duration-700'
-                : 'py-3 w-[50%] tablet1:w-[30%] desktop1:w-[20%] desktop2:w-[15%] transition-all duration-700'
+                ? 'w-[30%] h-[60px] tablet1:w-[20%] desktop1:w-[10%] transition-all duration-700'
+                : 'py-3 w-[60%] h-[100px] tablet1:w-[30%] desktop1:w-[20%] desktop1:h-[110px] desktop2:w-[15%] desktop2:h-[150px] transition-all duration-700'
             }`}
           >
             <a
-              className="cursor-pointer"
+              className="cursor-pointer w-[100%] h-[80px] desktop1:h-[110px] flex items-center overflow-hidden"
               href="/"
               onClick={() => window.location.reload()}
-              aria-label="recarregar página "
+              aria-label="recarregar página"
             >
               <img
                 src={content.texts.navbar.logo.img}
                 alt={content.texts.navbar.logo.alt}
-                className="w-auto desktop1:hidden"
+                className="desktop1:hidden w-fit max-h-full object-contain flex"
                 width={195}
                 height={93}
                 fetchPriority="high"
@@ -108,7 +108,7 @@ function NavbarNovaTemplate({
               <img
                 src={content.texts.navbar.logo.imgDesktop}
                 alt={content.texts.navbar.logo.alt}
-                className="w-auto hidden desktop1:flex"
+                className="hidden desktop1:flex w-fit max-h-full object-contain"
                 width={350}
                 height={166}
                 fetchPriority="high"

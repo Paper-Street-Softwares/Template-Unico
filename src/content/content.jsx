@@ -129,7 +129,12 @@ const content = {
         </span>
       ),
       SecondPart: <span></span>,
-      subtitle: <p>Cada minuto importa, não deixe para amanhã!</p>,
+      subtitle: (
+        <p>
+          Te ajudamos a suspender o processo, ganhar tempo e defender seu bem
+          legalmente, mesmo que ele já tenha sido levado.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg,
       heroDefaulMobiletImg: heroDefaultMobileImg,
       alt: 'Imagem ilustrativa da Seção Início',
