@@ -76,7 +76,7 @@ function HeroTemplateNovo({
       // textObs = 'text-green-500'
       image = ' border-[8px]'
       bgAlertHero = 'bg-black text-white/60'
-      borderColor = 'border-primaryDark'
+      borderColor = ' border-[color-mix(in_srgb,var(--primaryDark),black_40%)]'
 
       break
 

@@ -115,9 +115,9 @@ export default function Index() {
                 colorMode={colorMode}
                 mapa={false}
                 phone={true}
-                phoneSecond={true}
+                phoneSecond={false}
                 expediente={true}
-                adress={false}
+                adress={true}
                 email={true}
                 emailSecond={false}
                 fraseFooter={true} // frase Google LLC

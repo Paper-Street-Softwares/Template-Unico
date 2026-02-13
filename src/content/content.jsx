@@ -39,14 +39,14 @@ import { FileText } from 'lucide-react'
 const currentYear = new Date().getFullYear()
 
 export const infos = {
-  name: 'A_Definir',
+  name: 'Dr. Sérgio Antonio',
   email: 'contato', // Email desejado pelo cliente
   emailSecundario: 'A_Definir', // Email desejado pelo cliente
-  domain: 'A_Definir', // Sem "www"
+  domain: 'sergioantonioadvocacia.com.br', // Sem "www"
   phone: {
-    ddd: '00',
-    firstPart: '00000', // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: '0000', // Apenas os 4 últimos números
+    ddd: '31',
+    firstPart: '99429', // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: '4125', // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: '00',
@@ -61,10 +61,10 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
+      <p>Rua Maria Amélia Maia,</p>
+      <p>1081, São Bernardo,</p>
+      <p>Belo Horizonte - MG,</p>
+      <p>CEP: 31740-000,</p>
     </div>
   ),
   enderecoSecundario: (
@@ -78,7 +78,7 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>8h às 18h</p>
+      <p>8h às 20h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
