@@ -97,7 +97,7 @@ function CtaNovoTemplate({ colorMode, container }) {
 
             {container && (
               <div
-                className={`rounded-lg p-4 mb-4 flex flex-col items-center gap-4 ${textOpacity}`}
+                className={`rounded-lg p-4 mb-4 flex flex-col items-center gap-2 ${textOpacity}`}
               >
                 {containerList.map((item, index) => (
                   <div

@@ -181,9 +181,9 @@ const content = {
           paragraph: (
             <>
               Mantenha a calma e fique em silêncio, isso é um direito seu e{" "}
-              <strong>não pode ser usado contra você</strong>. O silêncio não é
-              confissão, entre em contato com um especialista agora mesmo. Falar
-              sem orientação pode piorar tudo.
+              <strong>não pode ser usado contra você</strong>. <br /> O silêncio
+              não é confissão, entre em contato com um especialista agora mesmo.
+              Falar sem orientação pode piorar tudo.
             </>
           ),
         },
@@ -195,9 +195,9 @@ const content = {
               <strong>
                 onde ele está custodiado e entre em contato com um Advogado
               </strong>
-              . As primeiras horas são decisivas é nesse momento que se definem
-              medidas como flagrante, fiança, liberdade provisória e audiência
-              de custódia
+              . <br /> As primeiras horas são decisivas é nesse momento que se
+              definem medidas como flagrante, fiança, liberdade provisória e
+              audiência de custódia
             </>
           ),
         },
@@ -205,9 +205,9 @@ const content = {
           title: <>Tem como soltar ele agora?</>,
           paragraph: (
             <>
-              Cada situação exige análise jurídica imediata. O tempo é decisivo:
-              quanto mais rápido agir, maiores as chances de medidas como
-              fiança, liberdade provisória ou relaxamento da prisão.
+              Cada situação exige análise jurídica imediata. <br /> O tempo é
+              decisivo: quanto mais rápido agir, maiores as chances de medidas
+              como fiança, liberdade provisória ou relaxamento da prisão.
             </>
           ),
         },
@@ -216,9 +216,9 @@ const content = {
           paragraph: (
             <>
               Desde o primeiro minuto após a prisão. Cada instante é decisivo e
-              pode impactar diretamente a situação jurídica. Quanto antes houver
-              atuação jurídica, maiores são as chances de proteger direitos e
-              buscar a liberdade.
+              pode impactar diretamente a situação jurídica. <br /> Quanto antes
+              houver atuação jurídica, maiores são as chances de proteger
+              direitos e buscar a liberdade.
             </>
           ),
         },
