@@ -1,8 +1,8 @@
-import React from 'react'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
-import content from '../../content/content.jsx'
+import React from "react";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
+import content from "../../content/content.jsx";
 
 export default function InventarioComparativo({ colorMode }) {
   let text,
@@ -13,44 +13,57 @@ export default function InventarioComparativo({ colorMode }) {
     lineColor,
     textDestaque,
     image,
-    borderT
+    borderT;
 
   switch (colorMode) {
-    case 'light':
-      backgroundMode = 'bg-white'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosPreto'
-      stepNumberBg = 'bg-white'
-      stepNumberText = 'text-primaryDark'
-      lineColor = 'bg-primaryDark/20'
-      textDestaque = 'text-primaryDark'
-      image = ' border-[8px] border-white'
-      borderT = 'border-t-primaryDark'
-      break
-    case 'dark':
-      backgroundMode = 'bg-darkOpacity'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      backgroundMode = 'bg-dark'
-      stepNumberBg = 'bg-dark'
-      stepNumberText = 'text-primaryLight'
-      lineColor = 'bg-primaryLight/20'
-      textDestaque = 'text-primaryLight'
-      image = ' border-[8px] border-borderImage'
-      borderT = 'border-t-primaryLight'
+    case "light":
+      backgroundMode = "bg-white";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosPreto";
+      stepNumberBg = "bg-white";
+      stepNumberText = "text-primaryDark";
+      lineColor = "bg-primaryDark/20";
+      textDestaque = "text-primaryDark";
+      image = " border-[8px] border-white";
+      borderT = "border-t-primaryDark";
+      break;
+    case "dark":
+      backgroundMode = "bg-darkOpacity";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      backgroundMode = "bg-dark";
+      stepNumberBg = "bg-dark";
+      stepNumberText = "text-primaryLight";
+      lineColor = "bg-primaryLight/20";
+      textDestaque = "text-primaryLight";
+      image = " border-[8px] border-borderImage";
+      borderT = "border-t-primaryLight";
 
-      break
-    default:
-      backgroundMode = 'bg-secondary/60'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      backgroundMode = 'bg-secondary/60'
-      stepNumberBg = 'bg-white'
-      stepNumberText = 'text-primaryDark'
-      lineColor = 'bg-primaryDark/20'
-      textDestaque = 'text-primaryDark'
-      image = ' border-[8px] border-white'
-      borderT = 'border-t-primaryDark'
+      break;
+    case "defaultDark":
+      backgroundMode = "bg-secondary/60";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      backgroundMode = "bg-secondary/60";
+      stepNumberBg = "bg-white";
+      stepNumberText = "text-primaryDark";
+      lineColor = "bg-primaryDark/20";
+      textDestaque = "text-primaryDark";
+      image = " border-[8px] border-white";
+      borderT = "border-t-primaryDark";
+      break;
+
+    case "defaultLight":
+      backgroundMode = "bg-darkOpacity";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      backgroundMode = "bg-dark";
+      stepNumberBg = "bg-dark";
+      stepNumberText = "text-primaryLight";
+      lineColor = "bg-primaryLight/20";
+      textDestaque = "text-primaryLight";
+      image = " border-[8px] border-borderImage";
+      borderT = "border-t-primaryLight";
   }
   return (
     <SectionArea data-theme={colorMode} className={`${backgroundMode}`}>
@@ -129,27 +142,32 @@ export default function InventarioComparativo({ colorMode }) {
         </div>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
 /* Item reutilizável */
 function Item({ title, text, colorMode }) {
-  let textOpacity, textDestaque, textTitleColor
+  let textOpacity, textDestaque, textTitleColor;
   switch (colorMode) {
-    case 'light':
-      textTitleColor = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      textDestaque = 'text-primaryDark'
-      break
-    case 'dark':
-      textTitleColor = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      textDestaque = 'text-primaryLight'
-      break
-    default:
-      textTitleColor = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      textDestaque = 'text-primaryDark'
+    case "light":
+      textTitleColor = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      textDestaque = "text-primaryDark";
+      break;
+    case "dark":
+      textTitleColor = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      textDestaque = "text-primaryLight";
+      break;
+    case "defaultDark":
+      textTitleColor = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      textDestaque = "text-primaryDark";
+      break;
+    case "defaultLight":
+      textTitleColor = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      textDestaque = "text-primaryLight";
   }
 
   return (
@@ -157,5 +175,5 @@ function Item({ title, text, colorMode }) {
       <span className={`font-semibold ${textTitleColor}`}>{title}</span>
       <p className={`${textOpacity} mt-1`}>{text}</p>
     </div>
-  )
+  );
 }

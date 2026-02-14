@@ -1,28 +1,34 @@
-import React from 'react'
-import imgIcon from '../../assets/imgs/icons/exclamation.webp'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import React from "react";
+import imgIcon from "../../assets/imgs/icons/exclamation.webp";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 
 function CardsImportants({ title, paragraph, colorMode, className }) {
   //precisa fazer colorMode
-  let bgCircle, bgCard, titleMode, description
+  let bgCircle, bgCard, titleMode, description;
   switch (colorMode) {
-    case 'light':
-      bgCard = 'bg-white'
-      bgCircle = 'bg-terciary'
-      titleMode = 'text-corTitulosPreto'
-      description = 'text-corOutrosTextosPreto'
-      break
-    case 'dark':
-      bgCard = 'bg-black'
-      bgCircle = 'bg-primaryLight'
-      titleMode = 'text-corTitulosBranca'
-      description = 'text-corOutrosTextosBranca'
-      break
-    default:
-      bgCard = 'bg-white'
-      bgCircle = 'bg-primaryLight'
-      titleMode = 'text-corTitulosPreto'
-      description = 'text-corOutrosTextosPreto'
+    case "light":
+      bgCard = "bg-white";
+      bgCircle = "bg-terciary";
+      titleMode = "text-corTitulosPreto";
+      description = "text-corOutrosTextosPreto";
+      break;
+    case "dark":
+      bgCard = "bg-black";
+      bgCircle = "bg-primaryLight";
+      titleMode = "text-corTitulosBranca";
+      description = "text-corOutrosTextosBranca";
+      break;
+    case "defaultDark":
+      bgCard = "bg-white";
+      bgCircle = "bg-primaryLight";
+      titleMode = "text-corTitulosPreto";
+      description = "text-corOutrosTextosPreto";
+      break;
+    case "defaultLight":
+      bgCard = "bg-black";
+      bgCircle = "bg-primaryLight";
+      titleMode = "text-corTitulosBranca";
+      description = "text-corOutrosTextosBranca";
   }
   return (
     <MotionDivDownToUp>
@@ -69,7 +75,7 @@ function CardsImportants({ title, paragraph, colorMode, className }) {
         </div>
       </div>
     </MotionDivDownToUp>
-  )
+  );
 }
 
-export default CardsImportants
+export default CardsImportants;

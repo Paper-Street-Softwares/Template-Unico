@@ -1,34 +1,41 @@
-import React from 'react'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import { Siren, Users, ShieldCheck, Clock, Phone } from 'lucide-react'
-import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
-import ButtonReflexo from '../interactives/ButtonReflexo'
-import content from '../../content/content'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import React from "react";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import { Siren, Users, ShieldCheck, Clock, Phone } from "lucide-react";
+import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
+import ButtonReflexo from "../interactives/ButtonReflexo";
+import content from "../../content/content";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 
 function Speed({ colorMode }) {
-  let backgroundMode, text, textOpacity, textDestaque, cardBg, iconBg
+  let backgroundMode, text, textOpacity, textDestaque, cardBg, iconBg;
   switch (colorMode) {
-    case 'light':
-      backgroundMode = 'bg-terciary/60'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      iconBg = 'bg-white text-primaryDark'
+    case "light":
+      backgroundMode = "bg-terciary/60";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      iconBg = "bg-white text-primaryDark";
 
-      break
-    case 'dark':
-      backgroundMode = 'bg-darkOpacity'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      iconBg = 'bg-darkOpacity text-primaryLight'
+      break;
+    case "dark":
+      backgroundMode = "bg-darkOpacity";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      iconBg = "bg-darkOpacity text-primaryLight";
 
-      break
-    default:
-      backgroundMode = 'bg-secondary/60'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      iconBg = 'bg-white text-primaryDark'
+      break;
+    case "defaultDark":
+      backgroundMode = "bg-secondary/60";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      iconBg = "bg-white text-primaryDark";
+      break;
+
+    case "defaultLight":
+      backgroundMode = "bg-darkOpacity";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      iconBg = "bg-darkOpacity text-primaryLight";
   }
   return (
     <SectionArea className={`${backgroundMode}`}>
@@ -44,18 +51,18 @@ function Speed({ colorMode }) {
               <div className="grid sm:grid-cols-3 gap-8">
                 {[
                   {
-                    text: 'Em poucos dias, conforme o tipo de divórcio',
-                    subtitle: '',
+                    text: "Em poucos dias, conforme o tipo de divórcio",
+                    subtitle: "",
                     icon: Clock,
                   },
                   {
-                    text: 'Sem audiência, na maioria dos casos',
-                    subtitle: '',
+                    text: "Sem audiência, na maioria dos casos",
+                    subtitle: "",
                     icon: Users,
                   },
                   {
-                    text: 'Sem necessidade de comparecimento presencial',
-                    subtitle: '',
+                    text: "Sem necessidade de comparecimento presencial",
+                    subtitle: "",
                     icon: ShieldCheck,
                   },
                   // {
@@ -131,7 +138,7 @@ function Speed({ colorMode }) {
         </section>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default Speed
+export default Speed;

@@ -1,45 +1,52 @@
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
-import { Dialog } from 'primereact/dialog'
-import { ArrowRight, X } from 'lucide-react'
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { Dialog } from "primereact/dialog";
+import { ArrowRight, X } from "lucide-react";
 
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
-import ButtonReflexo from '../interactives/ButtonReflexo'
-import { Button } from '../interactives/ButtonNovoTemplate'
-import content from '../../content/content'
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
+import ButtonReflexo from "../interactives/ButtonReflexo";
+import { Button } from "../interactives/ButtonNovoTemplate";
+import content from "../../content/content";
 
 function TeamSectionNew({ colorMode }) {
-  const [visible, setVisible] = useState(false)
-  const [activeCard, setActiveCard] = useState(null)
+  const [visible, setVisible] = useState(false);
+  const [activeCard, setActiveCard] = useState(null);
 
   const openModal = (cardKey) => {
-    setActiveCard(cardKey)
-    setVisible(true)
-  }
+    setActiveCard(cardKey);
+    setVisible(true);
+  };
 
   const closeModal = () => {
-    setVisible(false)
-    setActiveCard(null)
-  }
+    setVisible(false);
+    setActiveCard(null);
+  };
 
-  let backgroundMode, text, textOpacity, textDestaque, image
+  let backgroundMode, text, textOpacity, textDestaque, image;
 
   switch (colorMode) {
-    case 'dark':
-      backgroundMode = 'bg-darkOpacity'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      textDestaque = 'text-primaryLight'
-      image = 'border-[8px] border-borderImage'
-      break
-    default:
-      backgroundMode = 'bg-white'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      textDestaque = 'text-primaryDark'
-      image = 'border-[8px] border-white'
+    case "dark":
+      backgroundMode = "bg-darkOpacity";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      textDestaque = "text-primaryLight";
+      image = "border-[8px] border-borderImage";
+      break;
+    case "defaultDark":
+      backgroundMode = "bg-white";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      textDestaque = "text-primaryDark";
+      image = "border-[8px] border-white";
+      break;
+    case "defaultLight":
+      backgroundMode = "bg-darkOpacity";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      textDestaque = "text-primaryLight";
+      image = "border-[8px] border-borderImage";
   }
 
   const modalContent = {
@@ -55,7 +62,7 @@ function TeamSectionNew({ colorMode }) {
       title: content.texts.team.cards.card3.name,
       text: content.texts.team.cards.card3.description,
     },
-  }
+  };
 
   return (
     <SectionArea data-theme={colorMode} className={backgroundMode}>
@@ -87,7 +94,7 @@ function TeamSectionNew({ colorMode }) {
               </p> */}
 
               <Button
-                onClick={() => openModal('card1')}
+                onClick={() => openModal("card1")}
                 className={`bg-transparent px-0 uppercase font-bold flex items-center gap-2 border-none ${textDestaque} underline sclae-100 hover:scale-90 duration-500 transition-all`}
               >
                 Saiba mais <ArrowRight size={20} />
@@ -128,7 +135,7 @@ function TeamSectionNew({ colorMode }) {
               </p> */}
 
               <Button
-                onClick={() => openModal('card2')}
+                onClick={() => openModal("card2")}
                 className={`bg-transparent px-0 uppercase font-bold flex items-center gap-2 border-none ${textDestaque} underline sclae-100 hover:scale-90 duration-500 transition-all`}
               >
                 Saiba mais <ArrowRight size={20} />
@@ -169,7 +176,7 @@ function TeamSectionNew({ colorMode }) {
               </p> */}
 
               <Button
-                onClick={() => openModal('card3')}
+                onClick={() => openModal("card3")}
                 className={`bg-transparent px-0 uppercase font-bold flex items-center gap-2 border-none ${textDestaque} underline sclae-100 hover:scale-90 duration-500 transition-all`}
               >
                 Saiba mais <ArrowRight size={20} />
@@ -203,11 +210,11 @@ function TeamSectionNew({ colorMode }) {
             </span>
           }
           headerClassName="pb-3"
-          style={{ width: '50vw' }}
+          style={{ width: "50vw" }}
           breakpoints={{
-            '4000px': '640px',
-            '1024px': '640px',
-            '641px': '85vw',
+            "4000px": "640px",
+            "1024px": "640px",
+            "641px": "85vw",
           }}
         >
           {activeCard && (
@@ -224,7 +231,7 @@ function TeamSectionNew({ colorMode }) {
         </Dialog>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default TeamSectionNew
+export default TeamSectionNew;
