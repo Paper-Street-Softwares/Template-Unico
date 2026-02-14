@@ -22,6 +22,7 @@ import {
   Gavel,
   Home,
   Key,
+  Cctv,
   LucideIdCard,
   Lock,
   MessageSquare,
@@ -39,14 +40,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "A_Definir",
+  name: "Dra. Cássia Freitas",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "A_Definir", // Sem "www"
+  domain: "cassiafreitas.adv.br", // Sem "www"
   phone: {
-    ddd: "00",
-    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0000", // Apenas os 4 últimos números
+    ddd: "31",
+    firstPart: "98645", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "9123", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -121,67 +122,140 @@ const content = {
       ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      miniTag: <>A_definir</>,
-      FirstPart: <span>A_definir</span>,
+      miniTag: <> ESTAMOS DE PLANTÃO - SEJA ATENDIDO AGORA</>,
+      FirstPart: <span>Advogada</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_definir</span>
+        <span className="destaque relative italic font-light">
+          Criminalista
+        </span>
       ),
       SecondPart: <span></span>,
-      subtitle: <p>A_definir</p>,
+      subtitle: (
+        <p>
+          Atuação <strong>URGENTE</strong> em casos de prisão em flagrante,
+          audiência de custódia, Habeas Corpus, liberdade provisória e medidas
+          emergenciais.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Seja atendido agora no WhatsApp</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: <>A_Definir</>,
+        text: (
+          <>
+            A atuação imediata da defesa é decisiva para a proteção da
+            liberdade.
+          </>
+        ),
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
     },
+    emergency: {
+      miniTag: <>Plantão Criminal 24 Horas</>,
+      title: <h1>Atendimento Imediato em Casos Criminais</h1>,
+      subtitle: (
+        <div>
+          <p className="mb-6 font-secondFont">
+            Se você ou um familiar foi preso ou está sendo investigado, o
+            atendimento deve ser imediato. Cada minuto é decisivo para garantir
+            direitos, evitar abusos e preparar a defesa adequada.
+          </p>
+        </div>
+      ),
+      ctaButtonText: <>Falar com Advogada Agora</>,
+    },
     important: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
+      miniTag: <>Atenção</>,
+      title: <>O que é importante saber quando há uma prisão</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Fui preso. Posso ficar calado ou isso piora tudo?</>,
+          paragraph: (
+            <>
+              Mantenha a calma e fique em silêncio, isso é um direito seu e{" "}
+              <strong>não pode ser usado contra você</strong>. O silêncio não é
+              confissão, entre em contato com um especialista agora mesmo. Falar
+              sem orientação pode piorar tudo.
+            </>
+          ),
         },
         card2: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Meu parente foi preso, o que posso fazer?</>,
+          paragraph: (
+            <>
+              Descubra imediatamente{" "}
+              <strong>
+                onde ele está custodiado e entre em contato com um Advogado
+              </strong>
+              . As primeiras horas são decisivas é nesse momento que se definem
+              medidas como flagrante, fiança, liberdade provisória e audiência
+              de custódia
+            </>
+          ),
         },
         card3: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Tem como soltar ele agora?</>,
+          paragraph: (
+            <>
+              Cada situação exige análise jurídica imediata. O tempo é decisivo:
+              quanto mais rápido agir, maiores as chances de medidas como
+              fiança, liberdade provisória ou relaxamento da prisão.
+            </>
+          ),
         },
         card4: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Quanto tempo eu tenho para me defender?</>,
+          paragraph: (
+            <>
+              Desde o primeiro minuto após a prisão. Cada instante é decisivo e
+              pode impactar diretamente a situação jurídica. Quanto antes houver
+              atuação jurídica, maiores são as chances de proteger direitos e
+              buscar a liberdade.
+            </>
+          ),
         },
       },
-      fraseObs: <>A_Definir</>,
-      ctaButtonText: <>A_Definir</>,
+      fraseObs: (
+        <>
+          Cada caso é diferente. Agir rápido e com orientação jurídica pode
+          mudar completamente o rumo do processo.
+        </>
+      ),
+      ctaButtonText: <>Falar agora com uma Advogada criminalista</>,
     },
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
-      Destaque: <span className="italic font-light">A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>Como posso te ajudar</>,
+      FirstPart: <span>Apoio</span>,
+      Destaque: <span className="italic font-light">jurídico imediato</span>,
+      SecondPart: <span>para quem precisa agir sem perder tempo</span>,
+      subtitle: (
+        <>
+          Atuação rápida em situações criminais urgentes, com orientação clara,
+          estratégia jurídica e foco total na proteção dos seus direitos desde o
+          primeiro momento.
+        </>
+      ),
       imgFeatures: imgFeatures,
       alt: <>Imagem ilustrativa da Features</>,
-      titleMessageFeature: <>A_Definir</>,
-      subtitleMessageFeature: <>A_Definir</>,
+      titleMessageFeature: <>Prisão não é o fim.</>,
+      subtitleMessageFeature: <>Defesa imediata pode mudar tudo.</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Defesa Criminal em Processos Penais</>,
+          subtitle: (
+            <>
+              Defesa firme para proteger sua liberdade do início ao fim do
+              processo.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -190,13 +264,17 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Briefcase />,
+          icon: <Shield />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
         card2: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Prisão em Flagrante e Audiência de Custódia</>,
+          subtitle: (
+            <>
+              Atuação imediata quando cada minuto pode mudar o desfecho do caso.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -205,13 +283,18 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <User />,
+          icon: <Cctv />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
         card3: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Inquérito Policial e Investigação Criminal</>,
+          subtitle: (
+            <>
+              Ação jurídica antes da denúncia para evitar acusações que não se
+              sustentam.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -225,8 +308,13 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
         card4: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Defesa em Crimes Específicos</>,
+          subtitle: (
+            <>
+              Tráfico, roubo, violência doméstica e outros crimes tratados com
+              estratégia real.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -240,8 +328,13 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
         card5: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Atendimento Direto com Especialistas</>,
+          subtitle: (
+            <>
+              Suporte jurídico completo quando o problema ultrapassa a esfera
+              criminal.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -255,8 +348,13 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
         card6: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Consultoria Jurídica</>,
+          subtitle: (
+            <>
+              Orientação estratégica para evitar erros que viram processos ou
+              prisões.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -269,59 +367,8 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
-        card7: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Shield />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-        card8: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-        card9: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <FileText />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
       },
-      ctaButtonText: <>A_Definir</>,
-    },
-    emergency: {
-      minitag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Preciso de defesa agora</>,
     },
     maps: {
       minitag: <>A_Definir</>,
@@ -334,13 +381,33 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
-      subtitle: <>A_Definir</>,
-      paragraph: <div>A_Definir</div>,
-      ctaButtonText: <>A_Definir</>,
+      miniTag: <>QUEM É A DRA. CÁSSIA FREITAS</>,
+      FirstPart: <span> Minha</span>,
+      Destaque: <span className="italic font-light"> trajetória</span>,
+      SecondPart: <span></span>,
+      subtitle: (
+        <>
+          Compromisso com uma atuação técnica, ética e presente desde o primeiro
+          contato.
+        </>
+      ),
+      paragraph: (
+        <div>
+          Sou <strong>Dra. Cássia Freitas</strong>, Advogada com atuação
+          dedicada ao Direito Penal e à defesa dos direitos fundamentais.
+          Escolhi a advocacia criminal por entender que, nos momentos mais
+          críticos, o que faz diferença é uma atuação técnica, presente e
+          estrategicamente conduzida.
+          <br />
+          <br />
+          Meu trabalho é pautado pela análise cuidadosa de cada caso,
+          comunicação clara e decisões conscientes desde o primeiro contato.
+          Atuo com responsabilidade e comprometimento para que cada cliente
+          saiba exatamente onde está, quais são os riscos e quais caminhos podem
+          ser seguidos.
+        </div>
+      ),
+      ctaButtonText: <>Falar diretamente com a Advogada</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
@@ -378,50 +445,77 @@ const content = {
       // },
     },
     ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>FALE CONOSCO</>,
+      title: <h1>Pronto para iniciar sua estratégia jurídica?</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Meu foco é total na sua demanda e na clareza do seu planejamento
+            legal.
+          </p>
         </div>
       ),
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Fale com a gente agora mesmo</>,
 
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
+      miniTag: <>COMO ATUAMOS NO SEU CASO CRIMINAL</>,
+      FirstPart: <span> Atuação estratégica para</span>,
+      Destaque: <span className="italic font-light"> proteger</span>,
+      SecondPart: <span>seus direitos e sua liberdade</span>,
 
-      subtitle: <>A_Definir</>,
+      subtitle: <></>,
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Análise imediata da situação criminal</>,
+          cardDescription: (
+            <>
+              Analisamos o que já aconteceu no caso, como prisão, flagrante,
+              intimação ou investigação, identificando riscos, ilegalidades e as
+              melhores medidas a serem tomadas desde o início.
+            </>
+          ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Medidas urgentes para reduzir riscos imediatos</>,
+          cardDescription: (
+            <>
+              Com base na análise, adotamos as providências jurídicas cabíveis
+              para tentar garantir a liberdade, evitar prisões desnecessárias e
+              corrigir falhas que possam prejudicar o processo.
+            </>
+          ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Definição da melhor estratégia de defesa</>,
+          cardDescription: (
+            <>
+              Traçamos uma estratégia clara para o caso, avaliando provas,
+              depoimentos e possibilidades legais, sempre focando na proteção
+              dos direitos e na redução de danos ao longo do processo.
+            </>
+          ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Acompanhamento próximo e comunicação clara</>,
+          cardDescription: (
+            <>
+              Você e sua família acompanham cada etapa com explicações
+              objetivas, prazos definidos e orientação constante, sabendo
+              exatamente o que está sendo feito e o que esperar.
+            </>
+          ),
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar diretamente comigo</>,
     },
 
     blog: {
@@ -461,26 +555,70 @@ const content = {
         },
       ],
     },
+    diferences: {
+      miniTag: <>Diferenciais do Atendimento</>,
+      title: <>Atendimento Criminal Estratégico e Imediato</>,
+      subtitle: (
+        <>
+          Atendimento direto com Advogada criminalista experiente, com atuação
+          estratégica desde a fase policial até o processo judicial.
+        </>
+      ),
+    },
     faq: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>TIRE SUAS DÚVIDAS</>,
+      title: <>Perguntas Frequentes</>,
+      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Como funciona a contratação e o atendimento?</>,
+          answer: (
+            <>
+              O primeiro passo é o contato direto via WhatsApp para agendamento
+              de uma consulta (presencial ou online). Analisaremos os fatos
+              imediatamente para definir a viabilidade da defesa e o
+              planejamento estratégico necessário.
+            </>
+          ),
         },
         question2: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Quanto tempo dura um processo criminal?</>,
+          answer: (
+            <>
+              O tempo é variável e depende do rito processual (comum, júri,
+              especial) e da agilidade do Judiciário. Durante a análise do caso,
+              apresentamos um panorama das etapas prováveis e trabalhamos para
+              que não haja excesso de prazo na tramitação.
+            </>
+          ),
         },
         question3: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Quais documentos são essenciais para a defesa?</>,
+          answer: (
+            <>
+              É fundamental apresentar o Boletim de Ocorrência, cópia do
+              Inquérito Policial (se houver), documentos pessoais e qualquer
+              prova que ajude a desconstruir a acusação (fotos, mensagens, lista
+              de testemunhas). Caso você não tenha o processo, nós realizamos a
+              busca nos sistemas judiciais.
+            </>
+          ),
         },
         question4: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: (
+            <>
+              O escritório atua com consultoria preventiva (Criminal
+              Compliance)?
+            </>
+          ),
+          answer: (
+            <>
+              Sim. Atuamos de forma consultiva para empresas e indivíduos,
+              visando mitigar riscos de investigações, garantir a conformidade
+              com a lei e evitar que condutas do dia a dia sejam interpretadas
+              como ilícitos penais.
+            </>
+          ),
         },
       },
 

@@ -3,9 +3,9 @@ import { createContext, useContext, useState } from "react";
 const ColorModeContext = createContext(null);
 
 export function ColorModeProvider({ children }) {
-  const [colorMode, setColorMode] = useState("dark"); // defaultDark, defaultLight, light, dark
+  const [colorMode, setColorMode] = useState("defaultDark"); // defaultDark, defaultLight, light, dark
 
-  const [whatsAppColor] = useState(false); // ativa cor do WhatsApp
+  const [whatsAppColor] = useState(true); // ativa cor do WhatsApp
   const [showGlobalButton] = useState(false); // ativa as os botões e caixa de alerta
   const [enableClickEvent, setEnableClickEvent] = useState(true); // Dispara evento de clique
 
@@ -26,7 +26,7 @@ export function ColorModeProvider({ children }) {
 }
 
 export function ButtonsLps() {
-  const [showGlobalButtonsLps, setShowGlobalButtonsLps] = useState(false); // ativa as os botões da lps
+  const [showGlobalButtonsLps, setShowGlobalButtonsLps] = useState(true); // ativa as os botões da lps
 
   return {
     showGlobalButtonsLps,

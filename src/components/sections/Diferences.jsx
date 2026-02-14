@@ -3,12 +3,13 @@ import { CheckCircle2, ShieldCheck, Zap, UserCheck, Clock } from "lucide-react";
 import SectionArea from "../sectionElements/SectionArea.jsx";
 import SectionWrapper from "../sectionElements/SectionWrapper.jsx";
 import { Check } from "lucide-react";
+import content from "../../content/content.jsx";
 
 export function Diferences({ colorMode }) {
   let backgroundMode, text, textOpacity, textDestaque, bgCards, borderSVG;
   switch (colorMode) {
     case "light":
-      backgroundMode = "bg-secondary/60";
+      backgroundMode = "bg-transparent";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       textDestaque = "text-primaryLight";
@@ -17,7 +18,7 @@ export function Diferences({ colorMode }) {
 
       break;
     case "dark":
-      backgroundMode = "bg-darkOpacity";
+      backgroundMode = "bg-transparent";
       text = "text-corTitulosBranca";
       textOpacity = "text-corOutrosTextosBranca";
       textDestaque = "text-primaryLight";
@@ -26,15 +27,15 @@ export function Diferences({ colorMode }) {
 
       break;
     case "defaultDark":
-      backgroundMode = "bg-secondary";
+      backgroundMode = "bg-transparent";
       text = "text-corTitulosBranca";
       textOpacity = "text-corOutrosTextosBranca";
-      textDestaque = "text-primaryDark";
-      bgCards = "bg-primaryDark";
-      borderSVG = "border-primaryDark";
+      textDestaque = "text-white";
+      bgCards = "bg-primaryLight";
+      borderSVG = "border-white";
       break;
     case "defaultLight":
-      backgroundMode = "bg-darkOpacity";
+      backgroundMode = "bg-transparent";
       text = "text-corTitulosBranca";
       textOpacity = "text-corOutrosTextosBranca";
       textDestaque = "text-primaryLight";
@@ -68,7 +69,7 @@ export function Diferences({ colorMode }) {
       <SectionWrapper>
         <div className="container mx-auto relative z-10">
           <div className="max-w-5xl mx-auto">
-            <div className="bg-black border-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-2xl">
+            <div className="bg-primaryDark border-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-2xl">
               <div className="p-8 md:p-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                   <div className="space-y-6 text-left">
@@ -78,7 +79,7 @@ export function Diferences({ colorMode }) {
                       transition={{ duration: 0.8, ease: "easeOut" }}
                       className={`text-sm font-bold tracking-wides uppercase block font-secondFont ${textDestaque}`}
                     >
-                      Diferenciais do Atendimento
+                      {content.texts.diferences.miniTag}
                     </motion.div>
                     <motion.h2
                       initial={{ opacity: 0, x: -50 }}
@@ -86,7 +87,7 @@ export function Diferences({ colorMode }) {
                       transition={{ duration: 0.8, ease: "easeOut" }}
                       className={`text-3xl md:text-4xl lg:text-5xl font-mainFont font-bold leading-tight ${text}`}
                     >
-                      Atendimento Criminal Estratégico e Imediato
+                      {content.texts.diferences.title}
                     </motion.h2>
                     <motion.p
                       initial={{ opacity: 0, x: -50 }}
@@ -94,9 +95,7 @@ export function Diferences({ colorMode }) {
                       transition={{ duration: 0.8, ease: "easeOut" }}
                       className={`text-lg leading-relaxed border-l-2 ${borderSVG} font-secondFont pl-6 ${textOpacity}`}
                     >
-                      Atendimento direto com Advogado criminalista experiente,
-                      com atuação estratégica desde a fase policial até o
-                      processo judicial.
+                      {content.texts.diferences.subtitle}
                     </motion.p>
                   </div>
 
