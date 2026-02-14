@@ -1,85 +1,77 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import ButtonReflexo from '../interactives/ButtonReflexo'
-import content from '../../content/content'
-import { whatsAppThemes } from '../../context/UseContextArchive'
-import { Phone } from 'lucide-react'
-import WhatsappForm from '../interactives/WhatsappForm'
-import FormAndAdress from '../interactives/Forms/FormAndAdress'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
-import { Check } from 'lucide-react'
+import React from "react";
+import { motion } from "framer-motion";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import ButtonReflexo from "../interactives/ButtonReflexo";
+import content from "../../content/content";
+import { whatsAppThemes } from "../../context/UseContextArchive";
+import { Phone } from "lucide-react";
+import WhatsappForm from "../interactives/WhatsappForm";
+import FormAndAdress from "../interactives/Forms/FormAndAdress";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import { Check } from "lucide-react";
 
 function CtaNovoTemplate({ colorMode, container }) {
   // Classes dinâmicas conforme colorMode
-  let text, textOpacity, backgroundMode, miniTagCtaDark, textDestaque
+  let text, textOpacity, backgroundMode, miniTagCtaDark, textDestaque;
 
   switch (colorMode) {
-    case 'light':
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      textDestaque = 'text-primaryDark'
-      backgroundMode = 'bg-transparent'
-      miniTagCtaDark = 'text-primaryDark'
-      break
-    case 'dark':
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corTitulosBranca/60'
-      textDestaque = 'text-primaryLight'
-      backgroundMode = 'bg-transparent'
-      miniTagCtaDark = 'text-primaryLight'
-      break
-    case 'defaultDark':
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corTitulosBranca/60'
-      textDestaque = 'text-primaryLight'
-      backgroundMode = 'bg-transparent'
-      miniTagCtaDark = 'text-primaryLight'
-      break
+    case "light":
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      textDestaque = "text-primaryDark";
+      backgroundMode = "bg-transparent";
+      miniTagCtaDark = "text-primaryDark";
+      break;
+    case "dark":
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corTitulosBranca/60";
+      textDestaque = "text-primaryLight";
+      backgroundMode = "bg-transparent";
+      miniTagCtaDark = "text-primaryLight";
+      break;
+    case "defaultDark":
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corTitulosBranca/60";
+      textDestaque = "text-primaryLight";
+      backgroundMode = "bg-transparent";
+      miniTagCtaDark = "text-primaryLight";
+      break;
 
-    case 'defaultLight':
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      textDestaque = 'text-primaryDark'
-      backgroundMode = 'bg-transparent'
-      miniTagCtaDark = 'text-primaryDark'
+    case "defaultLight":
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      textDestaque = "text-primaryDark";
+      backgroundMode = "bg-transparent";
+      miniTagCtaDark = "text-primaryDark";
   }
 
   const containerList = [
     {
       icon: <Check className={` text-white`} />,
       text: (
-        <>
-          {' '}
-          Análise imediata do seu caso e da possibilidade de suspender ou
-          reverter a apreensão
-        </>
+        <> Dedicação total para traçar a viabilidade e os riscos do seu caso</>
+      ),
+    },
+    {
+      icon: <Check className={` text-white`} />,
+      text: (
+        <> Detalhamento técnico da viabilidade, riscos e etapas necessárias</>
       ),
     },
     {
       icon: <Check className={` text-white`} />,
       text: (
         <>
-          {' '}
-          Avaliação do contrato para identificar juros abusivos e falhas legais
+          Atualizações transparentes sobre o andamento do seu caso em tempo real
         </>
       ),
     },
     {
       icon: <Check className={` text-white`} />,
-      text: <>Orientação clara sobre prazos, riscos e próximos passos</>,
+      text: <>Diligência direta de todo o processo no INSS</>,
     },
-    {
-      icon: <Check className={` text-white`} />,
-      text: (
-        <>
-          Acompanhamento transparente e atuação responsável em todas as fases do
-          processo
-        </>
-      ),
-    },
-  ]
+  ];
 
   return (
     <SectionArea className={`relative z-0 ${backgroundMode}`}>
@@ -105,12 +97,12 @@ function CtaNovoTemplate({ colorMode, container }) {
 
             {container && (
               <div
-                className={`rounded-lg p-4 mb-4 flex flex-col items-center gap-4 ${textOpacity}`}
+                className={`rounded-lg p-4 mb-4 flex flex-col items-center gap-2 ${textOpacity}`}
               >
                 {containerList.map((item, index) => (
                   <div
                     key={index}
-                    className="font-secondFont flex gap-2 items-start w-full justify-start tablet1:justify-start text-start desktop1:text-start"
+                    className="font-secondFont flex gap-2 items-start w-full justify-center tablet1:justify-center text-center desktop1:text-start"
                   >
                     <span className={` bg-primaryDark rounded-full p-0.5`}>
                       {item.icon}
@@ -156,7 +148,7 @@ function CtaNovoTemplate({ colorMode, container }) {
         </section>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default CtaNovoTemplate
+export default CtaNovoTemplate;

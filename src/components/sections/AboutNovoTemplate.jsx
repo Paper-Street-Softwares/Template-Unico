@@ -1,27 +1,27 @@
-import { Phone } from 'lucide-react'
-import React, { useState } from 'react'
-import { Dialog } from 'primereact/dialog'
-import content from '../../content/content'
-import SectionArea from '../sectionElements/SectionArea'
-import ButtonReflexo from '../interactives/ButtonReflexo'
-import { ArrowRight, CheckCircle2, X } from 'lucide-react'
+import { Phone } from "lucide-react";
+import React, { useState } from "react";
+import { Dialog } from "primereact/dialog";
+import content from "../../content/content";
+import SectionArea from "../sectionElements/SectionArea";
+import ButtonReflexo from "../interactives/ButtonReflexo";
+import { ArrowRight, CheckCircle2, X } from "lucide-react";
 import {
   ButtonsLps,
   defaultButtonThemes,
-} from '../../context/UseContextArchive'
-import { Button } from '../interactives/ButtonNovoTemplate'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
-import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
+} from "../../context/UseContextArchive";
+import { Button } from "../interactives/ButtonNovoTemplate";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
 
 function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
-  const [visible, setVisible] = useState(false)
-  const [modalTitle, setModalTitle] = useState('')
+  const [visible, setVisible] = useState(false);
+  const [modalTitle, setModalTitle] = useState("");
 
   const onClick = () => {
-    setModalTitle(content.texts.about.title)
-    setVisible(true)
-  }
+    setModalTitle(content.texts.about.title);
+    setVisible(true);
+  };
 
   // Definindo classes conforme colorMode
   let backgroundMode,
@@ -32,56 +32,56 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
     buttonBg,
     textDestaque,
     image,
-    textOpacityModal
+    textOpacityModal;
 
   switch (colorMode) {
-    case 'light':
-      backgroundMode = 'bg-transparent'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      textOpacityModal = 'text-corOutrosTextosPreto'
-      textDestaque = 'text-primaryDark'
-      cardBg = 'bg-white/10'
-      iconBg = 'bg-primaryDark/10 text-primaryDark'
-      buttonBg = 'bg-primaryDark'
-      image = ' border-[8px] border-white'
-      break
-    case 'dark':
-      backgroundMode = 'bg-transparent'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      textOpacityModal = 'text-corOutrosTextosBranca'
-      textDestaque = 'text-primaryLight'
-      cardBg = 'bg-gray-800/20'
-      iconBg = 'bg-primaryLight/20 text-primaryLight'
-      buttonBg = 'bg-primaryLight'
-      image = ' border-[8px] border-borderImage'
-      break
-    case 'defaultDark':
-      backgroundMode = 'bg-transparent'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      textOpacityModal = 'text-corOutrosPreto'
-      textDestaque = 'text-primaryDark'
-      cardBg = 'bg-white/10'
-      iconBg = 'bg-primaryDark/10 text-primaryDark'
-      buttonBg = 'bg-primaryDark'
-      image = ' border-[8px] border-white'
-      break
-    case 'defaultLight':
-      backgroundMode = 'bg-transparent'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosBranca'
-      textOpacityModal = 'text-corOutrosPreto'
-      textDestaque = 'text-white'
-      cardBg = 'bg-white/10'
-      iconBg = 'bg-primaryDark/10 text-primaryDark'
-      buttonBg = 'bg-primaryDark'
+    case "light":
+      backgroundMode = "bg-transparent";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      textOpacityModal = "text-corOutrosTextosPreto";
+      textDestaque = "text-primaryDark";
+      cardBg = "bg-white/10";
+      iconBg = "bg-primaryDark/10 text-primaryDark";
+      buttonBg = "bg-primaryDark";
+      image = " border-[8px] border-white";
+      break;
+    case "dark":
+      backgroundMode = "bg-transparent";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      textOpacityModal = "text-corOutrosTextosBranca";
+      textDestaque = "text-primaryLight";
+      cardBg = "bg-gray-800/20";
+      iconBg = "bg-primaryLight/20 text-primaryLight";
+      buttonBg = "bg-primaryLight";
+      image = " border-[8px] border-borderImage";
+      break;
+    case "defaultDark":
+      backgroundMode = "bg-transparent";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      textOpacityModal = "text-corOutrosPreto";
+      textDestaque = "text-primaryDark";
+      cardBg = "bg-white/10";
+      iconBg = "bg-primaryDark/10 text-primaryDark";
+      buttonBg = "bg-primaryDark";
+      image = " border-[8px] border-white";
+      break;
+    case "defaultLight":
+      backgroundMode = "bg-transparent";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosBranca";
+      textOpacityModal = "text-corOutrosPreto";
+      textDestaque = "text-white";
+      cardBg = "bg-white/10";
+      iconBg = "bg-primaryDark/10 text-primaryDark";
+      buttonBg = "bg-primaryDark";
       image =
-        ' border-[8px] border-[color-mix(in_srgb,var(--primaryDark),black_60%)]'
+        " border-[8px] border-[color-mix(in_srgb,var(--primaryDark),black_60%)]";
   }
 
-  const { showGlobalButtonsLps } = ButtonsLps()
+  const { showGlobalButtonsLps } = ButtonsLps();
 
   return (
     <SectionArea
@@ -132,12 +132,22 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                     <div className="space-y-4">
                       {[
                         {
-                          title: 'Atendimento Personalizado',
-                          desc: 'Cada caso de busca e apreensão é analisado de forma individual, com estratégia jurídica sob medida.',
+                          title: <>Defesa estratégica desde a primeira hora</>,
+                          desc: (
+                            <>
+                              Atuação imediata para proteger sua liberdade em
+                              cada decisão do caso.
+                            </>
+                          ),
                         },
                         {
-                          title: 'Transparência Total ',
-                          desc: 'Você entende o que está acontecendo e acompanha cada etapa do processo com clareza.',
+                          title: <>Transparência Real</>,
+                          desc: (
+                            <>
+                              Você sabe exatamente o que pode acontecer, os
+                              riscos envolvidos e os próximos passos.
+                            </>
+                          ),
                         },
                       ].map((item, idx) => (
                         <div key={idx} className="flex items-start gap-4">
@@ -178,7 +188,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                         link={content.texts.links.ctaWhatsapp}
                         label={content.texts.about.ctaButtonText}
                         bgClass={
-                          colorMode === 'defaultDark' || colorMode === 'light'
+                          colorMode === "defaultDark" || colorMode === "light"
                             ? defaultButtonThemes.light
                             : defaultButtonThemes.dark
                         }
@@ -201,7 +211,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
               <MotionDivDownToUp
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
                 className="relative w-full mt-4 tablet1:mt-8 desktop1:mt-0 m-auto overflow-visible mb-10 desktop1:mb-0"
               >
                 <div className="relative rounded-3xl shadow-2xl ring-1 ring-black/5">
@@ -254,26 +264,26 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
 
           {/* Modal */}
           <Dialog
-            className={`font-secondFont p-4 rounded-md ${colorMode === 'dark' ? 'bg-darkOpacity' : 'bg-white'}`}
+            className={`font-secondFont p-4 rounded-md ${colorMode === "dark" ? "bg-darkOpacity" : "bg-white"}`}
             closeIcon={
               <X
                 size={20}
-                className={colorMode === 'dark' ? 'text-white' : 'text-black'}
+                className={colorMode === "dark" ? "text-white" : "text-black"}
               />
             }
             header={
               <span className={`font-secondFont px-4 ${text}`}>
-                {content.texts.about.FirstPart} {content.texts.about.Destaque}{' '}
+                {content.texts.about.FirstPart} {content.texts.about.Destaque}{" "}
                 {content.texts.about.SecondPart}
               </span>
             }
             visible={visible}
             onHide={() => setVisible(false)}
-            style={{ width: '50vw' }}
+            style={{ width: "50vw" }}
             breakpoints={{
-              '4000px': '641px',
-              '1024px': '641px',
-              '641px': '85vw',
+              "4000px": "641px",
+              "1024px": "641px",
+              "641px": "85vw",
             }}
           >
             <div className="text-paragraph3 px-4 pb-4">
@@ -295,7 +305,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                 link={content.texts.links.ctaWhatsapp}
                 label={content.texts.navbar.ctaButtonText}
                 bgClass={
-                  colorMode === 'defaultDark' || colorMode === 'defaultLight'
+                  colorMode === "defaultDark" || colorMode === "defaultLight"
                     ? defaultButtonThemes.light
                     : defaultButtonThemes.dark
                 }
@@ -306,7 +316,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
         </section>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default AboutNovoTemplate
+export default AboutNovoTemplate;

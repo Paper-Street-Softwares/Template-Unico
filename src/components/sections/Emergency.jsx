@@ -1,36 +1,44 @@
-import React from 'react'
-import { AlertTriangle, Phone } from 'lucide-react'
-import ButtonReflexo from '../interactives/ButtonReflexo'
-import content from '../../content/content'
+import React from "react";
+import { AlertTriangle, Phone } from "lucide-react";
+import ButtonReflexo from "../interactives/ButtonReflexo";
+import content from "../../content/content";
 
 function Emergency({ colorMode }) {
-  let backgroundMode, text, textOpacity, textDestaque, bgCards, borderSVG
+  let backgroundMode, text, textOpacity, textDestaque, bgCards, borderSVG;
   switch (colorMode) {
-    case 'light':
-      backgroundMode = 'bg-secondary/60'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      textDestaque = 'text-primaryLight'
-      bgCards = 'bg-primaryDark'
-      borderSVG = 'border-primaryDark'
+    case "light":
+      backgroundMode = "bg-secondary/60";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      textDestaque = "text-primaryLight";
+      bgCards = "bg-primaryDark";
+      borderSVG = "border-primaryDark";
 
-      break
-    case 'dark':
-      backgroundMode = 'bg-darkOpacity'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      textDestaque = 'text-primaryLight'
-      bgCards = 'bg-primaryLight'
-      borderSVG = 'border-primaryLight'
+      break;
+    case "dark":
+      backgroundMode = "bg-darkOpacity";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      textDestaque = "text-primaryLight";
+      bgCards = "bg-primaryLight";
+      borderSVG = "border-primaryLight";
 
-      break
-    default:
-      backgroundMode = 'bg-secondary'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      textDestaque = 'text-primaryDark'
-      bgCards = 'bg-primaryDark'
-      borderSVG = 'border-primaryDark'
+      break;
+    case "defaultDark":
+      backgroundMode = "bg-secondary";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      textDestaque = "text-primaryDark";
+      bgCards = "bg-primaryDark";
+      borderSVG = "border-primaryDark";
+      break;
+    case "defaultLight":
+      backgroundMode = "bg-darkOpacity";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      textDestaque = "text-primaryLight";
+      bgCards = "bg-primaryLight";
+      borderSVG = "border-primaryLight";
   }
   return (
     <div>
@@ -49,7 +57,7 @@ function Emergency({ colorMode }) {
                 <div className="flex items-center gap-2 mb-1">
                   <AlertTriangle className="h-5 w-5 text-red-800 sm:hidden" />
                   <span className="text-red-700 font-bold tracking-wider text-sm uppercase">
-                    {content.texts.emergency.minitag}
+                    {content.texts.emergency.miniTag}
                   </span>
                 </div>
                 <h1 className={`text-xl md:text-2xl font-bold ${text} mb-2`}>
@@ -57,7 +65,6 @@ function Emergency({ colorMode }) {
                 </h1>
                 <p
                   className={`text-sm md:text-base max-w-2xl leading-relaxed ${text}`}
-                  //para site de cliente específico deixar copy totalmente preto
                 >
                   {content.texts.emergency.subtitle}
                 </p>
@@ -68,7 +75,7 @@ function Emergency({ colorMode }) {
               <ButtonReflexo
                 icon={<Phone width={20} />}
                 link={`tel:${content.texts.infos.phone}`}
-                label="Emergência? Ligue agora!"
+                label={content.texts.emergency.ctaButtonText}
                 colorMode={colorMode}
                 bgClass="bg-red-800"
                 className="text-white shadow-red-500/80"
@@ -78,7 +85,7 @@ function Emergency({ colorMode }) {
         </div>
       </section>
     </div>
-  )
+  );
 }
 
-export default Emergency
+export default Emergency;
