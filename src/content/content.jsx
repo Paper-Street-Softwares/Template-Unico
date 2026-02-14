@@ -133,8 +133,8 @@ const content = {
       subtitle: (
         <p>
           Atuação <strong>URGENTE</strong> em casos de prisão em flagrante,
-          audiência de custódia, Habeas Corpus, liberdade provisória e medidas
-          emergenciais.
+          audiência de custódia, <i>Habeas Corpus</i>, liberdade provisória e
+          medidas emergenciais.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
