@@ -48,28 +48,40 @@ function CtaNovoTemplate({ colorMode, container }) {
 
   const containerList = [
     {
-      icon: <Check className={` text-white`} />,
-      text: (
-        <> Dedicação total para traçar a viabilidade e os riscos do seu caso</>
-      ),
-    },
-    {
-      icon: <Check className={` text-white`} />,
-      text: (
-        <> Detalhamento técnico da viabilidade, riscos e etapas necessárias</>
-      ),
-    },
-    {
-      icon: <Check className={` text-white`} />,
+      icon: <Check className={` text-primaryLight`} />,
       text: (
         <>
-          Atualizações transparentes sobre o andamento do seu caso em tempo real
+          {" "}
+          Entender se uma landing page faz sentido para a sua área do Direito
         </>
       ),
     },
     {
-      icon: <Check className={` text-white`} />,
-      text: <>Diligência direta de todo o processo no INSS</>,
+      icon: <Check className={` text-primaryLight`} />,
+      text: <> Avaliar se existe demanda real e qualificada pelo seu serviço</>,
+    },
+    {
+      icon: <Check className={` text-primaryLight`} />,
+      text: (
+        <>
+          Ter clareza sobre o que pode e o que não pode ser feito dentro das
+          normas da OAB
+        </>
+      ),
+    },
+    {
+      icon: <Check className={` text-primaryLight`} />,
+      text: (
+        <>Evitar investimentos sem estratégia ou decisões tomadas no impulso</>
+      ),
+    },
+    {
+      icon: <Check className={` text-primaryLight`} />,
+      text: (
+        <>
+          Tomar uma decisão mais segura antes de qualquer compromisso comercial
+        </>
+      ),
     },
   ];
 
@@ -104,9 +116,7 @@ function CtaNovoTemplate({ colorMode, container }) {
                     key={index}
                     className="font-secondFont flex gap-2 items-start w-full justify-center tablet1:justify-center text-center desktop1:text-start"
                   >
-                    <span className={` bg-primaryDark rounded-full p-0.5`}>
-                      {item.icon}
-                    </span>
+                    <span className={` rounded-full p-0.5`}>{item.icon}</span>
                     <p className={`${textOpacity}`}>{item.text}</p>
                   </div>
                 ))}

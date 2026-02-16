@@ -21,11 +21,11 @@ export default {
     extend: {
       colors: {
         // Principais
-        primaryLight: "#FFF9BA",
-        primaryDark: "#430E16",
-        secondary: "#E9E0E0",
-        terciary: "#F7F1F1",
-        quartenary: "#FCFAFA",
+        primaryLight: "#FACC15",
+        primaryDark: "#725E0D",
+        secondary: "#E9E7E0",
+        terciary: "#F7F6F1",
+        quartenary: "#FCFCFA",
         borderImage: "#292929",
 
         // Copys

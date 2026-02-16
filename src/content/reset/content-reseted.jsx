@@ -326,6 +326,43 @@ const content = {
       },
       ctaButtonText: <>A_Definir</>,
     },
+    cardsSection: {
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
+      cards: {
+        card1: {
+          title: <>A_Definir</>,
+          icon: <ChartNoAxesCombined />,
+        },
+        card2: {
+          title: <>A_Definir</>,
+          icon: <Hourglass />,
+        },
+        card3: {
+          title: <>A_Definir</>,
+          icon: <Brain />,
+        },
+        card4: {
+          title: <>A_Definir</>,
+          icon: <BriefcaseBusiness />,
+        },
+        card5: {
+          title: <>A_Definir</>,
+          icon: <Scale />,
+        },
+      },
+      fraseText: (
+        <>
+          <p>Indicação é importante.</p> <br />
+          <p>
+            Mas indicação{" "}
+            <span className="font-bold">não é estratégia de crescimento</span>.
+          </p>
+        </>
+      ),
+      ctaButtonText: "Quero uma análise do meu escritório",
+    },
     maps: {
       minitag: <>A_Definir</>,
       title: <>A_Definir</>,
@@ -463,6 +500,11 @@ const content = {
           name: "A_Definir",
         },
       ],
+    },
+    diferences: {
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
     },
     faq: {
       miniTag: <>A_Definir</>,

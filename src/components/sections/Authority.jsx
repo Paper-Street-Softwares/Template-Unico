@@ -58,18 +58,11 @@ function Authority({ colorMode }) {
         </div>
 
         <MotionDivDownUp>
-          <p
-            className={`flex justify-center font-secondFont text-center w-full my-12 ${textOpacity}`}
-          >
-            {content.texts.authority.fraseObs}
-          </p>
-        </MotionDivDownUp>
-
-        <MotionDivDownUp>
           <ButtonReflexo
             label={content.texts.authority.ctaButtonText}
             icon={content.texts.svgs.wpp}
             link={content.texts.links.ctaWhatsapp}
+            className={` my-12`}
           />
         </MotionDivDownUp>
       </SectionWrapper>
