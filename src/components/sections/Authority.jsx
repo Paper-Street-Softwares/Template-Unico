@@ -62,7 +62,7 @@ function Authority({ colorMode }) {
             label={content.texts.authority.ctaButtonText}
             icon={content.texts.svgs.wpp}
             link={content.texts.links.ctaWhatsapp}
-            className={` my-12`}
+            className={`clickevent my-12`}
           />
         </MotionDivDownUp>
       </SectionWrapper>
