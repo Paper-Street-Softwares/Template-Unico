@@ -1,6 +1,7 @@
 import React from "react";
 import { AlertTriangle, Phone } from "lucide-react";
 import ButtonReflexo from "../interactives/ButtonReflexo";
+import ButtonAlert from "../interactives/ButtonAlert";
 import content from "../../content/content";
 
 function Emergency({ colorMode }) {
@@ -19,7 +20,7 @@ function Emergency({ colorMode }) {
       textDestaque = "text-primaryLight";
       bgSvg = "bg-primaryDark";
       borderSVG = "border-primaryDark";
-      textSvg = "text-red-500";
+      textSvg = "text-red-800 ";
 
       break;
     case "dark":
@@ -29,17 +30,17 @@ function Emergency({ colorMode }) {
       textDestaque = "text-primaryLight";
       bgSvg = "bg-primaryLight";
       borderSVG = "border-primaryLight";
-      textSvg = "text-red-500";
+      textSvg = "text-red-800 ";
 
       break;
     case "defaultDark":
       backgroundMode = "bg-secondary";
-      text = "text-corTitulosBranca";
-      textOpacity = "text-corOutrosTextosBranca";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
       textDestaque = "text-primaryDark";
       bgSvg = "bg-primaryDark";
-      borderSVG = "border-primaryDark";
-      textSvg = "text-red-500";
+      borderSVG = "bg-red-500/20 text-red-500 border border-red-500/20 ";
+      textSvg = "text-red-800 ";
       break;
     case "defaultLight":
       backgroundMode = "bg-darkOpacity";
@@ -48,11 +49,11 @@ function Emergency({ colorMode }) {
       textDestaque = "text-primaryLight";
       bgSvg = "bg-primaryLight";
       borderSVG = "border-primaryLight";
-      textSvg = "text-red-500";
+      textSvg = "text-red-800 ";
   }
   return (
     <div>
-      <section className="relative py-8 bg-red-700/70 border-y border-red-900/30 overflow-hidden font-secondFont">
+      <section className="relative py-8 bg-red-700/30 border-y border-red-900/30 overflow-hidden font-secondFont">
         {/* Background Pulse Effect */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(200,58,38,0.1)_0%,transparent_70%)] animate-pulse" />
 
@@ -69,7 +70,7 @@ function Emergency({ colorMode }) {
                 <div className="flex items-center gap-2 mb-1">
                   <AlertTriangle className={`h-5 w-5 sm:hidden ${textSvg}`} />
                   <span
-                    className={`font-bold tracking-wider text-sm uppercase ${textDestaque}`}
+                    className={`font-bold tracking-wider text-sm uppercase text-red-800`}
                   >
                     {content.texts.emergency.miniTag}
                   </span>
@@ -87,6 +88,8 @@ function Emergency({ colorMode }) {
 
             <div className="w-full md:w-auto flex-shrink-0">
               <ButtonReflexo
+                id="ligar"
+                emergency
                 icon={<Phone width={20} />}
                 link={`tel:${content.texts.infos.phone}`}
                 label={content.texts.emergency.ctaButtonText}

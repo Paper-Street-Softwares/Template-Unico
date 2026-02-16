@@ -14,6 +14,7 @@ export default function ButtonReflexo({
   shineClass,
   id,
   variant = "primary",
+  emergency = false, // ativa um único botão de emergencia onde quiser, coloque o id="ligar" e o emergency
   ...props
 }) {
   const { colorMode, whatsAppColor, showGlobalButton } = useColorMode();
@@ -38,8 +39,14 @@ export default function ButtonReflexo({
     defaultLight: "bg-white/40",
   };
 
-  const primaryColors = isLigar
-    ? alertTheme[colorMode]
+  const themeById = {
+    ligar: alertTheme,
+  };
+
+  const resolvedTheme = themeById[id];
+
+  const primaryColors = resolvedTheme
+    ? resolvedTheme[colorMode]
     : effectiveWhatsAppColor
       ? whatsAppThemes[colorMode]
       : (bgClass ?? defaultButtonThemes[colorMode]);
@@ -51,7 +58,7 @@ export default function ButtonReflexo({
   const shineColor = shineClass ?? shineThemes[colorMode];
   const spacing = padding || "px-6 py-3";
 
-  if (id === "ligar" && !showGlobalButton) {
+  if (id === "ligar" && !showGlobalButton && !emergency) {
     return null;
   }
 

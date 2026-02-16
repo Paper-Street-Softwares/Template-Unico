@@ -52,8 +52,8 @@ export const defaultButtonThemes = {
 export const alertTheme = {
   light: "bg-red-800 text-corTitulosBranca border border-primaryDark/20",
   dark: "bg-red-800 text-corTitulosBranca border border-primaryDark/20 shadow-white",
-  defaultDark: "bg-red-800 text-corTitulosBranca border border-primaryDark/20",
-  defaultLight: "bg-red-800 text-corTitulosBranca border border-primaryDark/20",
+  defaultDark: "bg-red-800 text-corTitulosBranca",
+  defaultLight: "bg-red-800 text-corTitulosBranca",
 };
 
 export function useColorMode() {
