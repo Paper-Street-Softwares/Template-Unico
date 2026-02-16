@@ -69,7 +69,8 @@ export default function Index() {
               <FeaturesNovaTemplate
                 colorMode={colorMode}
                 frasesDestaque={true}
-                accordion={false}
+                accordion={true}
+                modal={true}
               />
             </Suspense>
           </AlternatingSection>
@@ -111,6 +112,11 @@ export default function Index() {
               <StepsNovoTemplate colorMode={colorMode} />
             </Suspense>
           </AlternatingSection>
+          <AlternatingSection index={5} colorMode={colorMode}>
+            <Suspense>
+              <BlogPosts colorMode={colorMode} />
+            </Suspense>
+          </AlternatingSection>
           {/* <AlternatingSection index={5} colorMode={colorMode}>
             <Suspense>
               <Authority colorMode={colorMode} />
@@ -123,13 +129,13 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          {/* <AlternatingSection index={7} colorMode={colorMode}>
+          <AlternatingSection index={6} colorMode={colorMode}>
             <Suspense>
               <FaqNovoTemplate colorMode={colorMode} />
             </Suspense>
-          </AlternatingSection> */}
+          </AlternatingSection>
 
-          <AlternatingSection index={5} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={7} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <FooterNovoTemplate
                 colorMode={colorMode}

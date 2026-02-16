@@ -472,7 +472,7 @@ const content = {
       img: imgSteps,
       labelCards: "Ver mais",
       label: "Clique aqui para ver todas as matérias",
-      blogLink: <>A_Definir</>, //sem "https://"
+      blogLink: '', //sem "https://"
     },
     parceria: {
       miniTag: <>A_Definir</>,

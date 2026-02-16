@@ -21,7 +21,7 @@ import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 const features = Object.values(content.texts.features.cards);
 
-function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
+function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion, modal }) {
   // Definindo classes dinamicamente conforme o colorMode
   let backgroundMode,
     text,
@@ -228,8 +228,21 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                               }}
                             >
                               <Typography className={`${textOpacity}`}>
-                                {item.subtitle}
+                                {item.description}
                               </Typography>
+
+                              <div>
+                                <a
+                                  href={item.link}
+                                  target="_blank"
+                                  className="mt-6 text-primaryLight font-secondFont text-sm flex items-center gap-2 cursor-pointer scale-100 hover:scale-95 w-fit duration-500 transition-all"
+                                >
+                                  {item.buttonLabel}
+                                  <span>
+                                    <ArrowRight width={18} />
+                                  </span>
+                                </a>
+                              </div>
                             </AccordionDetails>
                           </Accordion>
                         ))}
@@ -259,19 +272,21 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                           >
                             {feature.subtitle}
                           </p>
-                          <button
-                            onClick={() => {
-                              setModalText(feature.description);
-                              setModalTitle(feature.title);
-                              setVisible(true);
-                            }}
-                            className="mt-6 font-secondFont text-sm flex items-center gap-2 cursor-pointer scale-100 hover:scale-95 duration-500 transition-all"
-                          >
-                            Saiba mais{" "}
-                            <span>
-                              <ArrowRight width={18} />
-                            </span>
-                          </button>
+                          {modal && (
+                            <button
+                              onClick={() => {
+                                setModalText(feature.description);
+                                setModalTitle(feature.title);
+                                setVisible(true);
+                              }}
+                              className="mt-6 font-secondFont text-sm flex items-center gap-2 cursor-pointer scale-100 hover:scale-95 duration-500 transition-all"
+                            >
+                              Saiba mais{" "}
+                              <span>
+                                <ArrowRight width={18} />
+                              </span>
+                            </button>
+                          )}
                         </div>
                       </MotionDivDownToUp>
                     ))}
