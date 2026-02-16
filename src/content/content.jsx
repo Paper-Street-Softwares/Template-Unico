@@ -192,9 +192,9 @@ const content = {
           paragraph: (
             <>
               Descubra imediatamente onde ele está custodiado e entre em contato
-              com um Advogado. <br /> As primeiras horas são decisivas é nesse
+              com um advogado. <br /> As primeiras horas são decisivas é nesse
               momento que se definem medidas como flagrante, fiança, liberdade
-              provisória e audiência de custódia
+              provisória e audiência de custódia.
             </>
           ),
         },
