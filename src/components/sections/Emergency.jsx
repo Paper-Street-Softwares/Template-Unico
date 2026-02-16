@@ -57,7 +57,7 @@ function Emergency({ colorMode }) {
         {/* Background Pulse Effect */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(200,58,38,0.1)_0%,transparent_70%)] animate-pulse" />
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className=" mx-auto px-4 relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 max-w-5xl mx-auto">
             <div className="flex items-start gap-4 flex-1">
               <div
