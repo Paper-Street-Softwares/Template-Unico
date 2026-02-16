@@ -180,10 +180,10 @@ const content = {
           title: <>Fui preso. Posso ficar calado ou isso piora tudo?</>,
           paragraph: (
             <>
-              Mantenha a calma e fique em silêncio, isso é um direito seu e{" "}
-              <strong>não pode ser usado contra você</strong>. <br /> O silêncio
-              não é confissão, entre em contato com um especialista agora mesmo.
-              Falar sem orientação pode piorar tudo.
+              Mantenha a calma e fique em silêncio, isso é um direito seu e não
+              pode ser usado contra você. <br /> O silêncio não é confissão,
+              entre em contato com um especialista agora mesmo. Falar sem
+              orientação pode piorar tudo.
             </>
           ),
         },
@@ -191,13 +191,10 @@ const content = {
           title: <>Meu parente foi preso, o que posso fazer?</>,
           paragraph: (
             <>
-              Descubra imediatamente{" "}
-              <strong>
-                onde ele está custodiado e entre em contato com um Advogado
-              </strong>
-              . <br /> As primeiras horas são decisivas é nesse momento que se
-              definem medidas como flagrante, fiança, liberdade provisória e
-              audiência de custódia
+              Descubra imediatamente onde ele está custodiado e entre em contato
+              com um Advogado . <br /> As primeiras horas são decisivas é nesse
+              momento que se definem medidas como flagrante, fiança, liberdade
+              provisória e audiência de custódia
             </>
           ),
         },
