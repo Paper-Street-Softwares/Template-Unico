@@ -85,14 +85,14 @@ function NavbarNovaTemplate({
       >
         <div className="container mx-auto flex items-center m-auto max-w-[1215px] h-full w-[90%] justify-between py-2">
           <div
-            className={`flex flex-col z-20 relative  ${
+            className={`flex flex-col z-20 relative items-start justify-center  ${
               isScrolled
-                ? "w-[30%] h-[60px] tablet1:w-[20%] desktop1:w-[10%] transition-all duration-700"
-                : "py-3 w-[60%] h-[100px] tablet1:w-[30%] desktop1:w-[20%] desktop1:h-[110px] desktop2:w-[15%] transition-all duration-700"
+                ? "w-[30%] h-auto tablet1:w-[20%] desktop1:w-[10%] transition-all duration-700"
+                : "py-3 w-[60%] h-auto tablet1:w-[30%] desktop1:w-[20%] desktop2:w-[15%] transition-all duration-700"
             }`}
           >
             <a
-              className="cursor-pointer w-[100%] h-[80px] desktop1:h-[110px] flex items-center overflow-hidden"
+              className="cursor-pointer w-auto flex items-center overflow-hidden"
               href="/"
               onClick={() => window.location.reload()}
               aria-label="recarregar página"
