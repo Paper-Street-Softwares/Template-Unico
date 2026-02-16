@@ -103,7 +103,6 @@ function NavbarNovaTemplate({
                 className="desktop1:hidden flex"
                 width={276}
                 height={95}
-                style={{ aspectRatio: "293 / 100" }}
                 fetchPriority="high"
               />
               <img
@@ -112,7 +111,6 @@ function NavbarNovaTemplate({
                 className="hidden desktop1:flex"
                 width={350}
                 height={105}
-                style={{ aspectRatio: "293 / 100" }}
                 fetchPriority="high"
               />
             </a>
