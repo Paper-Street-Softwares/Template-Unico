@@ -105,7 +105,7 @@ const content = {
         alt: `Logomarca ${infos.name}`,
       },
       solidLogo: {
-        img: logo,
+        img: logoDesktop,
         alt: `Logomarca ${infos.name}`,
       },
       menuItems: [
