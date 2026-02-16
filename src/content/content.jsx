@@ -5,7 +5,7 @@ import heroDefaultMobileImg from "../assets/imgs/hero/lawHeroMobile.webp";
 
 import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
-import aboutImg from "../assets/imgs/about/aboutImg.webp";
+// import aboutImg from "../assets/imgs/about/aboutImg.webp";
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
 // import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
@@ -445,54 +445,54 @@ const content = {
       subtitle: <>A_Definir</>,
       embedsrc: <>A_Definir</>,
     },
-    about: {
-      imagem: {
-        img: aboutImg,
-        alt: "Imagem ilustrativa da Seção Sobre",
-      },
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
-      subtitle: <>A_Definir</>,
-      paragraph: <div>A_Definir</div>,
-      ctaButtonText: <>A_Definir</>,
-      buttonModalLabelAbout: "Continuar lendo",
-      modal: (
-        <p className="font-secondFont">
-          A_Definir
-          <br />
-          <br />
-          A_Definir
-          <br />
-          <br />
-          A_Definir
-          <br />
-          <br />
-          A_Definir
-        </p>
-      ),
-      paragraphModalCta: "Entre em contato",
-      ctaButtonAriaLabel: "Botão para entrar em contato",
+    // about: {
+    //   imagem: {
+    //     img: aboutImg,
+    //     alt: "Imagem ilustrativa da Seção Sobre",
+    //   },
+    //   miniTag: <>A_Definir</>,
+    //   FirstPart: <span> A_Definir </span>,
+    //   Destaque: <span className="italic font-light"> A_Definir</span>,
+    //   SecondPart: <span>A_Definir</span>,
+    //   subtitle: <>A_Definir</>,
+    //   paragraph: <div>A_Definir</div>,
+    //   ctaButtonText: <>A_Definir</>,
+    //   buttonModalLabelAbout: "Continuar lendo",
+    //   modal: (
+    //     <p className="font-secondFont">
+    //       A_Definir
+    //       <br />
+    //       <br />
+    //       A_Definir
+    //       <br />
+    //       <br />
+    //       A_Definir
+    //       <br />
+    //       <br />
+    //       A_Definir
+    //     </p>
+    //   ),
+    //   paragraphModalCta: "Entre em contato",
+    //   ctaButtonAriaLabel: "Botão para entrar em contato",
 
-      // aboutSocial: {
-      //   img: {
-      //     img: aboutSocialImg,
-      //     alt: `Foto do Instagram do ${infos.name}`,
-      //     altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
-      //   },
-      //   miniTag: <>A_Definir</>,
-      //   title: <>A_Definir</>,
-      //   subtitle: <>A_Definir</>,
-      //   paragraph: <p></p>,
-      //   labelInstagram: "Siga-nos no Instagram",
-      //   labelFacebook: "Siga-nos no Facebook",
-      //   labelLinkedin: "Siga-nos no LinkedIn",
-      //   labelX: "Siga-nos no X",
-      //   labelTiktok: "Siga-nos no Tik Tok",
-      //   labelYoutube: "Siga-nos no Youtube",
-      // },
-    },
+    //   // aboutSocial: {
+    //   //   img: {
+    //   //     img: aboutSocialImg,
+    //   //     alt: `Foto do Instagram do ${infos.name}`,
+    //   //     altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
+    //   //   },
+    //   //   miniTag: <>A_Definir</>,
+    //   //   title: <>A_Definir</>,
+    //   //   subtitle: <>A_Definir</>,
+    //   //   paragraph: <p></p>,
+    //   //   labelInstagram: "Siga-nos no Instagram",
+    //   //   labelFacebook: "Siga-nos no Facebook",
+    //   //   labelLinkedin: "Siga-nos no LinkedIn",
+    //   //   labelX: "Siga-nos no X",
+    //   //   labelTiktok: "Siga-nos no Tik Tok",
+    //   //   labelYoutube: "Siga-nos no Youtube",
+    //   // },
+    // },
     ctaSection: {
       miniTag: <>PRÓXIMO PASSO</>,
       title: (
@@ -1323,9 +1323,9 @@ const content = {
   },
 };
 
-export const abstractions = {
-  titleModal: <strong>{content.texts.about.title}</strong>,
-  subtitleModal: <strong>{content.texts.about.subtitle}</strong>,
-};
+// export const abstractions = {
+//   titleModal: <strong>{content.texts.about.title}</strong>,
+//   subtitleModal: <strong>{content.texts.about.subtitle}</strong>,
+// };
 
 export default content;
