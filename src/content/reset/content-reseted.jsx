@@ -87,6 +87,7 @@ export const infos = {
   linkeDinProfile: "",
   x: "",
   tiktokProfile: "",
+  youtubeProfile: "",
 
   whatsappDefaultMessage:
     "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
@@ -1099,6 +1100,7 @@ const content = {
       x: `https://x.com/${infos.x}`,
       linkedin: `https://www.linkedin.com/in/${infos.linkeDinProfile}`,
       tiktok: `https://www.tiktok.com/@${infos.tiktokProfile}/`,
+      youtube: `https://www.youtube.com/@${infos.youtubeProfile}/`,
     },
     infos: {
       phone: `(${infos.phone.ddd}) ${infos.phone.firstPart}-${infos.phone.secondPart}`,
