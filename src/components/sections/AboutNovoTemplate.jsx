@@ -264,7 +264,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
 
           {/* Modal */}
           <Dialog
-            className={`font-secondFont p-4 rounded-md ${colorMode === "dark" ? "bg-darkOpacity" : "bg-white"}`}
+            className={`font-secondFont p-0 rounded-md ${colorMode === "dark" ? "bg-darkOpacity" : "bg-white"}`}
             closeIcon={
               <X
                 size={20}
@@ -309,7 +309,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                     ? defaultButtonThemes.light
                     : defaultButtonThemes.dark
                 }
-                className={`clickevent`}
+                className={`clickevent text-white`}
               />
             </div>
           </Dialog>
