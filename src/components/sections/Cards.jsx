@@ -104,7 +104,7 @@ function Cards({ colorMode }) {
 
               <MotionDivDownToUp>
                 <div
-                  className={`${textOpacity} font-secondFont text-center leading-3 mt-4`}
+                  className={`${textOpacity} font-secondFont text-center leading-5 mt-4`}
                 >
                   {content.texts.cardsSection.fraseText}
                 </div>
@@ -126,6 +126,7 @@ function Cards({ colorMode }) {
                   link={content.texts.links.ctaWhatsapp}
                   label={content.texts.cardsSection.ctaButtonText}
                   colorMode={colorMode}
+                  className={`clickevent`}
                 />
               </MotionDivDownToUp>
             </div>
