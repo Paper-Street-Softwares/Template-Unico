@@ -23,9 +23,9 @@ export default {
         // Principais
         primaryLight: "#BB3E18",
         primaryDark: "#000000",
-        secondary: "#E9E7E0",
-        terciary: "#F7F6F1",
-        quartenary: "#FCFCFA",
+        secondary: "#E9E4E0",
+        terciary: "#F7F3F1",
+        quartenary: "#FCFBFA",
         borderImage: "#292929",
 
         // Copys

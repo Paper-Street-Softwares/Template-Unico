@@ -1,8 +1,6 @@
-import { motion } from "framer-motion";
-import { Button } from "primereact/button";
 import content from "../../content/content";
 import Accordion from "@mui/material/Accordion";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import Typography from "@mui/material/Typography";
 import SectionArea from "../sectionElements/SectionArea";
 import ButtonReflexo from "../interactives/ButtonReflexo";
@@ -15,12 +13,15 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import SectionWrapper from "../sectionElements/SectionWrapper";
-import { ArrowLeft, ArrowRight, Phone, Scale } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
+import { Dialog } from "primereact/dialog";
+
+import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 const features = Object.values(content.texts.features.cards);
 
-function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
+function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion, modal }) {
   // Definindo classes dinamicamente conforme o colorMode
   let backgroundMode,
     text,
@@ -92,6 +93,10 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
   const features = Object.values(content.texts.features.cards);
 
   const [expanded, setExpanded] = useState(0);
+
+  const [visible, setVisible] = useState(false);
+  const [modalTitle, setModalTitle] = useState("");
+  const [modalText, setModalText] = useState("");
 
   return (
     <SectionArea
@@ -223,8 +228,23 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                               }}
                             >
                               <Typography className={`${textOpacity}`}>
-                                {item.subtitle}
+                                {item.description}
                               </Typography>
+
+                              {item.link && (
+                                <div>
+                                  <a
+                                    href={item.link}
+                                    target="_blank"
+                                    className="mt-6 text-primaryLight font-secondFont text-sm flex items-center gap-2 cursor-pointer scale-100 hover:scale-95 w-fit duration-500 transition-all"
+                                  >
+                                    {item.buttonLabel}
+                                    <span>
+                                      <ArrowRight width={18} />
+                                    </span>
+                                  </a>
+                                </div>
+                              )}
                             </AccordionDetails>
                           </Accordion>
                         ))}
@@ -254,6 +274,21 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
                           >
                             {feature.subtitle}
                           </p>
+                          {modal && (
+                            <button
+                              onClick={() => {
+                                setModalText(feature.description);
+                                setModalTitle(feature.title);
+                                setVisible(true);
+                              }}
+                              className="mt-6 font-secondFont text-sm flex items-center gap-2 cursor-pointer scale-100 hover:scale-95 duration-500 transition-all"
+                            >
+                              Saiba mais{" "}
+                              <span>
+                                <ArrowRight width={18} />
+                              </span>
+                            </button>
+                          )}
                         </div>
                       </MotionDivDownToUp>
                     ))}
@@ -262,6 +297,18 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion }) {
               </div>
             </div>
           </div>
+          <Dialog
+            header={modalTitle}
+            visible={visible}
+            modal={false}
+            style={{ width: "50vw" }}
+            onHide={() => {
+              if (!visible) return;
+              setVisible(false);
+            }}
+          >
+            <p>{modalText}</p>
+          </Dialog>
         </section>
       </SectionWrapper>
     </SectionArea>

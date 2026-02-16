@@ -1,52 +1,52 @@
-import React from 'react'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
+import React from "react";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
 import {
   Accordion,
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-} from '../interactives/FaqNovo'
-import content from '../../content/content'
-import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
-import ButtonReflexo from '../../components/interactives/ButtonReflexo'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
-import { ButtonsLps } from '../../context/UseContextArchive'
-import { defaultButtonThemes } from '../../context/UseContextArchive'
+} from "../interactives/FaqNovo";
+import content from "../../content/content";
+import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
+import ButtonReflexo from "../../components/interactives/ButtonReflexo";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import { ButtonsLps } from "../../context/UseContextArchive";
+import { defaultButtonThemes } from "../../context/UseContextArchive";
 
 function FaqNovoTemplate({ colorMode }) {
-  const faqs = Object.values(content.texts.faq.questions)
-  const { showGlobalButtonsLps } = ButtonsLps()
+  const faqs = Object.values(content.texts.faq.questions);
+  const { showGlobalButtonsLps } = ButtonsLps();
 
   // Classes dinâmicas conforme colorMode
-  let text, textOpacity, hoverText, backgroundMode
+  let text, textOpacity, hoverText, backgroundMode;
   switch (colorMode) {
-    case 'light':
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosBranca'
-      hoverText = 'hover:text-primaryDark'
-      backgroundMode = 'bg-transparent'
+    case "light":
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      hoverText = "hover:text-primaryDark";
+      backgroundMode = "bg-transparent";
 
-      break
-    case 'dark':
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      hoverText = 'hover:text-primaryLight'
-      backgroundMode = 'bg-transparent'
-      break
+      break;
+    case "dark":
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      hoverText = "hover:text-primaryLight";
+      backgroundMode = "bg-transparent";
+      break;
 
-    case 'defaultDark':
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      hoverText = 'hover:text-primaryDark'
-      backgroundMode = 'bg-transparent'
-      break
+    case "defaultDark":
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      hoverText = "hover:text-primaryDark";
+      backgroundMode = "bg-transparent";
+      break;
 
-    case 'defaultLight':
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      hoverText = 'hover:text-white'
-      backgroundMode = 'bg-transparent'
+    case "defaultLight":
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      hoverText = "hover:text-white";
+      backgroundMode = "bg-transparent";
   }
 
   return (
@@ -101,7 +101,7 @@ function FaqNovoTemplate({ colorMode }) {
                   link={content.texts.links.ctaWhatsapp}
                   label={content.texts.faq.paragraph}
                   bgClass={
-                    colorMode === 'defaultDark' || colorMode === 'light'
+                    colorMode === "defaultDark" || colorMode === "light"
                       ? defaultButtonThemes.light
                       : defaultButtonThemes.dark
                   }
@@ -113,7 +113,7 @@ function FaqNovoTemplate({ colorMode }) {
         </section>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default FaqNovoTemplate
+export default FaqNovoTemplate;

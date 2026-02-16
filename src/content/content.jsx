@@ -8,7 +8,7 @@ import imgFeatures from "../assets/imgs/features/imgServices.webp";
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-// import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
+import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 // import logo1 from '../assets/imgs/parceria/Logo1.webp'
@@ -32,8 +32,6 @@ import {
   HandCoins,
   Check,
   Shield,
-  ChartNoAxesCombined,
-  Hourglass,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -44,7 +42,7 @@ export const infos = {
   name: "Tavares Assessoria Jurídica",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "familia.taj.adv.br", // Sem "www"
+  domain: "taj.adv.br", // Sem "www"
   phone: {
     ddd: "11",
     firstPart: "97394", // Apenas os 5 primeiros números (incluindo o 9)
@@ -63,10 +61,10 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
+      <p>Av. Industrial, 780,</p>
+      <p>Sala 2313 - Jardim,</p>
+      <p>Santo André - SP,</p>
+      <p> CEP: 09080-500</p>
     </div>
   ),
   enderecoSecundario: (
@@ -80,15 +78,16 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>8h às 18h</p>
+      <p>9h às 18h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "", // Sem o @
+  instagramProfile: "tavaresassessoriajuridica", // Sem o @
   facebookProfile: "",
-  linkeDinProfile: "",
+  linkeDinProfile: "tavaresassessoriajuridica",
   x: "",
-  tiktokProfile: "",
+  tiktokProfile: "guilhermetavaresadvogado",
+  youtubeProfile: "guilhermetavaresadvogado",
 
   whatsappDefaultMessage:
     "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
@@ -113,25 +112,26 @@ const content = {
         "Início",
         "Serviços",
         "Sobre",
+        "Perguntas",
         // 'Blog',
         // 'Mapa',
       ],
-      menuId: ["home", "feature", "about"],
+      menuId: ["home", "feature", "about", "faq"],
       ariaLabel: "Botão de Contato",
       ctaButtonText: "Contato",
       ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      miniTag: <>ADVOGADO DE DIREITO DE FAMÍLIA</>,
-      FirstPart: <span>Segurança jurídica para sua</span>,
+      miniTag: <>ASSESSORIA JURÍDICA</>,
+      FirstPart: <span>Defesa Estratégica de</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">família</span>
+        <span className="destaque relative italic font-light">alto</span>
       ),
-      SecondPart: <span></span>,
+      SecondPart: <span>nível</span>,
       subtitle: (
         <p>
-          Atuação estratégica em família e sucessões com clareza, cuidado e
-          firmeza jurídica.
+          Advocacia focada em solução rápida, proteção patrimonial e pacificação
+          familiar.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -190,173 +190,149 @@ const content = {
     },
     features: {
       miniTag: <>ÁREAS DE ATUAÇÃO</>,
-      FirstPart: <span>Estratégia Jurídica e Segurança em</span>,
-      Destaque: <span className="italic font-light">Família e Sucessões</span>,
+      FirstPart: <span>Advocacia que </span>,
+      Destaque: <span className="italic font-light">Resolve</span>,
       SecondPart: <span></span>,
-      subtitle: (
-        <>
-          Atuação preventiva e contenciosa para proteger relações familiares,
-          patrimônio e decisões que impactam gerações.
-        </>
-      ),
+      subtitle: <>Soluções jurídicas estratégicas para proteger patrimônio e família.
+
+</>,
       imgFeatures: imgFeatures,
       alt: <>Imagem ilustrativa da Features</>,
-      titleMessageFeature: <>Atuação firme </>,
-      subtitleMessageFeature: (
-        <>na defesa dos interesses familiares e patrimoniais</>
-      ),
+      titleMessageFeature: <>100%</>,
+      subtitleMessageFeature: <>segurança jurídica</>,
       cards: {
         card1: {
-          title: <>Ações de Guarda e Regime de Convivência</>,
-          subtitle: (
-            <>Regulamentação de visitas e guarda (compartilhada/unilateral).</>
-          ),
+          title: <>Direito Condominial</>,
+          subtitle: <></>,
           description: (
             <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
+              •<strong> Assessoria Jurídica Preventiva: </strong>Suporte
+              contínuo para Síndicos, Corpo Diretivo e Administradoras
+              (pareceres, notificações e dúvidas do dia a dia).
+              <br /> <br />• <strong>Gestão da Inadimplência:</strong> Cobrança
+              extrajudicial (notificações e acordos) e execução judicial de
+              cotas condominiais.
+              <br /> <br />•{" "}
+              <strong>Compliance Trabalhista Condominial:</strong> Auditoria de
+              contratos de terceirizadas (limpeza/portaria) e gestão de
+              funcionários orgânicos.
+              <br /> <br />• <strong>Revisão de Normas:</strong> Atualização de
+              Convenção de Condomínio e Regimento Interno.
+              <br /> <br />• <strong>
+                Acompanhamento de Assembleias:
+              </strong>{" "}
+              Suporte presencial ou online para garantir a legalidade das
+              deliberações.
+              <br /> <br />• <strong>Mediação de Conflitos:</strong> Atuação
+              técnica em disputas entre vizinhos (barulho, obras, vazamentos)
+              para evitar processos contra o condomínio.
+              <br /> <br />• <strong>Consultoria em Contratos:</strong> Análise
+              de risco em contratos com prestadores de serviço (obras,
+              manutenção, elevadores).
+              <br /> <br />• <strong>
+                Consultoria para Adequação à LGPD:
+              </strong>{" "}
+              Implementação completa da Lei Geral de Proteção de Dados no
+              condomínio. Mapeamento de dados (moradores, visitantes,
+              prestadores), revisão de contratos com empresas de
+              portaria/administradoras e políticas para uso de biometria e
+              câmeras (CFTV).
             </div>
           ),
           icon: <Briefcase />,
           buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          buttonLabel: "Entenda",
+          link: "https://condominial.taj.adv.br",
         },
         card2: {
-          title: <>Alimentos (Pensão Alimentícia)</>,
-          subtitle: (
-            <>
-              Ações de Fixação, Revisional (aumentar ou diminuir), Exoneração
-              (cancelar) e Execução (cobrança de atrasados).
-            </>
-          ),
+          title: <>Direito Imobiliário</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
-              A_Definir
+              • <strong>Usucapião (Judicial e Extrajudicial):</strong>{" "}
+              Regularização da propriedade baseada na posse prolongada
+              (carro-chefe de regularização).
               <br />
+              <br />• <strong>Regularização de Imóveis em Geral:</strong>{" "}
+              Adjudicação compulsória, retificação de área, desdobro, unificação
+              e averbações em cartório.
               <br />
-              A_Definir
+              <br />•{" "}
+              <strong>
+                Assessoria em Compra e Venda (Due Diligence):
+              </strong>{" "}
+              Análise de risco documental do imóvel e dos vendedores para
+              garantir a segurança do negócio.
+              <br />
+              <br />• <strong>Contratos Imobiliários:</strong> Elaboração e
+              revisão de contratos de Compra e Venda, Locação (Residencial e
+              Comercial), Permuta e Cessão de Direitos.
+              <br />
+              <br />• <strong>Distrato Imobiliário:</strong> Resolução de
+              contratos de compra de imóvel na planta (Lei do Distrato).
+              <br />
+              <br />• <strong>
+                Assessoria Jurídica para Imobiliárias:
+              </strong>{" "}
+              Suporte para corretores e imobiliárias na confecção de contratos e
+              prevenção de responsabilidade civil.
+              <br />
+              <br />• <strong>Ações Possessórias:</strong> Reintegração de posse
+              e manutenção de posse (casos de invasão ou esbulho).
             </div>
           ),
           icon: <User />,
           buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          buttonLabel: "Entenda",
+          link: "https://imobiliario.taj.adv.br",
         },
         card3: {
-          title: <>Reconhecimento e Dissolução de União Estável</>,
-          subtitle: (
-            <>Tanto em cartório (amigável) quanto judicial (litigioso).</>
-          ),
+          title: <>Família e Sucessões</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
-              A_Definir
+              • <strong>Ações de Guarda e Regime de Convivência:</strong>{" "}
+              Regulamentação de visitas e guarda (compartilhada/unilateral).
               <br />
+              <br />• <strong>Alimentos (Pensão Alimentícia):</strong> Ações de
+              Fixação, Revisional (aumentar ou diminuir), Exoneração (cancelar)
+              e Execução (cobrança de atrasados).
               <br />
-              A_Definir
+              <br />•{" "}
+              <strong>
+                Reconhecimento e Dissolução de União Estável:
+              </strong>{" "}
+              Tanto em cartório (amigável) quanto judicial (litigioso).
+              <br />
+              <br />• <strong>Reconhecimento de Paternidade:</strong>{" "}
+              Investigação e registro.
+              <br />
+              <br />• <strong>Divórcio:</strong> Judicial (litigioso) e
+              Extrajudicial (em cartório).
+              <br />
+              <br />• <strong>Inventário e Partilha:</strong> Judicial e
+              Extrajudicial (Cartório).
+              <br />
+              <br />• <strong>Planejamento Sucessório Básico:</strong>{" "}
+              Testamentos, Doação com reserva de usufruto e antecipação de
+              legítima (sem a complexidade de holding).
+              <br />
+              <br />• <strong>
+                Pacto Antenupcial e Contrato de Namoro:
+              </strong>{" "}
+              Prevenção patrimonial para novos casais.
+              <br />
+              <br />• <strong>Alteração de Regime de Bens:</strong> Mudança do
+              regime de casamento durante a união.
             </div>
           ),
           icon: <Scale />,
           buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-        card4: {
-          title: <>Reconhecimento de Paternidade</>,
-          subtitle: <>Investigação e registro.</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <Gavel />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-        card5: {
-          title: <>Divórcio</>,
-          subtitle: <>Judicial (litigioso) e Extrajudicial (em cartório).</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Users />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-        card6: {
-          title: <>Inventário e Partilha</>,
-          subtitle: <>Judicial e Extrajudicial (Cartório).</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <MessageSquare />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-        card7: {
-          title: <>Planejamento Sucessório Básico</>,
-          subtitle: (
-            <>
-              Testamentos, Doação com reserva de usufruto e antecipação de
-              legítima (sem a complexidade de holding).
-            </>
-          ),
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Shield />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-        card8: {
-          title: <>Pacto Antenupcial e Contrato de Namoro</>,
-          subtitle: <>Prevenção patrimonial para novos casais.</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-        card9: {
-          title: <>Alteração de Regime de Bens</>,
-          subtitle: <>Mudança do regime de casamento durante a união.</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <FileText />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          buttonLabel: "Entenda",
+          link: "https://familia.taj.adv.br",
         },
       },
-      ctaButtonText: <>Falar agora com o Advogado</>,
+      ctaButtonText: <>A_Definir</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -406,158 +382,167 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É O TAVARES ASSESSORIA JURÍDICA</>,
-      FirstPart: <span> Nossa atuação em</span>,
-      Destaque: <span className="italic font-light"> Direito Condominial</span>,
+      miniTag: <>QUEM É O DR. GUILHERME TAVARES</>,
+      FirstPart: <span> Minha </span>,
+      Destaque: <span className="italic font-light"> trajetória</span>,
       SecondPart: <span></span>,
-      subtitle: <></>,
+      subtitle: (
+        <>Da base simples à advocacia que protege o que você construiu</>
+      ),
       paragraph: (
         <div>
-          Atuamos de forma especializada no{" "}
-          <strong>Direito de Família e Sucessões</strong>, com foco na defesa
-          dos interesses de indivíduos e famílias em questões que envolvem
-          relações familiares, organização patrimonial e transmissão de bens.
-          Nossa atuação é orientada pela prevenção de conflitos, pela construção
-          de soluções jurídicas seguras e pela condução responsável de demandas
-          que impactam diretamente o patrimônio e a estrutura familiar.
-          <br />
-          <br />
-          Desenvolvemos uma atuação estratégica e personalizada, analisando cada
-          situação de forma individual para construir soluções jurídicas
-          eficazes, seguras e alinhadas à realidade familiar e patrimonial de
-          cada cliente. A combinação entre domínio técnico da legislação
-          aplicável e uma abordagem clara e objetiva assegura decisões firmes e
-          respaldo jurídico em negociações, acordos e processos judiciais.
-          <br />
-          <br />
-          Mantemos um rigoroso protocolo de atualização jurídica, acompanhando
-          de perto o entendimento dos tribunais e as mudanças na legislação
-          relacionada ao Direito de Família e Sucessões. Ética, especialização e
-          assertividade são os pilares que sustentam nossa atuação na proteção
-          de direitos, do patrimônio e da estabilidade das relações familiares
-          ao longo do tempo.
+          Minha trajetória no Direito foi construída sobre uma base sólida de
+          esforço e realidade. Sou filho de uma mãe solo, empregada doméstica,
+          que abriu mão da própria vida pessoal e profissional para viver um
+          sonho comigo: a minha formação.
         </div>
       ),
-      ctaButtonText: <>Falar diretamente comigo</>,
+      ctaButtonText: <>A_Definir</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
-          A_Definir
+          Minha trajetória no Direito foi construída sobre uma base sólida de
+          esforço e realidade. Sou filho de uma mãe solo, empregada doméstica,
+          que abriu mão da própria vida pessoal e profissional para viver um
+          sonho comigo: a minha formação.
           <br />
           <br />
-          A_Definir
+          Essa criação simples me ensinou, desde cedo, que resultados não caem
+          do céu; eles são fruto de trabalho duro e estratégia.
           <br />
           <br />
-          A_Definir
+          Me formei em 2017 pela FMU. Iniciei minha carreira jurídica focado no
+          Direito do Trabalho, atuando em diversas sociedades, vivendo a rotina
+          intensa dos tribunais. Foi ali que percebi que a advocacia
+          tradicional, muitas vezes, é lenta e burocrática demais para as
+          necessidades reais das pessoas.
           <br />
           <br />
-          A_Definir
+          Há três anos, decidi empreender e fundar a{" "}
+          <strong>Tavares Assessoria Jurídica.</strong>
+          <br />
+          <br />
+          Hoje, como marido e pai, entendo ainda mais a importância de proteger
+          o que construímos. Por isso, redirecionei minha atuação e minhas
+          especializações para uma advocacia que resolve, protege o patrimônio e
+          pacifica relações familiares.
+          <br />
+          <br />
+          Meu objetivo não é apenas "dar entrada em processos", mas entregar a
+          resolução rápida que minha vivência e técnica me permitem oferecer.
         </p>
       ),
       paragraphModalCta: "Entre em contato",
       ctaButtonAriaLabel: "Botão para entrar em contato",
 
-      // aboutSocial: {
-      //   img: {
-      //     img: aboutSocialImg,
-      //     alt: `Foto do Instagram do ${infos.name}`,
-      //     altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
-      //   },
-      //   miniTag: <>A_Definir</>,
-      //   title: <>A_Definir</>,
-      //   subtitle: <>A_Definir</>,
-      //   paragraph: <p></p>,
-      //   labelInstagram: "Siga-nos no Instagram",
-      //   labelFacebook: "Siga-nos no Facebook",
-      //   labelLinkedin: "Siga-nos no LinkedIn",
-      //   labelX: "Siga-nos no X",
-      //   labelTiktok: "Siga-nos no Tik Tok",
-      //   labelYoutube: "Siga-nos no Youtube",
-      // },
+      aboutSocial: {
+        img: {
+          img: aboutSocialImg,
+          alt: `Foto do Instagram do ${infos.name}`,
+          altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
+        },
+        miniTag: <>Redes sociais</>,
+        title: <>Conecte-se conosco</>,
+        subtitle: (
+          <>
+            Acompanhe nossas redes sociais para se manter informado sobre
+            conteúdos jurídicos, atualizações e temas relevantes das áreas de
+            atuação.
+          </>
+        ),
+        paragraph: <p></p>,
+        labelInstagram: "Siga-nos no Instagram",
+        labelFacebook: "Siga-nos no Facebook",
+        labelLinkedin: "Siga-nos no LinkedIn",
+        labelX: "Siga-nos no X",
+        labelTiktok: "Siga-nos no Tik Tok",
+        labelYoutube: "Siga-nos no Youtube",
+      },
     },
     ctaSection: {
       miniTag: <>FALE CONOSCO</>,
-      title: <h1>Conflitos familiares exigem orientação jurídica segura.</h1>,
+      title: (
+        <h1>
+          Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
+        </h1>
+      ),
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Divórcio, partilha de bens, pensão, guarda, inventário ou
-            planejamento sucessório exigem análise jurídica clara, estratégica e
-            responsável. Fale conosco e entenda o melhor caminho para o seu
-            caso.
+            Entre em contato agora para uma consulta especializada e comece a
+            encontrar a solução que você precisa.
           </p>
         </div>
       ),
-      ctaButtonText: <>Entrar em contato agora</>,
+      ctaButtonText: <>Entrar em contato</>,
 
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
       miniTag: <>PASSO A PASSO</>,
-      FirstPart: <span> Entenda como</span>,
-      Destaque: <span className="italic font-light"> cuidamos</span>,
-      SecondPart: <span> do seu caso familiar</span>,
+      FirstPart: <span> Como</span>,
+      Destaque: <span className="italic font-light"> funciona</span>,
+      SecondPart: <span> nosso atendimento?</span>,
+
       subtitle: <></>,
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Diagnóstico Jurídico</>,
+          cardTitle: <>Consulta inicial</>,
           cardDescription: (
             <>
-              Você apresenta sua situação familiar ou sucessória, e analisamos o
-              cenário com foco em direitos, deveres, riscos jurídicos e impactos
-              patrimoniais.
+              Realizamos uma reunião para entender seu caso e identificar suas
+              necessidades jurídicas.
             </>
           ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Análise Técnica e Documental</>,
+          cardTitle: <>Análise detalhada</>,
           cardDescription: (
             <>
-              Examinamos documentos, registros, bens, acordos e vínculos
-              jurídicos para identificar riscos, inconsistências ou caminhos
-              seguros de solução.
+              Examinamos todos os aspectos do seu caso, revisando documentos e
+              evidências para obter uma visão completa.
             </>
           ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Definição da Estratégia</>,
+          cardTitle: <>Elaboração da estratégia</>,
           cardDescription: (
             <>
-              Definimos um plano de ação claro, seja preventivo, consensual ou
-              judicial, sempre priorizando segurança jurídica e equilíbrio nas
-              decisões.
+              Criamos uma estratégia jurídica personalizada para proteger seus
+              interesses de maneira eficaz.
             </>
           ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Execução e Acompanhamento</>,
+          cardTitle: <>Ação legal</>,
           cardDescription: (
             <>
-              Atuamos de forma firme e responsável até a solução do caso, com
-              acompanhamento próximo e comunicação clara em todas as etapas do
-              processo.
+              Iniciamos e conduzimos as ações judiciais ou o serviço contratado,
+              buscando justiça e soluções personalizadas conforme a necessidade
+              do seu caso.
             </>
           ),
         },
       },
-      ctaButtonText: <>Entre em contato agora</>,
+      ctaButtonText: <>A_Definir</>,
     },
 
     blog: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: "",
+      miniTag: <>BLOG</>,
+      title: <>Informação jurídica ao seu alcance</>,
+      subtitle:
+        "Acompanhe conteúdos exclusivos para manter-se sempre informado.",
       img: imgSteps,
       labelCards: "Ver mais",
       label: "Clique aqui para ver todas as matérias",
-      blogLink: <>A_Definir</>, //sem "https://"
+      blogLink: "taj020.wordpress.com", //sem "https://"
     },
     parceria: {
       miniTag: <>A_Definir</>,
@@ -593,25 +578,46 @@ const content = {
       subtitle: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>TIRE SUAS DÚVIDAS</>,
+      title: <>Perguntas Frequentes</>,
+      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Como posso contratar seus serviços?</>,
+          answer: (
+            <>
+              Agende sua consulta conosco via WhatsApp e conversaremos sobre
+              suas necessidades e avaliaremos os custos.
+            </>
+          ),
         },
         question2: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Qual é o prazo médio para resolução de um caso?</>,
+          answer: (
+            <>
+              O prazo médio varia conforme a complexidade, mas discutiremos uma
+              estimativa durante a consulta inicial.
+            </>
+          ),
         },
         question3: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Quais documentos devo levar para a consulta?</>,
+          answer: (
+            <>
+              Traga os documentos relevantes ao seu caso, como contratos,
+              correspondências e registros, além de documentos pessoais e
+              comprovante de residência.
+            </>
+          ),
         },
         question4: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Vocês oferecem serviços de consultoria preventiva?</>,
+          answer: (
+            <>
+              Sim, oferecemos consultoria preventiva para evitar problemas
+              futuros e garantir conformidade legal.
+            </>
+          ),
         },
       },
 
@@ -1183,8 +1189,9 @@ const content = {
       phoneTerciario: `https://wa.me/+55${infos.phoneTerciario.ddd}${infos.phoneTerciario.firstPart}${infos.phoneTerciario.secondPart}?text=${infos.whatsappDefaultMessage}`,
       facebook: `https://www.facebook.com/${infos.facebookProfile}`,
       x: `https://x.com/${infos.x}`,
-      linkedin: `https://www.linkedin.com/in/${infos.linkeDinProfile}`,
+      linkedin: `https://www.linkedin.com/company/${infos.linkeDinProfile}`,
       tiktok: `https://www.tiktok.com/@${infos.tiktokProfile}/`,
+      youtube: `https://www.youtube.com/@${infos.youtubeProfile}/`,
     },
     infos: {
       phone: `(${infos.phone.ddd}) ${infos.phone.firstPart}-${infos.phone.secondPart}`,

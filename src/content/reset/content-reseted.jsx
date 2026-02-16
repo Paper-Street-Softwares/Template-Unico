@@ -87,6 +87,7 @@ export const infos = {
   linkeDinProfile: "",
   x: "",
   tiktokProfile: "",
+  youtubeProfile: "",
 
   whatsappDefaultMessage:
     "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
@@ -333,23 +334,26 @@ const content = {
       cards: {
         card1: {
           title: <>A_Definir</>,
-          icon: <ChartNoAxesCombined />,
+          icon: <>A_Definir</>,
+          link: "",
         },
         card2: {
           title: <>A_Definir</>,
-          icon: <Hourglass />,
+          icon: <>A_Definir</>,
+          link: "",
         },
         card3: {
           title: <>A_Definir</>,
-          icon: <Brain />,
+          icon: <>A_Definir</>,
+          link: "",
         },
         card4: {
           title: <>A_Definir</>,
-          icon: <BriefcaseBusiness />,
+          icon: <>A_Definir</>,
         },
         card5: {
           title: <>A_Definir</>,
-          icon: <Scale />,
+          icon: <>A_Definir</>,
         },
       },
       fraseText: (
@@ -471,7 +475,7 @@ const content = {
       img: imgSteps,
       labelCards: "Ver mais",
       label: "Clique aqui para ver todas as matérias",
-      blogLink: <>A_Definir</>, //sem "https://"
+      blogLink: "", //sem "https://"
     },
     parceria: {
       miniTag: <>A_Definir</>,
@@ -1099,6 +1103,7 @@ const content = {
       x: `https://x.com/${infos.x}`,
       linkedin: `https://www.linkedin.com/in/${infos.linkeDinProfile}`,
       tiktok: `https://www.tiktok.com/@${infos.tiktokProfile}/`,
+      youtube: `https://www.youtube.com/@${infos.youtubeProfile}/`,
     },
     infos: {
       phone: `(${infos.phone.ddd}) ${infos.phone.firstPart}-${infos.phone.secondPart}`,
