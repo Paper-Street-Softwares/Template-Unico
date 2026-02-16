@@ -122,25 +122,35 @@ const content = {
       ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      miniTag: <>A_definir</>,
-      FirstPart: <span>A_definir</span>,
+      miniTag: <>ASSESSORIA JURÍDICA</>,
+      FirstPart: <span>Defesa Estratégica de</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_definir</span>
+        <span className="destaque relative italic font-light">alto</span>
       ),
-      SecondPart: <span></span>,
-      subtitle: <p>A_definir</p>,
+      SecondPart: <span>nível</span>,
+      subtitle: (
+        <p>
+          Advocacia focada em solução rápida, proteção patrimonial e pacificação
+          familiar.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com o Advogado</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: <>A_Definir</>,
+        text: (
+          <>
+            Atendimento online para todo Brasil e presencial para SP e Região
+            Metropolitana.
+          </>
+        ),
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -179,10 +189,10 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
-      Destaque: <span className="italic font-light">A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
+      miniTag: <>ÁREAS DE ATUAÇÃO</>,
+      FirstPart: <span>Advocacia que </span>,
+      Destaque: <span className="italic font-light">Resolve</span>,
+      SecondPart: <span></span>,
       subtitle: <>A_Definir</>,
       imgFeatures: imgFeatures,
       alt: <>Imagem ilustrativa da Features</>,
