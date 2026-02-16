@@ -464,6 +464,11 @@ const content = {
         },
       ],
     },
+    diferences: {
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
+    },
     faq: {
       miniTag: <>A_Definir</>,
       title: <>A_Definir</>,
