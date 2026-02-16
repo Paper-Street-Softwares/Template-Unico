@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.paperstreet.com.br/sitemap.xml
+Sitemap: https://www.familia.taj.adv.br/sitemap.xml
