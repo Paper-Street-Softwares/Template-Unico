@@ -231,18 +231,20 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion, modal }) {
                                 {item.description}
                               </Typography>
 
-                              <div>
-                                <a
-                                  href={item.link}
-                                  target="_blank"
-                                  className="mt-6 text-primaryLight font-secondFont text-sm flex items-center gap-2 cursor-pointer scale-100 hover:scale-95 w-fit duration-500 transition-all"
-                                >
-                                  {item.buttonLabel}
-                                  <span>
-                                    <ArrowRight width={18} />
-                                  </span>
-                                </a>
-                              </div>
+                              {item.link && (
+                                <div>
+                                  <a
+                                    href={item.link}
+                                    target="_blank"
+                                    className="mt-6 text-primaryLight font-secondFont text-sm flex items-center gap-2 cursor-pointer scale-100 hover:scale-95 w-fit duration-500 transition-all"
+                                  >
+                                    {item.buttonLabel}
+                                    <span>
+                                      <ArrowRight width={18} />
+                                    </span>
+                                  </a>
+                                </div>
+                              )}
                             </AccordionDetails>
                           </Accordion>
                         ))}

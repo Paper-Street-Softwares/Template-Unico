@@ -335,14 +335,17 @@ const content = {
         card1: {
           title: <>A_Definir</>,
           icon: <>A_Definir</>,
+          link: "",
         },
         card2: {
           title: <>A_Definir</>,
           icon: <>A_Definir</>,
+          link: "",
         },
         card3: {
           title: <>A_Definir</>,
           icon: <>A_Definir</>,
+          link: "",
         },
         card4: {
           title: <>A_Definir</>,
@@ -472,7 +475,7 @@ const content = {
       img: imgSteps,
       labelCards: "Ver mais",
       label: "Clique aqui para ver todas as matérias",
-      blogLink: '', //sem "https://"
+      blogLink: "", //sem "https://"
     },
     parceria: {
       miniTag: <>A_Definir</>,
