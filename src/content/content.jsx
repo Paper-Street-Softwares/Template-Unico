@@ -193,7 +193,9 @@ const content = {
       FirstPart: <span>Advocacia que </span>,
       Destaque: <span className="italic font-light">Resolve</span>,
       SecondPart: <span></span>,
-      subtitle: <>A_Definir</>,
+      subtitle: <>Soluções jurídicas estratégicas para proteger patrimônio e família.
+
+</>,
       imgFeatures: imgFeatures,
       alt: <>Imagem ilustrativa da Features</>,
       titleMessageFeature: <>100%</>,
