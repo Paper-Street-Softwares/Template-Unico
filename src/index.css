@@ -7,8 +7,3 @@
     background-attachment: initial !important;
   }
 }
-
-:root {
-  --primaryDark: theme(colors.primaryDark);
-}
-

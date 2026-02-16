@@ -1,10 +1,10 @@
-import React from 'react'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
-import content from '../../content/content'
-import ButtonReflexo from '../interactives/ButtonReflexo'
+import React from "react";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import content from "../../content/content";
+import ButtonReflexo from "../interactives/ButtonReflexo";
 
 function Cards({ colorMode }) {
   let text,
@@ -15,52 +15,65 @@ function Cards({ colorMode }) {
     lineColor,
     textDestaque,
     image,
-    borderT
+    borderT;
 
   switch (colorMode) {
-    case 'light':
-      backgroundMode = 'bg-terciary/60'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      stepNumberBg = 'bg-white'
-      stepNumberText = 'text-primaryDark'
-      lineColor = 'bg-primaryDark/20'
-      textDestaque = 'text-primaryDark'
-      image = ' border-[8px] border-white'
-      borderT = 'border-t-primaryDark'
-      break
-    case 'dark':
-      backgroundMode = 'bg-darkOpacity'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      backgroundMode = 'bg-dark'
-      stepNumberBg = 'bg-dark'
-      stepNumberText = 'text-primaryLight'
-      lineColor = 'bg-primaryLight/20'
-      textDestaque = 'text-primaryLight'
-      image = ' border-[8px] border-borderImage'
-      borderT = 'border-t-primaryLight'
+    case "light":
+      backgroundMode = "bg-transparent";
 
-      break
-    default:
-      backgroundMode = 'bg-secondary/60'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      backgroundMode = 'bg-secondary/60'
-      stepNumberBg = 'bg-white'
-      stepNumberText = 'text-primaryDark'
-      lineColor = 'bg-primaryDark/20'
-      textDestaque = 'text-primaryDark'
-      image = ' border-[8px] border-white'
-      borderT = 'border-t-primaryDark'
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      stepNumberBg = "bg-white";
+      stepNumberText = "text-primaryDark";
+      lineColor = "bg-primaryDark/20";
+      textDestaque = "text-primaryDark";
+      image = " border-[8px] border-white";
+      borderT = "border-t-primaryDark";
+      break;
+    case "dark":
+      backgroundMode = "bg-transparent";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      backgroundMode = "bg-dark";
+      stepNumberBg = "bg-dark";
+      stepNumberText = "text-primaryLight";
+      lineColor = "bg-primaryLight/20";
+      textDestaque = "text-primaryLight";
+      image = " border-[8px] border-borderImage";
+      borderT = "border-t-primaryLight";
+
+      break;
+    case "defaultDark":
+      backgroundMode = "bg-transparent";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      stepNumberBg = "bg-white";
+      stepNumberText = "text-primaryDark";
+      lineColor = "bg-primaryDark/20";
+      textDestaque = "text-primaryDark";
+      image = " border-[8px] border-white";
+      borderT = "border-t-primaryDark";
+
+      break;
+
+    case "defaultLight":
+      backgroundMode = "bg-transparent";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      stepNumberBg = "bg-white";
+      stepNumberText = "text-primaryDark";
+      lineColor = "bg-primaryDark/20";
+      textDestaque = "text-primaryDark";
+      image = " border-[8px] border-white";
+      borderT = "border-t-primaryDark";
   }
 
-  const cards = Object.values(content.texts.cardsSection.cards)
+  const cards = Object.values(content.texts.cardsSection.cards);
   return (
     <SectionArea className={`${backgroundMode}`}>
       <SectionWrapper>
         <section id="">
-          <div className="container mx-auto">
+          <div className="mx-auto">
             <SectionHeaderNovo
               miniTitle={content.texts.cardsSection.miniTag}
               title={content.texts.cardsSection.title}
@@ -77,7 +90,7 @@ function Cards({ colorMode }) {
                       className={`h-fit border-t-4 ${borderT} bg-white transition-shadow duration-300 w-[80%] phone3:w-[200px] mx-auto rounded-md`}
                     >
                       <div className="pt-8 px-6 pb-8 h-full flex flex-col">
-                        <div className="w-14 h-14 rounded-full bg-primaryDark text-white flex items-center justify-center mx-auto text-primary mb-6">
+                        <div className="w-14 h-14 rounded-full bg-primaryLight text-black flex items-center justify-center mx-auto text-primary mb-6">
                           {item.icon}
                         </div>
                         <h3 className="text-xl font-secondFont font-bold text-primary text-center">
@@ -120,7 +133,7 @@ function Cards({ colorMode }) {
         </section>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default Cards
+export default Cards;

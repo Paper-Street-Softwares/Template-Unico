@@ -32,6 +32,24 @@ import {
   HandCoins,
   Check,
   Shield,
+  ChartNoAxesColumn,
+  ChartNoAxesColumnIcon,
+  ChartNoAxesColumnDecreasing,
+  ChartNoAxesCombined,
+  Globe,
+  CheckCheck,
+  HandHeart,
+  HandHelping,
+  HandPlatter,
+  HandshakeIcon,
+  FileDigit,
+  Computer,
+  UserCheck,
+  UserCheck2,
+  Scale3d,
+  Hourglass,
+  Brain,
+  BriefcaseBusiness,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -121,25 +139,36 @@ const content = {
       ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      miniTag: <>A_definir</>,
-      FirstPart: <span>A_definir</span>,
+      miniTag: <>LANDING PAGES PARA ADVOGADOS</>,
+      FirstPart: <span>Landing pages jurídicas para</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_definir</span>
+        <span className="destaque relative italic font-light">captar</span>
       ),
-      SecondPart: <span></span>,
-      subtitle: <p>A_definir</p>,
+      SecondPart: <span>clientes</span>,
+      subtitle: (
+        <p>
+          Criamos <strong className="text-primaryLight">landing pages</strong>{" "}
+          estratégicas para advogados que querem atrair clientes todos os dias
+          pela internet, com previsibilidade e profissionalismo.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Quero ter mais clientes</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: <>A_Definir</>,
+        text: (
+          <>
+            Especialistas em páginas que transformam visitantes em consultas
+            agendadas.
+          </>
+        ),
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -154,43 +183,89 @@ const content = {
       ),
     },
     important: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
+      miniTag: <>DÚVIDAS E OBJEÇÕES COMUNS</>,
+      title: (
+        <>
+          As principais dúvidas dos advogados antes de investir em uma landing
+          page
+        </>
+      ),
+      subtitle: (
+        <>
+          Esclarecemos os pontos que normalmente geram insegurança para que sua
+          decisão seja técnica, consciente e segura.
+        </>
+      ),
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Já tentei algo parecido e não funcionou</>,
+          paragraph: (
+            <>
+              Isso acontece quando o problema não é a advocacia, mas a ausência
+              de estratégia. Landing page genérica, sem posicionamento e sem
+              foco em conversão não gera resultado.
+            </>
+          ),
         },
         card2: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Tenho receio das regras da OAB</>,
+          paragraph: (
+            <>
+              Toda a estrutura é pensada dentro dos limites éticos. Linguagem
+              informativa, posicionamento profissional e foco em orientação
+              jurídica, sem promessas ou sensacionalismo.
+            </>
+          ),
         },
         card3: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Não sei se uma landing page funciona para a minha área</>,
+          paragraph: (
+            <>
+              Funciona quando existe clareza de público, dor bem definida e
+              comunicação correta. Não depende de fama, depende de estrutura.
+            </>
+          ),
         },
         card4: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Não quero investir sem ter clareza</>,
+          paragraph: (
+            <>
+              Antes de qualquer desenvolvimento, analisamos sua área de atuação,
+              público e objetivo. Se não fizer sentido, a recomendação é não
+              avançar.
+            </>
+          ),
         },
       },
-      fraseObs: <>A_Definir</>,
-      ctaButtonText: <>A_Definir</>,
+      fraseObs: (
+        <>
+          Nosso papel é orientar, estruturar e proteger seu posicionamento. Não
+          empurrar decisões.
+        </>
+      ),
+      ctaButtonText: <>Conversar com a Paper Street</>,
     },
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
-      Destaque: <span className="italic font-light">A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>DESENVOLVIMENTO WEB PARA ADVOGADOS</>,
+      FirstPart: <span>Conseguir</span>,
+      Destaque: <span className="italic font-light">clientes</span>,
+      SecondPart: <span>na advocacia não deveria depender da sorte.</span>,
+      subtitle: (
+        <>Sem estrutura digital, seu escritório perde clientes todos os dias.</>
+      ),
       imgFeatures: imgFeatures,
       alt: <>Imagem ilustrativa da Features</>,
-      titleMessageFeature: <>A_Definir</>,
-      subtitleMessageFeature: <>A_Definir</>,
+      titleMessageFeature: <>Esse cenário precisa mudar!</>,
+      subtitleMessageFeature: <></>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Landing Page jurídica estratégica</>,
+          subtitle: (
+            <>
+              Uma landing page pensada para transmitir autoridade, confiança e
+              transformar visitas em contatos reais.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -199,13 +274,18 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Briefcase />,
+          icon: <ChartNoAxesCombined />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
         card2: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Presença profissional no Google</>,
+          subtitle: (
+            <>
+              Seu escritório é encontrado por quem já está procurando exatamente
+              pelo seu serviço.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -214,13 +294,78 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <User />,
+          icon: <Globe />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
         card3: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Credibilidade antes do primeiro contato</>,
+          subtitle: (
+            <>
+              O cliente confia no seu escritório antes mesmo de clicar no
+              WhatsApp.
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <HandshakeIcon />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+        card4: {
+          title: <>Estrutura digital que trabalha 24/7</>,
+          subtitle: (
+            <>
+              Enquanto você advoga, seu site apresenta, explica e filtra seus
+              serviços automaticamente.
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
+            </div>
+          ),
+          icon: <Computer />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+        card5: {
+          title: <>Comunicação clara e objetiva</>,
+          subtitle: (
+            <>
+              Sem juridiquês desnecessário. O cliente entende, se identifica e
+              entra em contato.
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <UserCheck />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+        card6: {
+          title: <>Base sólida para anúncios e crescimento</>,
+          subtitle: (
+            <>
+              Anunciar sem site é desperdiçar dinheiro. Com estrutura, cada
+              clique tem propósito.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -233,98 +378,65 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
-        card4: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
+      },
+      ctaButtonText: <>Quero minha máquina de oportunidades</>,
+    },
+    cardsSection: {
+      miniTag: <>SE NADA MUDAR, O CENÁRIO É ESTE</>,
+      title: <>A instabilidade de hoje vira estagnação amanhã.</>,
+      subtitle: (
+        <>
+          No mercado jurídico atual, depender apenas de indicações e ações
+          isoladas de marketing impede o crescimento previsível do escritório.
+        </>
+      ),
+      cards: {
+        card1: {
+          title: (
+            <>
+              Meses bons alternados com meses fracos, sem qualquer
+              previsibilidade
+            </>
           ),
-          icon: <Gavel />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          icon: <ChartNoAxesCombined />,
+        },
+        card2: {
+          title: (
+            <>Mais horas de trabalho para manter o mesmo nível de faturamento</>
+          ),
+          icon: <Hourglass />,
+        },
+        card3: {
+          title: <>Decisões tomadas no cansaço, não em dados ou estratégia</>,
+          icon: <Brain />,
+        },
+        card4: {
+          title: (
+            <>
+              Insegurança para investir em anúncios e estrutura de crescimento
+            </>
+          ),
+          icon: <BriefcaseBusiness />,
         },
         card5: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
+          title: (
+            <>
+              Sensação constante de estar ficando para trás no mercado jurídico
+            </>
           ),
-          icon: <Users />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-        card6: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <MessageSquare />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-        card7: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Shield />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-        card8: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-        card9: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <FileText />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
+          icon: <Scale />,
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      fraseText: (
+        <>
+          <p>Indicação é importante.</p> <br />
+          <p>
+            Mas indicação{" "}
+            <span className="font-bold">não é estratégia de crescimento</span>.
+          </p>
+        </>
+      ),
+      ctaButtonText: "Quero uma análise do meu escritório",
     },
     maps: {
       minitag: <>A_Definir</>,
@@ -381,50 +493,90 @@ const content = {
       // },
     },
     ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>PRÓXIMO PASSO</>,
+      title: (
+        <h1>
+          Descubra se uma landing page é o caminho certo para o seu escritório.
+        </h1>
+      ),
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Antes de qualquer proposta, realizamos uma conversa estratégica para
+            entender sua área de atuação, seus objetivos e avaliar se existe um
+            caminho ético e seguro de captação de clientes online.
+          </p>
         </div>
       ),
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Conversar com um especialista da Paper</>,
 
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
+      miniTag: <>O CAMINHO MAIS SEGURO PARA CAPTAR CLIENTES ONLINE</>,
+      FirstPart: (
+        <span> Uma landing page criada para advogados que querem</span>
+      ),
+      Destaque: <span className="italic font-light"> clientes</span>,
+      SecondPart: <span>de verdade</span>,
 
-      subtitle: <>A_Definir</>,
+      subtitle: (
+        <>
+          A Paper Street planeja, cria e estrutura landing pages jurídicas
+          pensadas para atrair, orientar e converter potenciais clientes online,
+          sempre respeitando as normas da OAB.
+        </>
+      ),
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Diagnóstico estratégico do escritório</>,
+          cardDescription: (
+            <>
+              Analisamos sua área de atuação, perfil de cliente e objetivo de
+              captação para definir uma landing page coerente, clara e alinhada
+              à realidade do seu escritório.
+            </>
+          ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Estrutura ética de captação</>,
+          cardDescription: (
+            <>
+              Desenvolvemos a página com linguagem profissional e informativa,
+              respeitando o Código de Ética da OAB e protegendo o posicionamento
+              do seu nome no mercado.
+            </>
+          ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Foco em intenção real de contato</>,
+          cardDescription: (
+            <>
+              A landing page é pensada para conversar com quem já tem uma dor
+              jurídica concreta, filtrando curiosos e priorizando contatos com
+              potencial real.
+            </>
+          ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Base sólida para crescimento</>,
+          cardDescription: (
+            <>
+              Entregamos uma estrutura pronta para receber tráfego, indicações e
+              buscas no Google, permitindo crescimento organizado e previsível
+              ao longo do tempo.
+            </>
+          ),
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Quero estruturar minha landing page jurídica</>,
     },
 
     blog: {
@@ -469,26 +621,102 @@ const content = {
       title: <>A_Definir</>,
       subtitle: <>A_Definir</>,
     },
+    authority: {
+      miniTag: <>POR QUE CONFIAR NA PAPER STREET</>,
+      title: <>Landing pages jurídicas, com método.</>,
+      subtitle: (
+        <>
+          Somos uma empresa focada na criação de landing pages para advogados
+          captarem clientes online com ética e estratégia.
+        </>
+      ),
+      cards: {
+        card1: {
+          title: <>Especialização jurídica</>,
+          paragraph: (
+            <>
+              Atendemos exclusivamente advogados e escritórios de advocacia,
+              entendendo o público, a linguagem correta e os limites éticos do
+              setor.
+            </>
+          ),
+        },
+        card2: {
+          title: <>Conformidade com a OAB</>,
+          paragraph: (
+            <>
+              Toda landing page é construída respeitando o Código de Ética da
+              OAB, evitando riscos, exageros e exposições desnecessárias.
+            </>
+          ),
+        },
+        card3: {
+          title: <>Clareza e transparência</>,
+          paragraph: (
+            <>
+              Você entende exatamente o que está sendo construído, por quê e
+              para qual objetivo. Sem promessas vagas. Sem estrutura genérica.
+            </>
+          ),
+        },
+        card4: {
+          title: <>Visão de captação e negócio</>,
+          paragraph: (
+            <>
+              Nosso foco não é “site bonito”, mas uma landing page pensada para
+              orientar, filtrar e converter contatos com intenção real.
+            </>
+          ),
+        },
+      },
+
+      ctaButtonText: <>Falar com um especialista</>,
+    },
     faq: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>TIRE SUAS DÚVIDAS</>,
+      title: <>Perguntas Frequentes</>,
+      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Ela serve para fazer anúncios no Google Ads.</>,
+          answer: (
+            <>
+              Serve, e é exatamente para isso que ela é criada. A landing page
+              organiza a informação, prepara o visitante e aumenta muito a
+              chance de quem clica realmente entrar em contato.
+            </>
+          ),
         },
         question2: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: (
+            <>Quero captar clientes, preciso de um site ou landing page</>
+          ),
+          answer: (
+            <>
+              Se o objetivo é captação, a landing page é o caminho mais direto.
+              Ela é focada em um serviço, uma dor e uma ação. O site
+              institucional pode vir depois.
+            </>
+          ),
         },
         question3: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Pra que serve uma landing page?</>,
+          answer: (
+            <>
+              Para apresentar seu serviço com clareza, orientar o visitante e
+              filtrar curiosos. Quem entra entende se o seu escritório é ou não
+              o que ele procura.
+            </>
+          ),
         },
         question4: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Demora muito pra ficar pronta?</>,
+          answer: (
+            <>
+              Não. Após coletarmos todas as informações necessárias, a landing
+              page é entregue em até 5 dias úteis.
+            </>
+          ),
         },
       },
 
