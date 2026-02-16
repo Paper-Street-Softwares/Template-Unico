@@ -105,11 +105,11 @@ export default function Index() {
               <StepsNovoTemplate colorMode={colorMode} />
             </Suspense>
           </AlternatingSection>
-          <AlternatingSection index={5} colorMode={colorMode}>
+          {/* <AlternatingSection index={5} colorMode={colorMode}>
             <Suspense>
               <Authority colorMode={colorMode} />
             </Suspense>
-          </AlternatingSection>
+          </AlternatingSection> */}
 
           <AlternatingSection index={6} colorMode={colorMode} forcePrimaryDark>
             <Suspense>

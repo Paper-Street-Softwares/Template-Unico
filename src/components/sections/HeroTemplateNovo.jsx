@@ -259,7 +259,7 @@ function HeroTemplateNovo({
                   alt={content.texts.hero.alt}
                   className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700 desktop1:hidden"
                   width={950}
-                  height={628}
+                  height={540}
                   fetchPriority="high"
                 />
 
@@ -268,7 +268,7 @@ function HeroTemplateNovo({
                   alt={content.texts.hero.alt}
                   className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700 hidden desktop1:flex"
                   width={621}
-                  height={828}
+                  height={825}
                   fetchPriority="high"
                 />
 

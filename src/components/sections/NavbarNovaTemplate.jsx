@@ -101,16 +101,16 @@ function NavbarNovaTemplate({
                 src={content.texts.navbar.logo.img}
                 alt={content.texts.navbar.logo.alt}
                 className="desktop1:hidden w-fit max-h-full object-contain flex"
-                width={277}
-                height={60}
+                width={195}
+                height={83}
                 fetchPriority="high"
               />
               <img
                 src={content.texts.navbar.logo.imgDesktop}
                 alt={content.texts.navbar.logo.alt}
                 className="hidden desktop1:flex w-fit max-h-full object-contain"
-                width={183}
-                height={39}
+                width={350}
+                height={148}
                 fetchPriority="high"
               />
             </a>
