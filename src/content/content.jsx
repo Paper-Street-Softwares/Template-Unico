@@ -379,7 +379,7 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
       },
-      ctaButtonText: <>Quero minha máquina de oportunidades</>,
+      ctaButtonText: <>Quero minha landing page agora</>,
     },
     cardsSection: {
       miniTag: <>SE NADA MUDAR, O CENÁRIO É ESTE</>,
