@@ -4,15 +4,22 @@ import ButtonReflexo from "../interactives/ButtonReflexo";
 import content from "../../content/content";
 
 function Emergency({ colorMode }) {
-  let backgroundMode, text, textOpacity, textDestaque, bgCards, borderSVG;
+  let backgroundMode,
+    text,
+    textOpacity,
+    textDestaque,
+    bgSvg,
+    borderSVG,
+    textSvg;
   switch (colorMode) {
     case "light":
       backgroundMode = "bg-secondary/60";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       textDestaque = "text-primaryLight";
-      bgCards = "bg-primaryDark";
+      bgSvg = "bg-primaryDark";
       borderSVG = "border-primaryDark";
+      textSvg = "text-red-500";
 
       break;
     case "dark":
@@ -20,8 +27,9 @@ function Emergency({ colorMode }) {
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       textDestaque = "text-primaryLight";
-      bgCards = "bg-primaryLight";
+      bgSvg = "bg-primaryLight";
       borderSVG = "border-primaryLight";
+      textSvg = "text-red-500";
 
       break;
     case "defaultDark":
@@ -29,34 +37,40 @@ function Emergency({ colorMode }) {
       text = "text-corTitulosBranca";
       textOpacity = "text-corOutrosTextosBranca";
       textDestaque = "text-primaryDark";
-      bgCards = "bg-primaryDark";
+      bgSvg = "bg-primaryDark";
       borderSVG = "border-primaryDark";
+      textSvg = "text-red-500";
       break;
     case "defaultLight":
       backgroundMode = "bg-darkOpacity";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       textDestaque = "text-primaryLight";
-      bgCards = "bg-primaryLight";
+      bgSvg = "bg-primaryLight";
       borderSVG = "border-primaryLight";
+      textSvg = "text-red-500";
   }
   return (
     <div>
-      <section className="relative py-8 bg-red-700/30 border-y border-red-900/30 overflow-hidden font-secondFont">
+      <section className="relative py-8 bg-red-700/70 border-y border-red-900/30 overflow-hidden font-secondFont">
         {/* Background Pulse Effect */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(200,58,38,0.1)_0%,transparent_70%)] animate-pulse" />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 max-w-5xl mx-auto">
             <div className="flex items-start gap-4 flex-1">
-              <div className="hidden sm:flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-red-500/20 text-red-500 border border-red-500/20 animate-pulse">
-                <AlertTriangle className="h-6 w-6" />
+              <div
+                className={`hidden sm:flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${borderSVG} ${bgSvg} animate-pulse`}
+              >
+                <AlertTriangle className={`h-6 w-6 ${textSvg}`} />
               </div>
 
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <AlertTriangle className="h-5 w-5 text-red-800 sm:hidden" />
-                  <span className="text-red-700 font-bold tracking-wider text-sm uppercase">
+                  <AlertTriangle className={`h-5 w-5 sm:hidden ${textSvg}`} />
+                  <span
+                    className={`font-bold tracking-wider text-sm uppercase ${textDestaque}`}
+                  >
                     {content.texts.emergency.miniTag}
                   </span>
                 </div>

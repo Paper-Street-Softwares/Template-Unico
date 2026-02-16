@@ -2,56 +2,71 @@ import React from "react";
 import imgIcon from "../../assets/imgs/icons/exclamation.webp";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 
-function CardsImportants({ title, paragraph, colorMode, className }) {
+function CardsImportants({
+  title,
+  paragraph,
+  colorMode,
+  className,
+  iconColor,
+}) {
   //precisa fazer colorMode
   let bgCircle, bgCard, titleMode, description;
   switch (colorMode) {
     case "light":
-      bgCard = "bg-white";
-      bgCircle = "bg-terciary";
+      bgCard = "bg-quartenary";
+      bgCircle = "bg-white";
       titleMode = "text-corTitulosPreto";
       description = "text-corOutrosTextosPreto";
       break;
     case "dark":
-      bgCard = "bg-black";
-      bgCircle = "bg-primaryLight";
+      bgCard = "bg-dark";
+      bgCircle = "bg-darkOpacity";
       titleMode = "text-corTitulosBranca";
       description = "text-corOutrosTextosBranca";
       break;
     case "defaultDark":
-      bgCard = "bg-white";
-      bgCircle = "bg-primaryLight";
+      bgCard = "bg-quartenary";
+      bgCircle = "bg-white";
       titleMode = "text-corTitulosPreto";
       description = "text-corOutrosTextosPreto";
       break;
     case "defaultLight":
-      bgCard = "bg-black";
-      bgCircle = "bg-primaryLight";
+      bgCard = "bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]";
+      bgCircle = "bg-white";
       titleMode = "text-corTitulosBranca";
       description = "text-corOutrosTextosBranca";
   }
+
+  const finalIconColor =
+    iconColor ??
+    (colorMode === "dark" || colorMode === "defaultDark" ? "#430E16" : "#fff");
+
   return (
     <MotionDivDownToUp>
       <div
-        className={`relative h-fit shadow-lg max-w-[400px] py-12 px-10 rounded-[18px] flex flex-col gap-4 font-secondFont group transition-all duration-700 hover:scale-105 ${className ?? bgCard} `}
+        className={`relative h-fit shadow-lg max-w-[400px] py-12 px-8 rounded-[18px] flex flex-col gap-4 font-secondFont group transition-all duration-700 hover:scale-105 ${className ?? bgCard} `}
       >
         <h1
-          className={`text-start font-bold duration-700 ${className ?? titleMode}`}
+          className={`text-start font-secondFont font-bold text-lg duration-700 ${className ?? titleMode}`}
         >
           {title}
         </h1>
-        <p className={`text-start ${description} duration-700`}>{paragraph}</p>
+        <p
+          className={`text-start text-sm font-secondFont font-light ${description} duration-700`}
+        >
+          {paragraph}
+        </p>
 
         <div
-          className={`absolute border-2 border-primaryDark duration-700 transition-all rounded-full p-3 -top-6 left-6 ${bgCircle}`}
+          className={`absolute shadow border-primaryDark duration-700 transition-all rounded-full p-3 -top-6 left-6 ${bgCircle}`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
+            fill={finalIconColor}
+            stroke={finalIconColor}
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -64,14 +79,6 @@ function CardsImportants({ title, paragraph, colorMode, className }) {
             {/* ponto do ! bem maior */}
             <line x1="12" y1="20" x2="12.01" y2="20" />
           </svg>
-
-          {/* <img
-            src={imgIcon}
-            width={32}
-            height={32}
-            alt="Ícone de exclamação"
-            className="w-8"
-          /> */}
         </div>
       </div>
     </MotionDivDownToUp>

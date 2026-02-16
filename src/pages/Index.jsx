@@ -60,7 +60,7 @@ export default function Index() {
             <Emergency colorMode={colorMode} />
           </AlternatingSection>
 
-          <AlternatingSection index={2} colorMode={colorMode}>
+          <AlternatingSection index={3} colorMode={colorMode}>
             <Important colorMode={colorMode} />
           </AlternatingSection>
 
