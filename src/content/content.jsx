@@ -50,6 +50,7 @@ import {
   Hourglass,
   Brain,
   BriefcaseBusiness,
+  Wallet,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -416,7 +417,7 @@ const content = {
               Insegurança para investir em anúncios e estrutura de crescimento
             </>
           ),
-          icon: <BriefcaseBusiness />,
+          icon: <Wallet />,
         },
         card5: {
           title: (
