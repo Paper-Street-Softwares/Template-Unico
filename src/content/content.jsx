@@ -32,8 +32,6 @@ import {
   HandCoins,
   Check,
   Shield,
-  ChartNoAxesCombined,
-  Hourglass,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -41,14 +39,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Tavares Assessoria Jurídica",
+  name: "A_Definir",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "familia.taj.adv.br", // Sem "www"
+  domain: "A_Definir", // Sem "www"
   phone: {
-    ddd: "11",
-    firstPart: "97394", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0876", // Apenas os 4 últimos números
+    ddd: "00",
+    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0000", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -113,44 +111,35 @@ const content = {
         "Início",
         "Serviços",
         "Sobre",
+        "Perguntas",
         // 'Blog',
         // 'Mapa',
       ],
-      menuId: ["home", "feature", "about"],
+      menuId: ["home", "feature", "about", "faq"],
       ariaLabel: "Botão de Contato",
       ctaButtonText: "Contato",
       ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      miniTag: <>ADVOGADO DE DIREITO DE FAMÍLIA</>,
-      FirstPart: <span>Segurança jurídica para sua</span>,
+      miniTag: <>A_definir</>,
+      FirstPart: <span>A_definir</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">família</span>
+        <span className="destaque relative italic font-light">A_definir</span>
       ),
       SecondPart: <span></span>,
-      subtitle: (
-        <p>
-          Atuação estratégica em família e sucessões com clareza, cuidado e
-          firmeza jurídica.
-        </p>
-      ),
+      subtitle: <p>A_definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Falar com o Advogado</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: (
-          <>
-            Atendimento online para todo Brasil e presencial para SP e Região
-            Metropolitana.
-          </>
-        ),
+        text: <>A_Definir</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -189,28 +178,19 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>ÁREAS DE ATUAÇÃO</>,
-      FirstPart: <span>Estratégia Jurídica e Segurança em</span>,
-      Destaque: <span className="italic font-light">Família e Sucessões</span>,
-      SecondPart: <span></span>,
-      subtitle: (
-        <>
-          Atuação preventiva e contenciosa para proteger relações familiares,
-          patrimônio e decisões que impactam gerações.
-        </>
-      ),
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
+      Destaque: <span className="italic font-light">A_Definir</span>,
+      SecondPart: <span>A_Definir</span>,
+      subtitle: <>A_Definir</>,
       imgFeatures: imgFeatures,
       alt: <>Imagem ilustrativa da Features</>,
-      titleMessageFeature: <>Atuação firme </>,
-      subtitleMessageFeature: (
-        <>na defesa dos interesses familiares e patrimoniais</>
-      ),
+      titleMessageFeature: <>A_Definir</>,
+      subtitleMessageFeature: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>Ações de Guarda e Regime de Convivência</>,
-          subtitle: (
-            <>Regulamentação de visitas e guarda (compartilhada/unilateral).</>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -224,13 +204,8 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
         card2: {
-          title: <>Alimentos (Pensão Alimentícia)</>,
-          subtitle: (
-            <>
-              Ações de Fixação, Revisional (aumentar ou diminuir), Exoneração
-              (cancelar) e Execução (cobrança de atrasados).
-            </>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -244,10 +219,8 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
         card3: {
-          title: <>Reconhecimento e Dissolução de União Estável</>,
-          subtitle: (
-            <>Tanto em cartório (amigável) quanto judicial (litigioso).</>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -261,8 +234,8 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
         card4: {
-          title: <>Reconhecimento de Paternidade</>,
-          subtitle: <>Investigação e registro.</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -276,8 +249,8 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
         card5: {
-          title: <>Divórcio</>,
-          subtitle: <>Judicial (litigioso) e Extrajudicial (em cartório).</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -291,8 +264,8 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
         card6: {
-          title: <>Inventário e Partilha</>,
-          subtitle: <>Judicial e Extrajudicial (Cartório).</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -306,13 +279,8 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
         card7: {
-          title: <>Planejamento Sucessório Básico</>,
-          subtitle: (
-            <>
-              Testamentos, Doação com reserva de usufruto e antecipação de
-              legítima (sem a complexidade de holding).
-            </>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -326,8 +294,8 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
         card8: {
-          title: <>Pacto Antenupcial e Contrato de Namoro</>,
-          subtitle: <>Prevenção patrimonial para novos casais.</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -341,8 +309,8 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
         card9: {
-          title: <>Alteração de Regime de Bens</>,
-          subtitle: <>Mudança do regime de casamento durante a união.</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -356,7 +324,7 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
       },
-      ctaButtonText: <>Falar agora com o Advogado</>,
+      ctaButtonText: <>A_Definir</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -406,39 +374,13 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É O TAVARES ASSESSORIA JURÍDICA</>,
-      FirstPart: <span> Nossa atuação em</span>,
-      Destaque: <span className="italic font-light"> Direito Condominial</span>,
-      SecondPart: <span></span>,
-      subtitle: <></>,
-      paragraph: (
-        <div>
-          Atuamos de forma especializada no{" "}
-          <strong>Direito de Família e Sucessões</strong>, com foco na defesa
-          dos interesses de indivíduos e famílias em questões que envolvem
-          relações familiares, organização patrimonial e transmissão de bens.
-          Nossa atuação é orientada pela prevenção de conflitos, pela construção
-          de soluções jurídicas seguras e pela condução responsável de demandas
-          que impactam diretamente o patrimônio e a estrutura familiar.
-          <br />
-          <br />
-          Desenvolvemos uma atuação estratégica e personalizada, analisando cada
-          situação de forma individual para construir soluções jurídicas
-          eficazes, seguras e alinhadas à realidade familiar e patrimonial de
-          cada cliente. A combinação entre domínio técnico da legislação
-          aplicável e uma abordagem clara e objetiva assegura decisões firmes e
-          respaldo jurídico em negociações, acordos e processos judiciais.
-          <br />
-          <br />
-          Mantemos um rigoroso protocolo de atualização jurídica, acompanhando
-          de perto o entendimento dos tribunais e as mudanças na legislação
-          relacionada ao Direito de Família e Sucessões. Ética, especialização e
-          assertividade são os pilares que sustentam nossa atuação na proteção
-          de direitos, do patrimônio e da estabilidade das relações familiares
-          ao longo do tempo.
-        </div>
-      ),
-      ctaButtonText: <>Falar diretamente comigo</>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir </span>,
+      Destaque: <span className="italic font-light"> A_Definir</span>,
+      SecondPart: <span>A_Definir</span>,
+      subtitle: <>A_Definir</>,
+      paragraph: <div>A_Definir</div>,
+      ctaButtonText: <>A_Definir</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
@@ -476,78 +418,50 @@ const content = {
       // },
     },
     ctaSection: {
-      miniTag: <>FALE CONOSCO</>,
-      title: <h1>Conflitos familiares exigem orientação jurídica segura.</h1>,
+      miniTag: <>A_Definir</>,
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Divórcio, partilha de bens, pensão, guarda, inventário ou
-            planejamento sucessório exigem análise jurídica clara, estratégica e
-            responsável. Fale conosco e entenda o melhor caminho para o seu
-            caso.
-          </p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
-      ctaButtonText: <>Entrar em contato agora</>,
+      ctaButtonText: <>A_Definir</>,
 
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>PASSO A PASSO</>,
-      FirstPart: <span> Entenda como</span>,
-      Destaque: <span className="italic font-light"> cuidamos</span>,
-      SecondPart: <span> do seu caso familiar</span>,
-      subtitle: <></>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir </span>,
+      Destaque: <span className="italic font-light"> A_Definir</span>,
+      SecondPart: <span>A_Definir</span>,
+
+      subtitle: <>A_Definir</>,
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Diagnóstico Jurídico</>,
-          cardDescription: (
-            <>
-              Você apresenta sua situação familiar ou sucessória, e analisamos o
-              cenário com foco em direitos, deveres, riscos jurídicos e impactos
-              patrimoniais.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Análise Técnica e Documental</>,
-          cardDescription: (
-            <>
-              Examinamos documentos, registros, bens, acordos e vínculos
-              jurídicos para identificar riscos, inconsistências ou caminhos
-              seguros de solução.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Definição da Estratégia</>,
-          cardDescription: (
-            <>
-              Definimos um plano de ação claro, seja preventivo, consensual ou
-              judicial, sempre priorizando segurança jurídica e equilíbrio nas
-              decisões.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Execução e Acompanhamento</>,
-          cardDescription: (
-            <>
-              Atuamos de forma firme e responsável até a solução do caso, com
-              acompanhamento próximo e comunicação clara em todas as etapas do
-              processo.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Entre em contato agora</>,
+      ctaButtonText: <>A_Definir</>,
     },
 
     blog: {

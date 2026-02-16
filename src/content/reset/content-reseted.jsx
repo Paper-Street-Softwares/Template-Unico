@@ -333,23 +333,23 @@ const content = {
       cards: {
         card1: {
           title: <>A_Definir</>,
-          icon: <ChartNoAxesCombined />,
+          icon: <>A_Definir</>,
         },
         card2: {
           title: <>A_Definir</>,
-          icon: <Hourglass />,
+          icon: <>A_Definir</>,
         },
         card3: {
           title: <>A_Definir</>,
-          icon: <Brain />,
+          icon: <>A_Definir</>,
         },
         card4: {
           title: <>A_Definir</>,
-          icon: <BriefcaseBusiness />,
+          icon: <>A_Definir</>,
         },
         card5: {
           title: <>A_Definir</>,
-          icon: <Scale />,
+          icon: <>A_Definir</>,
         },
       },
       fraseText: (
