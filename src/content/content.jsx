@@ -690,7 +690,7 @@ const content = {
         },
         question2: {
           question: (
-            <>Quero captar clientes, preciso de um site ou landing page</>
+            <>Quero captar clientes, preciso de um site ou landing page?</>
           ),
           answer: (
             <>
