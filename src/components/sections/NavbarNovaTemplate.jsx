@@ -85,14 +85,14 @@ function NavbarNovaTemplate({
       >
         <div className="container mx-auto flex items-center m-auto max-w-[1215px] h-full w-[90%] justify-between py-2">
           <div
-            className={`flex flex-col z-20 relative items-start justify-center  ${
+            className={`flex flex-col z-20 relative  ${
               isScrolled
-                ? "w-[30%] tablet1:w-[20%] desktop1:w-[10%] transition-all duration-700"
-                : "py-3 w-[60%] tablet1:w-[30%] desktop1:w-[20%] desktop2:w-[15%] transition-all duration-700"
+                ? "w-[30%] h-[60px] tablet1:w-[20%] desktop1:w-[10%] transition-all duration-700"
+                : "py-3 w-[60%] h-[100px] tablet1:w-[30%] desktop1:w-[20%] desktop1:h-[110px] desktop2:w-[15%] transition-all duration-700"
             }`}
           >
             <a
-              className="cursor-pointer flex items-center overflow-hidden"
+              className="cursor-pointer w-[100%] h-[80px] desktop1:h-[110px] flex items-center overflow-hidden"
               href="/"
               onClick={() => window.location.reload()}
               aria-label="recarregar página"
@@ -100,7 +100,7 @@ function NavbarNovaTemplate({
               <img
                 src={content.texts.navbar.logo.img}
                 alt={content.texts.navbar.logo.alt}
-                className="desktop1:hidden flex"
+                className="desktop1:hidden w-fit max-h-full object-contain flex"
                 width={276}
                 height={93}
                 fetchPriority="high"
@@ -108,9 +108,9 @@ function NavbarNovaTemplate({
               <img
                 src={content.texts.navbar.logo.imgDesktop}
                 alt={content.texts.navbar.logo.alt}
-                className="hidden desktop1:flex"
+                className="hidden desktop1:flex w-fit max-h-full object-contain"
                 width={350}
-                height={105}
+                height={148}
                 fetchPriority="high"
               />
             </a>
