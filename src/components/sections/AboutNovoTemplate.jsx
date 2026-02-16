@@ -132,20 +132,20 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                     <div className="space-y-4">
                       {[
                         {
-                          title: <>Defesa estratégica desde a primeira hora</>,
+                          title: <>Defesa Estratégica </>,
                           desc: (
                             <>
-                              Atuação imediata para proteger sua liberdade em
-                              cada decisão do caso.
+                              Análise minuciosa e táticas exclusivas para cada
+                              etapa do processo.
                             </>
                           ),
                         },
                         {
-                          title: <>Transparência Real</>,
+                          title: <>Transparência Real </>,
                           desc: (
                             <>
-                              Você sabe exatamente o que pode acontecer, os
-                              riscos envolvidos e os próximos passos.
+                              Informação clara e direta sobre todos os riscos e
+                              andamentos.
                             </>
                           ),
                         },
