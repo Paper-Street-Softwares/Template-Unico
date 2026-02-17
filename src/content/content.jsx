@@ -201,7 +201,10 @@ const content = {
           subtitle: (
             <>
               Suporte contínuo ao corpo diretivo para a tomada de decisões
-              seguras.
+              seguras. Inclui emissão de pareceres técnicos, análise de riscos
+              em contratações e respostas a notificações extrajudiciais. O
+              objetivo é evitar que problemas cotidianos se transformem em
+              processos judiciais.
             </>
           ),
           description: (
@@ -219,7 +222,15 @@ const content = {
 
         card2: {
           title: <>Gestão da Inadimplência e Recuperação de Crédito</>,
-          subtitle: <>Atuação focada no fluxo de caixa do condomínio.</>,
+          subtitle: (
+            <>
+              Atuação focada no fluxo de caixa do condomínio. Realizamos a
+              cobrança extrajudicial (régua de cobrança, notificações e acordos
+              amigáveis) e, quando necessário, a execução judicial imediata das
+              cotas condominiais, garantindo a saúde financeira do
+              empreendimento.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -237,8 +248,10 @@ const content = {
           title: <>Compliance Trabalhista e Terceirização</>,
           subtitle: (
             <>
-              Auditoria preventiva em contratos e orientação na gestão de
-              funcionários.
+              Auditoria preventiva nos contratos de prestadores de serviço
+              (portaria, limpeza e segurança) e orientação na gestão de
+              funcionários orgânicos. Mitigamos riscos de responsabilidade
+              subsidiária e solidária em reclamações trabalhistas.
             </>
           ),
           description: (
@@ -259,6 +272,9 @@ const content = {
           subtitle: (
             <>
               Projeto completo de implementação da LGPD no ambiente condominial.
+              Realizamos o mapeamento de dados sensíveis (moradores, visitantes
+              e biometria), revisão de contratos com operadores de dados e
+              criação de políticas de privacidade e uso de imagens (CFTV).
             </>
           ),
           description: (
@@ -276,7 +292,14 @@ const content = {
 
         card5: {
           title: <>Revisão e Modernização de Normas</>,
-          subtitle: <>Atualização da Convenção e do Regimento Interno.</>,
+          subtitle: (
+            <>
+              Atualização da Convenção de Condomínio e do Regimento Interno para
+              adequação às novas legislações e realidades (assembleias virtuais,
+              locações de curta temporada, carros elétricos e animais de
+              estimação).
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -293,7 +316,11 @@ const content = {
         card6: {
           title: <>Acompanhamento de Assembleias</>,
           subtitle: (
-            <>Suporte jurídico para garantir a legalidade das deliberações.</>
+            <>
+              Suporte jurídico presencial ou remoto durante as AGEs e AGOs,
+              garantindo a legalidade das convocações, votações e deliberações,
+              prevenindo anulações futuras.
+            </>
           ),
           description: (
             <div>
@@ -310,7 +337,13 @@ const content = {
 
         card7: {
           title: <>Mediação de Conflitos</>,
-          subtitle: <>Resolução técnica de disputas entre condôminos.</>,
+          subtitle: (
+            <>
+              Atuação técnica na resolução de disputas entre condôminos
+              (barulho, obras irregulares, vazamentos e comportamento anti
+              social), buscando a pacificação sem a necessidade do Judiciário.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -327,7 +360,11 @@ const content = {
         card8: {
           title: <>Análise e Gestão de Contratos</>,
           subtitle: (
-            <>Revisão de contratos para proteção jurídica do condomínio.</>
+            <>
+              Revisão minuciosa de contratos com fornecedores (manutenção de
+              elevadores, obras, seguros) para blindar o condomínio contra
+              cláusulas abusivas e garantir a execução dos serviços.
+            </>
           ),
           description: (
             <div>
