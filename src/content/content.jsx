@@ -268,7 +268,11 @@ const content = {
         },
 
         card4: {
-          title: <>Consultoria para Adequação à LGPD</>,
+          title: (
+            <>
+              Consultoria para Adequação à LGPD (Lei Geral de Proteção de Dados)
+            </>
+          ),
           subtitle: (
             <>
               Projeto completo de implementação da LGPD no ambiente condominial.
