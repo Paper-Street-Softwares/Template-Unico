@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react'
-import { Sidebar } from 'primereact/sidebar'
-import { Button } from 'primereact/button'
-import { Ripple } from 'primereact/ripple'
+import { useState, useEffect } from "react";
+import { Sidebar } from "primereact/sidebar";
+import { Button } from "primereact/button";
+import { Ripple } from "primereact/ripple";
 import {
   X,
   HomeIcon,
@@ -11,33 +11,33 @@ import {
   AlignJustify,
   MapPin,
   FileText,
-} from 'lucide-react'
-import { Link as ScrollLink } from 'react-scroll'
-import { Link as RouterLink } from 'react-router-dom'
-import content from '../../content/content'
+} from "lucide-react";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
+import content from "../../content/content";
 
-export default function SidebarSocial({ colorMode, mode = 'blog' }) {
-  const [visible, setVisible] = useState(false)
-  const [visibleSections, setVisibleSections] = useState([])
-  const [scrolled, setScrolled] = useState(false)
+export default function SidebarSocial({ colorMode, mode = "blog" }) {
+  const [visible, setVisible] = useState(false);
+  const [visibleSections, setVisibleSections] = useState([]);
+  const [scrolled, setScrolled] = useState(false);
 
-  const toggleSidebar = () => setVisible(!visible)
+  const toggleSidebar = () => setVisible(!visible);
 
   useEffect(() => {
-    const allIds = content.texts.navbar.menuId
-    const allLabels = content.texts.navbar.menuItems
+    const allIds = content.texts.navbar.menuId;
+    const allLabels = content.texts.navbar.menuItems;
 
     const paired = allIds.map((id, index) => ({
       id,
       label: allLabels[index] || id,
-    }))
+    }));
 
-    if (mode === 'site') {
-      setVisibleSections(paired)
+    if (mode === "site") {
+      setVisibleSections(paired);
     } else {
-      setVisibleSections(paired)
+      setVisibleSections(paired);
     }
-  }, [mode])
+  }, [mode]);
 
   const icons = [
     <HomeIcon />,
@@ -46,41 +46,41 @@ export default function SidebarSocial({ colorMode, mode = 'blog' }) {
     // <FileText />,
     <HelpCircle />,
     <MapPin />,
-  ]
+  ];
 
-  let colorButton, bgSidebar, textColor, border
+  let colorButton, bgSidebar, textColor, border;
 
   switch (colorMode) {
-    case 'light':
-      colorButton = 'text-black'
-      bgSidebar = 'bg-white'
-      textColor = 'text-corTitulosPreto'
-      border = 'border-black'
-      break
-    case 'dark':
-      colorButton = 'text-primaryLight'
-      bgSidebar = 'bg-darkOpacity'
-      textColor = 'text-corTitulosBranca'
-      border = 'border-white'
-      break
-    case 'defaultDark':
-      colorButton = 'text-white'
-      bgSidebar = 'bg-primaryDark'
-      textColor = 'text-corTitulosBranca'
-      border = 'border-primaryLight'
-      break
-    case 'defaultLight':
-      colorButton = 'text-black'
-      bgSidebar = 'bg-white'
-      textColor = 'text-corTitulosPreto'
-      border = 'border-black'
+    case "light":
+      colorButton = "text-black";
+      bgSidebar = "bg-white";
+      textColor = "text-corTitulosPreto";
+      border = "border-black";
+      break;
+    case "dark":
+      colorButton = "text-primaryLight";
+      bgSidebar = "bg-darkOpacity";
+      textColor = "text-corTitulosBranca";
+      border = "border-white";
+      break;
+    case "defaultDark":
+      colorButton = "text-white";
+      bgSidebar = "bg-primaryDark";
+      textColor = "text-corTitulosBranca";
+      border = "border-primaryLight";
+      break;
+    case "defaultLight":
+      colorButton = "text-black";
+      bgSidebar = "bg-white";
+      textColor = "text-corTitulosPreto";
+      border = "border-black";
   }
 
   return (
     <div className="inset-0 z-10 flex">
       <div
         className={`${
-          visible ? 'block' : 'hidden'
+          visible ? "block" : "hidden"
         } fixed inset-0 bg-black opacity-40 min-h-screen lg:hidden `}
         onClick={toggleSidebar}
       />
@@ -100,7 +100,7 @@ export default function SidebarSocial({ colorMode, mode = 'blog' }) {
             <div
               id="app-sidebar-2"
               className={`absolute top-0 left-0 flex-shrink-0 h-screen border-r-[1px] select-none surface-section lg:hidden lg:static z-1 surface-border border-neutral-700 ${bgSidebar}`}
-              style={{ width: '280px' }}
+              style={{ width: "280px" }}
             >
               <div className="flex flex-col h-full">
                 <div className="flex items-center justify-between flex-shrink-0 px-4 pt-6">
@@ -108,7 +108,7 @@ export default function SidebarSocial({ colorMode, mode = 'blog' }) {
                     <img
                       src={content.texts.navbar.solidLogo.img}
                       alt={content.texts.navbar.solidLogo.alt}
-                      className="w-[90%] h-auto "
+                      className="w-[90%] h-auto"
                     />
                   </span>
                   <span>
@@ -139,11 +139,11 @@ export default function SidebarSocial({ colorMode, mode = 'blog' }) {
                             <a className="flex items-center w-full p-3 transition-colors cursor-pointer p-ripple border-round text-700 hover:surface-100 transition-duration-150">
                               {icons[index] || <HelpCircle />}
                               <span className="ml-[8px]">
-                                {mode === 'site' ? (
+                                {mode === "site" ? (
                                   <RouterLink
                                     to={
-                                      id === 'inicio'
-                                        ? '/'
+                                      id === "inicio"
+                                        ? "/"
                                         : `/${id.toLowerCase()}`
                                     }
                                     className="align-text-top cursor-pointer"
@@ -156,7 +156,8 @@ export default function SidebarSocial({ colorMode, mode = 'blog' }) {
                                     spy={true}
                                     smooth={true}
                                     duration={500}
-                                    offset={-70}
+                                    offset={-50}
+                                    onClick={() => setVisible(false)}
                                     className="align-text-top cursor-pointer"
                                   >
                                     {label}
@@ -177,5 +178,5 @@ export default function SidebarSocial({ colorMode, mode = 'blog' }) {
         />
       </div>
     </div>
-  )
+  );
 }

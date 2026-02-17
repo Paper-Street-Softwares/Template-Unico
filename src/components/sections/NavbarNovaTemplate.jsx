@@ -135,7 +135,7 @@ function NavbarNovaTemplate({
                         e.preventDefault();
                         const el = document.getElementById(id);
                         if (el) {
-                          const yOffset = -90;
+                          const yOffset = -70;
                           const y =
                             el.getBoundingClientRect().top +
                             window.scrollY +

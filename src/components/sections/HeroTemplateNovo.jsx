@@ -143,7 +143,7 @@ function HeroTemplateNovo({
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="space-y-2 phone3:space-y-8 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
+              className="space-y-2 phone3:space-y-4 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
             >
               <div
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-[8px] phone2:text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
@@ -156,7 +156,7 @@ function HeroTemplateNovo({
                 {content.texts.hero.miniTag}
               </div>
               <h1
-                className={` text-[22px] phone2:text-3xl md:text-5xl lg:text-7xl font-medium leading-[1.1] desktop1:text-start ${text} `}
+                className={` text-[22px] phone2:text-3xl phone3:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] desktop1:text-start ${text} `}
               >
                 {content.texts.hero.FirstPart}{" "}
                 <span className={`${textDestaque}`}>
@@ -182,7 +182,7 @@ function HeroTemplateNovo({
                 ))}
               </div> */}
 
-              <div className="flex flex-col gap-4 pt-2 phone2:pt-4">
+              <div className="flex flex-col gap-4 py-2 phone2:py-4">
                 <ButtonReflexo
                   icon={
                     <svg
@@ -251,7 +251,7 @@ function HeroTemplateNovo({
               className="relative order-1 lg:order-2"
             >
               <div
-                className={`relative rounded-[1.5rem] phone2:rounded-[2.5rem] overflow-hidden aspect-[2/1] phone2:aspect-[3/2] md:aspect-[3/2] lg:aspect-[3/4] ring-1 ring-black/5 ${borderColor} ${image}`}
+                className={`relative rounded-[1.5rem] phone3:rounded-[2.5rem] overflow-hidden aspect-[2/1] phone3:aspect-[3/2] md:aspect-[3/2] lg:aspect-[3/4] ring-1 ring-black/5 ${borderColor} ${image}`}
               >
                 <img
                   src={content.texts.hero.heroDefaulMobiletImg}
