@@ -94,16 +94,16 @@ export default function Index() {
             <Suspense>
               <AboutNovoTemplate
                 colorMode={colorMode}
-                ButtonModal={true}
+                ButtonModal={false}
                 benefits={true}
               />
-              <SocialMediaTemplate colorMode={colorMode} />
+              {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             </Suspense>
           </AlternatingSection>
 
           <AlternatingSection index={3} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
-              <CtaNovoTemplate colorMode={colorMode} container={true} />
+              <CtaNovoTemplate colorMode={colorMode} container={false} />
             </Suspense>
           </AlternatingSection>
 
@@ -112,11 +112,11 @@ export default function Index() {
               <StepsNovoTemplate colorMode={colorMode} />
             </Suspense>
           </AlternatingSection>
-          <AlternatingSection index={5} colorMode={colorMode}>
+          {/* <AlternatingSection index={5} colorMode={colorMode}>
             <Suspense>
               <BlogPosts colorMode={colorMode} />
             </Suspense>
-          </AlternatingSection>
+          </AlternatingSection> */}
           {/* <AlternatingSection index={5} colorMode={colorMode}>
             <Suspense>
               <Authority colorMode={colorMode} />
@@ -129,13 +129,13 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          <AlternatingSection index={6} colorMode={colorMode}>
+          {/* <AlternatingSection index={6} colorMode={colorMode}>
             <Suspense>
               <FaqNovoTemplate colorMode={colorMode} />
             </Suspense>
-          </AlternatingSection>
+          </AlternatingSection> */}
 
-          <AlternatingSection index={7} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={5} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <FooterNovoTemplate
                 colorMode={colorMode}

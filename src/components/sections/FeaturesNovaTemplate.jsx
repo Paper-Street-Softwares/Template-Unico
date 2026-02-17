@@ -228,7 +228,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion, modal }) {
                               }}
                             >
                               <Typography className={`${textOpacity}`}>
-                                {item.description}
+                                {item.subtitle}
                               </Typography>
 
                               {item.link && (

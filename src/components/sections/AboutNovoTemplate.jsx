@@ -132,7 +132,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                     <div className="space-y-4">
                       {[
                         {
-                          title: <>Defesa Estratégica </>,
+                          title: <>Defesa Estratégica</>,
                           desc: (
                             <>
                               Análise minuciosa e táticas exclusivas para cada
@@ -141,7 +141,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                           ),
                         },
                         {
-                          title: <>Transparência Real </>,
+                          title: <>Transparência Real</>,
                           desc: (
                             <>
                               Informação clara e direta sobre todos os riscos e

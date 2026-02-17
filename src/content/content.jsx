@@ -108,15 +108,8 @@ const content = {
         img: logo,
         alt: `Logomarca ${infos.name}`,
       },
-      menuItems: [
-        "Início",
-        "Serviços",
-        "Sobre",
-        "Perguntas",
-        // 'Blog',
-        // 'Mapa',
-      ],
-      menuId: ["home", "feature", "about", "faq"],
+      menuItems: ["Início", "Serviços", "Sobre"],
+      menuId: ["home", "feature", "about"],
       ariaLabel: "Botão de Contato",
       ctaButtonText: "Contato",
       ctaButtonTextResponsive: "Contato",
@@ -188,19 +181,29 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
-      Destaque: <span className="italic font-light">A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>ÁREAS DE ATUAÇÃO</>,
+      FirstPart: <span>Gestão de Riscos, Compliance e Segurança para a</span>,
+      Destaque: <span className="italic font-light">Massa Condominial.</span>,
+      SecondPart: <span></span>,
+      subtitle: (
+        <>
+          Mais segurança jurídica, menos conflitos e decisões firmes para
+          síndicos, administradoras e condôminos.
+        </>
+      ),
       imgFeatures: imgFeatures,
       alt: <>Imagem ilustrativa da Features</>,
-      titleMessageFeature: <>A_Definir</>,
-      subtitleMessageFeature: <>A_Definir</>,
+      titleMessageFeature: <>Atuação firme</>,
+      subtitleMessageFeature: <>na defesa dos interesses do condomínio</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Assessoria Jurídica Preventiva (Mensal)</>,
+          subtitle: (
+            <>
+              Suporte contínuo ao corpo diretivo para a tomada de decisões
+              seguras.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -213,9 +216,10 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
         card2: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Gestão da Inadimplência e Recuperação de Crédito</>,
+          subtitle: <>Atuação focada no fluxo de caixa do condomínio.</>,
           description: (
             <div>
               A_Definir
@@ -228,9 +232,15 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
         card3: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Compliance Trabalhista e Terceirização</>,
+          subtitle: (
+            <>
+              Auditoria preventiva em contratos e orientação na gestão de
+              funcionários.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -243,9 +253,14 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
         card4: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Consultoria para Adequação à LGPD</>,
+          subtitle: (
+            <>
+              Projeto completo de implementação da LGPD no ambiente condominial.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -258,9 +273,10 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
         card5: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Revisão e Modernização de Normas</>,
+          subtitle: <>Atualização da Convenção e do Regimento Interno.</>,
           description: (
             <div>
               A_Definir
@@ -273,9 +289,12 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
         card6: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Acompanhamento de Assembleias</>,
+          subtitle: (
+            <>Suporte jurídico para garantir a legalidade das deliberações.</>
+          ),
           description: (
             <div>
               A_Definir
@@ -288,9 +307,10 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
         card7: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Mediação de Conflitos</>,
+          subtitle: <>Resolução técnica de disputas entre condôminos.</>,
           description: (
             <div>
               A_Definir
@@ -303,9 +323,12 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
         card8: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Análise e Gestão de Contratos</>,
+          subtitle: (
+            <>Revisão de contratos para proteção jurídica do condomínio.</>
+          ),
           description: (
             <div>
               A_Definir
@@ -318,23 +341,9 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
-        card9: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <FileText />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
       },
-      ctaButtonText: <>A_Definir</>,
+
+      ctaButtonText: <>Falar agora com o Advogado</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -387,13 +396,36 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
-      subtitle: <>A_Definir</>,
-      paragraph: <div>A_Definir</div>,
-      ctaButtonText: <>A_Definir</>,
+      miniTag: <>QUEM É O TAVARES ASSESSORIA JURÍDICA</>,
+      FirstPart: <span> Nossa atuação em </span>,
+      Destaque: <span className="italic font-light"> Direito Condominial</span>,
+      SecondPart: <span></span>,
+      subtitle: <></>,
+      paragraph: (
+        <div>
+          Atuamos de forma especializada no Direito Condominial, com foco na
+          defesa dos interesses de síndicos, condomínios, administradoras e
+          condôminos. Nossa prática é orientada pela prevenção de conflitos,
+          regularização de procedimentos e solução de demandas que comprometem a
+          organização e a segurança jurídica do condomínio.
+          <br />
+          <br />
+          Desenvolvemos uma atuação estratégica e personalizada, analisando cada
+          situação de forma individual para construir soluções jurídicas
+          eficazes, seguras e alinhadas à realidade do condomínio. A combinação
+          entre domínio técnico da legislação condominial e uma abordagem clara
+          e objetiva garante decisões firmes e respaldo jurídico em todas as
+          instâncias.
+          <br />
+          <br />
+          Mantemos um rigoroso protocolo de atualização jurídica, acompanhando
+          de perto o entendimento dos tribunais e as mudanças na legislação
+          aplicada aos condomínios. Ética, especialização e assertividade são os
+          pilares que sustentam nossa atuação na proteção dos direitos e na
+          estabilidade jurídica das relações condominiais.
+        </div>
+      ),
+      ctaButtonText: <>Falar diretamente comigo</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
@@ -431,50 +463,79 @@ const content = {
       },
     },
     ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>FALE CONOSCO</>,
+      title: (
+        <h1>Conflitos no condomínio não podem virar um problema maior.</h1>
+      ),
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Inadimplência, impugnação de assembleias, conflitos entre moradores
+            ou riscos para o síndico exigem orientação jurídica segura. Fale
+            conosco e receba uma análise clara do seu caso.
+          </p>
         </div>
       ),
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Entrar em contato agora</>,
 
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
+      miniTag: <>PASSO A PASSO</>,
+      FirstPart: <span> Entenda como</span>,
+      Destaque: (
+        <span className="italic font-light"> resolvemos o problema</span>
+      ),
+      SecondPart: <span>do seu condomínio</span>,
 
-      subtitle: <>A_Definir</>,
+      subtitle: <></>,
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Diagnóstico Jurídico</>,
+          cardDescription: (
+            <>
+              Você apresenta a situação do condomínio e analisamos o cenário com
+              foco em riscos, responsabilidades e possíveis prejuízos.
+            </>
+          ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Análise Técnica e Documental</>,
+          cardDescription: (
+            <>
+              Examinamos convenção, atas, contratos, notificações e demais
+              documentos para identificar falhas, ilegalidades ou oportunidades
+              de solução.
+            </>
+          ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Definição da Estratégia</>,
+          cardDescription: (
+            <>
+              Traçamos um plano de ação claro: cobrança, defesa, mediação ou
+              medida judicial — sempre priorizando segurança e eficiência.
+            </>
+          ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Execução e Acompanhamento</>,
+          cardDescription: (
+            <>
+              Atuamos de forma firme até a solução do caso, mantendo você
+              informado e protegido durante todo o processo.
+            </>
+          ),
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Entre em contato agora</>,
     },
 
     blog: {
