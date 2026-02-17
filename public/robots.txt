@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.taj.adv.br/sitemap.xml
+Sitemap: https://condominial.taj.adv.br/sitemap.xml
