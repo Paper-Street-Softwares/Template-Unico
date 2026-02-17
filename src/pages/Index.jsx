@@ -60,16 +60,16 @@ export default function Index() {
             <Emergency colorMode={colorMode} />
           </AlternatingSection> */}
 
-          {/* <AlternatingSection index={1} colorMode={colorMode}>
-            <Important colorMode={colorMode} />
-          </AlternatingSection> */}
-
           <AlternatingSection index={1} colorMode={colorMode}>
+            <Important colorMode={colorMode} />
+          </AlternatingSection>
+
+          <AlternatingSection index={2} colorMode={colorMode}>
             <Suspense>
               <FeaturesNovaTemplate
                 colorMode={colorMode}
                 frasesDestaque={true}
-                accordion={true}
+                accordion={false}
                 modal={false}
               />
             </Suspense>
@@ -90,7 +90,7 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          <AlternatingSection index={2} colorMode={colorMode}>
+          <AlternatingSection index={3} colorMode={colorMode}>
             <Suspense>
               <AboutNovoTemplate
                 colorMode={colorMode}
@@ -101,13 +101,13 @@ export default function Index() {
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={3} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={4} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <CtaNovoTemplate colorMode={colorMode} container={false} />
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={4} colorMode={colorMode}>
+          <AlternatingSection index={5} colorMode={colorMode}>
             <Suspense>
               <StepsNovoTemplate colorMode={colorMode} />
             </Suspense>
@@ -135,7 +135,7 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          <AlternatingSection index={5} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={6} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <FooterNovoTemplate
                 colorMode={colorMode}
