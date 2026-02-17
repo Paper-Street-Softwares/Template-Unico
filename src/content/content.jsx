@@ -122,25 +122,34 @@ const content = {
       ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      miniTag: <>A_definir</>,
-      FirstPart: <span>A_definir</span>,
+      miniTag: <>ADVOGADO CONDOMINIAL</>,
+      FirstPart: <span>Proteção jurídica para</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_definir</span>
+        <span className="destaque relative italic font-light">condomínios</span>
       ),
       SecondPart: <span></span>,
-      subtitle: <p>A_definir</p>,
+      subtitle: (
+        <p>
+          Soluções rápidas para inadimplência, conflitos e defesa do síndico.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com o Advogado</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <LucideIdCard />,
         iconTwo: <LucideIdCard />,
-        text: <>A_Definir</>,
+        text: (
+          <>
+            Atendimento online para todo Brasil e presencial para SP e Região
+            Metropolitana.
+          </>
+        ),
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
