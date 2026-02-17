@@ -91,7 +91,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
     >
       <SectionWrapper>
         <section className="w-full relative overflow-visible">
-          <div className="container mx-auto relative z-10">
+          <div className=" mx-auto relative z-10">
             <div className="grid lg:grid-cols-2 gap-0 desktop1:gap-16 items-center">
               {/* Conteúdo textual */}
               <div className="space-y-8">
