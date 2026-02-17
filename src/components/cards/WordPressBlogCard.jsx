@@ -1,6 +1,5 @@
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
-import BlogButton from '../interactives/BlogButton'
-
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import BlogButton from "../interactives/BlogButton";
 
 export default function WordPressBlogCard({
   img,
@@ -9,31 +8,31 @@ export default function WordPressBlogCard({
   link,
   colorMode,
 }) {
-  let colorText, colorBg, colorTextOpacity
+  let colorText, colorBg, colorTextOpacity;
 
   switch (colorMode) {
-    case 'light':
-      colorBg = 'bg-terciary'
-      colorText = 'text-corTitulosPreto'
-      colorTextOpacity = 'text-corOutrosTextosPreto'
-      break
-    case 'dark':
-      colorBg = 'bg-darkOpacity'
-      colorText = 'text-corTitulosBranca'
-      colorTextOpacity = 'text-corOutrosTextosBranca'
+    case "light":
+      colorBg = "bg-terciary";
+      colorText = "text-corTitulosPreto";
+      colorTextOpacity = "text-corOutrosTextosPreto";
+      break;
+    case "dark":
+      colorBg = "bg-darkOpacity";
+      colorText = "text-corTitulosBranca";
+      colorTextOpacity = "text-corOutrosTextosBranca";
 
-      break
-    case 'defaultDark':
-      colorBg = 'bg-terciary'
-      colorText = 'text-corTitulosPreto'
-      colorTextOpacity = 'text-corOutrosTextosPreto'
-      break
-      break
+      break;
+    case "defaultDark":
+      colorBg = "bg-terciary";
+      colorText = "text-corTitulosPreto";
+      colorTextOpacity = "text-corOutrosTextosPreto";
+      break;
+      break;
 
-    case 'defaultLight':
-      colorBg = 'bg-terciary'
-      colorText = 'text-corTitulosPreto'
-      colorTextOpacity = 'text-corOutrosTextosPreto'
+    case "defaultLight":
+      colorBg = "bg-terciary";
+      colorText = "text-corTitulosPreto";
+      colorTextOpacity = "text-corOutrosTextosPreto";
   }
   return (
     <div>
@@ -85,5 +84,5 @@ export default function WordPressBlogCard({
         </div>
       </MotionDivDownToUp>
     </div>
-  )
+  );
 }

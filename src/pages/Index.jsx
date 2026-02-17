@@ -103,7 +103,7 @@ export default function Index() {
 
           <AlternatingSection index={3} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
-              <CtaNovoTemplate colorMode={colorMode} container={false} />
+              <CtaNovoTemplate colorMode={colorMode} container={true} />
             </Suspense>
           </AlternatingSection>
 

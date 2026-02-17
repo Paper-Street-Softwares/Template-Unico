@@ -1,43 +1,43 @@
-import { useState, useEffect } from 'react'
-import { useTranslation } from 'react-i18next'
-import WordPressBlogCard from '../cards/WordPressBlogCard'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
+import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import WordPressBlogCard from "../cards/WordPressBlogCard";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
 
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
-import content from '../../content/content'
-import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import content from "../../content/content";
+import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
 
 function BlogPosts({ colorMode }) {
-  const [posts, setPosts] = useState([])
-  const [visibleCount, setVisibleCount] = useState(3)
+  const [posts, setPosts] = useState([]);
+  const [visibleCount, setVisibleCount] = useState(3);
 
-  let backgroundMode, titleColor, subtitleColor, linkColor
+  let backgroundMode, titleColor, subtitleColor, linkColor;
 
   switch (colorMode) {
-    case 'light':
-      backgroundMode = 'bg-transparent'
-      titleColor = 'text-corTitulosPreto'
-      subtitleColor = 'text-corOutrosTextosPreto'
-      linkColor = 'text-primaryDark'
-      break
-    case 'dark':
-      backgroundMode = 'bg-transparent'
-      titleColor = 'text-corTitulosBranca'
-      subtitleColor = 'text-corOutrosTextosPreto'
-      linkColor = 'text-primaryLight'
-      break
-    case 'defaultDark':
-      backgroundMode = 'bg-transparent'
-      titleColor = 'text-corTitulosPreto'
-      subtitleColor = 'text-corOutrosTextosPreto'
-      linkColor = 'text-primaryDark'
-      break
-    case 'defaultLight':
-      backgroundMode = 'bg-transparent'
-      titleColor = 'text-corTitulosPreto'
-      subtitleColor = 'text-corOutrosTextosPreto'
-      linkColor = 'text-primaryDark'
+    case "light":
+      backgroundMode = "bg-transparent";
+      titleColor = "text-corTitulosPreto";
+      subtitleColor = "text-corOutrosTextosPreto";
+      linkColor = "text-primaryDark";
+      break;
+    case "dark":
+      backgroundMode = "bg-transparent";
+      titleColor = "text-corTitulosBranca";
+      subtitleColor = "text-corOutrosTextosPreto";
+      linkColor = "text-primaryLight";
+      break;
+    case "defaultDark":
+      backgroundMode = "bg-transparent";
+      titleColor = "text-corTitulosPreto";
+      subtitleColor = "text-corOutrosTextosPreto";
+      linkColor = "text-primaryDark";
+      break;
+    case "defaultLight":
+      backgroundMode = "bg-transparent";
+      titleColor = "text-corTitulosPreto";
+      subtitleColor = "text-corOutrosTextosPreto";
+      linkColor = "text-corTitulosBranca";
   }
 
   useEffect(() => {
@@ -46,22 +46,22 @@ function BlogPosts({ colorMode }) {
     )
       .then((response) => response.json())
       .then((data) => setPosts(data.posts || []))
-      .catch((error) => console.error('Erro ao buscar posts:', error))
-  }, [])
+      .catch((error) => console.error("Erro ao buscar posts:", error));
+  }, []);
 
   useEffect(() => {
     const updateVisibleCount = () => {
       if (window.innerWidth >= 1441) {
-        setVisibleCount(6)
+        setVisibleCount(6);
       } else {
-        setVisibleCount(3)
+        setVisibleCount(3);
       }
-    }
+    };
 
-    updateVisibleCount()
-    window.addEventListener('resize', updateVisibleCount)
-    return () => window.removeEventListener('resize', updateVisibleCount)
-  }, [])
+    updateVisibleCount();
+    window.addEventListener("resize", updateVisibleCount);
+    return () => window.removeEventListener("resize", updateVisibleCount);
+  }, []);
 
   return (
     <div>
@@ -101,7 +101,7 @@ function BlogPosts({ colorMode }) {
                       dangerouslySetInnerHTML={{
                         __html:
                           post.excerpt.length > 100
-                            ? post.excerpt.substring(0, 60) + '...'
+                            ? post.excerpt.substring(0, 60) + "..."
                             : post.excerpt,
                       }}
                     />
@@ -114,7 +114,7 @@ function BlogPosts({ colorMode }) {
 
           <MotionDivDownToUp>
             <p
-              className={`flex justify-center mx-auto mt-12 scale-100 hover:scale-90 duration-500 w-fit transition-all cursor-pointer ${titleColor} `}
+              className={`flex justify-center mx-auto mt-12 scale-100 hover:scale-90 duration-500 w-fit transition-all cursor-pointer ${linkColor} `}
             >
               <a
                 href={`https://${content.texts.blog.blogLink}`}
@@ -128,7 +128,7 @@ function BlogPosts({ colorMode }) {
         </SectionWrapper>
       </SectionArea>
     </div>
-  )
+  );
 }
 
-export default BlogPosts
+export default BlogPosts;

@@ -129,7 +129,7 @@ function HeroTemplateNovo({
       paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
-      <section className="relative w-full pt-[130px] phone2:pt-[140px] tablet1:pt-[154px] tablet2:pt-[157px] desktop1:pt-[175px] desktop2:pt-[190px] pb-[64px] desktop1:pb-[96px] flex items-center justify-center overflow-hidden font-mainFont">
+      <section className="relative w-full pt-[80px] phone2:pt-[100px] tablet1:pt-[154px] tablet2:pt-[157px] desktop1:pt-[175px] desktop2:pt-[190px] pb-[64px] desktop1:pb-[96px] flex items-center justify-center overflow-hidden font-mainFont">
         {/* Abstract Background Shapes */}
         <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}
@@ -143,7 +143,7 @@ function HeroTemplateNovo({
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="space-y-8 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
+              className="space-y-2 phone3:space-y-8 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
             >
               <div
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-[8px] phone2:text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
@@ -156,7 +156,7 @@ function HeroTemplateNovo({
                 {content.texts.hero.miniTag}
               </div>
               <h1
-                className={` desktop1:text-start text-[31px] phone2:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] ${text} `}
+                className={` text-[22px] phone2:text-3xl md:text-5xl lg:text-7xl font-medium leading-[1.1] desktop1:text-start ${text} `}
               >
                 {content.texts.hero.FirstPart}{" "}
                 <span className={`${textDestaque}`}>
@@ -166,7 +166,7 @@ function HeroTemplateNovo({
               </h1>
 
               <p
-                className={`text-start desktop1:text-start text-lg md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
+                className={`text-start text-[14px] phone2:text-lg md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight desktop1:text-start ${textOpacity}`}
               >
                 {content.texts.hero.subtitle}
               </p>
@@ -182,7 +182,7 @@ function HeroTemplateNovo({
                 ))}
               </div> */}
 
-              <div className="flex flex-col gap-4 pt-4">
+              <div className="flex flex-col gap-4 pt-2 phone2:pt-4">
                 <ButtonReflexo
                   icon={
                     <svg

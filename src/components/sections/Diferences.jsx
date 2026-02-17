@@ -106,7 +106,7 @@ export function Diferences({ colorMode }) {
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="flex items-center gap-4 p-4 cursor-pointer rounded-xl bg-white/[0.03] border border-white/5 group hover:bg-white/[0.05] transition-colors"
+                        className="flex items-center gap-4 p-4 rounded-xl bg-white/[0.03] border border-white/5 group hover:bg-white/[0.05] transition-colors"
                       >
                         <div
                           className={`w-auto p-1 rounded-lg flex items-center justify-center ${bgCards} group-hover:scale-110 transition-transform text-black`}

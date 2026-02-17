@@ -75,7 +75,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
       textOpacityModal = "text-corOutrosPreto";
       textDestaque = "text-white";
       cardBg = "bg-white/10";
-      iconBg = "bg-primaryDark/10 text-primaryDark";
+      iconBg = "bg-white text-primaryDark";
       buttonBg = "bg-primaryDark";
       image =
         " border-[8px] border-[color-mix(in_srgb,var(--primaryDark),black_60%)]";
@@ -155,7 +155,9 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                             <CheckCircle2 className="w-5 h-5" />
                           </div>
                           <div>
-                            <h1 className={`font-bold font-secondFont ${text}`}>
+                            <h1
+                              className={`font-bold font-secondFont ${textDestaque}`}
+                            >
                               {item.title}
                             </h1>
                             <p
@@ -309,7 +311,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                     ? defaultButtonThemes.light
                     : defaultButtonThemes.dark
                 }
-                className={`clickevent text-white`}
+                className={`clickevent`}
               />
             </div>
           </Dialog>
