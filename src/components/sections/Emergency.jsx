@@ -14,22 +14,22 @@ function Emergency({ colorMode }) {
     textSvg;
   switch (colorMode) {
     case "light":
-      backgroundMode = "bg-secondary/60";
+      backgroundMode = "bg-secondary";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
-      textDestaque = "text-primaryLight";
+      textDestaque = "text-primaryDark";
       bgSvg = "bg-primaryDark";
-      borderSVG = "border-primaryDark";
+      borderSVG = "bg-red-500/20 text-red-500 border border-red-500/20 ";
       textSvg = "text-red-800 ";
 
       break;
     case "dark":
-      backgroundMode = "bg-darkOpacity";
+      backgroundMode = "bg-secondary";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
-      textDestaque = "text-primaryLight";
-      bgSvg = "bg-primaryLight";
-      borderSVG = "border-primaryLight";
+      textDestaque = "text-primaryDark";
+      bgSvg = "bg-primaryDark";
+      borderSVG = "bg-red-500/20 text-red-500 border border-red-500/20 ";
       textSvg = "text-red-800 ";
 
       break;
@@ -43,12 +43,12 @@ function Emergency({ colorMode }) {
       textSvg = "text-red-800 ";
       break;
     case "defaultLight":
-      backgroundMode = "bg-darkOpacity";
+      backgroundMode = "bg-secondary";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
-      textDestaque = "text-primaryLight";
-      bgSvg = "bg-primaryLight";
-      borderSVG = "border-primaryLight";
+      textDestaque = "text-primaryDark";
+      bgSvg = "bg-primaryDark";
+      borderSVG = "bg-red-500/20 text-red-500 border border-red-500/20 ";
       textSvg = "text-red-800 ";
   }
   return (

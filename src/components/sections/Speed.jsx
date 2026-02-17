@@ -8,69 +8,63 @@ import content from "../../content/content";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 
 function Speed({ colorMode }) {
-  let backgroundMode, text, textOpacity, textDestaque, cardBg, iconBg;
+  let backgroundMode,
+    text,
+    textOpacity,
+    bgContainer,
+    textDestaque,
+    cardBg,
+    iconBg;
   switch (colorMode) {
     case "light":
-      backgroundMode = "bg-terciary/60";
+      bgContainer = "bg-terciary";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       iconBg = "bg-white text-primaryDark";
-
+      textDestaque = "text-primaryLight";
       break;
+
     case "dark":
-      backgroundMode = "bg-darkOpacity";
+      bgContainer = "bg-darkOpacity";
       text = "text-corTitulosBranca";
       textOpacity = "text-corOutrosTextosBranca";
       iconBg = "bg-darkOpacity text-primaryLight";
-
+      textDestaque = "";
       break;
+
     case "defaultDark":
-      backgroundMode = "bg-secondary/60";
+      bgContainer = "bg-secondary/60";
       text = "text-corTitulosBranca";
       textOpacity = "text-corOutrosTextosBranca";
       iconBg = "bg-white text-primaryDark";
+      textDestaque = "";
       break;
 
     case "defaultLight":
-      backgroundMode = "bg-darkOpacity";
+      bgContainer = "bg-darkOpacity";
       text = "text-corTitulosBranca";
       textOpacity = "text-corOutrosTextosBranca";
       iconBg = "bg-darkOpacity text-primaryLight";
+      textDestaque = "";
   }
+
+  const ListSpeed = Object.values(content.texts.speed.cards);
+
   return (
-    <SectionArea className={`${backgroundMode}`}>
+    <SectionArea className={`bg-transparent`}>
       <SectionWrapper>
         <section className="">
           <SectionHeaderNovo
-            miniTitle="Rapidez e praticidade"
-            title="Dependendo do caso, o divórcio pode ser resolvido:"
+            miniTitle={content.texts.speed.miniTag}
+            title={content.texts.speed.title}
             colorMode={colorMode}
           />
           <MotionDivDownToUp>
-            <div className="max-w-5xl mx-auto bg-white rounded-3xl p-8 md:p-12 border border-white/0">
+            <div
+              className={`max-w-5xl mx-auto rounded-3xl p-8 md:p-12 ${bgContainer}`}
+            >
               <div className="grid sm:grid-cols-3 gap-8">
-                {[
-                  {
-                    text: "Em poucos dias, conforme o tipo de divórcio",
-                    subtitle: "",
-                    icon: Clock,
-                  },
-                  {
-                    text: "Sem audiência, na maioria dos casos",
-                    subtitle: "",
-                    icon: Users,
-                  },
-                  {
-                    text: "Sem necessidade de comparecimento presencial",
-                    subtitle: "",
-                    icon: ShieldCheck,
-                  },
-                  // {
-                  //   text: 'A_Definir',
-                  //   subtitle: 'A_Definir',
-                  //   icon: Clock,
-                  // },
-                ].map((item, idx) => (
+                {ListSpeed.map((item, idx) => (
                   <MotionDivDownToUp>
                     <div
                       key={idx}
@@ -79,7 +73,7 @@ function Speed({ colorMode }) {
                       <div
                         className={`w-12 h-12 rounded-full  shadow-lg flex items-center justify-center ${iconBg}`}
                       >
-                        <item.icon className={`w-6 h-6 ${textOpacity}`} />
+                        <item.icon className={`w-6 h-6 ${textDestaque}`} />
                       </div>
                       <h1
                         className={`font-medium font-secondFont ${textOpacity}`}
@@ -99,7 +93,7 @@ function Speed({ colorMode }) {
                   <p
                     className={`text-paragraph2 desktop1:text-paragraph5 font-medium font-secondFont inline-block px-4 py-1 rounded-full ${text}`}
                   >
-                    Tudo conforme a lei.
+                    {content.texts.speed.textFooter}
                   </p>
                 </div>
               </MotionDivDownToUp>

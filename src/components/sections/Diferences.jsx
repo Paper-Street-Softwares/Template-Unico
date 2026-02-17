@@ -6,15 +6,22 @@ import { Check } from "lucide-react";
 import content from "../../content/content.jsx";
 
 export function Diferences({ colorMode }) {
-  let backgroundMode, text, textOpacity, textDestaque, bgCards, borderSVG;
+  let backgroundMode,
+    text,
+    textOpacity,
+    textDestaque,
+    bgCards,
+    borderSVG,
+    bgContainer;
   switch (colorMode) {
     case "light":
       backgroundMode = "bg-transparent";
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       textDestaque = "text-primaryLight";
-      bgCards = "bg-primaryDark";
-      borderSVG = "border-primaryDark";
+      bgCards = "bg-white shadow";
+      borderSVG = "border-primaryLight";
+      bgContainer = "bg-terciary";
 
       break;
     case "dark":
@@ -24,6 +31,7 @@ export function Diferences({ colorMode }) {
       textDestaque = "text-primaryLight";
       bgCards = "bg-primaryLight";
       borderSVG = "border-primaryLight";
+      bgContainer = "";
 
       break;
     case "defaultDark":
@@ -33,6 +41,7 @@ export function Diferences({ colorMode }) {
       textDestaque = "text-white";
       bgCards = "bg-primaryLight";
       borderSVG = "border-white";
+      bgContainer = "";
       break;
     case "defaultLight":
       backgroundMode = "bg-transparent";
@@ -41,25 +50,9 @@ export function Diferences({ colorMode }) {
       textDestaque = "text-primaryLight";
       bgCards = "bg-primaryLight";
       borderSVG = "border-primaryLight";
+      bgContainer = "";
   }
-  const differentials = [
-    {
-      icon: Check,
-      text: "Sigilo absoluto",
-    },
-    {
-      icon: Check,
-      text: "Defesa técnica e imediata",
-    },
-    {
-      icon: Check,
-      text: "Acompanhamento em delegacia",
-    },
-    {
-      icon: Check,
-      text: "Atendimento emergencial 24h",
-    },
-  ];
+  const differentials = Object.values(content.texts.diferences.cards);
 
   return (
     <SectionArea
@@ -69,7 +62,9 @@ export function Diferences({ colorMode }) {
       <SectionWrapper>
         <div className="container mx-auto relative z-10">
           <div className="max-w-5xl mx-auto">
-            <div className="bg-primaryDark border-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-2xl">
+            <div
+              className={`backdrop-blur-sm rounded-xl overflow-hidden shadow-2xl ${bgContainer}`}
+            >
               <div className="p-8 md:p-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                   <div className="space-y-6 text-left">
@@ -77,7 +72,7 @@ export function Diferences({ colorMode }) {
                       initial={{ opacity: 0, x: -50 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.8, ease: "easeOut" }}
-                      className={`text-sm font-bold tracking-wides uppercase block font-secondFont ${textDestaque}`}
+                      className={`text-sm font-bold tracking-wides uppercase block font-secondFont ${text}`}
                     >
                       {content.texts.diferences.miniTag}
                     </motion.div>
@@ -113,7 +108,7 @@ export function Diferences({ colorMode }) {
                         >
                           <span>
                             {" "}
-                            <item.icon className="w-5 h-5" />
+                            <item.icon className={`w-5 h-5 ${textDestaque}`} />
                           </span>
                         </div>
                         <span

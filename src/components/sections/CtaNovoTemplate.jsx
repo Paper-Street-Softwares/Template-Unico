@@ -46,44 +46,9 @@ function CtaNovoTemplate({ colorMode, container }) {
       miniTagCtaDark = "text-primaryDark";
   }
 
-  const containerList = [
-    {
-      icon: <Check className={` text-primaryLight`} />,
-      text: (
-        <>
-          {" "}
-          Entender se uma landing page faz sentido para a sua área do Direito
-        </>
-      ),
-    },
-    {
-      icon: <Check className={` text-primaryLight`} />,
-      text: <> Avaliar se existe demanda real e qualificada pelo seu serviço</>,
-    },
-    {
-      icon: <Check className={` text-primaryLight`} />,
-      text: (
-        <>
-          Ter clareza sobre o que pode e o que não pode ser feito dentro das
-          normas da OAB
-        </>
-      ),
-    },
-    {
-      icon: <Check className={` text-primaryLight`} />,
-      text: (
-        <>Evitar investimentos sem estratégia ou decisões tomadas no impulso</>
-      ),
-    },
-    {
-      icon: <Check className={` text-primaryLight`} />,
-      text: (
-        <>
-          Tomar uma decisão mais segura antes de qualquer compromisso comercial
-        </>
-      ),
-    },
-  ];
+  const containerList = Object.values(
+    content.texts.ctaSection.container.topics,
+  );
 
   return (
     <SectionArea className={`relative z-0 ${backgroundMode}`}>
@@ -116,8 +81,11 @@ function CtaNovoTemplate({ colorMode, container }) {
                     key={index}
                     className="font-secondFont flex gap-2 items-start w-full justify-center tablet1:justify-center text-center desktop1:text-start"
                   >
-                    <span className={` rounded-full p-0.5`}>{item.icon}</span>
-                    <p className={`${textOpacity}`}>{item.text}</p>
+                    <span className={` rounded-full p-0.5`}>
+                      {" "}
+                      <Check className={` text-primaryLight`} />
+                    </span>
+                    <p className={`${textOpacity}`}>{item}</p>
                   </div>
                 ))}
               </div>

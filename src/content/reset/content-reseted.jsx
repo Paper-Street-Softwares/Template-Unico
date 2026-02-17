@@ -32,6 +32,10 @@ import {
   HandCoins,
   Check,
   Shield,
+  BriefcaseBusiness,
+  CheckCircle2,
+  Clock,
+  ShieldCheck,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -42,11 +46,11 @@ export const infos = {
   name: "A_Definir",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "A_Definir", // Sem "www"
+  domain: "condominial.taj.adv.br", // Sem "www"
   phone: {
-    ddd: "00",
-    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0000", // Apenas os 4 últimos números
+    ddd: "11",
+    firstPart: "97394", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0876", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -61,10 +65,10 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
-      <p>A_Definir,</p>
+      <p>Av. Industrial 780,</p>
+      <p>Sala 2313 - Jardim, </p>
+      <p>Santo André - SP,</p>
+      <p>CEP: 09080-500</p>
     </div>
   ),
   enderecoSecundario: (
@@ -108,27 +112,27 @@ const content = {
         img: logo,
         alt: `Logomarca ${infos.name}`,
       },
-      menuItems: [
-        "Início",
-        "Serviços",
-        "Sobre",
-        "Perguntas",
-        // 'Blog',
-        // 'Mapa',
-      ],
-      menuId: ["home", "feature", "about", "faq"],
+      menuItems: ["Início", "Serviços", "Sobre"],
+      menuId: ["home", "feature", "about"],
       ariaLabel: "Botão de Contato",
       ctaButtonText: "Contato",
       ctaButtonTextResponsive: "Contato",
     },
     hero: {
-      miniTag: <>A_definir</>,
-      FirstPart: <span>A_definir</span>,
+      minitagIcon: (
+        <>
+          <BriefcaseBusiness className="w-4 h-4" />
+          {/* <MapPin className="w-4 h-4" /> */}
+          {/* 🚨 */}
+        </>
+      ),
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_definir</span>
+        <span className="destaque relative italic font-light">A_Definir</span>
       ),
       SecondPart: <span></span>,
-      subtitle: <p>A_definir</p>,
+      subtitle: <p>A_Definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
@@ -138,8 +142,17 @@ const content = {
       ctaButtonText: <>A_Definir</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
-        icon: <LucideIdCard />,
-        iconTwo: <LucideIdCard />,
+        icon: (
+          <>
+            {" "}
+            <div className="relative flex">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
+            </div>
+            {/* ⚠️ */}
+          </>
+        ),
+        iconTwo: <></>,
         text: <>A_Definir</>,
         textTwo: <>A_Definir</>,
       },
@@ -153,6 +166,7 @@ const content = {
           <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
+      ctaButtonText: <>A_Definir</>,
     },
     important: {
       miniTag: <>A_Definir</>,
@@ -182,10 +196,10 @@ const content = {
       miniTag: <>A_Definir</>,
       FirstPart: <span>A_Definir</span>,
       Destaque: <span className="italic font-light">A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
+      SecondPart: <span></span>,
       subtitle: <>A_Definir</>,
       imgFeatures: imgFeatures,
-      alt: <>Imagem ilustrativa da Features</>,
+      alt: "Imagem ilustrativa da Features",
       titleMessageFeature: <>A_Definir</>,
       subtitleMessageFeature: <>A_Definir</>,
       cards: {
@@ -204,6 +218,7 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
         card2: {
           title: <>A_Definir</>,
           subtitle: <>A_Definir</>,
@@ -219,6 +234,7 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
         card3: {
           title: <>A_Definir</>,
           subtitle: <>A_Definir</>,
@@ -234,6 +250,7 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
         card4: {
           title: <>A_Definir</>,
           subtitle: <>A_Definir</>,
@@ -249,6 +266,7 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
         card5: {
           title: <>A_Definir</>,
           subtitle: <>A_Definir</>,
@@ -264,6 +282,7 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
         card6: {
           title: <>A_Definir</>,
           subtitle: <>A_Definir</>,
@@ -279,6 +298,7 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
         card7: {
           title: <>A_Definir</>,
           subtitle: <>A_Definir</>,
@@ -294,6 +314,7 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
         card8: {
           title: <>A_Definir</>,
           subtitle: <>A_Definir</>,
@@ -309,22 +330,8 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
-        card9: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <FileText />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
       },
+
       ctaButtonText: <>A_Definir</>,
     },
     cardsSection: {
@@ -358,14 +365,13 @@ const content = {
       },
       fraseText: (
         <>
-          <p>Indicação é importante.</p> <br />
+          <p>A_Definir</p> <br />
           <p>
-            Mas indicação{" "}
-            <span className="font-bold">não é estratégia de crescimento</span>.
+            A_Definir <span className="font-bold">A_Definir</span>.
           </p>
         </>
       ),
-      ctaButtonText: "Quero uma análise do meu escritório",
+      ctaButtonText: "A_Definir",
     },
     maps: {
       minitag: <>A_Definir</>,
@@ -381,9 +387,33 @@ const content = {
       miniTag: <>A_Definir</>,
       FirstPart: <span> A_Definir </span>,
       Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span>A_Definir</span>,
-      subtitle: <>A_Definir</>,
+      SecondPart: <span></span>,
+      subtitle: <></>,
       paragraph: <div>A_Definir</div>,
+      benefits: {
+        cards: {
+          card1: {
+            title: <>A_Definir</>,
+            description: <>A_Definir</>,
+            icon: (
+              <>
+                {" "}
+                <CheckCircle2 className="w-5 h-5" />
+              </>
+            ),
+          },
+          card2: {
+            title: <>A_Definir</>,
+            description: <>A_Definir</>,
+            icon: (
+              <>
+                {" "}
+                <CheckCircle2 className="w-5 h-5" />
+              </>
+            ),
+          },
+        },
+      },
       ctaButtonText: <>A_Definir</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
@@ -429,18 +459,25 @@ const content = {
           <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
+      container: {
+        topics: {
+          topic1: <>A_Definir</>,
+          topic2: <>A_Definir</>,
+          topic3: <>A_Definir</>,
+          topic4: <>A_Definir</>,
+        },
+      },
       ctaButtonText: <>A_Definir</>,
-
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
       miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
+      FirstPart: <span> A_Definir</span>,
+      Destaque: <span className="italic font-light"> A_Definir </span>,
       SecondPart: <span>A_Definir</span>,
 
-      subtitle: <>A_Definir</>,
+      subtitle: <></>,
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
@@ -509,6 +546,64 @@ const content = {
       miniTag: <>A_Definir</>,
       title: <>A_Definir</>,
       subtitle: <>A_Definir</>,
+      cards: {
+        card1: {
+          icon: Check,
+          text: <>A_Definir</>,
+        },
+        card2: {
+          icon: Check,
+          text: <>A_Definir</>,
+        },
+        card3: {
+          icon: Check,
+          text: <>A_Definir</>,
+        },
+      },
+    },
+    speed: {
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
+      cards: {
+        card1: {
+          icon: Clock,
+          text: <>A_Definir</>,
+        },
+        card2: {
+          icon: Users,
+          text: <>A_Definir</>,
+        },
+        card3: {
+          icon: ShieldCheck,
+          text: <>A_Definir</>,
+        },
+      },
+      textFooter: <>A_Definir</>,
+    },
+    authority: {
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
+      cards: {
+        card1: {
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
+        },
+        card2: {
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
+        },
+        card3: {
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
+        },
+        card4: {
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
+        },
+      },
+      ctaButtonText: <>A_Definir</>,
     },
     faq: {
       miniTag: <>A_Definir</>,

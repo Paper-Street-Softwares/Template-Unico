@@ -51,8 +51,8 @@ export const defaultButtonThemes = {
 };
 
 export const alertTheme = {
-  light: "bg-red-800 text-corTitulosBranca border border-primaryDark/20",
-  dark: "bg-red-800 text-corTitulosBranca border border-primaryDark/20 shadow-white",
+  light: "bg-red-800 text-corTitulosBranca shadow-lg",
+  dark: "bg-red-800 text-corTitulosBranca shadow-white",
   defaultDark: "bg-red-800 text-corTitulosBranca",
   defaultLight: "bg-red-800 text-corTitulosBranca",
 };

@@ -1,28 +1,28 @@
-import React from 'react'
+import React from "react";
 
 function ParceriaCard({ img, alt, text, name, role, colorMode }) {
-  let titleColor, descrptionColor, bgCard
+  let titleColor, descrptionColor, bgCard;
   switch (colorMode) {
-    case 'light':
-      titleColor = 'text-corTitulosBranca'
-      descrptionColor = 'text-corOutrosTextosBranca'
-      bgCard = 'bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
+    case "light":
+      titleColor = "text-corTitulosPreto";
+      descrptionColor = "text-corOutrosTextosPreto";
+      bgCard = "bg-terciary";
 
-      break
-    case 'dark':
-      titleColor = 'text-corTitulosPreto'
-      descrptionColor = 'text-corOutrosTextosPreto'
-      bgCard = 'bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
-      break
-    case 'defaultDark':
-      titleColor = 'text-corTitulosBranca'
-      descrptionColor = 'text-corOutrosTextosBranca'
-      bgCard = 'bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
-      break
-    case 'defaultLight':
-      titleColor = 'text-corTitulosBranca'
-      descrptionColor = 'text-corOutrosTextosBranca'
-      bgCard = 'bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]'
+      break;
+    case "dark":
+      titleColor = "text-corTitulosPreto";
+      descrptionColor = "text-corOutrosTextosPreto";
+      bgCard = "bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]";
+      break;
+    case "defaultDark":
+      titleColor = "text-corTitulosBranca";
+      descrptionColor = "text-corOutrosTextosBranca";
+      bgCard = "bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]";
+      break;
+    case "defaultLight":
+      titleColor = "text-corTitulosBranca";
+      descrptionColor = "text-corOutrosTextosBranca";
+      bgCard = "bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]";
   }
   return (
     <div
@@ -59,7 +59,7 @@ function ParceriaCard({ img, alt, text, name, role, colorMode }) {
         <p className={`font-semibold text-paragraph3 ${titleColor}`}>{name}.</p>
       </div>
     </div>
-  )
+  );
 }
 
-export default ParceriaCard
+export default ParceriaCard;

@@ -82,6 +82,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
   }
 
   const { showGlobalButtonsLps } = ButtonsLps();
+  const listBenefitsAbout = Object.values(content.texts.about.benefits.cards);
 
   return (
     <SectionArea
@@ -130,29 +131,10 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                 <MotionDivDownToUp>
                   {benefits && (
                     <div className="space-y-4">
-                      {[
-                        {
-                          title: <>Defesa Estratégica</>,
-                          desc: (
-                            <>
-                              Análise minuciosa e táticas exclusivas para cada
-                              etapa do processo.
-                            </>
-                          ),
-                        },
-                        {
-                          title: <>Transparência Real</>,
-                          desc: (
-                            <>
-                              Informação clara e direta sobre todos os riscos e
-                              andamentos.
-                            </>
-                          ),
-                        },
-                      ].map((item, idx) => (
+                      {listBenefitsAbout.map((item, idx) => (
                         <div key={idx} className="flex items-start gap-4">
                           <div className={`p-2 rounded-lg ${iconBg} mt-1`}>
-                            <CheckCircle2 className="w-5 h-5" />
+                            {item.icon}
                           </div>
                           <div>
                             <h1
@@ -163,7 +145,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                             <p
                               className={`text-sm font-secondFont font-light ${textOpacity}`}
                             >
-                              {item.desc}
+                              {item.description}
                             </p>
                           </div>
                         </div>
