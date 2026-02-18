@@ -8,7 +8,7 @@ import imgFeatures from "../assets/imgs/features/imgServices.webp";
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-// import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
+import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 // import logo1 from '../assets/imgs/parceria/Logo1.webp'
@@ -36,8 +36,6 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
-  Building,
-  CheckCheck,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -45,14 +43,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Edan Contabilidade em Ilhéus – BA",
+  name: "A_Definir",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "fecharcnpj.edancontabilidade.com.br", // Sem "www"
+  domain: "A_Definir", // Sem "www"
   phone: {
-    ddd: "73",
-    firstPart: "98230", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "2451", // Apenas os 4 últimos números
+    ddd: "00",
+    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0000", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -124,61 +122,30 @@ const content = {
     hero: {
       minitagIcon: (
         <>
-          <Building className="w-4 h-4" />
+          <BriefcaseBusiness className="w-4 h-4" />
           {/* <MapPin className="w-4 h-4" /> */}
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>ENCERRAMENTO DE EMPRESAS</>,
-      FirstPart: <span>Mais de</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">40 anos</span>
+        <span className="destaque relative italic font-light">A_Definir</span>
       ),
-      SecondPart: (
-        <span>
-          {" "}
-          trazendo segurança para você encerrar sua empresa sem dor de cabeça
-        </span>
-      ),
-      subtitle: (
-        <div>
-          <p className="flex gap-2">
-            <span>
-              <Check className="text-primaryDark" width={18} />
-            </span>
-            Atendimento direto
-          </p>
-          <p className="flex gap-2">
-            <span>
-              <Check className="text-primaryDark" width={18} />
-            </span>
-            Linguagem simples
-          </p>
-          <p className="flex gap-2">
-            <span>
-              <Check className="text-primaryDark" width={18} />
-            </span>
-            Sem termos técnicos
-          </p>
-          <p className="flex gap-2">
-            <span>
-              <Check className="text-primaryDark" width={18} />
-            </span>
-            Sem surpresas
-          </p>
-        </div>
-      ),
+      SecondPart: <span></span>,
+      subtitle: <p>A_Definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Falar com a Edan Agora</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: (
           <>
+            {" "}
             <div className="relative flex">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
@@ -187,7 +154,7 @@ const content = {
           </>
         ),
         iconTwo: <></>,
-        text: <>Atendimento em todo território nacional.</>,
+        text: <>A_Definir</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -203,86 +170,43 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     important: {
-      miniTag: <>Dúvidas comuns</>,
-      title: <>Questionamentos mais frequentes sobre a baixa de empresas</>,
-      subtitle: (
-        <>
-          Respondemos suas principais perguntas para você encerrar sua empresa
-          com segurança e rapidez.
-        </>
-      ),
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>Posso dar baixa na empresa mesmo com dívidas?</>,
-          paragraph: (
-            <>
-              Sim. Nossa equipe avalia a situação e orienta o procedimento
-              adequado para regularização e encerramento seguro. Entre em
-              contato para receber suporte completo.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card2: {
-          title: <>Quanto tempo leva para dar baixa?</>,
-          paragraph: (
-            <>
-              O processo costuma ser concluído em até 5 dias úteis. Entre em
-              contato para que possamos iniciar imediatamente e acompanhar cada
-              etapa.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card3: {
-          title: <>Preciso estar no local de registro da empresa?</>,
-          paragraph: (
-            <>
-              Não. Todo o processo é realizado online, com total acompanhamento
-              da nossa equipe. Entre em contato para garantir que tudo seja
-              feito corretamente.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card4: {
-          title: <>Não tenho mais os dados da empresa. Posso dar baixa?</>,
-          paragraph: (
-            <>
-              Sim. Recuperamos todas as informações necessárias e conduzimos o
-              encerramento com segurança. Entre em contato para que possamos
-              iniciar o processo.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
       },
-      fraseObs: (
-        <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
-      ),
-      ctaButtonText: <>Falar conosco agora</>,
+      fraseObs: <>A_Definir</>,
+      ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>O que você realmente ganha</>,
-      FirstPart: <span>Encerramento de empresa </span>,
-      Destaque: <span className="italic font-light">sem dor de cabeça</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
+      Destaque: <span className="italic font-light">A_Definir</span>,
       SecondPart: <span></span>,
-      subtitle: (
-        <>
-          Com nossa experiência de mais de 40 anos, cuidamos de toda a
-          burocracia para encerrar sua empresa de forma rápida, segura e sem
-          surpresas.
-        </>
-      ),
+      subtitle: <>A_Definir</>,
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>paz para encerrar sua empresa</>,
+      titleMessageFeature: <>A_Definir</>,
+      subtitleMessageFeature: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>Baixa sem surpresas</>,
-          subtitle: (
-            <>
-              Cuidamos de toda a burocracia para você encerrar a empresa de
-              forma rápida e segura.
-            </>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -291,19 +215,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <CheckCheck />,
+          icon: <Briefcase />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>Regularização completa</>,
-          subtitle: (
-            <>
-              Garantimos que dívidas, pendências e obrigações sejam resolvidas
-              antes da baixa.
-            </>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -312,19 +231,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <ShieldCheck />,
+          icon: <User />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card3: {
-          title: <>Documentos organizados</>,
-          subtitle: (
-            <>
-              Toda documentação revisada e correta, evitando multas e problemas
-              futuros.
-            </>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -333,33 +247,92 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <FileText />,
+          icon: <Scale />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card4: {
-          title: <>Acompanhamento próximo</>,
-          subtitle: (
-            <>
-              Nossa equipe orienta cada etapa do processo, para que você não
-              precise se preocupar.
-            </>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
               <br />
               A_Definir
               <br />
+            </div>
+          ),
+          icon: <Gavel />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card5: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
             </div>
           ),
           icon: <Users />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
+        card6: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <MessageSquare />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card7: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Shield />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card8: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Briefcase />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
       },
-      ctaButtonText: <>Falar com a Edan</>,
+      ctaButtonText: <>A_Definir</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -411,32 +384,12 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>Quem cuida da sua empresa</>,
-      FirstPart: <span></span>,
-      Destaque: <span className="italic font-light"> Compromisso</span>,
-      SecondPart: <span>com seu CNPJ</span>,
-      subtitle: (
-        <>
-          {" "}
-          Atendimento humano e estratégico para encerrar sua empresa com
-          segurança.
-        </>
-      ),
-      paragraph: (
-        <div>
-          Há mais de 40 anos, a Edan Contabilidade atua com excelência no
-          encerramento e regularização de empresas. Nosso foco vai além de
-          cumprir burocracias: trabalhamos para garantir que cada baixa de CNPJ
-          seja feita de forma segura, evitando multas, pendências e surpresas
-          para empresários.
-          <br />
-          <br />
-          Cada processo de baixa é acompanhado de perto e com responsabilidade,
-          com orientação clara e linguagem simples. Nosso objetivo é tirar o
-          peso da burocracia das suas costas, assegurar que tudo seja encerrado
-          corretamente e ajudar você a finalizar sua empresa com tranquilidade.
-        </div>
-      ),
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir </span>,
+      Destaque: <span className="italic font-light"> A_Definir</span>,
+      SecondPart: <span></span>,
+      subtitle: <></>,
+      paragraph: <div>A_Definir</div>,
       benefits: {
         cards: {
           card1: {
@@ -461,7 +414,7 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>Falar com a Edan agora</>,
+      ctaButtonText: <>A_Definir</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
@@ -480,118 +433,76 @@ const content = {
       paragraphModalCta: "Entre em contato",
       ctaButtonAriaLabel: "Botão para entrar em contato",
 
-      // aboutSocial: {
-      //   img: {
-      //     img: aboutSocialImg,
-      //     alt: `Foto do Instagram do ${infos.name}`,
-      //     altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
-      //   },
-      //   miniTag: <>A_Definir</>,
-      //   title: <>A_Definir</>,
-      //   subtitle: <>A_Definir</>,
-      //   paragraph: <p></p>,
-      //   labelInstagram: "Siga-nos no Instagram",
-      //   labelFacebook: "Siga-nos no Facebook",
-      //   labelLinkedin: "Siga-nos no LinkedIn",
-      //   labelX: "Siga-nos no X",
-      //   labelTiktok: "Siga-nos no Tik Tok",
-      //   labelYoutube: "Siga-nos no Youtube",
-      // },
+      aboutSocial: {
+        img: {
+          img: aboutSocialImg,
+          alt: `Foto do Instagram do ${infos.name}`,
+          altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
+        },
+        miniTag: <>A_Definir</>,
+        title: <>A_Definir</>,
+        subtitle: <>A_Definir</>,
+        paragraph: <p></p>,
+        labelInstagram: "Siga-nos no Instagram",
+        labelFacebook: "Siga-nos no Facebook",
+        labelLinkedin: "Siga-nos no LinkedIn",
+        labelX: "Siga-nos no X",
+        labelTiktok: "Siga-nos no Tik Tok",
+        labelYoutube: "Siga-nos no Youtube",
+      },
     },
     ctaSection: {
-      miniTag: <>Fale conosco</>,
-      title: <h1>Não deixe a baixa do seu CNPJ virar um problema</h1>,
+      miniTag: <>A_Definir</>,
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Cada mês sem encerrar sua empresa pode gerar multas, pendências e
-            problemas fiscais.
-            <br />A Edan resolve isso por você — com clareza, segurança e sem
-            burocracia.
-          </p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>Avaliação completa da situação do seu CNPJ</>,
-          topic2: (
-            <>
-              Atendimento direto com especialistas em encerramento de empresas
-            </>
-          ),
-          topic3: <>Orientação clara, sem termos técnicos</>,
-          topic4: <>Baixa e regularização sem dor de cabeça</>,
-          topic5: (
-            <>Encerramento seguro, evitando multas e pendências futuras</>
-          ),
+          topic1: <>A_Definir</>,
+          topic2: <>A_Definir</>,
+          topic3: <>A_Definir</>,
+          topic4: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Fale com a gente agora mesmo</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>Por que escolher a Edan</>,
-      FirstPart: <span> O que muda quando a</span>,
-      Destaque: <span className="italic font-light">Edan</span>,
-      SecondPart: <span>cuida da baixa do seu CNPJ</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir</span>,
+      Destaque: <span className="italic font-light"> A_Definir </span>,
+      SecondPart: <span>A_Definir</span>,
 
-      subtitle: (
-        <>
-          Menos preocupações com burocracia, mais segurança e tranquilidade para
-          encerrar sua empresa sem riscos.
-        </>
-      ),
+      subtitle: <></>,
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Adeus preocupações com multas</>,
-          cardDescription: (
-            <>
-              Você deixa de se preocupar com prazos, pendências e fiscalizações.
-              A Edan garante que o encerramento do CNPJ seja feito corretamente,
-              evitando multas e problemas futuros.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Regularização completa e segura</>,
-          cardDescription: (
-            <>
-              Cuidamos de todas as obrigações fiscais e burocráticas antes da
-              baixa. Assim, você encerra sua empresa sem dívidas ocultas ou
-              surpresas desagradáveis.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Orientação clara em cada passo</>,
-          cardDescription: (
-            <>
-              Explicamos de forma simples o que está sendo feito e quais
-              documentos são necessários. Nada de termos confusos ou processos
-              obscuros — você sabe exatamente como sua empresa está sendo
-              encerrada.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Tranquilidade para seguir em frente</>,
-          cardDescription: (
-            <>
-              Com o CNPJ encerrado corretamente, você evita riscos legais e
-              fiscais, ganha tempo e paz para focar em novos projetos ou
-              empreendimentos.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Quero essa tranquilidade</>,
+      ctaButtonText: <>A_Definir</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -694,55 +605,25 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>TIRE SUAS DÚVIDAS</>,
-      title: <>Perguntas Frequentes</>,
-      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       questions: {
         question1: {
-          question: <>Quais serviços a Edan oferece para baixa de empresas?</>,
-          answer: (
-            <>
-              Cuidamos de todo o processo de encerramento de empresas e CNPJs,
-              incluindo regularização fiscal, quitação de pendências, emissão de
-              documentos finais e acompanhamento completo até a baixa
-              definitiva. Tudo de forma segura e sem complicações.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question2: {
-          question: <>Quais tipos de empresas podem ser encerradas?</>,
-          answer: (
-            <>
-              Atendemos microempresas, empresas de pequeno e médio porte, MEIs e
-              profissionais liberais. Adaptamos o processo conforme o porte,
-              regime tributário e situação fiscal da empresa, garantindo que a
-              baixa seja feita corretamente.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question3: {
-          question: <>Como funciona o processo de baixa de empresa?</>,
-          answer: (
-            <>
-              O processo é simples e totalmente acompanhado por nossos
-              especialistas. Solicitamos os documentos necessários,
-              regularizamos pendências e conduzimos todas as etapas junto aos
-              órgãos competentes, garantindo que sua empresa seja encerrada sem
-              problemas.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question4: {
-          question: (
-            <>É possível encerrar a empresa mesmo com dívidas ou pendências?</>
-          ),
-          answer: (
-            <>
-              Sim. Nossa equipe avalia a situação, orienta sobre regularizações
-              necessárias e conduz a baixa de forma legal e segura, evitando
-              multas, problemas fiscais ou complicações futuras.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
       },
 
