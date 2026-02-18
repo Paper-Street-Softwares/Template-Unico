@@ -37,7 +37,6 @@ import {
   Clock,
   ShieldCheck,
   Building,
-  CheckCheck,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -45,14 +44,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Edan Contabilidade em Ilhéus – BA",
+  name: "Tavares Assessoria Jurídica",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "fecharcnpj.edancontabilidade.com.br", // Sem "www"
+  domain: "imobiliario.taj.adv.br", // Sem "www"
   phone: {
-    ddd: "73",
-    firstPart: "98230", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "2451", // Apenas os 4 últimos números
+    ddd: "11",
+    firstPart: "97394", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0876", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -84,7 +83,7 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>8h às 18h</p>
+      <p>9h às 18h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
@@ -115,8 +114,8 @@ const content = {
         img: logo,
         alt: `Logomarca ${infos.name}`,
       },
-      menuItems: ["Início", "Serviços", "Sobre", "Perguntas Frequentes"],
-      menuId: ["home", "feature", "about", "faq"],
+      menuItems: ["Início", "Serviços", "Sobre"],
+      menuId: ["home", "feature", "about"],
       ariaLabel: "Botão de Contato",
       ctaButtonText: "Contato",
       ctaButtonTextResponsive: "Contato",
@@ -129,44 +128,16 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>ENCERRAMENTO DE EMPRESAS</>,
-      FirstPart: <span>Mais de</span>,
+      miniTag: <>ADVOGADO IMOBILIÁRIO</>,
+      FirstPart: <span>Segurança jurídica para</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">40 anos</span>
+        <span className="destaque relative italic font-light">imóveis</span>
       ),
-      SecondPart: (
-        <span>
-          {" "}
-          trazendo segurança para você encerrar sua empresa sem dor de cabeça
-        </span>
-      ),
+      SecondPart: <span></span>,
       subtitle: (
-        <div>
-          <p className="flex gap-2">
-            <span>
-              <Check className="text-primaryDark" width={18} />
-            </span>
-            Atendimento direto
-          </p>
-          <p className="flex gap-2">
-            <span>
-              <Check className="text-primaryDark" width={18} />
-            </span>
-            Linguagem simples
-          </p>
-          <p className="flex gap-2">
-            <span>
-              <Check className="text-primaryDark" width={18} />
-            </span>
-            Sem termos técnicos
-          </p>
-          <p className="flex gap-2">
-            <span>
-              <Check className="text-primaryDark" width={18} />
-            </span>
-            Sem surpresas
-          </p>
-        </div>
+        <p>
+          Soluções rápidas para inadimplência, conflitos e defesa do síndico.
+        </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
@@ -174,11 +145,12 @@ const content = {
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Falar com a Edan Agora</>,
+      ctaButtonText: <>Falar com o Advogado</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: (
           <>
+            {" "}
             <div className="relative flex">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
@@ -187,7 +159,12 @@ const content = {
           </>
         ),
         iconTwo: <></>,
-        text: <>Atendimento em todo território nacional.</>,
+        text: (
+          <>
+            Atendimento online para todo Brasil e presencial para SP e Região
+            Metropolitana.
+          </>
+        ),
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -203,84 +180,54 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     important: {
-      miniTag: <>Dúvidas comuns</>,
-      title: <>Questionamentos mais frequentes sobre a baixa de empresas</>,
-      subtitle: (
-        <>
-          Respondemos suas principais perguntas para você encerrar sua empresa
-          com segurança e rapidez.
-        </>
-      ),
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>Posso dar baixa na empresa mesmo com dívidas?</>,
-          paragraph: (
-            <>
-              Sim. Nossa equipe avalia a situação e orienta o procedimento
-              adequado para regularização e encerramento seguro. Entre em
-              contato para receber suporte completo.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card2: {
-          title: <>Quanto tempo leva para dar baixa?</>,
-          paragraph: (
-            <>
-              O processo costuma ser concluído em até 5 dias úteis. Entre em
-              contato para que possamos iniciar imediatamente e acompanhar cada
-              etapa.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card3: {
-          title: <>Preciso estar no local de registro da empresa?</>,
-          paragraph: (
-            <>
-              Não. Todo o processo é realizado online, com total acompanhamento
-              da nossa equipe. Entre em contato para garantir que tudo seja
-              feito corretamente.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card4: {
-          title: <>Não tenho mais os dados da empresa. Posso dar baixa?</>,
-          paragraph: (
-            <>
-              Sim. Recuperamos todas as informações necessárias e conduzimos o
-              encerramento com segurança. Entre em contato para que possamos
-              iniciar o processo.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
       },
-      fraseObs: (
-        <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
-      ),
-      ctaButtonText: <>Falar conosco agora</>,
+      fraseObs: <>A_Definir</>,
+      ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>O que você realmente ganha</>,
-      FirstPart: <span>Encerramento de empresa </span>,
-      Destaque: <span className="italic font-light">sem dor de cabeça</span>,
+      miniTag: <>ÁREAS DE ATUAÇÃO</>,
+      FirstPart: <span>Estratégia Jurídica e Segurança no</span>,
+      Destaque: <span className="italic font-light">Direito Imobiliário</span>,
       SecondPart: <span></span>,
       subtitle: (
         <>
-          Com nossa experiência de mais de 40 anos, cuidamos de toda a
-          burocracia para encerrar sua empresa de forma rápida, segura e sem
-          surpresas.
+          Atuação preventiva e contenciosa para proteger imóveis, contratos e
+          relações jurídicas com segurança e clareza.
         </>
       ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>paz para encerrar sua empresa</>,
+      titleMessageFeature: <>Atuação firme</>,
+      subtitleMessageFeature: <>na defesa dos interesses imobiliários</>,
       cards: {
         card1: {
-          title: <>Baixa sem surpresas</>,
+          title: <>Usucapião (Judicial e Extrajudicial)</>,
           subtitle: (
             <>
-              Cuidamos de toda a burocracia para você encerrar a empresa de
-              forma rápida e segura.
+              Especialização na regularização da propriedade baseada na posse
+              prolongada. Atuamos na análise da viabilidade e na condução do
+              processo, priorizando, sempre que possível, a via extrajudicial
+              (cartório) para maior celeridade na obtenção do registro do
+              imóvel.
             </>
           ),
           description: (
@@ -291,17 +238,19 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <CheckCheck />,
+          icon: <Briefcase />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>Regularização completa</>,
+          title: <>Regularização de Imóveis</>,
           subtitle: (
             <>
-              Garantimos que dívidas, pendências e obrigações sejam resolvidas
-              antes da baixa.
+              Soluções completas para sanar vícios registrais e tornar o imóvel
+              negociável. Inclui processos de Adjudicação Compulsória,
+              Retificação de Área, Desdobro, Unificação de Lotes e averbações
+              diversas na matrícula.
             </>
           ),
           description: (
@@ -312,17 +261,19 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <ShieldCheck />,
+          icon: <User />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card3: {
-          title: <>Documentos organizados</>,
+          title: <>Due Diligence Imobiliária (Assessoria em Compra e Venda)</>,
           subtitle: (
             <>
-              Toda documentação revisada e correta, evitando multas e problemas
-              futuros.
+              Análise preventiva de risco antes da aquisição do imóvel.
+              Investigamos a situação legal do bem e dos vendedores (certidões,
+              processos e dívidas) para evitar fraudes à execução e garantir uma
+              compra segura.
             </>
           ),
           description: (
@@ -333,17 +284,19 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <FileText />,
+          icon: <Scale />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card4: {
-          title: <>Acompanhamento próximo</>,
+          title: <>Contratos Imobiliários Personalizados</>,
           subtitle: (
             <>
-              Nossa equipe orienta cada etapa do processo, para que você não
-              precise se preocupar.
+              Elaboração e revisão técnica de instrumentos particulares, fugindo
+              de modelos genéricos. Atuamos em Contratos de Compra e Venda,
+              Locação (Residencial e Comercial/Built to Suit), Permuta, Doação e
+              Cessão de Direitos Possessórios.
             </>
           ),
           description: (
@@ -352,14 +305,79 @@ const content = {
               <br />
               A_Definir
               <br />
+            </div>
+          ),
+          icon: <Gavel />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card5: {
+          title: <>Distrato Imobiliário</>,
+          subtitle: (
+            <>
+              Defesa dos direitos do comprador na rescisão de contratos de
+              compra de imóvel na planta, garantindo a restituição de valores
+              conforme a Lei do Distrato e jurisprudência vigente.
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
             </div>
           ),
           icon: <Users />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
+        card6: {
+          title: <>Assessoria Jurídica para Imobiliárias e Corretores</>,
+          subtitle: (
+            <>
+              Suporte B2B na confecção de contratos e orientações sobre
+              responsabilidade civil, garantindo segurança na intermediação dos
+              negócios.
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <MessageSquare />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card7: {
+          title: <>Ações Possessórias</>,
+          subtitle: (
+            <>
+              Atuação emergencial na defesa da posse e propriedade em casos de
+              invasão, esbulho ou turbação (Reintegração e Manutenção de Posse).
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Shield />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
       },
-      ctaButtonText: <>Falar com a Edan</>,
+      ctaButtonText: <>Falar agora com o Advogado</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -411,37 +429,46 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>Quem cuida da sua empresa</>,
-      FirstPart: <span></span>,
-      Destaque: <span className="italic font-light"> Compromisso</span>,
-      SecondPart: <span>com seu CNPJ</span>,
-      subtitle: (
-        <>
-          {" "}
-          Atendimento humano e estratégico para encerrar sua empresa com
-          segurança.
-        </>
-      ),
+      miniTag: <>QUEM É O TAVARES ASSESSORIA JURÍDICA</>,
+      FirstPart: <span> Nossa atuação em </span>,
+      Destaque: <span className="italic font-light"> Direito Condominial</span>,
+      SecondPart: <span></span>,
+      subtitle: <></>,
       paragraph: (
         <div>
-          Há mais de 40 anos, a Edan Contabilidade atua com excelência no
-          encerramento e regularização de empresas. Nosso foco vai além de
-          cumprir burocracias: trabalhamos para garantir que cada baixa de CNPJ
-          seja feita de forma segura, evitando multas, pendências e surpresas
-          para empresários.
+          Atuamos de forma especializada no <strong>Direito Imobiliário</strong>
+          , com foco na defesa dos interesses de proprietários, investidores,
+          compradores, vendedores e empresas do setor imobiliário. Nossa atuação
+          é orientada pela prevenção de litígios, estruturação jurídica de
+          negócios e solução de demandas que impactam a segurança patrimonial e
+          a regularidade dos imóveis.
           <br />
           <br />
-          Cada processo de baixa é acompanhado de perto e com responsabilidade,
-          com orientação clara e linguagem simples. Nosso objetivo é tirar o
-          peso da burocracia das suas costas, assegurar que tudo seja encerrado
-          corretamente e ajudar você a finalizar sua empresa com tranquilidade.
+          Desenvolvemos uma atuação estratégica e personalizada, analisando cada
+          situação de forma individual para construir soluções jurídicas
+          eficazes, seguras e alinhadas à realidade do cliente e do patrimônio
+          envolvido. A combinação entre domínio técnico da legislação
+          imobiliária e uma abordagem clara e objetiva assegura decisões firmes
+          e respaldo jurídico em negociações, contratos e conflitos.
+          <br />
+          <br />
+          Mantemos um rigoroso protocolo de atualização jurídica, acompanhando
+          de perto o entendimento dos tribunais e as mudanças na legislação
+          aplicada ao mercado imobiliário. Ética, especialização e assertividade
+          são os pilares que sustentam nossa atuação na proteção do patrimônio e
+          na estabilidade das relações jurídicas imobiliárias.
         </div>
       ),
       benefits: {
         cards: {
           card1: {
-            title: <>A_Definir</>,
-            description: <>A_Definir</>,
+            title: <>Defesa Estratégica</>,
+            description: (
+              <>
+                Análise minuciosa e táticas exclusivas para cada etapa do
+                processo.
+              </>
+            ),
             icon: (
               <>
                 {" "}
@@ -450,8 +477,10 @@ const content = {
             ),
           },
           card2: {
-            title: <>A_Definir</>,
-            description: <>A_Definir</>,
+            title: <>Transparência Real</>,
+            description: (
+              <>Informação clara e direta sobre todos os riscos e andamentos.</>
+            ),
             icon: (
               <>
                 {" "}
@@ -461,7 +490,7 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>Falar com a Edan agora</>,
+      ctaButtonText: <>Falar diretamente comigo</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
@@ -499,99 +528,85 @@ const content = {
       // },
     },
     ctaSection: {
-      miniTag: <>Fale conosco</>,
-      title: <h1>Não deixe a baixa do seu CNPJ virar um problema</h1>,
+      miniTag: <>FALE CONOSCO</>,
+      title: <h1>Conflitos imobiliários exigem solução jurídica segura.</h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Cada mês sem encerrar sua empresa pode gerar multas, pendências e
-            problemas fiscais.
-            <br />A Edan resolve isso por você — com clareza, segurança e sem
-            burocracia.
+            Questões contratuais, posse, propriedade, regularização de imóveis
+            ou disputas patrimoniais exigem análise jurídica clara e
+            estratégica. Fale conosco e entenda o melhor caminho para o seu
+            caso.
           </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>Avaliação completa da situação do seu CNPJ</>,
-          topic2: (
-            <>
-              Atendimento direto com especialistas em encerramento de empresas
-            </>
-          ),
-          topic3: <>Orientação clara, sem termos técnicos</>,
-          topic4: <>Baixa e regularização sem dor de cabeça</>,
-          topic5: (
-            <>Encerramento seguro, evitando multas e pendências futuras</>
-          ),
+          topic1: <>A_Definir</>,
+          topic2: <>A_Definir</>,
+          topic3: <>A_Definir</>,
+          topic4: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Fale com a gente agora mesmo</>,
+      ctaButtonText: <>Entrar em contato agora</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>Por que escolher a Edan</>,
-      FirstPart: <span> O que muda quando a</span>,
-      Destaque: <span className="italic font-light">Edan</span>,
-      SecondPart: <span>cuida da baixa do seu CNPJ</span>,
+      miniTag: <>PASSO A PASSO</>,
+      FirstPart: <span> Entenda como</span>,
+      Destaque: <span className="italic font-light"> resolvemos </span>,
+      SecondPart: <span>o seu problema imobiliário</span>,
 
-      subtitle: (
-        <>
-          Menos preocupações com burocracia, mais segurança e tranquilidade para
-          encerrar sua empresa sem riscos.
-        </>
-      ),
+      subtitle: <></>,
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Adeus preocupações com multas</>,
+          cardTitle: <>Diagnóstico Jurídico</>,
           cardDescription: (
             <>
-              Você deixa de se preocupar com prazos, pendências e fiscalizações.
-              A Edan garante que o encerramento do CNPJ seja feito corretamente,
-              evitando multas e problemas futuros.
+              Você apresenta a situação do imóvel ou da negociação, e analisamos
+              o cenário com foco em riscos jurídicos, responsabilidades e
+              impactos patrimoniais.
             </>
           ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Regularização completa e segura</>,
+          cardTitle: <>Análise Técnica e Documental</>,
           cardDescription: (
             <>
-              Cuidamos de todas as obrigações fiscais e burocráticas antes da
-              baixa. Assim, você encerra sua empresa sem dívidas ocultas ou
-              surpresas desagradáveis.
+              Examinamos contratos, matrículas, registros, notificações e demais
+              documentos para identificar falhas, irregularidades ou caminhos
+              seguros de solução.
             </>
           ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Orientação clara em cada passo</>,
+          cardTitle: <>Definição da Estratégia</>,
           cardDescription: (
             <>
-              Explicamos de forma simples o que está sendo feito e quais
-              documentos são necessários. Nada de termos confusos ou processos
-              obscuros — você sabe exatamente como sua empresa está sendo
-              encerrada.
+              Definimos um plano de ação claro, seja negociação, regularização,
+              mediação ou medida judicial, sempre priorizando segurança jurídica
+              e eficiência.
             </>
           ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Tranquilidade para seguir em frente</>,
+          cardTitle: <>Execução e Acompanhamento</>,
           cardDescription: (
             <>
-              Com o CNPJ encerrado corretamente, você evita riscos legais e
-              fiscais, ganha tempo e paz para focar em novos projetos ou
-              empreendimentos.
+              Atuamos de forma firme até a solução do caso, com acompanhamento
+              próximo e informações claras em todas as etapas do processo.
             </>
           ),
         },
       },
-      ctaButtonText: <>Quero essa tranquilidade</>,
+      ctaButtonText: <>Entre em contato agora</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -694,55 +709,25 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>TIRE SUAS DÚVIDAS</>,
-      title: <>Perguntas Frequentes</>,
-      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       questions: {
         question1: {
-          question: <>Quais serviços a Edan oferece para baixa de empresas?</>,
-          answer: (
-            <>
-              Cuidamos de todo o processo de encerramento de empresas e CNPJs,
-              incluindo regularização fiscal, quitação de pendências, emissão de
-              documentos finais e acompanhamento completo até a baixa
-              definitiva. Tudo de forma segura e sem complicações.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question2: {
-          question: <>Quais tipos de empresas podem ser encerradas?</>,
-          answer: (
-            <>
-              Atendemos microempresas, empresas de pequeno e médio porte, MEIs e
-              profissionais liberais. Adaptamos o processo conforme o porte,
-              regime tributário e situação fiscal da empresa, garantindo que a
-              baixa seja feita corretamente.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question3: {
-          question: <>Como funciona o processo de baixa de empresa?</>,
-          answer: (
-            <>
-              O processo é simples e totalmente acompanhado por nossos
-              especialistas. Solicitamos os documentos necessários,
-              regularizamos pendências e conduzimos todas as etapas junto aos
-              órgãos competentes, garantindo que sua empresa seja encerrada sem
-              problemas.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question4: {
-          question: (
-            <>É possível encerrar a empresa mesmo com dívidas ou pendências?</>
-          ),
-          answer: (
-            <>
-              Sim. Nossa equipe avalia a situação, orienta sobre regularizações
-              necessárias e conduz a baixa de forma legal e segura, evitando
-              multas, problemas fiscais ou complicações futuras.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
       },
 
