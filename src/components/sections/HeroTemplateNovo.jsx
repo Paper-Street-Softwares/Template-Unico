@@ -216,6 +216,7 @@ function HeroTemplateNovo({
                   <span
                     className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
                   >
+                    
                     {content.texts.hero.obsHero.text}
                   </span>
                   {obsTwo && (

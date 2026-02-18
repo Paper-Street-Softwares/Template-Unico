@@ -36,6 +36,7 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
+  Building,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -113,8 +114,8 @@ const content = {
         img: logo,
         alt: `Logomarca ${infos.name}`,
       },
-      menuItems: ["Início", "Serviços", "Sobre"],
-      menuId: ["home", "feature", "about"],
+      menuItems: ["Início", "Serviços", "Sobre", "Perguntas Frequentes"],
+      menuId: ["home", "feature", "about", "faq"],
       ariaLabel: "Botão de Contato",
       ctaButtonText: "Contato",
       ctaButtonTextResponsive: "Contato",
@@ -122,30 +123,61 @@ const content = {
     hero: {
       minitagIcon: (
         <>
-          <BriefcaseBusiness className="w-4 h-4" />
+          <Building className="w-4 h-4" />
           {/* <MapPin className="w-4 h-4" /> */}
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
+      miniTag: <>ENCERRAMENTO DE EMPRESAS</>,
+      FirstPart: <span>Mais de</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_Definir</span>
+        <span className="destaque relative italic font-light">40 anos</span>
       ),
-      SecondPart: <span></span>,
-      subtitle: <p>A_Definir</p>,
+      SecondPart: (
+        <span>
+          {" "}
+          trazendo segurança para você encerrar sua empresa sem dor de cabeça
+        </span>
+      ),
+      subtitle: (
+        <div>
+          <p className="flex gap-2">
+            <span>
+              <Check className="text-primaryDark" width={18} />
+            </span>
+            Atendimento direto
+          </p>
+          <p className="flex gap-2">
+            <span>
+              <Check className="text-primaryDark" width={18} />
+            </span>
+            Linguagem simples
+          </p>
+          <p className="flex gap-2">
+            <span>
+              <Check className="text-primaryDark" width={18} />
+            </span>
+            Sem termos técnicos
+          </p>
+          <p className="flex gap-2">
+            <span>
+              <Check className="text-primaryDark" width={18} />
+            </span>
+            Sem surpresas
+          </p>
+        </div>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com a Edan Agora</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: (
           <>
-            {" "}
             <div className="relative flex">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
@@ -154,7 +186,7 @@ const content = {
           </>
         ),
         iconTwo: <></>,
-        text: <>A_Definir</>,
+        text: <>Atendimento em todo território nacional.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
