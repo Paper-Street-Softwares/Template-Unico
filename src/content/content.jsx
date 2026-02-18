@@ -457,14 +457,14 @@ const content = {
         },
         miniTag: <>Redes sociais</>,
         title: <>Conecte-se conosco</>,
-        subtitle: <>A_Definir</>,
-        paragraph: (
-          <p>
+        subtitle: (
+          <>
             Acompanhe nossas redes sociais para se manter informado sobre
             conteúdos jurídicos, atualizações e temas relevantes das áreas de
             atuação.
-          </p>
+          </>
         ),
+        paragraph: <p></p>,
         labelInstagram: "Siga-nos no Instagram",
         labelFacebook: "Siga-nos no Facebook",
         labelLinkedin: "Siga-nos no LinkedIn",
