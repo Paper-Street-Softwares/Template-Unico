@@ -36,6 +36,7 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
+  Building,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -43,14 +44,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "A_Definir",
+  name: "Tavares Assessoria Jurídica",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "A_Definir", // Sem "www"
+  domain: "imobiliario.taj.adv.br", // Sem "www"
   phone: {
-    ddd: "00",
-    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0000", // Apenas os 4 últimos números
+    ddd: "11",
+    firstPart: "97394", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0876", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -82,7 +83,7 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>8h às 18h</p>
+      <p>9h às 18h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
@@ -113,8 +114,8 @@ const content = {
         img: logo,
         alt: `Logomarca ${infos.name}`,
       },
-      menuItems: ["Início", "Serviços", "Sobre", "Perguntas Frequentes"],
-      menuId: ["home", "feature", "about", "faq"],
+      menuItems: ["Início", "Serviços", "Sobre"],
+      menuId: ["home", "feature", "about"],
       ariaLabel: "Botão de Contato",
       ctaButtonText: "Contato",
       ctaButtonTextResponsive: "Contato",
@@ -122,25 +123,29 @@ const content = {
     hero: {
       minitagIcon: (
         <>
-          <BriefcaseBusiness className="w-4 h-4" />
+          <Building className="w-4 h-4" />
           {/* <MapPin className="w-4 h-4" /> */}
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
+      miniTag: <>ADVOGADO IMOBILIÁRIO</>,
+      FirstPart: <span>Segurança jurídica para</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_Definir</span>
+        <span className="destaque relative italic font-light">imóveis</span>
       ),
       SecondPart: <span></span>,
-      subtitle: <p>A_Definir</p>,
+      subtitle: (
+        <p>
+          Soluções rápidas para inadimplência, conflitos e defesa do síndico.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com o Advogado</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: (
@@ -154,7 +159,12 @@ const content = {
           </>
         ),
         iconTwo: <></>,
-        text: <>A_Definir</>,
+        text: (
+          <>
+            Atendimento online para todo Brasil e presencial para SP e Região
+            Metropolitana.
+          </>
+        ),
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -194,19 +204,32 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
-      Destaque: <span className="italic font-light">A_Definir</span>,
+      miniTag: <>ÁREAS DE ATUAÇÃO</>,
+      FirstPart: <span>Estratégia Jurídica e Segurança no</span>,
+      Destaque: <span className="italic font-light">Direito Imobiliário</span>,
       SecondPart: <span></span>,
-      subtitle: <>A_Definir</>,
+      subtitle: (
+        <>
+          Atuação preventiva e contenciosa para proteger imóveis, contratos e
+          relações jurídicas com segurança e clareza.
+        </>
+      ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>A_Definir</>,
-      subtitleMessageFeature: <>A_Definir</>,
+      titleMessageFeature: <>Atuação firme</>,
+      subtitleMessageFeature: <>na defesa dos interesses imobiliários</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Usucapião (Judicial e Extrajudicial)</>,
+          subtitle: (
+            <>
+              Especialização na regularização da propriedade baseada na posse
+              prolongada. Atuamos na análise da viabilidade e na condução do
+              processo, priorizando, sempre que possível, a via extrajudicial
+              (cartório) para maior celeridade na obtenção do registro do
+              imóvel.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -221,8 +244,15 @@ const content = {
         },
 
         card2: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Regularização de Imóveis</>,
+          subtitle: (
+            <>
+              Soluções completas para sanar vícios registrais e tornar o imóvel
+              negociável. Inclui processos de Adjudicação Compulsória,
+              Retificação de Área, Desdobro, Unificação de Lotes e averbações
+              diversas na matrícula.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -237,8 +267,15 @@ const content = {
         },
 
         card3: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Due Diligence Imobiliária (Assessoria em Compra e Venda)</>,
+          subtitle: (
+            <>
+              Análise preventiva de risco antes da aquisição do imóvel.
+              Investigamos a situação legal do bem e dos vendedores (certidões,
+              processos e dívidas) para evitar fraudes à execução e garantir uma
+              compra segura.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -253,8 +290,15 @@ const content = {
         },
 
         card4: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Contratos Imobiliários Personalizados</>,
+          subtitle: (
+            <>
+              Elaboração e revisão técnica de instrumentos particulares, fugindo
+              de modelos genéricos. Atuamos em Contratos de Compra e Venda,
+              Locação (Residencial e Comercial/Built to Suit), Permuta, Doação e
+              Cessão de Direitos Possessórios.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -269,8 +313,14 @@ const content = {
         },
 
         card5: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Distrato Imobiliário</>,
+          subtitle: (
+            <>
+              Defesa dos direitos do comprador na rescisão de contratos de
+              compra de imóvel na planta, garantindo a restituição de valores
+              conforme a Lei do Distrato e jurisprudência vigente.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -285,8 +335,14 @@ const content = {
         },
 
         card6: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Assessoria Jurídica para Imobiliárias e Corretores</>,
+          subtitle: (
+            <>
+              Suporte B2B na confecção de contratos e orientações sobre
+              responsabilidade civil, garantindo segurança na intermediação dos
+              negócios.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -301,8 +357,13 @@ const content = {
         },
 
         card7: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Ações Possessórias</>,
+          subtitle: (
+            <>
+              Atuação emergencial na defesa da posse e propriedade em casos de
+              invasão, esbulho ou turbação (Reintegração e Manutenção de Posse).
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -315,24 +376,8 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
-
-        card8: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar agora com o Advogado</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -384,17 +429,46 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
+      miniTag: <>QUEM É O TAVARES ASSESSORIA JURÍDICA</>,
+      FirstPart: <span> Nossa atuação em </span>,
+      Destaque: <span className="italic font-light"> Direito Condominial</span>,
       SecondPart: <span></span>,
       subtitle: <></>,
-      paragraph: <div>A_Definir</div>,
+      paragraph: (
+        <div>
+          Atuamos de forma especializada no <strong>Direito Imobiliário</strong>
+          , com foco na defesa dos interesses de proprietários, investidores,
+          compradores, vendedores e empresas do setor imobiliário. Nossa atuação
+          é orientada pela prevenção de litígios, estruturação jurídica de
+          negócios e solução de demandas que impactam a segurança patrimonial e
+          a regularidade dos imóveis.
+          <br />
+          <br />
+          Desenvolvemos uma atuação estratégica e personalizada, analisando cada
+          situação de forma individual para construir soluções jurídicas
+          eficazes, seguras e alinhadas à realidade do cliente e do patrimônio
+          envolvido. A combinação entre domínio técnico da legislação
+          imobiliária e uma abordagem clara e objetiva assegura decisões firmes
+          e respaldo jurídico em negociações, contratos e conflitos.
+          <br />
+          <br />
+          Mantemos um rigoroso protocolo de atualização jurídica, acompanhando
+          de perto o entendimento dos tribunais e as mudanças na legislação
+          aplicada ao mercado imobiliário. Ética, especialização e assertividade
+          são os pilares que sustentam nossa atuação na proteção do patrimônio e
+          na estabilidade das relações jurídicas imobiliárias.
+        </div>
+      ),
       benefits: {
         cards: {
           card1: {
-            title: <>A_Definir</>,
-            description: <>A_Definir</>,
+            title: <>Defesa Estratégica</>,
+            description: (
+              <>
+                Análise minuciosa e táticas exclusivas para cada etapa do
+                processo.
+              </>
+            ),
             icon: (
               <>
                 {" "}
@@ -403,8 +477,10 @@ const content = {
             ),
           },
           card2: {
-            title: <>A_Definir</>,
-            description: <>A_Definir</>,
+            title: <>Transparência Real</>,
+            description: (
+              <>Informação clara e direta sobre todos os riscos e andamentos.</>
+            ),
             icon: (
               <>
                 {" "}
@@ -414,7 +490,7 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar diretamente comigo</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
@@ -452,11 +528,16 @@ const content = {
       // },
     },
     ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>FALE CONOSCO</>,
+      title: <h1>Conflitos imobiliários exigem solução jurídica segura.</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Questões contratuais, posse, propriedade, regularização de imóveis
+            ou disputas patrimoniais exigem análise jurídica clara e
+            estratégica. Fale conosco e entenda o melhor caminho para o seu
+            caso.
+          </p>
         </div>
       ),
       container: {
@@ -467,15 +548,15 @@ const content = {
           topic4: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Entrar em contato agora</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir</span>,
-      Destaque: <span className="italic font-light"> A_Definir </span>,
-      SecondPart: <span>A_Definir</span>,
+      miniTag: <>PASSO A PASSO</>,
+      FirstPart: <span> Entenda como</span>,
+      Destaque: <span className="italic font-light"> resolvemos </span>,
+      SecondPart: <span>o seu problema imobiliário</span>,
 
       subtitle: <></>,
       img: imgSteps,
@@ -483,26 +564,49 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Diagnóstico Jurídico</>,
+          cardDescription: (
+            <>
+              Você apresenta a situação do imóvel ou da negociação, e analisamos
+              o cenário com foco em riscos jurídicos, responsabilidades e
+              impactos patrimoniais.
+            </>
+          ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Análise Técnica e Documental</>,
+          cardDescription: (
+            <>
+              Examinamos contratos, matrículas, registros, notificações e demais
+              documentos para identificar falhas, irregularidades ou caminhos
+              seguros de solução.
+            </>
+          ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Definição da Estratégia</>,
+          cardDescription: (
+            <>
+              Definimos um plano de ação claro, seja negociação, regularização,
+              mediação ou medida judicial, sempre priorizando segurança jurídica
+              e eficiência.
+            </>
+          ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Execução e Acompanhamento</>,
+          cardDescription: (
+            <>
+              Atuamos de forma firme até a solução do caso, com acompanhamento
+              próximo e informações claras em todas as etapas do processo.
+            </>
+          ),
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Entre em contato agora</>,
     },
     blog: {
       miniTag: <>A_Definir</>,

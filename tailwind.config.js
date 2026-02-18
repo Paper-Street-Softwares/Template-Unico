@@ -9,6 +9,7 @@ export default {
   safelist: [
     "bg-green-900",
     "bg-green-800",
+    "bg-green-600",
     "bg-green-500",
     "text-black",
     "border",

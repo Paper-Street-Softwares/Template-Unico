@@ -25,7 +25,7 @@ function CardsImportants({
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       textDestaque = "text-primaryDark";
-      cardBg = "bg-quartenary";
+      cardBg = "bg-terciary";
       iconBg = "bg-white text-primaryDark";
       image = " border-[8px] border-white";
       bgObservation = "bg-primaryDark";
