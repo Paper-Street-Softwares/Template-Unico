@@ -7,18 +7,20 @@ function ParceriaCard({ img, alt, text, name, role, colorMode }) {
       titleColor = "text-corTitulosPreto";
       descrptionColor = "text-corOutrosTextosPreto";
       bgCard = "bg-terciary";
+      break;
 
-      break;
     case "dark":
-      titleColor = "text-corTitulosPreto";
-      descrptionColor = "text-corOutrosTextosPreto";
-      bgCard = "bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]";
+      titleColor = "text-corTitulosBranca";
+      descrptionColor = "text-corOutrosTextosBranca";
+      bgCard = "bg-black";
       break;
+
     case "defaultDark":
       titleColor = "text-corTitulosBranca";
       descrptionColor = "text-corOutrosTextosBranca";
       bgCard = "bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]";
       break;
+
     case "defaultLight":
       titleColor = "text-corTitulosBranca";
       descrptionColor = "text-corOutrosTextosBranca";

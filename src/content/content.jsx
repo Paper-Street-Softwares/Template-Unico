@@ -331,7 +331,6 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
       },
-
       ctaButtonText: <>A_Definir</>,
     },
     cardsSection: {
@@ -504,7 +503,6 @@ const content = {
       },
       ctaButtonText: <>A_Definir</>,
     },
-
     blog: {
       miniTag: <>A_Definir</>,
       title: <>A_Definir</>,

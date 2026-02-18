@@ -1,41 +1,41 @@
-import React from 'react'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import ParceriaCard from '../cards/CardParceria'
-import SectionHeaderNovo from '../sectionElements/SectionHeaderNovo'
-import content from '../../content/content'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
+import React from "react";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import ParceriaCard from "../cards/CardParceria";
+import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
+import content from "../../content/content";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 
 function Parceria({ colorMode }) {
-  const imgList = Object.values(content.texts.parceria.images)
+  const imgList = Object.values(content.texts.parceria.images);
 
   // Classes dinâmicas conforme colorMode
-  let backgroundMode, text, textOpacity
+  let backgroundMode, text, textOpacity;
 
   switch (colorMode) {
-    case 'light':
-      backgroundMode = 'bg-transparent'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      break
+    case "light":
+      backgroundMode = "bg-transparent";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      break;
 
-    case 'dark':
-      backgroundMode = 'bg-transparent'
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corOutrosTextosBranca'
-      break
+    case "dark":
+      backgroundMode = "bg-transparent";
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corOutrosTextosBranca";
+      break;
 
-    case 'defaultDark':
-      backgroundMode = 'bg-transparent'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      break
+    case "defaultDark":
+      backgroundMode = "bg-transparent";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      break;
 
-    case 'defaultLight':
-      backgroundMode = 'bg-transparent'
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      break
+    case "defaultLight":
+      backgroundMode = "bg-transparent";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      break;
   }
 
   return (
@@ -67,7 +67,7 @@ function Parceria({ colorMode }) {
         </div>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default Parceria
+export default Parceria;

@@ -21,23 +21,20 @@ function Speed({ colorMode }) {
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       iconBg = "bg-white text-primaryDark";
-      textDestaque = "text-primaryLight";
       break;
 
     case "dark":
-      bgContainer = "bg-darkOpacity";
+      bgContainer = "bg-black";
       text = "text-corTitulosBranca";
       textOpacity = "text-corOutrosTextosBranca";
       iconBg = "bg-darkOpacity text-primaryLight";
-      textDestaque = "";
       break;
 
     case "defaultDark":
-      bgContainer = "bg-secondary/60";
-      text = "text-corTitulosBranca";
-      textOpacity = "text-corOutrosTextosBranca";
+      bgContainer = "bg-terciary";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
       iconBg = "bg-white text-primaryDark";
-      textDestaque = "";
       break;
 
     case "defaultLight":
@@ -45,7 +42,6 @@ function Speed({ colorMode }) {
       text = "text-corTitulosBranca";
       textOpacity = "text-corOutrosTextosBranca";
       iconBg = "bg-darkOpacity text-primaryLight";
-      textDestaque = "";
   }
 
   const ListSpeed = Object.values(content.texts.speed.cards);
@@ -71,9 +67,9 @@ function Speed({ colorMode }) {
                       className="flex flex-col items-center text-center space-y-4"
                     >
                       <div
-                        className={`w-12 h-12 rounded-full  shadow-lg flex items-center justify-center ${iconBg}`}
+                        className={`w-12 h-12 rounded-full shadow-lg flex items-center justify-center ${iconBg}`}
                       >
-                        <item.icon className={`w-6 h-6 ${textDestaque}`} />
+                        <item.icon className={`w-6 h-6`} />
                       </div>
                       <h1
                         className={`font-medium font-secondFont ${textOpacity}`}

@@ -11,60 +11,50 @@ function Cards({ colorMode }) {
     textOpacity,
     backgroundMode,
     stepNumberBg,
-    stepNumberText,
-    lineColor,
+    iconContainer,
     textDestaque,
-    image,
+    bgCards,
     borderT;
 
   switch (colorMode) {
     case "light":
       backgroundMode = "bg-transparent";
-
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
-      stepNumberBg = "bg-white";
-      stepNumberText = "text-primaryDark";
-      lineColor = "bg-primaryDark/20";
+      iconContainer = " bg-white shadow text-primaryDark";
       textDestaque = "text-primaryDark";
-      image = " border-[8px] border-white";
       borderT = "border-t-primaryDark";
+      bgCards = "bg-terciary";
       break;
+
     case "dark":
       backgroundMode = "bg-transparent";
       text = "text-corTitulosBranca";
       textOpacity = "text-corOutrosTextosBranca";
       backgroundMode = "bg-dark";
       stepNumberBg = "bg-dark";
-      stepNumberText = "text-primaryLight";
-      lineColor = "bg-primaryLight/20";
+      iconContainer = " bg-darkOpacity shadow text-primaryLight";
       textDestaque = "text-primaryLight";
-      image = " border-[8px] border-borderImage";
       borderT = "border-t-primaryLight";
-
+      bgCards = "bg-black";
       break;
+
     case "defaultDark":
       backgroundMode = "bg-transparent";
-      text = "text-corTitulosBranca";
-      textOpacity = "text-corOutrosTextosBranca";
-      stepNumberBg = "bg-white";
-      stepNumberText = "text-primaryDark";
-      lineColor = "bg-primaryDark/20";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      iconContainer = " bg-white shadow text-primaryDark";
       textDestaque = "text-primaryDark";
-      image = " border-[8px] border-white";
       borderT = "border-t-primaryDark";
-
+      bgCards = "bg-terciary";
       break;
 
     case "defaultLight":
       backgroundMode = "bg-transparent";
-      text = "text-corTitulosBranca";
-      textOpacity = "text-corOutrosTextosBranca";
-      stepNumberBg = "bg-white";
-      stepNumberText = "text-primaryDark";
-      lineColor = "bg-primaryDark/20";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      iconContainer = " bg-white shadow text-primaryDark";
       textDestaque = "text-primaryDark";
-      image = " border-[8px] border-white";
       borderT = "border-t-primaryDark";
   }
 
@@ -87,13 +77,17 @@ function Cards({ colorMode }) {
                   <MotionDivDownToUp className="w-full phone3:w-auto">
                     <div
                       key={index}
-                      className={`h-fit border-t-4 ${borderT} bg-white transition-shadow duration-300 w-[80%] phone3:w-[200px] mx-auto rounded-md`}
+                      className={`h-fit border-t-4 ${borderT} ${bgCards} transition-shadow duration-300 w-[80%] phone3:w-[200px] mx-auto rounded-md`}
                     >
                       <div className="pt-8 px-6 pb-8 h-full flex flex-col">
-                        <div className="w-14 h-14 rounded-full bg-primaryLight text-black flex items-center justify-center mx-auto text-primary mb-6">
+                        <div
+                          className={`w-14 h-14 rounded-full${iconContainer} flex items-center justify-center mx-auto mb-6`}
+                        >
                           {item.icon}
                         </div>
-                        <h3 className="text-xl font-secondFont font-bold text-primary text-center">
+                        <h3
+                          className={`text-xl font-secondFont font-bold text-center ${text}`}
+                        >
                           {item.title}
                         </h3>
                       </div>

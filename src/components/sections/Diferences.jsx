@@ -22,27 +22,28 @@ export function Diferences({ colorMode }) {
       bgCards = "bg-white shadow";
       borderSVG = "border-primaryLight";
       bgContainer = "bg-terciary";
-
       break;
+
     case "dark":
       backgroundMode = "bg-transparent";
       text = "text-corTitulosBranca";
       textOpacity = "text-corOutrosTextosBranca";
       textDestaque = "text-primaryLight";
-      bgCards = "bg-primaryLight";
+      bgCards = "bg-black";
       borderSVG = "border-primaryLight";
-      bgContainer = "";
-
+      bgContainer = "bg-darkOpacity";
       break;
+
     case "defaultDark":
       backgroundMode = "bg-transparent";
-      text = "text-corTitulosBranca";
-      textOpacity = "text-corOutrosTextosBranca";
-      textDestaque = "text-white";
-      bgCards = "bg-primaryLight";
-      borderSVG = "border-white";
-      bgContainer = "";
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      textDestaque = "text-primaryLight";
+      bgCards = "bg-white shadow";
+      borderSVG = "border-primaryLight";
+      bgContainer = "bg-terciary";
       break;
+
     case "defaultLight":
       backgroundMode = "bg-transparent";
       text = "text-corTitulosBranca";

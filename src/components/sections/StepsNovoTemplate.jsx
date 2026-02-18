@@ -31,7 +31,7 @@ function StepsNovoTemplate({ colorMode }) {
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       stepNumberBg = "bg-white";
-      stepNumberText = "text-primaryLight";
+      stepNumberText = "text-primaryDark";
       lineColor = "bg-primaryDark/20";
       textDestaque = "text-primaryDark";
       image = " border-[8px] border-white";
@@ -52,7 +52,7 @@ function StepsNovoTemplate({ colorMode }) {
       text = "text-corTitulosPreto";
       textOpacity = "text-corOutrosTextosPreto";
       stepNumberBg = "bg-white";
-      stepNumberText = "text-primaryLight";
+      stepNumberText = "text-primaryDark";
       lineColor = "bg-primaryDark/20";
       textDestaque = "text-primaryDark";
       image = " border-[8px] border-white";
