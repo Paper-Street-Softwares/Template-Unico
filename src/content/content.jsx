@@ -43,14 +43,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "A_Definir",
+  name: "Edan Contabilidade em Ilhéus – BA",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "condominial.taj.adv.br", // Sem "www"
+  domain: "fecharcnpj.edancontabilidade.com.br", // Sem "www"
   phone: {
-    ddd: "00",
-    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0000", // Apenas os 4 últimos números
+    ddd: "73",
+    firstPart: "98230", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "2451", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
