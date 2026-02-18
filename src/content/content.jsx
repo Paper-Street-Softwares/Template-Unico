@@ -536,7 +536,12 @@ const content = {
       Destaque: <span className="italic font-light">Edan</span>,
       SecondPart: <span>cuida da baixa do seu CNPJ</span>,
 
-      subtitle: <></>,
+      subtitle: (
+        <>
+          Menos preocupações com burocracia, mais segurança e tranquilidade para
+          encerrar sua empresa sem riscos.
+        </>
+      ),
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
