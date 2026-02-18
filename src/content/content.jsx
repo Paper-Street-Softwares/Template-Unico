@@ -8,7 +8,7 @@ import imgFeatures from "../assets/imgs/features/imgServices.webp";
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-// import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
+import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 // import logo1 from '../assets/imgs/parceria/Logo1.webp'
@@ -36,6 +36,7 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
+  ShoppingCart,
   Building,
 } from "lucide-react";
 
@@ -44,14 +45,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Tavares Assessoria Jurídica",
+  name: "Dr. Vinícius França",
   email: "contato", // Email desejado pelo cliente
-  emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "imobiliario.taj.adv.br", // Sem "www"
+  emailSecundario: "nonatovinicius@gmail.com", // Email desejado pelo cliente
+  domain: "viniciusfranca.adv.br", // Sem "www"
   phone: {
-    ddd: "11",
-    firstPart: "97394", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0876", // Apenas os 4 últimos números
+    ddd: "92",
+    firstPart: "99295", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "1515", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -66,10 +67,11 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>Av. Industrial 780,</p>
-      <p>Sala 2313 - Jardim, </p>
-      <p>Santo André - SP,</p>
-      <p>CEP: 09080-500</p>
+      <p>Endereço:</p>
+      <p>Rua Benjamin Constant,</p>
+      <p>nº 760, Bairro Petrópolis,</p>
+      <p>Manaus – AM,</p>
+      <p>CEP: 69063-010</p>
     </div>
   ),
   enderecoSecundario: (
@@ -87,10 +89,10 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "", // Sem o @
+  instagramProfile: "viniciusfrancajr", // Sem o @
   instagramProfileSecundario: "",
   facebookProfile: "",
-  linkeDinProfile: "",
+  linkeDinProfile: "vinícius-frança-bb2961239/",
   x: "",
   tiktokProfile: "",
   youtubeProfile: "",
@@ -114,8 +116,8 @@ const content = {
         img: logo,
         alt: `Logomarca ${infos.name}`,
       },
-      menuItems: ["Início", "Serviços", "Sobre"],
-      menuId: ["home", "feature", "about"],
+      menuItems: ["Início", "Serviços", "Sobre", "Perguntas Frequentes"],
+      menuId: ["home", "feature", "about", "faq"],
       ariaLabel: "Botão de Contato",
       ctaButtonText: "Contato",
       ctaButtonTextResponsive: "Contato",
@@ -123,20 +125,21 @@ const content = {
     hero: {
       minitagIcon: (
         <>
-          <Building className="w-4 h-4" />
+          <BriefcaseBusiness className="w-4 h-4" />
           {/* <MapPin className="w-4 h-4" /> */}
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>ADVOGADO IMOBILIÁRIO</>,
-      FirstPart: <span>Segurança jurídica para</span>,
+      miniTag: <>ESCRITÓRIO DE ADVOCACIA</>,
+      FirstPart: <span>Defesa e orientação com</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">imóveis</span>
+        <span className="destaque relative italic font-light">confiança</span>
       ),
       SecondPart: <span></span>,
       subtitle: (
         <p>
-          Soluções rápidas para inadimplência, conflitos e defesa do síndico.
+          Atuação em diversas áreas do Direito, garantindo atenção e suporte
+          personalizado a cada cliente
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -145,26 +148,12 @@ const content = {
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Falar com o Advogado</>,
+      ctaButtonText: <>Falar com o Dr. Vinícius agora</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
-        icon: (
-          <>
-            {" "}
-            <div className="relative flex">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
-            </div>
-            {/* ⚠️ */}
-          </>
-        ),
+        icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: (
-          <>
-            Atendimento online para todo Brasil e presencial para SP e Região
-            Metropolitana.
-          </>
-        ),
+        text: <>Atendimento somente mediante agendamento.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -204,107 +193,27 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>ÁREAS DE ATUAÇÃO</>,
-      FirstPart: <span>Estratégia Jurídica e Segurança no</span>,
-      Destaque: <span className="italic font-light">Direito Imobiliário</span>,
+      miniTag: <>NOSSAS ÁREAS DE ATUAÇÃO</>,
+      FirstPart: <span>Soluções jurídicas</span>,
+      Destaque: <span className="italic font-light">completas</span>,
       SecondPart: <span></span>,
       subtitle: (
-        <>
-          Atuação preventiva e contenciosa para proteger imóveis, contratos e
-          relações jurídicas com segurança e clareza.
-        </>
+        <>Atuamos em diferentes áreas do Direito com segurança e dedicação</>
       ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>Atuação firme</>,
-      subtitleMessageFeature: <>na defesa dos interesses imobiliários</>,
+      titleMessageFeature: <>100%</>,
+      subtitleMessageFeature: <>dedicação ao seu caso</>,
       cards: {
         card1: {
-          title: <>Usucapião (Judicial e Extrajudicial)</>,
-          subtitle: (
-            <>
-              Especialização na regularização da propriedade baseada na posse
-              prolongada. Atuamos na análise da viabilidade e na condução do
-              processo, priorizando, sempre que possível, a via extrajudicial
-              (cartório) para maior celeridade na obtenção do registro do
-              imóvel.
-            </>
-          ),
+          title: <>Direito Criminal</>,
+          subtitle: <>Defesa estratégica e proteção de seus direitos</>,
           description: (
             <div>
               A_Definir
               <br />
               <br />
               A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card2: {
-          title: <>Regularização de Imóveis</>,
-          subtitle: (
-            <>
-              Soluções completas para sanar vícios registrais e tornar o imóvel
-              negociável. Inclui processos de Adjudicação Compulsória,
-              Retificação de Área, Desdobro, Unificação de Lotes e averbações
-              diversas na matrícula.
-            </>
-          ),
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <User />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card3: {
-          title: <>Due Diligence Imobiliária (Assessoria em Compra e Venda)</>,
-          subtitle: (
-            <>
-              Análise preventiva de risco antes da aquisição do imóvel.
-              Investigamos a situação legal do bem e dos vendedores (certidões,
-              processos e dívidas) para evitar fraudes à execução e garantir uma
-              compra segura.
-            </>
-          ),
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Scale />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card4: {
-          title: <>Contratos Imobiliários Personalizados</>,
-          subtitle: (
-            <>
-              Elaboração e revisão técnica de instrumentos particulares, fugindo
-              de modelos genéricos. Atuamos em Contratos de Compra e Venda,
-              Locação (Residencial e Comercial/Built to Suit), Permuta, Doação e
-              Cessão de Direitos Possessórios.
-            </>
-          ),
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
             </div>
           ),
           icon: <Gavel />,
@@ -312,15 +221,9 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
 
-        card5: {
-          title: <>Distrato Imobiliário</>,
-          subtitle: (
-            <>
-              Defesa dos direitos do comprador na rescisão de contratos de
-              compra de imóvel na planta, garantindo a restituição de valores
-              conforme a Lei do Distrato e jurisprudência vigente.
-            </>
-          ),
+        card2: {
+          title: <>Direito de Família</>,
+          subtitle: <>Soluções seguras em divórcios, guarda e pensão</>,
           description: (
             <div>
               A_Definir
@@ -334,15 +237,57 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
 
-        card6: {
-          title: <>Assessoria Jurídica para Imobiliárias e Corretores</>,
-          subtitle: (
-            <>
-              Suporte B2B na confecção de contratos e orientações sobre
-              responsabilidade civil, garantindo segurança na intermediação dos
-              negócios.
-            </>
+        card3: {
+          title: <>Direito do Consumidor</>,
+          subtitle: <>Garantimos seus direitos nas relações de consumo</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
           ),
+          icon: <ShoppingCart />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card4: {
+          title: <>Direito Trabalhista</>,
+          subtitle: <>Proteção legal para empregados e empregadores</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
+            </div>
+          ),
+          icon: <BriefcaseBusiness />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card5: {
+          title: <>Direito Empresarial</>,
+          subtitle: <>Apoio jurídico para empresas de todos os portes</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Building />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card6: {
+          title: <>Consultoria Jurídica</>,
+          subtitle: <>Orientação clara para decisões seguras e rápidas</>,
           description: (
             <div>
               A_Definir
@@ -357,13 +302,8 @@ const content = {
         },
 
         card7: {
-          title: <>Ações Possessórias</>,
-          subtitle: (
-            <>
-              Atuação emergencial na defesa da posse e propriedade em casos de
-              invasão, esbulho ou turbação (Reintegração e Manutenção de Posse).
-            </>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -376,8 +316,24 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
+        card8: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Briefcase />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
       },
-      ctaButtonText: <>Falar agora com o Advogado</>,
+      ctaButtonText: <>A_Definir</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -418,10 +374,15 @@ const content = {
       ),
       ctaButtonText: "A_Definir",
     },
-    maps: {
-      minitag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+    form: {
+      minitag: <>Fale com o Escritório</>,
+      title: <>Entre em contato com Dr. Vinícius França</>,
+      subtitle: (
+        <>
+          Preencha o formulário abaixo e receba atendimento jurídico
+          personalizado
+        </>
+      ),
       embedsrc: <>A_Definir</>,
     },
     about: {
@@ -429,46 +390,27 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É O TAVARES ASSESSORIA JURÍDICA</>,
-      FirstPart: <span> Nossa atuação em </span>,
-      Destaque: <span className="italic font-light"> Direito Condominial</span>,
+      miniTag: <>QUEM É O DR. VINÍCIUS FRANÇA</>,
+      FirstPart: <span> Minha</span>,
+      Destaque: <span className="italic font-light"> trajetória</span>,
       SecondPart: <span></span>,
-      subtitle: <></>,
+      subtitle: (
+        <>
+          Conheça o percurso e a dedicação que moldaram minha carreira no
+          Direito
+        </>
+      ),
       paragraph: (
         <div>
-          Atuamos de forma especializada no <strong>Direito Imobiliário</strong>
-          , com foco na defesa dos interesses de proprietários, investidores,
-          compradores, vendedores e empresas do setor imobiliário. Nossa atuação
-          é orientada pela prevenção de litígios, estruturação jurídica de
-          negócios e solução de demandas que impactam a segurança patrimonial e
-          a regularidade dos imóveis.
-          <br />
-          <br />
-          Desenvolvemos uma atuação estratégica e personalizada, analisando cada
-          situação de forma individual para construir soluções jurídicas
-          eficazes, seguras e alinhadas à realidade do cliente e do patrimônio
-          envolvido. A combinação entre domínio técnico da legislação
-          imobiliária e uma abordagem clara e objetiva assegura decisões firmes
-          e respaldo jurídico em negociações, contratos e conflitos.
-          <br />
-          <br />
-          Mantemos um rigoroso protocolo de atualização jurídica, acompanhando
-          de perto o entendimento dos tribunais e as mudanças na legislação
-          aplicada ao mercado imobiliário. Ética, especialização e assertividade
-          são os pilares que sustentam nossa atuação na proteção do patrimônio e
-          na estabilidade das relações jurídicas imobiliárias.
+          Dr. Vinícius França atua com paixão pelo Direito, sempre buscando
+          soluções justas e eficazes.
         </div>
       ),
       benefits: {
         cards: {
           card1: {
-            title: <>Defesa Estratégica</>,
-            description: (
-              <>
-                Análise minuciosa e táticas exclusivas para cada etapa do
-                processo.
-              </>
-            ),
+            title: <>A_Definir</>,
+            description: <>A_Definir</>,
             icon: (
               <>
                 {" "}
@@ -477,10 +419,8 @@ const content = {
             ),
           },
           card2: {
-            title: <>Transparência Real</>,
-            description: (
-              <>Informação clara e direta sobre todos os riscos e andamentos.</>
-            ),
+            title: <>A_Definir</>,
+            description: <>A_Definir</>,
             icon: (
               <>
                 {" "}
@@ -490,53 +430,61 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>Falar diretamente comigo</>,
+      ctaButtonText: <>A_Definir</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
-          A_Definir
+          Dr. Vinícius França atua com paixão pelo Direito, sempre buscando
+          soluções justas e eficazes.
           <br />
           <br />
-          A_Definir
+          Com anos de experiência em diferentes áreas jurídicas, ele combina
+          conhecimento técnico e atenção personalizada a cada cliente.
           <br />
           <br />
-          A_Definir
-          <br />
-          <br />
-          A_Definir
+          Sua missão é garantir proteção, orientação e resultados concretos, com
+          ética e compromisso em todas as situações.
         </p>
       ),
       paragraphModalCta: "Entre em contato",
       ctaButtonAriaLabel: "Botão para entrar em contato",
 
-      // aboutSocial: {
-      //   img: {
-      //     img: aboutSocialImg,
-      //     alt: `Foto do Instagram do ${infos.name}`,
-      //     altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
-      //   },
-      //   miniTag: <>A_Definir</>,
-      //   title: <>A_Definir</>,
-      //   subtitle: <>A_Definir</>,
-      //   paragraph: <p></p>,
-      //   labelInstagram: "Siga-nos no Instagram",
-      //   labelFacebook: "Siga-nos no Facebook",
-      //   labelLinkedin: "Siga-nos no LinkedIn",
-      //   labelX: "Siga-nos no X",
-      //   labelTiktok: "Siga-nos no Tik Tok",
-      //   labelYoutube: "Siga-nos no Youtube",
-      // },
+      aboutSocial: {
+        img: {
+          img: aboutSocialImg,
+          alt: `Foto do Instagram do ${infos.name}`,
+          altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
+        },
+        miniTag: <>Redes sociais</>,
+        title: <>Conecte-se conosco</>,
+        subtitle: (
+          <>
+            Acompanhe nossas redes sociais para se manter informado sobre
+            conteúdos jurídicos, atualizações e temas relevantes das áreas de
+            atuação.
+          </>
+        ),
+        paragraph: <p></p>,
+        labelInstagram: "Siga-nos no Instagram",
+        labelFacebook: "Siga-nos no Facebook",
+        labelLinkedin: "Siga-nos no LinkedIn",
+        labelX: "Siga-nos no X",
+        labelTiktok: "Siga-nos no Tik Tok",
+        labelYoutube: "Siga-nos no Youtube",
+      },
     },
     ctaSection: {
       miniTag: <>FALE CONOSCO</>,
-      title: <h1>Conflitos imobiliários exigem solução jurídica segura.</h1>,
+      title: (
+        <h1>
+          Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
+        </h1>
+      ),
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Questões contratuais, posse, propriedade, regularização de imóveis
-            ou disputas patrimoniais exigem análise jurídica clara e
-            estratégica. Fale conosco e entenda o melhor caminho para o seu
-            caso.
+            Entre em contato agora para uma consulta especializada e comece a
+            encontrar a solução que você precisa.
           </p>
         </div>
       ),
@@ -548,15 +496,15 @@ const content = {
           topic4: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Entrar em contato agora</>,
+      ctaButtonText: <>Entrar em contato</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
       miniTag: <>PASSO A PASSO</>,
-      FirstPart: <span> Entenda como</span>,
-      Destaque: <span className="italic font-light"> resolvemos </span>,
-      SecondPart: <span>o seu problema imobiliário</span>,
+      FirstPart: <span> Como </span>,
+      Destaque: <span className="italic font-light"> funciona </span>,
+      SecondPart: <span>nosso atendimento?</span>,
 
       subtitle: <></>,
       img: imgSteps,
@@ -564,49 +512,47 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Diagnóstico Jurídico</>,
+          cardTitle: <>Consulta inicial</>,
           cardDescription: (
             <>
-              Você apresenta a situação do imóvel ou da negociação, e analisamos
-              o cenário com foco em riscos jurídicos, responsabilidades e
-              impactos patrimoniais.
+              Realizamos uma reunião para entender seu caso e identificar suas
+              necessidades jurídicas.
             </>
           ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Análise Técnica e Documental</>,
+          cardTitle: <>Análise detalhada</>,
           cardDescription: (
             <>
-              Examinamos contratos, matrículas, registros, notificações e demais
-              documentos para identificar falhas, irregularidades ou caminhos
-              seguros de solução.
+              Examinamos todos os aspectos do seu caso, revisando documentos e
+              evidências para obter uma visão completa.
             </>
           ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Definição da Estratégia</>,
+          cardTitle: <>Elaboração da estratégia</>,
           cardDescription: (
             <>
-              Definimos um plano de ação claro, seja negociação, regularização,
-              mediação ou medida judicial, sempre priorizando segurança jurídica
-              e eficiência.
+              Criamos uma estratégia jurídica personalizada para proteger seus
+              interesses de maneira eficaz.
             </>
           ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Execução e Acompanhamento</>,
+          cardTitle: <>Ação legal</>,
           cardDescription: (
             <>
-              Atuamos de forma firme até a solução do caso, com acompanhamento
-              próximo e informações claras em todas as etapas do processo.
+              Iniciamos e conduzimos as ações judiciais ou o serviço contratado,
+              buscando justiça e soluções personalizadas conforme a necessidade
+              do seu caso.
             </>
           ),
         },
       },
-      ctaButtonText: <>Entre em contato agora</>,
+      ctaButtonText: <>A_Definir</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -709,25 +655,46 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>TIRE SUAS DÚVIDAS</>,
+      title: <>Perguntas Frequentes</>,
+      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Como posso contratar seus serviços?</>,
+          answer: (
+            <>
+              Agende sua consulta conosco via WhatsApp e conversaremos sobre
+              suas necessidades e avaliaremos os custos.
+            </>
+          ),
         },
         question2: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Qual é o prazo médio para resolução de um caso?</>,
+          answer: (
+            <>
+              O prazo médio varia conforme a complexidade, mas discutiremos uma
+              estimativa durante a consulta inicial.
+            </>
+          ),
         },
         question3: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Quais documentos devo levar para a consulta?</>,
+          answer: (
+            <>
+              Traga os documentos relevantes ao seu caso, como contratos,
+              correspondências e registros, além de documentos pessoais e
+              comprovante de residência.
+            </>
+          ),
         },
         question4: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Vocês oferecem serviços de consultoria preventiva?</>,
+          answer: (
+            <>
+              Sim, oferecemos consultoria preventiva para evitar problemas
+              futuros e garantir conformidade legal.
+            </>
+          ),
         },
       },
 
@@ -1294,7 +1261,7 @@ const content = {
     // },
     links: {
       instagram: `https://www.instagram.com/${infos.instagramProfile}/`,
-      instagram: `https://www.instagram.com/${infos.instagramProfileSecundario}/`,
+      // instagram: `https://www.instagram.com/${infos.instagramProfileSecundario}/`,
       ctaWhatsapp: `https://wa.me/+55${infos.phone.ddd}${infos.phone.firstPart}${infos.phone.secondPart}?text=${infos.whatsappDefaultMessage}`,
       phoneSecundario: `https://wa.me/+55${infos.phoneSecundario.ddd}${infos.phoneSecundario.firstPart}${infos.phoneSecundario.secondPart}?text=${infos.whatsappDefaultMessage}`,
       phoneTerciario: `https://wa.me/+55${infos.phoneTerciario.ddd}${infos.phoneTerciario.firstPart}${infos.phoneTerciario.secondPart}?text=${infos.whatsappDefaultMessage}`,

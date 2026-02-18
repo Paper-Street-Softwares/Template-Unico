@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://imobiliario.taj.adv.br/sitemap.xml
+Sitemap: https://www.viniciusfranca.adv.br/sitemap.xml

@@ -65,10 +65,10 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>Av. Industrial 780,</p>
-      <p>Sala 2313 - Jardim, </p>
-      <p>Santo André - SP,</p>
-      <p>CEP: 09080-500</p>
+      <p>Endereço:</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
