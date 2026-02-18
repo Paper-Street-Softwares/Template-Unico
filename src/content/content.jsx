@@ -37,6 +37,7 @@ import {
   Clock,
   ShieldCheck,
   Building,
+  CheckCheck,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -202,43 +203,86 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     important: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
+      miniTag: <>Dúvidas comuns</>,
+      title: <>Questionamentos mais frequentes sobre a baixa de empresas</>,
+      subtitle: (
+        <>
+          Respondemos suas principais perguntas para você encerrar sua empresa
+          com segurança e rapidez.
+        </>
+      ),
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Posso dar baixa na empresa mesmo com dívidas?</>,
+          paragraph: (
+            <>
+              Sim. Nossa equipe avalia a situação e orienta o procedimento
+              adequado para regularização e encerramento seguro. Entre em
+              contato para receber suporte completo.
+            </>
+          ),
         },
         card2: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Quanto tempo leva para dar baixa?</>,
+          paragraph: (
+            <>
+              O processo costuma ser concluído em até 5 dias úteis. Entre em
+              contato para que possamos iniciar imediatamente e acompanhar cada
+              etapa.
+            </>
+          ),
         },
         card3: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Preciso estar no local de registro da empresa?</>,
+          paragraph: (
+            <>
+              Não. Todo o processo é realizado online, com total acompanhamento
+              da nossa equipe. Entre em contato para garantir que tudo seja
+              feito corretamente.
+            </>
+          ),
         },
         card4: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Não tenho mais os dados da empresa. Posso dar baixa?</>,
+          paragraph: (
+            <>
+              Sim. Recuperamos todas as informações necessárias e conduzimos o
+              encerramento com segurança. Entre em contato para que possamos
+              iniciar o processo.
+            </>
+          ),
         },
       },
-      fraseObs: <>A_Definir</>,
-      ctaButtonText: <>A_Definir</>,
+      fraseObs: (
+        <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
+      ),
+      ctaButtonText: <>Falar conosco agora</>,
     },
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
-      Destaque: <span className="italic font-light">A_Definir</span>,
+      miniTag: <>O que você realmente ganha</>,
+      FirstPart: <span>Encerramento de empresa </span>,
+      Destaque: <span className="italic font-light">sem dor de cabeça</span>,
       SecondPart: <span></span>,
-      subtitle: <>A_Definir</>,
+      subtitle: (
+        <>
+          Com nossa experiência de mais de 40 anos, cuidamos de toda a
+          burocracia para encerrar sua empresa de forma rápida, segura e sem
+          surpresas.
+        </>
+      ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>A_Definir</>,
-      subtitleMessageFeature: <>A_Definir</>,
+      titleMessageFeature: <>100%</>,
+      subtitleMessageFeature: <>paz para encerrar sua empresa</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Baixa sem surpresas</>,
+          subtitle: (
+            <>
+              Cuidamos de toda a burocracia para você encerrar a empresa de
+              forma rápida e segura.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -247,14 +291,19 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Briefcase />,
+          icon: <CheckCheck />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Regularização completa</>,
+          subtitle: (
+            <>
+              Garantimos que dívidas, pendências e obrigações sejam resolvidas
+              antes da baixa.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -263,14 +312,19 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <User />,
+          icon: <ShieldCheck />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card3: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Documentos organizados</>,
+          subtitle: (
+            <>
+              Toda documentação revisada e correta, evitando multas e problemas
+              futuros.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -279,92 +333,33 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Scale />,
+          icon: <FileText />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card4: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
+          title: <>Acompanhamento próximo</>,
+          subtitle: (
+            <>
+              Nossa equipe orienta cada etapa do processo, para que você não
+              precise se preocupar.
+            </>
           ),
-          icon: <Gavel />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card5: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
               <br />
-              <br />
               A_Definir
+              <br />
             </div>
           ),
           icon: <Users />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
-
-        card6: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <MessageSquare />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card7: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Shield />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card8: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com a Edan</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
