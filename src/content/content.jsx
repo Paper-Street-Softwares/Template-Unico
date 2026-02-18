@@ -531,10 +531,10 @@ const content = {
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir</span>,
-      Destaque: <span className="italic font-light"> A_Definir </span>,
-      SecondPart: <span>A_Definir</span>,
+      miniTag: <>Por que escolher a Edan</>,
+      FirstPart: <span> O que muda quando a</span>,
+      Destaque: <span className="italic font-light">Edan</span>,
+      SecondPart: <span>cuida da baixa do seu CNPJ</span>,
 
       subtitle: <></>,
       img: imgSteps,
@@ -542,26 +542,51 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Adeus preocupações com multas</>,
+          cardDescription: (
+            <>
+              Você deixa de se preocupar com prazos, pendências e fiscalizações.
+              A Edan garante que o encerramento do CNPJ seja feito corretamente,
+              evitando multas e problemas futuros.
+            </>
+          ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Regularização completa e segura</>,
+          cardDescription: (
+            <>
+              Cuidamos de todas as obrigações fiscais e burocráticas antes da
+              baixa. Assim, você encerra sua empresa sem dívidas ocultas ou
+              surpresas desagradáveis.
+            </>
+          ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Orientação clara em cada passo</>,
+          cardDescription: (
+            <>
+              Explicamos de forma simples o que está sendo feito e quais
+              documentos são necessários. Nada de termos confusos ou processos
+              obscuros — você sabe exatamente como sua empresa está sendo
+              encerrada.
+            </>
+          ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Tranquilidade para seguir em frente</>,
+          cardDescription: (
+            <>
+              Com o CNPJ encerrado corretamente, você evita riscos legais e
+              fiscais, ganha tempo e paz para focar em novos projetos ou
+              empreendimentos.
+            </>
+          ),
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Quero essa tranquilidade</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -664,25 +689,55 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>TIRE SUAS DÚVIDAS</>,
+      title: <>Perguntas Frequentes</>,
+      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Quais serviços a Edan oferece para baixa de empresas?</>,
+          answer: (
+            <>
+              Cuidamos de todo o processo de encerramento de empresas e CNPJs,
+              incluindo regularização fiscal, quitação de pendências, emissão de
+              documentos finais e acompanhamento completo até a baixa
+              definitiva. Tudo de forma segura e sem complicações.
+            </>
+          ),
         },
         question2: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Quais tipos de empresas podem ser encerradas?</>,
+          answer: (
+            <>
+              Atendemos microempresas, empresas de pequeno e médio porte, MEIs e
+              profissionais liberais. Adaptamos o processo conforme o porte,
+              regime tributário e situação fiscal da empresa, garantindo que a
+              baixa seja feita corretamente.
+            </>
+          ),
         },
         question3: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Como funciona o processo de baixa de empresa?</>,
+          answer: (
+            <>
+              O processo é simples e totalmente acompanhado por nossos
+              especialistas. Solicitamos os documentos necessários,
+              regularizamos pendências e conduzimos todas as etapas junto aos
+              órgãos competentes, garantindo que sua empresa seja encerrada sem
+              problemas.
+            </>
+          ),
         },
         question4: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: (
+            <>É possível encerrar a empresa mesmo com dívidas ou pendências?</>
+          ),
+          answer: (
+            <>
+              Sim. Nossa equipe avalia a situação, orienta sobre regularizações
+              necessárias e conduz a baixa de forma legal e segura, evitando
+              multas, problemas fiscais ou complicações futuras.
+            </>
+          ),
         },
       },
 
