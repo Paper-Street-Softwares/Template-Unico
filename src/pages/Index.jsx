@@ -95,7 +95,7 @@ export default function Index() {
               <AboutNovoTemplate
                 colorMode={colorMode}
                 ButtonModal={false}
-                benefits={true}
+                benefits={false}
               />
               {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             </Suspense>

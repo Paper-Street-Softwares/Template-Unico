@@ -411,12 +411,32 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span></span>,
-      subtitle: <></>,
-      paragraph: <div>A_Definir</div>,
+      miniTag: <>Quem cuida da sua empresa</>,
+      FirstPart: <span></span>,
+      Destaque: <span className="italic font-light"> Compromisso</span>,
+      SecondPart: <span>com seu CNPJ</span>,
+      subtitle: (
+        <>
+          {" "}
+          Atendimento humano e estratégico para encerrar sua empresa com
+          segurança.
+        </>
+      ),
+      paragraph: (
+        <div>
+          Há mais de 40 anos, a Edan Contabilidade atua com excelência no
+          encerramento e regularização de empresas. Nosso foco vai além de
+          cumprir burocracias: trabalhamos para garantir que cada baixa de CNPJ
+          seja feita de forma segura, evitando multas, pendências e surpresas
+          para empresários.
+          <br />
+          <br />
+          Cada processo de baixa é acompanhado de perto e com responsabilidade,
+          com orientação clara e linguagem simples. Nosso objetivo é tirar o
+          peso da burocracia das suas costas, assegurar que tudo seja encerrado
+          corretamente e ajudar você a finalizar sua empresa com tranquilidade.
+        </div>
+      ),
       benefits: {
         cards: {
           card1: {
@@ -441,7 +461,7 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com a Edan agora</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
@@ -479,22 +499,34 @@ const content = {
       // },
     },
     ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>Fale conosco</>,
+      title: <h1>Não deixe a baixa do seu CNPJ virar um problema</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Cada mês sem encerrar sua empresa pode gerar multas, pendências e
+            problemas fiscais.
+            <br />A Edan resolve isso por você — com clareza, segurança e sem
+            burocracia.
+          </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>A_Definir</>,
-          topic2: <>A_Definir</>,
-          topic3: <>A_Definir</>,
-          topic4: <>A_Definir</>,
+          topic1: <>Avaliação completa da situação do seu CNPJ</>,
+          topic2: (
+            <>
+              Atendimento direto com especialistas em encerramento de empresas
+            </>
+          ),
+          topic3: <>Orientação clara, sem termos técnicos</>,
+          topic4: <>Baixa e regularização sem dor de cabeça</>,
+          topic5: (
+            <>Encerramento seguro, evitando multas e pendências futuras</>
+          ),
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Fale com a gente agora mesmo</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
