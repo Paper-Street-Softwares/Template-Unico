@@ -36,6 +36,8 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
+  ShoppingCart,
+  Building,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -67,7 +69,7 @@ export const infos = {
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
       <p>Rua Benjamin Constant,</p>
-      <p>nº 760, Bairro Petrópolis</p>
+      <p>nº 760, Bairro Petrópolis,</p>
       <p>Manaus – AM,</p>
       <p>CEP: 69063-010</p>
     </div>
@@ -214,7 +216,7 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Briefcase />,
+          icon: <Gavel />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
@@ -230,7 +232,7 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <User />,
+          icon: <Users />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
@@ -246,7 +248,7 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Scale />,
+          icon: <ShoppingCart />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
@@ -262,7 +264,7 @@ const content = {
               <br />
             </div>
           ),
-          icon: <Gavel />,
+          icon: <BriefcaseBusiness />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
@@ -278,7 +280,7 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Users />,
+          icon: <Building />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },

@@ -113,11 +113,11 @@ const WhatsappForm = () => {
 
   const sendToWhatsApp = () => {
     setIsSubmitting(true);
-    // setName("");
-    // setPhone("");
-    // setEmail("");
-    // setType("");
-    // setMessage("");
+    setName("");
+    setPhone("");
+    setEmail("");
+    setType("");
+    setMessage("");
     const validationErrors = {};
 
     if (!name) validationErrors.name = "O campo Nome é obrigatório.";
