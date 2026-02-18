@@ -11,9 +11,8 @@ import GlobalClickEvent from "./context/GlobalClickEvent.jsx";
 
 // Altere aqui para "LP" ou "site"
 const mode = "LP"; // só muda isso e o resto se adapta
-window.addEventListener("load", () => {
-  document.body.style.opacity = "1";
-});
+
+const root = document.getElementById("root");
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <ColorModeProvider>
@@ -25,3 +24,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </Router>
   </ColorModeProvider>,
 );
+
+requestAnimationFrame(() => {
+  root.classList.add("ready");
+});
