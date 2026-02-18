@@ -12,6 +12,7 @@ import {
 import iconTikTok from "../../assets/imgs/icons/tiktok.png";
 import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import { infos } from "../../content/content";
 
 function SocialMediaTemplate({ colorMode }) {
   let backgroundMode,
@@ -113,7 +114,7 @@ function SocialMediaTemplate({ colorMode }) {
 
                 {/* Cards sociais */}
                 <div className="space-y-8">
-                  {/* {content.texts.links.facebook?.trim() && (
+                  {infos?.facebookProfile?.trim() && (
                     <a
                       href={content.texts.links.facebook}
                       target="_blank"
@@ -140,9 +141,9 @@ function SocialMediaTemplate({ colorMode }) {
 
                       <ArrowRight className={`ml-auto w-5 h-5 ${arrowColor}`} />
                     </a>
-                  )} */}
+                  )}
 
-                  {content.texts.links.instagram?.trim() && (
+                  {infos?.instagramProfile?.trim() && (
                     <a
                       href={content.texts.links.instagram}
                       target="_blank"
@@ -171,7 +172,7 @@ function SocialMediaTemplate({ colorMode }) {
                     </a>
                   )}
 
-                  {content.texts.links.linkedin?.trim() && (
+                  {infos?.linkeDinProfile?.trim() && (
                     <a
                       href={content.texts.links.linkedin}
                       target="_blank"
@@ -200,7 +201,7 @@ function SocialMediaTemplate({ colorMode }) {
                     </a>
                   )}
 
-                  {/* {content.texts.links.instagramSecundario?.trim() && (
+                  {infos?.instagramProfileSecundario?.trim() && (
                     <a
                       href={content.texts.links.instagramSecundario}
                       target="_blank"
@@ -227,9 +228,9 @@ function SocialMediaTemplate({ colorMode }) {
 
                       <ArrowRight className={`ml-auto w-5 h-5 ${arrowColor}`} />
                     </a>
-                  )} */}
+                  )}
 
-                  {content.texts.links.tiktok?.trim() && (
+                  {infos?.tiktokProfile?.trim() && (
                     <a
                       href={content.texts.links.tiktok}
                       target="_blank"
@@ -258,7 +259,7 @@ function SocialMediaTemplate({ colorMode }) {
                     </a>
                   )}
 
-                  {content.texts.links.youtube?.trim() && (
+                  {infos?.youtubeProfile?.trim() && (
                     <a
                       href={content.texts.links.youtube}
                       target="_blank"
