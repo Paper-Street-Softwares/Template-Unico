@@ -132,7 +132,7 @@ const WhatsappForm = () => {
       return;
     }
 
-    const phoneWhatsApp = "71993064270";
+    const phoneWhatsApp = "5592992951515";
 
     const text = `
     Assunto: Nova mensagem recebida pelo site – ${type}
@@ -171,8 +171,8 @@ Recomendamos retorno o quanto antes.
           >
             Nome:
           </label>
-          <div className="flex text-gray-500">
-            <div className="flex items-center justify-center w-12 px-1 bg-terciary rounded-md">
+          <div className="flex text-primaryDark">
+            <div className="flex items-center justify-center w-12 px-1 bg-white shadow-md rounded-md">
               <User />
             </div>
             <input
@@ -199,8 +199,8 @@ Recomendamos retorno o quanto antes.
           >
             Email:
           </label>
-          <div className="flex text-gray-500">
-            <div className="flex items-center justify-center w-12 px-1 bg-terciary rounded-md">
+          <div className="flex text-primaryDark">
+            <div className="flex items-center justify-center w-12 px-1 bg-white shadow-md rounded-md">
               <Mail />
             </div>
             <input
@@ -224,8 +224,8 @@ Recomendamos retorno o quanto antes.
           >
             Telefone:
           </label>
-          <div className="flex text-gray-500">
-            <div className="flex items-center justify-center w-12 px-1 bg-terciary rounded-md">
+          <div className="flex text-primaryDark">
+            <div className="flex items-center justify-center w-12 px-1 bg-white shadow-md rounded-md">
               <Phone />
             </div>
             <input
@@ -271,8 +271,8 @@ Recomendamos retorno o quanto antes.
           >
             Área:
           </label>
-          <div className="flex text-gray-500">
-            <div className="flex items-center justify-center w-12 px-1 bg-terciary rounded-md">
+          <div className="flex text-primaryDark">
+            <div className="flex items-center justify-center w-12 px-1 bg-white shadow-md rounded-md">
               <ListChecks />
             </div>
             <input
@@ -299,8 +299,8 @@ Recomendamos retorno o quanto antes.
           >
             Informações do contrato:
           </label>
-          <div className="flex text-gray-500">
-            <div className="flex items-center justify-center w-12 px-1 bg-terciary rounded-md">
+          <div className="flex text-primaryDark">
+            <div className="flex items-center justify-center w-12 px-1 bg-white shadow-md rounded-md">
               <FileText />
             </div>
             <input
@@ -329,8 +329,8 @@ Recomendamos retorno o quanto antes.
           >
             Valor Financiado:
           </label>
-          <div className="flex text-gray-500">
-            <div className="flex items-center justify-center w-12 px-1 bg-terciary rounded-md">
+          <div className="flex text-primaryDark">
+            <div className="flex items-center justify-center w-12 px-1 bg-white shadow-md rounded-md">
               <DollarSign />
             </div>
             <input
@@ -369,8 +369,8 @@ Recomendamos retorno o quanto antes.
           >
             Quantidade de Parcelas:
           </label>
-          <div className="flex text-gray-500">
-            <div className="flex items-center justify-center w-12 px-1 bg-terciary rounded-md">
+          <div className="flex text-primaryDark">
+            <div className="flex items-center justify-center w-12 px-1 bg-white shadow-md rounded-md">
               <Calendar />
             </div>
             <input
@@ -396,8 +396,8 @@ Recomendamos retorno o quanto antes.
           >
             Parcelas Pagas:
           </label>
-          <div className="flex text-gray-500">
-            <div className="flex items-center justify-center w-12 px-1 bg-terciary rounded-md">
+          <div className="flex text-primaryDark">
+            <div className="flex items-center justify-center w-12 px-1 bg-white shadow-md rounded-md">
               <ListChecks />
             </div>
             <input
@@ -423,8 +423,8 @@ Recomendamos retorno o quanto antes.
           >
             Valor da Parcela:
           </label>
-          <div className="flex text-gray-500">
-            <div className="flex items-center justify-center w-12 px-1 bg-terciary rounded-md">
+          <div className="flex text-primaryDark">
+            <div className="flex items-center justify-center w-12 px-1 bg-white shadow-md rounded-md">
               <DollarSign />
             </div>
             <input
@@ -463,8 +463,8 @@ Recomendamos retorno o quanto antes.
           >
             Parcelas em atraso:
           </label>
-          <div className="flex text-gray-500">
-            <div className="flex items-center justify-center w-12 px-1 bg-terciary rounded-md">
+          <div className="flex text-primaryDark">
+            <div className="flex items-center justify-center w-12 px-1 bg-white shadow-md rounded-md">
               <AlertTriangle />
             </div>
             <input
@@ -490,8 +490,8 @@ Recomendamos retorno o quanto antes.
           >
             Mensagem:
           </label>
-          <div className="flex text-gray-500">
-            <div className="flex items-start justify-center w-12 px-1 bg-terciary rounded-md">
+          <div className="flex text-primaryDark">
+            <div className="flex items-start justify-center w-12 px-1 bg-white shadow-md rounded-md">
               <MessageCircle className="m-auto" />
             </div>
             <textarea
