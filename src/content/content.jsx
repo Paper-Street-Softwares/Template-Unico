@@ -43,14 +43,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "A_Definir",
+  name: "Dr. Vinícius França",
   email: "contato", // Email desejado pelo cliente
-  emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "A_Definir", // Sem "www"
+  emailSecundario: "nonatovinicius@gmail.com", // Email desejado pelo cliente
+  domain: "viniciusfranca.adv.br", // Sem "www"
   phone: {
-    ddd: "00",
-    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0000", // Apenas os 4 últimos números
+    ddd: "92",
+    firstPart: "99295", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "1515", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -65,10 +65,11 @@ export const infos = {
   endereco: (
     <div>
       {/* <p>Endereço:</p> */}
-      <p>Av. Industrial 780,</p>
-      <p>Sala 2313 - Jardim, </p>
-      <p>Santo André - SP,</p>
-      <p>CEP: 09080-500</p>
+      <p>Endereço:</p>
+      <p>Rua Benjamin Constant,</p>
+      <p>nº 760, Bairro Petrópolis</p>
+      <p>Manaus – AM,</p>
+      <p>CEP: 69063-010</p>
     </div>
   ),
   enderecoSecundario: (
@@ -82,14 +83,14 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>8h às 18h</p>
+      <p>9h às 18h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "", // Sem o @
+  instagramProfile: "viniciusfrancajr", // Sem o @
   instagramProfileSecundario: "",
   facebookProfile: "",
-  linkeDinProfile: "",
+  linkeDinProfile: "vinícius-frança-bb2961239/",
   x: "",
   tiktokProfile: "",
   youtubeProfile: "",
@@ -127,34 +128,30 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
+      miniTag: <>ESCRITÓRIO DE ADVOCACIA</>,
+      FirstPart: <span>Defesa e orientação com</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_Definir</span>
+        <span className="destaque relative italic font-light">confiança</span>
       ),
       SecondPart: <span></span>,
-      subtitle: <p>A_Definir</p>,
+      subtitle: (
+        <p>
+          Atuação em diversas áreas do Direito, garantindo atenção e suporte
+          personalizado a cada cliente
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com o Dr. Vinícius agora</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
-        icon: (
-          <>
-            {" "}
-            <div className="relative flex">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
-            </div>
-            {/* ⚠️ */}
-          </>
-        ),
+        icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: <>A_Definir</>,
+        text: <>Atendimento somente mediante agendamento.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -194,19 +191,21 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
-      Destaque: <span className="italic font-light">A_Definir</span>,
+      miniTag: <>NOSSAS ÁREAS DE ATUAÇÃO</>,
+      FirstPart: <span>Soluções jurídicas</span>,
+      Destaque: <span className="italic font-light">completas</span>,
       SecondPart: <span></span>,
-      subtitle: <>A_Definir</>,
+      subtitle: (
+        <>Atuamos em diferentes áreas do Direito com segurança e dedicação</>
+      ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>A_Definir</>,
-      subtitleMessageFeature: <>A_Definir</>,
+      titleMessageFeature: <>100%</>,
+      subtitleMessageFeature: <>dedicação ao seu caso</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito Criminal</>,
+          subtitle: <>Defesa estratégica e proteção de seus direitos</>,
           description: (
             <div>
               A_Definir
@@ -221,8 +220,8 @@ const content = {
         },
 
         card2: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito de Família</>,
+          subtitle: <>Soluções seguras em divórcios, guarda e pensão</>,
           description: (
             <div>
               A_Definir
@@ -237,8 +236,8 @@ const content = {
         },
 
         card3: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito do Consumidor</>,
+          subtitle: <>Garantimos seus direitos nas relações de consumo</>,
           description: (
             <div>
               A_Definir
@@ -253,8 +252,8 @@ const content = {
         },
 
         card4: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito Trabalhista</>,
+          subtitle: <>Proteção legal para empregados e empregadores</>,
           description: (
             <div>
               A_Definir
@@ -269,8 +268,8 @@ const content = {
         },
 
         card5: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito Empresarial</>,
+          subtitle: <>Apoio jurídico para empresas de todos os portes</>,
           description: (
             <div>
               A_Definir
@@ -285,8 +284,8 @@ const content = {
         },
 
         card6: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Consultoria Jurídica</>,
+          subtitle: <>Orientação clara para decisões seguras e rápidas</>,
           description: (
             <div>
               A_Definir
@@ -373,10 +372,15 @@ const content = {
       ),
       ctaButtonText: "A_Definir",
     },
-    maps: {
-      minitag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+    form: {
+      minitag: <>Fale com o Escritório</>,
+      title: <>Entre em contato com Dr. Vinícius França</>,
+      subtitle: (
+        <>
+          Preencha o formulário abaixo e receba atendimento jurídico
+          personalizado
+        </>
+      ),
       embedsrc: <>A_Definir</>,
     },
     about: {
@@ -384,12 +388,22 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
+      miniTag: <>QUEM É O DR. VINÍCIUS FRANÇA</>,
+      FirstPart: <span> Minha</span>,
+      Destaque: <span className="italic font-light"> trajetória</span>,
       SecondPart: <span></span>,
-      subtitle: <></>,
-      paragraph: <div>A_Definir</div>,
+      subtitle: (
+        <>
+          Conheça o percurso e a dedicação que moldaram minha carreira no
+          Direito
+        </>
+      ),
+      paragraph: (
+        <div>
+          Dr. Vinícius França atua com paixão pelo Direito, sempre buscando
+          soluções justas e eficazes.
+        </div>
+      ),
       benefits: {
         cards: {
           card1: {
@@ -418,16 +432,16 @@ const content = {
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
-          A_Definir
+          Dr. Vinícius França atua com paixão pelo Direito, sempre buscando
+          soluções justas e eficazes.
           <br />
           <br />
-          A_Definir
+          Com anos de experiência em diferentes áreas jurídicas, ele combina
+          conhecimento técnico e atenção personalizada a cada cliente.
           <br />
           <br />
-          A_Definir
-          <br />
-          <br />
-          A_Definir
+          Sua missão é garantir proteção, orientação e resultados concretos, com
+          ética e compromisso em todas as situações.
         </p>
       ),
       paragraphModalCta: "Entre em contato",
@@ -439,10 +453,16 @@ const content = {
           alt: `Foto do Instagram do ${infos.name}`,
           altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
         },
-        miniTag: <>A_Definir</>,
-        title: <>A_Definir</>,
+        miniTag: <>Redes sociais</>,
+        title: <>Conecte-se conosco</>,
         subtitle: <>A_Definir</>,
-        paragraph: <p></p>,
+        paragraph: (
+          <p>
+            Acompanhe nossas redes sociais para se manter informado sobre
+            conteúdos jurídicos, atualizações e temas relevantes das áreas de
+            atuação.
+          </p>
+        ),
         labelInstagram: "Siga-nos no Instagram",
         labelFacebook: "Siga-nos no Facebook",
         labelLinkedin: "Siga-nos no LinkedIn",
@@ -452,11 +472,18 @@ const content = {
       },
     },
     ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>FALE CONOSCO</>,
+      title: (
+        <h1>
+          Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
+        </h1>
+      ),
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Entre em contato agora para uma consulta especializada e comece a
+            encontrar a solução que você precisa.
+          </p>
         </div>
       ),
       container: {
@@ -467,15 +494,15 @@ const content = {
           topic4: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Entrar em contato</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir</span>,
-      Destaque: <span className="italic font-light"> A_Definir </span>,
-      SecondPart: <span>A_Definir</span>,
+      miniTag: <>PASSO A PASSO</>,
+      FirstPart: <span> Como </span>,
+      Destaque: <span className="italic font-light"> funciona </span>,
+      SecondPart: <span>nosso atendimento?</span>,
 
       subtitle: <></>,
       img: imgSteps,
@@ -483,23 +510,44 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Consulta inicial</>,
+          cardDescription: (
+            <>
+              Realizamos uma reunião para entender seu caso e identificar suas
+              necessidades jurídicas.
+            </>
+          ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Análise detalhada</>,
+          cardDescription: (
+            <>
+              Examinamos todos os aspectos do seu caso, revisando documentos e
+              evidências para obter uma visão completa.
+            </>
+          ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Elaboração da estratégia</>,
+          cardDescription: (
+            <>
+              Criamos uma estratégia jurídica personalizada para proteger seus
+              interesses de maneira eficaz.
+            </>
+          ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Ação legal</>,
+          cardDescription: (
+            <>
+              Iniciamos e conduzimos as ações judiciais ou o serviço contratado,
+              buscando justiça e soluções personalizadas conforme a necessidade
+              do seu caso.
+            </>
+          ),
         },
       },
       ctaButtonText: <>A_Definir</>,
@@ -605,25 +653,46 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>TIRE SUAS DÚVIDAS</>,
+      title: <>Perguntas Frequentes</>,
+      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Como posso contratar seus serviços?</>,
+          answer: (
+            <>
+              Agende sua consulta conosco via WhatsApp e conversaremos sobre
+              suas necessidades e avaliaremos os custos.
+            </>
+          ),
         },
         question2: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Qual é o prazo médio para resolução de um caso?</>,
+          answer: (
+            <>
+              O prazo médio varia conforme a complexidade, mas discutiremos uma
+              estimativa durante a consulta inicial.
+            </>
+          ),
         },
         question3: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Quais documentos devo levar para a consulta?</>,
+          answer: (
+            <>
+              Traga os documentos relevantes ao seu caso, como contratos,
+              correspondências e registros, além de documentos pessoais e
+              comprovante de residência.
+            </>
+          ),
         },
         question4: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Vocês oferecem serviços de consultoria preventiva?</>,
+          answer: (
+            <>
+              Sim, oferecemos consultoria preventiva para evitar problemas
+              futuros e garantir conformidade legal.
+            </>
+          ),
         },
       },
 
@@ -1190,7 +1259,7 @@ const content = {
     // },
     links: {
       instagram: `https://www.instagram.com/${infos.instagramProfile}/`,
-      instagram: `https://www.instagram.com/${infos.instagramProfileSecundario}/`,
+      // instagram: `https://www.instagram.com/${infos.instagramProfileSecundario}/`,
       ctaWhatsapp: `https://wa.me/+55${infos.phone.ddd}${infos.phone.firstPart}${infos.phone.secondPart}?text=${infos.whatsappDefaultMessage}`,
       phoneSecundario: `https://wa.me/+55${infos.phoneSecundario.ddd}${infos.phoneSecundario.firstPart}${infos.phoneSecundario.secondPart}?text=${infos.whatsappDefaultMessage}`,
       phoneTerciario: `https://wa.me/+55${infos.phoneTerciario.ddd}${infos.phoneTerciario.firstPart}${infos.phoneTerciario.secondPart}?text=${infos.whatsappDefaultMessage}`,

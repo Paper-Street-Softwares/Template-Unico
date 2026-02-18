@@ -6,7 +6,7 @@ import content from "../../content/content";
 import SectionHeader from "../sectionElements/SectionHeader";
 import WhatsappForm from "../interactives/WhatsappForm";
 
-export default function Steps() {
+export default function FormAndLocation() {
   const [visible, setVisible] = useState(false);
   const [modalContent, setModalContent] = useState("");
   const [modalTitle, setModalTitle] = useState("");
