@@ -113,11 +113,11 @@ const WhatsappForm = () => {
 
   const sendToWhatsApp = () => {
     setIsSubmitting(true);
-    setName("");
-    setPhone("");
-    setEmail("");
-    setType("");
-    setMessage("");
+    // setName("");
+    // setPhone("");
+    // setEmail("");
+    // setType("");
+    // setMessage("");
     const validationErrors = {};
 
     if (!name) validationErrors.name = "O campo Nome é obrigatório.";
@@ -132,18 +132,25 @@ const WhatsappForm = () => {
       return;
     }
 
-    const phoneWhatsApp = "11990260977";
+    const phoneWhatsApp = "71993064270";
 
     const text = `
-    *Novo contato pelo site*
+    Assunto: Nova mensagem recebida pelo site – ${type}
 
-    Nome: ${name}
-    Telefone: ${phone}
-    Email: ${email}
-    Área: ${type}
+Nova mensagem enviada pelo formulário do site.
 
-    Mensagem:
-    ${message}
+Confira abaixo os dados do contato:
+
+
+Nome: ${name}
+Telefone: ${phone}
+E-mail: ${email}
+
+Área: ${type}
+Mensagem: ${message}
+
+Recomendamos retorno o quanto antes.
+    
       `;
 
     const url = `https://wa.me/${phoneWhatsApp}?text=${encodeURIComponent(text)}`;
