@@ -46,7 +46,7 @@ export const infos = {
   name: "A_Definir",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "condominial.taj.adv.br", // Sem "www"
+  domain: "A_Definir", // Sem "www"
   phone: {
     ddd: "00",
     firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
@@ -113,8 +113,8 @@ const content = {
         img: logo,
         alt: `Logomarca ${infos.name}`,
       },
-      menuItems: ["Início", "Serviços", "Sobre"],
-      menuId: ["home", "feature", "about"],
+      menuItems: ["Início", "Serviços", "Sobre", "Perguntas Frequentes"],
+      menuId: ["home", "feature", "about", "faq"],
       ariaLabel: "Botão de Contato",
       ctaButtonText: "Contato",
       ctaButtonTextResponsive: "Contato",

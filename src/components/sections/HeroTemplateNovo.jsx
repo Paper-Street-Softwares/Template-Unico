@@ -152,7 +152,7 @@ function HeroTemplateNovo({
                 {content.texts.hero.miniTag}
               </div>
               <h1
-                className={` text-[22px] phone2:text-3xl phone3:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.1] desktop1:text-start ${text} `}
+                className={` text-[22px] phone2:text-3xl phone3:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium leading-[1.1] desktop1:text-start ${text} `}
               >
                 {content.texts.hero.FirstPart}{" "}
                 <span className={`${textDestaque}`}>

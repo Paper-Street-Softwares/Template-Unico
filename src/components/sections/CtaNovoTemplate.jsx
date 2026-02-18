@@ -74,16 +74,16 @@ function CtaNovoTemplate({ colorMode, container }) {
 
             {container && (
               <div
-                className={`rounded-lg p-4 mb-4 flex flex-col items-center gap-2 ${textOpacity}`}
+                className={`rounded-lg p-4 mb-4 flex flex-col items-center ${textOpacity}`}
               >
                 {containerList.map((item, index) => (
                   <div
                     key={index}
-                    className="font-secondFont flex gap-2 items-start w-full justify-center tablet1:justify-center text-center desktop1:text-start"
+                    className="font-secondFont flex gap-1 items-start w-full justify-center tablet1:justify-center text-center desktop1:text-start"
                   >
                     <span className={` rounded-full p-0.5`}>
                       {" "}
-                      <Check className={` text-primaryLight`} />
+                      <Check className={`${textDestaque}`} />
                     </span>
                     <p className={`${textOpacity}`}>{item}</p>
                   </div>
