@@ -46,11 +46,11 @@ export const infos = {
   name: "A_Definir",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "A_Definir", // Sem "www"
+  domain: "alexborim.adv.br", // Sem "www"
   phone: {
-    ddd: "00",
-    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0000", // Apenas os 4 últimos números
+    ddd: "11",
+    firstPart: "98367", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "7472", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -66,9 +66,10 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
+      <p>Rua Primo Zacante,</p>
+      <p>nº 138, jd. Das Bandeiras, </p>
+      <p>Osasco - SP,</p>
+      <p>CEP: 06160-200</p>
     </div>
   ),
   enderecoSecundario: (
@@ -82,17 +83,17 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>8h às 18h</p>
+      <p>9h às 18h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "", // Sem o @
+  instagramProfile: "alex_borim", // Sem o @
   instagramProfileSecundario: "",
   facebookProfile: "",
   linkeDinProfile: "",
   x: "",
   tiktokProfile: "",
-  youtubeProfile: "",
+  youtubeProfile: "oDoutorteResponde",
 
   whatsappDefaultMessage:
     "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
