@@ -81,7 +81,7 @@ function CardsImportants({
           className={`group p-6 rounded-xl ${cardBg} hover:scale-105 transition-all duration-700 max-w-[500px]`}
         >
           <div
-            className={`w-10 h-10 rounded-full ${iconBg} mb-4 flex items-center justify-center shadow-sm transition-transform`}
+            className={`w-10 h-10 rounded-full ${iconBg} mb-4 flex items-center justify-center shadow-md transition-transform`}
           >
             <h1 className="font-bold text-3xl">!</h1>
           </div>
