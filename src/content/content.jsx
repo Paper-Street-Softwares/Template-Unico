@@ -36,6 +36,9 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
+  GraduationCap,
+  CircleDollarSign,
+  Percent,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -127,20 +130,25 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
+      miniTag: <>ADVOGADA E ACADÊMICA DE MEDICINA</>,
+      FirstPart: <span>Resolva seu</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_Definir</span>
+        <span className="destaque relative italic font-light">FIES</span>
       ),
-      SecondPart: <span></span>,
-      subtitle: <p>A_Definir</p>,
+      SecondPart: <span>antes que vire dor de cabeça</span>,
+      subtitle: (
+        <p>
+          Evite multas, atrasos e negativação do CPF. A gente regulariza seu
+          financiamento rápido e sem burocracia.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com especialista agora</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: (
@@ -154,7 +162,7 @@ const content = {
           </>
         ),
         iconTwo: <></>,
-        text: <>A_Definir</>,
+        text: <>Atendimento online e presencial com agendamento prévio.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -170,43 +178,93 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     important: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
+      miniTag: <>Problemas com FIES?</>,
+      title: <>Saiba o que fazer antes que vire dor de cabeça!</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>E se eu atrasar uma parcela do FIES, vou ter meu nome sujo?</>
+          ),
+          paragraph: (
+            <>
+              Nem sempre. Existe como contestar juros e multas abusivas, além de
+              negociar prazos. A análise jurídica correta pode evitar
+              negativação no seu CPF.
+            </>
+          ),
         },
         card2: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>
+              Posso renegociar meu contrato mesmo se já estiver com dívida
+              antiga?
+            </>
+          ),
+          paragraph: (
+            <>
+              Sim! Muitos contratos atrasados podem ser renegociados com redução
+              de encargos ou parcelamento especial. O importante é agir antes
+              que o problema se complique.
+            </>
+          ),
         },
         card3: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>O que acontece se eu desistir do curso financiado pelo FIES?</>
+          ),
+          paragraph: (
+            <>
+              Mesmo em casos de desistência, é possível reduzir prejuízos
+              financeiros e definir um plano de quitação seguro. Um advogado
+              especialista ajuda a calcular exatamente o que você precisa pagar.
+            </>
+          ),
         },
         card4: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>
+              Como posso ter certeza que estou pagando o valor correto do meu
+              FIES?
+            </>
+          ),
+          paragraph: (
+            <>
+              A revisão do contrato e das cobranças garante que você pague
+              apenas o que é devido, sem taxas indevidas. Com orientação
+              profissional, você evita surpresas e problemas futuros.
+            </>
+          ),
         },
       },
-      fraseObs: <>A_Definir</>,
-      ctaButtonText: <>A_Definir</>,
+      fraseObs: (
+        <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
+      ),
+      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
     },
+
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
-      Destaque: <span className="italic font-light">A_Definir</span>,
-      SecondPart: <span></span>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>Nossos Serviços</>,
+      FirstPart: <span>Resolva seu FIES com</span>,
+      Destaque: <span className="italic font-light">segurança</span>,
+      SecondPart: <span>e sem dor de cabeça</span>,
+      subtitle: (
+        <>Soluções jurídicas para regularizar, quitar ou reduzir seu FIES</>
+      ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>A_Definir</>,
-      subtitleMessageFeature: <>A_Definir</>,
+      titleMessageFeature: <>100%</>,
+      subtitleMessageFeature: <>Financiamento estudantil</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: (
+            <>
+              Obtenção e Transferência de Financiamento Estudantil com o FIES
+              Social
+            </>
+          ),
+          subtitle: (
+            <>Auxiliamos na obtenção ou transferência de contratos FIES.</>
+          ),
           description: (
             <div>
               A_Definir
@@ -215,14 +273,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Briefcase />,
+          icon: <GraduationCap />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Quitação de Financiamento Estudantil</>,
+          subtitle: <>Orientação completa para quitar seu FIES sem erros.</>,
           description: (
             <div>
               A_Definir
@@ -231,14 +289,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <User />,
+          icon: <CircleDollarSign />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card3: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Desconto na Dívida do FIES para Residentes</>,
+          subtitle: <>Negociamos reduções legais para residentes médicos.</>,
           description: (
             <div>
               A_Definir
@@ -247,92 +305,29 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Scale />,
+          icon: <Percent />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card4: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Revisão e Contestação de Cobranças Indevidas do FIES</>,
+          subtitle: <>Revisamos contratos e cobramos apenas o que é devido.</>,
           description: (
             <div>
               A_Definir
               <br />
               A_Definir
               <br />
-            </div>
-          ),
-          icon: <Gavel />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card5: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
             </div>
           ),
           icon: <Users />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
-
-        card6: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <MessageSquare />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card7: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Shield />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card8: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
       },
-      ctaButtonText: <>A_Definir</>,
+
+      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -384,12 +379,32 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span></span>,
-      subtitle: <></>,
-      paragraph: <div>A_Definir</div>,
+      miniTag: <>QUEM ESTÁ POR TRÁS DO SEU DIREITO</>,
+      FirstPart: <span></span>,
+      Destaque: <span className="italic font-light"> Compromisso</span>,
+      SecondPart: <span>com quem mais precisa</span>,
+      subtitle: (
+        <>
+          Atuação humana e estratégica para garantir seus direitos educacionais
+        </>
+      ),
+      paragraph: (
+        <div>
+          O Escritório de Advocacia Especializada Teresina (AET) nasceu para
+          apoiar estudantes em sua jornada acadêmica, garantindo acesso justo ao
+          financiamento estudantil e condições adequadas para o pagamento do
+          FIES. Fundado por Dra. Heldiane Jansen, combinamos experiência prática
+          e visão humanizada para transformar a vida de quem sonha com educação
+          superior.
+          <br />
+          <br />
+          Atuamos com foco total em cada cliente, oferecendo soluções jurídicas
+          eficazes e personalizadas. Cada caso é analisado de forma estratégica
+          e sensível, garantindo que estudantes consigam obter, renegociar ou
+          quitar seu financiamento com segurança e tranquilidade. Nosso objetivo
+          é simplificar processos e proteger seus direitos sem burocracia.
+        </div>
+      ),
       benefits: {
         cards: {
           card1: {
@@ -414,7 +429,7 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar diretamente com a Advogada</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
@@ -439,9 +454,15 @@ const content = {
           alt: `Foto do Instagram do ${infos.name}`,
           altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
         },
-        miniTag: <>A_Definir</>,
-        title: <>A_Definir</>,
-        subtitle: <>A_Definir</>,
+        miniTag: <>Redes sociais</>,
+        title: <>Conecte-se conosco</>,
+        subtitle: (
+          <>
+            Acompanhe nossas redes sociais para se manter informado sobre
+            conteúdos jurídicos, atualizações e temas relevantes das áreas de
+            atuação.
+          </>
+        ),
         paragraph: <p></p>,
         labelInstagram: "Siga-nos no Instagram",
         labelFacebook: "Siga-nos no Facebook",
@@ -452,58 +473,93 @@ const content = {
       },
     },
     ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>Fale conosco</>,
+      title: <h1>Não espere mais para regularizar seu FIES</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Cada dia de atraso pode gerar multas ou negativação. Nós resolvemos
+            por você — rápido, seguro e sem burocracia.
+          </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>A_Definir</>,
-          topic2: <>A_Definir</>,
-          topic3: <>A_Definir</>,
-          topic4: <>A_Definir</>,
+          topic1: <>Análise gratuita do seu contrato FIES</>,
+          topic2: <>Atendimento direto com o Advogado, sem intermediários</>,
+          topic3: <>Resposta rápida e acompanhamento pelo WhatsApp</>,
+          topic4: <>Processo iniciado no mesmo dia da análise</>,
+          topic5: (
+            <>
+              Você mais perto de regularizar seu financiamento, sem sair de casa
+            </>
+          ),
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Fale com a gente agora mesmo</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir</span>,
-      Destaque: <span className="italic font-light"> A_Definir </span>,
-      SecondPart: <span>A_Definir</span>,
+      miniTag: <>Por que escolher nosso escritório</>,
+      FirstPart: <span>Resolva seu </span>,
+      Destaque: <span className="italic font-light">FIES </span>,
+      SecondPart: <span>sem dor de cabeça</span>,
 
-      subtitle: <></>,
+      subtitle: (
+        <>
+          Segurança, agilidade e orientação especializada para garantir seus
+          direitos
+        </>
+      ),
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Evite negativação do CPF</>,
+          cardDescription: (
+            <>
+              Não deixe que atrasos no FIES prejudiquem seu nome. Atuamos para
+              regularizar seu contrato e proteger seu histórico financeiro.
+            </>
+          ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Economize tempo e esforço</>,
+          cardDescription: (
+            <>
+              Esqueça filas, burocracia e telefonemas sem resposta. Cuidamos de
+              todo o processo para você, do início ao fim.
+            </>
+          ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Reduza multas e encargos</>,
+          cardDescription: (
+            <>
+              Com análise jurídica especializada, identificamos cobranças
+              indevidas e negociamos condições mais favoráveis, diminuindo sua
+              dívida.
+            </>
+          ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Acompanhamento personalizado</>,
+          cardDescription: (
+            <>
+              Você recebe orientação direta e acompanhamento pelo WhatsApp, sem
+              intermediários, garantindo respostas rápidas e seguras.
+            </>
+          ),
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Fale conosco agora e regularize seu FIES</>,
     },
+
     blog: {
       miniTag: <>A_Definir</>,
       title: <>A_Definir</>,
@@ -605,30 +661,65 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>TIRE SUAS DÚVIDAS</>,
+      title: <>Perguntas Frequentes</>,
+      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Meu contrato FIES mudou de valor, isso tá certo?</>,
+          answer: (
+            <>
+              Nem sempre. Alterações podem conter erros ou cobranças indevidas.
+              Com a análise jurídica, identificamos se os valores estão corretos
+              e orientamos sobre ajustes necessários. Fale com a advogada para
+              revisar seu contrato.
+            </>
+          ),
         },
         question2: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: (
+            <>
+              Posso conseguir desconto na dívida do FIES sendo residente médico?
+            </>
+          ),
+          answer: (
+            <>
+              Sim! Residentes médicos têm direito a reduções legais em muitas
+              situações. Avaliamos seu caso e negociamos descontos ou condições
+              especiais para quitar seu financiamento. Entre em contato para
+              descobrir suas possibilidades.
+            </>
+          ),
         },
         question3: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>E se eu já tiver negativação no CPF por causa do FIES?</>,
+          answer: (
+            <>
+              Ainda é possível regularizar a situação. A análise jurídica
+              permite contestar cobranças indevidas, renegociar dívidas e limpar
+              seu nome. Converse com a advogada para saber como agir
+              rapidamente.
+            </>
+          ),
         },
         question4: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: (
+            <>Quanto tempo leva pra resolver meu problema com o FIES?</>
+          ),
+          answer: (
+            <>
+              Depende da situação, mas muitos casos têm solução rápida quando
+              tratados de forma estratégica. Com acompanhamento direto pelo
+              WhatsApp, agilizamos cada etapa do processo. Fale conosco e receba
+              uma previsão personalizada.
+            </>
+          ),
         },
       },
 
       paragraph: "Clique aqui caso tenha mais dúvidas",
     },
+
     // team: {
     //   miniTag: <>A_Definir</>,
     //   title: <>A_Definir</>,
