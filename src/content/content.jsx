@@ -43,14 +43,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "A_Definir",
+  name: "Dr. Gleiton Senna",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "A_Definir", // Sem "www"
+  domain: "trabalhista-drgleiton.advespecialista.adv.br", // Sem "www"
   phone: {
-    ddd: "00",
-    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0000", // Apenas os 4 últimos números
+    ddd: "71",
+    firstPart: "99656", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "7441", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -95,7 +95,7 @@ export const infos = {
   youtubeProfile: "",
 
   whatsappDefaultMessage:
-    "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
+    "Olá! Vim do Google e preciso de um Advogado Trabalhista. Pode me ajudar?",
   whatsChatDefaultMessage:
     "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
   slogan: "",

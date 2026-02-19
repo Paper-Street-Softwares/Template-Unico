@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.manoeldealmeida.com/sitemap.xml
+Sitemap: https://trabalhista-drgleiton.advespecialista.adv.br/sitemap.xml
