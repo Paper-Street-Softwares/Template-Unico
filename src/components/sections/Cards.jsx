@@ -95,22 +95,6 @@ function Cards({ colorMode }) {
                         >
                           {item.title}
                         </h3>
-
-                        <div className="mx-auto">
-                          {" "}
-                          <MotionDivDownToUp>
-                            <ButtonReflexo
-                              icon={<Link2 />}
-                              link="https://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=3C31952359A5C77DD6545CDA9466B96E.buscatextual_0"
-                              label="Acesse aqui"
-                              colorMode={colorMode}
-                              className={``}
-                              shineClass={`bg-transparent`}
-                              padding={`px-3 py-2`}
-                              variant="secondary"
-                            />
-                          </MotionDivDownToUp>
-                        </div>
                       </div>
                     </div>
                   </MotionDivDownToUp>

@@ -8,7 +8,7 @@ import imgFeatures from "../assets/imgs/features/imgServices.webp";
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
+// import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 // import logo1 from '../assets/imgs/parceria/Logo1.webp'
@@ -36,6 +36,9 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
+  CircleDollarSign,
+  UserX,
+  HardHat,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -43,14 +46,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Dr. Manuel Almeida",
+  name: "Dr. Gleiton Senna",
   email: "contato", // Email desejado pelo cliente
-  emailSecundario: "adv.manoeldealmeida@gmail.com", // Email desejado pelo cliente
-  domain: "manoeldealmeida.com", // Sem "www"
+  emailSecundario: "A_Definir", // Email desejado pelo cliente
+  domain: "trabalhista-drgleiton.advespecialista.adv.br", // Sem "www"
   phone: {
-    ddd: "92",
-    firstPart: "99457", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "3692", // Apenas os 4 últimos números
+    ddd: "71",
+    firstPart: "99656", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "7441", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -66,10 +69,9 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>Rua Rio Cuini, nº 85,</p>
-      <p>São José Operário,</p>
-      <p>Manaus - AM,</p>
-      <p>CEP: 69086-630 </p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -83,20 +85,20 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>9h às 17h</p>
+      <p>8h às 18h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "adv.manoeldealmeida", // Sem o @
+  instagramProfile: "", // Sem o @
   instagramProfileSecundario: "",
-  facebookProfile: "AdvogadoBancario2025",
+  facebookProfile: "",
   linkeDinProfile: "",
   x: "",
   tiktokProfile: "",
   youtubeProfile: "",
 
   whatsappDefaultMessage:
-    "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
+    "Olá! Vim do Google e preciso de um Advogado Trabalhista. Pode me ajudar?",
   whatsChatDefaultMessage:
     "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
   slogan: "",
@@ -128,16 +130,16 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>ESCRITÓRIO DE ADVOCACIA</>,
-      FirstPart: <span>Defesa</span>,
+      miniTag: <>Atuação Exclusiva na Defesa do Trabalhador</>,
+      FirstPart: <span>Advogado</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">firme</span>
+        <span className="destaque relative italic font-light">Trabalhista</span>
       ),
-      SecondPart: <span> contra abusos</span>,
+      SecondPart: <span></span>,
       subtitle: (
         <p>
-          Atuação técnica e combativa na defesa do cidadão frente a bancos e
-          grandes empresas.
+          Foi demitido? Não recebeu seus direitos? Receba orientação clara e
+          segura agora.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -146,17 +148,12 @@ const content = {
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Falar com o Advogado</>,
+      ctaButtonText: <>Quero orientação agora</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
-        icon: <> {/* ⚠️ */}</>,
+        icon: <> ⚠️</>,
         iconTwo: <></>,
-        text: (
-          <>
-            Atendimento presencial mediante agendamento e online para todo
-            Brasil.
-          </>
-        ),
+        text: <>Atendimento rápido, direto e confidencial.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -172,71 +169,95 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     important: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
+      miniTag: <>ATENÇÃO</>,
+      title: <>O que é importante saber sobre Direito Trabalhista</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>
+              Doutor, fui demitido. Tenho certeza que a empresa pagou tudo certo
+              mesmo?
+            </>
+          ),
+          paragraph: (
+            <>
+              Nem sempre a empresa paga todas as verbas corretamente. É comum
+              haver erro no cálculo de férias, 13º, horas extras e multa do
+              FGTS. Uma análise técnica do seu contrato pode identificar valores
+              que você ainda tem direito a receber.
+            </>
+          ),
         },
         card2: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>
+              Trabalhei fazendo hora extra, mas nunca recebi. Ainda posso
+              cobrar?
+            </>
+          ),
+          paragraph: (
+            <>
+              Sim. O trabalhador pode cobrar horas extras não pagas dentro do
+              prazo legal. Mesmo que a empresa não registrasse corretamente, é
+              possível comprovar por mensagens, testemunhas ou registros de
+              ponto.
+            </>
+          ),
         },
         card3: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>
+              Meu chefe me obrigava a fazer funções que não eram do meu cargo.
+              Isso é certo?
+            </>
+          ),
+          paragraph: (
+            <>
+              Quando o trabalhador exerce função diferente da contratada, pode
+              existir direito à diferença salarial ou indenização. Cada caso
+              precisa ser analisado com base no contrato e nas atividades
+              exercidas.
+            </>
+          ),
         },
         card4: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>
+              Estou sofrendo pressão e humilhação no trabalho. O que eu posso
+              fazer?
+            </>
+          ),
+          paragraph: (
+            <>
+              Situações de constrangimento, ameaças ou exposição podem
+              caracterizar assédio moral. O trabalhador tem direito à proteção e
+              pode buscar indenização. É importante reunir provas e agir da
+              forma correta.
+            </>
+          ),
         },
       },
-      fraseObs: <>A_Definir</>,
-      ctaButtonText: <>A_Definir</>,
+      fraseObs: (
+        <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
+      ),
+      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
     },
     features: {
       miniTag: <>Áreas de Atuação</>,
-      FirstPart: <span>Sua </span>,
-      Destaque: <span className="italic font-light">solução</span>,
-      SecondPart: <span>começa aqui</span>,
+      FirstPart: <span>Excelência em </span>,
+      Destaque: <span className="italic font-light">Direito do Trabalho</span>,
+      SecondPart: <span></span>,
       subtitle: (
-        <>
-          Defesa firme, técnica e preparada para enfrentar grandes estruturas.
-        </>
+        <>Assessoria estratégica para proteger seus direitos com segurança.</>
       ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
       titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>proteção de direitos</>,
+      subtitleMessageFeature: <>ética trabalhista</>,
       cards: {
         card1: {
-          title: <>Direito do Consumidor</>,
-          subtitle: (
-            <>
-              O escritório atua de forma intensa e estratégica na defesa de
-              consumidores que enfrentam abusos praticados por bancos,
-              instituições financeiras e grandes empresas.
-              <br /> <br />A experiência prática foi construída ao longo de
-              centenas de demandas judiciais, enfrentando diretamente grandes
-              grupos econômicos.
-              <br /> <br />
-              <br />
-              <div className="flex flex-col gap-2 text-white/65">
-                <span className="text-white"> A atuação abrange:</span> - Ações
-                contra bancos e financeiras. <br /> - Discussões sobre contratos
-                abusivos. <br /> - Empréstimos consignados e não consignados.{" "}
-                <br /> - Cobranças indevidas. <br /> - Casos de
-                superendividamento. <br /> - Demandas contra concessionárias de
-                serviços essenciais, como água, energia e telefonia. <br />-
-                Indenizações por danos morais e materiais.
-                <br />
-              </div>
-              <br />
-              <br />O foco está na proteção efetiva do consumidor e na busca por
-              soluções jurídicas firmes e seguras.
-            </>
-          ),
+          title: <>Rescisão trabalhista</>,
+          subtitle: <>Cálculo correto das verbas e valores atrasados.</>,
           description: (
             <div>
               A_Definir
@@ -245,27 +266,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Briefcase />,
+          icon: <FileText />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>Direito Civil</>,
-          subtitle: (
-            <>
-              <p className="mb-4">
-                {" "}
-                Atuação voltada às relações jurídicas patrimoniais em geral, com
-                condução técnica e estratégica de demandas que envolvem:
-              </p>
-              - Obrigações e contratos. <br /> - Responsabilidade civil. <br />
-              - Ações indenizatórias.
-              <br /> <br />
-              <br />O escritório trabalha para garantir segurança jurídica nas
-              relações privadas e na defesa de direitos individuais.
-            </>
-          ),
+          title: <>Horas extras</>,
+          subtitle: <>Cobrança de horas não pagas e adicionais.</>,
           description: (
             <div>
               A_Definir
@@ -274,43 +282,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <User />,
+          icon: <CircleDollarSign />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card3: {
-          title: <>Direito de Família</>,
-          subtitle: (
-            <>
-              <>
-                <p className="flex flex-col gap-2">
-                  No Direito de Família, a atuação é estratégica e orientada à
-                  solução segura de conflitos familiares, envolvendo:{" "}
-                  <span>
-                    {" "}
-                    - Ações de alimentos. <br /> - Revisão de pensão
-                    alimentícia. <br /> - Acordos familiares.
-                  </span>
-                </p>
-              </>
-              <br /> <br />
-              <>
-                <p className="flex flex-col gap-2">
-                  No Direito Imobiliário, o escritório atua em:
-                  <span>
-                    {" "}
-                    - Conflitos possessórios. <br /> - Questões envolvendo
-                    propriedade e contratos imobiliários. <br /> - Regularização
-                    e disputas patrimoniais.
-                    <br /> <br />
-                    <br />A condução dos casos prioriza estabilidade jurídica e
-                    proteção patrimonial.
-                  </span>
-                </p>
-              </>
-            </>
-          ),
+          title: <>Assédio moral</>,
+          subtitle: <>Proteção contra abusos e indenização justa.</>,
           description: (
             <div>
               A_Definir
@@ -319,78 +298,90 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Scale />,
+          icon: <UserX />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card4: {
-          title: <>Direito Constitucional e Direito Público</>,
-          subtitle: (
-            <>
-              <p className="flex flex-col gap-2">
-                Atuação técnica em matérias de direito público, com análise
-                qualificada e estratégica de:
-                <span>
-                  {" "}
-                  - Atos administrativos. <br /> - Defesa de direitos
-                  fundamentais. <br /> - Consultoria jurídica em demandas que
-                  envolvem o Poder Público.
-                </span>
-              </p>
-              <br /> <br />O trabalho é desenvolvido com rigor técnico, foco
-              estratégico e compromisso com a legalidade.
-            </>
-          ),
+          title: <>Desvio de função</>,
+          subtitle: <>Reconhecimento e diferença salarial devida.</>,
           description: (
             <div>
               A_Definir
               <br />
               A_Definir
               <br />
+            </div>
+          ),
+          icon: <HardHat />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card5: {
+          title: <>FGTS e 13º</>,
+          subtitle: <>Valores não depositados podem ser cobrados.</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
             </div>
           ),
           icon: <Gavel />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
+        card6: {
+          title: <>Acidente de trabalho</>,
+          subtitle: <>Garantia de direitos e possível indenização.</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <BriefcaseMedical />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
       },
-      ctaButtonText: <>A_Definir</>,
+
+      ctaButtonText: <>Conversar com nosso escritório</>,
     },
     cardsSection: {
-      miniTag: <>LATTES</>,
-      title: <>Currículo acadêmico</>,
-      subtitle: (
-        <>Formação acadêmica e produção técnica oficialmente registradas</>
-      ),
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       cards: {
         card1: {
-          title: <></>,
-          icon: (
-            <>
-              <FileText />
-            </>
-          ),
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
           link: "",
         },
-        // card2: {
-        //   title: <>A_Definir</>,
-        //   icon: <>A_Definir</>,
-        //   link: "",
-        // },
-        // card3: {
-        //   title: <>A_Definir</>,
-        //   icon: <>A_Definir</>,
-        //   link: "",
-        // },
-        // card4: {
-        //   title: <>A_Definir</>,
-        //   icon: <>A_Definir</>,
-        // },
-        // card5: {
-        //   title: <>A_Definir</>,
-        //   icon: <>A_Definir</>,
-        // },
+        card2: {
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
+          link: "",
+        },
+        card3: {
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
+          link: "",
+        },
+        card4: {
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
+        },
+        card5: {
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
+        },
       },
       fraseText: (
         <>
@@ -413,21 +404,28 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É O DR. MANUEL ALMEIDA</>,
-      FirstPart: <span> Minha</span>,
-      Destaque: <span className="italic font-light"> trajetória</span>,
+      miniTag: <>QUEM É O DR. GLEITON SENNA</>,
+      FirstPart: <span> Referência em Direito</span>,
+      Destaque: <span className="italic font-light"> Trabalhista</span>,
       SecondPart: <span></span>,
       subtitle: (
-        <>Experiência sólida na defesa firme e estratégica do cidadão.</>
+        <>
+          Atuação técnica e estratégica na defesa dos direitos do trabalhador.
+        </>
       ),
       paragraph: (
         <div>
-          O Manoel Almeida Advocacia nasce de uma trajetória construída na
-          prática forense, com atuação sólida e reconhecida na defesa do cidadão
-          diante de abusos institucionais e econômicos. Ao longo dos anos, a
-          identidade do escritório foi consolidada em uma advocacia técnica,
-          combativa e acessível, exercida com independência, firmeza e
-          responsabilidade social.
+          Com atuação sólida em Direito do Trabalho, o Dr. Gleiton Senna é
+          reconhecido pela condução estratégica de casos envolvendo rescisões,
+          verbas não pagas, assédio e conflitos trabalhistas complexos. Sua
+          abordagem é técnica, criteriosa e focada na proteção integral dos
+          direitos do trabalhador.
+          <br />
+          <br />
+          Cada caso é analisado com profundidade e responsabilidade, oferecendo
+          ao cliente clareza, segurança e direcionamento preciso. O compromisso
+          é garantir que seus direitos sejam defendidos com excelência e
+          estratégia.
         </div>
       ),
       benefits: {
@@ -454,144 +452,129 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar diretamente com o Advogado</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
-          O Manoel Almeida Advocacia nasce de uma trajetória construída na
-          prática forense, com atuação sólida e reconhecida na defesa do cidadão
-          diante de abusos institucionais e econômicos. Ao longo dos anos, a
-          identidade do escritório foi consolidada em uma advocacia técnica,
-          combativa e acessível, exercida com independência, firmeza e
-          responsabilidade social.
+          A_Definir
           <br />
           <br />
-          Com forte presença no contencioso judicial, o escritório acumulou
-          experiência em centenas de processos, especialmente no Direito do
-          Consumidor, enfrentando grandes instituições financeiras e empresas
-          prestadoras de serviços essenciais. A atuação é pautada por estratégia
-          jurídica consistente, ética profissional e compromisso real com os
-          interesses de cada cliente.
+          A_Definir
           <br />
-          <br />O público atendido é formado majoritariamente por homens e
-          mulheres entre 25 e 60 anos, com predominância na faixa de 30 a 50
-          anos, em sua maioria de classe média e baixa renda. São pessoas que
-          buscam defesa contra abusos contratuais, soluções jurídicas reais e
-          eficazes, atendimento claro e postura firme. O escritório se posiciona
-          com profundidade técnica, comunicação acessível e preparo para
-          enfrentar grandes estruturas econômicas, sem promessas irreais ou
-          juridiquês excessivo.
+          <br />
+          A_Definir
+          <br />
+          <br />
+          A_Definir
         </p>
       ),
       paragraphModalCta: "Entre em contato",
       ctaButtonAriaLabel: "Botão para entrar em contato",
 
-      aboutSocial: {
-        img: {
-          img: aboutSocialImg,
-          alt: `Foto do Instagram do ${infos.name}`,
-          altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
-        },
-        miniTag: <>Redes sociais</>,
-        title: <>Conecte-se conosco</>,
-        subtitle: (
-          <>
-            Acompanhe nossas redes sociais para se manter informado sobre
-            conteúdos jurídicos, atualizações e temas relevantes das áreas de
-            atuação.
-          </>
-        ),
-        paragraph: <p></p>,
-        labelInstagram: "Siga-nos no Instagram",
-        labelFacebook: "Siga-nos no Facebook",
-        labelLinkedin: "Siga-nos no LinkedIn",
-        labelX: "Siga-nos no X",
-        labelTiktok: "Siga-nos no Tik Tok",
-        labelYoutube: "Siga-nos no Youtube",
-      },
+      // aboutSocial: {
+      //   img: {
+      //     img: aboutSocialImg,
+      //     alt: `Foto do Instagram do ${infos.name}`,
+      //     altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
+      //   },
+      //   miniTag: <>A_Definir</>,
+      //   title: <>A_Definir</>,
+      //   subtitle: <>A_Definir</>,
+      //   paragraph: <p></p>,
+      //   labelInstagram: "Siga-nos no Instagram",
+      //   labelFacebook: "Siga-nos no Facebook",
+      //   labelLinkedin: "Siga-nos no LinkedIn",
+      //   labelX: "Siga-nos no X",
+      //   labelTiktok: "Siga-nos no Tik Tok",
+      //   labelYoutube: "Siga-nos no Youtube",
+      // },
     },
     ctaSection: {
-      miniTag: <>FALE CONOSCO</>,
-      title: (
-        <h1>
-          Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
-        </h1>
-      ),
+      miniTag: <>Fale conosco</>,
+      title: <h1>Fale agora com um Advogado Trabalhista</h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Entre em contato agora para uma consulta especializada e comece a
-            encontrar a solução que você precisa.
+            Se você tem dúvidas sobre seus direitos ou foi prejudicado no
+            trabalho, fale conosco agora.
           </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>A_Definir</>,
-          topic2: <>A_Definir</>,
-          topic3: <>A_Definir</>,
-          topic4: <>A_Definir</>,
+          topic1: <> Análise estratégica do seu caso trabalhista</>,
+          topic2: <>Atendimento direto com o advogado, sem intermediários</>,
+          topic3: <>Resposta rápida e acompanhamento pelo WhatsApp</>,
+          topic4: (
+            <>Avaliação imediata de verbas e possíveis valores a receber</>
+          ),
+          topic5: <>Orientação segura sem precisar sair de casa</>,
         },
       },
-      ctaButtonText: <>Entrar em contato</>,
+      ctaButtonText: <>Quero saber se tenho direitos a receber</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>PASSO A PASSO</>,
-      FirstPart: <span>Como </span>,
-      Destaque: <span className="italic font-light"> funciona </span>,
-      SecondPart: <span>nosso atendimento?</span>,
+      miniTag: <>COMO ATUAMOS NO SEU CASO TRABALHISTA</>,
+      FirstPart: <span>Atuação </span>,
+      Destaque: <span className="italic font-light">estratégica </span>,
+      SecondPart: <span>para garantir seus direitos trabalhistas</span>,
 
-      subtitle: <></>,
+      subtitle: <>Da análise ao resultado: clareza, estratégia e segurança.</>,
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Consulta inicial</>,
+          cardTitle: <>Análise detalhada do seu contrato</>,
           cardDescription: (
             <>
-              Realizamos uma reunião para entender seu caso e identificar suas
-              necessidades jurídicas.
+              Avaliamos sua rescisão, jornada, verbas pagas e documentos para
+              identificar irregularidades, valores não recebidos e possíveis
+              direitos que podem ser reivindicados.
             </>
           ),
         },
+
         card2: {
           stepNumber: 2,
-          cardTitle: <>Análise detalhada</>,
+          cardTitle: <>Cálculo dos valores devidos</>,
           cardDescription: (
             <>
-              Examinamos todos os aspectos do seu caso, revisando documentos e
-              evidências para obter uma visão completa.
+              Realizamos a apuração técnica de horas extras, FGTS, multas e
+              demais verbas, para que você saiba exatamente quanto pode ter a
+              receber.
             </>
           ),
         },
+
         card3: {
           stepNumber: 3,
-          cardTitle: <>Elaboração da estratégia</>,
+          cardTitle: <>Definição da melhor estratégia</>,
           cardDescription: (
             <>
-              Criamos uma estratégia jurídica personalizada para proteger seus
-              interesses de maneira eficaz.
+              Orientamos sobre a melhor forma de atuação, seja por negociação ou
+              ação judicial, sempre buscando o caminho mais seguro e eficiente
+              para o seu caso.
             </>
           ),
         },
+
         card4: {
           stepNumber: 4,
-          cardTitle: <>Ação legal</>,
+          cardTitle: <>Acompanhamento transparente</>,
           cardDescription: (
             <>
-              Iniciamos e conduzimos as ações judiciais ou o serviço contratado,
-              buscando justiça e soluções personalizadas conforme a necessidade
-              do seu caso.
+              Você acompanha cada etapa com explicações claras, prazos definidos
+              e suporte direto, sabendo exatamente o andamento do seu processo.
             </>
           ),
         },
       },
-      ctaButtonText: <>Fale Conosco</>,
-    },
 
+      ctaButtonText: <>Quero saber se tenho valores a receber</>,
+    },
     blog: {
       miniTag: <>A_Definir</>,
       title: <>A_Definir</>,
@@ -706,6 +689,7 @@ const content = {
             </>
           ),
         },
+
         question2: {
           question: <>Qual é o prazo médio para resolução de um caso?</>,
           answer: (
@@ -715,6 +699,7 @@ const content = {
             </>
           ),
         },
+
         question3: {
           question: <>Quais documentos devo levar para a consulta?</>,
           answer: (
@@ -725,6 +710,7 @@ const content = {
             </>
           ),
         },
+
         question4: {
           question: <>Vocês oferecem serviços de consultoria preventiva?</>,
           answer: (
@@ -738,7 +724,6 @@ const content = {
 
       paragraph: "Clique aqui caso tenha mais dúvidas",
     },
-
     // team: {
     //   miniTag: <>A_Definir</>,
     //   title: <>A_Definir</>,
