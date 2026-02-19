@@ -73,7 +73,7 @@ function FaqNovoTemplate({ colorMode }) {
                   <AccordionItem
                     key={idx}
                     value={`item-${idx}`}
-                    className="border-b border-border"
+                    className={`border-b  ${colorMode === "light" || colorMode === "defaultDark" ? "border-black/30" : "border-white/30"}`}
                   >
                     <AccordionTrigger
                       colorMode={colorMode}
