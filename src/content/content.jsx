@@ -148,7 +148,7 @@ const content = {
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Quero orientação agora</>,
+      ctaButtonText: <>Falar com Advogado agora</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <> ⚠️</>,
@@ -503,7 +503,7 @@ const content = {
       container: {
         topics: {
           topic1: <> Análise estratégica do seu caso trabalhista</>,
-          topic2: <>Atendimento direto com o advogado, sem intermediários</>,
+          topic2: <>Atendimento direto com o Advogado, sem intermediários</>,
           topic3: <>Resposta rápida e acompanhamento pelo WhatsApp</>,
           topic4: (
             <>Avaliação imediata de verbas e possíveis valores a receber</>
