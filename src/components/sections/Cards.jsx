@@ -82,7 +82,7 @@ function Cards({ colorMode }) {
                   <MotionDivDownToUp className="w-full phone3:w-auto">
                     <div
                       key={index}
-                      className={`h-fit border-t-4 ${borderT} ${bgCards} transition-shadow duration-300 w-[80%] phone3:w-[200px] mx-auto rounded-md`}
+                      className={`h-fit border-t-4 ${borderT} ${bgCards} transition-shadow duration-300 w-full phone3:w-[200px] mx-auto rounded-md`}
                     >
                       <div className="pt-8 px-6 pb-8 h-full flex flex-col">
                         <div
