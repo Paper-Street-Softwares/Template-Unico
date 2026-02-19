@@ -98,7 +98,7 @@ export default function Index() {
             <Suspense>
               <AboutNovoTemplate
                 colorMode={colorMode}
-                ButtonModal={false}
+                ButtonModal={true}
                 benefits={false}
               />
               <SocialMediaTemplate colorMode={colorMode} />
@@ -107,7 +107,7 @@ export default function Index() {
 
           <AlternatingSection index={3} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
-              <CtaNovoTemplate colorMode={colorMode} container={true} />
+              <CtaNovoTemplate colorMode={colorMode} container={false} />
             </Suspense>
           </AlternatingSection>
 
@@ -133,13 +133,13 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          <AlternatingSection index={6} colorMode={colorMode}>
+          <AlternatingSection index={5} colorMode={colorMode}>
             <Suspense>
               <FaqNovoTemplate colorMode={colorMode} />
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={5} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={6} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <FooterNovoTemplate
                 colorMode={colorMode}

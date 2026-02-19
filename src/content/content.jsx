@@ -36,6 +36,7 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
+  Building,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -43,7 +44,7 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "A_Definir",
+  name: "Dr. Alex Borim",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
   domain: "alexborim.adv.br", // Sem "www"
@@ -128,20 +129,25 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
+      miniTag: <>ADVOCACIA ESPECIALIZADA</>,
+      FirstPart: <span></span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_Definir</span>
+        <span className="destaque relative italic font-light">Excelência</span>
       ),
-      SecondPart: <span></span>,
-      subtitle: <p>A_Definir</p>,
+      SecondPart: <span>na prática jurídica</span>,
+      subtitle: (
+        <p>
+          Atendimento ético e atuação técnica voltados à defesa dos seus
+          direitos.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Solicitar atendimento</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: (
@@ -155,7 +161,12 @@ const content = {
           </>
         ),
         iconTwo: <></>,
-        text: <>A_Definir</>,
+        text: (
+          <>
+            Atendimento presencial, por videoconferência, WhatsApp, Zoom, Tens,
+            todos com agendamento.
+          </>
+        ),
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -195,115 +206,26 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
-      Destaque: <span className="italic font-light">A_Definir</span>,
+      miniTag: <>Áreas de Atuação</>,
+      FirstPart: <span>Atuação jurídica com </span>,
+      Destaque: (
+        <span className="italic font-light">seriedade e compromisso</span>
+      ),
       SecondPart: <span></span>,
-      subtitle: <>A_Definir</>,
+      subtitle: (
+        <>
+          Soluções legais conduzidas com técnica, ética e responsabilidade em
+          cada etapa do processo.
+        </>
+      ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>A_Definir</>,
-      subtitleMessageFeature: <>A_Definir</>,
+      titleMessageFeature: <>100%</>,
+      subtitleMessageFeature: <>atenção ao seu direito</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card2: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <User />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card3: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Scale />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card4: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <Gavel />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card5: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Users />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card6: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <MessageSquare />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card7: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito Criminal</>,
+          subtitle: <>Defesa técnica em todas as fases do processo.</>,
           description: (
             <div>
               A_Definir
@@ -317,9 +239,9 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
 
-        card8: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+        card2: {
+          title: <>Direito Previdenciário</>,
+          subtitle: <>Atuação em benefícios e revisões do INSS.</>,
           description: (
             <div>
               A_Definir
@@ -328,7 +250,71 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Briefcase />,
+          icon: <Gavel />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card3: {
+          title: <>Direito Cível</>,
+          subtitle: <>Soluções jurídicas em conflitos patrimoniais.</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <User />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card4: {
+          title: <>Direito de Família</>,
+          subtitle: <>Orientação jurídica em questões familiares.</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
+            </div>
+          ),
+          icon: <Users />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card5: {
+          title: <>Direito do Trabalho</>,
+          subtitle: <>Assessoria em direitos trabalhistas.</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <BriefcaseBusiness />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card6: {
+          title: <>Direito Imobiliário</>,
+          subtitle: <>Consultoria e contratos imobiliários.</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Building />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
@@ -385,12 +371,19 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
+      miniTag: <>QUEM É O DR. ALEX BORIM</>,
+      FirstPart: <span>Minha </span>,
+      Destaque: <span className="italic font-light"> trajetória</span>,
       SecondPart: <span></span>,
-      subtitle: <></>,
-      paragraph: <div>A_Definir</div>,
+      subtitle: <> Conheça minha história e meu compromisso com a sua defesa</>,
+      paragraph: (
+        <div>
+          Minha caminhada no Direito começou com um propósito simples: ajudar
+          pessoas que muitas vezes não sabem por onde começar quando enfrentam
+          um problema na Justiça. Eu sei que, para muita gente, lidar com
+          advogado pode parecer distante ou complicado.
+        </div>
+      ),
       benefits: {
         cards: {
           card1: {
@@ -419,16 +412,21 @@ const content = {
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
-          A_Definir
+          Minha caminhada no Direito começou com um propósito simples: ajudar
+          pessoas que muitas vezes não sabem por onde começar quando enfrentam
+          um problema na Justiça. Eu sei que, para muita gente, lidar com
+          advogado pode parecer distante ou complicado.
           <br />
           <br />
-          A_Definir
+          Ao longo da minha trajetória, aprendi que cada processo tem uma
+          história por trás. Não se trata apenas de papéis ou prazos, mas de
+          famílias preocupadas, trabalhadores inseguros e pessoas buscando uma
+          segunda chance.
           <br />
           <br />
-          A_Definir
-          <br />
-          <br />
-          A_Definir
+          Por isso, meu compromisso é oferecer orientação clara, atendimento
+          respeitoso e uma atuação firme na defesa dos seus direitos. Aqui, você
+          será ouvido com atenção e tratado com dignidade.
         </p>
       ),
       paragraphModalCta: "Entre em contato",
@@ -440,9 +438,15 @@ const content = {
           alt: `Foto do Instagram do ${infos.name}`,
           altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
         },
-        miniTag: <>A_Definir</>,
-        title: <>A_Definir</>,
-        subtitle: <>A_Definir</>,
+        miniTag: <>Redes sociais</>,
+        title: <>Conecte-se conosco</>,
+        subtitle: (
+          <>
+            Acompanhe nossas redes sociais para se manter informado sobre
+            conteúdos jurídicos, atualizações e temas relevantes das áreas de
+            atuação.
+          </>
+        ),
         paragraph: <p></p>,
         labelInstagram: "Siga-nos no Instagram",
         labelFacebook: "Siga-nos no Facebook",
@@ -453,30 +457,42 @@ const content = {
       },
     },
     ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>FALE CONOSCO</>,
+
+      title: (
+        <h1>
+          Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
+        </h1>
+      ),
+
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Entre em contato agora para uma consulta especializada e comece a
+            encontrar a solução que você precisa.
+          </p>
         </div>
       ),
+
       container: {
         topics: {
-          topic1: <>A_Definir</>,
-          topic2: <>A_Definir</>,
-          topic3: <>A_Definir</>,
-          topic4: <>A_Definir</>,
+          topic1: <>Enfrentando um problema jurídico?</>,
+          topic2: <>Deixe que cuidamos disso para você!</>,
+          topic3: <>Consulta especializada</>,
+          topic4: <>Solução que você precisa</>,
         },
       },
-      ctaButtonText: <>A_Definir</>,
+
+      ctaButtonText: <>Entrar em contato</>,
+
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir</span>,
-      Destaque: <span className="italic font-light"> A_Definir </span>,
-      SecondPart: <span>A_Definir</span>,
+      miniTag: <>PASSO A PASSO</>,
+      FirstPart: <span> Como</span>,
+      Destaque: <span className="italic font-light"> funciona </span>,
+      SecondPart: <span>nosso atendimento?</span>,
 
       subtitle: <></>,
       img: imgSteps,
@@ -484,25 +500,47 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Consulta inicial</>,
+          cardDescription: (
+            <>
+              Realizamos uma reunião para entender seu caso e identificar suas
+              necessidades jurídicas.
+            </>
+          ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Análise detalhada</>,
+          cardDescription: (
+            <>
+              Examinamos todos os aspectos do seu caso, revisando documentos e
+              evidências para obter uma visão completa.
+            </>
+          ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Elaboração da estratégia</>,
+          cardDescription: (
+            <>
+              Criamos uma estratégia jurídica personalizada para proteger seus
+              interesses de maneira eficaz.
+            </>
+          ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Ação legal</>,
+          cardDescription: (
+            <>
+              Iniciamos e conduzimos as ações judiciais ou o serviço contratado,
+              buscando justiça e soluções personalizadas conforme a necessidade
+              do seu caso.
+            </>
+          ),
         },
       },
+
       ctaButtonText: <>A_Definir</>,
     },
     blog: {
@@ -606,30 +644,51 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>TIRE SUAS DÚVIDAS</>,
+      title: <>Perguntas Frequentes</>,
+      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Como posso contratar seus serviços?</>,
+          answer: (
+            <>
+              Agende sua consulta conosco via WhatsApp e conversaremos sobre
+              suas necessidades e avaliaremos os custos.
+            </>
+          ),
         },
         question2: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Qual é o prazo médio para resolução de um caso?</>,
+          answer: (
+            <>
+              O prazo médio varia conforme a complexidade, mas discutiremos uma
+              estimativa durante a consulta inicial.
+            </>
+          ),
         },
         question3: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Quais documentos devo levar para a consulta?</>,
+          answer: (
+            <>
+              Traga os documentos relevantes ao seu caso, como contratos,
+              correspondências e registros, além de documentos pessoais e
+              comprovante de residência.
+            </>
+          ),
         },
         question4: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Vocês oferecem serviços de consultoria preventiva?</>,
+          answer: (
+            <>
+              Sim, oferecemos consultoria preventiva para evitar problemas
+              futuros e garantir conformidade legal.
+            </>
+          ),
         },
       },
-
       paragraph: "Clique aqui caso tenha mais dúvidas",
     },
+
     // team: {
     //   miniTag: <>A_Definir</>,
     //   title: <>A_Definir</>,
