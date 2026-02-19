@@ -248,7 +248,13 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
 
           {/* Modal */}
           <Dialog
-            className={`font-secondFont p-0 rounded-md ${colorMode === "dark" ? "bg-darkOpacity" : "bg-white"}`}
+            contentClassName={`${
+              colorMode === "dark" ? "bg-darkOpacity" : "bg-white"
+            }`}
+            headerClassName={`${
+              colorMode === "dark" ? "bg-darkOpacity" : "bg-white"
+            }`}
+            className="font-secondFont p-0 rounded-md"
             closeIcon={
               <X
                 size={20}
