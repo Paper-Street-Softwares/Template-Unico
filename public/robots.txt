@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.viniciusfranca.adv.br/sitemap.xml
+Sitemap: https://www.aetfies.com.br/sitemap.xml
