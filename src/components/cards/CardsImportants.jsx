@@ -60,7 +60,7 @@ function CardsImportants({
       text = "text-corTitulosBranca";
       textOpacity = "text-corOutrosTextosBranca";
       textDestaque = "text-white";
-      cardBg = "bg-[color-mix(in_srgb,var(--primaryDark),black_30%)]";
+      cardBg = "bg-darkOpacity";
       iconBg = "bg-white text-primaryLight";
       image =
         " border-[8px] border-[color-mix(in_srgb,var(--primaryDark),black_30%)]";
