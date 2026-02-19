@@ -1,4 +1,7 @@
-import { useColorMode } from "../../context/UseContextArchive";
+import {
+  defaultButtonThemesSecondary,
+  useColorMode,
+} from "../../context/UseContextArchive";
 import { whatsAppThemes } from "../../context/UseContextArchive";
 import { alertTheme } from "../../context/UseContextArchive";
 import { defaultButtonThemes } from "../../context/UseContextArchive";
@@ -51,7 +54,7 @@ export default function ButtonReflexo({
       ? whatsAppThemes[colorMode]
       : (bgClass ?? defaultButtonThemes[colorMode]);
 
-  const secondaryColors = bgClass ?? defaultButtonThemes[colorMode];
+  const secondaryColors = bgClass ?? defaultButtonThemesSecondary[colorMode];
 
   const colors = variant === "secondary" ? secondaryColors : primaryColors;
 

@@ -73,16 +73,11 @@ export default function Index() {
               <FeaturesNovaTemplate
                 colorMode={colorMode}
                 frasesDestaque={true}
-                accordion={false}
+                accordion={true}
                 modal={false}
               />
             </Suspense>
           </AlternatingSection>
-          {/* <AlternatingSection index={4} colorMode={colorMode}>
-            <Suspense>
-              <Cards colorMode={colorMode} />
-            </Suspense>
-          </AlternatingSection> */}
 
           {/* <AlternatingSection index={5} colorMode={colorMode}>
             <Speed colorMode={colorMode} />
@@ -135,11 +130,17 @@ export default function Index() {
 
           <AlternatingSection index={5} colorMode={colorMode}>
             <Suspense>
+              <Cards colorMode={colorMode} />
+            </Suspense>
+          </AlternatingSection>
+
+          <AlternatingSection index={6} colorMode={colorMode}>
+            <Suspense>
               <FaqNovoTemplate colorMode={colorMode} />
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={6} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={7} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <FooterNovoTemplate
                 colorMode={colorMode}
@@ -148,8 +149,8 @@ export default function Index() {
                 phoneSecond={false}
                 expediente={true}
                 adress={true}
-                email={true}
-                emailSecond={false}
+                email={false}
+                emailSecond={true}
                 fraseFooter={true} // frase Google LLC
                 obs={false}
               />
