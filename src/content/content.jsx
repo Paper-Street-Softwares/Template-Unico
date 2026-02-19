@@ -36,8 +36,9 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
-  ShoppingCart,
-  Building,
+  GraduationCap,
+  CircleDollarSign,
+  Percent,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -45,14 +46,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Dr. Vinícius França",
+  name: "Dra. Heldiane Jansen",
   email: "contato", // Email desejado pelo cliente
-  emailSecundario: "nonatovinicius@gmail.com", // Email desejado pelo cliente
-  domain: "viniciusfranca.adv.br", // Sem "www"
+  emailSecundario: "A_Definir", // Email desejado pelo cliente
+  domain: "aetfies.com.br", // Sem "www"
   phone: {
-    ddd: "92",
-    firstPart: "99295", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "1515", // Apenas os 4 últimos números
+    ddd: "86",
+    firstPart: "99834", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "9577", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -68,10 +69,9 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>Rua Benjamin Constant,</p>
-      <p>nº 760, Bairro Petrópolis,</p>
-      <p>Manaus – AM,</p>
-      <p>CEP: 69063-010</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -85,14 +85,14 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>9h às 18h</p>
+      <p>8h às 18h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "viniciusfrancajr", // Sem o @
+  instagramProfile: "aet.adv", // Sem o @
   instagramProfileSecundario: "",
   facebookProfile: "",
-  linkeDinProfile: "vinícius-frança-bb2961239/",
+  linkeDinProfile: "",
   x: "",
   tiktokProfile: "",
   youtubeProfile: "",
@@ -130,16 +130,16 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>ESCRITÓRIO DE ADVOCACIA</>,
-      FirstPart: <span>Defesa e orientação com</span>,
+      miniTag: <>ADVOGADA E ACADÊMICA DE MEDICINA</>,
+      FirstPart: <span>Resolva seu</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">confiança</span>
+        <span className="destaque relative italic font-light">FIES</span>
       ),
-      SecondPart: <span></span>,
+      SecondPart: <span>antes que vire dor de cabeça</span>,
       subtitle: (
         <p>
-          Atuação em diversas áreas do Direito, garantindo atenção e suporte
-          personalizado a cada cliente
+          Evite multas, atrasos e negativação do CPF. A gente regulariza seu
+          financiamento rápido e sem burocracia.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -148,12 +148,21 @@ const content = {
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Falar com o Dr. Vinícius agora</>,
+      ctaButtonText: <>Falar com especialista agora</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
-        icon: <> {/* ⚠️ */}</>,
+        icon: (
+          <>
+            {" "}
+            <div className="relative flex">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
+            </div>
+            {/* ⚠️ */}
+          </>
+        ),
         iconTwo: <></>,
-        text: <>Atendimento somente mediante agendamento.</>,
+        text: <>Atendimento online e presencial com agendamento prévio.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -169,45 +178,93 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     important: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
+      miniTag: <>Problemas com FIES?</>,
+      title: <>Saiba o que fazer antes que vire dor de cabeça!</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>E se eu atrasar uma parcela do FIES, vou ter meu nome sujo?</>
+          ),
+          paragraph: (
+            <>
+              Nem sempre. Existe como contestar juros e multas abusivas, além de
+              negociar prazos. A análise jurídica correta pode evitar
+              negativação no seu CPF.
+            </>
+          ),
         },
         card2: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>
+              Posso renegociar meu contrato mesmo se já estiver com dívida
+              antiga?
+            </>
+          ),
+          paragraph: (
+            <>
+              Sim! Muitos contratos atrasados podem ser renegociados com redução
+              de encargos ou parcelamento especial. O importante é agir antes
+              que o problema se complique.
+            </>
+          ),
         },
         card3: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>O que acontece se eu desistir do curso financiado pelo FIES?</>
+          ),
+          paragraph: (
+            <>
+              Mesmo em casos de desistência, é possível reduzir prejuízos
+              financeiros e definir um plano de quitação seguro. Um advogado
+              especialista ajuda a calcular exatamente o que você precisa pagar.
+            </>
+          ),
         },
         card4: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>
+              Como posso ter certeza que estou pagando o valor correto do meu
+              FIES?
+            </>
+          ),
+          paragraph: (
+            <>
+              A revisão do contrato e das cobranças garante que você pague
+              apenas o que é devido, sem taxas indevidas. Com orientação
+              profissional, você evita surpresas e problemas futuros.
+            </>
+          ),
         },
       },
-      fraseObs: <>A_Definir</>,
-      ctaButtonText: <>A_Definir</>,
+      fraseObs: (
+        <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
+      ),
+      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
     },
+
     features: {
-      miniTag: <>NOSSAS ÁREAS DE ATUAÇÃO</>,
-      FirstPart: <span>Soluções jurídicas</span>,
-      Destaque: <span className="italic font-light">completas</span>,
-      SecondPart: <span></span>,
+      miniTag: <>Nossos Serviços</>,
+      FirstPart: <span>Resolva seu FIES com</span>,
+      Destaque: <span className="italic font-light">segurança</span>,
+      SecondPart: <span>e sem dor de cabeça</span>,
       subtitle: (
-        <>Atuamos em diferentes áreas do Direito com segurança e dedicação</>
+        <>Soluções jurídicas para regularizar, quitar ou reduzir seu FIES</>
       ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
       titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>dedicação ao seu caso</>,
+      subtitleMessageFeature: <>Financiamento estudantil</>,
       cards: {
         card1: {
-          title: <>Direito Criminal</>,
-          subtitle: <>Defesa estratégica e proteção de seus direitos</>,
+          title: (
+            <>
+              Obtenção e Transferência de Financiamento Estudantil com o FIES
+              Social
+            </>
+          ),
+          subtitle: (
+            <>Auxiliamos na obtenção ou transferência de contratos FIES.</>
+          ),
           description: (
             <div>
               A_Definir
@@ -216,124 +273,61 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Gavel />,
+          icon: <GraduationCap />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>Direito de Família</>,
-          subtitle: <>Soluções seguras em divórcios, guarda e pensão</>,
+          title: <>Quitação de Financiamento Estudantil</>,
+          subtitle: <>Orientação completa para quitar seu FIES sem erros.</>,
           description: (
             <div>
               A_Definir
               <br />
               <br />
               A_Definir
+            </div>
+          ),
+          icon: <CircleDollarSign />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card3: {
+          title: <>Desconto na Dívida do FIES para Residentes</>,
+          subtitle: <>Negociamos reduções legais para residentes médicos.</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Percent />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card4: {
+          title: <>Revisão e Contestação de Cobranças Indevidas do FIES</>,
+          subtitle: <>Revisamos contratos e cobramos apenas o que é devido.</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
             </div>
           ),
           icon: <Users />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
-
-        card3: {
-          title: <>Direito do Consumidor</>,
-          subtitle: <>Garantimos seus direitos nas relações de consumo</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <ShoppingCart />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card4: {
-          title: <>Direito Trabalhista</>,
-          subtitle: <>Proteção legal para empregados e empregadores</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <BriefcaseBusiness />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card5: {
-          title: <>Direito Empresarial</>,
-          subtitle: <>Apoio jurídico para empresas de todos os portes</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Building />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card6: {
-          title: <>Consultoria Jurídica</>,
-          subtitle: <>Orientação clara para decisões seguras e rápidas</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <MessageSquare />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card7: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Shield />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card8: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
       },
-      ctaButtonText: <>A_Definir</>,
+
+      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -374,15 +368,10 @@ const content = {
       ),
       ctaButtonText: "A_Definir",
     },
-    form: {
-      minitag: <>Fale com o Escritório</>,
-      title: <>Entre em contato com Dr. Vinícius França</>,
-      subtitle: (
-        <>
-          Preencha o formulário abaixo e receba atendimento jurídico
-          personalizado
-        </>
-      ),
+    maps: {
+      minitag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       embedsrc: <>A_Definir</>,
     },
     about: {
@@ -390,20 +379,30 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É O DR. VINÍCIUS FRANÇA</>,
-      FirstPart: <span> Minha</span>,
-      Destaque: <span className="italic font-light"> trajetória</span>,
-      SecondPart: <span></span>,
+      miniTag: <>QUEM ESTÁ POR TRÁS DO SEU DIREITO</>,
+      FirstPart: <span></span>,
+      Destaque: <span className="italic font-light"> Compromisso</span>,
+      SecondPart: <span>com quem mais precisa</span>,
       subtitle: (
         <>
-          Conheça o percurso e a dedicação que moldaram minha carreira no
-          Direito
+          Atuação humana e estratégica para garantir seus direitos educacionais
         </>
       ),
       paragraph: (
         <div>
-          Dr. Vinícius França atua com paixão pelo Direito, sempre buscando
-          soluções justas e eficazes.
+          O Escritório de Advocacia Especializada Teresina (AET) nasceu para
+          apoiar estudantes em sua jornada acadêmica, garantindo acesso justo ao
+          financiamento estudantil e condições adequadas para o pagamento do
+          FIES. Fundado por Dra. Heldiane Jansen, combinamos experiência prática
+          e visão humanizada para transformar a vida de quem sonha com educação
+          superior.
+          <br />
+          <br />
+          Atuamos com foco total em cada cliente, oferecendo soluções jurídicas
+          eficazes e personalizadas. Cada caso é analisado de forma estratégica
+          e sensível, garantindo que estudantes consigam obter, renegociar ou
+          quitar seu financiamento com segurança e tranquilidade. Nosso objetivo
+          é simplificar processos e proteger seus direitos sem burocracia.
         </div>
       ),
       benefits: {
@@ -430,20 +429,20 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar diretamente com a Advogada</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
-          Dr. Vinícius França atua com paixão pelo Direito, sempre buscando
-          soluções justas e eficazes.
+          A_Definir
           <br />
           <br />
-          Com anos de experiência em diferentes áreas jurídicas, ele combina
-          conhecimento técnico e atenção personalizada a cada cliente.
+          A_Definir
           <br />
           <br />
-          Sua missão é garantir proteção, orientação e resultados concretos, com
-          ética e compromisso em todas as situações.
+          A_Definir
+          <br />
+          <br />
+          A_Definir
         </p>
       ),
       paragraphModalCta: "Entre em contato",
@@ -474,86 +473,93 @@ const content = {
       },
     },
     ctaSection: {
-      miniTag: <>FALE CONOSCO</>,
-      title: (
-        <h1>
-          Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
-        </h1>
-      ),
+      miniTag: <>Fale conosco</>,
+      title: <h1>Não espere mais para regularizar seu FIES</h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Entre em contato agora para uma consulta especializada e comece a
-            encontrar a solução que você precisa.
+            Cada dia de atraso pode gerar multas ou negativação. Nós resolvemos
+            por você — rápido, seguro e sem burocracia.
           </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>A_Definir</>,
-          topic2: <>A_Definir</>,
-          topic3: <>A_Definir</>,
-          topic4: <>A_Definir</>,
+          topic1: <>Análise gratuita do seu contrato FIES</>,
+          topic2: <>Atendimento direto com o Advogado, sem intermediários</>,
+          topic3: <>Resposta rápida e acompanhamento pelo WhatsApp</>,
+          topic4: <>Processo iniciado no mesmo dia da análise</>,
+          topic5: (
+            <>
+              Você mais perto de regularizar seu financiamento, sem sair de casa
+            </>
+          ),
         },
       },
-      ctaButtonText: <>Entrar em contato</>,
+      ctaButtonText: <>Fale com a gente agora mesmo</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>PASSO A PASSO</>,
-      FirstPart: <span> Como </span>,
-      Destaque: <span className="italic font-light"> funciona </span>,
-      SecondPart: <span>nosso atendimento?</span>,
+      miniTag: <>Por que escolher nosso escritório</>,
+      FirstPart: <span>Resolva seu </span>,
+      Destaque: <span className="italic font-light">FIES </span>,
+      SecondPart: <span>sem dor de cabeça</span>,
 
-      subtitle: <></>,
+      subtitle: (
+        <>
+          Segurança, agilidade e orientação especializada para garantir seus
+          direitos
+        </>
+      ),
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Consulta inicial</>,
+          cardTitle: <>Evite negativação do CPF</>,
           cardDescription: (
             <>
-              Realizamos uma reunião para entender seu caso e identificar suas
-              necessidades jurídicas.
+              Não deixe que atrasos no FIES prejudiquem seu nome. Atuamos para
+              regularizar seu contrato e proteger seu histórico financeiro.
             </>
           ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Análise detalhada</>,
+          cardTitle: <>Economize tempo e esforço</>,
           cardDescription: (
             <>
-              Examinamos todos os aspectos do seu caso, revisando documentos e
-              evidências para obter uma visão completa.
+              Esqueça filas, burocracia e telefonemas sem resposta. Cuidamos de
+              todo o processo para você, do início ao fim.
             </>
           ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Elaboração da estratégia</>,
+          cardTitle: <>Reduza multas e encargos</>,
           cardDescription: (
             <>
-              Criamos uma estratégia jurídica personalizada para proteger seus
-              interesses de maneira eficaz.
+              Com análise jurídica especializada, identificamos cobranças
+              indevidas e negociamos condições mais favoráveis, diminuindo sua
+              dívida.
             </>
           ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Ação legal</>,
+          cardTitle: <>Acompanhamento personalizado</>,
           cardDescription: (
             <>
-              Iniciamos e conduzimos as ações judiciais ou o serviço contratado,
-              buscando justiça e soluções personalizadas conforme a necessidade
-              do seu caso.
+              Você recebe orientação direta e acompanhamento pelo WhatsApp, sem
+              intermediários, garantindo respostas rápidas e seguras.
             </>
           ),
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Fale conosco agora e regularize seu FIES</>,
     },
+
     blog: {
       miniTag: <>A_Definir</>,
       title: <>A_Definir</>,
@@ -660,39 +666,52 @@ const content = {
       subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>Como posso contratar seus serviços?</>,
+          question: <>Meu contrato FIES mudou de valor, isso tá certo?</>,
           answer: (
             <>
-              Agende sua consulta conosco via WhatsApp e conversaremos sobre
-              suas necessidades e avaliaremos os custos.
+              Nem sempre. Alterações podem conter erros ou cobranças indevidas.
+              Com a análise jurídica, identificamos se os valores estão corretos
+              e orientamos sobre ajustes necessários. Fale com a advogada para
+              revisar seu contrato.
             </>
           ),
         },
         question2: {
-          question: <>Qual é o prazo médio para resolução de um caso?</>,
+          question: (
+            <>
+              Posso conseguir desconto na dívida do FIES sendo residente médico?
+            </>
+          ),
           answer: (
             <>
-              O prazo médio varia conforme a complexidade, mas discutiremos uma
-              estimativa durante a consulta inicial.
+              Sim! Residentes médicos têm direito a reduções legais em muitas
+              situações. Avaliamos seu caso e negociamos descontos ou condições
+              especiais para quitar seu financiamento. Entre em contato para
+              descobrir suas possibilidades.
             </>
           ),
         },
         question3: {
-          question: <>Quais documentos devo levar para a consulta?</>,
+          question: <>E se eu já tiver negativação no CPF por causa do FIES?</>,
           answer: (
             <>
-              Traga os documentos relevantes ao seu caso, como contratos,
-              correspondências e registros, além de documentos pessoais e
-              comprovante de residência.
+              Ainda é possível regularizar a situação. A análise jurídica
+              permite contestar cobranças indevidas, renegociar dívidas e limpar
+              seu nome. Converse com a advogada para saber como agir
+              rapidamente.
             </>
           ),
         },
         question4: {
-          question: <>Vocês oferecem serviços de consultoria preventiva?</>,
+          question: (
+            <>Quanto tempo leva pra resolver meu problema com o FIES?</>
+          ),
           answer: (
             <>
-              Sim, oferecemos consultoria preventiva para evitar problemas
-              futuros e garantir conformidade legal.
+              Depende da situação, mas muitos casos têm solução rápida quando
+              tratados de forma estratégica. Com acompanhamento direto pelo
+              WhatsApp, agilizamos cada etapa do processo. Fale conosco e receba
+              uma previsão personalizada.
             </>
           ),
         },
@@ -700,6 +719,7 @@ const content = {
 
       paragraph: "Clique aqui caso tenha mais dúvidas",
     },
+
     // team: {
     //   miniTag: <>A_Definir</>,
     //   title: <>A_Definir</>,
@@ -1261,7 +1281,7 @@ const content = {
     // },
     links: {
       instagram: `https://www.instagram.com/${infos.instagramProfile}/`,
-      // instagram: `https://www.instagram.com/${infos.instagramProfileSecundario}/`,
+      instagramSecondario: `https://www.instagram.com/${infos.instagramProfileSecundario}/`,
       ctaWhatsapp: `https://wa.me/+55${infos.phone.ddd}${infos.phone.firstPart}${infos.phone.secondPart}?text=${infos.whatsappDefaultMessage}`,
       phoneSecundario: `https://wa.me/+55${infos.phoneSecundario.ddd}${infos.phoneSecundario.firstPart}${infos.phoneSecundario.secondPart}?text=${infos.whatsappDefaultMessage}`,
       phoneTerciario: `https://wa.me/+55${infos.phoneTerciario.ddd}${infos.phoneTerciario.firstPart}${infos.phoneTerciario.secondPart}?text=${infos.whatsappDefaultMessage}`,

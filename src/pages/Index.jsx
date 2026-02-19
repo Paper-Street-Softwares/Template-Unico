@@ -56,17 +56,17 @@ export default function Index() {
           <AlternatingSection index={0} colorMode={colorMode} forcePrimaryDark>
             <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
           </AlternatingSection>
-          <AlternatingSection index={1} colorMode={colorMode} forcePrimaryDark>
+          {/* <AlternatingSection index={1} colorMode={colorMode} forcePrimaryDark>
             <FormNovoTemplate />
-          </AlternatingSection>
+          </AlternatingSection> */}
 
           {/* <AlternatingSection index={1} colorMode={colorMode}>
             <Emergency colorMode={colorMode} />
           </AlternatingSection> */}
 
-          {/* <AlternatingSection index={1} colorMode={colorMode}>
+          <AlternatingSection index={1} colorMode={colorMode}>
             <Important colorMode={colorMode} />
-          </AlternatingSection> */}
+          </AlternatingSection>
 
           <AlternatingSection index={2} colorMode={colorMode}>
             <Suspense>
@@ -98,7 +98,7 @@ export default function Index() {
             <Suspense>
               <AboutNovoTemplate
                 colorMode={colorMode}
-                ButtonModal={true}
+                ButtonModal={false}
                 benefits={false}
               />
               <SocialMediaTemplate colorMode={colorMode} />
@@ -107,7 +107,7 @@ export default function Index() {
 
           <AlternatingSection index={4} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
-              <CtaNovoTemplate colorMode={colorMode} container={false} />
+              <CtaNovoTemplate colorMode={colorMode} container={true} />
             </Suspense>
           </AlternatingSection>
 
@@ -148,8 +148,8 @@ export default function Index() {
                 phoneSecond={false}
                 expediente={true}
                 adress={true}
-                email={false}
-                emailSecond={true}
+                email={true}
+                emailSecond={false}
                 fraseFooter={true} // frase Google LLC
                 obs={false}
               />
