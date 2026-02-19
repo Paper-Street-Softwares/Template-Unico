@@ -43,14 +43,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Dr. Manuel Almeida",
+  name: "A_Definir",
   email: "contato", // Email desejado pelo cliente
-  emailSecundario: "adv.manoeldealmeida@gmail.com", // Email desejado pelo cliente
-  domain: "manoeldealmeida.com", // Sem "www"
+  emailSecundario: "A_Definir", // Email desejado pelo cliente
+  domain: "A_Definir", // Sem "www"
   phone: {
-    ddd: "92",
-    firstPart: "99457", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "3692", // Apenas os 4 últimos números
+    ddd: "00",
+    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0000", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -66,10 +66,9 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>Rua Rio Cuini, nº 85,</p>
-      <p>São José Operário,</p>
-      <p>Manaus - AM,</p>
-      <p>CEP: 69086-630 </p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -83,13 +82,13 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>9h às 17h</p>
+      <p>8h às 18h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "adv.manoeldealmeida", // Sem o @
+  instagramProfile: "", // Sem o @
   instagramProfileSecundario: "",
-  facebookProfile: "AdvogadoBancario2025",
+  facebookProfile: "",
   linkeDinProfile: "",
   x: "",
   tiktokProfile: "",
@@ -128,35 +127,25 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>ESCRITÓRIO DE ADVOCACIA</>,
-      FirstPart: <span>Defesa</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">firme</span>
+        <span className="destaque relative italic font-light">A_Definir</span>
       ),
-      SecondPart: <span> contra abusos</span>,
-      subtitle: (
-        <p>
-          Atuação técnica e combativa na defesa do cidadão frente a bancos e
-          grandes empresas.
-        </p>
-      ),
+      SecondPart: <span></span>,
+      subtitle: <p>A_Definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Falar com o Advogado</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: (
-          <>
-            Atendimento presencial mediante agendamento e online para todo
-            Brasil.
-          </>
-        ),
+        text: <>A_Definir</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -196,47 +185,19 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>Áreas de Atuação</>,
-      FirstPart: <span>Sua </span>,
-      Destaque: <span className="italic font-light">solução</span>,
-      SecondPart: <span>começa aqui</span>,
-      subtitle: (
-        <>
-          Defesa firme, técnica e preparada para enfrentar grandes estruturas.
-        </>
-      ),
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
+      Destaque: <span className="italic font-light">A_Definir</span>,
+      SecondPart: <span></span>,
+      subtitle: <>A_Definir</>,
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>proteção de direitos</>,
+      titleMessageFeature: <>A_Definir</>,
+      subtitleMessageFeature: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>Direito do Consumidor</>,
-          subtitle: (
-            <>
-              O escritório atua de forma intensa e estratégica na defesa de
-              consumidores que enfrentam abusos praticados por bancos,
-              instituições financeiras e grandes empresas.
-              <br /> <br />A experiência prática foi construída ao longo de
-              centenas de demandas judiciais, enfrentando diretamente grandes
-              grupos econômicos.
-              <br /> <br />
-              <br />
-              <div className="flex flex-col gap-2 text-white/65">
-                <span className="text-white"> A atuação abrange:</span> - Ações
-                contra bancos e financeiras. <br /> - Discussões sobre contratos
-                abusivos. <br /> - Empréstimos consignados e não consignados.{" "}
-                <br /> - Cobranças indevidas. <br /> - Casos de
-                superendividamento. <br /> - Demandas contra concessionárias de
-                serviços essenciais, como água, energia e telefonia. <br />-
-                Indenizações por danos morais e materiais.
-                <br />
-              </div>
-              <br />
-              <br />O foco está na proteção efetiva do consumidor e na busca por
-              soluções jurídicas firmes e seguras.
-            </>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -251,21 +212,8 @@ const content = {
         },
 
         card2: {
-          title: <>Direito Civil</>,
-          subtitle: (
-            <>
-              <p className="mb-4">
-                {" "}
-                Atuação voltada às relações jurídicas patrimoniais em geral, com
-                condução técnica e estratégica de demandas que envolvem:
-              </p>
-              - Obrigações e contratos. <br /> - Responsabilidade civil. <br />
-              - Ações indenizatórias.
-              <br /> <br />
-              <br />O escritório trabalha para garantir segurança jurídica nas
-              relações privadas e na defesa de direitos individuais.
-            </>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -280,37 +228,8 @@ const content = {
         },
 
         card3: {
-          title: <>Direito de Família</>,
-          subtitle: (
-            <>
-              <>
-                <p className="flex flex-col gap-2">
-                  No Direito de Família, a atuação é estratégica e orientada à
-                  solução segura de conflitos familiares, envolvendo:{" "}
-                  <span>
-                    {" "}
-                    - Ações de alimentos. <br /> - Revisão de pensão
-                    alimentícia. <br /> - Acordos familiares.
-                  </span>
-                </p>
-              </>
-              <br /> <br />
-              <>
-                <p className="flex flex-col gap-2">
-                  No Direito Imobiliário, o escritório atua em:
-                  <span>
-                    {" "}
-                    - Conflitos possessórios. <br /> - Questões envolvendo
-                    propriedade e contratos imobiliários. <br /> - Regularização
-                    e disputas patrimoniais.
-                    <br /> <br />
-                    <br />A condução dos casos prioriza estabilidade jurídica e
-                    proteção patrimonial.
-                  </span>
-                </p>
-              </>
-            </>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -325,23 +244,8 @@ const content = {
         },
 
         card4: {
-          title: <>Direito Constitucional e Direito Público</>,
-          subtitle: (
-            <>
-              <p className="flex flex-col gap-2">
-                Atuação técnica em matérias de direito público, com análise
-                qualificada e estratégica de:
-                <span>
-                  {" "}
-                  - Atos administrativos. <br /> - Defesa de direitos
-                  fundamentais. <br /> - Consultoria jurídica em demandas que
-                  envolvem o Poder Público.
-                </span>
-              </p>
-              <br /> <br />O trabalho é desenvolvido com rigor técnico, foco
-              estratégico e compromisso com a legalidade.
-            </>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -354,43 +258,101 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
+        card5: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Users />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card6: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <MessageSquare />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card7: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Shield />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card8: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Briefcase />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
       },
       ctaButtonText: <>A_Definir</>,
     },
     cardsSection: {
-      miniTag: <>LATTES</>,
-      title: <>Currículo acadêmico</>,
-      subtitle: (
-        <>Formação acadêmica e produção técnica oficialmente registradas</>
-      ),
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       cards: {
         card1: {
-          title: <></>,
-          icon: (
-            <>
-              <FileText />
-            </>
-          ),
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
           link: "",
         },
-        // card2: {
-        //   title: <>A_Definir</>,
-        //   icon: <>A_Definir</>,
-        //   link: "",
-        // },
-        // card3: {
-        //   title: <>A_Definir</>,
-        //   icon: <>A_Definir</>,
-        //   link: "",
-        // },
-        // card4: {
-        //   title: <>A_Definir</>,
-        //   icon: <>A_Definir</>,
-        // },
-        // card5: {
-        //   title: <>A_Definir</>,
-        //   icon: <>A_Definir</>,
-        // },
+        card2: {
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
+          link: "",
+        },
+        card3: {
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
+          link: "",
+        },
+        card4: {
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
+        },
+        card5: {
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
+        },
       },
       fraseText: (
         <>
@@ -413,23 +375,12 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É O DR. MANUEL ALMEIDA</>,
-      FirstPart: <span> Minha</span>,
-      Destaque: <span className="italic font-light"> trajetória</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir </span>,
+      Destaque: <span className="italic font-light"> A_Definir</span>,
       SecondPart: <span></span>,
-      subtitle: (
-        <>Experiência sólida na defesa firme e estratégica do cidadão.</>
-      ),
-      paragraph: (
-        <div>
-          O Manoel Almeida Advocacia nasce de uma trajetória construída na
-          prática forense, com atuação sólida e reconhecida na defesa do cidadão
-          diante de abusos institucionais e econômicos. Ao longo dos anos, a
-          identidade do escritório foi consolidada em uma advocacia técnica,
-          combativa e acessível, exercida com independência, firmeza e
-          responsabilidade social.
-        </div>
-      ),
+      subtitle: <></>,
+      paragraph: <div>A_Definir</div>,
       benefits: {
         cards: {
           card1: {
@@ -458,29 +409,16 @@ const content = {
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
-          O Manoel Almeida Advocacia nasce de uma trajetória construída na
-          prática forense, com atuação sólida e reconhecida na defesa do cidadão
-          diante de abusos institucionais e econômicos. Ao longo dos anos, a
-          identidade do escritório foi consolidada em uma advocacia técnica,
-          combativa e acessível, exercida com independência, firmeza e
-          responsabilidade social.
+          A_Definir
           <br />
           <br />
-          Com forte presença no contencioso judicial, o escritório acumulou
-          experiência em centenas de processos, especialmente no Direito do
-          Consumidor, enfrentando grandes instituições financeiras e empresas
-          prestadoras de serviços essenciais. A atuação é pautada por estratégia
-          jurídica consistente, ética profissional e compromisso real com os
-          interesses de cada cliente.
+          A_Definir
           <br />
-          <br />O público atendido é formado majoritariamente por homens e
-          mulheres entre 25 e 60 anos, com predominância na faixa de 30 a 50
-          anos, em sua maioria de classe média e baixa renda. São pessoas que
-          buscam defesa contra abusos contratuais, soluções jurídicas reais e
-          eficazes, atendimento claro e postura firme. O escritório se posiciona
-          com profundidade técnica, comunicação acessível e preparo para
-          enfrentar grandes estruturas econômicas, sem promessas irreais ou
-          juridiquês excessivo.
+          <br />
+          A_Definir
+          <br />
+          <br />
+          A_Definir
         </p>
       ),
       paragraphModalCta: "Entre em contato",
@@ -492,15 +430,9 @@ const content = {
           alt: `Foto do Instagram do ${infos.name}`,
           altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
         },
-        miniTag: <>Redes sociais</>,
-        title: <>Conecte-se conosco</>,
-        subtitle: (
-          <>
-            Acompanhe nossas redes sociais para se manter informado sobre
-            conteúdos jurídicos, atualizações e temas relevantes das áreas de
-            atuação.
-          </>
-        ),
+        miniTag: <>A_Definir</>,
+        title: <>A_Definir</>,
+        subtitle: <>A_Definir</>,
         paragraph: <p></p>,
         labelInstagram: "Siga-nos no Instagram",
         labelFacebook: "Siga-nos no Facebook",
@@ -511,18 +443,11 @@ const content = {
       },
     },
     ctaSection: {
-      miniTag: <>FALE CONOSCO</>,
-      title: (
-        <h1>
-          Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
-        </h1>
-      ),
+      miniTag: <>A_Definir</>,
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Entre em contato agora para uma consulta especializada e comece a
-            encontrar a solução que você precisa.
-          </p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
       container: {
@@ -533,15 +458,15 @@ const content = {
           topic4: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Entrar em contato</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>PASSO A PASSO</>,
-      FirstPart: <span>Como </span>,
-      Destaque: <span className="italic font-light"> funciona </span>,
-      SecondPart: <span>nosso atendimento?</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir</span>,
+      Destaque: <span className="italic font-light"> A_Definir </span>,
+      SecondPart: <span>A_Definir</span>,
 
       subtitle: <></>,
       img: imgSteps,
@@ -549,49 +474,27 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Consulta inicial</>,
-          cardDescription: (
-            <>
-              Realizamos uma reunião para entender seu caso e identificar suas
-              necessidades jurídicas.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Análise detalhada</>,
-          cardDescription: (
-            <>
-              Examinamos todos os aspectos do seu caso, revisando documentos e
-              evidências para obter uma visão completa.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Elaboração da estratégia</>,
-          cardDescription: (
-            <>
-              Criamos uma estratégia jurídica personalizada para proteger seus
-              interesses de maneira eficaz.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Ação legal</>,
-          cardDescription: (
-            <>
-              Iniciamos e conduzimos as ações judiciais ou o serviço contratado,
-              buscando justiça e soluções personalizadas conforme a necessidade
-              do seu caso.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Fale Conosco</>,
+      ctaButtonText: <>A_Definir</>,
     },
-
     blog: {
       miniTag: <>A_Definir</>,
       title: <>A_Definir</>,
@@ -693,52 +596,30 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>TIRE SUAS DÚVIDAS</>,
-      title: <>Perguntas Frequentes</>,
-      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       questions: {
         question1: {
-          question: <>Como posso contratar seus serviços?</>,
-          answer: (
-            <>
-              Agende sua consulta conosco via WhatsApp e conversaremos sobre
-              suas necessidades e avaliaremos os custos.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question2: {
-          question: <>Qual é o prazo médio para resolução de um caso?</>,
-          answer: (
-            <>
-              O prazo médio varia conforme a complexidade, mas discutiremos uma
-              estimativa durante a consulta inicial.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question3: {
-          question: <>Quais documentos devo levar para a consulta?</>,
-          answer: (
-            <>
-              Traga os documentos relevantes ao seu caso, como contratos,
-              correspondências e registros, além de documentos pessoais e
-              comprovante de residência.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question4: {
-          question: <>Vocês oferecem serviços de consultoria preventiva?</>,
-          answer: (
-            <>
-              Sim, oferecemos consultoria preventiva para evitar problemas
-              futuros e garantir conformidade legal.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
       },
 
       paragraph: "Clique aqui caso tenha mais dúvidas",
     },
-
     // team: {
     //   miniTag: <>A_Definir</>,
     //   title: <>A_Definir</>,
