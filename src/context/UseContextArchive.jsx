@@ -50,6 +50,14 @@ export const defaultButtonThemes = {
     "bg-primaryDark text-corTitulosBranca border border-primaryDark/20 ",
 };
 
+export const defaultButtonThemesSecondary = {
+  light: "bg-primaryDark text-corTitulosBranca border border-primaryDark/20 ",
+  dark: "bg-transparent text-corTitulosBranca",
+  defaultDark: "bg-primaryLight text-corTitulosPreto",
+  defaultLight:
+    "bg-primaryDark text-corTitulosBranca border border-primaryDark/20 ",
+};
+
 export const alertTheme = {
   light: "bg-red-800 text-corTitulosBranca shadow-lg",
   dark: "bg-red-800 text-corTitulosBranca shadow-white",

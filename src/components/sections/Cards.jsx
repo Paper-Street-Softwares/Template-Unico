@@ -5,6 +5,11 @@ import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import content from "../../content/content";
 import ButtonReflexo from "../interactives/ButtonReflexo";
+import { FileText } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-scroll";
+import { Link2 } from "lucide-react";
 
 function Cards({ colorMode }) {
   let text,
@@ -77,7 +82,7 @@ function Cards({ colorMode }) {
                   <MotionDivDownToUp className="w-full phone3:w-auto">
                     <div
                       key={index}
-                      className={`h-fit border-t-4 ${borderT} ${bgCards} transition-shadow duration-300 w-[80%] phone3:w-[200px] mx-auto rounded-md`}
+                      className={`h-fit border-t-4 ${borderT} ${bgCards} transition-shadow duration-300 w-full phone3:w-[200px] mx-auto rounded-md`}
                     >
                       <div className="pt-8 px-6 pb-8 h-full flex flex-col">
                         <div
@@ -90,21 +95,37 @@ function Cards({ colorMode }) {
                         >
                           {item.title}
                         </h3>
+
+                        <div className="mx-auto">
+                          {" "}
+                          <MotionDivDownToUp>
+                            <ButtonReflexo
+                              icon={<Link2 />}
+                              link="https://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=3C31952359A5C77DD6545CDA9466B96E.buscatextual_0"
+                              label="Acesse aqui"
+                              colorMode={colorMode}
+                              className={``}
+                              shineClass={`bg-transparent`}
+                              padding={`px-3 py-2`}
+                              variant="secondary"
+                            />
+                          </MotionDivDownToUp>
+                        </div>
                       </div>
                     </div>
                   </MotionDivDownToUp>
                 ))}
               </div>
 
-              <MotionDivDownToUp>
+              {/* <MotionDivDownToUp>
                 <div
                   className={`${textOpacity} font-secondFont text-center leading-5 mt-4`}
                 >
                   {content.texts.cardsSection.fraseText}
                 </div>
-              </MotionDivDownToUp>
+              </MotionDivDownToUp> */}
 
-              <MotionDivDownToUp>
+              {/* <MotionDivDownToUp>
                 <ButtonReflexo
                   icon={
                     <svg
@@ -122,7 +143,7 @@ function Cards({ colorMode }) {
                   colorMode={colorMode}
                   className={`clickevent`}
                 />
-              </MotionDivDownToUp>
+              </MotionDivDownToUp> */}
             </div>
           </div>
         </section>

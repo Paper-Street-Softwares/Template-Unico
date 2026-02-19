@@ -36,7 +36,6 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
-  Building,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -44,14 +43,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Dr. Alex Borim",
+  name: "Dr. Manuel Almeida",
   email: "contato", // Email desejado pelo cliente
-  emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "alexborim.adv.br", // Sem "www"
+  emailSecundario: "adv.manoeldealmeida@gmail.com", // Email desejado pelo cliente
+  domain: "manoeldealmeida.com", // Sem "www"
   phone: {
-    ddd: "11",
-    firstPart: "98367", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "7472", // Apenas os 4 últimos números
+    ddd: "92",
+    firstPart: "99457", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "3692", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -67,10 +66,10 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>Rua Primo Zacante,</p>
-      <p>nº 138, jd. Das Bandeiras, </p>
-      <p>Osasco - SP,</p>
-      <p>CEP: 06160-200</p>
+      <p>Rua Rio Cuini, nº 85,</p>
+      <p>São José Operário,</p>
+      <p>Manaus - AM,</p>
+      <p>CEP: 69086-630 </p>
     </div>
   ),
   enderecoSecundario: (
@@ -84,17 +83,17 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>9h às 18h</p>
+      <p>9h às 17h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "alex_borim", // Sem o @
+  instagramProfile: "adv.manoeldealmeida", // Sem o @
   instagramProfileSecundario: "",
-  facebookProfile: "",
+  facebookProfile: "AdvogadoBancario2025",
   linkeDinProfile: "",
   x: "",
   tiktokProfile: "",
-  youtubeProfile: "oDoutorteResponde",
+  youtubeProfile: "",
 
   whatsappDefaultMessage:
     "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
@@ -129,16 +128,16 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>ADVOCACIA ESPECIALIZADA</>,
-      FirstPart: <span></span>,
+      miniTag: <>ESCRITÓRIO DE ADVOCACIA</>,
+      FirstPart: <span>Defesa</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">Excelência</span>
+        <span className="destaque relative italic font-light">firme</span>
       ),
-      SecondPart: <span>na prática jurídica</span>,
+      SecondPart: <span> contra abusos</span>,
       subtitle: (
         <p>
-          Atendimento ético e atuação técnica voltados à defesa dos seus
-          direitos.
+          Atuação técnica e combativa na defesa do cidadão frente a bancos e
+          grandes empresas.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -147,24 +146,15 @@ const content = {
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Solicitar atendimento</>,
+      ctaButtonText: <>Falar com o Advogado</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
-        icon: (
-          <>
-            {" "}
-            <div className="relative flex">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
-            </div>
-            {/* ⚠️ */}
-          </>
-        ),
+        icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
         text: (
           <>
-            Atendimento presencial, por videoconferência, WhatsApp, Zoom, Tens,
-            todos com agendamento.
+            Atendimento presencial mediante agendamento e online para todo
+            Brasil.
           </>
         ),
         textTwo: <>A_Definir</>,
@@ -207,25 +197,46 @@ const content = {
     },
     features: {
       miniTag: <>Áreas de Atuação</>,
-      FirstPart: <span>Atuação jurídica com </span>,
-      Destaque: (
-        <span className="italic font-light">seriedade e compromisso</span>
-      ),
-      SecondPart: <span></span>,
+      FirstPart: <span>Sua </span>,
+      Destaque: <span className="italic font-light">solução</span>,
+      SecondPart: <span>começa aqui</span>,
       subtitle: (
         <>
-          Soluções legais conduzidas com técnica, ética e responsabilidade em
-          cada etapa do processo.
+          Defesa firme, técnica e preparada para enfrentar grandes estruturas.
         </>
       ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
       titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>atenção ao seu direito</>,
+      subtitleMessageFeature: <>proteção de direitos</>,
       cards: {
         card1: {
-          title: <>Direito Criminal</>,
-          subtitle: <>Defesa técnica em todas as fases do processo.</>,
+          title: <>Direito do Consumidor</>,
+          subtitle: (
+            <>
+              O escritório atua de forma intensa e estratégica na defesa de
+              consumidores que enfrentam abusos praticados por bancos,
+              instituições financeiras e grandes empresas.
+              <br /> <br />A experiência prática foi construída ao longo de
+              centenas de demandas judiciais, enfrentando diretamente grandes
+              grupos econômicos.
+              <br /> <br />
+              <br />
+              <div className="flex flex-col gap-2 text-white/65">
+                <span className="text-white"> A atuação abrange:</span> - Ações
+                contra bancos e financeiras. <br /> - Discussões sobre contratos
+                abusivos. <br /> - Empréstimos consignados e não consignados.{" "}
+                <br /> - Cobranças indevidas. <br /> - Casos de
+                superendividamento. <br /> - Demandas contra concessionárias de
+                serviços essenciais, como água, energia e telefonia. <br />-
+                Indenizações por danos morais e materiais.
+                <br />
+              </div>
+              <br />
+              <br />O foco está na proteção efetiva do consumidor e na busca por
+              soluções jurídicas firmes e seguras.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -234,30 +245,27 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Shield />,
+          icon: <Briefcase />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>Direito Previdenciário</>,
-          subtitle: <>Atuação em benefícios e revisões do INSS.</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
+          title: <>Direito Civil</>,
+          subtitle: (
+            <>
+              <p className="mb-4">
+                {" "}
+                Atuação voltada às relações jurídicas patrimoniais em geral, com
+                condução técnica e estratégica de demandas que envolvem:
+              </p>
+              - Obrigações e contratos. <br /> - Responsabilidade civil. <br />
+              - Ações indenizatórias.
+              <br /> <br />
+              <br />O escritório trabalha para garantir segurança jurídica nas
+              relações privadas e na defesa de direitos individuais.
+            </>
           ),
-          icon: <Gavel />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card3: {
-          title: <>Direito Cível</>,
-          subtitle: <>Soluções jurídicas em conflitos patrimoniais.</>,
           description: (
             <div>
               A_Definir
@@ -271,50 +279,78 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
 
-        card4: {
+        card3: {
           title: <>Direito de Família</>,
-          subtitle: <>Orientação jurídica em questões familiares.</>,
+          subtitle: (
+            <>
+              <>
+                <p className="flex flex-col gap-2">
+                  No Direito de Família, a atuação é estratégica e orientada à
+                  solução segura de conflitos familiares, envolvendo:{" "}
+                  <span>
+                    {" "}
+                    - Ações de alimentos. <br /> - Revisão de pensão
+                    alimentícia. <br /> - Acordos familiares.
+                  </span>
+                </p>
+              </>
+              <br /> <br />
+              <>
+                <p className="flex flex-col gap-2">
+                  No Direito Imobiliário, o escritório atua em:
+                  <span>
+                    {" "}
+                    - Conflitos possessórios. <br /> - Questões envolvendo
+                    propriedade e contratos imobiliários. <br /> - Regularização
+                    e disputas patrimoniais.
+                    <br /> <br />
+                    <br />A condução dos casos prioriza estabilidade jurídica e
+                    proteção patrimonial.
+                  </span>
+                </p>
+              </>
+            </>
+          ),
           description: (
             <div>
               A_Definir
               <br />
-              A_Definir
               <br />
+              A_Definir
             </div>
           ),
-          icon: <Users />,
+          icon: <Scale />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
-        card5: {
-          title: <>Direito do Trabalho</>,
-          subtitle: <>Assessoria em direitos trabalhistas.</>,
+        card4: {
+          title: <>Direito Constitucional e Direito Público</>,
+          subtitle: (
+            <>
+              <p className="flex flex-col gap-2">
+                Atuação técnica em matérias de direito público, com análise
+                qualificada e estratégica de:
+                <span>
+                  {" "}
+                  - Atos administrativos. <br /> - Defesa de direitos
+                  fundamentais. <br /> - Consultoria jurídica em demandas que
+                  envolvem o Poder Público.
+                </span>
+              </p>
+              <br /> <br />O trabalho é desenvolvido com rigor técnico, foco
+              estratégico e compromisso com a legalidade.
+            </>
+          ),
           description: (
             <div>
               A_Definir
               <br />
-              <br />
               A_Definir
+              <br />
             </div>
           ),
-          icon: <BriefcaseBusiness />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card6: {
-          title: <>Direito Imobiliário</>,
-          subtitle: <>Consultoria e contratos imobiliários.</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Building />,
+          icon: <Gavel />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
@@ -322,33 +358,39 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     cardsSection: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>LATTES</>,
+      title: <>Currículo acadêmico</>,
+      subtitle: (
+        <>Formação acadêmica e produção técnica oficialmente registradas</>
+      ),
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          icon: <>A_Definir</>,
+          title: <></>,
+          icon: (
+            <>
+              <FileText />
+            </>
+          ),
           link: "",
         },
-        card2: {
-          title: <>A_Definir</>,
-          icon: <>A_Definir</>,
-          link: "",
-        },
-        card3: {
-          title: <>A_Definir</>,
-          icon: <>A_Definir</>,
-          link: "",
-        },
-        card4: {
-          title: <>A_Definir</>,
-          icon: <>A_Definir</>,
-        },
-        card5: {
-          title: <>A_Definir</>,
-          icon: <>A_Definir</>,
-        },
+        // card2: {
+        //   title: <>A_Definir</>,
+        //   icon: <>A_Definir</>,
+        //   link: "",
+        // },
+        // card3: {
+        //   title: <>A_Definir</>,
+        //   icon: <>A_Definir</>,
+        //   link: "",
+        // },
+        // card4: {
+        //   title: <>A_Definir</>,
+        //   icon: <>A_Definir</>,
+        // },
+        // card5: {
+        //   title: <>A_Definir</>,
+        //   icon: <>A_Definir</>,
+        // },
       },
       fraseText: (
         <>
@@ -371,17 +413,21 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É O DR. ALEX BORIM</>,
-      FirstPart: <span>Minha </span>,
+      miniTag: <>QUEM É O DR. MANUEL ALMEIDA</>,
+      FirstPart: <span> Minha</span>,
       Destaque: <span className="italic font-light"> trajetória</span>,
       SecondPart: <span></span>,
-      subtitle: <> Conheça minha história e meu compromisso com a sua defesa</>,
+      subtitle: (
+        <>Experiência sólida na defesa firme e estratégica do cidadão.</>
+      ),
       paragraph: (
         <div>
-          Minha caminhada no Direito começou com um propósito simples: ajudar
-          pessoas que muitas vezes não sabem por onde começar quando enfrentam
-          um problema na Justiça. Eu sei que, para muita gente, lidar com
-          advogado pode parecer distante ou complicado.
+          O Manoel Almeida Advocacia nasce de uma trajetória construída na
+          prática forense, com atuação sólida e reconhecida na defesa do cidadão
+          diante de abusos institucionais e econômicos. Ao longo dos anos, a
+          identidade do escritório foi consolidada em uma advocacia técnica,
+          combativa e acessível, exercida com independência, firmeza e
+          responsabilidade social.
         </div>
       ),
       benefits: {
@@ -412,21 +458,29 @@ const content = {
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
-          Minha caminhada no Direito começou com um propósito simples: ajudar
-          pessoas que muitas vezes não sabem por onde começar quando enfrentam
-          um problema na Justiça. Eu sei que, para muita gente, lidar com
-          advogado pode parecer distante ou complicado.
+          O Manoel Almeida Advocacia nasce de uma trajetória construída na
+          prática forense, com atuação sólida e reconhecida na defesa do cidadão
+          diante de abusos institucionais e econômicos. Ao longo dos anos, a
+          identidade do escritório foi consolidada em uma advocacia técnica,
+          combativa e acessível, exercida com independência, firmeza e
+          responsabilidade social.
           <br />
           <br />
-          Ao longo da minha trajetória, aprendi que cada processo tem uma
-          história por trás. Não se trata apenas de papéis ou prazos, mas de
-          famílias preocupadas, trabalhadores inseguros e pessoas buscando uma
-          segunda chance.
+          Com forte presença no contencioso judicial, o escritório acumulou
+          experiência em centenas de processos, especialmente no Direito do
+          Consumidor, enfrentando grandes instituições financeiras e empresas
+          prestadoras de serviços essenciais. A atuação é pautada por estratégia
+          jurídica consistente, ética profissional e compromisso real com os
+          interesses de cada cliente.
           <br />
-          <br />
-          Por isso, meu compromisso é oferecer orientação clara, atendimento
-          respeitoso e uma atuação firme na defesa dos seus direitos. Aqui, você
-          será ouvido com atenção e tratado com dignidade.
+          <br />O público atendido é formado majoritariamente por homens e
+          mulheres entre 25 e 60 anos, com predominância na faixa de 30 a 50
+          anos, em sua maioria de classe média e baixa renda. São pessoas que
+          buscam defesa contra abusos contratuais, soluções jurídicas reais e
+          eficazes, atendimento claro e postura firme. O escritório se posiciona
+          com profundidade técnica, comunicação acessível e preparo para
+          enfrentar grandes estruturas econômicas, sem promessas irreais ou
+          juridiquês excessivo.
         </p>
       ),
       paragraphModalCta: "Entre em contato",
@@ -458,13 +512,11 @@ const content = {
     },
     ctaSection: {
       miniTag: <>FALE CONOSCO</>,
-
       title: (
         <h1>
           Enfrentando um problema jurídico? Deixe que cuidamos disso para você!
         </h1>
       ),
-
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
@@ -473,24 +525,21 @@ const content = {
           </p>
         </div>
       ),
-
       container: {
         topics: {
-          topic1: <>Enfrentando um problema jurídico?</>,
-          topic2: <>Deixe que cuidamos disso para você!</>,
-          topic3: <>Consulta especializada</>,
-          topic4: <>Solução que você precisa</>,
+          topic1: <>A_Definir</>,
+          topic2: <>A_Definir</>,
+          topic3: <>A_Definir</>,
+          topic4: <>A_Definir</>,
         },
       },
-
       ctaButtonText: <>Entrar em contato</>,
-
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
       miniTag: <>PASSO A PASSO</>,
-      FirstPart: <span> Como</span>,
+      FirstPart: <span>Como </span>,
       Destaque: <span className="italic font-light"> funciona </span>,
       SecondPart: <span>nosso atendimento?</span>,
 
@@ -540,9 +589,9 @@ const content = {
           ),
         },
       },
-
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Fale Conosco</>,
     },
+
     blog: {
       miniTag: <>A_Definir</>,
       title: <>A_Definir</>,
@@ -686,6 +735,7 @@ const content = {
           ),
         },
       },
+
       paragraph: "Clique aqui caso tenha mais dúvidas",
     },
 
