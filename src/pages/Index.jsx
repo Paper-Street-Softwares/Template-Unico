@@ -148,8 +148,8 @@ export default function Index() {
                 phoneSecond={false}
                 expediente={true}
                 adress={true}
-                email={false}
-                emailSecond={true}
+                email={true}
+                emailSecond={false}
                 fraseFooter={true} // frase Google LLC
                 obs={false}
               />
