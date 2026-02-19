@@ -184,13 +184,20 @@ Dr. Gleiton Senna Direito Trabalhista.
       gtag("config", "AW-17826747908");
     </script>
 
-    <!-- Event snippet for Trabalhista - Clique Botão CTA conversion page -->
-
+    <!-- Event snippet for Trabalhista - Clique Botão CTA conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
       function gtag_report_conversion() {
+        // var callback = function () {
+        //   if (typeof url != "undefined") {
+        //     window.location = url;
+        //   }
+        // };
         gtag("event", "conversion", {
           send_to: "AW-17826747908/TjK7CKiGufsbEISsurRC",
+          // event_callback: callback,
         });
+        return false;
       }
     </script>
   </head>
