@@ -1,34 +1,31 @@
-import { ArrowRight } from 'lucide-react'
+import { Phone, Mail } from "lucide-react";
 
-export default function TeamMember(props) {
-  const { img, alt, name, role, work, onClick } = props
-
+export default function TeamMember({ img, alt, name, phone, email }) {
   return (
-    <div className="flex flex-col items-center p-[20px] w-full tablet1:w-[45%] desktop1:w-[30%] text-white font-secondFont">
+    <div className="flex flex-col items-center text-center font-secondFont mx-auto">
+      {/* Foto */}
       <img
-        alt={alt}
         src={img}
-        width={215}
-        height={215}
-        className="w-[215px] h-[215px] rounded-full mb-[24px]"
+        alt={alt}
+        width={260}
+        height={260}
+        className="w-[260px] h-[260px] rounded-full object-cover"
       />
 
-      <p className="text-center mb-[8px] font-bold">{role}</p>
-      <h1 className="font-medium text-center">{name}</h1>
+      {/* Nome */}
+      <h2 className="mt-6 text-[16px] font-medium text-orange-600">{name}</h2>
 
-      <div className="mt-2 flex flex-col items-center">
-        <p className="text-center">{work}</p>
+      {/* Telefone */}
+      <div className="flex items-center gap-2 font-light text-sm mt-0 text-gray-600">
+        <Phone size={16} />
+        <span>{phone}</span>
+      </div>
 
-        <button
-          onClick={onClick}
-          className="text-primaryLight/70 hover:scale-95 transition-all flex gap-2 items-center"
-        >
-          Saiba mais
-          <span>
-            <ArrowRight width={18} />
-          </span>{' '}
-        </button>
+      {/* Email */}
+      <div className="flex items-center gap-2 text-sm mt-0 font-light text-gray-600">
+        <Mail size={16} />
+        <span>{email}</span>
       </div>
     </div>
-  )
+  );
 }

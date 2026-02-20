@@ -1,6 +1,7 @@
 import React from "react";
 import SectionArea from "../../components/sectionElements/SectionArea";
 import SectionHeaderNovo from "../../components/sectionElements/SectionHeaderNovo";
+import SectionWrapper from "../../components/sectionElements/SectionWrapper";
 import image1 from "../../assets/imgs/socialProof/img1.webp";
 import image2 from "../../assets/imgs/socialProof/img2.webp";
 import image3 from "../../assets/imgs/socialProof/img3.webp";
@@ -21,32 +22,48 @@ function Reconhecimentos() {
     { src: image7, alt: "Logo 7" },
   ];
 
+  const responsiveOptions = [
+    { breakpoint: "1400px", numVisible: 2, numScroll: 1 },
+    { breakpoint: "1199px", numVisible: 3, numScroll: 1 },
+    { breakpoint: "767px", numVisible: 2, numScroll: 1 },
+    { breakpoint: "575px", numVisible: 1, numScroll: 1 },
+  ];
+
   const itemTemplate = (item) => {
-    return <img src={item.src} alt={item.alt} className="m-auto" />;
+    return (
+      <div className="flex justify-center items-center h-40">
+        <img
+          src={item.src}
+          alt={item.alt}
+          className="max-h-full object-contain"
+        />
+      </div>
+    );
   };
 
   return (
     <SectionArea>
-      <div className="flex flex-col gap-6">
-        <SectionHeaderNovo
-          title="Reconhecimentos"
-          subtitle="O Miguel Neto Advogados é destaque nas principais publicações do mercado jurídico."
-          type="article"
-          className="max-w-[300px]"
-        />
-        <div className="w-[90%] mx-auto">
-          <Carousel
-            value={logos}
-            numVisible={1} // só 1 por vez para os bullets aparecerem
-            numScroll={1}
-            circular
-            autoplayInterval={3000}
-            itemTemplate={itemTemplate}
-            showIndicators // bullets visíveis
-            showNavigators={false} // opcional, remove setas se quiser foco nos bullets
+      <SectionWrapper>
+        <div className="flex flex-col tablet2:flex-row items-center gap-6">
+          <SectionHeaderNovo
+            title="Reconhecimentos"
+            subtitle="O Miguel Neto Advogados é destaque nas principais publicações do mercado jurídico."
+            type="article"
+            className="max-w-[300px]"
           />
+          <div className="w-[90%] mx-auto">
+            <Carousel
+              value={logos}
+              numVisible={3}
+              numScroll={3}
+              responsiveOptions={responsiveOptions}
+              circular
+              autoplayInterval={false}
+              itemTemplate={itemTemplate}
+            />
+          </div>{" "}
         </div>
-      </div>
+      </SectionWrapper>
     </SectionArea>
   );
 }
