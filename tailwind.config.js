@@ -90,7 +90,8 @@ export default {
         "custom-opacityButton": "-5px 5px 0px", // 30% de opacidade no Botão
       },
       fontFamily: {
-        mainFont: ["Playfair Display", "serif"],
+        // mainFont: ["Playfair Display", "serif"],
+        mainFont: ["Roboto", "serif"],
         Playfair: ["Playfair", "serif"],
         // mainFont: ["Poppins", "sans-serif"],
         secondFont: ["Inter", "sans-serif"],
