@@ -135,30 +135,35 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>Atuação Exclusiva na Defesa do Trabalhador</>,
-      FirstPart: <span>Advogado</span>,
+      miniTag: <>SITES PARA ADVOGADOS E ESCRITÓRIOS</>,
+      FirstPart: <span>Desenvolvemos </span>,
       Destaque: (
-        <span className="destaque relative italic font-light">Trabalhista</span>
+        <span className="destaque relative italic font-light">sites</span>
       ),
-      SecondPart: <span></span>,
+      SecondPart: <span> à altura da sua reputação e do seu escritório</span>,
       subtitle: (
         <p>
-          Foi demitido? Não recebeu seus direitos? Receba orientação clara e
-          segura agora.
+          Há anos desenvolvemos sites que elevam a imagem de{" "}
+          <strong>advogados e escritório</strong>s consolidados.
         </p>
       ),
-      heroDefaultImage: heroDefaultImg, // img da pessoa mobile
+      heroDefaultImage: heroDefaultImg,
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Falar com Advogado agora</>,
+      ctaButtonText: <>Solicitar Orçamento Gratuito</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <> ⚠️</>,
         iconTwo: <></>,
-        text: <>Atendimento rápido, direto e confidencial.</>,
+        text: (
+          <>
+            Especialistas em páginas focadas em transmitir autoridade, estrutura
+            e credibilidade jurídica.
+          </>
+        ),
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -245,29 +250,27 @@ const content = {
     },
     features: {
       miniTag: <>DESENVOLVIMENTO DE SITES PARA ADVOGADOS</>,
-      FirstPart: <span>Seu escritório precisa </span>,
-      Destaque: (
-        <span className="italic font-light">parecer do tamanho que é</span>
-      ),
+      FirstPart: <span>Nem você nem seu escritório pode parecer</span>,
+      Destaque: <span className="italic font-light">menor do que é</span>,
       SecondPart: <span></span>,
       subtitle: (
         <>
-          A primeira impressão acontece em segundos. Seu site deve refletir sua
-          experiência e credibilidade profissional.
+          Quando alguém acessa seu site, forma uma impressão em segundos. Ela
+          precisa estar à altura da sua trajetória.
         </>
       ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>foco na advocacia</>,
+      titleMessageFeature: <>Esse cenário precisa mudar!</>,
+      subtitleMessageFeature: <></>,
 
       cards: {
         card1: {
-          title: <>Site institucional profissional</>,
+          title: <>Site institucional elegante</>,
           subtitle: (
             <>
-              Projeto visual pensado para transmitir organização, seriedade e
-              confiança.
+              Estrutura pensada para apresentar seu escritório com organização,
+              clareza e sobriedade.
             </>
           ),
           description: (
@@ -284,11 +287,11 @@ const content = {
         },
 
         card2: {
-          title: <>Presença forte no Google</>,
+          title: <>Apresentação profissional no Google</>,
           subtitle: (
             <>
-              Quando pesquisam seu nome, encontram uma imagem profissional e
-              confiável.
+              Quando pesquisam seu nome, encontram um site que transmite
+              estrutura e credibilidade.
             </>
           ),
           description: (
@@ -305,11 +308,11 @@ const content = {
         },
 
         card3: {
-          title: <>Autoridade antes do contato</>,
+          title: <>Autoridade antes da reunião</>,
           subtitle: (
             <>
-              Seu site demonstra experiência e áreas de atuação antes da
-              primeira reunião.
+              O site reforça sua trajetória e áreas de atuação antes do primeiro
+              contato.
             </>
           ),
           description: (
@@ -326,11 +329,11 @@ const content = {
         },
 
         card4: {
-          title: <>Informações bem estruturadas</>,
+          title: <>Organização clara das informações</>,
           subtitle: (
             <>
-              Serviços, equipe e posicionamento organizados de forma clara e
-              institucional.
+              Áreas de atuação, equipe e posicionamento apresentados de forma
+              objetiva e institucional.
             </>
           ),
           description: (
@@ -347,11 +350,11 @@ const content = {
         },
 
         card5: {
-          title: <>Comunicação jurídica adequada</>,
+          title: <>Comunicação adequada ao meio jurídico</>,
           subtitle: (
             <>
-              Texto alinhado ao padrão da advocacia, com clareza e
-              profissionalismo.
+              Linguagem clara, respeitosa e alinhada ao padrão esperado na
+              advocacia.
             </>
           ),
           description: (
@@ -368,11 +371,11 @@ const content = {
         },
 
         card6: {
-          title: <>Estrutura pensada para advogados</>,
+          title: <>Modelo validado para advogados</>,
           subtitle: (
             <>
-              Modelo criado exclusivamente para escritórios jurídicos, sem
-              soluções genéricas.
+              Estrutura desenvolvida exclusivamente para o meio jurídico, sem
+              improvisos ou excessos.
             </>
           ),
           description: (
@@ -389,7 +392,7 @@ const content = {
         },
       },
 
-      ctaButtonText: <>Quero meu site profissional</>,
+      ctaButtonText: <>Quero meu site agora</>,
     },
     cardsSection: {
       miniTag: <>SE NADA MUDAR, O CENÁRIO É ESTE</>,
@@ -402,7 +405,12 @@ const content = {
       ),
       cards: {
         card1: {
-          title: <>Seu site parece antigo</>,
+          title: (
+            <>
+              Seu escritório cresce, mas o site continua com a mesma aparência
+              de anos atrás
+            </>
+          ),
           icon: (
             <>
               <FileText />
@@ -411,7 +419,12 @@ const content = {
           link: "",
         },
         card2: {
-          title: <>Apresentação simples demais</>,
+          title: (
+            <>
+              Clientes pesquisam seu nome e encontram uma apresentação simples
+              demais
+            </>
+          ),
           icon: (
             <>
               <Hourglass />
@@ -420,7 +433,12 @@ const content = {
           link: "",
         },
         card3: {
-          title: <>Concorrentes parecem maiores</>,
+          title: (
+            <>
+              Concorrentes com menos tempo de mercado parecem mais estruturados
+              online
+            </>
+          ),
           icon: (
             <>
               <Brain />
@@ -429,7 +447,12 @@ const content = {
           link: "",
         },
         card4: {
-          title: <>Imagem abaixo do nível real</>,
+          title: (
+            <>
+              A sensação de que sua imagem não representa o nível que você já
+              alcançou
+            </>
+          ),
           icon: (
             <>
               <BriefcaseBusiness />
@@ -437,7 +460,12 @@ const content = {
           ),
         },
         card5: {
-          title: <>Autoridade digital em dúvida</>,
+          title: (
+            <>
+              Dúvida constante se o site está reforçando ou diminuindo sua
+              autoridade
+            </>
+          ),
           icon: (
             <>
               <Scale />
@@ -537,84 +565,123 @@ const content = {
       // },
     },
     ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>PRÓXIMO PASSO</>,
+      title: (
+        <h1>Descubra se um site é o caminho certo para o seu escritório</h1>
+      ),
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Antes de qualquer proposta, realizamos uma conversa estratégica para
+            entender sua área de atuação, seus objetivos e avaliar se existe um
+            caminho ético e seguro de captação de clientes online.
+          </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>A_Definir</>,
-          topic2: <>A_Definir</>,
-          topic3: <>A_Definir</>,
-          topic4: <>A_Definir</>,
+          topic1: (
+            <>
+              Entender como seu site pode representar melhor sua trajetória e
+              áreas de atuação
+            </>
+          ),
+          topic2: (
+            <>
+              Avaliar como sua apresentação atual está sendo percebida por quem
+              pesquisa seu nome
+            </>
+          ),
+          topic3: (
+            <>
+              Ter clareza sobre o que pode e o que não pode ser feito dentro das
+              normas da OAB
+            </>
+          ),
+          topic4: (
+            <>
+              Garantir que o site esteja alinhado ao nível profissional que você
+              já alcançou
+            </>
+          ),
+          topic5: (
+            <>
+              Escolher uma estrutura que transmita solidez hoje e continue
+              adequada nos próximos anos
+            </>
+          ),
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Conversar com um especialista já</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>COMO ATUAMOS NO SEU CASO TRABALHISTA</>,
-      FirstPart: <span>Atuação </span>,
-      Destaque: <span className="italic font-light">estratégica </span>,
-      SecondPart: <span>para garantir seus direitos trabalhistas</span>,
+      miniTag: <>O CAMINHO MAIS SEGURO PARA APRESENTAR SUA HISTÓRIA</>,
+      FirstPart: (
+        <span>Um site institucional para advogados que valorizam </span>
+      ),
+      Destaque: <span className="italic font-light">reputação</span>,
+      SecondPart: <span></span>,
 
-      subtitle: <>Da análise ao resultado: clareza, estratégia e segurança.</>,
+      subtitle: (
+        <>
+          Estruturamos sites elegantes e organizados para apresentar o advogado
+          ou o escritório com clareza, sobriedade e autoridade, sempre alinhados
+          às normas da OAB.
+        </>
+      ),
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Análise detalhada do seu contrato</>,
+          cardTitle: <>Análise do seu posicionamento profissional</>,
           cardDescription: (
             <>
-              Avaliamos sua rescisão, jornada, verbas pagas e documentos para
-              identificar irregularidades, valores não recebidos e possíveis
-              direitos que podem ser reivindicados.
+              Entendemos sua trajetória, áreas de atuação e perfil de
+              atendimento para aplicar o modelo de forma coerente com o nível
+              que você já construiu.
             </>
           ),
         },
 
         card2: {
           stepNumber: 2,
-          cardTitle: <>Cálculo dos valores devidos</>,
+          cardTitle: <>Estrutura institucional validada</>,
           cardDescription: (
             <>
-              Realizamos a apuração técnica de horas extras, FGTS, multas e
-              demais verbas, para que você saiba exatamente quanto pode ter a
-              receber.
+              Aplicamos um modelo desenvolvido exclusivamente para advogados,
+              com organização clara e linguagem adequada ao meio jurídico,
+              independentemente do tamanho da atuação.
             </>
           ),
         },
 
         card3: {
           stepNumber: 3,
-          cardTitle: <>Definição da melhor estratégia</>,
+          cardTitle: <>Apresentação que reforça autoridade</>,
           cardDescription: (
             <>
-              Orientamos sobre a melhor forma de atuação, seja por negociação ou
-              ação judicial, sempre buscando o caminho mais seguro e eficiente
-              para o seu caso.
+              O site organiza suas informações e transmite estrutura desde o
+              primeiro acesso, fortalecendo a percepção de profissionalismo.
             </>
           ),
         },
 
         card4: {
           stepNumber: 4,
-          cardTitle: <>Acompanhamento transparente</>,
+          cardTitle: <>Base sólida e duradoura</>,
           cardDescription: (
             <>
-              Você acompanha cada etapa com explicações claras, prazos definidos
-              e suporte direto, sabendo exatamente o andamento do seu processo.
+              Você recebe um site institucional preparado para representar sua
+              atuação hoje e continuar adequado ao longo dos anos.
             </>
           ),
         },
       },
 
-      ctaButtonText: <>Quero saber se tenho valores a receber</>,
+      ctaButtonText: <>Quero estruturar meu site agora</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
