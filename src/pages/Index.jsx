@@ -65,12 +65,12 @@ export default function Index() {
         {/* <Footer /> */}
 
         {/* Render imediato */}
-        {/* <NavbarNovaTemplate colorMode={colorMode} /> */}
+        <NavbarNovaTemplate colorMode={colorMode} />
 
         <main>
-          {/* <AlternatingSection index={0} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={0} colorMode={colorMode} forcePrimaryDark>
             <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
-          </AlternatingSection> */}
+          </AlternatingSection>
           {/* <AlternatingSection index={1} colorMode={colorMode} forcePrimaryDark>
             <FormNovoTemplate />
           </AlternatingSection> */}
@@ -79,11 +79,11 @@ export default function Index() {
             <Emergency colorMode={colorMode} />
           </AlternatingSection> */}
 
-          {/* <AlternatingSection index={1} colorMode={colorMode}>
+          <AlternatingSection index={1} colorMode={colorMode}>
             <Important colorMode={colorMode} />
-          </AlternatingSection> */}
+          </AlternatingSection>
 
-          {/* <AlternatingSection index={2} colorMode={colorMode}>
+          <AlternatingSection index={2} colorMode={colorMode}>
             <Suspense>
               <FeaturesNovaTemplate
                 colorMode={colorMode}
@@ -92,7 +92,13 @@ export default function Index() {
                 modal={false}
               />
             </Suspense>
-          </AlternatingSection> */}
+          </AlternatingSection>
+
+          <AlternatingSection index={3} colorMode={colorMode}>
+            <Suspense>
+              <Cards colorMode={colorMode} />
+            </Suspense>
+          </AlternatingSection>
 
           {/* <AlternatingSection index={5} colorMode={colorMode}>
             <Speed colorMode={colorMode} />
@@ -119,21 +125,32 @@ export default function Index() {
             <Suspense>
               <CtaNovoTemplate colorMode={colorMode} container={true} />
             </Suspense>
-          </AlternatingSection>
+          </AlternatingSection> */}
 
-          <AlternatingSection index={5} colorMode={colorMode}>
+          <AlternatingSection index={4} colorMode={colorMode}>
             <Suspense>
               <StepsNovoTemplate colorMode={colorMode} />
             </Suspense>
-          </AlternatingSection> */}
+          </AlternatingSection>
+          <AlternatingSection index={5} colorMode={colorMode}>
+            <Suspense>
+              <Authority colorMode={colorMode} />
+            </Suspense>
+          </AlternatingSection>
+          <AlternatingSection index={6} colorMode={colorMode} forcePrimaryDark>
+            <Suspense>
+              <CtaNovoTemplate colorMode={colorMode} container={true} />
+            </Suspense>
+          </AlternatingSection>
+          <AlternatingSection index={7} colorMode={colorMode}>
+            <Suspense>
+              <FaqNovoTemplate colorMode={colorMode} />
+            </Suspense>
+          </AlternatingSection>
+
           {/* <AlternatingSection index={10} colorMode={colorMode}>
             <Suspense>
               <BlogPosts colorMode={colorMode} />
-            </Suspense>
-          </AlternatingSection> */}
-          {/* <AlternatingSection index={11} colorMode={colorMode}>
-            <Suspense>
-              <Authority colorMode={colorMode} />
             </Suspense>
           </AlternatingSection> */}
 
@@ -143,19 +160,7 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          {/* <AlternatingSection index={5} colorMode={colorMode}>
-            <Suspense>
-              <Cards colorMode={colorMode} />
-            </Suspense>
-          </AlternatingSection> */}
-
-          {/* <AlternatingSection index={6} colorMode={colorMode}>
-            <Suspense>
-              <FaqNovoTemplate colorMode={colorMode} />
-            </Suspense>
-          </AlternatingSection>
-
-          <AlternatingSection index={7} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={8} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <FooterNovoTemplate
                 colorMode={colorMode}
@@ -170,7 +175,7 @@ export default function Index() {
                 obs={false}
               />
             </Suspense>
-          </AlternatingSection> */}
+          </AlternatingSection>
 
           {/* <Suspense fallback={null}>
             <WhatsappAnimated colorMode={colorMode} />

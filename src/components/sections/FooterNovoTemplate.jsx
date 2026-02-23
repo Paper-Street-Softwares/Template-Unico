@@ -91,7 +91,7 @@ function FooterNovoTemplate({
                   <img
                     src={content.texts.navbar.logo.imgDesktop}
                     alt={content.texts.navbar.logo.alt}
-                    className="w-[50%]"
+                    className="w-[50%] invert"
                     width={350}
                     height={311}
                     fetchPriority="high"

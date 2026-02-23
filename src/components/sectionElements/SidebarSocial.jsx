@@ -42,7 +42,7 @@ export default function SidebarSocial({ colorMode, mode = "blog" }) {
   const icons = [
     <HomeIcon />,
     <UserSearch />,
-    <ServerIcon />,
+    // <ServerIcon />,
     // <FileText />,
     <HelpCircle />,
     <MapPin />,
@@ -108,7 +108,7 @@ export default function SidebarSocial({ colorMode, mode = "blog" }) {
                     <img
                       src={content.texts.navbar.solidLogo.img}
                       alt={content.texts.navbar.solidLogo.alt}
-                      className="w-[90%] h-auto"
+                      className="w-[90%] h-auto invert"
                     />
                   </span>
                   <span>

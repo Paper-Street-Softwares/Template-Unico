@@ -101,15 +101,15 @@ function Cards({ colorMode }) {
                 ))}
               </div>
 
-              {/* <MotionDivDownToUp>
+              <MotionDivDownToUp>
                 <div
                   className={`${textOpacity} font-secondFont text-center leading-5 mt-4`}
                 >
                   {content.texts.cardsSection.fraseText}
                 </div>
-              </MotionDivDownToUp> */}
+              </MotionDivDownToUp>
 
-              {/* <MotionDivDownToUp>
+              <MotionDivDownToUp>
                 <ButtonReflexo
                   icon={
                     <svg
@@ -127,7 +127,7 @@ function Cards({ colorMode }) {
                   colorMode={colorMode}
                   className={`clickevent`}
                 />
-              </MotionDivDownToUp> */}
+              </MotionDivDownToUp>
             </div>
           </div>
         </section>
