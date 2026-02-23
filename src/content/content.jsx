@@ -6,14 +6,10 @@ import heroDefaultMobileImg from "../assets/imgs/hero/lawHeroMobile.webp";
 import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
-// import team1 from '../assets/imgs/team/team1.webp'
-// import team2 from '../assets/imgs/team/team2.webp'
+
 // import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
-// import logo1 from '../assets/imgs/parceria/Logo1.webp'
-// import logo2 from '../assets/imgs/parceria/Logo2.webp'
-// import logo3 from '../assets/imgs/parceria/Logo3.webp'
 
 import {
   Baby,
@@ -36,9 +32,6 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
-  CircleDollarSign,
-  UserX,
-  HardHat,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -46,14 +39,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Dr. Gleiton Senna",
+  name: "A_Definir",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "trabalhista-drgleiton.advespecialista.adv.br", // Sem "www"
+  domain: "A_Definir", // Sem "www"
   phone: {
-    ddd: "71",
-    firstPart: "99656", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "7441", // Apenas os 4 últimos números
+    ddd: "11",
+    firstPart: "5502", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "1200", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -69,9 +62,9 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
+      <p>Rua Fidêncio Ramos, 308</p>
+      <p>2º Andar - Torre A - Vila Olímpia</p>
+      <p>CEP 04551-010 - São Paulo - SP</p>
     </div>
   ),
   enderecoSecundario: (
@@ -89,16 +82,16 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "", // Sem o @
+  instagramProfile: "miguel_neto_advogados", // Sem o @
   instagramProfileSecundario: "",
   facebookProfile: "",
-  linkeDinProfile: "",
+  linkeDinProfile: "miguel-neto-advogados-associados",
   x: "",
   tiktokProfile: "",
   youtubeProfile: "",
 
   whatsappDefaultMessage:
-    "Olá! Vim do Google e preciso de um Advogado Trabalhista. Pode me ajudar?",
+    "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
   whatsChatDefaultMessage:
     "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
   slogan: "",
@@ -130,30 +123,25 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>Atuação Exclusiva na Defesa do Trabalhador</>,
-      FirstPart: <span>Advogado</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">Trabalhista</span>
+        <span className="destaque relative italic font-light">A_Definir</span>
       ),
       SecondPart: <span></span>,
-      subtitle: (
-        <p>
-          Foi demitido? Não recebeu seus direitos? Receba orientação clara e
-          segura agora.
-        </p>
-      ),
+      subtitle: <p>A_Definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Falar com Advogado agora</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
-        icon: <> ⚠️</>,
+        icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: <>Atendimento rápido, direto e confidencial.</>,
+        text: <>A_Definir</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -169,95 +157,43 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     important: {
-      miniTag: <>ATENÇÃO</>,
-      title: <>O que é importante saber sobre Direito Trabalhista</>,
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
       cards: {
         card1: {
-          title: (
-            <>
-              Doutor, fui demitido. Tenho certeza que a empresa pagou tudo certo
-              mesmo?
-            </>
-          ),
-          paragraph: (
-            <>
-              Nem sempre a empresa paga todas as verbas corretamente. É comum
-              haver erro no cálculo de férias, 13º, horas extras e multa do
-              FGTS. Uma análise técnica do seu contrato pode identificar valores
-              que você ainda tem direito a receber.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card2: {
-          title: (
-            <>
-              Trabalhei fazendo hora extra, mas nunca recebi. Ainda posso
-              cobrar?
-            </>
-          ),
-          paragraph: (
-            <>
-              Sim. O trabalhador pode cobrar horas extras não pagas dentro do
-              prazo legal. Mesmo que a empresa não registrasse corretamente, é
-              possível comprovar por mensagens, testemunhas ou registros de
-              ponto.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card3: {
-          title: (
-            <>
-              Meu chefe me obrigava a fazer funções que não eram do meu cargo.
-              Isso é certo?
-            </>
-          ),
-          paragraph: (
-            <>
-              Quando o trabalhador exerce função diferente da contratada, pode
-              existir direito à diferença salarial ou indenização. Cada caso
-              precisa ser analisado com base no contrato e nas atividades
-              exercidas.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card4: {
-          title: (
-            <>
-              Estou sofrendo pressão e humilhação no trabalho. O que eu posso
-              fazer?
-            </>
-          ),
-          paragraph: (
-            <>
-              Situações de constrangimento, ameaças ou exposição podem
-              caracterizar assédio moral. O trabalhador tem direito à proteção e
-              pode buscar indenização. É importante reunir provas e agir da
-              forma correta.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
       },
-      fraseObs: (
-        <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
-      ),
-      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
+      fraseObs: <>A_Definir</>,
+      ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>Áreas de Atuação</>,
-      FirstPart: <span>Excelência em </span>,
-      Destaque: <span className="italic font-light">Direito do Trabalho</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
+      Destaque: <span className="italic font-light">A_Definir</span>,
       SecondPart: <span></span>,
-      subtitle: (
-        <>Assessoria estratégica para proteger seus direitos com segurança.</>
-      ),
+      subtitle: <>A_Definir</>,
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>ética trabalhista</>,
+      titleMessageFeature: <>A_Definir</>,
+      subtitleMessageFeature: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>Rescisão trabalhista</>,
-          subtitle: <>Cálculo correto das verbas e valores atrasados.</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -266,14 +202,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <FileText />,
+          icon: <Briefcase />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>Horas extras</>,
-          subtitle: <>Cobrança de horas não pagas e adicionais.</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -282,14 +218,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <CircleDollarSign />,
+          icon: <User />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card3: {
-          title: <>Assédio moral</>,
-          subtitle: <>Proteção contra abusos e indenização justa.</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -298,36 +234,20 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <UserX />,
+          icon: <Scale />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card4: {
-          title: <>Desvio de função</>,
-          subtitle: <>Reconhecimento e diferença salarial devida.</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
               <br />
               A_Definir
               <br />
-            </div>
-          ),
-          icon: <HardHat />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card5: {
-          title: <>FGTS e 13º</>,
-          subtitle: <>Valores não depositados podem ser cobrados.</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
             </div>
           ),
           icon: <Gavel />,
@@ -335,9 +255,9 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
 
-        card6: {
-          title: <>Acidente de trabalho</>,
-          subtitle: <>Garantia de direitos e possível indenização.</>,
+        card5: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -346,13 +266,60 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <BriefcaseMedical />,
+          icon: <Users />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card6: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <MessageSquare />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card7: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Shield />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card8: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Briefcase />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
       },
-
-      ctaButtonText: <>Conversar com nosso escritório</>,
+      ctaButtonText: <>A_Definir</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -404,30 +371,12 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É O DR. GLEITON SENNA</>,
-      FirstPart: <span> Referência em Direito</span>,
-      Destaque: <span className="italic font-light"> Trabalhista</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir </span>,
+      Destaque: <span className="italic font-light"> A_Definir</span>,
       SecondPart: <span></span>,
-      subtitle: (
-        <>
-          Atuação técnica e estratégica na defesa dos direitos do trabalhador.
-        </>
-      ),
-      paragraph: (
-        <div>
-          Com atuação sólida em Direito do Trabalho, o Dr. Gleiton Senna é
-          reconhecido pela condução estratégica de casos envolvendo rescisões,
-          verbas não pagas, assédio e conflitos trabalhistas complexos. Sua
-          abordagem é técnica, criteriosa e focada na proteção integral dos
-          direitos do trabalhador.
-          <br />
-          <br />
-          Cada caso é analisado com profundidade e responsabilidade, oferecendo
-          ao cliente clareza, segurança e direcionamento preciso. O compromisso
-          é garantir que seus direitos sejam defendidos com excelência e
-          estratégia.
-        </div>
-      ),
+      subtitle: <></>,
+      paragraph: <div>A_Definir</div>,
       benefits: {
         cards: {
           card1: {
@@ -452,7 +401,7 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>Falar diretamente com o Advogado</>,
+      ctaButtonText: <>A_Definir</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
@@ -490,90 +439,57 @@ const content = {
       // },
     },
     ctaSection: {
-      miniTag: <>Fale conosco</>,
-      title: <h1>Fale agora com um Advogado Trabalhista</h1>,
+      miniTag: <>A_Definir</>,
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Se você tem dúvidas sobre seus direitos ou foi prejudicado no
-            trabalho, fale conosco agora.
-          </p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <> Análise estratégica do seu caso trabalhista</>,
-          topic2: <>Atendimento direto com o Advogado, sem intermediários</>,
-          topic3: <>Resposta rápida e acompanhamento pelo WhatsApp</>,
-          topic4: (
-            <>Avaliação imediata de verbas e possíveis valores a receber</>
-          ),
-          topic5: <>Orientação segura sem precisar sair de casa</>,
+          topic1: <>A_Definir</>,
+          topic2: <>A_Definir</>,
+          topic3: <>A_Definir</>,
+          topic4: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Quero saber se tenho direitos a receber</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>COMO ATUAMOS NO SEU CASO TRABALHISTA</>,
-      FirstPart: <span>Atuação </span>,
-      Destaque: <span className="italic font-light">estratégica </span>,
-      SecondPart: <span>para garantir seus direitos trabalhistas</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir</span>,
+      Destaque: <span className="italic font-light"> A_Definir </span>,
+      SecondPart: <span>A_Definir</span>,
 
-      subtitle: <>Da análise ao resultado: clareza, estratégia e segurança.</>,
+      subtitle: <></>,
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Análise detalhada do seu contrato</>,
-          cardDescription: (
-            <>
-              Avaliamos sua rescisão, jornada, verbas pagas e documentos para
-              identificar irregularidades, valores não recebidos e possíveis
-              direitos que podem ser reivindicados.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
-
         card2: {
           stepNumber: 2,
-          cardTitle: <>Cálculo dos valores devidos</>,
-          cardDescription: (
-            <>
-              Realizamos a apuração técnica de horas extras, FGTS, multas e
-              demais verbas, para que você saiba exatamente quanto pode ter a
-              receber.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
-
         card3: {
           stepNumber: 3,
-          cardTitle: <>Definição da melhor estratégia</>,
-          cardDescription: (
-            <>
-              Orientamos sobre a melhor forma de atuação, seja por negociação ou
-              ação judicial, sempre buscando o caminho mais seguro e eficiente
-              para o seu caso.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
-
         card4: {
           stepNumber: 4,
-          cardTitle: <>Acompanhamento transparente</>,
-          cardDescription: (
-            <>
-              Você acompanha cada etapa com explicações claras, prazos definidos
-              e suporte direto, sabendo exatamente o andamento do seu processo.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
       },
-
-      ctaButtonText: <>Quero saber se tenho valores a receber</>,
+      ctaButtonText: <>A_Definir</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -676,49 +592,25 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>TIRE SUAS DÚVIDAS</>,
-      title: <>Perguntas Frequentes</>,
-      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       questions: {
         question1: {
-          question: <>Como posso contratar seus serviços?</>,
-          answer: (
-            <>
-              Agende sua consulta conosco via WhatsApp e conversaremos sobre
-              suas necessidades e avaliaremos os custos.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
-
         question2: {
-          question: <>Qual é o prazo médio para resolução de um caso?</>,
-          answer: (
-            <>
-              O prazo médio varia conforme a complexidade, mas discutiremos uma
-              estimativa durante a consulta inicial.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
-
         question3: {
-          question: <>Quais documentos devo levar para a consulta?</>,
-          answer: (
-            <>
-              Traga os documentos relevantes ao seu caso, como contratos,
-              correspondências e registros, além de documentos pessoais e
-              comprovante de residência.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
-
         question4: {
-          question: <>Vocês oferecem serviços de consultoria preventiva?</>,
-          answer: (
-            <>
-              Sim, oferecemos consultoria preventiva para evitar problemas
-              futuros e garantir conformidade legal.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
       },
 
