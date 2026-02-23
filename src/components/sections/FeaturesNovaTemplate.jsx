@@ -9,8 +9,8 @@ import {
   ButtonsLps,
   defaultButtonThemes,
 } from "../../context/UseContextArchive";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import AccordionSummary from "@mui/material/AccordionSummary";
+// import AccordionDetails from "@mui/material/AccordionDetails";
+// import AccordionSummary from "@mui/material/AccordionSummary";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import SectionWrapper from "../sectionElements/SectionWrapper";
 import { ArrowRight, Phone } from "lucide-react";
@@ -194,7 +194,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion, modal }) {
 
                 {accordion ? (
                   <div className="w-full">
-                    <MotionDivDownToUp>
+                    {/* <MotionDivDownToUp>
                       <div>
                         {features.map((item, index) => (
                           <Accordion
@@ -249,7 +249,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion, modal }) {
                           </Accordion>
                         ))}
                       </div>
-                    </MotionDivDownToUp>
+                    </MotionDivDownToUp> */}
                   </div>
                 ) : (
                   <div className="grid tablet1:grid-cols-2 gap-6">
