@@ -100,7 +100,7 @@ function NavbarNovaTemplate({
               <img
                 src={content.texts.navbar.logo.img}
                 alt={content.texts.navbar.logo.alt}
-                className="desktop1:hidden w-fit max-h-full object-contain flex"
+                className="desktop1:hidden w-fit max-h-full object-contain flex invert"
                 width={195}
                 height={85}
                 fetchPriority="high"
@@ -108,7 +108,7 @@ function NavbarNovaTemplate({
               <img
                 src={content.texts.navbar.logo.imgDesktop}
                 alt={content.texts.navbar.logo.alt}
-                className="hidden desktop1:flex w-fit max-h-full object-contain"
+                className="hidden desktop1:flex w-fit max-h-full object-contain invert"
                 width={350}
                 height={152}
                 fetchPriority="high"
