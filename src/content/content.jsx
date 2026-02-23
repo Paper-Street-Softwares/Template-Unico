@@ -6,10 +6,14 @@ import heroDefaultMobileImg from "../assets/imgs/hero/lawHeroMobile.webp";
 import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
-
+// import team1 from '../assets/imgs/team/team1.webp'
+// import team2 from '../assets/imgs/team/team2.webp'
 // import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
+// import logo1 from '../assets/imgs/parceria/Logo1.webp'
+// import logo2 from '../assets/imgs/parceria/Logo2.webp'
+// import logo3 from '../assets/imgs/parceria/Logo3.webp'
 
 import {
   Baby,
@@ -44,9 +48,9 @@ export const infos = {
   emailSecundario: "A_Definir", // Email desejado pelo cliente
   domain: "A_Definir", // Sem "www"
   phone: {
-    ddd: "11",
-    firstPart: "5502", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "1200", // Apenas os 4 últimos números
+    ddd: "00",
+    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0000", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -62,9 +66,9 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>Rua Fidêncio Ramos, 308</p>
-      <p>2º Andar - Torre A - Vila Olímpia</p>
-      <p>CEP 04551-010 - São Paulo - SP</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -82,10 +86,10 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "miguel_neto_advogados", // Sem o @
+  instagramProfile: "", // Sem o @
   instagramProfileSecundario: "",
   facebookProfile: "",
-  linkeDinProfile: "miguel-neto-advogados-associados",
+  linkeDinProfile: "",
   x: "",
   tiktokProfile: "",
   youtubeProfile: "",
