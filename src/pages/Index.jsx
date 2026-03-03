@@ -95,7 +95,7 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          {/* <AlternatingSection index={3} colorMode={colorMode}>
+          <AlternatingSection index={4} colorMode={colorMode}>
             <Suspense>
               <AboutNovoTemplate
                 colorMode={colorMode}
@@ -104,7 +104,7 @@ export default function Index() {
               />
               <SocialMediaTemplate colorMode={colorMode} />
             </Suspense>
-          </AlternatingSection> */}
+          </AlternatingSection>
 
           {/* <AlternatingSection index={4} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
@@ -112,22 +112,22 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          <AlternatingSection index={4} colorMode={colorMode}>
+          <AlternatingSection index={5} colorMode={colorMode}>
             <Suspense>
               <StepsNovoTemplate colorMode={colorMode} />
             </Suspense>
           </AlternatingSection>
-          <AlternatingSection index={5} colorMode={colorMode}>
+          <AlternatingSection index={6} colorMode={colorMode}>
             <Suspense>
               <Authority colorMode={colorMode} />
             </Suspense>
           </AlternatingSection>
-          <AlternatingSection index={6} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={7} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <CtaNovoTemplate colorMode={colorMode} container={true} />
             </Suspense>
           </AlternatingSection>
-          <AlternatingSection index={7} colorMode={colorMode}>
+          <AlternatingSection index={8} colorMode={colorMode}>
             <Suspense>
               <FaqNovoTemplate colorMode={colorMode} />
             </Suspense>
@@ -145,7 +145,7 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          <AlternatingSection index={8} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={9} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <FooterNovoTemplate
                 colorMode={colorMode}
@@ -153,9 +153,9 @@ export default function Index() {
                 phone={true}
                 phoneSecond={false}
                 expediente={true}
-                adress={true}
+                adress={false}
                 email={false}
-                emailSecond={true}
+                emailSecond={false}
                 fraseFooter={true} // frase Google LLC
                 obs={false}
               />
