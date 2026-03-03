@@ -42,10 +42,10 @@ export default function SidebarSocial({ colorMode, mode = "blog" }) {
   const icons = [
     <HomeIcon />,
     <UserSearch />,
-    // <ServerIcon />,
+    <ServerIcon />,
     // <FileText />,
     <HelpCircle />,
-    <MapPin />,
+    // <MapPin />,
   ];
 
   let colorButton, bgSidebar, textColor, border;
