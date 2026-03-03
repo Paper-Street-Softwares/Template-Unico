@@ -159,7 +159,7 @@ export default function Index() {
                 phoneSecond={false}
                 expediente={true}
                 adress={false}
-                email={false}
+                email={true}
                 emailSecond={false}
                 fraseFooter={true} // frase Google LLC
                 obs={false}
