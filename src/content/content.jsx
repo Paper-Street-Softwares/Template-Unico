@@ -8,7 +8,7 @@ import imgFeatures from "../assets/imgs/features/imgServices.webp";
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-// import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
+import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 // import logo1 from '../assets/imgs/parceria/Logo1.webp'
@@ -36,14 +36,10 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
-  CircleDollarSign,
-  ChartColumn,
-  Building2,
-  SearchCheck,
-  BadgeCheck,
-  LayoutGrid,
-  Hourglass,
-  Brain,
+  BookOpen,
+  PenTool,
+  Target,
+  UserCheck,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -51,14 +47,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Paper Street",
+  name: "Professora Bruna Cardoso",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "sites.paperstreet.com.br", // Sem "www"
+  domain: "profbrunacamargo.com.br", // Sem "www"
   phone: {
-    ddd: "11",
-    firstPart: "98821", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "7850", // Apenas os 4 últimos números
+    ddd: "66",
+    firstPart: "99209", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "2582", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -90,20 +86,20 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>8h às 18h</p>
+      <p>8h às 22h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "", // Sem o @
+  instagramProfile: "profbrunacamargo", // Sem o @
   instagramProfileSecundario: "",
   facebookProfile: "",
   linkeDinProfile: "",
   x: "",
   tiktokProfile: "",
-  youtubeProfile: "",
+  youtubeProfile: "profbrunacamargo",
 
   whatsappDefaultMessage:
-    "Olá! Vim do Google e preciso de um site para advocacia. Pode me ajudar?",
+    "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
   whatsChatDefaultMessage:
     "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
   slogan: "",
@@ -121,8 +117,8 @@ const content = {
         img: logo,
         alt: `Logomarca ${infos.name}`,
       },
-      menuItems: ["Início", "Serviços", "Perguntas Frequentes"],
-      menuId: ["home", "feature", "faq"],
+      menuItems: ["Início", "Serviços", "Sobre", "Perguntas Frequentes"],
+      menuId: ["home", "feature", "about", "faq"],
       ariaLabel: "Botão de Contato",
       ctaButtonText: "Contato",
       ctaButtonTextResponsive: "Contato",
@@ -135,38 +131,40 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>SITES PARA ADVOGADOS E ESCRITÓRIOS</>,
-      FirstPart: <span>Desenvolvemos </span>,
+      miniTag: <>PREPARAÇÃO PARA CONCURSOS</>,
+      FirstPart: <span>Sua aprovação começa com</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">sites</span>
+        <span className="destaque relative italic font-light">método</span>
       ),
-      SecondPart: <span> à altura da sua reputação e do seu escritório</span>,
+      SecondPart: <span></span>,
       subtitle: (
         <p>
-          Há anos desenvolvemos sites que elevam a imagem de{" "}
-          <strong>advogados e escritório</strong>s consolidados.
+          Direcionamento claro para OAB e concursos jurídicos, sem estudo
+          perdido e sem achismos.
         </p>
       ),
-      heroDefaultImage: heroDefaultImg,
+      heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Solicitar Orçamento Gratuito</>,
-      ctaButtonTextSecondary: <>A_Definir</>,
+      ctaButtonText: <>Quero começar minha preparação</>,
+      ctaButtonTextSecondary: <>Quero começar minha preparação</>,
       obsHero: {
-        icon: <> ⚠️</>,
+        icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
         text: (
-          <>
-            Especialistas em páginas focadas em transmitir autoridade, estrutura
-            e credibilidade jurídica.
-          </>
+          <>Método validado por quem conquistou 1º lugar em concurso público.</>
         ),
-        textTwo: <>A_Definir</>,
+        textTwo: <> </>,
       },
       secondaryCta: "Contato",
+    },
+    authorityAlert: {
+      miniTag: <>EXPERIÊNCIA COMPROVADA</>,
+      title: <>Quem ensina, já foi aprovada</>,
+      subtitle: <>Resultados reais em concursos e na OAB.</>,
     },
     emergency: {
       miniTag: <>A_Definir</>,
@@ -179,312 +177,152 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     important: {
-      miniTag: <>ATENÇÃO</>,
-      title: <>O que é importante saber sobre um site</>,
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
       cards: {
         card1: {
-          title: (
-            <>
-              Qual a diferença entre um site comum e um site institucional de
-              alto nível?
-            </>
-          ),
-          paragraph: (
-            <>
-              Um site comum apenas reúne informações. Já um site institucional
-              de alto nível é organizado para transmitir estrutura, clareza e
-              autoridade desde o primeiro acesso. Ele não parece improvisado nem
-              excessivamente comercial. Cada detalhe é pensado para reforçar a
-              imagem de um escritório sólido e bem posicionado.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card2: {
-          title: <>Como garantir que o site transmita seriedade e elegância?</>,
-          paragraph: (
-            <>
-              Seriedade está na forma como as informações são organizadas e
-              apresentadas, independentemente do tamanho da sua atuação. Quando
-              há clareza, equilíbrio visual e uma estrutura bem definida, a
-              imagem transmitida é naturalmente profissional. Elegância não
-              depende de exageros, mas de consistência e cuidado em cada
-              detalhe. O site precisa representar com fidelidade o nível do
-              profissional ou do escritório que está por trás dele.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card3: {
-          title: (
-            <>
-              Como saber se o projeto realmente ficará à altura do meu
-              escritório?
-            </>
-          ),
-          paragraph: (
-            <>
-              Os sites que desenvolvemos são justamente para escritórios
-              consolidados, que já possuem reputação construída. Eles seguem um
-              padrão institucional que valoriza trajetória, áreas de atuação e
-              equipe de forma organizada. O objetivo é representar o nível que o
-              escritório já alcançou, sem exageros e sem reduzir sua percepção
-              de valor.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card4: {
-          title: <>Esse site atende às exigências da OAB?</>,
-          paragraph: (
-            <>
-              Sim. O formato é institucional e informativo, alinhado ao que se
-              espera da comunicação jurídica. Não utilizamos linguagem apelativa
-              nem promessas comerciais. A proposta é apresentar o escritório com
-              sobriedade e respeito às normas da advocacia.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
       },
-      fraseObs: (
-        <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
-      ),
-      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
+      fraseObs: <>A_Definir</>,
+      ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>DESENVOLVIMENTO DE SITES PARA ADVOGADOS</>,
-      FirstPart: <span>Nem você nem seu escritório pode parecer</span>,
-      Destaque: <span className="italic font-light">menor do que é</span>,
+      miniTag: <>ÁREAS DE ATUAÇÃO</>,
+      FirstPart: <span>Preparação que leva à</span>,
+      Destaque: <span className="italic font-light">aprovação</span>,
       SecondPart: <span></span>,
-      subtitle: (
-        <>
-          Quando alguém acessa seu site, forma uma impressão em segundos. Ela
-          precisa estar à altura da sua trajetória.
-        </>
-      ),
+      subtitle: <>Método estratégico para OAB e concursos públicos.</>,
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>Esse cenário precisa mudar!</>,
-      subtitleMessageFeature: <></>,
-
+      titleMessageFeature: <>100%</>,
+      subtitleMessageFeature: <>foco em aprovação</>,
       cards: {
         card1: {
-          title: <>Site institucional elegante</>,
-          subtitle: (
-            <>
-              Estrutura pensada para apresentar seu escritório com organização,
-              clareza e sobriedade.
-            </>
-          ),
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Building2 />,
+          title: <>OAB 1ª Fase</>,
+          subtitle: <>Revisão estratégica para garantir sua aprovação.</>,
+          description: <div></div>,
+          icon: <BookOpen />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>Apresentação profissional no Google</>,
-          subtitle: (
-            <>
-              Quando pesquisam seu nome, encontram um site que transmite
-              estrutura e credibilidade.
-            </>
-          ),
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <SearchCheck />,
+          title: <>OAB 2ª Fase</>,
+          subtitle: <>Treino prático para acertar peças e questões.</>,
+          description: <div></div>,
+          icon: <PenTool />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card3: {
-          title: <>Autoridade antes da reunião</>,
-          subtitle: (
-            <>
-              O site reforça sua trajetória e áreas de atuação antes do primeiro
-              contato.
-            </>
-          ),
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <BadgeCheck />,
+          title: <>Concursos Jurídicos</>,
+          subtitle: <>Preparação direcionada para cargos na área jurídica.</>,
+          description: <div></div>,
+          icon: <Scale />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card4: {
-          title: <>Organização clara das informações</>,
-          subtitle: (
-            <>
-              Áreas de atuação, equipe e posicionamento apresentados de forma
-              objetiva e institucional.
-            </>
-          ),
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <LayoutGrid />,
+          title: <>Técnicas de Estudo</>,
+          subtitle: <>Aprenda como estudar com foco em resultado.</>,
+          description: <div></div>,
+          icon: <Target />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card5: {
-          title: <>Comunicação adequada ao meio jurídico</>,
-          subtitle: (
-            <>
-              Linguagem clara, respeitosa e alinhada ao padrão esperado na
-              advocacia.
-            </>
-          ),
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <MessageSquare />,
+          title: <>Revisões Intensivas</>,
+          subtitle: <>Reta final estratégica para aumentar sua nota.</>,
+          description: <div></div>,
+          icon: <Clock />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card6: {
-          title: <>Modelo validado para advogados</>,
-          subtitle: (
-            <>
-              Estrutura desenvolvida exclusivamente para o meio jurídico, sem
-              improvisos ou excessos.
-            </>
-          ),
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Scale />,
+          title: <>Mentoria Individual</>,
+          subtitle: <>Comece hoje sua preparação para passar.</>,
+          description: <div></div>,
+          icon: <UserCheck />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card7: {
+          title: <>Preparação Estratégica</>,
+          subtitle: <>Foco em aprovação</>,
+          description: <div></div>,
+          icon: <Shield />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card8: {
+          title: <>Preparação Completa</>,
+          subtitle: <>Resultados reais</>,
+          description: <div></div>,
+          icon: <Briefcase />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
       },
-
-      ctaButtonText: <>Quero meu site agora</>,
+      ctaButtonText: <>Quero garantir minha aprovação</>,
     },
     cardsSection: {
-      miniTag: <>SE NADA MUDAR, O CENÁRIO É ESTE</>,
-      title: <>Um site antigo compromete uma reputação atual</>,
-      subtitle: (
-        <>
-          Quando a apresentação não acompanha a evolução do escritório ou do
-          profissional, a percepção pode ficar para trás.
-        </>
-      ),
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       cards: {
         card1: {
-          title: (
-            <>
-              Seu escritório cresce, mas o site continua com a mesma aparência
-              de anos atrás
-            </>
-          ),
-          icon: (
-            <>
-              <FileText />
-            </>
-          ),
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
           link: "",
         },
         card2: {
-          title: (
-            <>
-              Clientes pesquisam seu nome e encontram uma apresentação simples
-              demais
-            </>
-          ),
-          icon: (
-            <>
-              <Hourglass />
-            </>
-          ),
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
           link: "",
         },
         card3: {
-          title: (
-            <>
-              Concorrentes com menos tempo de mercado parecem mais estruturados
-              online
-            </>
-          ),
-          icon: (
-            <>
-              <Brain />
-            </>
-          ),
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
           link: "",
         },
         card4: {
-          title: (
-            <>
-              A sensação de que sua imagem não representa o nível que você já
-              alcançou
-            </>
-          ),
-          icon: (
-            <>
-              <BriefcaseBusiness />
-            </>
-          ),
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
         },
         card5: {
-          title: (
-            <>
-              Dúvida constante se o site está reforçando ou diminuindo sua
-              autoridade
-            </>
-          ),
-          icon: (
-            <>
-              <Scale />
-            </>
-          ),
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
         },
       },
-
       fraseText: (
         <>
-          <p>Reputação se constrói com anos de trabalho.</p> <br />
+          <p>A_Definir</p> <br />
           <p>
-            Mas pode ser julgada em{" "}
-            <span className="font-bold">poucos segundos no site</span>.
+            A_Definir <span className="font-bold">A_Definir</span>.
           </p>
         </>
       ),
-
-      ctaButtonText: "Quero uma análise do meu escritório",
+      ctaButtonText: "A_Definir",
     },
     maps: {
       minitag: <>A_Definir</>,
@@ -497,17 +335,28 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
+      miniTag: <>QUEM É A PROFESSORA BRUNA CAMARGO</>,
+      FirstPart: <span>Aprovada para</span>,
+      Destaque: <span className="italic font-light">te aprovar</span>,
       SecondPart: <span></span>,
-      subtitle: <></>,
-      paragraph: <div>A_Definir</div>,
+      subtitle: (
+        <>Resultados reais em concursos e na OAB, com método e estratégia.</>
+      ),
+      paragraph: (
+        <div>
+          Sou servidora pública da Justiça Federal da 1ª Região e construí minha
+          trajetória com aquilo que ensino todos os dias: método, estratégia e
+          constância. Fui aprovada em diversos concursos públicos, conquistando
+          o 1º lugar no TRT Campinas para o cargo de Oficial de Justiça
+          Avaliador Federal, além de excelentes colocações em outros Tribunais
+          Regionais do Trabalho pelo país.
+        </div>
+      ),
       benefits: {
         cards: {
           card1: {
-            title: <>A_Definir</>,
-            description: <>A_Definir</>,
+            title: <>Experiência real</>,
+            description: <>Método testado por quem já foi aprovada.</>,
             icon: (
               <>
                 {" "}
@@ -516,8 +365,8 @@ const content = {
             ),
           },
           card2: {
-            title: <>A_Definir</>,
-            description: <>A_Definir</>,
+            title: <>Resultados comprovados</>,
+            description: <>1º lugar e múltiplas aprovações em concursos.</>,
             icon: (
               <>
                 {" "}
@@ -527,161 +376,114 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Entre em contato</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
-          A_Definir
+          Sou servidora pública da Justiça Federal da 1ª Região e construí minha
+          trajetória com aquilo que ensino todos os dias: método, estratégia e
+          constância.
           <br />
           <br />
-          A_Definir
+          Fui aprovada em diversos concursos públicos, conquistando o 1º lugar
+          no TRT Campinas para o cargo de Oficial de Justiça Avaliador Federal,
+          além de excelentes colocações em outros Tribunais Regionais do
+          Trabalho pelo país. Também fui aprovada no XXXIX Exame da OAB.
           <br />
           <br />
-          A_Definir
+          Sou mestranda em Direito e Desigualdades Sociais, especialista em
+          Direitos Humanos, especialista em Direito e Processo do Trabalho e
+          Direito Previdenciário, além de graduada em Direito e em Letras. Minha
+          formação acadêmica é sólida.
           <br />
           <br />
-          A_Definir
+          Mas o que realmente faz diferença é a experiência prática de quem já
+          enfrentou as provas — e venceu. Hoje, ensino exatamente o método que
+          me levou à aprovação.
         </p>
       ),
       paragraphModalCta: "Entre em contato",
       ctaButtonAriaLabel: "Botão para entrar em contato",
-
-      // aboutSocial: {
-      //   img: {
-      //     img: aboutSocialImg,
-      //     alt: `Foto do Instagram do ${infos.name}`,
-      //     altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
-      //   },
-      //   miniTag: <>A_Definir</>,
-      //   title: <>A_Definir</>,
-      //   subtitle: <>A_Definir</>,
-      //   paragraph: <p></p>,
-      //   labelInstagram: "Siga-nos no Instagram",
-      //   labelFacebook: "Siga-nos no Facebook",
-      //   labelLinkedin: "Siga-nos no LinkedIn",
-      //   labelX: "Siga-nos no X",
-      //   labelTiktok: "Siga-nos no Tik Tok",
-      //   labelYoutube: "Siga-nos no Youtube",
-      // },
+      aboutSocial: {
+        img: {
+          img: aboutSocialImg,
+          alt: `Foto do Instagram do ${infos.name}`,
+          altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
+        },
+        miniTag: <>Redes sociais</>,
+        title: <>Conecte-se conosco</>,
+        subtitle: (
+          <>
+            Acompanhe nossas redes sociais para se manter informado sobre
+            conteúdos jurídicos, atualizações e temas relevantes das áreas de
+            atuação.
+          </>
+        ),
+        paragraph: <p></p>,
+        labelInstagram: "Siga-nos no Instagram",
+        labelFacebook: "Siga-nos no Facebook",
+        labelLinkedin: "Siga-nos no LinkedIn",
+        labelX: "Siga-nos no X",
+        labelTiktok: "Siga-nos no Tik Tok",
+        labelYoutube: "Siga-nos no Youtube",
+      },
     },
     ctaSection: {
-      miniTag: <>PRÓXIMO PASSO</>,
-      title: (
-        <h1>Descubra se um site é o caminho certo para o seu escritório</h1>
-      ),
+      miniTag: <>Fale conosco</>,
+      title: <h1>Comece sua preparação hoje</h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Antes de qualquer proposta, realizamos uma conversa estratégica para
-            entender sua área de atuação, seus objetivos e avaliar se existe um
-            caminho ético e seguro de captação de clientes online.
+            Se você quer aprovação na OAB ou em concursos, dê o próximo passo
+            agora.
           </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: (
-            <>
-              Entender como seu site pode representar melhor sua trajetória e
-              áreas de atuação
-            </>
-          ),
-          topic2: (
-            <>
-              Avaliar como sua apresentação atual está sendo percebida por quem
-              pesquisa seu nome
-            </>
-          ),
-          topic3: (
-            <>
-              Ter clareza sobre o que pode e o que não pode ser feito dentro das
-              normas da OAB
-            </>
-          ),
-          topic4: (
-            <>
-              Garantir que o site esteja alinhado ao nível profissional que você
-              já alcançou
-            </>
-          ),
-          topic5: (
-            <>
-              Escolher uma estrutura que transmita solidez hoje e continue
-              adequada nos próximos anos
-            </>
-          ),
+          topic1: <>Análise do seu momento atual de estudo</>,
+          topic2: <>Orientação direta com a professora, sem intermediários</>,
+          topic3: <>Resposta rápida pelo WhatsApp</>,
+          topic4: <>Direcionamento claro do que estudar primeiro</>,
+          topic5: <>Plano estratégico para acelerar sua aprovação</>,
         },
       },
-      ctaButtonText: <>Conversar com um especialista já</>,
+      ctaButtonText: <>Quero começar minha preparação</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>O CAMINHO MAIS SEGURO PARA APRESENTAR SUA HISTÓRIA</>,
-      FirstPart: (
-        <span>Um site institucional para advogados que valorizam </span>
-      ),
-      Destaque: <span className="italic font-light">reputação</span>,
+      miniTag: <>COMO FUNCIONA</>,
+      FirstPart: <span>Comece sua preparação</span>,
+      Destaque: <span className="italic font-light"> em 4 passos</span>,
       SecondPart: <span></span>,
 
-      subtitle: (
-        <>
-          Estruturamos sites elegantes e organizados para apresentar o advogado
-          ou o escritório com clareza, sobriedade e autoridade, sempre alinhados
-          às normas da OAB.
-        </>
-      ),
+      subtitle: <>Simples, rápido e direto com a professora Bruna.</>,
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Análise do seu posicionamento profissional</>,
-          cardDescription: (
-            <>
-              Entendemos sua trajetória, áreas de atuação e perfil de
-              atendimento para aplicar o modelo de forma coerente com o nível
-              que você já construiu.
-            </>
-          ),
+          cardTitle: <>Envie uma mensagem</>,
+          cardDescription: <>Fale pelo WhatsApp e conte seu objetivo.</>,
         },
-
         card2: {
           stepNumber: 2,
-          cardTitle: <>Estrutura institucional validada</>,
-          cardDescription: (
-            <>
-              Aplicamos um modelo desenvolvido exclusivamente para advogados,
-              com organização clara e linguagem adequada ao meio jurídico,
-              independentemente do tamanho da atuação.
-            </>
-          ),
+          cardTitle: <>Análise do seu perfil</>,
+          cardDescription: <>Entendemos sua meta e nível atual.</>,
         },
-
         card3: {
           stepNumber: 3,
-          cardTitle: <>Apresentação que reforça autoridade</>,
-          cardDescription: (
-            <>
-              O site organiza suas informações e transmite estrutura desde o
-              primeiro acesso, fortalecendo a percepção de profissionalismo.
-            </>
-          ),
+          cardTitle: <>Plano estratégico</>,
+          cardDescription: <>Receba o direcionamento certo para estudar.</>,
         },
-
         card4: {
           stepNumber: 4,
-          cardTitle: <>Base sólida e duradoura</>,
-          cardDescription: (
-            <>
-              Você recebe um site institucional preparado para representar sua
-              atuação hoje e continuar adequado ao longo dos anos.
-            </>
-          ),
+          cardTitle: <>Início imediato</>,
+          cardDescription: <>Comece com foco total na sua aprovação.</>,
         },
       },
-
-      ctaButtonText: <>Quero estruturar meu site agora</>,
+      ctaButtonText: <>Quero começar minha preparação</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -760,58 +562,28 @@ const content = {
       textFooter: <>A_Definir</>,
     },
     authority: {
-      miniTag: <>POR QUE CONFIAR NA PAPER STREET</>,
-      title: <>Sites jurídicos com método</>,
-      subtitle: (
-        <>
-          Criamos sites institucionais para advogados que valorizam reputação e
-          autoridade.
-        </>
-      ),
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>Especialização jurídica</>,
-          paragraph: (
-            <>
-              Atendemos exclusivamente advogados e escritórios de advocacia.
-              Isso nos permite compreender a linguagem adequada, o
-              posicionamento institucional e os cuidados necessários na
-              comunicação jurídica.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card2: {
-          title: <>Conformidade com a OAB</>,
-          paragraph: (
-            <>
-              Os sites seguem caráter institucional e informativo, respeitando
-              as normas da advocacia e evitando excessos que possam comprometer
-              a imagem profissional.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card3: {
-          title: <>Estrutura pensada para autoridade</>,
-          paragraph: (
-            <>
-              Cada parte do site é organizada para apresentar trajetória, áreas
-              de atuação e equipe com clareza, reforçando solidez e
-              profissionalismo.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card4: {
-          title: <>Mais do que estética</>,
-          paragraph: (
-            <>
-              Não desenvolvemos apenas um site bonito. Criamos uma apresentação
-              coerente com o nível da sua atuação, pensada para representar sua
-              reputação com consistência.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Falar com um especialista</>,
+      ctaButtonText: <>A_Definir</>,
     },
     faq: {
       miniTag: <>TIRE SUAS DÚVIDAS</>,
@@ -819,50 +591,40 @@ const content = {
       subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: (
-            <>
-              O site é adequado tanto para advogado autônomo quanto para
-              escritório?
-            </>
-          ),
+          question: <>Esse curso é para quem está começando do zero?</>,
           answer: (
             <>
-              Sim. A estrutura foi pensada para representar com clareza e
-              autoridade tanto a atuação individual quanto escritórios com
-              equipe formada. A organização das informações valoriza trajetória,
-              áreas de atuação e posicionamento profissional, independentemente
-              do porte.
+              Sim. O método é estruturado para quem está iniciando e também para
+              quem já tentou outras vezes e precisa de direção estratégica.
             </>
           ),
         },
         question2: {
-          question: <>O site segue as normas da OAB?</>,
+          question: <>Como funciona o acompanhamento?</>,
           answer: (
             <>
-              Sim. O formato é institucional e informativo, sem promessas
-              comerciais ou linguagem apelativa. O objetivo é apresentar sua
-              atuação com sobriedade, respeitando as diretrizes da advocacia.
+              Você recebe orientação direta da professora, com direcionamento
+              claro sobre o que estudar, como revisar e onde focar para aumentar
+              suas chances de aprovação.
             </>
           ),
         },
         question3: {
-          question: <>Preciso entender de tecnologia para contratar?</>,
+          question: <>O curso serve para qualquer concurso jurídico?</>,
           answer: (
             <>
-              Não. O processo é simples e acompanhado. Você fornece as
-              informações sobre sua atuação e nós cuidamos da organização e
-              implementação do site.
+              A base estratégica serve para concursos jurídicos e OAB, com
+              adaptação conforme o edital e o seu objetivo específico.
             </>
           ),
         },
         question4: {
-          question: <>E se eu quiser ajustes durante o processo?</>,
+          question: <>Em quanto tempo posso ver resultado?</>,
           answer: (
             <>
-              O desenvolvimento segue uma etapa de apresentação e revisão antes
-              da publicação final. Você acompanha o andamento e pode solicitar
-              ajustes para que o site represente corretamente sua atuação e seu
-              posicionamento profissional.
+              O resultado depende do seu nível atual e dedicação, mas o foco é
+              eliminar desperdício de tempo e acelerar sua preparação com
+              método.
             </>
           ),
         },

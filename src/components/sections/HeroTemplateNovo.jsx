@@ -212,10 +212,10 @@ function HeroTemplateNovo({
               /> */}
               {obs && (
                 <div className="flex justify-start items-center gap-3 text-sm w-full">
-                  {/* <div className="relative flex">
+                  <div className="relative flex">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
-                  </div> */}
+                  </div>
                   {content.texts.hero.obsHero.icon}
                   <span
                     className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
@@ -249,7 +249,7 @@ function HeroTemplateNovo({
                   alt={content.texts.hero.alt}
                   className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700 desktop1:hidden"
                   width={950}
-                  height={540}
+                  height={534}
                   fetchPriority="high"
                 />
 
@@ -258,7 +258,7 @@ function HeroTemplateNovo({
                   alt={content.texts.hero.alt}
                   className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700 hidden desktop1:flex"
                   width={621}
-                  height={825}
+                  height={828}
                   fetchPriority="high"
                 />
 

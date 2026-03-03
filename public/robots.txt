@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://sites.paperstreet.com.br/sitemap.xml
+Sitemap: https://www.profbrunacamargo.com.br/sitemap.xml
