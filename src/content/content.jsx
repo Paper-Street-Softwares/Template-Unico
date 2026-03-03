@@ -127,26 +127,33 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
+      miniTag: <>PREPARAÇÃO PARA CONCURSOS</>,
+      FirstPart: <span>Sua aprovação começa com</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_Definir</span>
+        <span className="destaque relative italic font-light">método</span>
       ),
       SecondPart: <span></span>,
-      subtitle: <p>A_Definir</p>,
+      subtitle: (
+        <p>
+          Direcionamento claro para OAB e concursos jurídicos, sem estudo
+          perdido e sem achismos.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>A_Definir</>,
-      ctaButtonTextSecondary: <>A_Definir</>,
+      ctaButtonText: <>Quero começar minha preparação</>,
+      ctaButtonTextSecondary: <>Quero começar minha preparação</>,
       obsHero: {
         icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: <>A_Definir</>,
-        textTwo: <>A_Definir</>,
+        text: (
+          <>Método validado por quem conquistou 1º lugar em concurso público.</>
+        ),
+        textTwo: <> </>,
       },
       secondaryCta: "Contato",
     },
