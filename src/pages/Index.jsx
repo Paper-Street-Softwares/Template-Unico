@@ -42,13 +42,6 @@ import { Diferences } from "../components/sections/Diferences";
 import { AlternatingSection } from "../components/sectionElements/AlternatingSection";
 import Parceria from "../components/sections/Parceria";
 import FormNovoTemplate from "../components/sections/FormNovoTemplate";
-import Navbar from "./Institucional/Navbar";
-import Hero from "./Institucional/Hero";
-import News from "./Institucional/News";
-import About from "./Institucional/About";
-import Reconhecimentos from "./Institucional/Reconhecimentos";
-import TeamSection from "./Institucional/Team";
-import Footer from "./Institucional/Footer";
 
 export default function Index() {
   const { colorMode, setColorMode } = useColorMode();
@@ -56,14 +49,6 @@ export default function Index() {
   return (
     <>
       <ColorModeProvider>
-        {/* <Navbar /> */}
-        {/* <Hero /> */}
-        {/* <News /> */}
-        {/* <About /> */}
-        {/* <Reconhecimentos /> */}
-        {/* <TeamSection /> */}
-        {/* <Footer /> */}
-
         {/* Render imediato */}
         <NavbarNovaTemplate colorMode={colorMode} />
 

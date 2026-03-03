@@ -8,7 +8,7 @@ import imgFeatures from "../assets/imgs/features/imgServices.webp";
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-// import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
+import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 // import logo1 from '../assets/imgs/parceria/Logo1.webp'
@@ -36,14 +36,6 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
-  CircleDollarSign,
-  ChartColumn,
-  Building2,
-  SearchCheck,
-  BadgeCheck,
-  LayoutGrid,
-  Hourglass,
-  Brain,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -51,14 +43,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Paper Street",
+  name: "A_Definir",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "sites.paperstreet.com.br", // Sem "www"
+  domain: "A_Definir", // Sem "www"
   phone: {
-    ddd: "11",
-    firstPart: "98821", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "7850", // Apenas os 4 últimos números
+    ddd: "00",
+    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0000", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -103,7 +95,7 @@ export const infos = {
   youtubeProfile: "",
 
   whatsappDefaultMessage:
-    "Olá! Vim do Google e preciso de um site para advocacia. Pode me ajudar?",
+    "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
   whatsChatDefaultMessage:
     "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
   slogan: "",
@@ -121,8 +113,8 @@ const content = {
         img: logo,
         alt: `Logomarca ${infos.name}`,
       },
-      menuItems: ["Início", "Serviços", "Perguntas Frequentes"],
-      menuId: ["home", "feature", "faq"],
+      menuItems: ["Início", "Serviços", "Sobre", "Perguntas Frequentes"],
+      menuId: ["home", "feature", "about", "faq"],
       ariaLabel: "Botão de Contato",
       ctaButtonText: "Contato",
       ctaButtonTextResponsive: "Contato",
@@ -135,35 +127,25 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>SITES PARA ADVOGADOS E ESCRITÓRIOS</>,
-      FirstPart: <span>Desenvolvemos </span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">sites</span>
+        <span className="destaque relative italic font-light">A_Definir</span>
       ),
-      SecondPart: <span> à altura da sua reputação e do seu escritório</span>,
-      subtitle: (
-        <p>
-          Há anos desenvolvemos sites que elevam a imagem de{" "}
-          <strong>advogados e escritório</strong>s consolidados.
-        </p>
-      ),
-      heroDefaultImage: heroDefaultImg,
+      SecondPart: <span></span>,
+      subtitle: <p>A_Definir</p>,
+      heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Solicitar Orçamento Gratuito</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
-        icon: <> ⚠️</>,
+        icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: (
-          <>
-            Especialistas em páginas focadas em transmitir autoridade, estrutura
-            e credibilidade jurídica.
-          </>
-        ),
+        text: <>A_Definir</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -179,100 +161,43 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     important: {
-      miniTag: <>ATENÇÃO</>,
-      title: <>O que é importante saber sobre um site</>,
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
       cards: {
         card1: {
-          title: (
-            <>
-              Qual a diferença entre um site comum e um site institucional de
-              alto nível?
-            </>
-          ),
-          paragraph: (
-            <>
-              Um site comum apenas reúne informações. Já um site institucional
-              de alto nível é organizado para transmitir estrutura, clareza e
-              autoridade desde o primeiro acesso. Ele não parece improvisado nem
-              excessivamente comercial. Cada detalhe é pensado para reforçar a
-              imagem de um escritório sólido e bem posicionado.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card2: {
-          title: <>Como garantir que o site transmita seriedade e elegância?</>,
-          paragraph: (
-            <>
-              Seriedade está na forma como as informações são organizadas e
-              apresentadas, independentemente do tamanho da sua atuação. Quando
-              há clareza, equilíbrio visual e uma estrutura bem definida, a
-              imagem transmitida é naturalmente profissional. Elegância não
-              depende de exageros, mas de consistência e cuidado em cada
-              detalhe. O site precisa representar com fidelidade o nível do
-              profissional ou do escritório que está por trás dele.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card3: {
-          title: (
-            <>
-              Como saber se o projeto realmente ficará à altura do meu
-              escritório?
-            </>
-          ),
-          paragraph: (
-            <>
-              Os sites que desenvolvemos são justamente para escritórios
-              consolidados, que já possuem reputação construída. Eles seguem um
-              padrão institucional que valoriza trajetória, áreas de atuação e
-              equipe de forma organizada. O objetivo é representar o nível que o
-              escritório já alcançou, sem exageros e sem reduzir sua percepção
-              de valor.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card4: {
-          title: <>Esse site atende às exigências da OAB?</>,
-          paragraph: (
-            <>
-              Sim. O formato é institucional e informativo, alinhado ao que se
-              espera da comunicação jurídica. Não utilizamos linguagem apelativa
-              nem promessas comerciais. A proposta é apresentar o escritório com
-              sobriedade e respeito às normas da advocacia.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
       },
-      fraseObs: (
-        <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
-      ),
-      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
+      fraseObs: <>A_Definir</>,
+      ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>DESENVOLVIMENTO DE SITES PARA ADVOGADOS</>,
-      FirstPart: <span>Nem você nem seu escritório pode parecer</span>,
-      Destaque: <span className="italic font-light">menor do que é</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
+      Destaque: <span className="italic font-light">A_Definir</span>,
       SecondPart: <span></span>,
-      subtitle: (
-        <>
-          Quando alguém acessa seu site, forma uma impressão em segundos. Ela
-          precisa estar à altura da sua trajetória.
-        </>
-      ),
+      subtitle: <>A_Definir</>,
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>Esse cenário precisa mudar!</>,
-      subtitleMessageFeature: <></>,
-
+      titleMessageFeature: <>A_Definir</>,
+      subtitleMessageFeature: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>Site institucional elegante</>,
-          subtitle: (
-            <>
-              Estrutura pensada para apresentar seu escritório com organização,
-              clareza e sobriedade.
-            </>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -281,19 +206,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Building2 />,
+          icon: <Briefcase />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>Apresentação profissional no Google</>,
-          subtitle: (
-            <>
-              Quando pesquisam seu nome, encontram um site que transmite
-              estrutura e credibilidade.
-            </>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -302,19 +222,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <SearchCheck />,
+          icon: <User />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card3: {
-          title: <>Autoridade antes da reunião</>,
-          subtitle: (
-            <>
-              O site reforça sua trajetória e áreas de atuação antes do primeiro
-              contato.
-            </>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -323,19 +238,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <BadgeCheck />,
+          icon: <Scale />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card4: {
-          title: <>Organização clara das informações</>,
-          subtitle: (
-            <>
-              Áreas de atuação, equipe e posicionamento apresentados de forma
-              objetiva e institucional.
-            </>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -344,19 +254,30 @@ const content = {
               <br />
             </div>
           ),
-          icon: <LayoutGrid />,
+          icon: <Gavel />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card5: {
-          title: <>Comunicação adequada ao meio jurídico</>,
-          subtitle: (
-            <>
-              Linguagem clara, respeitosa e alinhada ao padrão esperado na
-              advocacia.
-            </>
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
           ),
+          icon: <Users />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card6: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -370,14 +291,9 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
 
-        card6: {
-          title: <>Modelo validado para advogados</>,
-          subtitle: (
-            <>
-              Estrutura desenvolvida exclusivamente para o meio jurídico, sem
-              improvisos ou excessos.
-            </>
-          ),
+        card7: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -386,105 +302,67 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Scale />,
+          icon: <Shield />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card8: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Briefcase />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
       },
-
-      ctaButtonText: <>Quero meu site agora</>,
+      ctaButtonText: <>A_Definir</>,
     },
     cardsSection: {
-      miniTag: <>SE NADA MUDAR, O CENÁRIO É ESTE</>,
-      title: <>Um site antigo compromete uma reputação atual</>,
-      subtitle: (
-        <>
-          Quando a apresentação não acompanha a evolução do escritório ou do
-          profissional, a percepção pode ficar para trás.
-        </>
-      ),
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       cards: {
         card1: {
-          title: (
-            <>
-              Seu escritório cresce, mas o site continua com a mesma aparência
-              de anos atrás
-            </>
-          ),
-          icon: (
-            <>
-              <FileText />
-            </>
-          ),
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
           link: "",
         },
         card2: {
-          title: (
-            <>
-              Clientes pesquisam seu nome e encontram uma apresentação simples
-              demais
-            </>
-          ),
-          icon: (
-            <>
-              <Hourglass />
-            </>
-          ),
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
           link: "",
         },
         card3: {
-          title: (
-            <>
-              Concorrentes com menos tempo de mercado parecem mais estruturados
-              online
-            </>
-          ),
-          icon: (
-            <>
-              <Brain />
-            </>
-          ),
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
           link: "",
         },
         card4: {
-          title: (
-            <>
-              A sensação de que sua imagem não representa o nível que você já
-              alcançou
-            </>
-          ),
-          icon: (
-            <>
-              <BriefcaseBusiness />
-            </>
-          ),
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
         },
         card5: {
-          title: (
-            <>
-              Dúvida constante se o site está reforçando ou diminuindo sua
-              autoridade
-            </>
-          ),
-          icon: (
-            <>
-              <Scale />
-            </>
-          ),
+          title: <>A_Definir</>,
+          icon: <>A_Definir</>,
         },
       },
-
       fraseText: (
         <>
-          <p>Reputação se constrói com anos de trabalho.</p> <br />
+          <p>A_Definir</p> <br />
           <p>
-            Mas pode ser julgada em{" "}
-            <span className="font-bold">poucos segundos no site</span>.
+            A_Definir <span className="font-bold">A_Definir</span>.
           </p>
         </>
       ),
-
-      ctaButtonText: "Quero uma análise do meu escritório",
+      ctaButtonText: "A_Definir",
     },
     maps: {
       minitag: <>A_Definir</>,
@@ -546,142 +424,76 @@ const content = {
       paragraphModalCta: "Entre em contato",
       ctaButtonAriaLabel: "Botão para entrar em contato",
 
-      // aboutSocial: {
-      //   img: {
-      //     img: aboutSocialImg,
-      //     alt: `Foto do Instagram do ${infos.name}`,
-      //     altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
-      //   },
-      //   miniTag: <>A_Definir</>,
-      //   title: <>A_Definir</>,
-      //   subtitle: <>A_Definir</>,
-      //   paragraph: <p></p>,
-      //   labelInstagram: "Siga-nos no Instagram",
-      //   labelFacebook: "Siga-nos no Facebook",
-      //   labelLinkedin: "Siga-nos no LinkedIn",
-      //   labelX: "Siga-nos no X",
-      //   labelTiktok: "Siga-nos no Tik Tok",
-      //   labelYoutube: "Siga-nos no Youtube",
-      // },
+      aboutSocial: {
+        img: {
+          img: aboutSocialImg,
+          alt: `Foto do Instagram do ${infos.name}`,
+          altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
+        },
+        miniTag: <>A_Definir</>,
+        title: <>A_Definir</>,
+        subtitle: <>A_Definir</>,
+        paragraph: <p></p>,
+        labelInstagram: "Siga-nos no Instagram",
+        labelFacebook: "Siga-nos no Facebook",
+        labelLinkedin: "Siga-nos no LinkedIn",
+        labelX: "Siga-nos no X",
+        labelTiktok: "Siga-nos no Tik Tok",
+        labelYoutube: "Siga-nos no Youtube",
+      },
     },
     ctaSection: {
-      miniTag: <>PRÓXIMO PASSO</>,
-      title: (
-        <h1>Descubra se um site é o caminho certo para o seu escritório</h1>
-      ),
+      miniTag: <>A_Definir</>,
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Antes de qualquer proposta, realizamos uma conversa estratégica para
-            entender sua área de atuação, seus objetivos e avaliar se existe um
-            caminho ético e seguro de captação de clientes online.
-          </p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
       container: {
         topics: {
-          topic1: (
-            <>
-              Entender como seu site pode representar melhor sua trajetória e
-              áreas de atuação
-            </>
-          ),
-          topic2: (
-            <>
-              Avaliar como sua apresentação atual está sendo percebida por quem
-              pesquisa seu nome
-            </>
-          ),
-          topic3: (
-            <>
-              Ter clareza sobre o que pode e o que não pode ser feito dentro das
-              normas da OAB
-            </>
-          ),
-          topic4: (
-            <>
-              Garantir que o site esteja alinhado ao nível profissional que você
-              já alcançou
-            </>
-          ),
-          topic5: (
-            <>
-              Escolher uma estrutura que transmita solidez hoje e continue
-              adequada nos próximos anos
-            </>
-          ),
+          topic1: <>A_Definir</>,
+          topic2: <>A_Definir</>,
+          topic3: <>A_Definir</>,
+          topic4: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Conversar com um especialista já</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>O CAMINHO MAIS SEGURO PARA APRESENTAR SUA HISTÓRIA</>,
-      FirstPart: (
-        <span>Um site institucional para advogados que valorizam </span>
-      ),
-      Destaque: <span className="italic font-light">reputação</span>,
-      SecondPart: <span></span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir</span>,
+      Destaque: <span className="italic font-light"> A_Definir </span>,
+      SecondPart: <span>A_Definir</span>,
 
-      subtitle: (
-        <>
-          Estruturamos sites elegantes e organizados para apresentar o advogado
-          ou o escritório com clareza, sobriedade e autoridade, sempre alinhados
-          às normas da OAB.
-        </>
-      ),
+      subtitle: <></>,
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Análise do seu posicionamento profissional</>,
-          cardDescription: (
-            <>
-              Entendemos sua trajetória, áreas de atuação e perfil de
-              atendimento para aplicar o modelo de forma coerente com o nível
-              que você já construiu.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
-
         card2: {
           stepNumber: 2,
-          cardTitle: <>Estrutura institucional validada</>,
-          cardDescription: (
-            <>
-              Aplicamos um modelo desenvolvido exclusivamente para advogados,
-              com organização clara e linguagem adequada ao meio jurídico,
-              independentemente do tamanho da atuação.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
-
         card3: {
           stepNumber: 3,
-          cardTitle: <>Apresentação que reforça autoridade</>,
-          cardDescription: (
-            <>
-              O site organiza suas informações e transmite estrutura desde o
-              primeiro acesso, fortalecendo a percepção de profissionalismo.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
-
         card4: {
           stepNumber: 4,
-          cardTitle: <>Base sólida e duradoura</>,
-          cardDescription: (
-            <>
-              Você recebe um site institucional preparado para representar sua
-              atuação hoje e continuar adequado ao longo dos anos.
-            </>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
       },
-
-      ctaButtonText: <>Quero estruturar meu site agora</>,
+      ctaButtonText: <>A_Definir</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -760,111 +572,49 @@ const content = {
       textFooter: <>A_Definir</>,
     },
     authority: {
-      miniTag: <>POR QUE CONFIAR NA PAPER STREET</>,
-      title: <>Sites jurídicos com método</>,
-      subtitle: (
-        <>
-          Criamos sites institucionais para advogados que valorizam reputação e
-          autoridade.
-        </>
-      ),
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>Especialização jurídica</>,
-          paragraph: (
-            <>
-              Atendemos exclusivamente advogados e escritórios de advocacia.
-              Isso nos permite compreender a linguagem adequada, o
-              posicionamento institucional e os cuidados necessários na
-              comunicação jurídica.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card2: {
-          title: <>Conformidade com a OAB</>,
-          paragraph: (
-            <>
-              Os sites seguem caráter institucional e informativo, respeitando
-              as normas da advocacia e evitando excessos que possam comprometer
-              a imagem profissional.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card3: {
-          title: <>Estrutura pensada para autoridade</>,
-          paragraph: (
-            <>
-              Cada parte do site é organizada para apresentar trajetória, áreas
-              de atuação e equipe com clareza, reforçando solidez e
-              profissionalismo.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card4: {
-          title: <>Mais do que estética</>,
-          paragraph: (
-            <>
-              Não desenvolvemos apenas um site bonito. Criamos uma apresentação
-              coerente com o nível da sua atuação, pensada para representar sua
-              reputação com consistência.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Falar com um especialista</>,
+      ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>TIRE SUAS DÚVIDAS</>,
-      title: <>Perguntas Frequentes</>,
-      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       questions: {
         question1: {
-          question: (
-            <>
-              O site é adequado tanto para advogado autônomo quanto para
-              escritório?
-            </>
-          ),
-          answer: (
-            <>
-              Sim. A estrutura foi pensada para representar com clareza e
-              autoridade tanto a atuação individual quanto escritórios com
-              equipe formada. A organização das informações valoriza trajetória,
-              áreas de atuação e posicionamento profissional, independentemente
-              do porte.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question2: {
-          question: <>O site segue as normas da OAB?</>,
-          answer: (
-            <>
-              Sim. O formato é institucional e informativo, sem promessas
-              comerciais ou linguagem apelativa. O objetivo é apresentar sua
-              atuação com sobriedade, respeitando as diretrizes da advocacia.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question3: {
-          question: <>Preciso entender de tecnologia para contratar?</>,
-          answer: (
-            <>
-              Não. O processo é simples e acompanhado. Você fornece as
-              informações sobre sua atuação e nós cuidamos da organização e
-              implementação do site.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question4: {
-          question: <>E se eu quiser ajustes durante o processo?</>,
-          answer: (
-            <>
-              O desenvolvimento segue uma etapa de apresentação e revisão antes
-              da publicação final. Você acompanha o andamento e pode solicitar
-              ajustes para que o site represente corretamente sua atuação e seu
-              posicionamento profissional.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
       },
 
