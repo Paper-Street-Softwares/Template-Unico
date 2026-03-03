@@ -36,6 +36,10 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
+  BookOpen,
+  PenTool,
+  Target,
+  UserCheck,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -157,6 +161,11 @@ const content = {
       },
       secondaryCta: "Contato",
     },
+    authorityAlert: {
+      miniTag: <>EXPERIÊNCIA COMPROVADA</>,
+      title: <>Quem ensina, já foi aprovada</>,
+      subtitle: <>Resultados reais em concursos e na OAB.</>,
+    },
     emergency: {
       miniTag: <>A_Definir</>,
       title: <h1>A_Definir</h1>,
@@ -192,57 +201,57 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
-      Destaque: <span className="italic font-light">A_Definir</span>,
+      miniTag: <>ÁREAS DE ATUAÇÃO</>,
+      FirstPart: <span>Preparação que leva à</span>,
+      Destaque: <span className="italic font-light">aprovação</span>,
       SecondPart: <span></span>,
-      subtitle: <>A_Definir</>,
+      subtitle: <>Método estratégico para OAB e concursos públicos.</>,
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>A_Definir</>,
-      subtitleMessageFeature: <>A_Definir</>,
+      titleMessageFeature: <>100%</>,
+      subtitleMessageFeature: <>foco em aprovação</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>OAB 1ª Fase</>,
+          subtitle: <>Preparação objetiva</>,
           description: (
             <div>
-              A_Definir
+              Revisão estratégica para garantir sua aprovação.
               <br />
               <br />
-              A_Definir
+              Comece hoje sua preparação para passar.
             </div>
           ),
-          icon: <Briefcase />,
+          icon: <BookOpen />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>OAB 2ª Fase</>,
+          subtitle: <>Treino prático</>,
           description: (
             <div>
-              A_Definir
+              Treino prático para acertar peças e questões.
               <br />
               <br />
-              A_Definir
+              Comece hoje sua preparação para passar.
             </div>
           ),
-          icon: <User />,
+          icon: <PenTool />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card3: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Concursos Jurídicos</>,
+          subtitle: <>Foco em cargos jurídicos</>,
           description: (
             <div>
-              A_Definir
+              Preparação direcionada para cargos na área jurídica.
               <br />
               <br />
-              A_Definir
+              Comece hoje sua preparação para passar.
             </div>
           ),
           icon: <Scale />,
@@ -251,62 +260,62 @@ const content = {
         },
 
         card4: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Técnicas de Estudo</>,
+          subtitle: <>Estudo estratégico</>,
           description: (
             <div>
-              A_Definir
+              Aprenda como estudar com foco em resultado.
               <br />
-              A_Definir
+              Aprenda como estudar com foco em resultado.
               <br />
             </div>
           ),
-          icon: <Gavel />,
+          icon: <Target />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card5: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Revisões Intensivas</>,
+          subtitle: <>Reta final estratégica</>,
           description: (
             <div>
-              A_Definir
+              Reta final estratégica para aumentar sua nota.
               <br />
               <br />
-              A_Definir
+              Comece hoje sua preparação para passar.
             </div>
           ),
-          icon: <Users />,
+          icon: <Clock />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card6: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Mentoria Individual</>,
+          subtitle: <>Acompanhamento personalizado</>,
           description: (
             <div>
-              A_Definir
+              Comece hoje sua preparação para passar.
               <br />
               <br />
-              A_Definir
+              Comece hoje sua preparação para passar.
             </div>
           ),
-          icon: <MessageSquare />,
+          icon: <UserCheck />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card7: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Preparação Estratégica</>,
+          subtitle: <>Foco em aprovação</>,
           description: (
             <div>
-              A_Definir
+              Método estratégico para OAB e concursos públicos.
               <br />
               <br />
-              A_Definir
+              100% foco em aprovação.
             </div>
           ),
           icon: <Shield />,
@@ -315,14 +324,14 @@ const content = {
         },
 
         card8: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Preparação Completa</>,
+          subtitle: <>Resultados reais</>,
           description: (
             <div>
-              A_Definir
+              Preparação que leva à aprovação.
               <br />
               <br />
-              A_Definir
+              100% foco em aprovação.
             </div>
           ),
           icon: <Briefcase />,
@@ -330,7 +339,7 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Quero garantir minha aprovação</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -382,17 +391,28 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
+      miniTag: <>QUEM É A PROFESSORA BRUNA CAMARGO</>,
+      FirstPart: <span>Aprovada para</span>,
+      Destaque: <span className="italic font-light">te aprovar</span>,
       SecondPart: <span></span>,
-      subtitle: <></>,
-      paragraph: <div>A_Definir</div>,
+      subtitle: (
+        <>Resultados reais em concursos e na OAB, com método e estratégia.</>
+      ),
+      paragraph: (
+        <div>
+          Sou servidora pública da Justiça Federal da 1ª Região e construí minha
+          trajetória com aquilo que ensino todos os dias: método, estratégia e
+          constância. Fui aprovada em diversos concursos públicos, conquistando
+          o 1º lugar no TRT Campinas para o cargo de Oficial de Justiça
+          Avaliador Federal, além de excelentes colocações em outros Tribunais
+          Regionais do Trabalho pelo país.
+        </div>
+      ),
       benefits: {
         cards: {
           card1: {
-            title: <>A_Definir</>,
-            description: <>A_Definir</>,
+            title: <>Experiência real</>,
+            description: <>Método testado por quem já foi aprovada.</>,
             icon: (
               <>
                 {" "}
@@ -401,8 +421,8 @@ const content = {
             ),
           },
           card2: {
-            title: <>A_Definir</>,
-            description: <>A_Definir</>,
+            title: <>Resultados comprovados</>,
+            description: <>1º lugar e múltiplas aprovações em concursos.</>,
             icon: (
               <>
                 {" "}
@@ -412,34 +432,49 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Entre em contato</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
-          A_Definir
+          Sou servidora pública da Justiça Federal da 1ª Região e construí minha
+          trajetória com aquilo que ensino todos os dias: método, estratégia e
+          constância.
           <br />
           <br />
-          A_Definir
+          Fui aprovada em diversos concursos públicos, conquistando o 1º lugar
+          no TRT Campinas para o cargo de Oficial de Justiça Avaliador Federal,
+          além de excelentes colocações em outros Tribunais Regionais do
+          Trabalho pelo país. Também fui aprovada no XXXIX Exame da OAB.
           <br />
           <br />
-          A_Definir
+          Sou mestranda em Direito e Desigualdades Sociais, especialista em
+          Direitos Humanos, especialista em Direito e Processo do Trabalho e
+          Direito Previdenciário, além de graduada em Direito e em Letras. Minha
+          formação acadêmica é sólida.
           <br />
           <br />
-          A_Definir
+          Mas o que realmente faz diferença é a experiência prática de quem já
+          enfrentou as provas — e venceu. Hoje, ensino exatamente o método que
+          me levou à aprovação.
         </p>
       ),
       paragraphModalCta: "Entre em contato",
       ctaButtonAriaLabel: "Botão para entrar em contato",
-
       aboutSocial: {
         img: {
           img: aboutSocialImg,
           alt: `Foto do Instagram do ${infos.name}`,
           altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
         },
-        miniTag: <>A_Definir</>,
-        title: <>A_Definir</>,
-        subtitle: <>A_Definir</>,
+        miniTag: <>Redes sociais</>,
+        title: <>Conecte-se conosco</>,
+        subtitle: (
+          <>
+            Acompanhe nossas redes sociais para se manter informado sobre
+            conteúdos jurídicos, atualizações e temas relevantes das áreas de
+            atuação.
+          </>
+        ),
         paragraph: <p></p>,
         labelInstagram: "Siga-nos no Instagram",
         labelFacebook: "Siga-nos no Facebook",
@@ -450,57 +485,60 @@ const content = {
       },
     },
     ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>Fale conosco</>,
+      title: <h1>Comece sua preparação hoje</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Se você quer aprovação na OAB ou em concursos, dê o próximo passo
+            agora.
+          </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>A_Definir</>,
-          topic2: <>A_Definir</>,
-          topic3: <>A_Definir</>,
-          topic4: <>A_Definir</>,
+          topic1: <>Análise do seu momento atual de estudo</>,
+          topic2: <>Orientação direta com a professora, sem intermediários</>,
+          topic3: <>Resposta rápida pelo WhatsApp</>,
+          topic4: <>Direcionamento claro do que estudar primeiro</>,
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Quero começar minha preparação</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir</span>,
-      Destaque: <span className="italic font-light"> A_Definir </span>,
-      SecondPart: <span>A_Definir</span>,
+      miniTag: <>COMO FUNCIONA</>,
+      FirstPart: <span>Comece sua preparação</span>,
+      Destaque: <span className="italic font-light"> em 4 passos</span>,
+      SecondPart: <span></span>,
 
-      subtitle: <></>,
+      subtitle: <>Simples, rápido e direto com a professora Bruna.</>,
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Envie uma mensagem</>,
+          cardDescription: <>Fale pelo WhatsApp e conte seu objetivo.</>,
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Análise do seu perfil</>,
+          cardDescription: <>Entendemos sua meta e nível atual.</>,
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Plano estratégico</>,
+          cardDescription: <>Receba o direcionamento certo para estudar.</>,
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Início imediato</>,
+          cardDescription: <>Comece com foco total na sua aprovação.</>,
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Quero começar minha preparação</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -603,25 +641,47 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>TIRE SUAS DÚVIDAS</>,
+      title: <>Perguntas Frequentes</>,
+      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Esse curso é para quem está começando do zero?</>,
+          answer: (
+            <>
+              Sim. O método é estruturado para quem está iniciando e também para
+              quem já tentou outras vezes e precisa de direção estratégica.
+            </>
+          ),
         },
         question2: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Como funciona o acompanhamento?</>,
+          answer: (
+            <>
+              Você recebe orientação direta da professora, com direcionamento
+              claro sobre o que estudar, como revisar e onde focar para aumentar
+              suas chances de aprovação.
+            </>
+          ),
         },
         question3: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>O curso serve para qualquer concurso jurídico?</>,
+          answer: (
+            <>
+              A base estratégica serve para concursos jurídicos e OAB, com
+              adaptação conforme o edital e o seu objetivo específico.
+            </>
+          ),
         },
         question4: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Em quanto tempo posso ver resultado?</>,
+          answer: (
+            <>
+              O resultado depende do seu nível atual e dedicação, mas o foco é
+              eliminar desperdício de tempo e acelerar sua preparação com
+              método.
+            </>
+          ),
         },
       },
 
