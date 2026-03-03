@@ -117,7 +117,13 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          <AlternatingSection index={4} colorMode={colorMode}>
+          <AlternatingSection index={4} colorMode={colorMode} forcePrimaryDark>
+            <Suspense>
+              <CtaNovoTemplate colorMode={colorMode} container={true} />
+            </Suspense>
+          </AlternatingSection>
+
+          <AlternatingSection index={5} colorMode={colorMode}>
             <Suspense>
               <StepsNovoTemplate colorMode={colorMode} />
             </Suspense>
@@ -127,11 +133,7 @@ export default function Index() {
               <Authority colorMode={colorMode} />
             </Suspense>
           </AlternatingSection> */}
-          <AlternatingSection index={5} colorMode={colorMode} forcePrimaryDark>
-            <Suspense>
-              <CtaNovoTemplate colorMode={colorMode} container={true} />
-            </Suspense>
-          </AlternatingSection>
+
           <AlternatingSection index={6} colorMode={colorMode}>
             <Suspense>
               <FaqNovoTemplate colorMode={colorMode} />

@@ -213,15 +213,8 @@ const content = {
       cards: {
         card1: {
           title: <>OAB 1ª Fase</>,
-          subtitle: <>Preparação objetiva</>,
-          description: (
-            <div>
-              Revisão estratégica para garantir sua aprovação.
-              <br />
-              <br />
-              Comece hoje sua preparação para passar.
-            </div>
-          ),
+          subtitle: <>Revisão estratégica para garantir sua aprovação.</>,
+          description: <div></div>,
           icon: <BookOpen />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
@@ -229,15 +222,8 @@ const content = {
 
         card2: {
           title: <>OAB 2ª Fase</>,
-          subtitle: <>Treino prático</>,
-          description: (
-            <div>
-              Treino prático para acertar peças e questões.
-              <br />
-              <br />
-              Comece hoje sua preparação para passar.
-            </div>
-          ),
+          subtitle: <>Treino prático para acertar peças e questões.</>,
+          description: <div></div>,
           icon: <PenTool />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
@@ -245,15 +231,8 @@ const content = {
 
         card3: {
           title: <>Concursos Jurídicos</>,
-          subtitle: <>Foco em cargos jurídicos</>,
-          description: (
-            <div>
-              Preparação direcionada para cargos na área jurídica.
-              <br />
-              <br />
-              Comece hoje sua preparação para passar.
-            </div>
-          ),
+          subtitle: <>Preparação direcionada para cargos na área jurídica.</>,
+          description: <div></div>,
           icon: <Scale />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
@@ -261,15 +240,8 @@ const content = {
 
         card4: {
           title: <>Técnicas de Estudo</>,
-          subtitle: <>Estudo estratégico</>,
-          description: (
-            <div>
-              Aprenda como estudar com foco em resultado.
-              <br />
-              Aprenda como estudar com foco em resultado.
-              <br />
-            </div>
-          ),
+          subtitle: <>Aprenda como estudar com foco em resultado.</>,
+          description: <div></div>,
           icon: <Target />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
@@ -277,15 +249,8 @@ const content = {
 
         card5: {
           title: <>Revisões Intensivas</>,
-          subtitle: <>Reta final estratégica</>,
-          description: (
-            <div>
-              Reta final estratégica para aumentar sua nota.
-              <br />
-              <br />
-              Comece hoje sua preparação para passar.
-            </div>
-          ),
+          subtitle: <>Reta final estratégica para aumentar sua nota.</>,
+          description: <div></div>,
           icon: <Clock />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
@@ -293,15 +258,8 @@ const content = {
 
         card6: {
           title: <>Mentoria Individual</>,
-          subtitle: <>Acompanhamento personalizado</>,
-          description: (
-            <div>
-              Comece hoje sua preparação para passar.
-              <br />
-              <br />
-              Comece hoje sua preparação para passar.
-            </div>
-          ),
+          subtitle: <>Comece hoje sua preparação para passar.</>,
+          description: <div></div>,
           icon: <UserCheck />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
@@ -310,14 +268,7 @@ const content = {
         card7: {
           title: <>Preparação Estratégica</>,
           subtitle: <>Foco em aprovação</>,
-          description: (
-            <div>
-              Método estratégico para OAB e concursos públicos.
-              <br />
-              <br />
-              100% foco em aprovação.
-            </div>
-          ),
+          description: <div></div>,
           icon: <Shield />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
@@ -326,14 +277,7 @@ const content = {
         card8: {
           title: <>Preparação Completa</>,
           subtitle: <>Resultados reais</>,
-          description: (
-            <div>
-              Preparação que leva à aprovação.
-              <br />
-              <br />
-              100% foco em aprovação.
-            </div>
-          ),
+          description: <div></div>,
           icon: <Briefcase />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
@@ -501,6 +445,7 @@ const content = {
           topic2: <>Orientação direta com a professora, sem intermediários</>,
           topic3: <>Resposta rápida pelo WhatsApp</>,
           topic4: <>Direcionamento claro do que estudar primeiro</>,
+          topic5: <>Plano estratégico para acelerar sua aprovação</>,
         },
       },
       ctaButtonText: <>Quero começar minha preparação</>,
