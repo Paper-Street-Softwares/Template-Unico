@@ -8,7 +8,7 @@ import imgFeatures from "../assets/imgs/features/imgServices.webp";
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
+// import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 // import logo1 from '../assets/imgs/parceria/Logo1.webp'
@@ -36,10 +36,9 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
-  BookOpen,
-  PenTool,
-  Target,
-  UserCheck,
+  Coins,
+  Search,
+  CircleCheck,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -47,14 +46,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Professora Bruna Cardoso",
+  name: "Dr. Edvaldo Costa Gomes",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "profbrunacamargo.com.br", // Sem "www"
+  domain: "recuperacaotributaria.adv.br", // Sem "www"
   phone: {
-    ddd: "66",
-    firstPart: "99209", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "2582", // Apenas os 4 últimos números
+    ddd: "65",
+    firstPart: "99247", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0496", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -70,9 +69,10 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
+      <p>Av Historiador Rubens de Mendonça,</p>
+      <p>1856 - Jd Aclimação - Edif Cuiabá Tower</p>
+      <p>Cuiabá - MT, </p>
+      <p>CEP: 78050-249</p>
     </div>
   ),
   enderecoSecundario: (
@@ -85,18 +85,17 @@ export const infos = {
   ),
   expediente: (
     <div>
-      <p>Segunda a sexta-feira:</p>
-      <p>8h às 22h</p>
+      <p>Atendimento online e presencial com hora marcada</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "profbrunacamargo", // Sem o @
+  instagramProfile: "", // Sem o @
   instagramProfileSecundario: "",
   facebookProfile: "",
   linkeDinProfile: "",
   x: "",
   tiktokProfile: "",
-  youtubeProfile: "profbrunacamargo",
+  youtubeProfile: "",
 
   whatsappDefaultMessage:
     "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
@@ -126,21 +125,21 @@ const content = {
     hero: {
       minitagIcon: (
         <>
-          <BriefcaseBusiness className="w-4 h-4" />
+          <Coins className="w-4 h-4" />
           {/* <MapPin className="w-4 h-4" /> */}
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>PREPARAÇÃO PARA CONCURSOS</>,
-      FirstPart: <span>Sua aprovação começa com</span>,
+      miniTag: <>Recuperação de Créditos Tributários</>,
+      FirstPart: <span></span>,
       Destaque: (
-        <span className="destaque relative italic font-light">método</span>
+        <span className="destaque relative italic font-light">Recupere</span>
       ),
-      SecondPart: <span></span>,
+      SecondPart: <span>impostos pagos a mais</span>,
       subtitle: (
         <p>
-          Direcionamento claro para OAB e concursos jurídicos, sem estudo
-          perdido e sem achismos.
+          Empresas que vendem produtos monofásicos podem ter valores a
+          recuperar.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -149,22 +148,15 @@ const content = {
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Quero começar minha preparação</>,
-      ctaButtonTextSecondary: <>Quero começar minha preparação</>,
+      ctaButtonText: <>Quero saber se tenho créditos</>,
+      ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
-        icon: <> {/* ⚠️ */}</>,
+        icon: <> 🔎</>,
         iconTwo: <></>,
-        text: (
-          <>Método validado por quem conquistou 1º lugar em concurso público.</>
-        ),
-        textTwo: <> </>,
+        text: <>Descubra em poucos passos se há valores a recuperar.</>,
+        textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
-    },
-    authorityAlert: {
-      miniTag: <>EXPERIÊNCIA COMPROVADA</>,
-      title: <>Quem ensina, já foi aprovada</>,
-      subtitle: <>Resultados reais em concursos e na OAB.</>,
     },
     emergency: {
       miniTag: <>A_Definir</>,
@@ -177,113 +169,166 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     important: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
+      miniTag: <>Atenção</>,
+      title: <>Sua empresa pode estar pagando imposto além do que deveria</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Isso realmente funciona ou é só teoria tributária?</>,
+          paragraph: (
+            <>
+              Funciona quando há análise técnica correta. Muitas empresas que
+              vendem produtos monofásicos acabam recolhendo PIS e COFINS
+              indevidamente na revenda. Esses valores podem ser recuperados por
+              meio de revisão fiscal especializada. Não é benefício novo. É
+              correção do que foi pago a mais.
+            </>
+          ),
         },
         card2: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>Mas já faz anos que eu pago assim… ainda dá pra recuperar?</>
+          ),
+          paragraph: (
+            <>
+              Sim, é possível revisar períodos anteriores dentro do prazo legal
+              e identificar valores recolhidos a maior. Muitas empresas só
+              descobrem esse direito quando fazem uma auditoria tributária
+              detalhada. Cada mês que passa pode representar crédito perdido.
+            </>
+          ),
         },
         card3: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Isso pode dar problema com a Receita?</>,
+          paragraph: (
+            <>
+              Quando o procedimento é feito com base na legislação e com
+              respaldo técnico, trata-se de um direito da empresa. A recuperação
+              é feita dentro das normas fiscais vigentes, com segurança
+              jurídica. Recuperar crédito não é risco. É gestão tributária
+              inteligente.
+            </>
+          ),
         },
         card4: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>E se eu nem souber se minha empresa se enquadra?</>,
+          paragraph: (
+            <>
+              Empresas que vendem combustíveis, medicamentos, bebidas,
+              autopeças, cosméticos e outros produtos monofásicos podem ter
+              direito. A única forma de saber é por meio de uma análise técnica
+              do seu regime tributário e das notas fiscais. O diagnóstico mostra
+              se existe valor a recuperar.
+            </>
+          ),
         },
       },
-      fraseObs: <>A_Definir</>,
-      ctaButtonText: <>A_Definir</>,
+      fraseObs: (
+        <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
+      ),
+      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
     },
     features: {
-      miniTag: <>ÁREAS DE ATUAÇÃO</>,
-      FirstPart: <span>Preparação que leva à</span>,
-      Destaque: <span className="italic font-light">aprovação</span>,
+      miniTag: <>Elegibilidade para análise</>,
+      FirstPart: <span>Para quais empresas esse serviço </span>,
+      Destaque: <span className="italic font-light">é ideal?</span>,
       SecondPart: <span></span>,
-      subtitle: <>Método estratégico para OAB e concursos públicos.</>,
+      subtitle: (
+        <>
+          Se sua empresa vende produtos sujeitos ao regime monofásico ou
+          enfrenta perdas com valores não recebidos, pode haver créditos a
+          recuperar.
+        </>
+      ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
       titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>foco em aprovação</>,
+      subtitleMessageFeature: <>comprometido com sua recuperação</>,
       cards: {
         card1: {
-          title: <>OAB 1ª Fase</>,
-          subtitle: <>Revisão estratégica para garantir sua aprovação.</>,
-          description: <div></div>,
-          icon: <BookOpen />,
+          title: <>Recuperação de Créditos de PIS e COFINS Monofásicos</>,
+          subtitle: (
+            <>
+              Identificação e recuperação de valores pagos indevidamente na
+              revenda de produtos sujeitos ao regime monofásico.
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <HandCoins />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>OAB 2ª Fase</>,
-          subtitle: <>Treino prático para acertar peças e questões.</>,
-          description: <div></div>,
-          icon: <PenTool />,
+          title: <>Revisão Fiscal Retroativa</>,
+          subtitle: (
+            <>
+              Análise dos últimos anos para identificar tributos recolhidos a
+              maior e passíveis de restituição.
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <FileText />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card3: {
-          title: <>Concursos Jurídicos</>,
-          subtitle: <>Preparação direcionada para cargos na área jurídica.</>,
-          description: <div></div>,
+          title: <>Compensação Tributária</>,
+          subtitle: (
+            <>
+              Utilização dos créditos recuperados para reduzir impostos futuros
+              e melhorar o fluxo de caixa.
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
+            </div>
+          ),
           icon: <Scale />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card4: {
-          title: <>Técnicas de Estudo</>,
-          subtitle: <>Aprenda como estudar com foco em resultado.</>,
-          description: <div></div>,
-          icon: <Target />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card5: {
-          title: <>Revisões Intensivas</>,
-          subtitle: <>Reta final estratégica para aumentar sua nota.</>,
-          description: <div></div>,
-          icon: <Clock />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card6: {
-          title: <>Mentoria Individual</>,
-          subtitle: <>Comece hoje sua preparação para passar.</>,
-          description: <div></div>,
-          icon: <UserCheck />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card7: {
-          title: <>Preparação Estratégica</>,
-          subtitle: <>Foco em aprovação</>,
-          description: <div></div>,
-          icon: <Shield />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card8: {
-          title: <>Preparação Completa</>,
-          subtitle: <>Resultados reais</>,
-          description: <div></div>,
-          icon: <Briefcase />,
+          title: <>Diagnóstico Tributário Estratégico</>,
+          subtitle: (
+            <>
+              Avaliação técnica para verificar se sua empresa tem valores a
+              recuperar, sem compromisso inicial.
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <CircleCheck />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
       },
-      ctaButtonText: <>Quero garantir minha aprovação</>,
+      ctaButtonText: <>Falar agora com um especialista</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -335,28 +380,34 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É A PROFESSORA BRUNA CAMARGO</>,
-      FirstPart: <span>Aprovada para</span>,
-      Destaque: <span className="italic font-light">te aprovar</span>,
+      miniTag: <>QUEM ESTÁ POR TRÁS DO SEU DIREITO</>,
+      FirstPart: <span> Advocacia técnica e</span>,
+      Destaque: <span className="italic font-light"> estratégica</span>,
       SecondPart: <span></span>,
       subtitle: (
-        <>Resultados reais em concursos e na OAB, com método e estratégia.</>
+        <>Experiência, ética e foco em resultados concretos para sua empresa.</>
       ),
       paragraph: (
         <div>
-          Sou servidora pública da Justiça Federal da 1ª Região e construí minha
-          trajetória com aquilo que ensino todos os dias: método, estratégia e
-          constância. Fui aprovada em diversos concursos públicos, conquistando
-          o 1º lugar no TRT Campinas para o cargo de Oficial de Justiça
-          Avaliador Federal, além de excelentes colocações em outros Tribunais
-          Regionais do Trabalho pelo país.
+          Minha trajetória no Direito sempre foi guiada pela busca por soluções
+          seguras e eficazes. Acredito que a advocacia vai além da teoria: ela
+          precisa gerar resultado real para quem confia no nosso trabalho. Por
+          isso, cada caso é analisado com profundidade técnica e estratégia
+          personalizada.
+          <br />
+          <br />
+          Desde a fundação do escritório, meu compromisso é unir especialização,
+          atualização constante e atendimento próximo. Mais do que prestar um
+          serviço jurídico, oferecemos clareza, responsabilidade e
+          direcionamento para que cada cliente tenha segurança nas decisões e
+          confiança no caminho escolhido.
         </div>
       ),
       benefits: {
         cards: {
           card1: {
-            title: <>Experiência real</>,
-            description: <>Método testado por quem já foi aprovada.</>,
+            title: <>A_Definir</>,
+            description: <>A_Definir</>,
             icon: (
               <>
                 {" "}
@@ -365,8 +416,8 @@ const content = {
             ),
           },
           card2: {
-            title: <>Resultados comprovados</>,
-            description: <>1º lugar e múltiplas aprovações em concursos.</>,
+            title: <>A_Definir</>,
+            description: <>A_Definir</>,
             icon: (
               <>
                 {" "}
@@ -376,119 +427,139 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>Entre em contato</>,
+      ctaButtonText: <>Falar diretamente com o Advogado</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
-          Sou servidora pública da Justiça Federal da 1ª Região e construí minha
-          trajetória com aquilo que ensino todos os dias: método, estratégia e
-          constância.
+          A_Definir
           <br />
           <br />
-          Fui aprovada em diversos concursos públicos, conquistando o 1º lugar
-          no TRT Campinas para o cargo de Oficial de Justiça Avaliador Federal,
-          além de excelentes colocações em outros Tribunais Regionais do
-          Trabalho pelo país. Também fui aprovada no XXXIX Exame da OAB.
+          A_Definir
           <br />
           <br />
-          Sou mestranda em Direito e Desigualdades Sociais, especialista em
-          Direitos Humanos, especialista em Direito e Processo do Trabalho e
-          Direito Previdenciário, além de graduada em Direito e em Letras. Minha
-          formação acadêmica é sólida.
+          A_Definir
           <br />
           <br />
-          Mas o que realmente faz diferença é a experiência prática de quem já
-          enfrentou as provas — e venceu. Hoje, ensino exatamente o método que
-          me levou à aprovação.
+          A_Definir
         </p>
       ),
       paragraphModalCta: "Entre em contato",
       ctaButtonAriaLabel: "Botão para entrar em contato",
-      aboutSocial: {
-        img: {
-          img: aboutSocialImg,
-          alt: `Foto do Instagram do ${infos.name}`,
-          altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
-        },
-        miniTag: <>Redes sociais</>,
-        title: <>Conecte-se conosco</>,
-        subtitle: (
-          <>
-            Acompanhe nossas redes sociais para se manter informado sobre
-            conteúdos jurídicos, atualizações e temas relevantes das áreas de
-            atuação.
-          </>
-        ),
-        paragraph: <p></p>,
-        labelInstagram: "Siga-nos no Instagram",
-        labelFacebook: "Siga-nos no Facebook",
-        labelLinkedin: "Siga-nos no LinkedIn",
-        labelX: "Siga-nos no X",
-        labelTiktok: "Siga-nos no Tik Tok",
-        labelYoutube: "Siga-nos no Youtube",
-      },
+
+      // aboutSocial: {
+      //   img: {
+      //     img: aboutSocialImg,
+      //     alt: `Foto do Instagram do ${infos.name}`,
+      //     altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
+      //   },
+      //   miniTag: <>A_Definir</>,
+      //   title: <>A_Definir</>,
+      //   subtitle: <>A_Definir</>,
+      //   paragraph: <p></p>,
+      //   labelInstagram: "Siga-nos no Instagram",
+      //   labelFacebook: "Siga-nos no Facebook",
+      //   labelLinkedin: "Siga-nos no LinkedIn",
+      //   labelX: "Siga-nos no X",
+      //   labelTiktok: "Siga-nos no Tik Tok",
+      //   labelYoutube: "Siga-nos no Youtube",
+      // },
     },
     ctaSection: {
       miniTag: <>Fale conosco</>,
-      title: <h1>Comece sua preparação hoje</h1>,
+      title: <h1>Não deixe dinheiro parado enquanto você pode recuperar</h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Se você quer aprovação na OAB ou em concursos, dê o próximo passo
-            agora.
+            Cada dia que passa pode significar valores perdidos ou prazos
+            encerrando. Cuidamos de todo o processo com segurança, estratégia e
+            acompanhamento direto.
           </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>Análise do seu momento atual de estudo</>,
-          topic2: <>Orientação direta com a professora, sem intermediários</>,
-          topic3: <>Resposta rápida pelo WhatsApp</>,
-          topic4: <>Direcionamento claro do que estudar primeiro</>,
-          topic5: <>Plano estratégico para acelerar sua aprovação</>,
+          topic1: <>Análise inicial estratégica e sem compromisso</>,
+          topic2: <>Atendimento direto com o advogado responsável</>,
+          topic3: <>Comunicação ágil e acompanhamento pelo WhatsApp</>,
+          topic4: <>Início imediato após validação técnica</>,
+          topic5: <>Processo conduzido com segurança e respaldo legal</>,
         },
       },
-      ctaButtonText: <>Quero começar minha preparação</>,
+      ctaButtonText: <>Fale com a gente agora mesmo</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
+    calculadora: {
+      miniTag: <>Calculadora</>,
+      title: <>Descubra quanto sua clínica pode recuperar</>,
+      subtitle: <>Responda 3 perguntas e veja uma estimativa</>,
+    },
     steps: {
-      miniTag: <>COMO FUNCIONA</>,
-      FirstPart: <span>Comece sua preparação</span>,
-      Destaque: <span className="italic font-light"> em 4 passos</span>,
+      miniTag: <>Por que fazer conosco?</>,
+      FirstPart: <span>Mais segurança, mais caixa, </span>,
+      Destaque: <span className="italic font-light">menos dor de cabeça</span>,
       SecondPart: <span></span>,
 
-      subtitle: <>Simples, rápido e direto com a professora Bruna.</>,
+      subtitle: (
+        <>
+          Transformamos créditos esquecidos em dinheiro no caixa, com segurança
+          e estratégia.
+        </>
+      ),
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Envie uma mensagem</>,
-          cardDescription: <>Fale pelo WhatsApp e conte seu objetivo.</>,
+          cardTitle: <>Dinheiro recuperado com segurança</>,
+          cardDescription: (
+            <>
+              Analisamos tecnicamente cada detalhe para identificar valores
+              pagos indevidamente, sempre com base legal. Você recupera o que é
+              seu sem assumir riscos desnecessários.
+            </>
+          ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Análise do seu perfil</>,
-          cardDescription: <>Entendemos sua meta e nível atual.</>,
+          cardTitle: <>Zero burocracia para você</>,
+          cardDescription: (
+            <>
+              Cuidamos de toda a parte técnica, documental e estratégica. Sua
+              empresa continua operando normalmente enquanto conduzimos o
+              processo.
+            </>
+          ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Plano estratégico</>,
-          cardDescription: <>Receba o direcionamento certo para estudar.</>,
+          cardTitle: <>Atendimento direto com especialista</>,
+          cardDescription: (
+            <>
+              Você fala diretamente com quem entende do assunto. Sem
+              intermediários, sem respostas vagas, sem demora.
+            </>
+          ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Início imediato</>,
-          cardDescription: <>Comece com foco total na sua aprovação.</>,
+          cardTitle: <>Crédito que vira fluxo de caixa</>,
+          cardDescription: (
+            <>
+              Os valores recuperados podem ser compensados ou restituídos,
+              fortalecendo o caixa da empresa sem necessidade de aumentar
+              vendas.
+            </>
+          ),
         },
       },
-      ctaButtonText: <>Quero começar minha preparação</>,
+      ctaButtonText: <>Entre em contato já</>,
     },
     blog: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: "",
+      miniTag: <>BLOG</>,
+      title: <>Informação jurídica ao seu alcance</>,
+      subtitle:
+        "Acompanhe conteúdos exclusivos para manter-se sempre informado.",
       img: imgSteps,
       labelCards: "Ver mais",
       label: "Clique aqui para ver todas as matérias",
@@ -523,23 +594,52 @@ const content = {
       ],
     },
     diferences: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>Onde pode estar o seu crédito</>,
+      title: <>Produtos com maior potencial de recuperação tributária</>,
+      subtitle: (
+        <>
+          Empresas que comercializam os produtos abaixo costumam apresentar
+          maior volume de créditos recuperáveis, especialmente no regime
+          monofásico de PIS e COFINS.
+        </>
+      ),
       cards: {
         card1: {
           icon: Check,
-          text: <>A_Definir</>,
+          text: <>Combustíveis</>,
         },
         card2: {
           icon: Check,
-          text: <>A_Definir</>,
+          text: <>Medicamentos</>,
         },
         card3: {
           icon: Check,
-          text: <>A_Definir</>,
+          text: <>Bebidas</>,
+        },
+        card4: {
+          icon: Check,
+          text: <>Lubrificantes</>,
+        },
+        card5: {
+          icon: Check,
+          text: <>Cosméticos</>,
+        },
+        card6: {
+          icon: Check,
+          text: <>Pneus</>,
         },
       },
+      ctaButtonText: "Falar agora com um especialista",
+    },
+    authorityAlert: {
+      miniTag: <>A_Definir</>,
+      title: <h1>A_Definir</h1>,
+      subtitle: (
+        <div>
+          <p className="mb-6 font-secondFont">A_Definir</p>
+        </div>
+      ),
+      ctaButtonText: <>A_Definir</>,
     },
     speed: {
       miniTag: <>A_Definir</>,
@@ -591,40 +691,44 @@ const content = {
       subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>Esse curso é para quem está começando do zero?</>,
+          question: <>Isso é legal mesmo ou pode dar problema com a Receita?</>,
           answer: (
             <>
-              Sim. O método é estruturado para quem está iniciando e também para
-              quem já tentou outras vezes e precisa de direção estratégica.
+              Sim, é totalmente legal quando feito com base na legislação
+              vigente. A recuperação ocorre sobre valores pagos indevidamente,
+              seguindo regras técnicas e procedimentos formais. Não se trata de
+              “benefício novo”, mas de corrigir o que foi recolhido a maior.
             </>
           ),
         },
         question2: {
-          question: <>Como funciona o acompanhamento?</>,
+          question: <>Minha empresa é do Simples Nacional. Posso recuperar?</>,
           answer: (
             <>
-              Você recebe orientação direta da professora, com direcionamento
-              claro sobre o que estudar, como revisar e onde focar para aumentar
-              suas chances de aprovação.
+              Depende do tipo de produto comercializado e da forma de tributação
+              aplicada. Empresas do Simples que vendem produtos sujeitos ao
+              regime monofásico podem ter direito à revisão. A análise técnica é
+              essencial para confirmar.
             </>
           ),
         },
         question3: {
-          question: <>O curso serve para qualquer concurso jurídico?</>,
+          question: <>Posso recuperar valores de anos anteriores?</>,
           answer: (
             <>
-              A base estratégica serve para concursos jurídicos e OAB, com
-              adaptação conforme o edital e o seu objetivo específico.
+              Sim. A legislação permite revisar períodos anteriores dentro do
+              prazo legal. Por isso é importante agir o quanto antes, para não
+              perder créditos por decurso de prazo.
             </>
           ),
         },
         question4: {
-          question: <>Em quanto tempo posso ver resultado?</>,
+          question: <>Preciso entrar com processo judicial?</>,
           answer: (
             <>
-              O resultado depende do seu nível atual e dedicação, mas o foco é
-              eliminar desperdício de tempo e acelerar sua preparação com
-              método.
+              Nem sempre. Muitos casos são resolvidos por meio administrativo,
+              através de compensação ou restituição. A via judicial só é
+              utilizada quando necessária para garantir o direito da empresa.
             </>
           ),
         },
