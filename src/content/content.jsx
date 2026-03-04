@@ -170,7 +170,7 @@ const content = {
     },
     important: {
       miniTag: <>Atenção</>,
-      title: <>Sua empresa pode estar pagando imposto além do que deveria.</>,
+      title: <>Sua empresa pode estar pagando imposto além do que deveria</>,
       cards: {
         card1: {
           title: <>Isso realmente funciona ou é só teoria tributária?</>,
@@ -466,7 +466,7 @@ const content = {
     },
     ctaSection: {
       miniTag: <>Fale conosco</>,
-      title: <h1>Não deixe dinheiro parado enquanto você pode recuperar.</h1>,
+      title: <h1>Não deixe dinheiro parado enquanto você pode recuperar</h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
@@ -497,7 +497,7 @@ const content = {
     steps: {
       miniTag: <>Por que fazer conosco?</>,
       FirstPart: <span>Mais segurança, mais caixa, </span>,
-      Destaque: <span className="italic font-light">menos dor de cabeça.</span>,
+      Destaque: <span className="italic font-light">menos dor de cabeça</span>,
       SecondPart: <span></span>,
 
       subtitle: (
