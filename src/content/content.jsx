@@ -38,6 +38,7 @@ import {
   ShieldCheck,
   Coins,
   Search,
+  CircleCheck,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -168,43 +169,89 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     important: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
+      miniTag: <>Atenção</>,
+      title: <>Sua empresa pode estar pagando imposto além do que deveria.</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Isso realmente funciona ou é só teoria tributária?</>,
+          paragraph: (
+            <>
+              Funciona quando há análise técnica correta. Muitas empresas que
+              vendem produtos monofásicos acabam recolhendo PIS e COFINS
+              indevidamente na revenda. Esses valores podem ser recuperados por
+              meio de revisão fiscal especializada. Não é benefício novo. É
+              correção do que foi pago a mais.
+            </>
+          ),
         },
         card2: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>Mas já faz anos que eu pago assim… ainda dá pra recuperar?</>
+          ),
+          paragraph: (
+            <>
+              Sim, é possível revisar períodos anteriores dentro do prazo legal
+              e identificar valores recolhidos a maior. Muitas empresas só
+              descobrem esse direito quando fazem uma auditoria tributária
+              detalhada. Cada mês que passa pode representar crédito perdido.
+            </>
+          ),
         },
         card3: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Isso pode dar problema com a Receita?</>,
+          paragraph: (
+            <>
+              Quando o procedimento é feito com base na legislação e com
+              respaldo técnico, trata-se de um direito da empresa. A recuperação
+              é feita dentro das normas fiscais vigentes, com segurança
+              jurídica. Recuperar crédito não é risco. É gestão tributária
+              inteligente.
+            </>
+          ),
         },
         card4: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>E se eu nem souber se minha empresa se enquadra?</>,
+          paragraph: (
+            <>
+              Empresas que vendem combustíveis, medicamentos, bebidas,
+              autopeças, cosméticos e outros produtos monofásicos podem ter
+              direito. A única forma de saber é por meio de uma análise técnica
+              do seu regime tributário e das notas fiscais. O diagnóstico mostra
+              se existe valor a recuperar.
+            </>
+          ),
         },
       },
-      fraseObs: <>A_Definir</>,
-      ctaButtonText: <>A_Definir</>,
+      fraseObs: (
+        <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
+      ),
+      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
     },
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
-      Destaque: <span className="italic font-light">A_Definir</span>,
+      miniTag: <>Elegibilidade para análise</>,
+      FirstPart: <span>Para quais empresas esse serviço </span>,
+      Destaque: <span className="italic font-light">é ideal?</span>,
       SecondPart: <span></span>,
-      subtitle: <>A_Definir</>,
+      subtitle: (
+        <>
+          Se sua empresa vende produtos sujeitos ao regime monofásico ou
+          enfrenta perdas com valores não recebidos, pode haver créditos a
+          recuperar.
+        </>
+      ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>A_Definir</>,
-      subtitleMessageFeature: <>A_Definir</>,
+      titleMessageFeature: <>100%</>,
+      subtitleMessageFeature: <>comprometido com sua recuperação</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Recuperação de Créditos de PIS e COFINS Monofásicos</>,
+          subtitle: (
+            <>
+              Identificação e recuperação de valores pagos indevidamente na
+              revenda de produtos sujeitos ao regime monofásico.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -213,14 +260,19 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Briefcase />,
+          icon: <HandCoins />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Revisão Fiscal Retroativa</>,
+          subtitle: (
+            <>
+              Análise dos últimos anos para identificar tributos recolhidos a
+              maior e passíveis de restituição.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -229,20 +281,25 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <User />,
+          icon: <FileText />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card3: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Compensação Tributária</>,
+          subtitle: (
+            <>
+              Utilização dos créditos recuperados para reduzir impostos futuros
+              e melhorar o fluxo de caixa.
+            </>
+          ),
           description: (
             <div>
               A_Definir
               <br />
-              <br />
               A_Definir
+              <br />
             </div>
           ),
           icon: <Scale />,
@@ -251,24 +308,13 @@ const content = {
         },
 
         card4: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
+          title: <>Diagnóstico Tributário Estratégico</>,
+          subtitle: (
+            <>
+              Avaliação técnica para verificar se sua empresa tem valores a
+              recuperar, sem compromisso inicial.
+            </>
           ),
-          icon: <Gavel />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card5: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -277,60 +323,12 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Users />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card6: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <MessageSquare />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card7: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Shield />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card8: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
+          icon: <CircleCheck />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar agora com um especialista</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -382,12 +380,29 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
+      miniTag: <>QUEM ESTÁ POR TRÁS DO SEU DIREITO</>,
+      FirstPart: <span> Advocacia técnica e</span>,
+      Destaque: <span className="italic font-light"> estratégica</span>,
       SecondPart: <span></span>,
-      subtitle: <></>,
-      paragraph: <div>A_Definir</div>,
+      subtitle: (
+        <>Experiência, ética e foco em resultados concretos para sua empresa.</>
+      ),
+      paragraph: (
+        <div>
+          Minha trajetória no Direito sempre foi guiada pela busca por soluções
+          seguras e eficazes. Acredito que a advocacia vai além da teoria: ela
+          precisa gerar resultado real para quem confia no nosso trabalho. Por
+          isso, cada caso é analisado com profundidade técnica e estratégia
+          personalizada.
+          <br />
+          <br />
+          Desde a fundação do escritório, meu compromisso é unir especialização,
+          atualização constante e atendimento próximo. Mais do que prestar um
+          serviço jurídico, oferecemos clareza, responsabilidade e
+          direcionamento para que cada cliente tenha segurança nas decisões e
+          confiança no caminho escolhido.
+        </div>
+      ),
       benefits: {
         cards: {
           card1: {
@@ -412,7 +427,7 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar diretamente com o Advogado</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
@@ -450,30 +465,44 @@ const content = {
       // },
     },
     ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>Fale conosco</>,
+      title: <h1>Não deixe dinheiro parado enquanto você pode recuperar.</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Cada dia que passa pode significar valores perdidos ou prazos
+            encerrando. Cuidamos de todo o processo com segurança, estratégia e
+            acompanhamento direto.
+          </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>A_Definir</>,
-          topic2: <>A_Definir</>,
-          topic3: <>A_Definir</>,
-          topic4: <>A_Definir</>,
+          topic1: <>Análise inicial estratégica e sem compromisso</>,
+          topic2: <>Atendimento direto com o advogado responsável</>,
+          topic3: <>Comunicação ágil e acompanhamento pelo WhatsApp</>,
+          topic4: <>Início imediato após validação técnica</>,
+          topic5: <>Processo conduzido com segurança e respaldo legal</>,
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Fale com a gente agora mesmo</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
+    calculadora: {
+      miniTag: <>Calculadora</>,
+      title: <>Descubra quanto sua clínica pode recuperar</>,
+      subtitle: <>Responda 3 perguntas e veja uma estimativa</>,
+    },
     steps: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir</span>,
-      Destaque: <span className="italic font-light"> A_Definir </span>,
-      SecondPart: <span>A_Definir</span>,
+      miniTag: <>Por que fazer conosco?</>,
+      FirstPart: <span>Mais segurança, mais caixa, menos dor de cabeça.</span>,
+      Destaque: (
+        <span className="italic font-light">
+          Transformamos créditos esquecidos em dinheiro no caixa
+        </span>
+      ),
+      SecondPart: <span>com segurança e estratégia.</span>,
 
       subtitle: <></>,
       img: imgSteps,
@@ -481,31 +510,55 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Dinheiro recuperado com segurança</>,
+          cardDescription: (
+            <>
+              Analisamos tecnicamente cada detalhe para identificar valores
+              pagos indevidamente, sempre com base legal. Você recupera o que é
+              seu sem assumir riscos desnecessários.
+            </>
+          ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Zero burocracia para você</>,
+          cardDescription: (
+            <>
+              Cuidamos de toda a parte técnica, documental e estratégica. Sua
+              empresa continua operando normalmente enquanto conduzimos o
+              processo.
+            </>
+          ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Atendimento direto com especialista</>,
+          cardDescription: (
+            <>
+              Você fala diretamente com quem entende do assunto. Sem
+              intermediários, sem respostas vagas, sem demora.
+            </>
+          ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Crédito que vira fluxo de caixa</>,
+          cardDescription: (
+            <>
+              Os valores recuperados podem ser compensados ou restituídos,
+              fortalecendo o caixa da empresa sem necessidade de aumentar
+              vendas.
+            </>
+          ),
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Entre em contato já</>,
     },
     blog: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: "",
+      miniTag: <>BLOG</>,
+      title: <>Informação jurídica ao seu alcance</>,
+      subtitle:
+        "Acompanhe conteúdos exclusivos para manter-se sempre informado.",
       img: imgSteps,
       labelCards: "Ver mais",
       label: "Clique aqui para ver todas as matérias",
@@ -540,23 +593,38 @@ const content = {
       ],
     },
     diferences: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>Onde pode estar o seu crédito</>,
+      title: <>Produtos com maior potencial de recuperação tributária</>,
+      subtitle: (
+        <>
+          Empresas que comercializam os produtos abaixo costumam apresentar
+          maior volume de créditos recuperáveis, especialmente no regime
+          monofásico de PIS e COFINS.
+        </>
+      ),
       cards: {
         card1: {
           icon: Check,
-          text: <>A_Definir</>,
+          text: <>Combustíveis</>,
         },
         card2: {
           icon: Check,
-          text: <>A_Definir</>,
+          text: <>Medicamentos</>,
         },
         card3: {
           icon: Check,
-          text: <>A_Definir</>,
+          text: <>Bebidas</>,
+        },
+        card4: {
+          icon: Check,
+          text: <>Lubrificantes</>,
+        },
+        card5: {
+          icon: Check,
+          text: <>Pneus</>,
         },
       },
+      ctaButtonText: "Falar agora com um especialista",
     },
     authorityAlert: {
       miniTag: <>A_Definir</>,
@@ -613,25 +681,51 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>TIRE SUAS DÚVIDAS</>,
+      title: <>Perguntas Frequentes</>,
+      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Isso é legal mesmo ou pode dar problema com a Receita?</>,
+          answer: (
+            <>
+              Sim, é totalmente legal quando feito com base na legislação
+              vigente. A recuperação ocorre sobre valores pagos indevidamente,
+              seguindo regras técnicas e procedimentos formais. Não se trata de
+              “benefício novo”, mas de corrigir o que foi recolhido a maior.
+            </>
+          ),
         },
         question2: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Minha empresa é do Simples Nacional. Posso recuperar?</>,
+          answer: (
+            <>
+              Depende do tipo de produto comercializado e da forma de tributação
+              aplicada. Empresas do Simples que vendem produtos sujeitos ao
+              regime monofásico podem ter direito à revisão. A análise técnica é
+              essencial para confirmar.
+            </>
+          ),
         },
         question3: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Posso recuperar valores de anos anteriores?</>,
+          answer: (
+            <>
+              Sim. A legislação permite revisar períodos anteriores dentro do
+              prazo legal. Por isso é importante agir o quanto antes, para não
+              perder créditos por decurso de prazo.
+            </>
+          ),
         },
         question4: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Preciso entrar com processo judicial?</>,
+          answer: (
+            <>
+              Nem sempre. Muitos casos são resolvidos por meio administrativo,
+              através de compensação ou restituição. A via judicial só é
+              utilizada quando necessária para garantir o direito da empresa.
+            </>
+          ),
         },
       },
 
