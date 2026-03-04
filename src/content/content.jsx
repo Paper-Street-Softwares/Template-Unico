@@ -250,7 +250,7 @@ const content = {
       subtitleMessageFeature: <>online e seguro</>,
       cards: {
         card1: {
-          title: <>Clonagem, invasão e transferências indevidas</>,
+          title: <>Golpe do WhatsApp</>,
           subtitle: <>Clonagem, invasão e transferências indevidas</>,
           description: <div></div>,
           icon: <ShieldAlert />,
