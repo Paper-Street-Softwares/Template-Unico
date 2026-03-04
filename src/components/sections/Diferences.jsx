@@ -97,10 +97,7 @@ export function Diferences({ colorMode }) {
                     </motion.p>
                   </div>
 
-                  <div className="space-y-0">
-                    <p className="font-secondFont ml-4 mb-4">
-                      Empresas que vendem:
-                    </p>
+                  <div className="space-y-3">
                     {differentials.map((item, i) => (
                       <motion.div
                         key={i}
@@ -114,7 +111,9 @@ export function Diferences({ colorMode }) {
                         >
                           <span>
                             {" "}
-                            <item.icon className={`w-5 h-5 text-primaryDark`} />
+                            <item.icon
+                              className={`w-5 h-5 text-primaryLight`}
+                            />
                           </span>
                         </div>
                         <span
@@ -129,7 +128,7 @@ export function Diferences({ colorMode }) {
               </div>
             </div>
           </div>
-          <div className="flex justify-center mt-6">
+          {/* <div className="flex justify-center mt-6">
             <ButtonReflexo
               icon={
                 <svg
@@ -151,7 +150,7 @@ export function Diferences({ colorMode }) {
               }
               className={`clickevent w-fit`}
             />
-          </div>
+          </div> */}
         </div>
       </SectionWrapper>
     </SectionArea>

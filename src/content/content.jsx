@@ -6,20 +6,19 @@ import heroDefaultMobileImg from "../assets/imgs/hero/lawHeroMobile.webp";
 import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
-// import team1 from '../assets/imgs/team/team1.webp'
-// import team2 from '../assets/imgs/team/team2.webp'
-// import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
-// import logo1 from '../assets/imgs/parceria/Logo1.webp'
-// import logo2 from '../assets/imgs/parceria/Logo2.webp'
-// import logo3 from '../assets/imgs/parceria/Logo3.webp'
+
+import feed1 from "../assets/imgs/socialproof/feed1.webp";
+import feed2 from "../assets/imgs/socialproof/feed2.webp";
+import feed3 from "../assets/imgs/socialproof/feed3.webp";
+import feed4 from "../assets/imgs/socialproof/feed4.webp";
+import feed5 from "../assets/imgs/socialproof/feed5.webp";
 
 import {
   Baby,
   Briefcase,
   BriefcaseMedical,
-  Gavel,
   Home,
   Key,
   LucideIdCard,
@@ -36,9 +35,11 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
-  Coins,
-  Search,
-  CircleCheck,
+  ShieldAlert,
+  AlertTriangle,
+  UserX,
+  KeyRound,
+  Gavel,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -46,14 +47,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Dr. Edvaldo Costa Gomes",
+  name: "Luedys e Alves Advogados",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "recuperacaotributaria.adv.br", // Sem "www"
+  domain: "luedyealvesadvogados.com.br", // Sem "www"
   phone: {
-    ddd: "65",
-    firstPart: "99247", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0496", // Apenas os 4 últimos números
+    ddd: "11",
+    firstPart: "95570", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "5315", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -69,10 +70,9 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>Av Historiador Rubens de Mendonça,</p>
-      <p>1856 - Jd Aclimação - Edif Cuiabá Tower</p>
-      <p>Cuiabá - MT, </p>
-      <p>CEP: 78050-249</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -85,7 +85,8 @@ export const infos = {
   ),
   expediente: (
     <div>
-      <p>Atendimento online e presencial com hora marcada</p>
+      <p>Segunda a sexta-feira:</p>
+      <p>8h às 18h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
@@ -98,7 +99,7 @@ export const infos = {
   youtubeProfile: "",
 
   whatsappDefaultMessage:
-    "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
+    "Olá! Vim do anúncio no Google e preciso de Advogado pois caí em um golpe na internet. Pode me ajudar?",
   whatsChatDefaultMessage:
     "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
   slogan: "",
@@ -125,21 +126,21 @@ const content = {
     hero: {
       minitagIcon: (
         <>
-          <Coins className="w-4 h-4" />
+          <HandCoins className="w-4 h-4" />
           {/* <MapPin className="w-4 h-4" /> */}
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>Recuperação de Créditos Tributários</>,
-      FirstPart: <span></span>,
+      miniTag: <>RECUPERAÇÃO DE GOLPES BANCÁRIOS</>,
+      FirstPart: <span>Perdeu dinheiro em</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">Recupere</span>
+        <span className="destaque relative italic font-light">golpe</span>
       ),
-      SecondPart: <span>impostos pagos a mais</span>,
+      SecondPart: <span>na internet?</span>,
       subtitle: (
         <p>
-          Empresas que vendem produtos monofásicos podem ter valores a
-          recuperar.
+          Mais de R$1.000.000,00 já recuperados. Atendemos casos acima de R$4
+          mil, com possibilidade real de indenização.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -148,12 +149,12 @@ const content = {
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Quero saber se tenho créditos</>,
+      ctaButtonText: <>Quero analisar meu caso agora</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
-        icon: <> 🔎</>,
+        icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: <>Descubra em poucos passos se há valores a recuperar.</>,
+        text: <>Atendimento imediato, contrato formal e total transparência.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -168,56 +169,64 @@ const content = {
       ),
       ctaButtonText: <>A_Definir</>,
     },
+    authorityAlert: {
+      miniTag: <>A_Definir</>,
+      title: <h1>A_Definir</h1>,
+      subtitle: (
+        <div>
+          <p className="mb-6 font-secondFont">A_Definir</p>
+        </div>
+      ),
+      ctaButtonText: <>A_Definir</>,
+    },
     important: {
-      miniTag: <>Atenção</>,
-      title: <>Sua empresa pode estar pagando imposto além do que deveria</>,
+      miniTag: <>ATENÇÃO</>,
+      title: <>O que você precisa saber sobre golpes bancários</>,
       cards: {
         card1: {
-          title: <>Isso realmente funciona ou é só teoria tributária?</>,
+          title: <>Mas eu que fiz o Pix… mesmo assim dá pra recuperar?</>,
           paragraph: (
             <>
-              Funciona quando há análise técnica correta. Muitas empresas que
-              vendem produtos monofásicos acabam recolhendo PIS e COFINS
-              indevidamente na revenda. Esses valores podem ser recuperados por
-              meio de revisão fiscal especializada. Não é benefício novo. É
-              correção do que foi pago a mais.
+              Em muitos casos, sim. Mesmo quando a própria vítima realizou a
+              transferência, pode haver responsabilidade do banco se houve falha
+              na segurança, no bloqueio ou no monitoramento da operação. Cada
+              situação precisa ser analisada com cuidado.
             </>
           ),
         },
         card2: {
-          title: (
-            <>Mas já faz anos que eu pago assim… ainda dá pra recuperar?</>
-          ),
+          title: <>Já faz alguns dias… ainda dá tempo de fazer algo?</>,
           paragraph: (
             <>
-              Sim, é possível revisar períodos anteriores dentro do prazo legal
-              e identificar valores recolhidos a maior. Muitas empresas só
-              descobrem esse direito quando fazem uma auditoria tributária
-              detalhada. Cada mês que passa pode representar crédito perdido.
+              O tempo é um fator importante, mas nem sempre significa que está
+              perdido. Existem prazos legais e estratégias que podem ser
+              aplicadas mesmo após alguns dias ou semanas. O ideal é avaliar o
+              quanto antes para não perder oportunidades jurídicas. Entre em
+              contato agora mesmo para avaliarmos seu caso.
             </>
           ),
         },
         card3: {
-          title: <>Isso pode dar problema com a Receita?</>,
+          title: <>E se o banco já disse que não vai devolver?</>,
           paragraph: (
             <>
-              Quando o procedimento é feito com base na legislação e com
-              respaldo técnico, trata-se de um direito da empresa. A recuperação
-              é feita dentro das normas fiscais vigentes, com segurança
-              jurídica. Recuperar crédito não é risco. É gestão tributária
-              inteligente.
+              A negativa administrativa do banco não encerra a questão. Muitas
+              vezes a análise interna não considera todas as responsabilidades
+              previstas na legislação. A via judicial é justamente o caminho
+              quando o banco se recusa a ressarcir. Fale agora conosco para
+              entender mais.
             </>
           ),
         },
         card4: {
-          title: <>E se eu nem souber se minha empresa se enquadra?</>,
+          title: <>Tenho medo de gastar com advogado e não recuperar nada…</>,
           paragraph: (
             <>
-              Empresas que vendem combustíveis, medicamentos, bebidas,
-              autopeças, cosméticos e outros produtos monofásicos podem ter
-              direito. A única forma de saber é por meio de uma análise técnica
-              do seu regime tributário e das notas fiscais. O diagnóstico mostra
-              se existe valor a recuperar.
+              Essa é uma preocupação comum. Por isso, o primeiro passo é a
+              análise técnica do caso, com explicação clara sobre
+              possibilidades, riscos e estratégia. Você entende exatamente como
+              funciona antes de qualquer decisão. Transparência é fundamental,
+              principalmente depois de um golpe.
             </>
           ),
         },
@@ -228,107 +237,73 @@ const content = {
       ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
     },
     features: {
-      miniTag: <>Elegibilidade para análise</>,
-      FirstPart: <span>Para quais empresas esse serviço </span>,
-      Destaque: <span className="italic font-light">é ideal?</span>,
-      SecondPart: <span></span>,
+      miniTag: <>NOSSOS SERVIÇOS</>,
+      FirstPart: <span> </span>,
+      Destaque: <span className="italic font-light">Recuperação</span>,
+      SecondPart: <span>em golpes bancários</span>,
       subtitle: (
-        <>
-          Se sua empresa vende produtos sujeitos ao regime monofásico ou
-          enfrenta perdas com valores não recebidos, pode haver créditos a
-          recuperar.
-        </>
+        <> Atuação jurídica especializada para responsabilizar o banco.</>
       ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
       titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>comprometido com sua recuperação</>,
+      subtitleMessageFeature: <>online e seguro</>,
       cards: {
         card1: {
-          title: <>Recuperação de Créditos de PIS e COFINS Monofásicos</>,
-          subtitle: (
-            <>
-              Identificação e recuperação de valores pagos indevidamente na
-              revenda de produtos sujeitos ao regime monofásico.
-            </>
-          ),
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <HandCoins />,
+          title: <>Golpe do WhatsApp</>,
+          subtitle: <>Clonagem, invasão e transferências indevidas</>,
+          description: <div></div>,
+          icon: <ShieldAlert />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>Revisão Fiscal Retroativa</>,
-          subtitle: (
-            <>
-              Análise dos últimos anos para identificar tributos recolhidos a
-              maior e passíveis de restituição.
-            </>
-          ),
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <FileText />,
+          title: <>Pix pra pessoa errada</>,
+          subtitle: <>Erro induzido por fraude ou engenharia social</>,
+          description: <div></div>,
+          icon: <AlertTriangle />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card3: {
-          title: <>Compensação Tributária</>,
-          subtitle: (
-            <>
-              Utilização dos créditos recuperados para reduzir impostos futuros
-              e melhorar o fluxo de caixa.
-            </>
-          ),
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <Scale />,
+          title: <>Falso atendente de banco</>,
+          subtitle: <>Golpista se passa por funcionário do banco</>,
+          description: <div></div>,
+          icon: <UserX />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card4: {
-          title: <>Diagnóstico Tributário Estratégico</>,
-          subtitle: (
-            <>
-              Avaliação técnica para verificar se sua empresa tem valores a
-              recuperar, sem compromisso inicial.
-            </>
-          ),
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <CircleCheck />,
+          title: <>Golpe do boleto</>,
+          subtitle: <>Boletos falsos e pagamentos desviados</>,
+          description: <div></div>,
+          icon: <FileText />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card5: {
+          title: <>Venda de veículos</>,
+          subtitle: <>Fraudes em compra e venda de automóveis</>,
+          description: <div></div>,
+          icon: <KeyRound />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card6: {
+          title: <>Golpe do leilão</>,
+          subtitle: <>Leilões inexistentes e sites fraudulentos</>,
+          description: <div></div>,
+          icon: <Gavel />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
       },
-      ctaButtonText: <>Falar agora com um especialista</>,
+      ctaButtonText: <>Preciso de atendimento imediato</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -380,27 +355,29 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM ESTÁ POR TRÁS DO SEU DIREITO</>,
-      FirstPart: <span> Advocacia técnica e</span>,
-      Destaque: <span className="italic font-light"> estratégica</span>,
+      miniTag: <>QUEM É O LUEDY & ALVES ADVOGADOS</>,
+      FirstPart: <span> Especialistas em </span>,
+      Destaque: <span className="italic font-light"> fraudes bancárias</span>,
       SecondPart: <span></span>,
       subtitle: (
-        <>Experiência, ética e foco em resultados concretos para sua empresa.</>
+        <>Mais de 500 processos ativos e nota máxima de satisfação no Google</>
       ),
       paragraph: (
         <div>
-          Minha trajetória no Direito sempre foi guiada pela busca por soluções
-          seguras e eficazes. Acredito que a advocacia vai além da teoria: ela
-          precisa gerar resultado real para quem confia no nosso trabalho. Por
-          isso, cada caso é analisado com profundidade técnica e estratégia
-          personalizada.
+          O Luedy & Alves Advogados é um escritório com atuação nacional e foco
+          exclusivo em fraudes bancárias. São mais de 500 processos em andamento
+          em todo o Brasil, conduzidos com estratégia técnica e acompanhamento
+          próximo. Somos nota máxima de satisfação no Google, com mais de 150
+          avaliações positivas que refletem nosso compromisso com transparência,
+          clareza e responsabilidade.
           <br />
           <br />
-          Desde a fundação do escritório, meu compromisso é unir especialização,
-          atualização constante e atendimento próximo. Mais do que prestar um
-          serviço jurídico, oferecemos clareza, responsabilidade e
-          direcionamento para que cada cliente tenha segurança nas decisões e
-          confiança no caminho escolhido.
+          Nossa equipe é formada por profissionais altamente capacitados e em
+          constante atualização jurídica e tecnológica, garantindo eficiência e
+          segurança na condução dos casos. Aqui, o cliente recebe análise
+          individual, contrato formal, honorários explicados com clareza e
+          acompanhamento contínuo do processo — sem promessas irreais e sem
+          custos ocultos.
         </div>
       ),
       benefits: {
@@ -466,44 +443,54 @@ const content = {
     },
     ctaSection: {
       miniTag: <>Fale conosco</>,
-      title: <h1>Não deixe dinheiro parado enquanto você pode recuperar</h1>,
+      title: <h1>Fale agora com um Advogado Especialista</h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Cada dia que passa pode significar valores perdidos ou prazos
-            encerrando. Cuidamos de todo o processo com segurança, estratégia e
-            acompanhamento direto.
+            Se você perdeu dinheiro em um golpe bancário, receba orientação
+            segura agora.
           </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>Análise inicial estratégica e sem compromisso</>,
-          topic2: <>Atendimento direto com o advogado responsável</>,
-          topic3: <>Comunicação ágil e acompanhamento pelo WhatsApp</>,
-          topic4: <>Início imediato após validação técnica</>,
-          topic5: <>Processo conduzido com segurança e respaldo legal</>,
+          topic1: <>Análise técnica do seu caso</>,
+          topic2: <>Atendimento direto com o advogado, sem intermediários</>,
+          topic3: <>Resposta rápida e acompanhamento pelo WhatsApp</>,
+          topic4: <>Estratégia jurídica definida após a análise</>,
+          topic5: (
+            <>Você mais perto de recuperar o que é seu, sem sair de casa</>
+          ),
         },
       },
-      ctaButtonText: <>Fale com a gente agora mesmo</>,
+      ctaButtonText: <>Quero analisar meu caso agora</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
-    calculadora: {
-      miniTag: <>Calculadora</>,
-      title: <>Descubra quanto sua clínica pode recuperar</>,
-      subtitle: <>Responda 3 perguntas e veja uma estimativa</>,
+    socialProof: {
+      minitag: "Avaliações Verificadas",
+      title: "A experiência de quem já contratou a Paper Street",
+      subtitle:
+        "Advogados que buscavam organização, posicionamento e crescimento encontraram na Paper Street a solução que precisavam.",
+      ctaButtonText: "Falar com a equipe agora",
+      images: {
+        img1: feed1,
+        img2: feed2,
+        img3: feed3,
+        img4: feed4,
+        img5: feed5,
+      },
     },
     steps: {
-      miniTag: <>Por que fazer conosco?</>,
-      FirstPart: <span>Mais segurança, mais caixa, </span>,
-      Destaque: <span className="italic font-light">menos dor de cabeça</span>,
-      SecondPart: <span></span>,
+      miniTag: <>COMO FUNCIONA</>,
+      FirstPart: <span> Entenda como vamos</span>,
+      Destaque: <span className="italic font-light"> cuidar </span>,
+      SecondPart: <span>do seu caso</span>,
 
       subtitle: (
         <>
-          Transformamos créditos esquecidos em dinheiro no caixa, com segurança
-          e estratégia.
+          Você não vai enfrentar isso sozinho. Existe método, estratégia e
+          acompanhamento em cada etapa.
         </>
       ),
       img: imgSteps,
@@ -511,55 +498,31 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Dinheiro recuperado com segurança</>,
-          cardDescription: (
-            <>
-              Analisamos tecnicamente cada detalhe para identificar valores
-              pagos indevidamente, sempre com base legal. Você recupera o que é
-              seu sem assumir riscos desnecessários.
-            </>
-          ),
+          cardTitle: <>Análise do caso</>,
+          cardDescription: <>Avaliação técnica clara das suas chances</>,
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Zero burocracia para você</>,
-          cardDescription: (
-            <>
-              Cuidamos de toda a parte técnica, documental e estratégica. Sua
-              empresa continua operando normalmente enquanto conduzimos o
-              processo.
-            </>
-          ),
+          cardTitle: <>Estratégia jurídica</>,
+          cardDescription: <>Definimos o melhor caminho para agir</>,
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Atendimento direto com especialista</>,
-          cardDescription: (
-            <>
-              Você fala diretamente com quem entende do assunto. Sem
-              intermediários, sem respostas vagas, sem demora.
-            </>
-          ),
+          cardTitle: <>Ação contra o banco</>,
+          cardDescription: <>Atuamos para responsabilizar a instituição</>,
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Crédito que vira fluxo de caixa</>,
-          cardDescription: (
-            <>
-              Os valores recuperados podem ser compensados ou restituídos,
-              fortalecendo o caixa da empresa sem necessidade de aumentar
-              vendas.
-            </>
-          ),
+          cardTitle: <>Acompanhamento total</>,
+          cardDescription: <>Atualizações constantes e suporte direto</>,
         },
       },
-      ctaButtonText: <>Entre em contato já</>,
+      ctaButtonText: <>Quero análise do meu caso agora</>,
     },
     blog: {
-      miniTag: <>BLOG</>,
-      title: <>Informação jurídica ao seu alcance</>,
-      subtitle:
-        "Acompanhe conteúdos exclusivos para manter-se sempre informado.",
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: "",
       img: imgSteps,
       labelCards: "Ver mais",
       label: "Clique aqui para ver todas as matérias",
@@ -594,52 +557,61 @@ const content = {
       ],
     },
     diferences: {
-      miniTag: <>Onde pode estar o seu crédito</>,
-      title: <>Produtos com maior potencial de recuperação tributária</>,
+      miniTag: <>NOSSOS DIFERENCIAIS</>,
+      title: <>Por que nosso atendimento é diferente</>,
       subtitle: (
         <>
-          Empresas que comercializam os produtos abaixo costumam apresentar
-          maior volume de créditos recuperáveis, especialmente no regime
-          monofásico de PIS e COFINS.
+          Tudo conduzido com base técnica, dentro da lei e com total
+          responsabilidade.
         </>
       ),
       cards: {
         card1: {
           icon: Check,
-          text: <>Combustíveis</>,
+          text: (
+            <>
+              Especialização exclusiva em fraudes bancárias Atuação focada em
+              golpes financeiros, não em causas genéricas.
+            </>
+          ),
         },
         card2: {
           icon: Check,
-          text: <>Medicamentos</>,
+          text: (
+            <>
+              Estratégia jurídica contra o banco Não dependemos apenas da “boa
+              vontade” da instituição.
+            </>
+          ),
         },
         card3: {
           icon: Check,
-          text: <>Bebidas</>,
+          text: (
+            <>
+              Atendimento 100% online e imediato Você recebe orientação rápida,
+              sem sair de casa.
+            </>
+          ),
         },
         card4: {
           icon: Check,
-          text: <>Lubrificantes</>,
+          text: (
+            <>
+              Atualizações constantes do processo Você acompanha cada etapa, com
+              explicação clara.
+            </>
+          ),
         },
         card5: {
           icon: Check,
-          text: <>Cosméticos</>,
-        },
-        card6: {
-          icon: Check,
-          text: <>Pneus</>,
+          text: (
+            <>
+              Honorários transparentes e contrato formal Sem taxas ocultas, sem
+              surpresas.
+            </>
+          ),
         },
       },
-      ctaButtonText: "Falar agora com um especialista",
-    },
-    authorityAlert: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
-      subtitle: (
-        <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
-        </div>
-      ),
-      ctaButtonText: <>A_Definir</>,
     },
     speed: {
       miniTag: <>A_Definir</>,
@@ -691,44 +663,62 @@ const content = {
       subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>Isso é legal mesmo ou pode dar problema com a Receita?</>,
+          question: <>É possível estornar um Pix?</>,
           answer: (
             <>
-              Sim, é totalmente legal quando feito com base na legislação
-              vigente. A recuperação ocorre sobre valores pagos indevidamente,
-              seguindo regras técnicas e procedimentos formais. Não se trata de
-              “benefício novo”, mas de corrigir o que foi recolhido a maior.
+              Pelas vias normais não é possível estornar um Pix. É uma operação
+              instantânea, então o valor é creditado na conta do destinatário
+              imediatamente. Porém, você pode fazer uso do MED para tentar
+              recuperar o valor nos dias seguintes à operação.
             </>
           ),
         },
         question2: {
-          question: <>Minha empresa é do Simples Nacional. Posso recuperar?</>,
+          question: <>O banco pode ser responsabilizado?</>,
           answer: (
             <>
-              Depende do tipo de produto comercializado e da forma de tributação
-              aplicada. Empresas do Simples que vendem produtos sujeitos ao
-              regime monofásico podem ter direito à revisão. A análise técnica é
-              essencial para confirmar.
+              Na grande maioria dos casos, sim. É preciso analisar cada situação
+              em particular, no entanto, quando há alguma ação ou omissão da
+              Instituição Bancária para viabilizar ou facilitar o golpe, haverá
+              responsabilização.
             </>
           ),
         },
         question3: {
-          question: <>Posso recuperar valores de anos anteriores?</>,
+          question: <>É possível obter indenização?</>,
           answer: (
             <>
-              Sim. A legislação permite revisar períodos anteriores dentro do
-              prazo legal. Por isso é importante agir o quanto antes, para não
-              perder créditos por decurso de prazo.
+              Em diversos casos, é sim possível obter uma indenização pela
+              omissão ou ação indevida do seu banco. Porém, é preciso pontuar
+              que a indenização depende de cada caso, por isso é fundamental que
+              um advogado analise individualmente sua situação.
             </>
           ),
         },
         question4: {
-          question: <>Preciso entrar com processo judicial?</>,
+          question: <>Fui vítima de um golpe! O que devo fazer?</>,
           answer: (
             <>
-              Nem sempre. Muitos casos são resolvidos por meio administrativo,
-              através de compensação ou restituição. A via judicial só é
-              utilizada quando necessária para garantir o direito da empresa.
+              Entre em contato imediatamente com a instituição financeira, pois,
+              dependendo do caso, o banco pode te fornecer algum tipo de
+              suporte. Solicite o bloqueio preventivo dos seus recursos em conta
+              e, em seguida, procure um advogado especialista para relatar a
+              situação e planejar os próximos passos. <br />
+              Registre um boletim de ocorrência o mais rápido possível.
+            </>
+          ),
+        },
+        question5: {
+          question: <>Consigo recuperar meu dinheiro?</>,
+          answer: (
+            <>
+              Na grande maioria dos casos, sim! Ainda que haja divergências, o
+              entendimento majoritário da justiça é de que os bancos têm
+              responsabilidade objetiva nesses casos e devem reparar
+              integralmente os danos financeiros.
+              <br />
+              Contamos com uma equipe especializada que pode te ajudar a
+              recuperar todo o valor transferido!
             </>
           ),
         },
