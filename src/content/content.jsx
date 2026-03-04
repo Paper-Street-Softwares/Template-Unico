@@ -85,7 +85,7 @@ export const infos = {
   ),
   expediente: (
     <div>
-      <p>Atendimento on line e presencial com hora marcada</p>
+      <p>Atendimento online e presencial com hora marcada</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
