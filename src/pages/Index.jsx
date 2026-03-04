@@ -43,7 +43,6 @@ import { AlternatingSection } from "../components/sectionElements/AlternatingSec
 import Parceria from "../components/sections/Parceria";
 import FormNovoTemplate from "../components/sections/FormNovoTemplate";
 import AuthorityAndAlert from "../components/sections/AuthorityAndAlert";
-import Calculadora from "../components/sections/Calculadora";
 
 export default function Index() {
   const { colorMode, setColorMode } = useColorMode();
@@ -126,15 +125,9 @@ export default function Index() {
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={6} colorMode={colorMode}>
-            <Suspense>
-              <Calculadora colorMode={colorMode} />
-            </Suspense>
-          </AlternatingSection>
-
           {/* CALCULADORA */}
 
-          <AlternatingSection index={7} colorMode={colorMode}>
+          <AlternatingSection index={6} colorMode={colorMode}>
             <Suspense>
               <StepsNovoTemplate colorMode={colorMode} />
             </Suspense>
@@ -151,7 +144,7 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          <AlternatingSection index={8} colorMode={colorMode}>
+          <AlternatingSection index={87} colorMode={colorMode}>
             <Suspense>
               <FaqNovoTemplate colorMode={colorMode} />
             </Suspense>
@@ -163,7 +156,7 @@ export default function Index() {
             </Suspense>
           </AlternatingSection> */}
 
-          <AlternatingSection index={9} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={8} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <FooterNovoTemplate
                 colorMode={colorMode}
