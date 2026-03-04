@@ -20,7 +20,7 @@ function Calculadora({ colorMode }) {
 
   return (
     <div>
-      <SectionArea>
+      <SectionArea paddingbot={false}>
         <SectionWrapper>
           <SectionHeaderNovo
             miniTitle={content.texts.calculadora.miniTag}
