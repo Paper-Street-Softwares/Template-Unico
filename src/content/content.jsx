@@ -36,6 +36,8 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
+  Coins,
+  Search,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -122,30 +124,35 @@ const content = {
     hero: {
       minitagIcon: (
         <>
-          <BriefcaseBusiness className="w-4 h-4" />
+          <Coins className="w-4 h-4" />
           {/* <MapPin className="w-4 h-4" /> */}
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
+      miniTag: <>Recuperação de Créditos Tributários</>,
+      FirstPart: <span></span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_Definir</span>
+        <span className="destaque relative italic font-light">Recupere</span>
       ),
-      SecondPart: <span></span>,
-      subtitle: <p>A_Definir</p>,
+      SecondPart: <span>impostos pagos a mais</span>,
+      subtitle: (
+        <p>
+          Empresas que vendem produtos monofásicos podem ter valores a
+          recuperar.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Quero saber se tenho créditos</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
-        icon: <> {/* ⚠️ */}</>,
+        icon: <> 🔎</>,
         iconTwo: <></>,
-        text: <>A_Definir</>,
+        text: <>Descubra em poucos passos se há valores a recuperar.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
