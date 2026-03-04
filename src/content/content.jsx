@@ -621,6 +621,10 @@ const content = {
         },
         card5: {
           icon: Check,
+          text: <>Cosméticos</>,
+        },
+        card6: {
+          icon: Check,
           text: <>Pneus</>,
         },
       },
