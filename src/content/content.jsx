@@ -496,15 +496,16 @@ const content = {
     },
     steps: {
       miniTag: <>Por que fazer conosco?</>,
-      FirstPart: <span>Mais segurança, mais caixa, menos dor de cabeça.</span>,
-      Destaque: (
-        <span className="italic font-light">
-          Transformamos créditos esquecidos em dinheiro no caixa
-        </span>
-      ),
-      SecondPart: <span>com segurança e estratégia.</span>,
+      FirstPart: <span>Mais segurança, mais caixa, </span>,
+      Destaque: <span className="italic font-light">menos dor de cabeça.</span>,
+      SecondPart: <span></span>,
 
-      subtitle: <></>,
+      subtitle: (
+        <>
+          Transformamos créditos esquecidos em dinheiro no caixa, com segurança
+          e estratégia.
+        </>
+      ),
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {

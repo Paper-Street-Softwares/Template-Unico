@@ -27,7 +27,7 @@ function Calculadora({ colorMode }) {
             title={content.texts.calculadora.title}
             subtitle={content.texts.calculadora.subtitle}
             colorMode={colorMode}
-            className={`mb-3`}
+          className={`mb-3`}
           />
           <iframe
             src="/calculadora.html"
