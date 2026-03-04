@@ -160,6 +160,16 @@ const content = {
       ),
       ctaButtonText: <>A_Definir</>,
     },
+    authorityAlert: {
+      miniTag: <>A_Definir</>,
+      title: <h1>A_Definir</h1>,
+      subtitle: (
+        <div>
+          <p className="mb-6 font-secondFont">A_Definir</p>
+        </div>
+      ),
+      ctaButtonText: <>A_Definir</>,
+    },
     important: {
       miniTag: <>A_Definir</>,
       title: <>A_Definir</>,
