@@ -98,9 +98,6 @@ export function Diferences({ colorMode }) {
                   </div>
 
                   <div className="space-y-0">
-                    <p className="font-secondFont ml-4 mb-4">
-                      Empresas que vendem:
-                    </p>
                     {differentials.map((item, i) => (
                       <motion.div
                         key={i}
@@ -114,7 +111,9 @@ export function Diferences({ colorMode }) {
                         >
                           <span>
                             {" "}
-                            <item.icon className={`w-5 h-5 text-primaryDark`} />
+                            <item.icon
+                              className={`w-5 h-5 text-primaryLight`}
+                            />
                           </span>
                         </div>
                         <span
