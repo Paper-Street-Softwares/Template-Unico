@@ -43,14 +43,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "A_Definir",
+  name: "Dr. Edvaldo Costa Gomes",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "A_Definir", // Sem "www"
+  domain: "recuperacaotributaria.adv.br", // Sem "www"
   phone: {
-    ddd: "00",
-    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0000", // Apenas os 4 últimos números
+    ddd: "65",
+    firstPart: "99247", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0496", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -66,9 +66,10 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
+      <p>Av Historiador Rubens de Mendonça,</p>
+      <p>1856 - Jd Aclimação - Edif Cuiabá Tower</p>
+      <p>Cuiabá - MT, </p>
+      <p>CEP: 78050-249</p>
     </div>
   ),
   enderecoSecundario: (
@@ -81,8 +82,7 @@ export const infos = {
   ),
   expediente: (
     <div>
-      <p>Segunda a sexta-feira:</p>
-      <p>8h às 18h</p>
+      <p>Atendimento on line e presencial com hora marcada</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
