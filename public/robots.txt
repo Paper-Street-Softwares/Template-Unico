@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.recuperacaotributaria.adv.br/sitemap.xml
+Sitemap: https://www.luedyealvesadvogados.com.br/sitemap.xml

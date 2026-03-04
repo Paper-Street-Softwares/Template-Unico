@@ -97,7 +97,7 @@ export function Diferences({ colorMode }) {
                     </motion.p>
                   </div>
 
-                  <div className="space-y-0">
+                  <div className="space-y-3">
                     {differentials.map((item, i) => (
                       <motion.div
                         key={i}
@@ -128,7 +128,7 @@ export function Diferences({ colorMode }) {
               </div>
             </div>
           </div>
-          <div className="flex justify-center mt-6">
+          {/* <div className="flex justify-center mt-6">
             <ButtonReflexo
               icon={
                 <svg
@@ -150,7 +150,7 @@ export function Diferences({ colorMode }) {
               }
               className={`clickevent w-fit`}
             />
-          </div>
+          </div> */}
         </div>
       </SectionWrapper>
     </SectionArea>

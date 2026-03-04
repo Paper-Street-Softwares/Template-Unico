@@ -6,20 +6,19 @@ import heroDefaultMobileImg from "../assets/imgs/hero/lawHeroMobile.webp";
 import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
-// import team1 from '../assets/imgs/team/team1.webp'
-// import team2 from '../assets/imgs/team/team2.webp'
-// import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
-// import logo1 from '../assets/imgs/parceria/Logo1.webp'
-// import logo2 from '../assets/imgs/parceria/Logo2.webp'
-// import logo3 from '../assets/imgs/parceria/Logo3.webp'
+
+import feed1 from "../assets/imgs/socialproof/feed1.webp";
+import feed2 from "../assets/imgs/socialproof/feed2.webp";
+import feed3 from "../assets/imgs/socialproof/feed3.webp";
+import feed4 from "../assets/imgs/socialproof/feed4.webp";
+import feed5 from "../assets/imgs/socialproof/feed5.webp";
 
 import {
   Baby,
   Briefcase,
   BriefcaseMedical,
-  Gavel,
   Home,
   Key,
   LucideIdCard,
@@ -36,6 +35,11 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
+  ShieldAlert,
+  AlertTriangle,
+  UserX,
+  KeyRound,
+  Gavel,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -43,14 +47,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "A_Definir",
+  name: "Luedys e Alves Advogados",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "A_Definir", // Sem "www"
+  domain: "luedyealvesadvogados.com.br", // Sem "www"
   phone: {
-    ddd: "00",
-    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0000", // Apenas os 4 últimos números
+    ddd: "11",
+    firstPart: "95570", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "5315", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -95,7 +99,7 @@ export const infos = {
   youtubeProfile: "",
 
   whatsappDefaultMessage:
-    "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
+    "Olá! Vim do anúncio no Google e preciso de Advogado pois caí em um golpe na internet. Pode me ajudar?",
   whatsChatDefaultMessage:
     "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
   slogan: "",
@@ -122,30 +126,35 @@ const content = {
     hero: {
       minitagIcon: (
         <>
-          <BriefcaseBusiness className="w-4 h-4" />
+          <HandCoins className="w-4 h-4" />
           {/* <MapPin className="w-4 h-4" /> */}
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
+      miniTag: <>RECUPERAÇÃO DE GOLPES BANCÁRIOS</>,
+      FirstPart: <span>Perdeu dinheiro em</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_Definir</span>
+        <span className="destaque relative italic font-light">golpe</span>
       ),
-      SecondPart: <span></span>,
-      subtitle: <p>A_Definir</p>,
+      SecondPart: <span>na internet?</span>,
+      subtitle: (
+        <p>
+          Mais de R$1.000.000,00 já recuperados. Atendemos casos acima de R$4
+          mil, com possibilidade real de indenização.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Quero analisar meu caso agora</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: <>A_Definir</>,
+        text: <>Atendimento imediato, contrato formal e total transparência.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -171,169 +180,130 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     important: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
+      miniTag: <>ATENÇÃO</>,
+      title: <>O que você precisa saber sobre golpes bancários</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Mas eu que fiz o Pix… mesmo assim dá pra recuperar?</>,
+          paragraph: (
+            <>
+              Em muitos casos, sim. Mesmo quando a própria vítima realizou a
+              transferência, pode haver responsabilidade do banco se houve falha
+              na segurança, no bloqueio ou no monitoramento da operação. Cada
+              situação precisa ser analisada com cuidado.
+            </>
+          ),
         },
         card2: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Já faz alguns dias… ainda dá tempo de fazer algo?</>,
+          paragraph: (
+            <>
+              O tempo é um fator importante, mas nem sempre significa que está
+              perdido. Existem prazos legais e estratégias que podem ser
+              aplicadas mesmo após alguns dias ou semanas. O ideal é avaliar o
+              quanto antes para não perder oportunidades jurídicas. Entre em
+              contato agora mesmo para avaliarmos seu caso.
+            </>
+          ),
         },
         card3: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>E se o banco já disse que não vai devolver?</>,
+          paragraph: (
+            <>
+              A negativa administrativa do banco não encerra a questão. Muitas
+              vezes a análise interna não considera todas as responsabilidades
+              previstas na legislação. A via judicial é justamente o caminho
+              quando o banco se recusa a ressarcir. Fale agora conosco para
+              entender mais.
+            </>
+          ),
         },
         card4: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Tenho medo de gastar com advogado e não recuperar nada…</>,
+          paragraph: (
+            <>
+              Essa é uma preocupação comum. Por isso, o primeiro passo é a
+              análise técnica do caso, com explicação clara sobre
+              possibilidades, riscos e estratégia. Você entende exatamente como
+              funciona antes de qualquer decisão. Transparência é fundamental,
+              principalmente depois de um golpe.
+            </>
+          ),
         },
       },
-      fraseObs: <>A_Definir</>,
-      ctaButtonText: <>A_Definir</>,
+      fraseObs: (
+        <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
+      ),
+      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
     },
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
-      Destaque: <span className="italic font-light">A_Definir</span>,
-      SecondPart: <span></span>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>NOSSOS SERVIÇOS</>,
+      FirstPart: <span> </span>,
+      Destaque: <span className="italic font-light">Recuperação</span>,
+      SecondPart: <span>em golpes bancários</span>,
+      subtitle: (
+        <> Atuação jurídica especializada para responsabilizar o banco.</>
+      ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>A_Definir</>,
-      subtitleMessageFeature: <>A_Definir</>,
+      titleMessageFeature: <>100%</>,
+      subtitleMessageFeature: <>online e seguro</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
+          title: <>Clonagem, invasão e transferências indevidas</>,
+          subtitle: <>Clonagem, invasão e transferências indevidas</>,
+          description: <div></div>,
+          icon: <ShieldAlert />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <User />,
+          title: <>Pix pra pessoa errada</>,
+          subtitle: <>Erro induzido por fraude ou engenharia social</>,
+          description: <div></div>,
+          icon: <AlertTriangle />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card3: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Scale />,
+          title: <>Falso atendente de banco</>,
+          subtitle: <>Golpista se passa por funcionário do banco</>,
+          description: <div></div>,
+          icon: <UserX />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card4: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <Gavel />,
+          title: <>Golpe do boleto</>,
+          subtitle: <>Boletos falsos e pagamentos desviados</>,
+          description: <div></div>,
+          icon: <FileText />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card5: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Users />,
+          title: <>Venda de veículos</>,
+          subtitle: <>Fraudes em compra e venda de automóveis</>,
+          description: <div></div>,
+          icon: <KeyRound />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card6: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <MessageSquare />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card7: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Shield />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card8: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
+          title: <>Golpe do leilão</>,
+          subtitle: <>Leilões inexistentes e sites fraudulentos</>,
+          description: <div></div>,
+          icon: <Gavel />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Preciso de atendimento imediato</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -385,12 +355,31 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
+      miniTag: <>QUEM É O LUEDY & ALVES ADVOGADOS</>,
+      FirstPart: <span> Especialistas em </span>,
+      Destaque: <span className="italic font-light"> fraudes bancárias</span>,
       SecondPart: <span></span>,
-      subtitle: <></>,
-      paragraph: <div>A_Definir</div>,
+      subtitle: (
+        <>Mais de 500 processos ativos e nota máxima de satisfação no Google</>
+      ),
+      paragraph: (
+        <div>
+          O Luedy & Alves Advogados é um escritório com atuação nacional e foco
+          exclusivo em fraudes bancárias. São mais de 500 processos em andamento
+          em todo o Brasil, conduzidos com estratégia técnica e acompanhamento
+          próximo. Somos nota máxima de satisfação no Google, com mais de 150
+          avaliações positivas que refletem nosso compromisso com transparência,
+          clareza e responsabilidade.
+          <br />
+          <br />
+          Nossa equipe é formada por profissionais altamente capacitados e em
+          constante atualização jurídica e tecnológica, garantindo eficiência e
+          segurança na condução dos casos. Aqui, o cliente recebe análise
+          individual, contrato formal, honorários explicados com clareza e
+          acompanhamento contínuo do processo — sem promessas irreais e sem
+          custos ocultos.
+        </div>
+      ),
       benefits: {
         cards: {
           card1: {
@@ -415,7 +404,7 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar diretamente com o Advogado</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
@@ -453,57 +442,82 @@ const content = {
       // },
     },
     ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>Fale conosco</>,
+      title: <h1>Fale agora com um Advogado Especialista</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Se você perdeu dinheiro em um golpe bancário, receba orientação
+            segura agora.
+          </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>A_Definir</>,
-          topic2: <>A_Definir</>,
-          topic3: <>A_Definir</>,
-          topic4: <>A_Definir</>,
+          topic1: <>Análise técnica do seu caso</>,
+          topic2: <>Atendimento direto com o advogado, sem intermediários</>,
+          topic3: <>Resposta rápida e acompanhamento pelo WhatsApp</>,
+          topic4: <>Estratégia jurídica definida após a análise</>,
+          topic5: (
+            <>Você mais perto de recuperar o que é seu, sem sair de casa</>
+          ),
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Quero analisar meu caso agora</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
+    socialProof: {
+      minitag: "Avaliações Verificadas",
+      title: "A experiência de quem já contratou a Paper Street",
+      subtitle:
+        "Advogados que buscavam organização, posicionamento e crescimento encontraram na Paper Street a solução que precisavam.",
+      ctaButtonText: "Falar com a equipe agora",
+      images: {
+        img1: feed1,
+        img2: feed2,
+        img3: feed3,
+        img4: feed4,
+        img5: feed5,
+      },
+    },
     steps: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir</span>,
-      Destaque: <span className="italic font-light"> A_Definir </span>,
-      SecondPart: <span>A_Definir</span>,
+      miniTag: <>COMO FUNCIONA</>,
+      FirstPart: <span> Entenda como vamos</span>,
+      Destaque: <span className="italic font-light"> cuidar </span>,
+      SecondPart: <span>do seu caso</span>,
 
-      subtitle: <></>,
+      subtitle: (
+        <>
+          Você não vai enfrentar isso sozinho. Existe método, estratégia e
+          acompanhamento em cada etapa.
+        </>
+      ),
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Análise do caso</>,
+          cardDescription: <>Avaliação técnica clara das suas chances</>,
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Estratégia jurídica</>,
+          cardDescription: <>Definimos o melhor caminho para agir</>,
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Ação contra o banco</>,
+          cardDescription: <>Atuamos para responsabilizar a instituição</>,
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Acompanhamento total</>,
+          cardDescription: <>Atualizações constantes e suporte direto</>,
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Quero análise do meu caso agora</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -543,21 +557,59 @@ const content = {
       ],
     },
     diferences: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>NOSSOS DIFERENCIAIS</>,
+      title: <>Por que nosso atendimento é diferente</>,
+      subtitle: (
+        <>
+          Tudo conduzido com base técnica, dentro da lei e com total
+          responsabilidade.
+        </>
+      ),
       cards: {
         card1: {
           icon: Check,
-          text: <>A_Definir</>,
+          text: (
+            <>
+              Especialização exclusiva em fraudes bancárias Atuação focada em
+              golpes financeiros, não em causas genéricas.
+            </>
+          ),
         },
         card2: {
           icon: Check,
-          text: <>A_Definir</>,
+          text: (
+            <>
+              Estratégia jurídica contra o banco Não dependemos apenas da “boa
+              vontade” da instituição.
+            </>
+          ),
         },
         card3: {
           icon: Check,
-          text: <>A_Definir</>,
+          text: (
+            <>
+              Atendimento 100% online e imediato Você recebe orientação rápida,
+              sem sair de casa.
+            </>
+          ),
+        },
+        card4: {
+          icon: Check,
+          text: (
+            <>
+              Atualizações constantes do processo Você acompanha cada etapa, com
+              explicação clara.
+            </>
+          ),
+        },
+        card5: {
+          icon: Check,
+          text: (
+            <>
+              Honorários transparentes e contrato formal Sem taxas ocultas, sem
+              surpresas.
+            </>
+          ),
         },
       },
     },
@@ -606,25 +658,69 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>TIRE SUAS DÚVIDAS</>,
+      title: <>Perguntas Frequentes</>,
+      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>É possível estornar um Pix?</>,
+          answer: (
+            <>
+              Pelas vias normais não é possível estornar um Pix. É uma operação
+              instantânea, então o valor é creditado na conta do destinatário
+              imediatamente. Porém, você pode fazer uso do MED para tentar
+              recuperar o valor nos dias seguintes à operação.
+            </>
+          ),
         },
         question2: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>O banco pode ser responsabilizado?</>,
+          answer: (
+            <>
+              Na grande maioria dos casos, sim. É preciso analisar cada situação
+              em particular, no entanto, quando há alguma ação ou omissão da
+              Instituição Bancária para viabilizar ou facilitar o golpe, haverá
+              responsabilização.
+            </>
+          ),
         },
         question3: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>É possível obter indenização?</>,
+          answer: (
+            <>
+              Em diversos casos, é sim possível obter uma indenização pela
+              omissão ou ação indevida do seu banco. Porém, é preciso pontuar
+              que a indenização depende de cada caso, por isso é fundamental que
+              um advogado analise individualmente sua situação.
+            </>
+          ),
         },
         question4: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Fui vítima de um golpe! O que devo fazer?</>,
+          answer: (
+            <>
+              Entre em contato imediatamente com a instituição financeira, pois,
+              dependendo do caso, o banco pode te fornecer algum tipo de
+              suporte. Solicite o bloqueio preventivo dos seus recursos em conta
+              e, em seguida, procure um advogado especialista para relatar a
+              situação e planejar os próximos passos. <br />
+              Registre um boletim de ocorrência o mais rápido possível.
+            </>
+          ),
+        },
+        question5: {
+          question: <>Consigo recuperar meu dinheiro?</>,
+          answer: (
+            <>
+              Na grande maioria dos casos, sim! Ainda que haja divergências, o
+              entendimento majoritário da justiça é de que os bancos têm
+              responsabilidade objetiva nesses casos e devem reparar
+              integralmente os danos financeiros.
+              <br />
+              Contamos com uma equipe especializada que pode te ajudar a
+              recuperar todo o valor transferido!
+            </>
+          ),
         },
       },
 
