@@ -33,6 +33,8 @@ function SocialProof({ colorMode }) {
           src={item}
           alt="imagens de fedback"
           className="max-w-[800px] w-full rounded-lg border border-white"
+          width={634}
+          height={625}
         />
       </div>
     );
@@ -56,8 +58,6 @@ function SocialProof({ colorMode }) {
                   src={imgGoogle}
                   alt="Logomarca do Google"
                   className="w-5"
-                  width={634}
-                  height={625}
                 />{" "}
                 <p className="text-[14px] opacity-70 font-light">
                   Avaliações Google
