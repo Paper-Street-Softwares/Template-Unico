@@ -9,11 +9,11 @@ import aboutImg from "../assets/imgs/about/aboutImg.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 
-// import feed1 from "../assets/imgs/socialProof/feed1.jpg";
-// import feed2 from "../assets/imgs/socialproof/feed2.jpg";
-// import feed3 from "../assets/imgs/socialproof/feed3.jpg";
-// import feed4 from "../assets/imgs/socialproof/feed4.jpg";
-// import feed5 from "../assets/imgs/socialproof/feed5.jpg";
+import feed1 from "../assets/imgs/socialProof/feed1.webp";
+import feed2 from "../assets/imgs/socialproof/feed2.webp";
+import feed3 from "../assets/imgs/socialproof/feed3.webp";
+import feed4 from "../assets/imgs/socialproof/feed4.webp";
+import feed5 from "../assets/imgs/socialproof/feed5.webp";
 
 import {
   Baby,
@@ -467,20 +467,20 @@ const content = {
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
-    // socialProof: {
-    //   minitag: "Avaliações Verificadas",
-    //   title: "A experiência de quem já contratou a Paper Street",
-    //   subtitle:
-    //     "Advogados que buscavam organização, posicionamento e crescimento encontraram na Paper Street a solução que precisavam.",
-    //   ctaButtonText: "Falar com a equipe agora",
-    //   images: {
-    //     img1: feed1,
-    //     img2: feed2,
-    //     img3: feed3,
-    //     img4: feed4,
-    //     img5: feed5,
-    //   },
-    // },
+    socialProof: {
+      minitag: "Avaliações Verificadas",
+      title: "A experiência de quem já contratou a Paper Street",
+      subtitle:
+        "Advogados que buscavam organização, posicionamento e crescimento encontraram na Paper Street a solução que precisavam.",
+      ctaButtonText: "Falar com a equipe agora",
+      images: {
+        img1: feed1,
+        img2: feed2,
+        img3: feed3,
+        img4: feed4,
+        img5: feed5,
+      },
+    },
     steps: {
       miniTag: <>COMO FUNCIONA</>,
       FirstPart: <span> Entenda como vamos</span>,

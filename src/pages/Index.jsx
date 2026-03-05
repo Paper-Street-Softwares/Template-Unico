@@ -43,7 +43,7 @@ import { AlternatingSection } from "../components/sectionElements/AlternatingSec
 import Parceria from "../components/sections/Parceria";
 import FormNovoTemplate from "../components/sections/FormNovoTemplate";
 import AuthorityAndAlert from "../components/sections/AuthorityAndAlert";
-// import SocialProof from "../components/sections/SocialProof";
+import SocialProof from "../components/sections/SocialProof";
 
 export default function Index() {
   const { colorMode, setColorMode } = useColorMode();
@@ -70,9 +70,9 @@ export default function Index() {
             <Emergency colorMode={colorMode} />
           </AlternatingSection> */}
 
-          {/* <AlternatingSection index={1} colorMode={colorMode}>
+          <AlternatingSection index={1} colorMode={colorMode}>
             <SocialProof colorMode={colorMode} />
-          </AlternatingSection> */}
+          </AlternatingSection>
 
           <AlternatingSection index={2} colorMode={colorMode}>
             <Important colorMode={colorMode} />
