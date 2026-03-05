@@ -9,11 +9,11 @@ import aboutImg from "../assets/imgs/about/aboutImg.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 
-import feed1 from "../assets/imgs/socialProof/feed1.webp";
-import feed2 from "../assets/imgs/socialproof/feed2.webp";
-import feed3 from "../assets/imgs/socialproof/feed3.webp";
-import feed4 from "../assets/imgs/socialproof/feed4.webp";
-import feed5 from "../assets/imgs/socialproof/feed5.webp";
+import feed1 from "../assets/imgs/socialProof/feed1.jpg";
+import feed2 from "../assets/imgs/socialproof/feed2.jpg";
+import feed3 from "../assets/imgs/socialproof/feed3.jpg";
+import feed4 from "../assets/imgs/socialproof/feed4.jpg";
+import feed5 from "../assets/imgs/socialproof/feed5.jpg";
 
 import {
   Baby,
