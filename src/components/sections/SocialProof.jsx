@@ -56,6 +56,8 @@ function SocialProof({ colorMode }) {
                   src={imgGoogle}
                   alt="Logomarca do Google"
                   className="w-5"
+                  width={634}
+                  height={625}
                 />{" "}
                 <p className="text-[14px] opacity-70 font-light">
                   Avaliações Google
