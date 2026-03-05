@@ -9,11 +9,12 @@ import aboutImg from "../assets/imgs/about/aboutImg.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 
-import feed1 from "../assets/imgs/socialProof/feed1.webp";
-import feed2 from "../assets/imgs/socialproof/feed2.webp";
-import feed3 from "../assets/imgs/socialproof/feed3.webp";
-import feed4 from "../assets/imgs/socialproof/feed4.webp";
-import feed5 from "../assets/imgs/socialproof/feed5.webp";
+import imgproof1 from "../assets/imgs/socialProof/socialproof1.webp";
+import imgproof2 from "../assets/imgs/socialProof/socialproof2.webp";
+import imgproof3 from "../assets/imgs/socialProof/socialproof3.webp";
+import imgproof4 from "../assets/imgs/socialProof/socialproof4.webp";
+import imgproof5 from "../assets/imgs/socialProof/socialproof5.webp";
+import imgproof6 from "../assets/imgs/socialProof/socialproof6.webp";
 
 import {
   Baby,
@@ -474,11 +475,12 @@ const content = {
         "Advogados que buscavam organização, posicionamento e crescimento encontraram na Paper Street a solução que precisavam.",
       ctaButtonText: "Falar com a equipe agora",
       images: {
-        img1: feed1,
-        img2: feed2,
-        img3: feed3,
-        img4: feed4,
-        img5: feed5,
+        img1: imgproof1,
+        img2: imgproof2,
+        img3: imgproof3,
+        img4: imgproof4,
+        img5: imgproof5,
+        img6: imgproof6,
       },
     },
     steps: {
