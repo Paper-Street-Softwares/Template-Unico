@@ -467,20 +467,20 @@ const content = {
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
-    socialProof: {
-      minitag: "Avaliações Verificadas",
-      title: "A experiência de quem já contratou a Paper Street",
-      subtitle:
-        "Advogados que buscavam organização, posicionamento e crescimento encontraram na Paper Street a solução que precisavam.",
-      ctaButtonText: "Falar com a equipe agora",
-      images: {
-        img1: feed1,
-        img2: feed2,
-        img3: feed3,
-        img4: feed4,
-        img5: feed5,
-      },
-    },
+    // socialProof: {
+    //   minitag: "Avaliações Verificadas",
+    //   title: "A experiência de quem já contratou a Paper Street",
+    //   subtitle:
+    //     "Advogados que buscavam organização, posicionamento e crescimento encontraram na Paper Street a solução que precisavam.",
+    //   ctaButtonText: "Falar com a equipe agora",
+    //   images: {
+    //     img1: feed1,
+    //     img2: feed2,
+    //     img3: feed3,
+    //     img4: feed4,
+    //     img5: feed5,
+    //   },
+    // },
     steps: {
       miniTag: <>COMO FUNCIONA</>,
       FirstPart: <span> Entenda como vamos</span>,
