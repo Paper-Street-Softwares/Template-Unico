@@ -501,7 +501,7 @@ const content = {
       container: {
         topics: {
           topic1: <>Análise inicial do seu caso</>,
-          topic2: <>Atendimento direto com o advogado, sem intermediários</>,
+          topic2: <>Atendimento direto com o Advogado, sem intermediários</>,
           topic3: <>Resposta rápida e acompanhamento pelo WhatsApp</>,
           topic4: <>Estratégia jurídica clara desde o primeiro contato</>,
           topic5: <>Orientação segura para proteger seus direitos</>,
@@ -552,7 +552,7 @@ const content = {
           ),
         },
       },
-      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
+      ctaButtonText: <>Quero análise do meu caso</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
