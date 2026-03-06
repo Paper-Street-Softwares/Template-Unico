@@ -420,7 +420,7 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Fazer análise gratuita</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
