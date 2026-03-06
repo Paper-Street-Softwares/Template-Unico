@@ -631,7 +631,7 @@ const content = {
         },
       },
 
-      ctaButtonText: <></>,
+      ctaButtonText: <>Entre em contato agora</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
