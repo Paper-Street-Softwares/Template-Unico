@@ -1,26 +1,24 @@
-// vite.config.js
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
-import path from 'path'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
+import path from "path";
 
-function nonBlockingCssPlugin() {
+function preloadCssPlugin() {
   return {
-    name: 'non-blocking-css',
-    enforce: 'post',
+    name: "preload-css",
     transformIndexHtml(html) {
       return html.replace(
-        /<link rel="stylesheet"([^>]+)>/g,
-        `<link rel="stylesheet"$1 media="print" onload="this.media='all'">`
-      )
+        /<link rel="stylesheet"(.*?)>/g,
+        `<link rel="preload" as="style"$1><link rel="stylesheet"$1>`,
+      );
     },
-  }
+  };
 }
 
 export default defineConfig({
-  plugins: [react(), nonBlockingCssPlugin()],
+  plugins: [react(), preloadCssPlugin()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      "@": path.resolve(__dirname, "./src"),
     },
   },
-})
+});
