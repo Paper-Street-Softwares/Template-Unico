@@ -404,7 +404,11 @@ const content = {
       FirstPart: <span> Minha</span>,
       Destaque: <span className="italic font-light"> trajetória</span>,
       SecondPart: <span></span>,
-      subtitle: <></>,
+      subtitle: (
+        <>
+          Atuação voltada à defesa em conflitos bancários, civis e empresariais.
+        </>
+      ),
       paragraph: (
         <div>
           Meu trabalho é ajudar pessoas e empresas a enfrentarem conflitos
