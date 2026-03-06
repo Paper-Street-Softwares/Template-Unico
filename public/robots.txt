@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.assessobrasil.com.br/sitemap.xml
+Sitemap: https://civel-caio.advespecialista.adv.br/sitemap.xml
