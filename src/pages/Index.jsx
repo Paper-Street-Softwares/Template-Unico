@@ -74,40 +74,40 @@ export default function Index() {
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={3} colorMode={colorMode}>
+          {/* <AlternatingSection index={3} colorMode={colorMode}>
             <Speed colorMode={colorMode} />
-          </AlternatingSection>
+          </AlternatingSection> */}
 
-          <AlternatingSection index={4} colorMode={colorMode}>
+          <AlternatingSection index={3} colorMode={colorMode}>
             <Suspense>
               <AboutNovoTemplate
                 colorMode={colorMode}
                 ButtonModal={false}
                 benefits={false}
               />
-              <SocialMediaTemplate colorMode={colorMode} />
+              {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={5} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={4} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <CtaNovoTemplate colorMode={colorMode} container={true} />
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={6} colorMode={colorMode}>
+          <AlternatingSection index={5} colorMode={colorMode}>
             <Suspense>
               <StepsNovoTemplate colorMode={colorMode} />
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={7} colorMode={colorMode}>
+          <AlternatingSection index={6} colorMode={colorMode}>
             <Suspense>
               <FaqNovoTemplate colorMode={colorMode} />
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={8} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={7} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <FooterNovoTemplate
                 colorMode={colorMode}
