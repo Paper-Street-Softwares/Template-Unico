@@ -695,15 +695,15 @@ const content = {
       subtitle: <>A_Definir</>,
       cards: {
         card1: {
-          icon: Clock,
+          icon: Check,
           text: <>Em pouco tempo, conforme a análise do caso</>,
         },
         card2: {
-          icon: Users,
+          icon: Check,
           text: <>Sem precisar sair de casa, em muitos casos</>,
         },
         card3: {
-          icon: ShieldCheck,
+          icon: Check,
           text: <>Com orientação jurídica em todas as etapas</>,
         },
       },
