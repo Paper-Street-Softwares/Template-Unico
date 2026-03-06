@@ -518,7 +518,7 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar diretamente com a empresa</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
