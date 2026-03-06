@@ -59,26 +59,11 @@ export default function Index() {
             <HeroTemplateNovo colorMode={colorMode} obs={true} obsTwo={false} />
           </AlternatingSection>
 
-          {/* <AlternatingSection index={1} colorMode={colorMode}>
-            <AuthorityAndAlert />
-          </AlternatingSection> */}
-          {/* <AlternatingSection index={1} colorMode={colorMode}>
-            <FormNovoTemplate />
-          </AlternatingSection> */}
-
-          {/* <AlternatingSection index={1} colorMode={colorMode}>
-            <Emergency colorMode={colorMode} />
-          </AlternatingSection> */}
-
           <AlternatingSection index={1} colorMode={colorMode}>
-            <SocialProof colorMode={colorMode} />
-          </AlternatingSection>
-
-          <AlternatingSection index={2} colorMode={colorMode}>
             <Important colorMode={colorMode} />
           </AlternatingSection>
 
-          <AlternatingSection index={3} colorMode={colorMode}>
+          <AlternatingSection index={2} colorMode={colorMode}>
             <Suspense>
               <FeaturesNovaTemplate
                 colorMode={colorMode}
@@ -89,79 +74,40 @@ export default function Index() {
             </Suspense>
           </AlternatingSection>
 
-          <AlternatingSection index={4} colorMode={colorMode}>
-            <Suspense>
-              <Diferences colorMode={colorMode} />
-            </Suspense>
+          <AlternatingSection index={3} colorMode={colorMode}>
+            <Speed colorMode={colorMode} />
           </AlternatingSection>
 
-          {/* DICAS */}
-
-          {/* <AlternatingSection index={3} colorMode={colorMode}>
-            <Suspense>
-              <Cards colorMode={colorMode} />
-            </Suspense>
-          </AlternatingSection> */}
-
-          {/* <AlternatingSection index={5} colorMode={colorMode}>
-            <Speed colorMode={colorMode} />
-          </AlternatingSection> */}
-
-          <AlternatingSection index={5} colorMode={colorMode}>
+          <AlternatingSection index={4} colorMode={colorMode}>
             <Suspense>
               <AboutNovoTemplate
                 colorMode={colorMode}
                 ButtonModal={false}
                 benefits={false}
               />
-              {/* <SocialMediaTemplate colorMode={colorMode} /> */}
+              <SocialMediaTemplate colorMode={colorMode} />
             </Suspense>
           </AlternatingSection>
 
-          {/* <AlternatingSection index={4} colorMode={colorMode} forcePrimaryDark>
-            <Suspense>
-              <CtaNovoTemplate colorMode={colorMode} container={true} />
-            </Suspense>
-          </AlternatingSection> */}
-
-          <AlternatingSection index={6} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={5} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <CtaNovoTemplate colorMode={colorMode} container={true} />
             </Suspense>
           </AlternatingSection>
 
-          {/* CALCULADORA */}
-
-          <AlternatingSection index={7} colorMode={colorMode}>
+          <AlternatingSection index={6} colorMode={colorMode}>
             <Suspense>
               <StepsNovoTemplate colorMode={colorMode} />
             </Suspense>
           </AlternatingSection>
-          {/* <AlternatingSection index={6} colorMode={colorMode}>
-            <Suspense>
-              <Authority colorMode={colorMode} />
-            </Suspense>
-          </AlternatingSection> */}
 
-          {/* <AlternatingSection index={7} colorMode={colorMode}>
-            <Suspense>
-              <BlogPosts colorMode={colorMode} />
-            </Suspense>
-          </AlternatingSection> */}
-
-          <AlternatingSection index={8} colorMode={colorMode}>
+          <AlternatingSection index={7} colorMode={colorMode}>
             <Suspense>
               <FaqNovoTemplate colorMode={colorMode} />
             </Suspense>
           </AlternatingSection>
 
-          {/* <AlternatingSection index={12} colorMode={colorMode}>
-            <Suspense>
-              <Parceria colorMode={colorMode} />
-            </Suspense>
-          </AlternatingSection> */}
-
-          <AlternatingSection index={9} colorMode={colorMode} forcePrimaryDark>
+          <AlternatingSection index={8} colorMode={colorMode} forcePrimaryDark>
             <Suspense>
               <FooterNovoTemplate
                 colorMode={colorMode}
@@ -181,6 +127,57 @@ export default function Index() {
           {/* <Suspense fallback={null}>
             <WhatsappAnimated colorMode={colorMode} />
           </Suspense> */}
+          {/* <AlternatingSection index={1} colorMode={colorMode}>
+            <AuthorityAndAlert />
+          </AlternatingSection> */}
+          {/* <AlternatingSection index={1} colorMode={colorMode}>
+            <FormNovoTemplate />
+          </AlternatingSection> */}
+
+          {/* <AlternatingSection index={1} colorMode={colorMode}>
+            <Emergency colorMode={colorMode} />
+          </AlternatingSection> */}
+
+          {/* <AlternatingSection index={1} colorMode={colorMode}>
+            <SocialProof colorMode={colorMode} />
+          </AlternatingSection> */}
+
+          {/* <AlternatingSection index={12} colorMode={colorMode}>
+            <Suspense>
+              <Parceria colorMode={colorMode} />
+            </Suspense>
+          </AlternatingSection> */}
+
+          {/* <AlternatingSection index={6} colorMode={colorMode}>
+            <Suspense>
+              <Authority colorMode={colorMode} />
+            </Suspense>
+          </AlternatingSection> */}
+
+          {/* <AlternatingSection index={7} colorMode={colorMode}>
+            <Suspense>
+              <BlogPosts colorMode={colorMode} />
+            </Suspense>
+          </AlternatingSection> */}
+          {/* <AlternatingSection index={4} colorMode={colorMode} forcePrimaryDark>
+            <Suspense>
+              <CtaNovoTemplate colorMode={colorMode} container={true} />
+            </Suspense>
+          </AlternatingSection> */}
+
+          {/* <AlternatingSection index={4} colorMode={colorMode}>
+            <Suspense>
+              <Diferences colorMode={colorMode} />
+            </Suspense>
+          </AlternatingSection> */}
+
+          {/* DICAS */}
+
+          {/* <AlternatingSection index={3} colorMode={colorMode}>
+            <Suspense>
+              <Cards colorMode={colorMode} />
+            </Suspense>
+          </AlternatingSection> */}
         </main>
       </ColorModeProvider>
     </>

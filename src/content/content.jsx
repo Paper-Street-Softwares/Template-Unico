@@ -6,8 +6,14 @@ import heroDefaultMobileImg from "../assets/imgs/hero/lawHeroMobile.webp";
 import imgFeatures from "../assets/imgs/features/imgServices.webp";
 
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
+// import team1 from '../assets/imgs/team/team1.webp'
+// import team2 from '../assets/imgs/team/team2.webp'
+import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
+// import logo1 from '../assets/imgs/parceria/Logo1.webp'
+// import logo2 from '../assets/imgs/parceria/Logo2.webp'
+// import logo3 from '../assets/imgs/parceria/Logo3.webp'
 
 import imgproof1 from "../assets/imgs/socialProof/socialproof1.webp";
 import imgproof2 from "../assets/imgs/socialProof/socialproof2.webp";
@@ -20,6 +26,7 @@ import {
   Baby,
   Briefcase,
   BriefcaseMedical,
+  Gavel,
   Home,
   Key,
   LucideIdCard,
@@ -36,11 +43,12 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
-  ShieldAlert,
-  AlertTriangle,
-  UserX,
-  KeyRound,
-  Gavel,
+  UserCheck,
+  Building2,
+  HeartPulse,
+  Banknote,
+  FileCheck,
+  Search,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -48,14 +56,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Luedys e Alves Advogados",
+  name: "Assesso Brasil",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "luedyealvesadvogados.com.br", // Sem "www"
+  domain: "assessobrasil.com.br", // Sem "www"
   phone: {
-    ddd: "11",
-    firstPart: "95570", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "5315", // Apenas os 4 últimos números
+    ddd: "65",
+    firstPart: "99284", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "8950", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -71,9 +79,10 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
+      <p>Av. Miguel Sutil,</p>
+      <p>8000 - Edifício Santa Rosa Tower, </p>
+      <p>Jd Mariana Cuiabá - MT, </p>
+      <p>CEP: 78040-790</p>
     </div>
   ),
   enderecoSecundario: (
@@ -91,7 +100,7 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "", // Sem o @
+  instagramProfile: "assesso.brasil", // Sem o @
   instagramProfileSecundario: "",
   facebookProfile: "",
   linkeDinProfile: "",
@@ -100,7 +109,7 @@ export const infos = {
   youtubeProfile: "",
 
   whatsappDefaultMessage:
-    "Olá! Vim do anúncio no Google e preciso de Advogado pois caí em um golpe na internet. Pode me ajudar?",
+    "Olá! Vim através do site de vocês e gostaria de tirar umas dúvidas.",
   whatsChatDefaultMessage:
     "Gostaria de falar conosco agora mesmo? Clque abaixo 👇",
   slogan: "",
@@ -127,21 +136,21 @@ const content = {
     hero: {
       minitagIcon: (
         <>
-          <HandCoins className="w-4 h-4" />
+          <BriefcaseBusiness className="w-4 h-4" />
           {/* <MapPin className="w-4 h-4" /> */}
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>RECUPERAÇÃO DE GOLPES BANCÁRIOS</>,
-      FirstPart: <span>Perdeu dinheiro em</span>,
+      miniTag: <>ISENÇÃO DE IR PARA APOSENTADOS</>,
+      FirstPart: <span>Aposentado, sabia que você pode ter</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">golpe</span>
+        <span className="destaque relative italic font-light">isenção</span>
       ),
-      SecondPart: <span>na internet?</span>,
+      SecondPart: <span>de IR?</span>,
       subtitle: (
         <p>
-          Mais de R$1.000.000,00 já recuperados. Atendemos casos acima de R$4
-          mil, com possibilidade real de indenização.
+          Aposentados com algumas doenças podem <strong>parar de pagar</strong>{" "}
+          Imposto de Renda e até recuperar valores pagos indevidamente.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -150,15 +159,29 @@ const content = {
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Quero analisar meu caso agora</>,
+      ctaButtonText: <>Saiba agora se você tem direito</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: <>Atendimento imediato, contrato formal e total transparência.</>,
+        text: <>Análise do seu caso com orientação especializada na área.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
+    },
+    socialProof: {
+      minitag: "A_Definir",
+      title: "A_Definir",
+      subtitle: "A_Definir",
+      ctaButtonText: "Falar com a equipe agora",
+      images: {
+        img1: imgproof1,
+        img2: imgproof2,
+        img3: imgproof3,
+        img4: imgproof4,
+        img5: imgproof5,
+        img6: imgproof6,
+      },
     },
     emergency: {
       miniTag: <>A_Definir</>,
@@ -182,52 +205,54 @@ const content = {
     },
     important: {
       miniTag: <>ATENÇÃO</>,
-      title: <>O que você precisa saber sobre golpes bancários</>,
+      title: (
+        <>
+          O que é importante saber sobre isenção do imposto de renda para
+          aposentados
+        </>
+      ),
       cards: {
         card1: {
-          title: <>Mas eu que fiz o Pix… mesmo assim dá pra recuperar?</>,
+          title: <>Sou aposentado. Eu posso parar de pagar imposto de renda?</>,
           paragraph: (
             <>
-              Em muitos casos, sim. Mesmo quando a própria vítima realizou a
-              transferência, pode haver responsabilidade do banco se houve falha
-              na segurança, no bloqueio ou no monitoramento da operação. Cada
-              situação precisa ser analisada com cuidado.
+              Sim, em alguns casos. A lei garante isenção do Imposto de Renda
+              para aposentados e pensionistas que possuem determinadas doenças
+              graves. Quando esse direito é reconhecido, o desconto deixa de ser
+              feito no benefício.
             </>
           ),
         },
         card2: {
-          title: <>Já faz alguns dias… ainda dá tempo de fazer algo?</>,
+          title: <>Que tipo de doença dá direito à isenção?</>,
           paragraph: (
             <>
-              O tempo é um fator importante, mas nem sempre significa que está
-              perdido. Existem prazos legais e estratégias que podem ser
-              aplicadas mesmo após alguns dias ou semanas. O ideal é avaliar o
-              quanto antes para não perder oportunidades jurídicas. Entre em
-              contato agora mesmo para avaliarmos seu caso.
+              Algumas doenças previstas em lei podem garantir a isenção, como
+              câncer, cardiopatia grave, Parkinson, esclerose múltipla, entre
+              outras. É necessário apresentar laudos médicos que comprovem o
+              diagnóstico.
             </>
           ),
         },
         card3: {
-          title: <>E se o banco já disse que não vai devolver?</>,
+          title: (
+            <>Já paguei imposto por anos. Dá pra recuperar esse dinheiro?</>
+          ),
           paragraph: (
             <>
-              A negativa administrativa do banco não encerra a questão. Muitas
-              vezes a análise interna não considera todas as responsabilidades
-              previstas na legislação. A via judicial é justamente o caminho
-              quando o banco se recusa a ressarcir. Fale agora conosco para
-              entender mais.
+              Em muitos casos, sim. Quando a pessoa já tinha direito à isenção,
+              é possível pedir a restituição dos valores pagos indevidamente,
+              normalmente referentes aos últimos anos.
             </>
           ),
         },
         card4: {
-          title: <>Tenho medo de gastar com advogado e não recuperar nada…</>,
+          title: <>Preciso entrar na justiça ou dá pra resolver direto?</>,
           paragraph: (
             <>
-              Essa é uma preocupação comum. Por isso, o primeiro passo é a
-              análise técnica do caso, com explicação clara sobre
-              possibilidades, riscos e estratégia. Você entende exatamente como
-              funciona antes de qualquer decisão. Transparência é fundamental,
-              principalmente depois de um golpe.
+              Depende do caso. Algumas situações podem ser resolvidas de forma
+              administrativa, mas quando o pedido é negado ou há valores a
+              recuperar, pode ser necessário buscar o direito pela via judicial.
             </>
           ),
         },
@@ -239,72 +264,163 @@ const content = {
     },
     features: {
       miniTag: <>NOSSOS SERVIÇOS</>,
-      FirstPart: <span> </span>,
-      Destaque: <span className="italic font-light">Recuperação</span>,
-      SecondPart: <span>em golpes bancários</span>,
+      FirstPart: <span>Atuação em</span>,
+      Destaque: <span className="italic font-light">isenção</span>,
+      SecondPart: <span>de IR</span>,
       subtitle: (
-        <> Atuação jurídica especializada para responsabilizar o banco.</>
+        <>
+          Defendemos o direito de aposentados à isenção e restituição do imposto
+          pago indevidamente.
+        </>
       ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>online e seguro</>,
+      titleMessageFeature: <>Atuação</>,
+      subtitleMessageFeature: <>em todo Brasil</>,
       cards: {
         card1: {
-          title: <>Golpe do WhatsApp</>,
-          subtitle: <>Clonagem, invasão e transferências indevidas</>,
-          description: <div></div>,
-          icon: <ShieldAlert />,
+          title: <>Aposentados INSS</>,
+          subtitle: (
+            <>Isenção de IR para aposentados com doenças previstas em lei.</>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <UserCheck />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>Pix pra pessoa errada</>,
-          subtitle: <>Erro induzido por fraude ou engenharia social</>,
-          description: <div></div>,
-          icon: <AlertTriangle />,
+          title: <>Servidor público</>,
+          subtitle: (
+            <>
+              Defesa do direito à isenção para aposentados do serviço público.
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Building2 />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card3: {
-          title: <>Falso atendente de banco</>,
-          subtitle: <>Golpista se passa por funcionário do banco</>,
-          description: <div></div>,
-          icon: <UserX />,
+          title: <>Doenças graves</>,
+          subtitle: (
+            <>Análise de casos de câncer, cardiopatia e outras doenças.</>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <HeartPulse />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card4: {
-          title: <>Golpe do boleto</>,
-          subtitle: <>Boletos falsos e pagamentos desviados</>,
-          description: <div></div>,
-          icon: <FileText />,
+          title: <>Restituição IR</>,
+          subtitle: (
+            <>Recuperação do imposto pago indevidamente nos últimos anos.</>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
+            </div>
+          ),
+          icon: <Banknote />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card5: {
-          title: <>Venda de veículos</>,
-          subtitle: <>Fraudes em compra e venda de automóveis</>,
-          description: <div></div>,
-          icon: <KeyRound />,
+          title: <>Pedido de isenção</>,
+          subtitle: (
+            <>Atuação administrativa ou judicial para garantir o direito.</>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <FileCheck />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card6: {
-          title: <>Golpe do leilão</>,
-          subtitle: <>Leilões inexistentes e sites fraudulentos</>,
-          description: <div></div>,
-          icon: <Gavel />,
+          title: <>Revisão tributária</>,
+          subtitle: (
+            <>Revisão de descontos indevidos no benefício do aposentado.</>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Search />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card7: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Shield />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card8: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Briefcase />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
       },
-      ctaButtonText: <>Preciso de atendimento imediato</>,
+      ctaButtonText: <>Fazer análise gratuita</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -356,29 +472,26 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É O LUEDY & ALVES ADVOGADOS</>,
-      FirstPart: <span> Especialistas em </span>,
-      Destaque: <span className="italic font-light"> fraudes bancárias</span>,
-      SecondPart: <span></span>,
+      miniTag: <>QUEM É A ASSESSO BRASIL</>,
+      FirstPart: <span> </span>,
+      Destaque: <span className="italic font-light"> Especialistas</span>,
+      SecondPart: <span>em isenção de IR</span>,
       subtitle: (
-        <>Mais de 500 processos ativos e nota máxima de satisfação no Google</>
+        <>Defendemos aposentados com doenças que têm direito à isenção do IR.</>
       ),
       paragraph: (
         <div>
-          O Luedy & Alves Advogados é um escritório com atuação nacional e foco
-          exclusivo em fraudes bancárias. São mais de 500 processos em andamento
-          em todo o Brasil, conduzidos com estratégia técnica e acompanhamento
-          próximo. Somos nota máxima de satisfação no Google, com mais de 150
-          avaliações positivas que refletem nosso compromisso com transparência,
-          clareza e responsabilidade.
-          <br />
-          <br />
-          Nossa equipe é formada por profissionais altamente capacitados e em
-          constante atualização jurídica e tecnológica, garantindo eficiência e
-          segurança na condução dos casos. Aqui, o cliente recebe análise
-          individual, contrato formal, honorários explicados com clareza e
-          acompanhamento contínuo do processo — sem promessas irreais e sem
-          custos ocultos.
+          A Assesso Brasil nasceu com um propósito claro: buscar justiça
+          tributária para pessoas com doenças graves que têm direito à isenção
+          do Imposto de Renda.
+          <br /> <br />
+          Atendemos aposentados e pensionistas de todo o Brasil, de todas as
+          classes e perfis, ajudando a garantir não apenas a isenção do imposto,
+          mas também o ressarcimento de valores descontados indevidamente ao
+          longo dos anos.
+          <br /> <br />
+          Nosso compromisso é orientar cada cliente com clareza, segurança
+          jurídica e foco na defesa dos seus direitos.
         </div>
       ),
       benefits: {
@@ -405,7 +518,7 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>Falar diretamente com o Advogado</>,
+      ctaButtonText: <>Falar diretamente com a empresa</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
@@ -424,102 +537,101 @@ const content = {
       paragraphModalCta: "Entre em contato",
       ctaButtonAriaLabel: "Botão para entrar em contato",
 
-      // aboutSocial: {
-      //   img: {
-      //     img: aboutSocialImg,
-      //     alt: `Foto do Instagram do ${infos.name}`,
-      //     altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
-      //   },
-      //   miniTag: <>A_Definir</>,
-      //   title: <>A_Definir</>,
-      //   subtitle: <>A_Definir</>,
-      //   paragraph: <p></p>,
-      //   labelInstagram: "Siga-nos no Instagram",
-      //   labelFacebook: "Siga-nos no Facebook",
-      //   labelLinkedin: "Siga-nos no LinkedIn",
-      //   labelX: "Siga-nos no X",
-      //   labelTiktok: "Siga-nos no Tik Tok",
-      //   labelYoutube: "Siga-nos no Youtube",
-      // },
+      aboutSocial: {
+        img: {
+          img: aboutSocialImg,
+          alt: `Foto do Instagram do ${infos.name}`,
+          altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
+        },
+        miniTag: <>Redes sociais</>,
+        title: <>Conecte-se conosco</>,
+        subtitle: (
+          <>
+            Acompanhe nossas redes sociais para se manter informado sobre
+            conteúdos jurídicos, atualizações e temas relevantes das áreas de
+            atuação.
+          </>
+        ),
+        paragraph: <p></p>,
+        labelInstagram: "Siga-nos no Instagram",
+        labelFacebook: "Siga-nos no Facebook",
+        labelLinkedin: "Siga-nos no LinkedIn",
+        labelX: "Siga-nos no X",
+        labelTiktok: "Siga-nos no Tik Tok",
+        labelYoutube: "Siga-nos no Youtube",
+      },
     },
     ctaSection: {
       miniTag: <>Fale conosco</>,
-      title: <h1>Fale agora com um Advogado Especialista</h1>,
+      title: <h1>Fale agora com uma Especialista</h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Se você perdeu dinheiro em um golpe bancário, receba orientação
-            segura agora.
+            Se você é aposentado e quer saber se tem direito à isenção do
+            Imposto de Renda, fale conosco agora.
           </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>Análise técnica do seu caso</>,
-          topic2: <>Atendimento direto com o advogado, sem intermediários</>,
+          topic1: <>Análise gratuita do seu caso</>,
+          topic2: <>Atendimento direto com especialista, sem intermediários</>,
           topic3: <>Resposta rápida e acompanhamento pelo WhatsApp</>,
-          topic4: <>Estratégia jurídica definida após a análise</>,
-          topic5: (
-            <>Você mais perto de recuperar o que é seu, sem sair de casa</>
-          ),
+          topic4: <>Orientação completa para solicitar a isenção</>,
+          topic5: <>Você mais perto de parar de pagar imposto indevido</>,
         },
       },
-      ctaButtonText: <>Quero analisar meu caso agora</>,
+      ctaButtonText: <>Quero verificar minha isenção já</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
-    socialProof: {
-      minitag: "Avaliações Verificadas",
-      title: "A experiência de quem já contratou a Paper Street",
-      subtitle:
-        "Advogados que buscavam organização, posicionamento e crescimento encontraram na Paper Street a solução que precisavam.",
-      ctaButtonText: "Falar com a equipe agora",
-      images: {
-        img1: imgproof1,
-        img2: imgproof2,
-        img3: imgproof3,
-        img4: imgproof4,
-        img5: imgproof5,
-        img6: imgproof6,
-      },
-    },
     steps: {
-      miniTag: <>COMO FUNCIONA</>,
-      FirstPart: <span> Entenda como vamos</span>,
-      Destaque: <span className="italic font-light"> cuidar </span>,
-      SecondPart: <span>do seu caso</span>,
+      miniTag: <>POR QUE FAZER CONOSCO</>,
+      FirstPart: <span>Seu direito à</span>,
+      Destaque: <span className="italic font-light"> isenção </span>,
+      SecondPart: <span>com segurança</span>,
 
       subtitle: (
         <>
-          Você não vai enfrentar isso sozinho. Existe método, estratégia e
-          acompanhamento em cada etapa.
+          Cuidamos de todo o processo para você buscar sua isenção do IR com
+          tranquilidade.
         </>
       ),
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
+
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Análise do caso</>,
-          cardDescription: <>Avaliação técnica clara das suas chances</>,
+          cardTitle: <>Análise do direito</>,
+          cardDescription: (
+            <>Verificamos se você tem direito à isenção do IR.</>
+          ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Estratégia jurídica</>,
-          cardDescription: <>Definimos o melhor caminho para agir</>,
+          cardTitle: <>Orientação clara</>,
+          cardDescription: (
+            <>Explicamos tudo de forma simples e sem confusão.</>
+          ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Ação contra o banco</>,
-          cardDescription: <>Atuamos para responsabilizar a instituição</>,
+          cardTitle: <>Recuperar valores</>,
+          cardDescription: (
+            <>Buscamos valores pagos indevidamente no imposto.</>
+          ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Acompanhamento total</>,
-          cardDescription: <>Atualizações constantes e suporte direto</>,
+          cardTitle: <>Mais tranquilidade</>,
+          cardDescription: (
+            <>Você resolve tudo com apoio jurídico especializado.</>
+          ),
         },
       },
-      ctaButtonText: <>Quero análise do meu caso agora</>,
+
+      ctaButtonText: <>Entre em contato agora</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -559,81 +671,43 @@ const content = {
       ],
     },
     diferences: {
-      miniTag: <>NOSSOS DIFERENCIAIS</>,
-      title: <>Por que nosso atendimento é diferente</>,
-      subtitle: (
-        <>
-          Tudo conduzido com base técnica, dentro da lei e com total
-          responsabilidade.
-        </>
-      ),
-      cards: {
-        card1: {
-          icon: Check,
-          text: (
-            <>
-              Especialização exclusiva em fraudes bancárias Atuação focada em
-              golpes financeiros, não em causas genéricas.
-            </>
-          ),
-        },
-        card2: {
-          icon: Check,
-          text: (
-            <>
-              Estratégia jurídica contra o banco Não dependemos apenas da “boa
-              vontade” da instituição.
-            </>
-          ),
-        },
-        card3: {
-          icon: Check,
-          text: (
-            <>
-              Atendimento 100% online e imediato Você recebe orientação rápida,
-              sem sair de casa.
-            </>
-          ),
-        },
-        card4: {
-          icon: Check,
-          text: (
-            <>
-              Atualizações constantes do processo Você acompanha cada etapa, com
-              explicação clara.
-            </>
-          ),
-        },
-        card5: {
-          icon: Check,
-          text: (
-            <>
-              Honorários transparentes e contrato formal Sem taxas ocultas, sem
-              surpresas.
-            </>
-          ),
-        },
-      },
-    },
-    speed: {
       miniTag: <>A_Definir</>,
       title: <>A_Definir</>,
       subtitle: <>A_Definir</>,
       cards: {
         card1: {
-          icon: Clock,
+          icon: Check,
           text: <>A_Definir</>,
         },
         card2: {
-          icon: Users,
+          icon: Check,
           text: <>A_Definir</>,
         },
         card3: {
-          icon: ShieldCheck,
+          icon: Check,
           text: <>A_Definir</>,
         },
       },
-      textFooter: <>A_Definir</>,
+    },
+    speed: {
+      miniTag: <>Rapidez e praticidade</>,
+      title: <>Dependendo do caso, a isenção pode ser resolvida:</>,
+      subtitle: <>A_Definir</>,
+      cards: {
+        card1: {
+          icon: Check,
+          text: <>Em pouco tempo, conforme a análise do caso</>,
+        },
+        card2: {
+          icon: Check,
+          text: <>Sem precisar sair de casa, em muitos casos</>,
+        },
+        card3: {
+          icon: Check,
+          text: <>Com orientação jurídica em todas as etapas</>,
+        },
+      },
+      textFooter: <>Tudo conforme a lei.</>,
     },
     authority: {
       miniTag: <>A_Definir</>,
@@ -663,64 +737,45 @@ const content = {
       miniTag: <>TIRE SUAS DÚVIDAS</>,
       title: <>Perguntas Frequentes</>,
       subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
+
       questions: {
         question1: {
-          question: <>É possível estornar um Pix?</>,
+          question: <>Quem tem direito à isenção do Imposto de Renda?</>,
           answer: (
             <>
-              Pelas vias normais não é possível estornar um Pix. É uma operação
-              instantânea, então o valor é creditado na conta do destinatário
-              imediatamente. Porém, você pode fazer uso do MED para tentar
-              recuperar o valor nos dias seguintes à operação.
+              Aposentados ou pensionistas diagnosticados com algumas doenças
+              graves previstas em lei podem ter direito à isenção do Imposto de
+              Renda sobre o benefício recebido.
             </>
           ),
         },
         question2: {
-          question: <>O banco pode ser responsabilizado?</>,
+          question: <>Quais doenças podem garantir a isenção?</>,
           answer: (
             <>
-              Na grande maioria dos casos, sim. É preciso analisar cada situação
-              em particular, no entanto, quando há alguma ação ou omissão da
-              Instituição Bancária para viabilizar ou facilitar o golpe, haverá
-              responsabilização.
+              Entre elas estão câncer, cardiopatia grave, Parkinson, esclerose
+              múltipla, cegueira, nefropatia grave, entre outras doenças
+              previstas na legislação.
             </>
           ),
         },
         question3: {
-          question: <>É possível obter indenização?</>,
+          question: <>Posso recuperar valores que já paguei de imposto?</>,
           answer: (
             <>
-              Em diversos casos, é sim possível obter uma indenização pela
-              omissão ou ação indevida do seu banco. Porém, é preciso pontuar
-              que a indenização depende de cada caso, por isso é fundamental que
-              um advogado analise individualmente sua situação.
+              Sim. Caso seja comprovado que você já tinha direito à isenção, é
+              possível solicitar a restituição dos valores pagos indevidamente
+              nos últimos anos.
             </>
           ),
         },
         question4: {
-          question: <>Fui vítima de um golpe! O que devo fazer?</>,
+          question: <>Preciso ir presencialmente ao escritório?</>,
           answer: (
             <>
-              Entre em contato imediatamente com a instituição financeira, pois,
-              dependendo do caso, o banco pode te fornecer algum tipo de
-              suporte. Solicite o bloqueio preventivo dos seus recursos em conta
-              e, em seguida, procure um advogado especialista para relatar a
-              situação e planejar os próximos passos. <br />
-              Registre um boletim de ocorrência o mais rápido possível.
-            </>
-          ),
-        },
-        question5: {
-          question: <>Consigo recuperar meu dinheiro?</>,
-          answer: (
-            <>
-              Na grande maioria dos casos, sim! Ainda que haja divergências, o
-              entendimento majoritário da justiça é de que os bancos têm
-              responsabilidade objetiva nesses casos e devem reparar
-              integralmente os danos financeiros.
-              <br />
-              Contamos com uma equipe especializada que pode te ajudar a
-              recuperar todo o valor transferido!
+              Na maioria dos casos não. O atendimento pode ser feito de forma
+              online, com análise de documentos e acompanhamento direto pelo
+              WhatsApp.
             </>
           ),
         },

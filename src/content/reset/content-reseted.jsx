@@ -15,6 +15,13 @@ import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 // import logo2 from '../assets/imgs/parceria/Logo2.webp'
 // import logo3 from '../assets/imgs/parceria/Logo3.webp'
 
+import imgproof1 from "../assets/imgs/socialProof/socialproof1.webp";
+import imgproof2 from "../assets/imgs/socialProof/socialproof2.webp";
+import imgproof3 from "../assets/imgs/socialProof/socialproof3.webp";
+import imgproof4 from "../assets/imgs/socialProof/socialproof4.webp";
+import imgproof5 from "../assets/imgs/socialProof/socialproof5.webp";
+import imgproof6 from "../assets/imgs/socialProof/socialproof6.webp";
+
 import {
   Baby,
   Briefcase,
@@ -149,6 +156,20 @@ const content = {
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
+    },
+    socialProof: {
+      minitag: "A-Definir",
+      title: "A_Definir",
+      subtitle: "A_Definir",
+      ctaButtonText: "Falar com a equipe agora",
+      images: {
+        img1: imgproof1,
+        img2: imgproof2,
+        img3: imgproof3,
+        img4: imgproof4,
+        img5: imgproof5,
+        img6: imgproof6,
+      },
     },
     emergency: {
       miniTag: <>A_Definir</>,

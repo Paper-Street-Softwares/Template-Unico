@@ -89,7 +89,7 @@ function SocialProof({ colorMode }) {
   }
 
   return (
-    <SectionArea className={`${bgSection}`}>
+    <SectionArea className={`bg-transparent`}>
       <SectionWrapper>
         {/* <SectionHeaderNovo
           miniTitle={content.texts.socialProof.minitag}
