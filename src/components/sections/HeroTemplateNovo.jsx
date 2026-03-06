@@ -248,8 +248,8 @@ function HeroTemplateNovo({
                   src={content.texts.hero.heroDefaulMobiletImg}
                   alt={content.texts.hero.alt}
                   className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700 desktop1:hidden"
-                  width={950}
-                  height={534}
+                  width={621}
+                  height={349}
                   fetchPriority="high"
                 />
 
