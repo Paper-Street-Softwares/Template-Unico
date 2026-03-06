@@ -13,7 +13,6 @@ import iconTikTok from "../../assets/imgs/icons/tiktok.png";
 import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import { infos } from "../../content/content";
-import logoHotmart from "../../assets/imgs/icons/hotmart.webp";
 
 function SocialMediaTemplate({ colorMode }) {
   let backgroundMode,
