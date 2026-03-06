@@ -15,6 +15,13 @@ import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 // import logo2 from '../assets/imgs/parceria/Logo2.webp'
 // import logo3 from '../assets/imgs/parceria/Logo3.webp'
 
+// import imgproof1 from "../assets/imgs/socialProof/socialproof1.webp";
+// import imgproof2 from "../assets/imgs/socialProof/socialproof2.webp";
+// import imgproof3 from "../assets/imgs/socialProof/socialproof3.webp";
+// import imgproof4 from "../assets/imgs/socialProof/socialproof4.webp";
+// import imgproof5 from "../assets/imgs/socialProof/socialproof5.webp";
+// import imgproof6 from "../assets/imgs/socialProof/socialproof6.webp";
+
 import {
   Baby,
   Briefcase,
@@ -36,12 +43,6 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
-  UserCheck,
-  Building2,
-  HeartPulse,
-  Banknote,
-  FileCheck,
-  Search,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -49,14 +50,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Assesso Brasil",
+  name: "A_Definir",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "assessobrasil.com.br", // Sem "www"
+  domain: "A_Definir", // Sem "www"
   phone: {
-    ddd: "65",
-    firstPart: "99284", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "8950", // Apenas os 4 últimos números
+    ddd: "00",
+    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0000", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -72,10 +73,9 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>Av. Miguel Sutil,</p>
-      <p>8000 - Edifício Santa Rosa Tower, </p>
-      <p>Jd Mariana Cuiabá - MT, </p>
-      <p>CEP: 78040-790</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -93,7 +93,7 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "assesso.brasil", // Sem o @
+  instagramProfile: "", // Sem o @
   instagramProfileSecundario: "",
   facebookProfile: "",
   linkeDinProfile: "",
@@ -134,36 +134,31 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>ISENÇÃO DE IR PARA APOSENTADOS</>,
-      FirstPart: <span>Aposentado, sabia que você pode ter</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">isenção</span>
+        <span className="destaque relative italic font-light">A_Definir</span>
       ),
-      SecondPart: <span>de IR?</span>,
-      subtitle: (
-        <p>
-          Aposentados com algumas doenças podem <strong>parar de pagar</strong>{" "}
-          Imposto de Renda e até recuperar valores pagos indevidamente.
-        </p>
-      ),
+      SecondPart: <span></span>,
+      subtitle: <p>A_Definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Saiba agora se você tem direito</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: <>Análise do seu caso com orientação especializada na área.</>,
+        text: <>A_Definir</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
     },
     // socialProof: {
-    //   minitag: "A_Definir",
+    //   minitag: "A-Definir",
     //   title: "A_Definir",
     //   subtitle: "A_Definir",
     //   ctaButtonText: "Falar com a equipe agora",
@@ -197,85 +192,43 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     important: {
-      miniTag: <>ATENÇÃO</>,
-      title: (
-        <>
-          O que é importante saber sobre isenção do imposto de renda para
-          aposentados
-        </>
-      ),
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>Sou aposentado. Eu posso parar de pagar imposto de renda?</>,
-          paragraph: (
-            <>
-              Sim, em alguns casos. A lei garante isenção do Imposto de Renda
-              para aposentados e pensionistas que possuem determinadas doenças
-              graves. Quando esse direito é reconhecido, o desconto deixa de ser
-              feito no benefício.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card2: {
-          title: <>Que tipo de doença dá direito à isenção?</>,
-          paragraph: (
-            <>
-              Algumas doenças previstas em lei podem garantir a isenção, como
-              câncer, cardiopatia grave, Parkinson, esclerose múltipla, entre
-              outras. É necessário apresentar laudos médicos que comprovem o
-              diagnóstico.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card3: {
-          title: (
-            <>Já paguei imposto por anos. Dá pra recuperar esse dinheiro?</>
-          ),
-          paragraph: (
-            <>
-              Em muitos casos, sim. Quando a pessoa já tinha direito à isenção,
-              é possível pedir a restituição dos valores pagos indevidamente,
-              normalmente referentes aos últimos anos.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card4: {
-          title: <>Preciso entrar na justiça ou dá pra resolver direto?</>,
-          paragraph: (
-            <>
-              Depende do caso. Algumas situações podem ser resolvidas de forma
-              administrativa, mas quando o pedido é negado ou há valores a
-              recuperar, pode ser necessário buscar o direito pela via judicial.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
       },
-      fraseObs: (
-        <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
-      ),
-      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
+      fraseObs: <>A_Definir</>,
+      ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>NOSSOS SERVIÇOS</>,
-      FirstPart: <span>Atuação em</span>,
-      Destaque: <span className="italic font-light">isenção</span>,
-      SecondPart: <span>de IR</span>,
-      subtitle: (
-        <>
-          Defendemos o direito de aposentados à isenção e restituição do imposto
-          pago indevidamente.
-        </>
-      ),
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
+      Destaque: <span className="italic font-light">A_Definir</span>,
+      SecondPart: <span></span>,
+      subtitle: <>A_Definir</>,
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>Atuação</>,
-      subtitleMessageFeature: <>em todo Brasil</>,
+      titleMessageFeature: <>A_Definir</>,
+      subtitleMessageFeature: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>Aposentados INSS</>,
-          subtitle: (
-            <>Isenção de IR para aposentados com doenças previstas em lei.</>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -284,18 +237,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <UserCheck />,
+          icon: <Briefcase />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>Servidor público</>,
-          subtitle: (
-            <>
-              Defesa do direito à isenção para aposentados do serviço público.
-            </>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -304,16 +253,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Building2 />,
+          icon: <User />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card3: {
-          title: <>Doenças graves</>,
-          subtitle: (
-            <>Análise de casos de câncer, cardiopatia e outras doenças.</>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -322,16 +269,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <HeartPulse />,
+          icon: <Scale />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card4: {
-          title: <>Restituição IR</>,
-          subtitle: (
-            <>Recuperação do imposto pago indevidamente nos últimos anos.</>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -340,16 +285,14 @@ const content = {
               <br />
             </div>
           ),
-          icon: <Banknote />,
+          icon: <Gavel />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card5: {
-          title: <>Pedido de isenção</>,
-          subtitle: (
-            <>Atuação administrativa ou judicial para garantir o direito.</>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -358,16 +301,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <FileCheck />,
+          icon: <Users />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card6: {
-          title: <>Revisão tributária</>,
-          subtitle: (
-            <>Revisão de descontos indevidos no benefício do aposentado.</>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -376,7 +317,7 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Search />,
+          icon: <MessageSquare />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
@@ -413,7 +354,7 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
       },
-      ctaButtonText: <>Fazer análise gratuita</>,
+      ctaButtonText: <>A_Definir</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -465,28 +406,12 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É A ASSESSO BRASIL</>,
-      FirstPart: <span> </span>,
-      Destaque: <span className="italic font-light"> Especialistas</span>,
-      SecondPart: <span>em isenção de IR</span>,
-      subtitle: (
-        <>Defendemos aposentados com doenças que têm direito à isenção do IR.</>
-      ),
-      paragraph: (
-        <div>
-          A Assesso Brasil nasceu com um propósito claro: buscar justiça
-          tributária para pessoas com doenças graves que têm direito à isenção
-          do Imposto de Renda.
-          <br /> <br />
-          Atendemos aposentados e pensionistas de todo o Brasil, de todas as
-          classes e perfis, ajudando a garantir não apenas a isenção do imposto,
-          mas também o ressarcimento de valores descontados indevidamente ao
-          longo dos anos.
-          <br /> <br />
-          Nosso compromisso é orientar cada cliente com clareza, segurança
-          jurídica e foco na defesa dos seus direitos.
-        </div>
-      ),
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir </span>,
+      Destaque: <span className="italic font-light"> A_Definir</span>,
+      SecondPart: <span></span>,
+      subtitle: <></>,
+      paragraph: <div>A_Definir</div>,
       benefits: {
         cards: {
           card1: {
@@ -511,7 +436,7 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>Falar diretamente com a empresa</>,
+      ctaButtonText: <>A_Definir</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
@@ -536,15 +461,9 @@ const content = {
           alt: `Foto do Instagram do ${infos.name}`,
           altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
         },
-        miniTag: <>Redes sociais</>,
-        title: <>Conecte-se conosco</>,
-        subtitle: (
-          <>
-            Acompanhe nossas redes sociais para se manter informado sobre
-            conteúdos jurídicos, atualizações e temas relevantes das áreas de
-            atuação.
-          </>
-        ),
+        miniTag: <>A_Definir</>,
+        title: <>A_Definir</>,
+        subtitle: <>A_Definir</>,
         paragraph: <p></p>,
         labelInstagram: "Siga-nos no Instagram",
         labelFacebook: "Siga-nos no Facebook",
@@ -555,76 +474,57 @@ const content = {
       },
     },
     ctaSection: {
-      miniTag: <>Fale conosco</>,
-      title: <h1>Fale agora com uma Especialista</h1>,
+      miniTag: <>A_Definir</>,
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Se você é aposentado e quer saber se tem direito à isenção do
-            Imposto de Renda, fale conosco agora.
-          </p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>Análise gratuita do seu caso</>,
-          topic2: <>Atendimento direto com especialista, sem intermediários</>,
-          topic3: <>Resposta rápida e acompanhamento pelo WhatsApp</>,
-          topic4: <>Orientação completa para solicitar a isenção</>,
-          topic5: <>Você mais perto de parar de pagar imposto indevido</>,
+          topic1: <>A_Definir</>,
+          topic2: <>A_Definir</>,
+          topic3: <>A_Definir</>,
+          topic4: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Quero verificar minha isenção já</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>POR QUE FAZER CONOSCO</>,
-      FirstPart: <span>Seu direito à</span>,
-      Destaque: <span className="italic font-light"> isenção </span>,
-      SecondPart: <span>com segurança</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir</span>,
+      Destaque: <span className="italic font-light"> A_Definir </span>,
+      SecondPart: <span>A_Definir</span>,
 
-      subtitle: (
-        <>
-          Cuidamos de todo o processo para você buscar sua isenção do IR com
-          tranquilidade.
-        </>
-      ),
+      subtitle: <></>,
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
-
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Análise do direito</>,
-          cardDescription: (
-            <>Verificamos se você tem direito à isenção do IR.</>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Orientação clara</>,
-          cardDescription: (
-            <>Explicamos tudo de forma simples e sem confusão.</>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Recuperar valores</>,
-          cardDescription: (
-            <>Buscamos valores pagos indevidamente no imposto.</>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Mais tranquilidade</>,
-          cardDescription: (
-            <>Você resolve tudo com apoio jurídico especializado.</>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
       },
-
-      ctaButtonText: <>Entre em contato agora</>,
+      ctaButtonText: <>A_Definir</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -683,24 +583,24 @@ const content = {
       },
     },
     speed: {
-      miniTag: <>Rapidez e praticidade</>,
-      title: <>Dependendo do caso, a isenção pode ser resolvida:</>,
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
       subtitle: <>A_Definir</>,
       cards: {
         card1: {
-          icon: Check,
-          text: <>Em pouco tempo, conforme a análise do caso</>,
+          icon: Clock,
+          text: <>A_Definir</>,
         },
         card2: {
-          icon: Check,
-          text: <>Sem precisar sair de casa, em muitos casos</>,
+          icon: Users,
+          text: <>A_Definir</>,
         },
         card3: {
-          icon: Check,
-          text: <>Com orientação jurídica em todas as etapas</>,
+          icon: ShieldCheck,
+          text: <>A_Definir</>,
         },
       },
-      textFooter: <>Tudo conforme a lei.</>,
+      textFooter: <>A_Definir</>,
     },
     authority: {
       miniTag: <>A_Definir</>,
@@ -727,50 +627,25 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>TIRE SUAS DÚVIDAS</>,
-      title: <>Perguntas Frequentes</>,
-      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
-
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       questions: {
         question1: {
-          question: <>Quem tem direito à isenção do Imposto de Renda?</>,
-          answer: (
-            <>
-              Aposentados ou pensionistas diagnosticados com algumas doenças
-              graves previstas em lei podem ter direito à isenção do Imposto de
-              Renda sobre o benefício recebido.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question2: {
-          question: <>Quais doenças podem garantir a isenção?</>,
-          answer: (
-            <>
-              Entre elas estão câncer, cardiopatia grave, Parkinson, esclerose
-              múltipla, cegueira, nefropatia grave, entre outras doenças
-              previstas na legislação.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question3: {
-          question: <>Posso recuperar valores que já paguei de imposto?</>,
-          answer: (
-            <>
-              Sim. Caso seja comprovado que você já tinha direito à isenção, é
-              possível solicitar a restituição dos valores pagos indevidamente
-              nos últimos anos.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question4: {
-          question: <>Preciso ir presencialmente ao escritório?</>,
-          answer: (
-            <>
-              Na maioria dos casos não. O atendimento pode ser feito de forma
-              online, com análise de documentos e acompanhamento direto pelo
-              WhatsApp.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
       },
 
