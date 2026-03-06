@@ -288,39 +288,6 @@ function SocialMediaTemplate({ colorMode }) {
                       <ArrowRight className={`ml-auto w-5 h-5 ${arrowColor}`} />
                     </a>
                   )}
-
-                  <a
-                    href={
-                      "https://hotmart.com/pt-br/marketplace/produtos/hagsxd-grupo-de-estudos-trabalhista-extensivo-2026-w6pds/B104115849X"
-                    }
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Link para Instagram"
-                    className={`group flex items-center gap-6 p-6 rounded-2xl border ${borderCard} hover:shadow-lg transition-all ${cardBg} hover:scale-105 hover:duration-500`}
-                  >
-                    <div className="w-14 h-14 rounded-full border bg-gradient-to-tr from-white to-white text-white flex items-center justify-center shrink-0">
-                      <img
-                        src={logoHotmart}
-                        alt="logo da hotmart"
-                        className="w-7"
-                      />
-                    </div>
-
-                    <div>
-                      <h1
-                        className={`font-bold font-secondFont text-lg ${text}`}
-                      >
-                        Extensivo 2026
-                      </h1>
-                      <p
-                        className={`font-secondFont font-light text-sm ${textOpacity}`}
-                      >
-                        Revisões ativas a cada dois meses.
-                      </p>
-                    </div>
-
-                    <ArrowRight className={`ml-auto w-5 h-5 ${arrowColor}`} />
-                  </a>
                 </div>
               </div>
             </MotionDivDownToUp>
