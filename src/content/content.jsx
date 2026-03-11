@@ -134,25 +134,30 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
+      miniTag: <>Advocacia com experiência real</>,
+      FirstPart: <span>Advogada com +8 anos</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_Definir</span>
+        <span className="destaque relative italic font-light">defendendo</span>
       ),
-      SecondPart: <span></span>,
-      subtitle: <p>A_Definir</p>,
+      SecondPart: <span>direitos</span>,
+      subtitle: (
+        <p>
+          Experiência em mais de 1.000 casos e atuação em Família, Trabalhista e
+          Previdenciário.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com a Advogada</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: <>A_Definir</>,
+        text: <>Atendimento online por videoconferência em todo o Brasil.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -216,19 +221,21 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
-      Destaque: <span className="italic font-light">A_Definir</span>,
-      SecondPart: <span></span>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>Áreas de Atuação</>,
+      FirstPart: <span> </span>,
+      Destaque: <span className="italic font-light">Soluções</span>,
+      SecondPart: <span>jurídicas para cada situação</span>,
+      subtitle: <>Atendimento estratégico em diferentes áreas do Direito.</>,
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>A_Definir</>,
-      subtitleMessageFeature: <>A_Definir</>,
+      titleMessageFeature: <>100%</>,
+      subtitleMessageFeature: <>transparência jurídica</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito Trabalhista</>,
+          subtitle: (
+            <>Defesa de direitos em rescisões, horas extras e verbas.</>
+          ),
           description: (
             <div>
               A_Definir
@@ -243,24 +250,8 @@ const content = {
         },
 
         card2: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <User />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card3: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito Previdenciário</>,
+          subtitle: <>Aposentadorias, benefícios e revisões do INSS.</>,
           description: (
             <div>
               A_Definir
@@ -274,25 +265,9 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
 
-        card4: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <Gavel />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card5: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+        card3: {
+          title: <>Direito de Família</>,
+          subtitle: <>Divórcio, pensão, guarda e acordos familiares.</>,
           description: (
             <div>
               A_Definir
@@ -306,55 +281,23 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
 
-        card6: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+        card4: {
+          title: <>Consultoria Jurídica</>,
+          subtitle: <>Orientação legal clara para decisões seguras.</>,
           description: (
             <div>
               A_Definir
               <br />
-              <br />
               A_Definir
+              <br />
             </div>
           ),
-          icon: <MessageSquare />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card7: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Shield />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card8: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
+          icon: <FileText />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com a Advogada</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -406,12 +349,24 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
+      miniTag: <>QUEM É A DRA. MAYARA BEZERRA</>,
+      FirstPart: <span> Minha</span>,
+      Destaque: <span className="italic font-light"> trajetória</span>,
       SecondPart: <span></span>,
-      subtitle: <></>,
-      paragraph: <div>A_Definir</div>,
+      subtitle: (
+        <>
+          {" "}
+          Advogada com mais de 8 anos de atuação e experiência em mais de 1.000
+          casos.
+        </>
+      ),
+      paragraph: (
+        <div>
+          Dra. Mayara Bezerra é advogada com mais de 8 anos de atuação na área
+          jurídica, dedicando sua carreira à defesa de direitos e à orientação
+          segura de seus clientes em momentos decisivos.
+        </div>
+      ),
       benefits: {
         cards: {
           card1: {
@@ -440,16 +395,20 @@ const content = {
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
-          A_Definir
+          Dra. Mayara Bezerra é advogada com mais de 8 anos de atuação na área
+          jurídica, dedicando sua carreira à defesa de direitos e à orientação
+          segura de seus clientes em momentos decisivos.
           <br />
           <br />
-          A_Definir
+          Durante 3 anos atuou na Defensoria Municipal, com foco na área de
+          Direito de Família, participando de mais de 1.000 atendimentos e casos
+          envolvendo questões sensíveis como divórcio, guarda e pensão.
           <br />
           <br />
-          A_Definir
-          <br />
-          <br />
-          A_Definir
+          Possui especialização em Direito de Família e Previdenciário, além de
+          pós-graduação em Direito do Trabalho. Atualmente, também exerce a
+          função de Vice-Presidente da Comissão de Direito do Trabalho da OAB de
+          Itumbiara.
         </p>
       ),
       paragraphModalCta: "Entre em contato",
@@ -461,9 +420,15 @@ const content = {
           alt: `Foto do Instagram do ${infos.name}`,
           altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
         },
-        miniTag: <>A_Definir</>,
-        title: <>A_Definir</>,
-        subtitle: <>A_Definir</>,
+        miniTag: <>Redes sociais</>,
+        title: <>Conecte-se conosco</>,
+        subtitle: (
+          <>
+            Acompanhe nossas redes sociais para se manter informado sobre
+            conteúdos jurídicos, atualizações e temas relevantes das áreas de
+            atuação.
+          </>
+        ),
         paragraph: <p></p>,
         labelInstagram: "Siga-nos no Instagram",
         labelFacebook: "Siga-nos no Facebook",
@@ -474,57 +439,66 @@ const content = {
       },
     },
     ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>Fale conosco</>,
+      title: <h1>Receba orientação jurídica para o seu caso</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Atendimento direto para dúvidas e soluções em família, trabalho e
+            previdência.
+          </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>A_Definir</>,
-          topic2: <>A_Definir</>,
-          topic3: <>A_Definir</>,
-          topic4: <>A_Definir</>,
+          topic1: <>Análise inicial do seu caso</>,
+          topic2: <>Atendimento direto com a advogada</>,
+          topic3: <>Orientação clara sobre seus direitos</>,
+          topic4: <>Acompanhamento rápido pelo WhatsApp</>,
+          topic5: <>Suporte jurídico sem sair de casa</>,
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com a Advogada</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir</span>,
-      Destaque: <span className="italic font-light"> A_Definir </span>,
-      SecondPart: <span>A_Definir</span>,
+      miniTag: <>Como funciona</>,
+      FirstPart: <span>Atendimento jurídico </span>,
+      Destaque: <span className="italic font-light">simples </span>,
+      SecondPart: <span>e direto</span>,
 
-      subtitle: <></>,
+      subtitle: (
+        <>
+          Entenda como é fácil receber orientação jurídica e iniciar seu
+          atendimento.
+        </>
+      ),
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Primeiro contato</>,
+          cardDescription: <>Fale direto com a advogada e explique seu caso.</>,
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Análise do caso</>,
+          cardDescription: <>Avaliação jurídica clara sobre seus direitos.</>,
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Orientação segura</>,
+          cardDescription: <>Você entende as melhores opções para agir.</>,
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Início do processo</>,
+          cardDescription: <>Comece seu atendimento com segurança jurídica.</>,
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com a Advogada</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -627,25 +601,49 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>TIRE SUAS DÚVIDAS</>,
+      title: <>Perguntas Frequentes</>,
+      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Preciso pagar pela primeira consulta?</>,
+          answer: (
+            <>
+              A primeira conversa é o momento de entender seu caso e orientar
+              sobre as possibilidades jurídicas. Após a análise, são
+              apresentados os próximos passos e as condições para
+              acompanhamento.
+            </>
+          ),
         },
         question2: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Como funciona o atendimento?</>,
+          answer: (
+            <>
+              O atendimento começa pelo WhatsApp. Você explica sua situação, a
+              advogada analisa as informações e orienta sobre os direitos e as
+              melhores opções para o seu caso.
+            </>
+          ),
         },
         question3: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Quais tipos de casos são atendidos?</>,
+          answer: (
+            <>
+              A atuação envolve Direito de Família, Direito Trabalhista e
+              Direito Previdenciário, com orientação e acompanhamento jurídico
+              conforme a necessidade de cada cliente.
+            </>
+          ),
         },
         question4: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Preciso ir ao escritório para iniciar meu caso?</>,
+          answer: (
+            <>
+              Não necessariamente. Muitos atendimentos podem ser feitos de forma
+              online, com orientação e acompanhamento diretamente pelo WhatsApp.
+            </>
+          ),
         },
       },
 
