@@ -8,7 +8,7 @@ import imgFeatures from "../assets/imgs/features/imgServices.webp";
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-// import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
+import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 // import logo1 from '../assets/imgs/parceria/Logo1.webp'
@@ -43,9 +43,6 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
-  Building,
-  ChartCandlestick,
-  ChartPie,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -53,14 +50,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: " Dr. Caio Lins",
+  name: "Dra. Mayara Bezerra",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "civel-caio.advespecialista.adv.br", // Sem "www"
+  domain: "mayarabezerraadvocacia.com.br", // Sem "www"
   phone: {
-    ddd: "27",
-    firstPart: "99940", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0815", // Apenas os 4 últimos números
+    ddd: "64",
+    firstPart: "9924", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "04641", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -76,10 +73,9 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>Av. Angelo Gilbert,</p>
-      <p>nº 109, Sala 101,</p>
-      <p>Bairro Vila Nova Colatina - ES,</p>
-      <p>CEP: 29702-060</p>
+      <p>Rua Luiz Antônio Rosa 1578,</p>
+      <p>jardim liberdade Itumbiara - GO,</p>
+      <p>CEP: 75513-150</p>
     </div>
   ),
   enderecoSecundario: (
@@ -97,7 +93,7 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "", // Sem o @
+  instagramProfile: "mayarabezerra.advocacia", // Sem o @
   instagramProfileSecundario: "",
   facebookProfile: "",
   linkeDinProfile: "",
@@ -138,18 +134,16 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>ADVOGADO CÍVEL E BANCÁRIO</>,
-      FirstPart: <span>Procurando um </span>,
+      miniTag: <>Advocacia com experiência real</>,
+      FirstPart: <span>Advogada com +8 anos</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">
-          Advogado Cível<span className="text-white">?</span>
-        </span>
+        <span className="destaque relative italic font-light">defendendo</span>
       ),
-      SecondPart: <span></span>,
+      SecondPart: <span>direitos</span>,
       subtitle: (
         <p>
-          Atuação em conflitos civis, contratos e problemas com bancos, com
-          estratégia e segurança jurídica.
+          Experiência em mais de 1.000 casos e atuação em Família, Trabalhista e
+          Previdenciário.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -158,17 +152,12 @@ const content = {
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Falar com o Advogado agora</>,
+      ctaButtonText: <>Falar com a Advogada</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: (
-          <>
-            Atendimento online e presencial (para quem puder comparecer ou
-            residir próximo).
-          </>
-        ),
+        text: <>Atendimento online por videoconferência em todo o Brasil.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -208,78 +197,44 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     important: {
-      miniTag: <>ATENÇÃO</>,
-      title: <>O que você precisa saber sobre conflitos cíveis</>,
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>Preciso mesmo de advogado para resolver isso?</>,
-          paragraph: (
-            <>
-              Em muitos conflitos civis, ter um advogado desde o início evita
-              prejuízos maiores. A análise jurídica permite identificar
-              direitos, avaliar riscos e definir a estratégia adequada para
-              resolver o problema de forma segura.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card2: {
-          title: (
-            <>E se o banco ou a outra parte estiver me cobrando injustamente?</>
-          ),
-          paragraph: (
-            <>
-              Situações de cobrança abusiva ou contratos desequilibrados podem
-              ser contestadas judicialmente. A análise do caso permite verificar
-              irregularidades, revisar cláusulas contratuais e buscar a solução
-              jurídica adequada.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card3: {
-          title: <>Meu caso ainda tem solução ou já é tarde?</>,
-          paragraph: (
-            <>
-              Muitos conflitos ainda podem ser resolvidos mesmo quando parecem
-              complexos. Cada situação precisa ser analisada individualmente
-              para identificar as alternativas jurídicas possíveis e o melhor
-              caminho a seguir.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
         card4: {
-          title: <>Entrar com processo é sempre a única saída?</>,
-          paragraph: (
-            <>
-              Nem sempre. Dependendo do caso, é possível buscar soluções por
-              meio de negociação ou medidas estratégicas antes de iniciar um
-              processo judicial. O objetivo é sempre encontrar a forma mais
-              eficaz de resolver o conflito.
-            </>
-          ),
+          title: <>A_Definir</>,
+          paragraph: <>A_Definir</>,
         },
       },
-      fraseObs: (
-        <>Entre em contato conosco e lhe daremos todo o suporte necessário</>
-      ),
-      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
+      fraseObs: <>A_Definir</>,
+      ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>COMO PODEMOS TE AJUDAR</>,
-      FirstPart: <span>Enfrentando</span>,
-      Destaque: <span className="italic font-light">problemas</span>,
-      SecondPart: <span> com bancos, patrimônio ou outros?</span>,
-      subtitle: (
-        <>Atuação jurídica para reduzir dívidas e proteger patrimônio.</>
-      ),
+      miniTag: <>Áreas de Atuação</>,
+      FirstPart: <span> </span>,
+      Destaque: <span className="italic font-light">Soluções</span>,
+      SecondPart: <span>jurídicas para cada situação</span>,
+      subtitle: <>Atendimento estratégico em diferentes áreas do Direito.</>,
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
       titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <> estratégia contra abusos</>,
+      subtitleMessageFeature: <>transparência jurídica</>,
       cards: {
         card1: {
-          title: <>Direito Bancário</>,
+          title: <>Direito Trabalhista</>,
           subtitle: (
-            <>Defesa e revisão de dívidas bancárias acima de R$50 mil.</>
+            <>Defesa de direitos em rescisões, horas extras e verbas.</>
           ),
           description: (
             <div>
@@ -289,16 +244,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Building />,
+          icon: <Briefcase />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card2: {
-          title: <>Direito Civil - Patrimonial</>,
-          subtitle: (
-            <>Inventário, divórcio, usucapião e disputas patrimoniais.</>
-          ),
+          title: <>Direito Previdenciário</>,
+          subtitle: <>Aposentadorias, benefícios e revisões do INSS.</>,
           description: (
             <div>
               A_Definir
@@ -307,48 +260,44 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <ChartPie />,
+          icon: <Scale />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card3: {
-          title: <>Direito Civil - Contratos</>,
-          subtitle: (
-            <>Elaboração, análise e revisão de contratos com segurança.</>
-          ),
+          title: <>Direito de Família</>,
+          subtitle: <>Divórcio, pensão, guarda e acordos familiares.</>,
           description: (
             <div>
               A_Definir
               <br />
               <br />
               A_Definir
+            </div>
+          ),
+          icon: <Users />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card4: {
+          title: <>Consultoria Jurídica</>,
+          subtitle: <>Orientação legal clara para decisões seguras.</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
             </div>
           ),
           icon: <FileText />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
-
-        card4: {
-          title: <>Assessoria Jurídica Recorrente</>,
-          subtitle: (
-            <>Suporte jurídico contínuo para decisões empresariais seguras.</>
-          ),
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <Gavel />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
       },
-      ctaButtonText: <>Falar com o Advogado</>,
+      ctaButtonText: <>Falar com a Advogada</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -400,30 +349,22 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É O DR CAIO LINS</>,
+      miniTag: <>QUEM É A DRA. MAYARA BEZERRA</>,
       FirstPart: <span> Minha</span>,
       Destaque: <span className="italic font-light"> trajetória</span>,
       SecondPart: <span></span>,
       subtitle: (
         <>
-          Atuação voltada à defesa em conflitos bancários, civis e empresariais.
+          {" "}
+          Advogada com mais de 8 anos de atuação e experiência em mais de 1.000
+          casos.
         </>
       ),
       paragraph: (
         <div>
-          Meu trabalho é ajudar pessoas e empresas a enfrentarem conflitos
-          jurídicos com estratégia, segurança e clareza.
-          <br />
-          <br />
-          Atuo principalmente em demandas contra instituições financeiras,
-          disputas patrimoniais e conflitos contratuais, buscando sempre
-          soluções que reduzam riscos, reorganizem passivos e protejam os
-          interesses dos meus clientes.
-          <br />
-          <br />
-          Cada caso é analisado de forma individual, com foco em encontrar o
-          melhor caminho jurídico para resolver o problema com eficiência e
-          segurança.
+          Dra. Mayara Bezerra é advogada com mais de 8 anos de atuação na área
+          jurídica, dedicando sua carreira à defesa de direitos e à orientação
+          segura de seus clientes em momentos decisivos.
         </div>
       ),
       benefits: {
@@ -450,76 +391,87 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>Falar diretamente comigo</>,
+      ctaButtonText: <>A_Definir</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
-          A_Definir
+          Dra. Mayara Bezerra é advogada com mais de 8 anos de atuação na área
+          jurídica, dedicando sua carreira à defesa de direitos e à orientação
+          segura de seus clientes em momentos decisivos.
           <br />
           <br />
-          A_Definir
+          Durante 3 anos atuou na Defensoria Municipal, com foco na área de
+          Direito de Família, participando de mais de 1.000 atendimentos e casos
+          envolvendo questões sensíveis como divórcio, guarda e pensão.
           <br />
           <br />
-          A_Definir
-          <br />
-          <br />
-          A_Definir
+          Possui especialização em Direito de Família e Previdenciário, além de
+          pós-graduação em Direito do Trabalho. Atualmente, também exerce a
+          função de Vice-Presidente da Comissão de Direito do Trabalho da OAB de
+          Itumbiara.
         </p>
       ),
       paragraphModalCta: "Entre em contato",
       ctaButtonAriaLabel: "Botão para entrar em contato",
 
-      // aboutSocial: {
-      //   img: {
-      //     img: aboutSocialImg,
-      //     alt: `Foto do Instagram do ${infos.name}`,
-      //     altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
-      //   },
-      //   miniTag: <>A_Definir</>,
-      //   title: <>A_Definir</>,
-      //   subtitle: <>A_Definir</>,
-      //   paragraph: <p></p>,
-      //   labelInstagram: "Siga-nos no Instagram",
-      //   labelFacebook: "Siga-nos no Facebook",
-      //   labelLinkedin: "Siga-nos no LinkedIn",
-      //   labelX: "Siga-nos no X",
-      //   labelTiktok: "Siga-nos no Tik Tok",
-      //   labelYoutube: "Siga-nos no Youtube",
-      // },
+      aboutSocial: {
+        img: {
+          img: aboutSocialImg,
+          alt: `Foto do Instagram do ${infos.name}`,
+          altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
+        },
+        miniTag: <>Redes sociais</>,
+        title: <>Conecte-se conosco</>,
+        subtitle: (
+          <>
+            Acompanhe nossas redes sociais para se manter informado sobre
+            conteúdos jurídicos, atualizações e temas relevantes das áreas de
+            atuação.
+          </>
+        ),
+        paragraph: <p></p>,
+        labelInstagram: "Siga-nos no Instagram",
+        labelFacebook: "Siga-nos no Facebook",
+        labelLinkedin: "Siga-nos no LinkedIn",
+        labelX: "Siga-nos no X",
+        labelTiktok: "Siga-nos no Tik Tok",
+        labelYoutube: "Siga-nos no Youtube",
+      },
     },
     ctaSection: {
       miniTag: <>Fale conosco</>,
-      title: <h1>Fale agora com o Advogado</h1>,
+      title: <h1>Receba orientação jurídica para o seu caso</h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Se você enfrenta problemas com bancos, contratos ou questões civis,
-            fale agora e receba orientação jurídica.
+            Atendimento direto para dúvidas e soluções em família, trabalho e
+            previdência.
           </p>
         </div>
       ),
       container: {
         topics: {
           topic1: <>Análise inicial do seu caso</>,
-          topic2: <>Atendimento direto com o Advogado, sem intermediários</>,
-          topic3: <>Resposta rápida e acompanhamento pelo WhatsApp</>,
-          topic4: <>Estratégia jurídica clara desde o primeiro contato</>,
-          topic5: <>Orientação segura para proteger seus direitos</>,
+          topic2: <>Atendimento direto com a advogada</>,
+          topic3: <>Orientação clara sobre seus direitos</>,
+          topic4: <>Acompanhamento rápido pelo WhatsApp</>,
+          topic5: <>Suporte jurídico sem sair de casa</>,
         },
       },
-      ctaButtonText: <>Quero falar com o Advogado agora</>,
+      ctaButtonText: <>Falar com a Advogada</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>COMO FUNCIONA</>,
-      FirstPart: <span>Do primeiro contato </span>,
-      Destaque: <span className="italic font-light">à solução</span>,
-      SecondPart: <span> do seu caso</span>,
+      miniTag: <>Como funciona</>,
+      FirstPart: <span>Atendimento jurídico </span>,
+      Destaque: <span className="italic font-light">simples </span>,
+      SecondPart: <span>e direto</span>,
 
       subtitle: (
         <>
-          Um processo claro, estratégico e conduzido diretamente por Advogado.
+          Entenda como é fácil receber orientação jurídica e iniciar seu
+          atendimento.
         </>
       ),
       img: imgSteps,
@@ -527,32 +479,26 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Conte seu caso</>,
-          cardDescription: (
-            <>Explique sua situação e receba uma análise inicial.</>
-          ),
+          cardTitle: <>Primeiro contato</>,
+          cardDescription: <>Fale direto com a advogada e explique seu caso.</>,
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Análise jurídica</>,
-          cardDescription: (
-            <>Seu caso é avaliado com estratégia e base legal.</>
-          ),
+          cardTitle: <>Análise do caso</>,
+          cardDescription: <>Avaliação jurídica clara sobre seus direitos.</>,
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Definição da estratégia</>,
-          cardDescription: <>Identificamos o melhor caminho para seu caso.</>,
+          cardTitle: <>Orientação segura</>,
+          cardDescription: <>Você entende as melhores opções para agir.</>,
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Atuação e acompanhamento</>,
-          cardDescription: (
-            <>Cuidamos de todo o processo com suporte contínuo.</>
-          ),
+          cardTitle: <>Início do processo</>,
+          cardDescription: <>Comece seu atendimento com segurança jurídica.</>,
         },
       },
-      ctaButtonText: <>Quero análise do meu caso</>,
+      ctaButtonText: <>Falar com a Advogada</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -660,50 +606,42 @@ const content = {
       subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>O banco pode cobrar juros ou taxas abusivas?</>,
+          question: <>Preciso pagar pela primeira consulta?</>,
           answer: (
             <>
-              Em alguns casos, eles fazem. Contratos bancários podem conter
-              juros acima da média de mercado, tarifas indevidas ou cláusulas
-              que colocam o cliente em desvantagem. Quando isso acontece, é
-              possível contestar essas cobranças e buscar a revisão do contrato
-              para restabelecer o equilíbrio da relação com a instituição
-              financeira.
+              A primeira conversa é o momento de entender seu caso e orientar
+              sobre as possibilidades jurídicas. Após a análise, são
+              apresentados os próximos passos e as condições para
+              acompanhamento.
             </>
           ),
         },
         question2: {
-          question: <>Mesmo com parcelas atrasadas ainda dá pra resolver?</>,
+          question: <>Como funciona o atendimento?</>,
           answer: (
             <>
-              Sim. Estar com parcelas em atraso não impede a análise do contrato
-              ou a adoção de medidas jurídicas. Em muitos casos, a revisão
-              contratual ou uma estratégia jurídica adequada pode ajudar a
-              reorganizar a dívida ou reduzir cobranças abusivas.
+              O atendimento começa pelo WhatsApp. Você explica sua situação, a
+              advogada analisa as informações e orienta sobre os direitos e as
+              melhores opções para o seu caso.
             </>
           ),
         },
         question3: {
-          question: (
-            <>Como saber se meu contrato com o banco tem algo errado?</>
-          ),
+          question: <>Quais tipos de casos são atendidos?</>,
           answer: (
             <>
-              A forma mais segura é por meio de uma análise jurídica do
-              contrato. Nessa avaliação são verificados fatores como taxa de
-              juros, encargos aplicados, tarifas cobradas e eventuais cláusulas
-              abusivas que possam prejudicar o cliente.
+              A atuação envolve Direito de Família, Direito Trabalhista e
+              Direito Previdenciário, com orientação e acompanhamento jurídico
+              conforme a necessidade de cada cliente.
             </>
           ),
         },
         question4: {
-          question: <>Entrar na justiça contra banco vale a pena?</>,
+          question: <>Preciso ir ao escritório para iniciar meu caso?</>,
           answer: (
             <>
-              Depende da situação. Quando há cobrança indevida, juros abusivos
-              ou cláusulas irregulares, a atuação jurídica pode buscar a revisão
-              do contrato, a devolução de valores pagos a mais ou a
-              reestruturação da dívida de forma mais justa.
+              Não necessariamente. Muitos atendimentos podem ser feitos de forma
+              online, com orientação e acompanhamento diretamente pelo WhatsApp.
             </>
           ),
         },
