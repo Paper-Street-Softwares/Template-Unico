@@ -82,10 +82,10 @@ export default function Index() {
             <Suspense>
               <AboutNovoTemplate
                 colorMode={colorMode}
-                ButtonModal={true}
+                ButtonModal={false}
                 benefits={false}
               />
-              <SocialMediaTemplate colorMode={colorMode} />
+              {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             </Suspense>
           </AlternatingSection>
 
