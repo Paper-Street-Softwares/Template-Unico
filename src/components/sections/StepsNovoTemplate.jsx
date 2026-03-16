@@ -92,7 +92,7 @@ function StepsNovoTemplate({ colorMode }) {
                 /> */}
               <MotionDivDownToUp>
                 <div
-                  className={`relative rounded-[2.5rem] overflow-hidden shadow-2xl ring-1 ring-black/5 bg-gray-100 ${image}`}
+                  className={`relative mt-6 desktop1:mt-0 rounded-[2.5rem] overflow-hidden shadow-2xl ring-1 ring-black/5 bg-gray-100 ${image}`}
                 >
                   {" "}
                   <img
