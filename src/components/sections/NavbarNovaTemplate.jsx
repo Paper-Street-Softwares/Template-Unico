@@ -83,16 +83,16 @@ function NavbarNovaTemplate({
             : `${backgrondModeActive} border-border/40 py-0 phone2:h-auto`
         }`}
       >
-        <div className="container mx-auto flex items-center m-auto max-w-[1215px] h-full w-[90%] justify-between py-2">
+        <div className="container flex items-center m-auto max-w-[1215px] h-full w-[90%] justify-between py-2">
           <div
-            className={`flex flex-col z-20 relative  ${
+            className={`flex flex-col z-20 relative ${
               isScrolled
                 ? "w-[30%] h-[20px] phone2:w-[30%] phone2:h-[30px] tablet1:h-[50px] tablet1:w-[20%] desktop1:w-[10%] desktop1:h-[50px] desktop2:w-[13%] transition-all duration-700"
-                : "w-[40%] h-[40px] phone2:py-3 phone2:w-[60%] phone2:h-[80px] tablet1:h-[120px] tablet1:w-[30%] desktop1:w-[20%] desktop1:h-[110px] desktop2:w-[15%] transition-all duration-700"
+                : "w-[50%] h-[40px] phone2:py-3 phone2:w-[60%] phone2:h-[80px] tablet1:h-[120px] tablet1:w-[30%] desktop1:w-[20%] desktop1:h-[110px] desktop2:w-[15%] transition-all duration-700"
             }`}
           >
             <a
-              className="cursor-pointer w-[100%] h-[80px] desktop1:h-[110px] flex items-center overflow-hidden"
+              className="cursor-pointer w-fit h-[80px] desktop1:h-[110px] flex items-start justify-start overflow-hidden "
               href="/"
               onClick={() => window.location.reload()}
               aria-label="recarregar página"
@@ -100,17 +100,17 @@ function NavbarNovaTemplate({
               <img
                 src={content.texts.navbar.logo.img}
                 alt={content.texts.navbar.logo.alt}
-                className="desktop1:hidden w-fit max-h-full object-contain flex"
-                width={277}
-                height={247}
+                className="desktop1:hidden w-auto max-h-full object-contain flex "
+                width={106}
+                height={98}
                 fetchPriority="high"
               />
               <img
                 src={content.texts.navbar.logo.imgDesktop}
                 alt={content.texts.navbar.logo.alt}
-                className="hidden desktop1:flex w-fit max-h-full object-contain"
+                className="hidden desktop1:block h-full w-auto object-contain"
                 width={350}
-                height={313}
+                height={325}
                 fetchPriority="high"
               />
             </a>
