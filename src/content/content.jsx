@@ -43,20 +43,21 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
-  Swords,
 } from "lucide-react";
+
+import { FileText } from "lucide-react";
 
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Dr. Juvenildo Clímaco",
+  name: "Dra. Ana Paula Nascimento",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "juvenildoclimaco.com.br", // Sem "www"
+  domain: "santosdonascimento.com", // Sem "www"
   phone: {
-    ddd: "99",
-    firstPart: "98234", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "4532", // Apenas os 4 últimos números
+    ddd: "61",
+    firstPart: "99827", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "2210", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -72,10 +73,9 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>Rua do Aeroporto,</p>
-      <p>nº 2332, Teso Duro,</p>
-      <p>Caxias - MA,</p>
-      <p>CEP: 65603-600</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -134,30 +134,25 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>ADVOGADO ESPECIALIZADO</>,
-      FirstPart: <span></span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">Advocacia</span>
+        <span className="destaque relative italic font-light">A_Definir</span>
       ),
-      SecondPart: <span>com sólida formação jurídica</span>,
-      subtitle: (
-        <p>
-          Advogado com múltiplas especializações e mais de 10 anos de atuação em
-          diferentes áreas do Direito.
-        </p>
-      ),
+      SecondPart: <span></span>,
+      subtitle: <p>A_Definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Falar com o Advogado</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: <>Atendimento presencial e online para todo Brasil.</>,
+        text: <>A_Definir</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -221,21 +216,19 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>Áreas de Atuação</>,
-      FirstPart: <span></span>,
-      Destaque: <span className="italic font-light">Excelência</span>,
-      SecondPart: <span>jurídica em diferentes áreas</span>,
-      subtitle: <>Orientação e acompanhamento conforme cada demanda.</>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
+      Destaque: <span className="italic font-light">A_Definir</span>,
+      SecondPart: <span></span>,
+      subtitle: <>A_Definir</>,
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>na luta dos seus direitos</>,
+      titleMessageFeature: <>A_Definir</>,
+      subtitleMessageFeature: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>Direito Trabalhista</>,
-          subtitle: (
-            <>Orientação em relações de trabalho e direitos do empregado.</>
-          ),
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -250,8 +243,24 @@ const content = {
         },
 
         card2: {
-          title: <>Direito Previdenciário</>,
-          subtitle: <>Análise de benefícios e questões junto ao INSS.</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <User />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card3: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -265,47 +274,15 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
 
-        card3: {
-          title: <>Direito Militar</>,
-          subtitle: <>Atuação em demandas administrativas e disciplinares.</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Swords />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
         card4: {
-          title: <>Direito de Família</>,
-          subtitle: <>Questões jurídicas envolvendo relações familiares.</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
               <br />
               A_Definir
               <br />
-            </div>
-          ),
-          icon: <Users />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card5: {
-          title: <>Direito Notarial e Registral</>,
-          subtitle: <>Orientação em atos cartorários e registros públicos.</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
             </div>
           ),
           icon: <Gavel />,
@@ -313,9 +290,25 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
 
+        card5: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Users />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
         card6: {
-          title: <>Consultoria Jurídica</>,
-          subtitle: <>Análise e orientação jurídica preventiva.</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -328,8 +321,40 @@ const content = {
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
+        card7: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Shield />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card8: {
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Briefcase />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
       },
-      ctaButtonText: <>Falar com o Advogado</>,
+      ctaButtonText: <>A_Definir</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -381,30 +406,12 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É O DR. JUVENILDO CLÍMACO</>,
-      FirstPart: <span> Trajetória e atuação</span>,
-      Destaque: <span className="italic font-light"> jurídica</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir </span>,
+      Destaque: <span className="italic font-light"> A_Definir</span>,
       SecondPart: <span></span>,
-      subtitle: (
-        <>Mais de 10 anos de experiência em diferentes áreas do Direito</>
-      ),
-      paragraph: (
-        <div>
-          Pós-graduado em Direito do Trabalho e Previdenciário (Anhanguera -
-          Uniderp, em 2020);
-          <br />
-          Pós-graduado em Ciências Criminais (Faculdade do Vale do Itapecuru, em
-          2013);
-          <br />
-          Pós-graduado em Docência em Ensino Superior (Anhanguera - Uniderp, em
-          2020); e Pós-graduado em Direito Notarial e Registral (Anhanguera -
-          Uniderp, em 2022).
-          <br />
-          <br />
-          Há mais de 10 anos advogando com comprometimento, transparência e
-          resultados!
-        </div>
-      ),
+      subtitle: <></>,
+      paragraph: <div>A_Definir</div>,
       benefits: {
         cards: {
           card1: {
@@ -467,72 +474,57 @@ const content = {
       // },
     },
     ctaSection: {
-      miniTag: <>Fale conosco</>,
-      title: <h1>Fale agora com um Advogado</h1>,
+      miniTag: <>A_Definir</>,
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Se você precisa de orientação jurídica, entre em contato e tire suas
-            dúvidas sobre o seu caso.
-          </p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>Análise inicial do seu caso</>,
-          topic2: <>Atendimento direto com o advogado, sem intermediários</>,
-          topic3: <>Resposta rápida e acompanhamento pelo WhatsApp</>,
-          topic4: <>Orientação jurídica conforme a sua necessidade</>,
-          topic5: <>Atendimento online ou presencial</>,
+          topic1: <>A_Definir</>,
+          topic2: <>A_Definir</>,
+          topic3: <>A_Definir</>,
+          topic4: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Quero falar com um Advogado</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>Como funciona o atendimento</>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir</span>,
+      Destaque: <span className="italic font-light"> A_Definir </span>,
+      SecondPart: <span>A_Definir</span>,
 
-      FirstPart: <span>Atendimento jurídico</span>,
-      Destaque: <span className="italic font-light"> simples </span>,
-      SecondPart: <span>e transparente</span>,
-
-      subtitle: (
-        <>Entenda as etapas para receber orientação jurídica com segurança.</>
-      ),
-
+      subtitle: <></>,
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
-
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Primeiro contato</>,
-          cardDescription: <>Envie sua dúvida e receba uma análise inicial.</>,
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
-
         card2: {
           stepNumber: 2,
-          cardTitle: <>Análise do caso</>,
-          cardDescription: <>O advogado avalia sua situação com atenção.</>,
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
-
         card3: {
           stepNumber: 3,
-          cardTitle: <>Orientação jurídica</>,
-          cardDescription: <>Você entende seus direitos e possibilidades.</>,
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
-
         card4: {
           stepNumber: 4,
-          cardTitle: <>Acompanhamento</>,
-          cardDescription: (
-            <>Atuação jurídica com suporte durante o processo.</>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
       },
-
-      ctaButtonText: <>Falar com advogado</>,
+      ctaButtonText: <>A_Definir</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -635,56 +627,25 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>TIRE SUAS DÚVIDAS</>,
-
-      title: <>Perguntas Frequentes</>,
-
-      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
-
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       questions: {
         question1: {
-          question: <>Quando devo procurar um advogado?</>,
-          answer: (
-            <>
-              Sempre que houver dúvidas sobre direitos, obrigações ou quando
-              surgir um conflito jurídico. A orientação de um advogado ajuda a
-              entender a situação e identificar os caminhos possíveis para cada
-              caso.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
-
         question2: {
-          question: <>Posso receber atendimento online?</>,
-          answer: (
-            <>
-              Sim. O atendimento pode ser realizado de forma online ou
-              presencial, conforme a necessidade do cliente. Muitas orientações
-              e acompanhamentos jurídicos podem ser feitos de maneira remota.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
-
         question3: {
-          question: <>Como funciona a análise do meu caso?</>,
-          answer: (
-            <>
-              Após o primeiro contato, o advogado analisa as informações
-              apresentadas e orienta sobre os aspectos jurídicos envolvidos,
-              esclarecendo dúvidas e indicando as possibilidades de atuação.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
-
         question4: {
-          question: <>Quais áreas do Direito são atendidas?</>,
-          answer: (
-            <>
-              O escritório atua em diferentes áreas do Direito, como Direito
-              Trabalhista, Previdenciário, Militar, Direito de Família, Direito
-              Notarial e Registral, além de consultoria jurídica.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
       },
 
