@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.mayarabezerraadvocacia.com.br/sitemap.xml
+Sitemap: https://www.juvenildoclimaco.com.br/sitemap.xml

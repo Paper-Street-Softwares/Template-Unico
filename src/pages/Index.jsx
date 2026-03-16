@@ -85,7 +85,7 @@ export default function Index() {
                 ButtonModal={true}
                 benefits={false}
               />
-              <SocialMediaTemplate colorMode={colorMode} />
+              {/* <SocialMediaTemplate colorMode={colorMode} /> */}
             </Suspense>
           </AlternatingSection>
 

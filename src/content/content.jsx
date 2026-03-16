@@ -45,19 +45,17 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
-import { FileText } from "lucide-react";
-
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "A_Definir",
+  name: "Dr. Juvenildo Clímaco",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "A_Definir", // Sem "www"
+  domain: "juvenildoclimaco.com.br", // Sem "www"
   phone: {
-    ddd: "00",
-    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0000", // Apenas os 4 últimos números
+    ddd: "99",
+    firstPart: "98234", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "4532", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -73,9 +71,10 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
+      <p>Rua do Aeroporto,</p>
+      <p>nº 2332, Teso Duro,</p>
+      <p>Caxias - MA,</p>
+      <p>CEP: 65603-600</p>
     </div>
   ),
   enderecoSecundario: (
