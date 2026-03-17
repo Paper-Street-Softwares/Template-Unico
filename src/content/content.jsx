@@ -15,12 +15,17 @@ import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 // import logo2 from '../assets/imgs/parceria/Logo2.webp'
 // import logo3 from '../assets/imgs/parceria/Logo3.webp'
 
-// import imgproof1 from "../assets/imgs/socialProof/socialproof1.webp";
-// import imgproof2 from "../assets/imgs/socialProof/socialproof2.webp";
-// import imgproof3 from "../assets/imgs/socialProof/socialproof3.webp";
-// import imgproof4 from "../assets/imgs/socialProof/socialproof4.webp";
-// import imgproof5 from "../assets/imgs/socialProof/socialproof5.webp";
-// import imgproof6 from "../assets/imgs/socialProof/socialproof6.webp";
+import img1Deposition from "../assets/imgs/socialProof/socialproof1.webp";
+import img2Deposition from "../assets/imgs/socialProof/socialproof2.webp";
+import img3Deposition from "../assets/imgs/socialProof/socialproof3.webp";
+import img4Deposition from "../assets/imgs/socialProof/socialproof4.webp";
+
+// import socialProof1 from "../assets/imgs/socialProof/googleimgs/socialGoogle1.webp";
+import socialProof2 from "../assets/imgs/socialProof/googleimgs/socialGoogle2.webp";
+import socialProof3 from "../assets/imgs/socialProof/googleimgs/socialGoogle3.webp";
+import socialProof4 from "../assets/imgs/socialProof/googleimgs/socialGoogle4.webp";
+import socialProof5 from "../assets/imgs/socialProof/googleimgs/socialGoogle5.webp";
+import socialProof6 from "../assets/imgs/socialProof/googleimgs/socialGoogle6.webp";
 
 import {
   Baby,
@@ -43,20 +48,25 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
-  Swords,
+  Landmark,
+  PauseCircle,
+  MailWarning,
+  TrendingDown,
 } from "lucide-react";
+
+import { FileText } from "lucide-react";
 
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Dr. Juvenildo Clímaco",
+  name: "Dra. Ana Paula Nascimento",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "juvenildoclimaco.com.br", // Sem "www"
+  domain: "santosdonascimento.com", // Sem "www"
   phone: {
-    ddd: "99",
-    firstPart: "98234", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "4532", // Apenas os 4 últimos números
+    ddd: "61",
+    firstPart: "99827", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "2210", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -72,10 +82,9 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>Rua do Aeroporto,</p>
-      <p>nº 2332, Teso Duro,</p>
-      <p>Caxias - MA,</p>
-      <p>CEP: 65603-600</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -134,16 +143,17 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>ADVOGADO ESPECIALIZADO</>,
-      FirstPart: <span></span>,
+      miniTag: <>Leilão de Imóveis - Anulação</>,
+      FirstPart: <span>Seu imóvel foi levado a</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">Advocacia</span>
+        <>
+          <span className="destaque relative italic font-light">leilão</span>?
+        </>
       ),
-      SecondPart: <span>com sólida formação jurídica</span>,
+      SecondPart: <span></span>,
       subtitle: (
         <p>
-          Advogado com múltiplas especializações e mais de 10 anos de atuação em
-          diferentes áreas do Direito.
+          Saiba quando o leilão pode ser anulado e como proteger seu patrimônio.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -152,30 +162,35 @@ const content = {
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Falar com o Advogado</>,
+      ctaButtonText: <>Analisar meu caso</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: <>Atendimento presencial e online para todo Brasil.</>,
+        text: (
+          <>
+            Análise jurídica para verificar possíveis irregularidades no leilão
+            do seu imóvel.
+          </>
+        ),
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
     },
-    // socialProof: {
-    //   minitag: "A-Definir",
-    //   title: "A_Definir",
-    //   subtitle: "A_Definir",
-    //   ctaButtonText: "Falar com a equipe agora",
-    //   images: {
-    //     img1: imgproof1,
-    //     img2: imgproof2,
-    //     img3: imgproof3,
-    //     img4: imgproof4,
-    //     img5: imgproof5,
-    //     img6: imgproof6,
-    //   },
-    // },
+    socialProof: {
+      minitag: "A-Definir",
+      title: "A_Definir",
+      subtitle: "A_Definir",
+      ctaButtonText: "Falar com a equipe agora",
+      images: {
+        // img1: socialProof1,
+        img2: socialProof2,
+        img3: socialProof3,
+        img4: socialProof4,
+        img5: socialProof5,
+        img6: socialProof6,
+      },
+    },
     emergency: {
       miniTag: <>A_Definir</>,
       title: <h1>A_Definir</h1>,
@@ -197,109 +212,111 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     important: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
+      miniTag: <>ATENÇÃO</>,
+      title: (
+        <>
+          Se você está passando por alguma dessas situações, podemos te ajudar
+        </>
+      ),
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>
+              Perdeu o emprego ou teve uma mudança inesperada na sua situação
+              financeira e não conseguiu manter o pagamento do financiamento?
+            </>
+          ),
+          paragraph: (
+            <>
+              Se houve uma mudança inesperada na sua situação financeira, como
+              perda de emprego ou redução de renda, isso pode explicar o atraso
+              nas parcelas. Nesses casos, é importante analisar o contrato e
+              verificar se existem alternativas legais para renegociar a dívida
+              ou até questionar o procedimento adotado pelo banco.
+            </>
+          ),
         },
         card2: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>
+              Tentou resolver a situação diretamente com o banco, mas não obteve
+              solução ou sequer recebeu uma resposta clara?
+            </>
+          ),
+          paragraph: (
+            <>
+              Quando o consumidor tenta resolver diretamente com o banco e não
+              recebe uma resposta clara ou uma solução adequada, ainda existem
+              caminhos para buscar seus direitos. A situação pode ser analisada
+              para verificar se houve falha no atendimento ou ausência de
+              tentativa real de negociação por parte da instituição.
+            </>
+          ),
         },
         card3: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>
+              Nunca recebeu nenhuma notificação do banco para regularizar a
+              dívida? Descobriu que o seu imóvel foi levado a leilão sem que
+              você tivesse conhecimento prévio?
+            </>
+          ),
+          paragraph: (
+            <>
+              Em muitos casos, o banco precisa notificar o devedor para que ele
+              tenha a oportunidade de regularizar a dívida antes de medidas mais
+              graves, como o leilão do imóvel. Se essa comunicação não aconteceu
+              de forma adequada, é possível questionar o procedimento.
+            </>
+          ),
         },
         card4: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: (
+            <>
+              O imóvel foi vendido por valor muito abaixo do mercado, causando
+              grande prejuízo?
+            </>
+          ),
+          paragraph: (
+            <>
+              Quando um imóvel é levado a leilão por um valor muito abaixo do
+              preço de mercado, o proprietário pode sofrer um prejuízo
+              significativo. Dependendo das circunstâncias, é possível analisar
+              se o processo seguiu todas as regras e se existe alguma medida
+              para discutir esse prejuízo.
+            </>
+          ),
         },
       },
-      fraseObs: <>A_Definir</>,
-      ctaButtonText: <>A_Definir</>,
+      fraseObs: (
+        <>
+          Você não precisa enfrentar essa situação sozinho.
+          <br />
+          Com a análise jurídica adequada, é possível verificar a legalidade do
+          procedimento e buscar as medidas cabíveis para proteger seus direitos
+          e o seu patrimônio.
+        </>
+      ),
+      ctaButtonText: <>Quero analisar meu caso agora</>,
     },
     features: {
-      miniTag: <>Áreas de Atuação</>,
-      FirstPart: <span></span>,
-      Destaque: <span className="italic font-light">Excelência</span>,
-      SecondPart: <span>jurídica em diferentes áreas</span>,
-      subtitle: <>Orientação e acompanhamento conforme cada demanda.</>,
+      miniTag: <>Atuação Jurídica</>,
+      FirstPart: <span>Nossa atuação em</span>,
+      Destaque: <span className="italic font-light">leilões</span>,
+      SecondPart: <span>de imóveis</span>,
+      subtitle: (
+        <>Conheça as áreas em que atuamos na defesa de proprietários.</>
+      ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
       titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>na luta dos seus direitos</>,
+      subtitleMessageFeature: <>atuação em leilões</>,
       cards: {
         card1: {
-          title: <>Direito Trabalhista</>,
+          title: <>Anulação de Leilão</>,
           subtitle: (
-            <>Orientação em relações de trabalho e direitos do empregado.</>
+            <>Análise e ação judicial quando há irregularidades no leilão.</>
           ),
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card2: {
-          title: <>Direito Previdenciário</>,
-          subtitle: <>Análise de benefícios e questões junto ao INSS.</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Scale />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card3: {
-          title: <>Direito Militar</>,
-          subtitle: <>Atuação em demandas administrativas e disciplinares.</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Swords />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card4: {
-          title: <>Direito de Família</>,
-          subtitle: <>Questões jurídicas envolvendo relações familiares.</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
-            </div>
-          ),
-          icon: <Users />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card5: {
-          title: <>Direito Notarial e Registral</>,
-          subtitle: <>Orientação em atos cartorários e registros públicos.</>,
           description: (
             <div>
               A_Definir
@@ -313,9 +330,11 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
 
-        card6: {
-          title: <>Consultoria Jurídica</>,
-          subtitle: <>Análise e orientação jurídica preventiva.</>,
+        card2: {
+          title: <>Alienação Fiduciária</>,
+          subtitle: (
+            <>Defesa em financiamentos com garantia de alienação fiduciária.</>
+          ),
           description: (
             <div>
               A_Definir
@@ -324,12 +343,84 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <MessageSquare />,
+          icon: <Landmark />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card3: {
+          title: <>Suspensão de Leilão</>,
+          subtitle: (
+            <>Medidas judiciais urgentes para suspender leilões irregulares.</>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <PauseCircle />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card4: {
+          title: <>Irregularidade em Notificação</>,
+          subtitle: (
+            <>Verificação de falhas na notificação do banco ao devedor.</>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
+            </div>
+          ),
+          icon: <MailWarning />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card5: {
+          title: <> Contrato de Gaveta</>,
+          subtitle: (
+            <>Defesa de quem comprou imóvel informalmente e enfrenta leilão.</>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <FileText />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card6: {
+          title: <>Leilão por Valor Baixo</>,
+          subtitle: (
+            <>Análise de venda do imóvel por valor abaixo do mercado.</>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <TrendingDown />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
       },
-      ctaButtonText: <>Falar com o Advogado</>,
+      ctaButtonText: <>Quero análise do meu caso</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -381,28 +472,24 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É O DR. JUVENILDO CLÍMACO</>,
-      FirstPart: <span> Trajetória e atuação</span>,
-      Destaque: <span className="italic font-light"> jurídica</span>,
-      SecondPart: <span></span>,
+      miniTag: <>QUEM É A DRA. ANA PAULA NASCIMENTO</>,
+      FirstPart: <span> Conheça a Advogada que irá </span>,
+      Destaque: <span className="italic font-light"> conduzir</span>,
+      SecondPart: <span>o seu caso</span>,
       subtitle: (
-        <>Mais de 10 anos de experiência em diferentes áreas do Direito</>
+        <>Advogada especialista em leilões de imóveis e conflitos com bancos.</>
       ),
       paragraph: (
         <div>
-          Pós-graduado em Direito do Trabalho e Previdenciário (Anhanguera -
-          Uniderp, em 2020);
+          A condução dos processos é realizada pela Dra. Ana Paula Santos do
+          Nascimento, advogada especialista em Direito Imobiliário e Direito
+          Bancário, com forte atuação em casos envolvendo leilões de imóveis e
+          alienação fiduciária.
           <br />
-          Pós-graduado em Ciências Criminais (Faculdade do Vale do Itapecuru, em
-          2013);
-          <br />
-          Pós-graduado em Docência em Ensino Superior (Anhanguera - Uniderp, em
-          2020); e Pós-graduado em Direito Notarial e Registral (Anhanguera -
-          Uniderp, em 2022).
-          <br />
-          <br />
-          Há mais de 10 anos advogando com comprometimento, transparência e
-          resultados!
+          <br />A Dra. Ana Paula é Diretora Jurídica do escritório imobiliário
+          Santos do Nascimento Advogados, liderando uma equipe altamente
+          especializada na análise e condução de demandas relacionadas a leilões
+          imobiliários.
         </div>
       ),
       benefits: {
@@ -429,20 +516,29 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar diretamente comigo</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
-          A_Definir
+          A condução dos processos é realizada pela Dra. Ana Paula Santos do
+          Nascimento, advogada especialista em Direito Imobiliário e Direito
+          Bancário, com forte atuação em casos envolvendo leilões de imóveis e
+          alienação fiduciária.
           <br />
           <br />
-          A_Definir
+          A Dra. Ana Paula é Diretora Jurídica do escritório imobiliário Santos
+          do Nascimento Advogados, liderando uma equipe altamente especializada
+          na análise e condução de demandas relacionadas a leilões imobiliários.
           <br />
           <br />
-          A_Definir
+          Ao longo da atuação do escritório, mais de dois mil leilões de imóveis
+          já foram anulados por meio de estratégias jurídicas aplicadas na
+          defesa de proprietários e possuidores de imóveis.
           <br />
-          <br />
-          A_Definir
+          <br />O escritório possui uma estrutura profissional composta por 15
+          advogados especialistas, um administrador de empresas responsável pela
+          gestão estratégica e uma equipe de 5 estagiários, permitindo atuação
+          técnica, estratégica e eficiente em todas as etapas do processo.
         </p>
       ),
       paragraphModalCta: "Entre em contato",
@@ -467,72 +563,99 @@ const content = {
       // },
     },
     ctaSection: {
-      miniTag: <>Fale conosco</>,
-      title: <h1>Fale agora com um Advogado</h1>,
+      miniTag: <>ANÁLISE JURÍDICA</>,
+      title: <h1>Seu imóvel foi a leilão? Ainda pode haver solução</h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Se você precisa de orientação jurídica, entre em contato e tire suas
-            dúvidas sobre o seu caso.
+            Em muitos casos o leilão pode ter irregularidades. Faça uma análise
+            jurídica e entenda se é possível defender seu imóvel.
           </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>Análise inicial do seu caso</>,
-          topic2: <>Atendimento direto com o advogado, sem intermediários</>,
-          topic3: <>Resposta rápida e acompanhamento pelo WhatsApp</>,
-          topic4: <>Orientação jurídica conforme a sua necessidade</>,
-          topic5: <>Atendimento online ou presencial</>,
+          topic1: <>Análise jurídica do leilão do seu imóvel</>,
+          topic2: <>Atendimento direto com advogado especialista em leilões</>,
+          topic3: <>Verificação de possíveis irregularidades no processo</>,
+          topic4: <>Orientação clara sobre os seus direitos</>,
+          topic5: <>Agilidade para avaliar medidas urgentes</>,
         },
       },
-      ctaButtonText: <>Quero falar com um Advogado</>,
+      ctaButtonText: <>Quero analisar meu caso</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
+    depositions: {
+      miniTag: <>Resultados reais</>,
+      FirstPart: <span>Alguns casos solucionados </span>,
+      Destaque: <span className="italic font-light"> </span>,
+      SecondPart: <span></span>,
+      subtitle: (
+        <>
+          Clientes que enfrentavam problemas com financiamento e leilão de
+          imóveis e conseguiram resolver a situação após uma análise
+          especializada.
+        </>
+      ),
+      imagens: {
+        img1: {
+          img: img1Deposition,
+          alt: "Imagem ilustrativa do Feedback de Cliente",
+        },
+        img2: {
+          img: img2Deposition,
+          alt: "Imagem ilustrativa do Feedback de Cliente",
+        },
+        img3: {
+          img: img3Deposition,
+          alt: "Imagem ilustrativa do Feedback de Cliente",
+        },
+        img4: {
+          img: img4Deposition,
+          alt: "Imagem ilustrativa do Feedback de Cliente",
+        },
+      },
+    },
     steps: {
-      miniTag: <>Como funciona o atendimento</>,
-
-      FirstPart: <span>Atendimento jurídico</span>,
-      Destaque: <span className="italic font-light"> simples </span>,
-      SecondPart: <span>e transparente</span>,
+      miniTag: <>Como funciona</>,
+      FirstPart: <span> Veja como</span>,
+      Destaque: <span className="italic font-light"> analisamos </span>,
+      SecondPart: <span>o seu caso</span>,
 
       subtitle: (
-        <>Entenda as etapas para receber orientação jurídica com segurança.</>
+        <>
+          Com poucos passos você pode entender se existem irregularidades no
+          leilão e quais medidas podem proteger seu imóvel.
+        </>
       ),
-
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
-
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Primeiro contato</>,
-          cardDescription: <>Envie sua dúvida e receba uma análise inicial.</>,
-        },
-
-        card2: {
-          stepNumber: 2,
-          cardTitle: <>Análise do caso</>,
-          cardDescription: <>O advogado avalia sua situação com atenção.</>,
-        },
-
-        card3: {
-          stepNumber: 3,
-          cardTitle: <>Orientação jurídica</>,
-          cardDescription: <>Você entende seus direitos e possibilidades.</>,
-        },
-
-        card4: {
-          stepNumber: 4,
-          cardTitle: <>Acompanhamento</>,
+          cardTitle: <>Envie seu caso</>,
           cardDescription: (
-            <>Atuação jurídica com suporte durante o processo.</>
+            <>Fale com nossa equipe e explique o que aconteceu.</>
           ),
         },
+        card2: {
+          stepNumber: 2,
+          cardTitle: <>Análise jurídica</>,
+          cardDescription: <>A advogada analisa o leilão e possíveis falhas.</>,
+        },
+        card3: {
+          stepNumber: 3,
+          cardTitle: <>Orientação clara</>,
+          cardDescription: <>Você entende quais direitos e opções possui.</>,
+        },
+        card4: {
+          stepNumber: 4,
+          cardTitle: <>Defesa do imóvel</>,
+          cardDescription: <>Se houver irregularidade, iniciamos as medidas.</>,
+        },
       },
-
-      ctaButtonText: <>Falar com advogado</>,
+      ctaButtonText: <>Entrar em contato agora</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -636,53 +759,104 @@ const content = {
     },
     faq: {
       miniTag: <>TIRE SUAS DÚVIDAS</>,
-
       title: <>Perguntas Frequentes</>,
-
       subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
-
       questions: {
         question1: {
-          question: <>Quando devo procurar um advogado?</>,
+          question: (
+            <>Meu imóvel foi levado a leilão. Ainda posso fazer alguma coisa?</>
+          ),
           answer: (
             <>
-              Sempre que houver dúvidas sobre direitos, obrigações ou quando
-              surgir um conflito jurídico. A orientação de um advogado ajuda a
-              entender a situação e identificar os caminhos possíveis para cada
-              caso.
+              Em muitos casos, sim. Quando existem irregularidades no
+              procedimento realizado pelo banco, o leilão pode ser questionado
+              judicialmente. Por isso, é importante conversar com nossa equipe
+              para que possamos analisar o seu caso e orientar sobre as medidas
+              possíveis
             </>
           ),
         },
-
         question2: {
-          question: <>Posso receber atendimento online?</>,
+          question: (
+            <>O banco precisa me avisar antes de levar o imóvel a leilão?</>
+          ),
           answer: (
             <>
-              Sim. O atendimento pode ser realizado de forma online ou
-              presencial, conforme a necessidade do cliente. Muitas orientações
-              e acompanhamentos jurídicos podem ser feitos de maneira remota.
+              Sim. A legislação exige que o devedor seja notificado antes da
+              realização do leilão. Se isso não ocorreu corretamente, o
+              procedimento pode apresentar irregularidades.
             </>
           ),
         },
-
         question3: {
-          question: <>Como funciona a análise do meu caso?</>,
+          question: (
+            <>
+              Descobri o leilão depois que ele já aconteceu. Ainda posso agir?
+            </>
+          ),
           answer: (
             <>
-              Após o primeiro contato, o advogado analisa as informações
-              apresentadas e orienta sobre os aspectos jurídicos envolvidos,
-              esclarecendo dúvidas e indicando as possibilidades de atuação.
+              Sim. Mesmo após a realização do leilão, ainda podem existir
+              medidas jurídicas possíveis. Por isso, é fundamental que nossa
+              equipe analise a documentação do seu caso para verificar se houve
+              irregularidades no procedimento.
             </>
           ),
         },
-
         question4: {
-          question: <>Quais áreas do Direito são atendidas?</>,
+          question: <>O leilão do imóvel pode ser anulado?</>,
           answer: (
             <>
-              O escritório atua em diferentes áreas do Direito, como Direito
-              Trabalhista, Previdenciário, Militar, Direito de Família, Direito
-              Notarial e Registral, além de consultoria jurídica.
+              Com certeza. Já tivemos inúmeros casos em que, diante de falhas ou
+              irregularidades no procedimento, foi possível questionar
+              judicialmente a validade do leilão.
+            </>
+          ),
+        },
+        question5: {
+          question: (
+            <>
+              Comprei o imóvel por contrato de gaveta e agora ele está sendo
+              leiloado. O que posso fazer?
+            </>
+          ),
+          answer: (
+            <>
+              Esse tipo de situação exige uma análise jurídica cuidadosa para
+              avaliar as medidas que podem ser adotadas para proteger seus
+              direitos.
+            </>
+          ),
+        },
+        question6: {
+          question: <>Fiz benfeitorias no imóvel. Isso pode ser considerado?</>,
+          answer: (
+            <>
+              Sim. As melhorias realizadas no imóvel podem ser analisadas
+              juridicamente dentro do contexto do caso.
+            </>
+          ),
+        },
+        question7: {
+          question: (
+            <>
+              O imóvel foi vendido por valor muito abaixo do mercado. Isso pode
+              ser questionado?
+            </>
+          ),
+          answer: (
+            <>
+              Situações envolvendo venda por valor muito inferior ao mercado
+              podem indicar irregularidades no procedimento.
+            </>
+          ),
+        },
+        question8: {
+          question: <>Como saber se o leilão foi regular?</>,
+          answer: (
+            <>
+              Somente com a análise jurídica da documentação do caso, incluindo
+              contrato, notificações e matrícula do imóvel.
             </>
           ),
         },

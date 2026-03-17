@@ -13,3 +13,14 @@
   --primaryDark: theme(colors.primaryDark);
 }
 /* Não remover este item acima pois ele faz com que as seções possam alternar */
+
+/* Bullet normal */
+.p-carousel-indicators .p-link {
+  background-color: #ccc; /* cor padrão */
+  margin-top: 30px;
+}
+
+/* Bullet ativo */
+.p-carousel-indicators .p-link.p-highlight {
+  background-color: #ff0000; /* cor que você quer */
+}
