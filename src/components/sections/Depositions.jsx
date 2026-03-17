@@ -1,63 +1,82 @@
+import React, { useState, useEffect } from "react";
+import { Carousel } from "primereact/carousel";
+
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import SectionArea from "../sectionElements/SectionArea";
-import SectionHeader from "../sectionElements/SectionHeader";
 import SectionWrapper from "../sectionElements/SectionWrapper";
+import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
 import content from "../../content/content";
-import CarouselDivisV1 from "../../components/interactives/CarouselDivsV1";
 
-export default function Depositions() {
+export default function Depositions({ colorMode }) {
+  // const responsiveOptions = [
+  //   {
+  //     breakpoint: "1400px",
+  //     numVisible: 2,
+  //     numScroll: 1,
+  //   },
+  //   {
+  //     breakpoint: "1199px",
+  //     numVisible: 2,
+  //     numScroll: 1,
+  //   },
+  //   {
+  //     breakpoint: "767px",
+  //     numVisible: 1,
+  //     numScroll: 1,
+  //   },
+  //   {
+  //     breakpoint: "575px",
+  //     numVisible: 1,
+  //     numScroll: 1,
+  //   },
+  // ];
+
+  const imagensList = Object.values(content.texts.depositions.imagens);
+
+  // const depositionTemplate = (item) => {
+  //   return (
+  //     <div className="m-3 p-4 bg-transparent flex items-center justify-center desktop1:h-[320px]">
+  //       <img
+  //         src={item.img}
+  //         alt={item.alt}
+  //         className="max-h-full max-w-full object-contain rounded-xl "
+  //       />
+  //     </div>
+  //   );
+  // };
+
   return (
-    <div className="relative bg-bgSectionDark">
-      <SectionArea className="" paddingbot={false}>
-        <SectionHeader
-          className="text-center"
-          miniTitle={content.texts.testimonials.miniTag}
-          sectionHeaderTitle={content.texts.testimonials.title}
-          sectionHeaderSubtitle={content.texts.testimonials.subtitle}
-          titleColor="text-colorWhite"
-          subtitleColor="text-colorWhite opacity-70"
+    <div className="relative bg-transparent">
+      <SectionArea>
+        <SectionHeaderNovo
+          colorMode={colorMode}
+          miniTitle={content.texts.depositions.miniTag}
+          title={content.texts.depositions.FirstPart}
+          subtitle={content.texts.depositions.subtitle}
         />
 
         <SectionWrapper className="flex justify-center">
           <MotionDivDownToUp className="flex justify-center w-full">
-            <div className="desktop1:w-[80%]">
-              <CarouselDivisV1>
-                <div className="flex items-center justify-center">
-                  <div className="flex justify-center">
-                    <img
-                      src={content.texts.testimonials.images.img1.img}
-                      alt={content.texts.testimonials.images.img1.alt}
-                    />
-                  </div>
-                </div>
-                <div className="flex justify-center">
-                  <div>
-                    <img
-                      src={content.texts.testimonials.images.img2.img}
-                      alt={content.texts.testimonials.images.img2.alt}
-                    />
-                  </div>
-                </div>
-                <div className="flex justify-center">
-                  <div>
-                    <img
-                      src={content.texts.testimonials.images.img3.img}
-                      alt={content.texts.testimonials.images.img3.alt}
-                    />
-                  </div>
-                </div>
-                <div className="flex justify-center">
-                  <div>
-                    <img
-                      src={content.texts.testimonials.images.img4.img}
-                      alt={content.texts.testimonials.images.img4.alt}
-                    />
-                  </div>
-                </div>
-              </CarouselDivisV1>
+            <div className="desktop1:w-[80%] w-full flex flex-col gap-2 tablet1:grid tablet1:grid-cols-2 desktop1:grid-cols-2">
+              {imagensList.map((item, index) => (
+                <img
+                  key={index}
+                  src={item.img}
+                  alt={item.alt}
+                  className="w-full mx-auto border-2 border-primaryDark/20 shadow-md rounded-md"
+                />
+              ))}
+              {/* <Carousel
+                value={imagensList}
+                numVisible={2}
+                numScroll={1}
+                responsiveOptions={responsiveOptions}
+                circular
+                autoplayInterval={4000}
+                itemTemplate={depositionTemplate}
+              /> */}
             </div>
           </MotionDivDownToUp>
-          <MotionDivDownToUp></MotionDivDownToUp>
         </SectionWrapper>
       </SectionArea>
     </div>
