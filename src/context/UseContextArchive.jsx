@@ -26,7 +26,7 @@ export function ColorModeProvider({ children }) {
 }
 
 export function NavbarRender() {
-  const [navbarHero, setNavbarHero] = useState(true); // Renderiza navbar padrão
+  const [navbarHero, setNavbarHero] = useState(false); // Renderiza navbar padrão
 
   return {
     navbarHero,

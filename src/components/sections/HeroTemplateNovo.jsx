@@ -148,12 +148,12 @@ function HeroTemplateNovo({
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="space-y-2 phone3:space-y-4 order-2 lg:order-1 flex flex-col items-center text-center desktop1:text-start desktop1:items-start"
+              className={`space-y-2 phone3:space-y-4 order-2 lg:order-1 flex flex-col ${navbarHero ? "items-center text-center desktop1:text-start desktop1:items-start" : "text-start items-start"}`}
             >
               {navbarHero && (
                 <div className="mb-4 hidden desktop1:flex">
                   <img
-                    src={content.texts.navbar.logo.img}
+                    src={content.texts.navbar.logo.imgDesktop}
                     alt={content.texts.navbar.logo.alt}
                     cl
                   />
@@ -225,7 +225,9 @@ function HeroTemplateNovo({
                 } w-full`}
               /> */}
               {obs && (
-                <div className="flex justify-center desktop1:justify-start items-start gap-2 desktop1:gap-3 text-sm w-full">
+                <div
+                  className={`flex ${navbarHero ? "justify-center desktop1:justify-start" : "justify-start"} items-start gap-2 desktop1:gap-3 text-sm w-full`}
+                >
                   <div
                     className={`font-secondFont font-light flex gap-0 items-start ${textOpacity}`}
                   >
