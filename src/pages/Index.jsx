@@ -46,6 +46,7 @@ import AuthorityAndAlert from "../components/sections/AuthorityAndAlert";
 import SocialProof from "../components/sections/SocialProof";
 import Depositions from "../components/sections/Depositions";
 import { NavbarRender } from "../context/UseContextArchive";
+import TeamSection from "../components/sections/TeamSection";
 
 export default function Index() {
   const { colorMode, setColorMode } = useColorMode();
@@ -89,6 +90,12 @@ export default function Index() {
                 benefits={false}
               />
               <SocialMediaTemplate colorMode={colorMode} />
+            </Suspense>
+          </AlternatingSection>
+
+          <AlternatingSection index={3} colorMode={colorMode}>
+            <Suspense>
+              <TeamSection />
             </Suspense>
           </AlternatingSection>
 

@@ -176,7 +176,7 @@ function HeroTemplateNovo({
               </h1>
 
               <p
-                className={`text-center desktop1:text-start text-[14px] phone2:text-lg md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
+                className={`${navbarHero ? "text-center desktop1:text-start" : "text-start desktop1:text-start"} text-[14px] phone2:text-lg md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
               >
                 {content.texts.hero.subtitle}
               </p>

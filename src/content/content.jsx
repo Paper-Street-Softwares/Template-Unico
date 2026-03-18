@@ -22,6 +22,9 @@ import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 // import imgproof5 from "../assets/imgs/socialProof/socialproof5.webp";
 // import imgproof6 from "../assets/imgs/socialProof/socialproof6.webp";
 
+import img1 from "../assets/imgs/team/team1.webp";
+import img2 from "../assets/imgs/team/team2.webp";
+
 import {
   Baby,
   Briefcase,
@@ -134,25 +137,53 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
+      miniTag: <>Pascoal & Dyandra Advocacia</>,
+      FirstPart: <span>Direito Trabalhista e Previdenciário </span>,
       Destaque: (
-        <span className="destaque relative italic font-light">A_Definir</span>
+        <span className="destaque relative italic font-light">
+          OAB/SP 54.313
+        </span>
       ),
       SecondPart: <span></span>,
-      subtitle: <p>A_Definir</p>,
+      subtitle: (
+        <p>
+          Atuação dedicada à defesa dos direitos do trabalhador, com atendimento
+          presencial em Sorocaba/SP e orientação jurídica online para clientes
+          em todo o Brasil.
+          <br />
+          <br />
+          Especial atenção a demandas envolvendo{" "}
+          <span className="font-bold">
+            motoristas de caminhão com vínculo CLT
+          </span>
+          , compreendendo as particularidades da profissão, como jornadas
+          extensas, horas extras e tempo de espera.
+        </p>
+      ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Agende seu atendimento</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: <>A_Definir</>,
+        text: (
+          <p>
+            ✓ Com{" "}
+            <span className="font-bold">
+              18 anos de experiência e atuação em mais de 2.000 ações
+              trabalhistas.
+            </span>
+            <br />
+            <br />
+            <p className="mb-2">📍 Sede em Sorocaba/SP</p>
+            <p>🌎 Atendimento online para todo o Brasil</p>
+          </p>
+        ),
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -216,19 +247,29 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span>A_Definir</span>,
-      Destaque: <span className="italic font-light">A_Definir</span>,
-      SecondPart: <span></span>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>ÁREAS DE ATUAÇÃO</>,
+      FirstPart: <span>Como podemos</span>,
+      Destaque: <span className="italic font-light">te ajudar</span>,
+      SecondPart: <span> na prática</span>,
+      subtitle: (
+        <>Veja em quais situações podemos agir para defender seus direitos.</>
+      ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>A_Definir</>,
-      subtitleMessageFeature: <>A_Definir</>,
+      titleMessageFeature: <>100%</>,
+      subtitleMessageFeature: <>focados no trabalhador</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
+          title: <>Direito Trabalhista</>,
+          subtitle: (
+            <>
+              Atuação em demandas relacionadas aos direitos do trabalhador,
+              incluindo verbas rescisórias, horas extras, reconhecimento de
+              vínculo empregatício, jornadas de trabalho e outras situações
+              decorrentes das relações de trabalho, com especial atenção às
+              demandas envolvendo motoristas de caminhão com vínculo CLT.
+            </>
+          ),
           description: (
             <div>
               A_Definir
@@ -243,118 +284,30 @@ const content = {
         },
 
         card2: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
+          title: <>Direito Previdenciário</>,
+          subtitle: (
+            <>
+              Análise, orientação e atuação em demandas relacionadas a
+              benefícios previdenciários junto ao INSS, incluindo
+              aposentadorias, benefícios por incapacidade e revisões, sempre com
+              avaliação jurídica cuidadosa para assegurar a correta aplicação da
+              legislação previdenciária.
+            </>
           ),
-          icon: <User />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card3: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
               <br />
               <br />
               A_Definir
-            </div>
-          ),
-          icon: <Scale />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card4: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              A_Definir
-              <br />
             </div>
           ),
           icon: <Gavel />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
-
-        card5: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Users />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card6: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <MessageSquare />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card7: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Shield />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
-
-        card8: {
-          title: <>A_Definir</>,
-          subtitle: <>A_Definir</>,
-          description: (
-            <div>
-              A_Definir
-              <br />
-              <br />
-              A_Definir
-            </div>
-          ),
-          icon: <Briefcase />,
-          buttonLabelModal: "Fale Conosco",
-          buttonLabel: "Saiba Mais",
-        },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar agora com o escritório</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -406,12 +359,30 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir </span>,
-      Destaque: <span className="italic font-light"> A_Definir</span>,
-      SecondPart: <span></span>,
-      subtitle: <></>,
-      paragraph: <div>A_Definir</div>,
+      miniTag: <>QUEM É O PASCOAL & DYANDRA ADVOCACIA</>,
+      FirstPart: <span> </span>,
+      Destaque: <span className="italic font-light"> Compromisso</span>,
+      SecondPart: <span>com a Justiça e com o Trabalhador</span>,
+      subtitle: (
+        <>Experiência e estratégia para garantir seus direitos com segurança.</>
+      ),
+      paragraph: (
+        <div>
+          O Pascoal & Dyandra Advocacia é um escritório com sede em Sorocaba –
+          São Paulo, que oferece atendimento presencial na região e orientação
+          jurídica online para clientes em todo o Brasil.
+          <br />
+          <br />
+          Nossa atuação é pautada pela ética, responsabilidade técnica e
+          compromisso com a correta aplicação do Direito, sempre buscando a
+          defesa eficiente dos interesses dos trabalhadores.
+          <br />
+          <br />
+          Com mais de 18 anos de experiência e atuação em mais de 2.000 ações
+          trabalhistas, o escritório dedica-se à análise cuidadosa de cada caso,
+          oferecendo orientação jurídica clara, responsável e individualizada.
+        </div>
+      ),
       benefits: {
         cards: {
           card1: {
@@ -436,7 +407,7 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Fale com um advogado agora</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
@@ -461,9 +432,15 @@ const content = {
           alt: `Foto do Instagram do ${infos.name}`,
           altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
         },
-        miniTag: <>A_Definir</>,
-        title: <>A_Definir</>,
-        subtitle: <>A_Definir</>,
+        miniTag: <>Redes sociais</>,
+        title: <>Conecte-se conosco</>,
+        subtitle: (
+          <>
+            Acompanhe nossas redes sociais para se manter informado sobre
+            conteúdos jurídicos, atualizações e temas relevantes das áreas de
+            atuação.
+          </>
+        ),
         paragraph: <p></p>,
         labelInstagram: "Siga-nos no Instagram",
         labelFacebook: "Siga-nos no Facebook",
@@ -474,57 +451,81 @@ const content = {
       },
     },
     ctaSection: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>FALE CONOSCO</>,
+      title: <h1>Você pode estar perdendo dinheiro</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Fale com um especialista e entenda o que você pode receber.
+          </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>A_Definir</>,
-          topic2: <>A_Definir</>,
-          topic3: <>A_Definir</>,
-          topic4: <>A_Definir</>,
+          topic1: <>Análise completa do seu caso</>,
+          topic2: <>Atendimento direto com advogado especialista</>,
+          topic3: <>Identificação de valores e direitos a receber</>,
+          topic4: <>Orientação clara sobre o que fazer</>,
+          topic5: <>Agilidade para resolver sua situação</>,
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com especialista agora</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>A_Definir</>,
-      FirstPart: <span> A_Definir</span>,
-      Destaque: <span className="italic font-light"> A_Definir </span>,
-      SecondPart: <span>A_Definir</span>,
+      miniTag: <>PASSO A PASSO</>,
+      FirstPart: <span> Como</span>,
+      Destaque: <span className="italic font-light"> funciona </span>,
+      SecondPart: <span> nosso atendimento?</span>,
 
-      subtitle: <></>,
+      subtitle: <>Veja como cuidamos do seu caso do início ao fim.</>,
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Fale com a gente</>,
+          cardDescription: (
+            <>
+              {" "}
+              Você entra em contato com nossa equipe e nos apresenta sua
+              situação.
+            </>
+          ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Análise do caso</>,
+          cardDescription: (
+            <>
+              Realizamos uma análise inicial para compreender os detalhes do seu
+              caso.
+            </>
+          ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Orientação clara</>,
+          cardDescription: (
+            <>
+              Apresentamos orientação jurídica adequada, com base na análise das
+              informações e documentos disponíveis.
+            </>
+          ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>A_Definir</>,
-          cardDescription: <>A_Definir</>,
+          cardTitle: <>Acompanhamento</>,
+          cardDescription: (
+            <>
+              Caso necessário, acompanhamos todas as etapas com
+              responsabilidade, sigilo e ética profissional.
+            </>
+          ),
         },
       },
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com os Advogados já</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -626,26 +627,120 @@ const content = {
       },
       ctaButtonText: <>A_Definir</>,
     },
+    team: {
+      miniTag: <>SÓCIOS</>,
+      title: <>Quem são os sócios?</>,
+      subtitle: (
+        <>
+          Especialistas que lutam pelos seus direitos com experiência e
+          estratégia.
+        </>
+      ),
+      cards: {
+        card1: {
+          img: img1,
+          name: <>Alexandre Pascoal Marques - OAB/SP 270.924</>,
+          role: <>Sócio e Diretor Executivo</>,
+          description: (
+            <>
+              Responsável pelas áreas administrativa e comercial do escritório,
+              bem como pela gestão estratégica e desenvolvimento de negócios.
+              <br />
+              <br />
+              Alexandre atua na área trabalhista desde os estágios na faculdade
+              de Direito, tendo consolidado sua carreira na defesa dos direitos
+              do trabalhador.
+            </>
+          ),
+        },
+        card2: {
+          img: img2,
+          name: <>Flávia Dyandra - OAB/SP 352.455</>,
+          role: <>Sócia e Diretora Operacional</>,
+          description: (
+            <>
+              Responsável pela gestão administrativa, financeira e operacional
+              do escritório, além da supervisão dos processos internos e
+              organização estratégica.
+              <br />
+              <br />
+              Flávia possui experiência com o setor de transportes desde antes
+              de ingressar na faculdade de Direito, contribuindo para a
+              compreensão das particularidades enfrentadas por trabalhadores do
+              transporte rodoviário.
+            </>
+          ),
+        },
+      },
+      ctaButtonText: <>A_Definir</>,
+    },
     faq: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
-      subtitle: <>A_Definir</>,
+      miniTag: <>TIRE SUAS DÚVIDAS</>,
+      title: <>Perguntas Frequentes</>,
+      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>O escritório atende apenas na cidade de Sorocaba?</>,
+          answer: (
+            <>
+              Não. O Pascoal & Dyandra Advocacia realiza atendimento presencial
+              em Sorocaba - SP e também oferece atendimento online para clientes
+              em todo o Brasil.
+            </>
+          ),
         },
         question2: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: <>Como funciona o atendimento online?</>,
+          answer: (
+            <>
+              Após o primeiro contato, o atendimento pode ser realizado por
+              videoconferência ou ligação telefônica. Nesse momento, o caso é
+              analisado e o cliente recebe orientação jurídica com base nas
+              informações apresentadas.
+            </>
+          ),
         },
         question3: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: (
+            <>
+              Motorista de caminhão com vínculo CLT tem direito a horas extras?
+            </>
+          ),
+          answer: (
+            <>
+              Sim. Dependendo da jornada e das condições de trabalho, o
+              motorista pode ter direito ao recebimento de horas extras. A
+              análise do caso concreto é fundamental para verificar os direitos
+              aplicáveis.
+            </>
+          ),
         },
         question4: {
-          question: <>A_Definir</>,
-          answer: <>A_Definir</>,
+          question: (
+            <>
+              Ainda posso buscar meus direitos trabalhistas após sair da
+              empresa?
+            </>
+          ),
+          answer: (
+            <>
+              Sim. Em regra, o trabalhador tem até 2 anos após o término do
+              contrato de trabalho para buscar seus direitos na Justiça, sendo
+              possível discutir valores referentes aos últimos 5 anos.
+            </>
+          ),
+        },
+        question5: {
+          question: (
+            <>O escritório atua em aposentadoria e benefícios do INSS?</>
+          ),
+          answer: (
+            <>
+              Sim. Atuamos em demandas relacionadas ao Direito Previdenciário,
+              incluindo análise de aposentadorias, benefícios por incapacidade e
+              revisões de benefícios do INSS.
+            </>
+          ),
         },
       },
 
