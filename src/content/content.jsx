@@ -43,7 +43,6 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
-  ShoppingCart,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -51,14 +50,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Dr. Geraldo Souza",
+  name: "A_Definir",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "geraldosouza.adv.br", // Sem "www"
+  domain: "A_Definir", // Sem "www"
   phone: {
-    ddd: "11",
-    firstPart: "93907", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "3634", // Apenas os 4 últimos números
+    ddd: "00",
+    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0000", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -74,10 +73,9 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>Rua Tiradentes, nº 1726,</p>
-      <p>2ºandar, sala 02,</p>
-      <p>Ferrazópolis São Bernardo do Campo - SP,</p>
-      <p>CEP: 09781-220</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
+      <p>A_Definir</p>
     </div>
   ),
   enderecoSecundario: (
@@ -95,7 +93,7 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "geraldosouza94.adv", // Sem o @
+  instagramProfile: "", // Sem o @
   instagramProfileSecundario: "",
   facebookProfile: "",
   linkeDinProfile: "",
@@ -136,30 +134,25 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>Advocacia especializada</>,
-      FirstPart: <span>Seu problema jurídico tem</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
       Destaque: (
-        <span className="destaque relative italic font-light">solução</span>
+        <span className="destaque relative italic font-light">A_Definir</span>
       ),
       SecondPart: <span></span>,
-      subtitle: (
-        <p>
-          Atendimento direto com advogado para orientar, defender seus direitos
-          e buscar a melhor solução para seu caso.
-        </p>
-      ),
+      subtitle: <p>A_Definir</p>,
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Falar com o Advogado</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: <> 💬 Atendimento presencial e online para todo Brasil.</>,
+        text: <>A_Definir</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -223,21 +216,19 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>Áreas de atuação</>,
-      FirstPart: <span>Soluções jurídicas para</span>,
-      Destaque: <span className="italic font-light">seu caso</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span>A_Definir</span>,
+      Destaque: <span className="italic font-light">A_Definir</span>,
       SecondPart: <span></span>,
-      subtitle: (
-        <>Atendimento em diferentes áreas do direito, com foco em resultado.</>
-      ),
+      subtitle: <>A_Definir</>,
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
-      titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>defesa dos seus direitos</>,
+      titleMessageFeature: <>A_Definir</>,
+      subtitleMessageFeature: <>A_Definir</>,
       cards: {
         card1: {
-          title: <>Direito do Trabalho</>,
-          subtitle: <>Defesa do trabalhador em demissões, direitos e verbas.</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -252,8 +243,8 @@ const content = {
         },
 
         card2: {
-          title: <>Direito Cível</>,
-          subtitle: <>Soluções jurídicas para conflitos e indenizações.</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -268,8 +259,8 @@ const content = {
         },
 
         card3: {
-          title: <>Direito de Família</>,
-          subtitle: <>Divórcio, pensão, guarda e acordos familiares.</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -278,14 +269,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <Users />,
+          icon: <Scale />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card4: {
-          title: <>Direito Previdenciário</>,
-          subtitle: <>Aposentadoria, benefícios e revisões do INSS.</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -300,8 +291,8 @@ const content = {
         },
 
         card5: {
-          title: <>Direito do Consumidor</>,
-          subtitle: <>Problemas com empresas, cobranças e indenizações.</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -310,14 +301,14 @@ const content = {
               A_Definir
             </div>
           ),
-          icon: <ShoppingCart />,
+          icon: <Users />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
 
         card6: {
-          title: <>Consultoria Jurídica</>,
-          subtitle: <>Orientação jurídica para evitar problemas legais.</>,
+          title: <>A_Definir</>,
+          subtitle: <>A_Definir</>,
           description: (
             <div>
               A_Definir
@@ -363,7 +354,7 @@ const content = {
           buttonLabel: "Saiba Mais",
         },
       },
-      ctaButtonText: <>Falar com o Escritório</>,
+      ctaButtonText: <>A_Definir</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -415,29 +406,12 @@ const content = {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É O DR. GERALDO SOUZA</>,
-      FirstPart: <span> Advogado ao </span>,
-      Destaque: <span className="italic font-light"> seu lado</span>,
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir </span>,
+      Destaque: <span className="italic font-light"> A_Definir</span>,
       SecondPart: <span></span>,
-      subtitle: (
-        <>Atendimento direto, transparente e focado em resolver seu problema.</>
-      ),
-      paragraph: (
-        <div>
-          Se você precisa de um advogado que realmente esteja do seu lado, o Dr.
-          Geraldo Souza oferece atendimento próximo, transparente e comprometido
-          com resultados.
-          <br />
-          <br />
-          Atuando nas áreas de Direito da Família, Cível, Trabalhista,
-          Previdenciário e do Consumidor, cada caso é tratado com seriedade,
-          respeito e total dedicação.
-          <br />
-          <br />
-          Aqui, seu problema não é apenas mais um processo. É uma situação que
-          merece atenção, estratégia e uma solução segura.
-        </div>
-      ),
+      subtitle: <></>,
+      paragraph: <div>A_Definir</div>,
       benefits: {
         cards: {
           card1: {
@@ -462,7 +436,7 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>Falar agora com o Advogado</>,
+      ctaButtonText: <>A_Definir</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
@@ -487,15 +461,9 @@ const content = {
           alt: `Foto do Instagram do ${infos.name}`,
           altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
         },
-        miniTag: <>Redes sociais</>,
-        title: <>Conecte-se conosco</>,
-        subtitle: (
-          <>
-            Acompanhe nossas redes sociais para se manter informado sobre
-            conteúdos jurídicos, atualizações e temas relevantes das áreas de
-            atuação.
-          </>
-        ),
+        miniTag: <>A_Definir</>,
+        title: <>A_Definir</>,
+        subtitle: <>A_Definir</>,
         paragraph: <p></p>,
         labelInstagram: "Siga-nos no Instagram",
         labelFacebook: "Siga-nos no Facebook",
@@ -506,38 +474,30 @@ const content = {
       },
     },
     ctaSection: {
-      miniTag: <>Fale conosco</>,
-      title: <h1>Fale agora com um Advogado</h1>,
+      miniTag: <>A_Definir</>,
+      title: <h1>A_Definir</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">
-            Se você precisa de orientação jurídica ou quer resolver um problema
-            legal, fale conosco agora.
-          </p>
+          <p className="mb-6 font-secondFont">A_Definir</p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>Análise inicial do seu caso</>,
-          topic2: <>Atendimento direto com o Advogado</>,
-          topic3: <>Resposta rápida pelo WhatsApp</>,
-          topic4: <>Agilidade no início do processo</>,
-          topic5: <>Solução jurídica sem sair de casa</>,
+          topic1: <>A_Definir</>,
+          topic2: <>A_Definir</>,
+          topic3: <>A_Definir</>,
+          topic4: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Falar com Advogado agora</>,
+      ctaButtonText: <>A_Definir</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>Como funciona o atendimento</>,
-      FirstPart: <span> Resolva seu caso com</span>,
-      Destaque: <span className="italic font-light"> segurança </span>,
-      SecondPart: (
-        <span>
-          Um processo simples, rápido e com acompanhamento direto do advogado.
-        </span>
-      ),
+      miniTag: <>A_Definir</>,
+      FirstPart: <span> A_Definir</span>,
+      Destaque: <span className="italic font-light"> A_Definir </span>,
+      SecondPart: <span>A_Definir</span>,
 
       subtitle: <></>,
       img: imgSteps,
@@ -545,32 +505,26 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Primeiro contato</>,
-          cardDescription: (
-            <>Você explica seu problema e recebe orientação inicial.</>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Análise do caso</>,
-          cardDescription: <>Avaliação jurídica clara sobre seus direitos.</>,
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Estratégia jurídica</>,
-          cardDescription: (
-            <>Definimos o melhor caminho para resolver seu caso.</>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Acompanhamento</>,
-          cardDescription: (
-            <>Você acompanha tudo com suporte direto do advogado.</>
-          ),
+          cardTitle: <>A_Definir</>,
+          cardDescription: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Falar diretamente comigo</>,
+      ctaButtonText: <>A_Definir</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -673,46 +627,25 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     faq: {
-      miniTag: <>TIRE SUAS DÚVIDAS</>,
-      title: <>Perguntas Frequentes</>,
-      subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
+      miniTag: <>A_Definir</>,
+      title: <>A_Definir</>,
+      subtitle: <>A_Definir</>,
       questions: {
         question1: {
-          question: <>Preciso ir até o escritório para ser atendido?</>,
-          answer: (
-            <>
-              Não. O atendimento pode ser feito totalmente online, de forma
-              prática e segura. Assim você resolve sua situação jurídica sem
-              sair de casa.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question2: {
-          question: <>Como funciona a análise do meu caso?</>,
-          answer: (
-            <>
-              Você explica sua situação e o advogado faz uma análise inicial
-              para entender o problema e indicar os melhores caminhos jurídicos.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question3: {
-          question: <>Em quanto tempo meu caso pode começar?</>,
-          answer: (
-            <>
-              Após a análise e alinhamento das informações necessárias, o
-              processo pode ser iniciado rapidamente.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
         question4: {
-          question: <>Vou conseguir acompanhar meu processo?</>,
-          answer: (
-            <>
-              Sim. Você recebe acompanhamento e pode tirar dúvidas sempre que
-              precisar, com comunicação direta com o advogado.
-            </>
-          ),
+          question: <>A_Definir</>,
+          answer: <>A_Definir</>,
         },
       },
 
