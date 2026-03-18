@@ -58,10 +58,6 @@ function TeamSectionNew({ colorMode }) {
       title: content.texts.team.cards.card2.name,
       text: content.texts.team.cards.card2.description,
     },
-    card3: {
-      title: content.texts.team.cards.card3.name,
-      text: content.texts.team.cards.card3.description,
-    },
   };
 
   return (
@@ -74,12 +70,12 @@ function TeamSectionNew({ colorMode }) {
           colorMode={colorMode}
         />
 
-        <section className="flex flex-col gap-16 mt-12">
-          <div className="flex flex-col-reverse desktop1:flex-row-reverse gap-12 items-center">
+        <section className="flex flex-col gap-16 ">
+          <div className="flex flex-col-reverse desktop1:flex-row-reverse gap-4 items-center">
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
-              className="space-y-4 max-w-[380px]"
+              className="space-y-2 max-w-[380px]"
             >
               <span className={`uppercase font-bold ${textDestaque}`}>
                 {content.texts.team.cards.card1.title}
@@ -89,16 +85,16 @@ function TeamSectionNew({ colorMode }) {
                 {content.texts.team.cards.card1.name}
               </h2>
 
-              {/* <p className={`font-secondFont ${textOpacity}`}>
+              <p className={`font-secondFont ${textOpacity}`}>
                 {content.texts.team.cards.card1.description}
-              </p> */}
+              </p>
 
-              <Button
+              {/* <Button
                 onClick={() => openModal("card1")}
                 className={`bg-transparent px-0 uppercase font-bold flex items-center gap-2 border-none ${textDestaque} underline sclae-100 hover:scale-90 duration-500 transition-all`}
               >
                 Saiba mais <ArrowRight size={20} />
-              </Button>
+              </Button> */}
             </motion.div>
 
             <motion.div
@@ -108,7 +104,7 @@ function TeamSectionNew({ colorMode }) {
             >
               <div className={`rounded-3xl overflow-hidden ${image}`}>
                 <img
-                  src={content.texts.team.cards.card1.img1}
+                  src={content.texts.team.cards.card1.img}
                   alt={content.texts.team.cards.card1.alt}
                   className="w-full object-cover scale-105 hover:scale-100 transition-transform duration-700"
                 />
@@ -116,7 +112,7 @@ function TeamSectionNew({ colorMode }) {
             </motion.div>
           </div>
 
-          <div className="flex flex-col-reverse desktop1:flex-row gap-12 items-center">
+          <div className="flex flex-col-reverse desktop1:flex-row gap-4 items-center">
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
@@ -130,15 +126,15 @@ function TeamSectionNew({ colorMode }) {
                 {content.texts.team.cards.card2.name}
               </h2>
 
-              {/* <p className={`font-secondFont ${textOpacity}`}>
+              <p className={`font-secondFont ${textOpacity}`}>
                 {content.texts.team.cards.card2.description}
-              </p> */}
+              </p>
 
               <Button
-                onClick={() => openModal("card2")}
+                // onClick={() => openModal("card2")}
                 className={`bg-transparent px-0 uppercase font-bold flex items-center gap-2 border-none ${textDestaque} underline sclae-100 hover:scale-90 duration-500 transition-all`}
               >
-                Saiba mais <ArrowRight size={20} />
+                {/* Saiba mais <ArrowRight size={20} /> */}
               </Button>
             </motion.div>
 
@@ -149,49 +145,8 @@ function TeamSectionNew({ colorMode }) {
             >
               <div className={`rounded-3xl overflow-hidden ${image}`}>
                 <img
-                  src={content.texts.team.cards.card2.img2}
+                  src={content.texts.team.cards.card2.img}
                   alt={content.texts.team.cards.card2.alt}
-                  className="w-full object-cover scale-105 hover:scale-100 transition-transform duration-700"
-                />
-              </div>
-            </motion.div>
-          </div>
-
-          <div className="flex flex-col-reverse desktop1:flex-row-reverse gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -40 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="space-y-4 max-w-[380px]"
-            >
-              <span className={`uppercase font-bold ${textDestaque}`}>
-                {content.texts.team.cards.card3.title}
-              </span>
-
-              <h2 className={`text-3xl font-mainFont ${text}`}>
-                {content.texts.team.cards.card3.name}
-              </h2>
-
-              {/* <p className={`font-secondFont ${textOpacity}`}>
-                {content.texts.team.cards.card3.description}
-              </p> */}
-
-              <Button
-                onClick={() => openModal("card3")}
-                className={`bg-transparent px-0 uppercase font-bold flex items-center gap-2 border-none ${textDestaque} underline sclae-100 hover:scale-90 duration-500 transition-all`}
-              >
-                Saiba mais <ArrowRight size={20} />
-              </Button>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="max-w-[380px]"
-            >
-              <div className={`rounded-3xl overflow-hidden ${image}`}>
-                <img
-                  src={content.texts.team.cards.card3.img3}
-                  alt={content.texts.team.cards.card3.alt}
                   className="w-full object-cover scale-105 hover:scale-100 transition-transform duration-700"
                 />
               </div>
