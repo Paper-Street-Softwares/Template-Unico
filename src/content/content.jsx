@@ -131,7 +131,7 @@ const content = {
     hero: {
       minitagIcon: (
         <>
-          <BriefcaseBusiness className="w-4 h-4" />
+          <Scale className="w-4 h-4" />
           {/* <MapPin className="w-4 h-4" /> */}
           {/* 🚨 */}
         </>
@@ -159,7 +159,7 @@ const content = {
       obsHero: {
         icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: <>Atendimento presencial e online para todo Brasil.</>,
+        text: <> 💬 Atendimento presencial e online para todo Brasil.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",

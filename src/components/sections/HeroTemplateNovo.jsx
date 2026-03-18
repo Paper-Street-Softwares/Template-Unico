@@ -26,6 +26,7 @@ import SectionWrapper from "../sectionElements/SectionWrapper";
 import ButtonReflexo from "../interactives/ButtonReflexo";
 import ButtonAlert from "../interactives/ButtonAlert";
 import { useColorMode } from "../../context/UseContextArchive";
+import { NavbarRender } from "../../context/UseContextArchive";
 
 function HeroTemplateNovo({
   colorMode,
@@ -95,6 +96,8 @@ function HeroTemplateNovo({
       borderColor = "bg-white";
   }
 
+  const { navbarHero } = NavbarRender();
+
   const { showGlobalButton } = useColorMode();
 
   // const topicsCard = Object.values({
@@ -129,7 +132,9 @@ function HeroTemplateNovo({
       paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
-      <section className="relative w-full pt-[80px] phone2:pt-[100px] tablet1:pt-[125px]  desktop1:pt-[175px] desktop2:pt-[190px] pb-[64px] desktop1:pb-[96px] flex items-center justify-center overflow-hidden font-mainFont">
+      <section
+        className={`relative w-full ${navbarHero ? "pt-[64px] desktop1:pt-[96px] pb-[64px] desktop1:pb-[96px]" : "pt-[80px] phone2:pt-[100px] tablet1:pt-[125px] desktop1:pt-[175px] desktop2:pt-[190px] pb-[64px] desktop1:pb-[96px] "} flex items-center justify-center overflow-hidden font-mainFont`}
+      >
         {/* Abstract Background Shapes */}
         <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}
@@ -143,8 +148,17 @@ function HeroTemplateNovo({
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="space-y-2 phone3:space-y-4 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
+              className="space-y-2 phone3:space-y-4 order-2 lg:order-1 flex flex-col items-center text-center desktop1:text-start desktop1:items-start"
             >
+              {navbarHero && (
+                <div className="mb-4 hidden desktop1:flex">
+                  <img
+                    src={content.texts.navbar.logo.img}
+                    alt={content.texts.navbar.logo.alt}
+                    cl
+                  />
+                </div>
+              )}
               <div
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-[8px] phone2:text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
               >
@@ -162,7 +176,7 @@ function HeroTemplateNovo({
               </h1>
 
               <p
-                className={`text-start text-[14px] phone2:text-lg md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight desktop1:text-start ${textOpacity}`}
+                className={`text-center desktop1:text-start text-[14px] phone2:text-lg md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
               >
                 {content.texts.hero.subtitle}
               </p>
@@ -211,17 +225,17 @@ function HeroTemplateNovo({
                 } w-full`}
               /> */}
               {obs && (
-                <div className="flex justify-start items-center gap-3 text-sm w-full">
-                  <div className="relative flex">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
-                  </div>
-                  {content.texts.hero.obsHero.icon}
-                  <span
-                    className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
+                <div className="flex justify-center desktop1:justify-start items-start gap-2 desktop1:gap-3 text-sm w-full">
+                  <div
+                    className={`font-secondFont font-light flex gap-0 items-start ${textOpacity}`}
                   >
+                    {/* <div className="relative flex mt-1">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
+                    </div> */}
+
                     {content.texts.hero.obsHero.text}
-                  </span>
+                  </div>
                   {obsTwo && (
                     <span
                       className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
@@ -234,6 +248,14 @@ function HeroTemplateNovo({
               )}
             </div>
 
+            {navbarHero && (
+              <div className="mb-4 flex justify-center desktop1:hidden">
+                <img
+                  src={content.texts.navbar.logo.img}
+                  alt={content.texts.navbar.logo.alt}
+                />
+              </div>
+            )}
             {/* Image */}
             <div
               initial={{ opacity: 0, scale: 0.95 }}

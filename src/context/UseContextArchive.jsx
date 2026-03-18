@@ -25,6 +25,15 @@ export function ColorModeProvider({ children }) {
   );
 }
 
+export function NavbarRender() {
+  const [navbarHero, setNavbarHero] = useState(true); // Renderiza navbar padrão
+
+  return {
+    navbarHero,
+    setNavbarHero,
+  };
+}
+
 export function ButtonsLps() {
   const [showGlobalButtonsLps, setShowGlobalButtonsLps] = useState(true); // ativa as os botões da lps
 
