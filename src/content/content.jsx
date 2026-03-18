@@ -53,7 +53,7 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Pascoal & Dyandra Advocacia",
+  name: "Pascoal & Dyandra Advocacia & Consultoria Jurídica",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
   domain: "pascoaledyandraadvocacia.com.br", // Sem "www"
@@ -352,7 +352,8 @@ const content = {
       minitag: <>A_Definir</>,
       title: <>A_Definir</>,
       subtitle: <>A_Definir</>,
-      embedsrc: <>A_Definir</>,
+      embedsrc:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.784298990059!2d-47.4530738!3d-23.504277599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58a9edbe4341b%3A0x405181876eb931ff!2sRua%20Leopoldo%20Machado%2C%20310%20-%20Centro%2C%20Sorocaba%20-%20SP%2C%2018035-075!5e0!3m2!1spt-BR!2sbr!4v1773862239700!5m2!1spt-BR!2sbr",
     },
     about: {
       imagem: {
@@ -1013,7 +1014,7 @@ const content = {
     //   },
     // },
     footer: {
-      copyrightLine: ` ${currentYear} - ${infos.name} - Todos os direitos reservados`,
+      copyrightLine: `${currentYear} ${infos.name} – CNPJ: 55.540.563/0001-64. Todos os direitos reservados.`,
       footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
       midSectionName: "Até mais",
       footerText:

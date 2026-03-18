@@ -131,7 +131,7 @@ export default function Index() {
             <Suspense>
               <FooterNovoTemplate
                 colorMode={colorMode}
-                mapa={false}
+                mapa={true}
                 phone={true}
                 phoneSecond={false}
                 expediente={true}

@@ -30,7 +30,7 @@ function FooterNovoTemplate({
     setVisible(true);
   };
 
-  const grid = mapa ? "lg:grid-cols-4" : "lg:grid-cols-3";
+  const grid = mapa ? "desktop2:grid-cols-4" : "lg:grid-cols-2";
   const { showGlobalButtonsLps } = ButtonsLps();
 
   // Classes dinâmicas de acordo com colorMode
@@ -71,14 +71,14 @@ function FooterNovoTemplate({
   return (
     <SectionArea
       className={`${backgroundMode} pb-4`}
-      paddingtop={!showGlobalButtonsLps}
+      // paddingtop={!showGlobalButtonsLps}
       paddingbot={false}
     >
       <SectionWrapper>
         <footer className={`${textOpacity}`}>
           <div className="container mx-auto">
             <div
-              className={`grid sm:grid-cols-2 lg:grid-cols-3 ${grid} items-start gap-12 tablet2:gap-2 desktop1:gap-12 mb-8 w-full ${showGlobalButtonsLps ? "hidden" : "flex"}`}
+              className={`grid sm:grid-cols-2 ${grid} items-start gap-12 tablet2:gap-2 desktop1:gap-12 mb-8 w-full `}
             >
               {/* Logo e infos */}
               <div className="space-y-6">
@@ -91,7 +91,7 @@ function FooterNovoTemplate({
                   <img
                     src={content.texts.navbar.logo.imgDesktop}
                     alt={content.texts.navbar.logo.alt}
-                    className="w-[20%] desktop1:w-[30%]"
+                    className="w-[20%] desktop1:w-[90%]"
                     width={300}
                     height={64}
                     fetchPriority="high"
@@ -213,7 +213,7 @@ function FooterNovoTemplate({
                     {email && (
                       <li className="flex items-center gap-3">
                         <Mail className={`w-5 h-5 shrink-0 ${iconColor}`} />
-                        <span className="font-secondFont font-light text-paragraph2 tablet2:text-paragraph3 desktop1:text-paragraph3">
+                        <span className="font-secondFont font-light text-paragraph2 tablet2:text-paragraph3 desktop1:text-paragraph2">
                           {content.texts.infos.email}
                         </span>
                       </li>
@@ -231,7 +231,7 @@ function FooterNovoTemplate({
               </div>
 
               {/* Mapa */}
-              {/* {mapa && (
+              {mapa && (
                 <div className="h-64 rounded-xl overflow-hidden">
                   <iframe
                     src={content.texts.maps.embedsrc}
@@ -241,10 +241,10 @@ function FooterNovoTemplate({
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    className="grayscale hover:grayscale-0 transition-all duration-500"
+                    className=" hover:grayscale-0 transition-all duration-500"
                   ></iframe>
                 </div>
-              )} */}
+              )}
             </div>
 
             {!showGlobalButtonsLps && (
