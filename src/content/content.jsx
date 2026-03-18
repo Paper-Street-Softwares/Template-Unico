@@ -50,14 +50,14 @@ import { FileText } from "lucide-react";
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "A_Definir",
+  name: "Pascoal & Dyandra Advocacia",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "A_Definir", // Sem "www"
+  domain: "pascoaledyandraadvocacia.com.br", // Sem "www"
   phone: {
-    ddd: "00",
-    firstPart: "00000", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "0000", // Apenas os 4 últimos números
+    ddd: "15",
+    firstPart: "99746", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "2217", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -73,9 +73,9 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
-      <p>A_Definir</p>
+      <p>Rua Leopoldo Machado,</p>
+      <p>nº 310, Centro Sorocaba - SP,</p>
+      <p>CEP: 18035-075</p>
     </div>
   ),
   enderecoSecundario: (
@@ -89,16 +89,16 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>8h às 18h</p>
+      <p>8:30 às 18h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "", // Sem o @
-  instagramProfileSecundario: "",
-  facebookProfile: "",
+  instagramProfile: "pascoaledyandraadv", // Sem o @
+  instagramProfileSecundario: "alexandrepascoaladv",
+  facebookProfile: "pascoaledyandraadv",
   linkeDinProfile: "",
   x: "",
-  tiktokProfile: "",
+  tiktokProfile: "alexandrepascoaladv",
   youtubeProfile: "",
 
   whatsappDefaultMessage:
@@ -1212,7 +1212,7 @@ const content = {
     // },
     links: {
       instagram: `https://www.instagram.com/${infos.instagramProfile}/`,
-      instagramSecondario: `https://www.instagram.com/${infos.instagramProfileSecundario}/`,
+      instagramSecundario: `https://www.instagram.com/${infos.instagramProfileSecundario}/`,
       ctaWhatsapp: `https://wa.me/+55${infos.phone.ddd}${infos.phone.firstPart}${infos.phone.secondPart}?text=${infos.whatsappDefaultMessage}`,
       phoneSecundario: `https://wa.me/+55${infos.phoneSecundario.ddd}${infos.phoneSecundario.firstPart}${infos.phoneSecundario.secondPart}?text=${infos.whatsappDefaultMessage}`,
       phoneTerciario: `https://wa.me/+55${infos.phoneTerciario.ddd}${infos.phoneTerciario.firstPart}${infos.phoneTerciario.secondPart}?text=${infos.whatsappDefaultMessage}`,

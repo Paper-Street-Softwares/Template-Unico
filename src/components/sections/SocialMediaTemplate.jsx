@@ -217,7 +217,7 @@ function SocialMediaTemplate({ colorMode }) {
                         <h1
                           className={`font-bold font-secondFont text-lg ${text}`}
                         >
-                          Instagram profissional
+                          Instagram Pessoal
                         </h1>
                         <p
                           className={`font-secondFont font-light text-sm ${textOpacity}`}

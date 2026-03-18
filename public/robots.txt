@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.geraldosouza.adv.br/sitemap.xml`
+Sitemap: https://www.pascoaledyandraadvocacia.com.br/sitemap.xml`
