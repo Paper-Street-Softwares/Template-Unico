@@ -26,6 +26,7 @@ import SectionWrapper from "../sectionElements/SectionWrapper";
 import ButtonReflexo from "../interactives/ButtonReflexo";
 import ButtonAlert from "../interactives/ButtonAlert";
 import { useColorMode } from "../../context/UseContextArchive";
+import { NavbarRender } from "../../context/UseContextArchive";
 
 function HeroTemplateNovo({
   colorMode,
@@ -95,6 +96,8 @@ function HeroTemplateNovo({
       borderColor = "bg-white";
   }
 
+  const { navbarHero } = NavbarRender();
+
   const { showGlobalButton } = useColorMode();
 
   // const topicsCard = Object.values({
@@ -129,7 +132,9 @@ function HeroTemplateNovo({
       paddingTopAndBottom={false}
       className={`${backgroundMode}`}
     >
-      <section className="relative w-full pt-[80px] phone2:pt-[100px] tablet1:pt-[125px]  desktop1:pt-[175px] desktop2:pt-[190px] pb-[64px] desktop1:pb-[96px] flex items-center justify-center overflow-hidden font-mainFont">
+      <section
+        className={`relative w-full ${navbarHero ? "pt-10" : "pt-[80px] phone2:pt-[100px] tablet1:pt-[125px] desktop1:pt-[175px] desktop2:pt-[190px]"} pb-[64px] desktop1:pb-[96px] flex items-center justify-center overflow-hidden font-mainFont`}
+      >
         {/* Abstract Background Shapes */}
         <div
           className={`absolute top-0 right-[-10px] h-full w-[80%] -skew-x-12 translate-x-2/4 z-0 ${bgFaixaHero}`}
@@ -145,6 +150,15 @@ function HeroTemplateNovo({
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="space-y-2 phone3:space-y-4 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
             >
+              {navbarHero && (
+                <div className="mb-4 hidden desktop1:flex">
+                  <img
+                    src={content.texts.navbar.logo.img}
+                    alt={content.texts.navbar.logo.alt}
+                    cl
+                  />
+                </div>
+              )}
               <div
                 className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border shadow-sm text-[8px] phone2:text-xs font-secondFont font-bold tracking-wide uppercase ${bgMinitag}`}
               >
@@ -234,6 +248,14 @@ function HeroTemplateNovo({
               )}
             </div>
 
+            {navbarHero && (
+              <div className="mb-4 flex justify-center desktop1:hidden">
+                <img
+                  src={content.texts.navbar.logo.img}
+                  alt={content.texts.navbar.logo.alt}
+                />
+              </div>
+            )}
             {/* Image */}
             <div
               initial={{ opacity: 0, scale: 0.95 }}

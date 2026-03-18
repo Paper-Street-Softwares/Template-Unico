@@ -45,15 +45,17 @@ import FormNovoTemplate from "../components/sections/FormNovoTemplate";
 import AuthorityAndAlert from "../components/sections/AuthorityAndAlert";
 import SocialProof from "../components/sections/SocialProof";
 import Depositions from "../components/sections/Depositions";
+import { NavbarRender } from "../context/UseContextArchive";
 
 export default function Index() {
   const { colorMode, setColorMode } = useColorMode();
+  const { navbarHero } = NavbarRender();
 
   return (
     <>
       <ColorModeProvider>
         {/* Render imediato */}
-        <NavbarNovaTemplate colorMode={colorMode} />
+        {!navbarHero && <NavbarNovaTemplate colorMode={colorMode} />}
 
         <main>
           <AlternatingSection index={0} colorMode={colorMode} forcePrimaryDark>
