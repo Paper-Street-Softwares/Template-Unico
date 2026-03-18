@@ -153,7 +153,7 @@ function HeroTemplateNovo({
               {navbarHero && (
                 <div className="mb-4 hidden desktop1:flex">
                   <img
-                    src={content.texts.navbar.logo.img}
+                    src={content.texts.navbar.logo.imgDesktop}
                     alt={content.texts.navbar.logo.alt}
                     cl
                   />
