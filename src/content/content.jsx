@@ -173,7 +173,7 @@ const content = {
         iconTwo: <></>,
         text: (
           <p>
-            ✓ Com{" "}
+            ✅ Com{" "}
             <span className="font-bold">
               18 anos de experiência e atuação em mais de 2.000 ações
               trabalhistas.
