@@ -234,6 +234,7 @@ function FooterNovoTemplate({
               {mapa && (
                 <div className="h-64 rounded-xl overflow-hidden">
                   <iframe
+                    aria-label="Mapa"
                     src={content.texts.maps.embedsrc}
                     width="100%"
                     height="100%"
