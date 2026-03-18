@@ -129,7 +129,7 @@ const content = {
     hero: {
       minitagIcon: (
         <>
-          <BriefcaseBusiness className="w-4 h-4" />
+          <Scale className="w-4 h-4" />
           {/* <MapPin className="w-4 h-4" /> */}
           {/* 🚨 */}
         </>

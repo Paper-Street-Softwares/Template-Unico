@@ -133,7 +133,7 @@ function HeroTemplateNovo({
       className={`${backgroundMode}`}
     >
       <section
-        className={`relative w-full ${navbarHero ? "pt-10" : "pt-[80px] phone2:pt-[100px] tablet1:pt-[125px] desktop1:pt-[175px] desktop2:pt-[190px]"} pb-[64px] desktop1:pb-[96px] flex items-center justify-center overflow-hidden font-mainFont`}
+        className={`relative w-full ${navbarHero ? "pt-[64px] desktop1:pt-[96px] pb-[64px] desktop1:pb-[96px]" : "pt-[80px] phone2:pt-[100px] tablet1:pt-[125px] desktop1:pt-[175px] desktop2:pt-[190px] pb-[64px] desktop1:pb-[96px] "} flex items-center justify-center overflow-hidden font-mainFont`}
       >
         {/* Abstract Background Shapes */}
         <div
@@ -148,7 +148,7 @@ function HeroTemplateNovo({
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="space-y-2 phone3:space-y-4 order-2 lg:order-1 flex flex-col items-start desktop1:items-start"
+              className="space-y-2 phone3:space-y-4 order-2 lg:order-1 flex flex-col items-center text-center desktop1:text-start desktop1:items-start"
             >
               {navbarHero && (
                 <div className="mb-4 hidden desktop1:flex">
@@ -176,7 +176,7 @@ function HeroTemplateNovo({
               </h1>
 
               <p
-                className={`text-start text-[14px] phone2:text-lg md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight desktop1:text-start ${textOpacity}`}
+                className={`text-center desktop1:text-start text-[14px] phone2:text-lg md:text-xl leading-relaxed max-w-lg font-secondFont font-extralight ${textOpacity}`}
               >
                 {content.texts.hero.subtitle}
               </p>
@@ -225,17 +225,17 @@ function HeroTemplateNovo({
                 } w-full`}
               /> */}
               {obs && (
-                <div className="flex justify-start items-center gap-3 text-sm w-full">
-                  <div className="relative flex">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
-                  </div>
-                  {content.texts.hero.obsHero.icon}
-                  <span
-                    className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
+                <div className="flex justify-center desktop1:justify-start items-start gap-2 desktop1:gap-3 text-sm w-full">
+                  <div
+                    className={`font-secondFont font-light flex gap-0 items-start ${textOpacity}`}
                   >
+                    {/* <div className="relative flex mt-1">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
+                    </div> */}
+
                     {content.texts.hero.obsHero.text}
-                  </span>
+                  </div>
                   {obsTwo && (
                     <span
                       className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
