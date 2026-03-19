@@ -30,7 +30,7 @@ function FooterNovoTemplate({
     setVisible(true);
   };
 
-  const grid = mapa ? "desktop2:grid-cols-4" : "lg:grid-cols-2";
+  const grid = mapa ? "desktop2:grid-cols-4" : "lg:grid-cols-3";
   const { showGlobalButtonsLps } = ButtonsLps();
 
   // Classes dinâmicas de acordo com colorMode
@@ -91,9 +91,9 @@ function FooterNovoTemplate({
                   <img
                     src={content.texts.navbar.logo.imgDesktop}
                     alt={content.texts.navbar.logo.alt}
-                    className="w-[20%] desktop1:w-[90%]"
+                    className="w-[20%]"
                     width={300}
-                    height={64}
+                    height={400}
                     fetchPriority="high"
                   />
                 </a>

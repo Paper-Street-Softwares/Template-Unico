@@ -59,7 +59,7 @@ function Speed({ colorMode }) {
             <div
               className={`max-w-5xl mx-auto rounded-3xl p-8 md:p-12 ${bgContainer}`}
             >
-              <div className="grid sm:grid-cols-3 gap-8">
+              <div className="grid sm:grid-cols-2 desktop2:grid-cols-4 gap-8">
                 {ListSpeed.map((item, idx) => (
                   <MotionDivDownToUp>
                     <div
@@ -84,7 +84,7 @@ function Speed({ colorMode }) {
                 ))}
               </div>
 
-              <MotionDivDownToUp>
+              {/* <MotionDivDownToUp>
                 <div className="mt-10 text-center">
                   <p
                     className={`text-paragraph2 desktop1:text-paragraph5 font-medium font-secondFont inline-block px-4 py-1 rounded-full ${text}`}
@@ -92,7 +92,7 @@ function Speed({ colorMode }) {
                     {content.texts.speed.textFooter}
                   </p>
                 </div>
-              </MotionDivDownToUp>
+              </MotionDivDownToUp> */}
 
               {/* <MotionDivDownToUp>
                 <div className="flex flex-col gap-4 w-fit mt-6 mx-auto justify-center items-start">
