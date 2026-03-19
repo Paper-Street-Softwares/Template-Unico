@@ -152,7 +152,7 @@ const content = {
       obsHero: {
         icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: <>A_Definir</>,
+        text: <>💬 A_Definir</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",

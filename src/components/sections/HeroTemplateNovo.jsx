@@ -226,7 +226,7 @@ function HeroTemplateNovo({
               /> */}
               {obs && (
                 <div
-                  className={`flex ${navbarHero ? "justify-center desktop1:justify-start" : "justify-start"} items-start gap-2 desktop1:gap-3 text-sm w-full`}
+                  className={`flex flex-col ${navbarHero ? "justify-center desktop1:justify-start" : "justify-start"} items-start gap-2 desktop1:gap-3 text-sm w-full`}
                 >
                   <div
                     className={`font-secondFont font-light flex gap-0 items-start ${textOpacity}`}
@@ -240,7 +240,7 @@ function HeroTemplateNovo({
                   </div>
                   {obsTwo && (
                     <span
-                      className={`font-secondFont font-light flex gap-2 items-center ${textOpacity}`}
+                      className={`font-secondFont font-light flex gap-2 ml-[-8px] ${textOpacity}`}
                     >
                       <span>{content.texts.hero.obsHero.iconTwo}</span>{" "}
                       {content.texts.hero.obsHero.textTwo}

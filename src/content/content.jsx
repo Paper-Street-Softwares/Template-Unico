@@ -44,6 +44,7 @@ import {
   Clock,
   ShieldCheck,
   TriangleAlert,
+  Handshake,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
@@ -55,7 +56,7 @@ export const infos = {
   name: "Taciane Martins",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "penal-tacianemartins.advespecialista.adv.br", // Sem "www"
+  domain: "familia-tacianemartins.advespecialista.adv.br", // Sem "www"
   phone: {
     ddd: "11",
     firstPart: "97167", // Apenas os 5 primeiros números (incluindo o 9)
@@ -137,23 +138,19 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>ADVOGADA CRIMINALISTA 24H</>,
-      FirstPart: <span>Advogada Criminalista – Atendimento </span>,
+      miniTag: <>ADVOGADA DE FAMÍLIA</>,
+      FirstPart: <span>Está passando por um divórcio ou conflito </span>,
       Destaque: (
-        <span className="destaque relative italic font-light">
-          Imediato 24h
-        </span>
+        <span className="destaque relative italic font-light">familiar?</span>
       ),
       SecondPart: <span></span>,
       subtitle: (
         <p>
-          Atuação urgente em casos de prisão em flagrante, audiência de
-          custódia, <i>Habeas Corpus</i>, liberdade provisória e medidas
-          emergenciais. Defesa rápida, estratégica e sigilosa desde o primeiro
-          momento.
+          Tenha orientação clara para resolver sua situação com segurança, sem
+          desgaste desnecessário.
         </p>
       ),
-      heroDefaultImage: heroDefaultImg, // img da pessoa mobile
+      heroDefaultImage: heroDefaultImg,
       heroDefaulMobiletImg: heroDefaultMobileImg,
 
       alt: "Imagem ilustrativa da Seção Início",
@@ -164,8 +161,8 @@ const content = {
       obsHero: {
         icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: <>🚨 Atendimento imediato 24h.</>,
-        textTwo: <>A_Definir</>,
+        text: <>💬 Atendimento 100% online e confidencial</>,
+        textTwo: <>☑️ Com orientação de advocacia especializada</>,
       },
       secondaryCta: "Contato",
     },
@@ -208,53 +205,83 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     important: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
+      miniTag: <>ATENÇÃO</>,
+      title: <>O que você precisa saber sobre Direito de Família</>,
       cards: {
         card1: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Preciso mesmo de advogado pra me divorciar?</>,
+          paragraph: (
+            <>
+              Depende do caso. Quando há filhos menores ou desacordo entre as
+              partes, o acompanhamento de um advogado é essencial para garantir
+              que seus direitos sejam protegidos e o processo seja feito
+              corretamente.
+            </>
+          ),
         },
         card2: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Como funciona a guarda dos filhos?</>,
+          paragraph: (
+            <>
+              Aguarda pode ser compartilhada ou unilateral, sempre levando em
+              consideração o que é melhor para a criança. O objetivo é garantir
+              convivência equilibrada e decisões responsáveis sobre a vida dos
+              filhos.
+            </>
+          ),
         },
         card3: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Pensão alimentícia é só pra filho?</>,
+          paragraph: (
+            <>
+              Não. A pensão pode ser destinada também ao ex-cônjuge em algumas
+              situações específicas, sempre analisando a necessidade de quem
+              pede e a possibilidade de quem paga.
+            </>
+          ),
         },
         card4: {
-          title: <>A_Definir</>,
-          paragraph: <>A_Definir</>,
+          title: <>Dá pra resolver tudo sem briga na justiça?</>,
+          paragraph: (
+            <>
+              Sim. Muitos casos podem ser resolvidos por acordo, de forma mais
+              rápida e menos desgastante, desde que ambas as partes estejam
+              dispostas a negociar.
+            </>
+          ),
         },
       },
-      fraseObs: <>A_Definir</>,
-      ctaButtonText: <>A_Definir</>,
+      fraseObs: (
+        <>Entre em contato conosco e daremos todo o suporte necessário</>
+      ),
+      ctaButtonText: <>Falar conosco agora pelo WhatsApp</>,
     },
     features: {
       miniTag: <>ESPECIALIDADE</>,
-      FirstPart: <span>Atuação em</span>,
-      Destaque: <span className="italic font-light">Direito Penal</span>,
+      FirstPart: <span>Soluções em</span>,
+      Destaque: <span className="italic font-light">Direito de Família</span>,
       SecondPart: <span></span>,
       subtitle: (
-        <>Atuação estratégica para garantir seus direitos e sua dignidade.</>
+        <>
+          Orientação segura para resolver conflitos familiares com equilíbrio.
+        </>
       ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
       titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>focada na sua liberdade</>,
+      subtitleMessageFeature: <>direito de famíla</>,
       cards: {
         card1: {
-          title: <>Defesa em Investigações Criminais</>,
+          title: <>Divórcio e Dissolução de União</>,
           subtitle: (
             <>
-              • Acompanhamento em inquérito policial <br />
-              • Defesa em investigações do Ministério Público <br />
-              • Defesa em procedimentos investigatórios criminais (PIC) <br />
-              • Acompanhamento em oitivas e interrogatórios <br />
-              • Pedido de arquivamento de investigação <br />
-              • Defesa em investigações por crimes econômicos <br />• Defesa em
-              operações policiais
+              Divórcio consensual <br />
+              Divórcio litigioso <br />
+              Divórcio extrajudicial em cartório <br />
+              Dissolução de união estável <br />
+              Reconhecimento e dissolução de união estável <br />
+              Partilha de bens <br />
+              Definição de regime de bens
             </>
           ),
           description: (
@@ -271,14 +298,14 @@ const content = {
         },
 
         card2: {
-          title: <>Defesa em Processos Criminais</>,
+          title: <>Pensão Alimentícia</>,
           subtitle: (
             <>
-              • Defesa técnica em ações penais <br />
-              • Atuação em audiências criminais <br />
-              • Elaboração de resposta à acusação <br />
-              • Apresentação de defesa preliminar <br />• Produção de provas e
-              perícias
+              Fixação de pensão alimentícia <br />
+              Revisão de pensão alimentícia <br />
+              Exoneração de pensão <br />
+              Execução de alimentos <br />
+              Cobrança de pensão em atraso
             </>
           ),
           description: (
@@ -295,16 +322,15 @@ const content = {
         },
 
         card3: {
-          title: <>Habeas Corpus e Medidas de Urgência</>,
+          title: <>Guarda e Convivência</>,
           subtitle: (
             <>
-              • Habeas corpus preventivo <br />
-              • Habeas corpus liberatório <br />
-              • Pedido de revogação de prisão preventiva <br />
-              • Pedido de relaxamento de prisão <br />
-              • Pedido de liberdade provisória <br />
-              • Pedido de substituição de prisão por medidas cautelares <br />•
-              Defesa em prisão em flagrante
+              Guarda unilateral <br />
+              Guarda compartilhada <br />
+              Regulamentação de visitas <br />
+              Alteração de guarda <br />
+              Mediação de conflitos familiares <br />
+              Ações relacionadas à alienação parental
             </>
           ),
           description: (
@@ -321,15 +347,14 @@ const content = {
         },
 
         card4: {
-          title: <>Recursos Criminais</>,
+          title: <>Filiação e Paternidade</>,
           subtitle: (
             <>
-              • Recurso em sentido estrito <br />
-              • Apelação criminal <br />
-              • Embargos de declaração <br />
-              • Embargos infringentes <br />
-              • Revisão criminal <br />
-              • Agravo em execução <br />• Recursos para STJ e STF
+              Investigação de paternidade <br />
+              Reconhecimento de paternidade <br />
+              Negatória de paternidade <br />
+              Inclusão ou exclusão de nome no registro civil <br />
+              Multiparentalidade
             </>
           ),
           description: (
@@ -346,15 +371,12 @@ const content = {
         },
 
         card5: {
-          title: <>Execução Penal</>,
+          title: <>Medidas de Proteção Familiar</>,
           subtitle: (
             <>
-              • Acompanhamento da execução da pena <br />
-              • Pedido de progressão de regime <br />
-              • Pedido de livramento condicional <br />
-              • Pedido de remição de pena <br />
-              • Pedido de indulto e comutação <br />
-              • Defesa em falta grave <br />• Pedido de prisão domiciliar
+              Medidas protetivas de urgência <br />
+              Atuação em casos de violência doméstica <br />
+              Acompanhamento em processos relacionados à Lei Maria da Penha
             </>
           ),
           description: (
@@ -371,13 +393,14 @@ const content = {
         },
 
         card6: {
-          title: <>Direito Penal Econômico</>,
+          title: <>Planejamento Familiar e Patrimonial</>,
           subtitle: (
             <>
-              • Crimes contra o sistema financeiro <br />
-              • Crimes de lavagem de dinheiro <br />
-              • Crimes tributários <br />
-              • Crimes empresariais <br />• Crimes contra a ordem econômica
+              Pactos antenupciais <br />
+              Contratos de convivência <br />
+              Definição de regime de bens <br />
+              Planejamento patrimonial familiar <br />
+              Orientação preventiva para proteção de patrimônio
             </>
           ),
           description: (
@@ -394,14 +417,13 @@ const content = {
         },
 
         card7: {
-          title: <>Crimes Contra o Patrimônio</>,
+          title: <>Outras Demandas Familiares</>,
           subtitle: (
             <>
-              • Furto <br />
-              • Roubo <br />
-              • Estelionato <br />
-              • Apropriação indébita <br />
-              • Receptação <br />• Extorsão
+              Autorização judicial para viagem de menores <br />
+              Suprimento de consentimento <br />
+              Interdição e curatela <br />
+              Tutela e guarda de menores
             </>
           ),
           description: (
@@ -418,12 +440,14 @@ const content = {
         },
 
         card8: {
-          title: <>Crimes Contra a Honra</>,
+          title: <>Inventário</>,
           subtitle: (
             <>
-              • Calúnia <br />
-              • Difamação <br />
-              • Injúria <br />• Crimes contra a honra na internet
+              Inventário judicial <br />
+              Inventário extrajudicial em cartório <br />
+              Acompanhamento completo do processo de inventário <br />
+              Partilha de bens entre herdeiros <br />
+              Regularização de bens do espólio
             </>
           ),
           description: (
@@ -440,13 +464,13 @@ const content = {
         },
 
         card9: {
-          title: <>Crimes Relacionados à Lei de Drogas</>,
+          title: <>Planejamento Sucessório</>,
           subtitle: (
             <>
-              • Defesa em tráfico de drogas <br />
-              • Defesa em tráfico privilegiado <br />
-              • Defesa em associação para o tráfico <br />• Defesa em porte de
-              drogas para consumo
+              Estruturação de planejamento sucessório <br />
+              Organização patrimonial familiar <br />
+              Estratégias para prevenção de conflitos entre herdeiros <br />
+              Orientação sobre transmissão patrimonial
             </>
           ),
           description: (
@@ -463,10 +487,13 @@ const content = {
         },
 
         card10: {
-          title: <>Crimes Contra a Pessoa</>,
+          title: <>Testamentos</>,
           subtitle: (
             <>
-              • Lesão corporal <br />• Ameaça
+              Elaboração de testamento <br />
+              Orientação sobre modalidades de testamento <br />
+              Cumprimento e registro de testamento <br />
+              Ações envolvendo validade ou contestação de testamento
             </>
           ),
           description: (
@@ -483,12 +510,14 @@ const content = {
         },
 
         card11: {
-          title: <>Crimes Digitais</>,
+          title: <>Ações Judiciais Sucessórias</>,
           subtitle: (
             <>
-              • Estelionato eletrônico <br />
-              • Invasão de dispositivo <br />
-              • Fraudes digitais <br />• Crimes em redes sociais
+              Sobrepartilha de bens <br />
+              Petição de herança <br />
+              Anulação de partilha <br />
+              Reconhecimento de direitos sucessórios <br />
+              Defesa em conflitos entre herdeiros
             </>
           ),
           description: (
@@ -505,13 +534,13 @@ const content = {
         },
 
         card12: {
-          title: <>Atuação Estratégica Preventiva</>,
+          title: <>Outras Demandas Sucessórias</>,
           subtitle: (
             <>
-              • Consultoria penal preventiva <br />
-              • Análise de risco criminal <br />
-              • Defesa em investigações empresariais <br />• Orientação para
-              empresários e gestores
+              Nomeação e substituição de inventariante <br />
+              Regularização de bens não incluídos em inventário <br />
+              Orientação para venda de bens do espólio <br />
+              Atuação em disputas patrimoniais entre herdeiros
             </>
           ),
           description: (
@@ -586,31 +615,31 @@ const content = {
       subtitle: <></>,
       paragraph: (
         <div>
-          O T. Martins Advocacia nasceu com um propósito claro: oferecer uma
-          defesa penal técnica, estratégica e profundamente comprometida com a
-          proteção dos direitos de cada cliente. Fundado pela advogada Taciane
-          Martins, o escritório construiu sua atuação com base na análise
-          minuciosa de cada caso e na definição de estratégias jurídicas
-          sólidas, pensadas para cenários complexos e de alto risco.
+          O T. Martins Advocacia nasceu com um propósito claro: ajudar pessoas a
+          enfrentarem momentos difíceis na família com orientação segura e
+          decisões bem conduzidas.
           <br /> <br />
-          Com atendimento personalizado, o escritório atua desde a fase de
-          investigação até a condução completa de processos criminais,
-          acompanhando cada etapa com discrição, precisão e atenção absoluta aos
-          detalhes que podem influenciar diretamente no resultado.
+          Fundado pela advogada Taciane Martins, o escritório atua com foco em
+          resolver situações como divórcio, guarda e pensão de forma clara,
+          estratégica e com o menor desgaste possível.
           <br /> <br />
-          Mais do que atuar em processos, o foco está em proteger a liberdade,
-          preservar a reputação e garantir segurança jurídica para quem não pode
-          correr riscos.
+          Cada caso é analisado com atenção, buscando caminhos que protejam seus
+          direitos e tragam mais equilíbrio para sua vida, sem complicações
+          desnecessárias.
+          <br /> <br />
+          Mais do que conduzir processos, o objetivo é oferecer segurança em
+          decisões importantes, preservar relações sempre que possível e
+          garantir que você tenha clareza em cada etapa.
         </div>
       ),
       benefits: {
         cards: {
           card1: {
-            title: <>Defesa Estratégica</>,
+            title: <>Orientação segura</>,
             description: (
               <>
-                Análise minuciosa e táticas exclusivas para cada etapa do
-                processo.
+                Análise cuidadosa do seu caso para indicar o melhor caminho em
+                cada decisão.
               </>
             ),
             icon: (
@@ -621,9 +650,12 @@ const content = {
             ),
           },
           card2: {
-            title: <>Transparência Real</>,
+            title: <>Clareza em cada etapa</>,
             description: (
-              <>Informação clara e direta sobre todos os riscos e andamentos.</>
+              <>
+                Você entende exatamente o que está acontecendo, sem dúvidas ou
+                surpresas.
+              </>
             ),
             icon: (
               <>
@@ -652,34 +684,15 @@ const content = {
       ),
       paragraphModalCta: "Entre em contato",
       ctaButtonAriaLabel: "Botão para entrar em contato",
-
-      // aboutSocial: {
-      //   img: {
-      //     img: aboutSocialImg,
-      //     alt: `Foto do Instagram do ${infos.name}`,
-      //     altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
-      //   },
-      //   miniTag: <>A_Definir</>,
-      //   title: <>A_Definir</>,
-      //   subtitle: <>A_Definir</>,
-      //   paragraph: <p></p>,
-      //   labelInstagram: "Siga-nos no Instagram",
-      //   labelFacebook: "Siga-nos no Facebook",
-      //   labelLinkedin: "Siga-nos no LinkedIn",
-      //   labelX: "Siga-nos no X",
-      //   labelTiktok: "Siga-nos no Tik Tok",
-      //   labelYoutube: "Siga-nos no Youtube",
-      // },
     },
     ctaSection: {
       miniTag: <>FALE CONOSCO</>,
-      title: <h1>Sua liberdade e reputação não podem esperar.</h1>,
+      title: <h1>Você não precisa passar por isso sozinho(a)</h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Acusações criminais exigem defesa técnica imediata. Entre em contato
-            para uma análise estratégica do seu caso e assuma o controle da sua
-            defesa agora.
+            Situações familiares exigem decisões importantes. Tenha orientação
+            clara para agir com segurança e evitar mais desgaste.
           </p>
         </div>
       ),
@@ -691,20 +704,20 @@ const content = {
           topic4: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Entrar em contato já</>,
+      ctaButtonText: <>Falar com a Advogada agora</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
       miniTag: <>Como funciona</>,
-      FirstPart: <span> Seu caso</span>,
-      Destaque: <span className="italic font-light"> sob controle </span>,
+      FirstPart: <span> Entenda como vamos te ajudar</span>,
+      Destaque: <span className="italic font-light"></span>,
       SecondPart: <span></span>,
 
       subtitle: (
         <>
-          Um processo claro, seguro e estratégico para proteger seus direitos
-          desde o primeiro contato.
+          Um caminho simples e claro para resolver sua situação com mais
+          segurança e tranquilidade.
         </>
       ),
       img: imgSteps,
@@ -712,23 +725,31 @@ const content = {
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Atendimento imediato</>,
-          cardDescription: <>Resposta rápida pra te orientar com segurança.</>,
+          cardTitle: <>Primeiro contato</>,
+          cardDescription: (
+            <>Você explica sua situação e recebe uma orientação inicial.</>
+          ),
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Análise estratégica</>,
-          cardDescription: <>Seu caso estudado pra reduzir riscos legais.</>,
+          cardTitle: <> Análise do caso</>,
+          cardDescription: (
+            <>Avaliamos seu caso com cuidado para indicar o melhor caminho.</>
+          ),
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Defesa personalizada</>,
-          cardDescription: <>Estratégia sob medida pra sua situação.</>,
+          cardTitle: <>Definição da solução</>,
+          cardDescription: (
+            <>Você entende o que fazer e como seguir com segurança.</>
+          ),
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Tranquilidade total</>,
-          cardDescription: <>Você protegido em cada etapa do processo.</>,
+          cardTitle: <>Acompanhamento</>,
+          cardDescription: (
+            <>Seguimos com você em cada etapa até a resolução.</>
+          ),
         },
       },
       ctaButtonText: <>Falar agora com a Advogada</>,
@@ -791,24 +812,24 @@ const content = {
     },
     speed: {
       miniTag: <>Diferenciais do Atendimento</>,
-      title: <>Atendimento Criminal Estratégico e Imediato</>,
+      title: <>Um atendimento próximo em momentos delicados</>,
       subtitle: <>A_Definir</>,
       cards: {
         card1: {
-          icon: Clock,
-          text: <>Discrição absoluta</>,
+          icon: Handshake,
+          text: <>Escuta atenta e sem julgamentos</>,
         },
         card2: {
           icon: Users,
-          text: <>Defesa técnica e imediata</>,
+          text: <>Orientação clara em cada passo</>,
         },
         card3: {
           icon: ShieldCheck,
-          text: <>Acompanhamento em delegacia</>,
+          text: <>Soluções que evitam desgaste</>,
         },
         card4: {
-          icon: TriangleAlert,
-          text: <>Atendimento emergencial 24h</>,
+          icon: MessageSquare,
+          text: <>Atendimento personalizado</>,
         },
       },
       textFooter: <></>,
@@ -843,52 +864,46 @@ const content = {
       subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>Como funciona a contratação e o atendimento?</>,
+          question: (
+            <>Vou precisar ir pra justiça ou dá pra resolver mais rápido?</>
+          ),
           answer: (
             <>
-              O primeiro passo é o contato direto via WhatsApp para agendamento
-              de uma consulta (presencial ou online). Analisaremos os fatos
-              imediatamente para definir a viabilidade da defesa e o
-              planejamento estratégico necessário.
+              Depende do caso. Sempre que possível, buscamos soluções por
+              acordo, que são mais rápidas e menos desgastantes. Mas, quando
+              necessário, o processo judicial é conduzido com segurança para
+              proteger seus direitos.
             </>
           ),
         },
         question2: {
-          question: <>Quanto tempo dura um processo criminal?</>,
+          question: <>Quanto tempo leva um divórcio?</>,
           answer: (
             <>
-              O tempo é variável e depende do rito processual (comum, júri,
-              especial) e da agilidade do Judiciário. Durante a análise do caso,
-              apresentamos um panorama das etapas prováveis e trabalhamos para
-              que não haja excesso de prazo na tramitação.
+              O tempo varia conforme a situação. Casos consensuais podem ser
+              resolvidos mais rapidamente, enquanto situações com conflito podem
+              levar mais tempo. Cada etapa é conduzida com foco em agilidade e
+              segurança.
             </>
           ),
         },
         question3: {
-          question: <>Quais documentos são essenciais para a defesa?</>,
+          question: <>Posso perder a guarda do meu filho?</>,
           answer: (
             <>
-              É fundamental apresentar o Boletim de Ocorrência, cópia do
-              Inquérito Policial (se houver), documentos pessoais e qualquer
-              prova que ajude a desconstruir a acusação (fotos, mensagens, lista
-              de testemunhas). Caso você não tenha o processo, nós realizamos a
-              busca nos sistemas judiciais.
+              A guarda é definida com base no que é melhor para a criança. Cada
+              caso é analisado individualmente, e o objetivo é garantir
+              equilíbrio, convivência e proteção para os filhos.
             </>
           ),
         },
         question4: {
-          question: (
-            <>
-              O escritório atua com consultoria preventiva (Criminal
-              Compliance)?
-            </>
-          ),
+          question: <>Não sei nem por onde começar, o que eu faço?</>,
           answer: (
             <>
-              Sim. Atuamos de forma consultiva para empresas e indivíduos,
-              visando mitigar riscos de investigações, garantir a conformidade
-              com a lei e evitar que condutas do dia a dia sejam interpretadas
-              como ilícitos penais.
+              O primeiro passo é entender sua situação. Com uma orientação
+              clara, você consegue visualizar o melhor caminho e tomar decisões
+              com mais segurança, sem agir por impulso.
             </>
           ),
         },
