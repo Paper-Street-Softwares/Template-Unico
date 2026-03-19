@@ -8,7 +8,7 @@ import imgFeatures from "../assets/imgs/features/imgServices.webp";
 import aboutImg from "../assets/imgs/about/aboutImg.webp";
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
+// import aboutSocialImg from "../assets/imgs/about/aboutSocial.webp";
 
 import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 // import logo1 from '../assets/imgs/parceria/Logo1.webp'
@@ -21,9 +21,6 @@ import imgSteps from "../assets/imgs/steps/imgSteps.webp";
 // import imgproof4 from "../assets/imgs/socialProof/socialproof4.webp";
 // import imgproof5 from "../assets/imgs/socialProof/socialproof5.webp";
 // import imgproof6 from "../assets/imgs/socialProof/socialproof6.webp";
-
-import img1 from "../assets/imgs/team/team1.webp";
-import img2 from "../assets/imgs/team/team2.webp";
 
 import {
   Baby,
@@ -46,21 +43,23 @@ import {
   CheckCircle2,
   Clock,
   ShieldCheck,
+  TriangleAlert,
 } from "lucide-react";
 
 import { FileText } from "lucide-react";
+import { Alert } from "@mui/material";
 
 const currentYear = new Date().getFullYear();
 
 export const infos = {
-  name: "Pascoal & Dyandra Advocacia & Consultoria Jurídica",
+  name: "Taciane Martins",
   email: "contato", // Email desejado pelo cliente
   emailSecundario: "A_Definir", // Email desejado pelo cliente
-  domain: "pascoaledyandraadvocacia.com.br", // Sem "www"
+  domain: "penal-tacianemartins.advespecialista.adv.br", // Sem "www"
   phone: {
-    ddd: "15",
-    firstPart: "99746", // Apenas os 5 primeiros números (incluindo o 9)
-    secondPart: "2217", // Apenas os 4 últimos números
+    ddd: "11",
+    firstPart: "97167", // Apenas os 5 primeiros números (incluindo o 9)
+    secondPart: "0116", // Apenas os 4 últimos números
   },
   phoneSecundario: {
     ddd: "00",
@@ -76,9 +75,10 @@ export const infos = {
     <div>
       {/* <p>Endereço:</p> */}
       <p>Endereço:</p>
-      <p>Rua Leopoldo Machado,</p>
-      <p>nº 310, Centro Sorocaba - SP,</p>
-      <p>CEP: 18035-075</p>
+      <p>Rua Vigário João José Rodrigues,</p>
+      <p>nº 21 - 5º andar - Ed. In Design Office - Centro,</p>
+      <p>Jundiaí - SP,</p>
+      <p>CEP: 13208-670</p>
     </div>
   ),
   enderecoSecundario: (
@@ -92,16 +92,16 @@ export const infos = {
   expediente: (
     <div>
       <p>Segunda a sexta-feira:</p>
-      <p>8:30 às 18h</p>
+      <p>9h às 19h</p>
     </div>
   ),
   obs: <span className="italic">A_Definir </span>,
-  instagramProfile: "pascoaledyandraadv", // Sem o @
-  instagramProfileSecundario: "alexandrepascoaladv",
-  facebookProfile: "pascoaledyandraadv",
+  instagramProfile: "", // Sem o @
+  instagramProfileSecundario: "",
+  facebookProfile: "",
   linkeDinProfile: "",
   x: "",
-  tiktokProfile: "alexandrepascoaladv",
+  tiktokProfile: "",
   youtubeProfile: "",
 
   whatsappDefaultMessage:
@@ -137,27 +137,20 @@ const content = {
           {/* 🚨 */}
         </>
       ),
-      miniTag: <>Pascoal & Dyandra Advocacia</>,
-      FirstPart: <span>Direito Trabalhista e Previdenciário </span>,
+      miniTag: <>ADVOGADA CRIMINALISTA 24H</>,
+      FirstPart: <span>Advogada Criminalista – Atendimento </span>,
       Destaque: (
         <span className="destaque relative italic font-light">
-          OAB/SP 54.313
+          Imediato 24h
         </span>
       ),
       SecondPart: <span></span>,
       subtitle: (
         <p>
-          Atuação dedicada à defesa dos direitos do trabalhador, com atendimento
-          presencial em Sorocaba/SP e orientação jurídica online para clientes
-          em todo o Brasil.
-          <br />
-          <br />
-          Especial atenção a demandas envolvendo{" "}
-          <span className="font-bold">
-            motoristas de caminhão com vínculo CLT
-          </span>
-          , compreendendo as particularidades da profissão, como jornadas
-          extensas, horas extras e tempo de espera.
+          Atuação urgente em casos de prisão em flagrante, audiência de
+          custódia, <i>Habeas Corpus</i>, liberdade provisória e medidas
+          emergenciais. Defesa rápida, estratégica e sigilosa desde o primeiro
+          momento.
         </p>
       ),
       heroDefaultImage: heroDefaultImg, // img da pessoa mobile
@@ -166,24 +159,12 @@ const content = {
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: <>Agende seu atendimento</>,
+      ctaButtonText: <>Falar com a Advogada</>,
       ctaButtonTextSecondary: <>A_Definir</>,
       obsHero: {
         icon: <> {/* ⚠️ */}</>,
         iconTwo: <></>,
-        text: (
-          <p>
-            ✅ Com{" "}
-            <span className="font-bold">
-              18 anos de experiência e atuação em mais de 2.000 ações
-              trabalhistas.
-            </span>
-            <br />
-            <br />
-            <p className="mb-2">📍 Sede em Sorocaba/SP</p>
-            <p>🌎 Atendimento online para todo o Brasil</p>
-          </p>
-        ),
+        text: <>🚨 Atendimento imediato 24h.</>,
         textTwo: <>A_Definir</>,
       },
       secondaryCta: "Contato",
@@ -203,14 +184,18 @@ const content = {
     //   },
     // },
     emergency: {
-      miniTag: <>A_Definir</>,
-      title: <h1>A_Definir</h1>,
+      miniTag: <>Plantão Criminal 24 Horas</>,
+      title: <h1>Atendimento Imediato em Casos Criminais</h1>,
       subtitle: (
         <div>
-          <p className="mb-6 font-secondFont">A_Definir</p>
+          <p className="mb-6 font-secondFont">
+            Se você ou um familiar foi preso ou está sendo investigado, o
+            atendimento deve ser imediato. Cada minuto é decisivo para garantir
+            direitos, evitar abusos e preparar a defesa adequada.
+          </p>
         </div>
       ),
-      ctaButtonText: <>A_Definir</>,
+      ctaButtonText: <>Falar com Advogada Agora</>,
     },
     authorityAlert: {
       miniTag: <>A_Definir</>,
@@ -247,27 +232,29 @@ const content = {
       ctaButtonText: <>A_Definir</>,
     },
     features: {
-      miniTag: <>ÁREAS DE ATUAÇÃO</>,
-      FirstPart: <span>Como podemos</span>,
-      Destaque: <span className="italic font-light">te ajudar</span>,
-      SecondPart: <span> na prática</span>,
+      miniTag: <>ESPECIALIDADE</>,
+      FirstPart: <span>Atuação em</span>,
+      Destaque: <span className="italic font-light">Direito Penal</span>,
+      SecondPart: <span></span>,
       subtitle: (
-        <>Veja em quais situações podemos agir para defender seus direitos.</>
+        <>Atuação estratégica para garantir seus direitos e sua dignidade.</>
       ),
       imgFeatures: imgFeatures,
       alt: "Imagem ilustrativa da Features",
       titleMessageFeature: <>100%</>,
-      subtitleMessageFeature: <>focados no trabalhador</>,
+      subtitleMessageFeature: <>focada na sua liberdade</>,
       cards: {
         card1: {
-          title: <>Direito Trabalhista</>,
+          title: <>Defesa em Investigações Criminais</>,
           subtitle: (
             <>
-              Atuação em demandas relacionadas aos direitos do trabalhador,
-              incluindo verbas rescisórias, horas extras, reconhecimento de
-              vínculo empregatício, jornadas de trabalho e outras situações
-              decorrentes das relações de trabalho, com especial atenção às
-              demandas envolvendo motoristas de caminhão com vínculo CLT.
+              • Acompanhamento em inquérito policial <br />
+              • Defesa em investigações do Ministério Público <br />
+              • Defesa em procedimentos investigatórios criminais (PIC) <br />
+              • Acompanhamento em oitivas e interrogatórios <br />
+              • Pedido de arquivamento de investigação <br />
+              • Defesa em investigações por crimes econômicos <br />• Defesa em
+              operações policiais
             </>
           ),
           description: (
@@ -284,14 +271,14 @@ const content = {
         },
 
         card2: {
-          title: <>Direito Previdenciário</>,
+          title: <>Defesa em Processos Criminais</>,
           subtitle: (
             <>
-              Análise, orientação e atuação em demandas relacionadas a
-              benefícios previdenciários junto ao INSS, incluindo
-              aposentadorias, benefícios por incapacidade e revisões, sempre com
-              avaliação jurídica cuidadosa para assegurar a correta aplicação da
-              legislação previdenciária.
+              • Defesa técnica em ações penais <br />
+              • Atuação em audiências criminais <br />
+              • Elaboração de resposta à acusação <br />
+              • Apresentação de defesa preliminar <br />• Produção de provas e
+              perícias
             </>
           ),
           description: (
@@ -302,12 +289,245 @@ const content = {
               A_Definir
             </div>
           ),
+          icon: <User />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card3: {
+          title: <>Habeas Corpus e Medidas de Urgência</>,
+          subtitle: (
+            <>
+              • Habeas corpus preventivo <br />
+              • Habeas corpus liberatório <br />
+              • Pedido de revogação de prisão preventiva <br />
+              • Pedido de relaxamento de prisão <br />
+              • Pedido de liberdade provisória <br />
+              • Pedido de substituição de prisão por medidas cautelares <br />•
+              Defesa em prisão em flagrante
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Scale />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card4: {
+          title: <>Recursos Criminais</>,
+          subtitle: (
+            <>
+              • Recurso em sentido estrito <br />
+              • Apelação criminal <br />
+              • Embargos de declaração <br />
+              • Embargos infringentes <br />
+              • Revisão criminal <br />
+              • Agravo em execução <br />• Recursos para STJ e STF
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              A_Definir
+              <br />
+            </div>
+          ),
           icon: <Gavel />,
           buttonLabelModal: "Fale Conosco",
           buttonLabel: "Saiba Mais",
         },
+
+        card5: {
+          title: <>Execução Penal</>,
+          subtitle: (
+            <>
+              • Acompanhamento da execução da pena <br />
+              • Pedido de progressão de regime <br />
+              • Pedido de livramento condicional <br />
+              • Pedido de remição de pena <br />
+              • Pedido de indulto e comutação <br />
+              • Defesa em falta grave <br />• Pedido de prisão domiciliar
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Users />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card6: {
+          title: <>Direito Penal Econômico</>,
+          subtitle: (
+            <>
+              • Crimes contra o sistema financeiro <br />
+              • Crimes de lavagem de dinheiro <br />
+              • Crimes tributários <br />
+              • Crimes empresariais <br />• Crimes contra a ordem econômica
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <MessageSquare />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card7: {
+          title: <>Crimes Contra o Patrimônio</>,
+          subtitle: (
+            <>
+              • Furto <br />
+              • Roubo <br />
+              • Estelionato <br />
+              • Apropriação indébita <br />
+              • Receptação <br />• Extorsão
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Shield />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card8: {
+          title: <>Crimes Contra a Honra</>,
+          subtitle: (
+            <>
+              • Calúnia <br />
+              • Difamação <br />
+              • Injúria <br />• Crimes contra a honra na internet
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Briefcase />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card9: {
+          title: <>Crimes Relacionados à Lei de Drogas</>,
+          subtitle: (
+            <>
+              • Defesa em tráfico de drogas <br />
+              • Defesa em tráfico privilegiado <br />
+              • Defesa em associação para o tráfico <br />• Defesa em porte de
+              drogas para consumo
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Scale />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card10: {
+          title: <>Crimes Contra a Pessoa</>,
+          subtitle: (
+            <>
+              • Lesão corporal <br />• Ameaça
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <User />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card11: {
+          title: <>Crimes Digitais</>,
+          subtitle: (
+            <>
+              • Estelionato eletrônico <br />
+              • Invasão de dispositivo <br />
+              • Fraudes digitais <br />• Crimes em redes sociais
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <MessageSquare />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
+
+        card12: {
+          title: <>Atuação Estratégica Preventiva</>,
+          subtitle: (
+            <>
+              • Consultoria penal preventiva <br />
+              • Análise de risco criminal <br />
+              • Defesa em investigações empresariais <br />• Orientação para
+              empresários e gestores
+            </>
+          ),
+          description: (
+            <div>
+              A_Definir
+              <br />
+              <br />
+              A_Definir
+            </div>
+          ),
+          icon: <Shield />,
+          buttonLabelModal: "Fale Conosco",
+          buttonLabel: "Saiba Mais",
+        },
       },
-      ctaButtonText: <>Falar agora com o escritório</>,
+      ctaButtonText: <>Falar agora conosco</>,
     },
     cardsSection: {
       miniTag: <>A_Definir</>,
@@ -352,43 +572,47 @@ const content = {
       minitag: <>A_Definir</>,
       title: <>A_Definir</>,
       subtitle: <>A_Definir</>,
-      embedsrc:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.784298990059!2d-47.4530738!3d-23.504277599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58a9edbe4341b%3A0x405181876eb931ff!2sRua%20Leopoldo%20Machado%2C%20310%20-%20Centro%2C%20Sorocaba%20-%20SP%2C%2018035-075!5e0!3m2!1spt-BR!2sbr!4v1773862239700!5m2!1spt-BR!2sbr",
+      embedsrc: <>A_Definir</>,
     },
     about: {
       imagem: {
         img: aboutImg,
         alt: "Imagem ilustrativa da Seção Sobre",
       },
-      miniTag: <>QUEM É O PASCOAL & DYANDRA ADVOCACIA</>,
-      FirstPart: <span> </span>,
-      Destaque: <span className="italic font-light"> Compromisso</span>,
-      SecondPart: <span>com a Justiça e com o Trabalhador</span>,
-      subtitle: (
-        <>Experiência e estratégia para garantir seus direitos com segurança.</>
-      ),
+      miniTag: <>QUEM É A DRA. TACIANE MARTINS</>,
+      FirstPart: <span> Nossa</span>,
+      Destaque: <span className="italic font-light"> Trajetória</span>,
+      SecondPart: <span></span>,
+      subtitle: <></>,
       paragraph: (
         <div>
-          O Pascoal & Dyandra Advocacia é um escritório com sede em Sorocaba –
-          São Paulo, que oferece atendimento presencial na região e orientação
-          jurídica online para clientes em todo o Brasil.
-          <br />
-          <br />
-          Nossa atuação é pautada pela ética, responsabilidade técnica e
-          compromisso com a correta aplicação do Direito, sempre buscando a
-          defesa eficiente dos interesses dos trabalhadores.
-          <br />
-          <br />
-          Com mais de 18 anos de experiência e atuação em mais de 2.000 ações
-          trabalhistas, o escritório dedica-se à análise cuidadosa de cada caso,
-          oferecendo orientação jurídica clara, responsável e individualizada.
+          O T. Martins Advocacia nasceu com um propósito claro: oferecer uma
+          defesa penal técnica, estratégica e profundamente comprometida com a
+          proteção dos direitos de cada cliente. Fundado pela advogada Taciane
+          Martins, o escritório construiu sua atuação com base na análise
+          minuciosa de cada caso e na definição de estratégias jurídicas
+          sólidas, pensadas para cenários complexos e de alto risco.
+          <br /> <br />
+          Com atendimento personalizado, o escritório atua desde a fase de
+          investigação até a condução completa de processos criminais,
+          acompanhando cada etapa com discrição, precisão e atenção absoluta aos
+          detalhes que podem influenciar diretamente no resultado.
+          <br /> <br />
+          Mais do que atuar em processos, o foco está em proteger a liberdade,
+          preservar a reputação e garantir segurança jurídica para quem não pode
+          correr riscos.
         </div>
       ),
       benefits: {
         cards: {
           card1: {
-            title: <>A_Definir</>,
-            description: <>A_Definir</>,
+            title: <>Defesa Estratégica</>,
+            description: (
+              <>
+                Análise minuciosa e táticas exclusivas para cada etapa do
+                processo.
+              </>
+            ),
             icon: (
               <>
                 {" "}
@@ -397,8 +621,10 @@ const content = {
             ),
           },
           card2: {
-            title: <>A_Definir</>,
-            description: <>A_Definir</>,
+            title: <>Transparência Real</>,
+            description: (
+              <>Informação clara e direta sobre todos os riscos e andamentos.</>
+            ),
             icon: (
               <>
                 {" "}
@@ -408,7 +634,7 @@ const content = {
           },
         },
       },
-      ctaButtonText: <>Fale com um advogado agora</>,
+      ctaButtonText: <>Falar agora com o Escritório</>,
       buttonModalLabelAbout: "Continuar lendo",
       modal: (
         <p className="font-secondFont">
@@ -427,106 +653,85 @@ const content = {
       paragraphModalCta: "Entre em contato",
       ctaButtonAriaLabel: "Botão para entrar em contato",
 
-      aboutSocial: {
-        img: {
-          img: aboutSocialImg,
-          alt: `Foto do Instagram do ${infos.name}`,
-          altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
-        },
-        miniTag: <>Redes sociais</>,
-        title: <>Conecte-se conosco</>,
-        subtitle: (
-          <>
-            Acompanhe nossas redes sociais para se manter informado sobre
-            conteúdos jurídicos, atualizações e temas relevantes das áreas de
-            atuação.
-          </>
-        ),
-        paragraph: <p></p>,
-        labelInstagram: "Siga-nos no Instagram",
-        labelFacebook: "Siga-nos no Facebook",
-        labelLinkedin: "Siga-nos no LinkedIn",
-        labelX: "Siga-nos no X",
-        labelTiktok: "Siga-nos no Tik Tok",
-        labelYoutube: "Siga-nos no Youtube",
-      },
+      // aboutSocial: {
+      //   img: {
+      //     img: aboutSocialImg,
+      //     alt: `Foto do Instagram do ${infos.name}`,
+      //     altDefault: "Imagem ilustrativa da Seção de Redes Sociais",
+      //   },
+      //   miniTag: <>A_Definir</>,
+      //   title: <>A_Definir</>,
+      //   subtitle: <>A_Definir</>,
+      //   paragraph: <p></p>,
+      //   labelInstagram: "Siga-nos no Instagram",
+      //   labelFacebook: "Siga-nos no Facebook",
+      //   labelLinkedin: "Siga-nos no LinkedIn",
+      //   labelX: "Siga-nos no X",
+      //   labelTiktok: "Siga-nos no Tik Tok",
+      //   labelYoutube: "Siga-nos no Youtube",
+      // },
     },
     ctaSection: {
       miniTag: <>FALE CONOSCO</>,
-      title: <h1>Você pode estar perdendo dinheiro</h1>,
+      title: <h1>Sua liberdade e reputação não podem esperar.</h1>,
       subtitle: (
         <div>
           <p className="mb-6 font-secondFont">
-            Fale com um especialista e entenda o que você pode receber.
+            Acusações criminais exigem defesa técnica imediata. Entre em contato
+            para uma análise estratégica do seu caso e assuma o controle da sua
+            defesa agora.
           </p>
         </div>
       ),
       container: {
         topics: {
-          topic1: <>Análise completa do seu caso</>,
-          topic2: <>Atendimento direto com advogado especialista</>,
-          topic3: <>Identificação de valores e direitos a receber</>,
-          topic4: <>Orientação clara sobre o que fazer</>,
-          topic5: <>Agilidade para resolver sua situação</>,
+          topic1: <>A_Definir</>,
+          topic2: <>A_Definir</>,
+          topic3: <>A_Definir</>,
+          topic4: <>A_Definir</>,
         },
       },
-      ctaButtonText: <>Falar com especialista agora</>,
+      ctaButtonText: <>Entrar em contato já</>,
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
     steps: {
-      miniTag: <>PASSO A PASSO</>,
-      FirstPart: <span> Como</span>,
-      Destaque: <span className="italic font-light"> funciona </span>,
-      SecondPart: <span> nosso atendimento?</span>,
+      miniTag: <>Como funciona</>,
+      FirstPart: <span> Seu caso</span>,
+      Destaque: <span className="italic font-light"> sob controle </span>,
+      SecondPart: <span></span>,
 
-      subtitle: <>Veja como cuidamos do seu caso do início ao fim.</>,
+      subtitle: (
+        <>
+          Um processo claro, seguro e estratégico para proteger seus direitos
+          desde o primeiro contato.
+        </>
+      ),
       img: imgSteps,
       alt: "Imagem ilustrativa da Seção Passo a Passo",
       cards: {
         card1: {
           stepNumber: 1,
-          cardTitle: <>Fale com a gente</>,
-          cardDescription: (
-            <>
-              {" "}
-              Você entra em contato com nossa equipe e nos apresenta sua
-              situação.
-            </>
-          ),
+          cardTitle: <>Atendimento imediato</>,
+          cardDescription: <>Resposta rápida pra te orientar com segurança.</>,
         },
         card2: {
           stepNumber: 2,
-          cardTitle: <>Análise do caso</>,
-          cardDescription: (
-            <>
-              Realizamos uma análise inicial para compreender os detalhes do seu
-              caso.
-            </>
-          ),
+          cardTitle: <>Análise estratégica</>,
+          cardDescription: <>Seu caso estudado pra reduzir riscos legais.</>,
         },
         card3: {
           stepNumber: 3,
-          cardTitle: <>Orientação clara</>,
-          cardDescription: (
-            <>
-              Apresentamos orientação jurídica adequada, com base na análise das
-              informações e documentos disponíveis.
-            </>
-          ),
+          cardTitle: <>Defesa personalizada</>,
+          cardDescription: <>Estratégia sob medida pra sua situação.</>,
         },
         card4: {
           stepNumber: 4,
-          cardTitle: <>Acompanhamento</>,
-          cardDescription: (
-            <>
-              Caso necessário, acompanhamos todas as etapas com
-              responsabilidade, sigilo e ética profissional.
-            </>
-          ),
+          cardTitle: <>Tranquilidade total</>,
+          cardDescription: <>Você protegido em cada etapa do processo.</>,
         },
       },
-      ctaButtonText: <>Falar com os Advogados já</>,
+      ctaButtonText: <>Falar agora com a Advogada</>,
     },
     blog: {
       miniTag: <>A_Definir</>,
@@ -585,24 +790,28 @@ const content = {
       },
     },
     speed: {
-      miniTag: <>A_Definir</>,
-      title: <>A_Definir</>,
+      miniTag: <>Diferenciais do Atendimento</>,
+      title: <>Atendimento Criminal Estratégico e Imediato</>,
       subtitle: <>A_Definir</>,
       cards: {
         card1: {
           icon: Clock,
-          text: <>A_Definir</>,
+          text: <>Discrição absoluta</>,
         },
         card2: {
           icon: Users,
-          text: <>A_Definir</>,
+          text: <>Defesa técnica e imediata</>,
         },
         card3: {
           icon: ShieldCheck,
-          text: <>A_Definir</>,
+          text: <>Acompanhamento em delegacia</>,
+        },
+        card4: {
+          icon: TriangleAlert,
+          text: <>Atendimento emergencial 24h</>,
         },
       },
-      textFooter: <>A_Definir</>,
+      textFooter: <></>,
     },
     authority: {
       miniTag: <>A_Definir</>,
@@ -628,118 +837,58 @@ const content = {
       },
       ctaButtonText: <>A_Definir</>,
     },
-    team: {
-      miniTag: <>SÓCIOS</>,
-      title: <>Quem são os sócios?</>,
-      subtitle: (
-        <>
-          Especialistas que lutam pelos seus direitos com experiência e
-          estratégia.
-        </>
-      ),
-      cards: {
-        card1: {
-          img: img1,
-          name: <>Alexandre Pascoal Marques - OAB/SP 270.924</>,
-          role: <>Sócio e Diretor Executivo</>,
-          description: (
-            <>
-              Responsável pelas áreas administrativa e comercial do escritório,
-              bem como pela gestão estratégica e desenvolvimento de negócios.
-              <br />
-              <br />
-              Alexandre atua na área trabalhista desde os estágios na faculdade
-              de Direito, tendo consolidado sua carreira na defesa dos direitos
-              do trabalhador.
-            </>
-          ),
-        },
-        card2: {
-          img: img2,
-          name: <>Flávia Dyandra - OAB/SP 352.455</>,
-          role: <>Sócia e Diretora Operacional</>,
-          description: (
-            <>
-              Responsável pela gestão administrativa, financeira e operacional
-              do escritório, além da supervisão dos processos internos e
-              organização estratégica.
-              <br />
-              <br />
-              Flávia possui experiência com o setor de transportes desde antes
-              de ingressar na faculdade de Direito, contribuindo para a
-              compreensão das particularidades enfrentadas por trabalhadores do
-              transporte rodoviário.
-            </>
-          ),
-        },
-      },
-      ctaButtonText: <>A_Definir</>,
-    },
     faq: {
       miniTag: <>TIRE SUAS DÚVIDAS</>,
       title: <>Perguntas Frequentes</>,
       subtitle: <>Confira as perguntas abaixo para esclarecer suas dúvidas.</>,
       questions: {
         question1: {
-          question: <>O escritório atende apenas na cidade de Sorocaba?</>,
+          question: <>Como funciona a contratação e o atendimento?</>,
           answer: (
             <>
-              Não. O Pascoal & Dyandra Advocacia realiza atendimento presencial
-              em Sorocaba - SP e também oferece atendimento online para clientes
-              em todo o Brasil.
+              O primeiro passo é o contato direto via WhatsApp para agendamento
+              de uma consulta (presencial ou online). Analisaremos os fatos
+              imediatamente para definir a viabilidade da defesa e o
+              planejamento estratégico necessário.
             </>
           ),
         },
         question2: {
-          question: <>Como funciona o atendimento online?</>,
+          question: <>Quanto tempo dura um processo criminal?</>,
           answer: (
             <>
-              Após o primeiro contato, o atendimento pode ser realizado por
-              videoconferência ou ligação telefônica. Nesse momento, o caso é
-              analisado e o cliente recebe orientação jurídica com base nas
-              informações apresentadas.
+              O tempo é variável e depende do rito processual (comum, júri,
+              especial) e da agilidade do Judiciário. Durante a análise do caso,
+              apresentamos um panorama das etapas prováveis e trabalhamos para
+              que não haja excesso de prazo na tramitação.
             </>
           ),
         },
         question3: {
-          question: (
-            <>
-              Motorista de caminhão com vínculo CLT tem direito a horas extras?
-            </>
-          ),
+          question: <>Quais documentos são essenciais para a defesa?</>,
           answer: (
             <>
-              Sim. Dependendo da jornada e das condições de trabalho, o
-              motorista pode ter direito ao recebimento de horas extras. A
-              análise do caso concreto é fundamental para verificar os direitos
-              aplicáveis.
+              É fundamental apresentar o Boletim de Ocorrência, cópia do
+              Inquérito Policial (se houver), documentos pessoais e qualquer
+              prova que ajude a desconstruir a acusação (fotos, mensagens, lista
+              de testemunhas). Caso você não tenha o processo, nós realizamos a
+              busca nos sistemas judiciais.
             </>
           ),
         },
         question4: {
           question: (
             <>
-              Ainda posso buscar meus direitos trabalhistas após sair da
-              empresa?
+              O escritório atua com consultoria preventiva (Criminal
+              Compliance)?
             </>
           ),
           answer: (
             <>
-              Sim. Em regra, o trabalhador tem até 2 anos após o término do
-              contrato de trabalho para buscar seus direitos na Justiça, sendo
-              possível discutir valores referentes aos últimos 5 anos.
-            </>
-          ),
-        },
-        question5: {
-          question: (
-            <>O escritório atua em aposentadoria e benefícios do INSS?</>
-          ),
-          answer: (
-            <>
-              Sim. Atuamos em demandas relacionadas ao Direito Previdenciário,
-              incluindo análise de aposentadorias, benefícios por incapacidade e
-              revisões de benefícios do INSS.
+              Sim. Atuamos de forma consultiva para empresas e indivíduos,
+              visando mitigar riscos de investigações, garantir a conformidade
+              com a lei e evitar que condutas do dia a dia sejam interpretadas
+              como ilícitos penais.
             </>
           ),
         },
@@ -1014,7 +1163,7 @@ const content = {
     //   },
     // },
     footer: {
-      copyrightLine: `${currentYear} ${infos.name} – CNPJ: 55.540.563/0001-64. Todos os direitos reservados.`,
+      copyrightLine: ` ${currentYear} - ${infos.name} - Todos os direitos reservados`,
       footerDivulgacaoText: "Gostaria de ter um site como este? Clique aqui",
       midSectionName: "Até mais",
       footerText:
@@ -1308,7 +1457,7 @@ const content = {
     // },
     links: {
       instagram: `https://www.instagram.com/${infos.instagramProfile}/`,
-      instagramSecundario: `https://www.instagram.com/${infos.instagramProfileSecundario}/`,
+      instagramSecondario: `https://www.instagram.com/${infos.instagramProfileSecundario}/`,
       ctaWhatsapp: `https://wa.me/+55${infos.phone.ddd}${infos.phone.firstPart}${infos.phone.secondPart}?text=${infos.whatsappDefaultMessage}`,
       phoneSecundario: `https://wa.me/+55${infos.phoneSecundario.ddd}${infos.phoneSecundario.firstPart}${infos.phoneSecundario.secondPart}?text=${infos.whatsappDefaultMessage}`,
       phoneTerciario: `https://wa.me/+55${infos.phoneTerciario.ddd}${infos.phoneTerciario.firstPart}${infos.phoneTerciario.secondPart}?text=${infos.whatsappDefaultMessage}`,
