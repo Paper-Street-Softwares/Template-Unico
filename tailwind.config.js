@@ -22,7 +22,7 @@ export default {
     extend: {
       colors: {
         // Principais
-        primaryDark: "#1A1A1A",
+        primaryDark: "#09095c",
         primaryLight: "#D1C094",
         secondary: "#E9E7E0",
         terciary: "#F7F6F1",
@@ -39,71 +39,27 @@ export default {
         wppLight: "#2E7027",
         wppDark: "#2E7027",
 
-        // Minitags
-        bgIcons: "#E0E2E9",
-        bgFaixaHero: "#F1F3F7",
-        textPadrao: "#1C312B",
-        fontLighterFooter: "#E2E8E6",
-        dark: "#0C0C0D",
-        darkOpacity: "#111112",
-
         // classes template Novo
         mutedForeground: "#5B706A",
         accent: "#C44536",
         foreground: "#1B302B",
         border: "#E2E8E6",
 
-        // Fundos de Seção
-        bgSectionLight: "#FFFFFF",
-        bgSectionDark: "#132745",
-        bgSectionOpacityLight: "#F7F7F7",
-        bgFixedLight: "#E8E8E8",
-        bgSectionOpacityDark: "#111111",
-        bgFixedDark: "#181818",
-        quinary: "#F6F6F6 ",
-
-        // Degradê da Lpv
-        lpvHeroGradientTop: "#000",
-        lpvHeroGradientBot: "#000",
-
-        // Botões e Links
-        links: "#0189BB",
-        iconButtons: "#000",
-        labelButtons: "#000",
-        minititleLightLabel: "#000", //label das minitag de seções claras
-        minititleDarkLabel: "#000", //label minitag de seções escuras
-
         // Minitag de Seções
         minitagLightMode: "#008000",
         minitagDarkMode: "#f83607",
 
         // Titulos de Seções
-        tituloLightMode: "",
-        tituloDarkMode: "",
+        tituloLightMode: "#8a302e",
+        tituloDarkMode: "#b7cc26",
 
         // Subtitulos de Seções
-        subtituloLightMode: "",
-        subtituloDarkMode: "",
+        subtituloLightMode: "#4d3e6b",
+        subtituloDarkMode: "#8daec3",
 
         // Textos de Seções
-        textoLightMode: "",
-        textoDarkMode: "",
-
-        // Sombras
-        shadowHero: "#000000",
-        shadowFeatures: "#000000",
-        shadowAbouts: "#000000",
-        shadowSteps: "#000000",
-        shadowMaps: "#000000",
-        shadowBlogs: "#000000",
-
-        // Outros
-        lighter: "#FFFFFF",
-        darker: "#000000",
-      },
-      boxShadow: {
-        "custom-opacity": "-20px 20px 0px", // 30% de opacidade
-        "custom-opacityButton": "-5px 5px 0px", // 30% de opacidade no Botão
+        textoLightMode: "#ee6aee",
+        textoDarkMode: "#2c8587",
       },
       fontFamily: {
         // mainFont: ["Playfair Display", "serif"],
