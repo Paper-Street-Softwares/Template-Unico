@@ -4,7 +4,7 @@ import { X, MapPin, Phone, Mail } from "lucide-react";
 import SectionArea from "../sectionElements/SectionArea";
 import SectionWrapper from "../sectionElements/SectionWrapper";
 import { Link } from "react-scroll";
-import FooterSocialIcons from "../sectionElements/footer/FooterSocialIcons";
+import FooterSocialIcons from "../sectionElements/FooterSocialIcons";
 import content from "../../content/content";
 import { ButtonsLps } from "../../context/UseContextArchive";
 

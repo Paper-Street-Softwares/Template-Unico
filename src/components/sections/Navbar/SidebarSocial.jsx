@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
-import content from "../../content/content";
+import content from "../../../content/content";
 
 export default function SidebarSocial({ colorMode, mode = "blog" }) {
   const [visible, setVisible] = useState(false);
@@ -39,14 +39,7 @@ export default function SidebarSocial({ colorMode, mode = "blog" }) {
     }
   }, [mode]);
 
-  const icons = [
-    <HomeIcon />,
-    <UserSearch />,
-    <ServerIcon />,
-    // <FileText />,
-    <HelpCircle />,
-    // <MapPin />,
-  ];
+  const icons = [<HomeIcon />, <UserSearch />, <ServerIcon />, <HelpCircle />];
 
   let colorButton, bgSidebar, textColor, border;
 

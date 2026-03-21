@@ -1,7 +1,13 @@
 import React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { ChevronDown } from "lucide-react";
-import { cn } from "../../lib/utils";
+import { clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+// função cn (mantemos só essa)
+export function cn(...inputs) {
+  return twMerge(clsx(inputs));
+}
 
 const Accordion = AccordionPrimitive.Root;
 
@@ -41,6 +47,12 @@ const AccordionTrigger = React.forwardRef(
         textBase = "text-corTitulosBranca";
         hoverText = "hover:text-primaryLight";
         activeText = "data-[state=open]:text-white";
+        break;
+
+      default:
+        textBase = "";
+        hoverText = "";
+        activeText = "";
     }
 
     return (
@@ -49,17 +61,11 @@ const AccordionTrigger = React.forwardRef(
           ref={ref}
           {...props}
           className={cn(
-            // base
             "group flex flex-1 items-center justify-between py-6 text-left font-mainFont text-lg font-medium transition-colors",
-
-            // cores dinâmicas
             textBase,
             hoverText,
             activeText,
-
-            // rotação do ícone
             "[&[data-state=open]>svg]:rotate-180",
-
             className,
           )}
         >

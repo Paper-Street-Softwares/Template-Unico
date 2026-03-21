@@ -35,7 +35,7 @@ export function NavbarRender() {
 }
 
 export function ButtonsLps() {
-  const [showGlobalButtonsLps, setShowGlobalButtonsLps] = useState(true); // ativa as os botões da lps
+  const [showGlobalButtonsLps, setShowGlobalButtonsLps] = useState(false); // ativa as os botões da lps
 
   return {
     showGlobalButtonsLps,
