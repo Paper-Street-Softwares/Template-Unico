@@ -13,7 +13,7 @@ import SectionWrapper from "../sectionElements/SectionWrapper";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
 
-function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
+function AboutNovoTemplate({ ButtonModal, colorMode, benefits, index }) {
   const [visible, setVisible] = useState(false);
   const [modalTitle, setModalTitle] = useState("");
 
@@ -103,6 +103,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                     secondPart={content.texts.about.SecondPart}
                     subtitle={content.texts.about.subtitle}
                     type="article"
+                    index={index}
                     colorMode={colorMode}
                   />
                   <MotionDivDownToUp>

@@ -21,7 +21,13 @@ import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 const features = Object.values(content.texts.features.cards);
 
-function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion, modal }) {
+function FeaturesNovaTemplate({
+  colorMode,
+  frasesDestaque,
+  accordion,
+  modal,
+  index,
+}) {
   // Definindo classes dinamicamente conforme o colorMode
   let backgroundMode,
     text,
@@ -190,6 +196,7 @@ function FeaturesNovaTemplate({ colorMode, frasesDestaque, accordion, modal }) {
                   subtitle={content.texts.features.subtitle}
                   type="article"
                   colorMode={colorMode}
+                  index={index}
                 />
 
                 {accordion ? (

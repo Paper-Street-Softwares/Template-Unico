@@ -11,6 +11,7 @@ function SectionHeaderNovo({
   type,
   usage,
   className,
+  index, // Valor padrão para evitar erros
 }) {
   let textDestaque,
     text,
@@ -21,6 +22,9 @@ function SectionHeaderNovo({
     imageBorder,
     miniTag;
 
+  // 1. Definimos a lógica de par/ímpar aqui fora para ser usada em qualquer case
+  const isEven = index % 2 === 0;
+
   switch (colorMode) {
     case "light":
       textDestaque = "text-primaryDark";
@@ -30,7 +34,7 @@ function SectionHeaderNovo({
       borderCard = "border-border";
       arrowColor = "text-mutedForeground group-hover:text-primaryDark";
       imageBorder = "border-white";
-      miniTag = "text-primaryDark";
+      miniTag = isEven ? "text-black" : "text-green-600";
       break;
 
     case "dark":
@@ -41,7 +45,7 @@ function SectionHeaderNovo({
       borderCard = "border-gray-700";
       arrowColor = "text-mutedForeground group-hover:text-primaryLight";
       imageBorder = "border-borderImage";
-      miniTag = "text-primaryLight";
+      miniTag = isEven ? "text-primaryLight" : "text-white";
       break;
 
     case "defaultDark":
@@ -52,7 +56,7 @@ function SectionHeaderNovo({
       borderCard = "border-border";
       arrowColor = "text-mutedForeground group-hover:text-primaryDark";
       imageBorder = "border-white";
-      miniTag = "text-primaryDark";
+      miniTag = isEven ? "text-minitagLightMode" : "text-minitagDarkMode";
       break;
 
     case "defaultLight":
@@ -63,9 +67,14 @@ function SectionHeaderNovo({
       borderCard = "border-gray-700";
       arrowColor = "text-mutedForeground group-hover:text-primaryLight";
       imageBorder = "border-borderImage";
-      miniTag = "text-white";
+      miniTag = isEven ? "text-white" : "text-primaryLight";
+      break;
+
+    default:
+      miniTag = "text-primaryDark";
   }
 
+  // Lógica de alinhamento
   if (type === "article") {
     usage = "text-start mb-8";
   } else {

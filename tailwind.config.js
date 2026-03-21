@@ -73,6 +73,22 @@ export default {
         minititleLightLabel: "#000", //label das minitag de seções claras
         minititleDarkLabel: "#000", //label minitag de seções escuras
 
+        // Minitag de Seções
+        minitagLightMode: "#008000",
+        minitagDarkMode: "#f83607",
+
+        // Titulos de Seções
+        tituloLightMode: "",
+        tituloDarkMode: "",
+
+        // Subtitulos de Seções
+        subtituloLightMode: "",
+        subtituloDarkMode: "",
+
+        // Textos de Seções
+        textoLightMode: "",
+        textoDarkMode: "",
+
         // Sombras
         shadowHero: "#000000",
         shadowFeatures: "#000000",
