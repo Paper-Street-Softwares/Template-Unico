@@ -75,7 +75,7 @@ function SocialMediaTemplate({ colorMode }) {
         <section>
           <div className="container mx-auto">
             {/* Cabeçalho */}
-            {/* comentario */}
+
 
             <SectionHeaderNovo
               miniTitle={content.texts.about.aboutSocial.miniTag}
