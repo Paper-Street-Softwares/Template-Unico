@@ -3,7 +3,7 @@ import { Link as RouterLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Button from "../interactives/Button";
 import { useTranslation } from "react-i18next";
-import content from "../../content/content";
+import content from "../../../content/content";
 
 export default function ListGroupSocial({
   colorMode = "default",

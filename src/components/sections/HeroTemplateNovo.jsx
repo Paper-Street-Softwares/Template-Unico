@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import { Button } from "../interactives/ButtonNovoTemplate";
 import { motion } from "framer-motion";
 import {
   MapPin,
@@ -155,7 +154,7 @@ function HeroTemplateNovo({
                   <img
                     src={content.texts.navbar.logo.imgDesktop}
                     alt={content.texts.navbar.logo.alt}
-                    cl
+                    className="max-w-[30%]"
                   />
                 </div>
               )}
@@ -255,6 +254,7 @@ function HeroTemplateNovo({
                 <img
                   src={content.texts.navbar.logo.img}
                   alt={content.texts.navbar.logo.alt}
+                  className="max-w-[30%]"
                 />
               </div>
             )}

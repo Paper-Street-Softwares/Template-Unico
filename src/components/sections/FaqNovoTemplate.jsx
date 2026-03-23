@@ -14,7 +14,7 @@ import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import { ButtonsLps } from "../../context/UseContextArchive";
 import { defaultButtonThemes } from "../../context/UseContextArchive";
 
-function FaqNovoTemplate({ colorMode }) {
+function FaqNovoTemplate({ colorMode, index }) {
   const faqs = Object.values(content.texts.faq.questions);
   const { showGlobalButtonsLps } = ButtonsLps();
 
@@ -60,6 +60,7 @@ function FaqNovoTemplate({ colorMode }) {
               title={content.texts.faq.title}
               subtitle={content.texts.faq.subtitle}
               colorMode={colorMode}
+              index={index}
             />
             {/* Accordion */}
             <MotionDivDownToUp>

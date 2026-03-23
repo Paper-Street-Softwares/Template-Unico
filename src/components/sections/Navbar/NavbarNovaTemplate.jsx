@@ -1,15 +1,14 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { MessageCircle, Menu, X } from "lucide-react";
-import { Button } from "../interactives/ButtonNovoTemplate";
 import { motion } from "framer-motion";
-import SectionAria from "../../components/sectionElements/SectionArea";
-import SectionWrapper from "../../components/sectionElements/SectionWrapper";
-import content from "../../content/content";
+import SectionAria from "../../sectionElements/SectionArea";
+import SectionWrapper from "../../sectionElements/SectionWrapper";
+import content from "../../../content/content";
 import { Link } from "react-scroll";
-import ButtonReflexo from "../interactives/ButtonReflexo";
+import ButtonReflexo from "../../interactives/ButtonReflexo";
 import { useContext } from "react";
-import SidebarSocial from "../sectionElements/SidebarSocial";
+import SidebarSocial from "./SidebarSocial";
 
 function NavbarNovaTemplate({
   colorMode,

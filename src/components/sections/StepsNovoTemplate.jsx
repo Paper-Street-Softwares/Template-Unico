@@ -11,7 +11,7 @@ import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import { ButtonsLps } from "../../context/UseContextArchive";
 import { defaultButtonThemes } from "../../context/UseContextArchive";
 
-function StepsNovoTemplate({ colorMode }) {
+function StepsNovoTemplate({ colorMode, index }) {
   const steps = Object.values(content.texts.steps.cards);
   const { showGlobalButtonsLps } = ButtonsLps();
 
@@ -152,6 +152,7 @@ function StepsNovoTemplate({ colorMode }) {
                 secondPart={content.texts.steps.SecondPart}
                 subtitle={content.texts.steps.subtitle}
                 colorMode={colorMode}
+                index={index}
                 type="article"
               />
 

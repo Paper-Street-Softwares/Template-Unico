@@ -11,9 +11,10 @@ function SectionHeaderNovo({
   type,
   usage,
   className,
+  index, // Valor padrão para evitar erros
 }) {
   let textDestaque,
-    text,
+    textTitulos,
     textOpacity,
     cardBg,
     borderCard,
@@ -21,51 +22,64 @@ function SectionHeaderNovo({
     imageBorder,
     miniTag;
 
+  // 1. Definimos a lógica de par/ímpar aqui fora para ser usada em qualquer case
+  const isEven = index % 2 === 0;
+
   switch (colorMode) {
     case "light":
       textDestaque = "text-primaryDark";
-      text = "text-corTitulosPreto";
-      textOpacity = "text-corOutrosTextosPreto";
+      textTitulos = isEven ? "text-tituloLightMode" : "text-tituloDarkMode";
+      textOpacity = isEven
+        ? "text-subtituloLightMode"
+        : "text-subtituloDarkMode";
       cardBg = "bg-white";
       borderCard = "border-border";
       arrowColor = "text-mutedForeground group-hover:text-primaryDark";
       imageBorder = "border-white";
-      miniTag = "text-primaryDark";
+      miniTag = isEven ? "text-black" : "text-green-600";
       break;
 
     case "dark":
       textDestaque = "text-primaryLight";
-      text = "text-corTitulosBranca";
-      textOpacity = "text-corOutrosTextosBranca";
+      textTitulos = isEven ? "text-tituloLightMode" : "text-tituloDarkMode";
+      textOpacity = isEven
+        ? "text-subtituloLightMode"
+        : "text-subtituloDarkMode";
       cardBg = "bg-gray-900";
       borderCard = "border-gray-700";
       arrowColor = "text-mutedForeground group-hover:text-primaryLight";
       imageBorder = "border-borderImage";
-      miniTag = "text-primaryLight";
+      miniTag = isEven ? "text-minitagLightMode" : "text-minitagDarkMode";
       break;
 
     case "defaultDark":
       textDestaque = "text-primaryDark";
-      text = "text-corTitulosPreto";
-      textOpacity = "text-corOutrosTextosPreto";
+      textTitulos = isEven ? "text-tituloLightMode" : "text-tituloDarkMode";
+      textOpacity = isEven
+        ? "text-subtituloLightMode"
+        : "text-subtituloDarkMode";
       cardBg = "bg-white";
       borderCard = "border-border";
       arrowColor = "text-mutedForeground group-hover:text-primaryDark";
       imageBorder = "border-white";
-      miniTag = "text-primaryDark";
+      miniTag = isEven ? "text-minitagLightMode" : "text-minitagDarkMode";
       break;
 
     case "defaultLight":
       textDestaque = "text-white";
-      text = "text-corTitulosBranca";
-      textOpacity = "text-corOutrosTextosBranca";
+      textTitulos = isEven ? "text-tituloLightMode" : "text-tituloDarkMode";
+      textOpacity = isEven
+        ? "text-subtituloLightMode"
+        : "text-subtituloDarkMode";
       cardBg = "bg-gray-900";
       borderCard = "border-gray-700";
       arrowColor = "text-mutedForeground group-hover:text-primaryLight";
       imageBorder = "border-borderImage";
-      miniTag = "text-white";
+      miniTag = isEven ? "text-minitagLightMode" : "text-minitagDarkMode";
+      break;
   }
 
+  // Lógica de alinhamento
   if (type === "article") {
     usage = "text-start mb-8";
   } else {
@@ -85,7 +99,7 @@ function SectionHeaderNovo({
 
         {title && (
           <h2
-            className={`text-3xl md:text-4xl font-mainFont font-medium mb-4 ${text}`}
+            className={`text-3xl md:text-4xl font-mainFont font-medium mb-4 ${textTitulos}`}
           >
             {title} <span className={`italic ${textDestaque}`}>{destaque}</span>{" "}
             {secondPart}

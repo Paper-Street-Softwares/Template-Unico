@@ -1,8 +1,8 @@
 import React from "react";
-import MotionDivDownToUp from "../../animation/MotionDivDownToUp";
-import IconButton from "../../interactives/IconButton";
-import { infos } from "../../../content/content";
-import content from "../../../content/content";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import IconButton from "../interactives/IconButton";
+import { infos } from "../../content/content";
+import content from "../../content/content";
 
 const icons = {
   facebook: {

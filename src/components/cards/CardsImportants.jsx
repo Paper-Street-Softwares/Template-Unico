@@ -1,5 +1,4 @@
 import React from "react";
-import imgIcon from "../../assets/imgs/icons/exclamation.webp";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 
 function CardsImportants({

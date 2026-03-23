@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import WhatsAppIcon from "../../assets/importAssets/WhatsAppIcon.webp";
 import emailjs from "emailjs-com";
 import {
   User,
@@ -521,11 +520,7 @@ Recomendamos retorno o quanto antes.
           label={isSubmitting ? "Enviando..." : "Enviar Mensagem"}
         >
           <div className="flex items-center justify-center w-full">
-            <img
-              src={WhatsAppIcon}
-              className="w-6 h-6 mr-2 phone2:w-8 phone2:h-8"
-              alt="Email Icon"
-            />
+            {content.texts.svgs.wpp}
             <p></p>
           </div>
         </ButtonReflexo>

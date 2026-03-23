@@ -9,12 +9,11 @@ import {
   ButtonsLps,
   defaultButtonThemes,
 } from "../../context/UseContextArchive";
-import { Button } from "../interactives/ButtonNovoTemplate";
 import SectionWrapper from "../sectionElements/SectionWrapper";
 import MotionDivDownToUp from "../animation/MotionDivDownToUp";
 import SectionHeaderNovo from "../sectionElements/SectionHeaderNovo";
 
-function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
+function AboutNovoTemplate({ ButtonModal, colorMode, benefits, index }) {
   const [visible, setVisible] = useState(false);
   const [modalTitle, setModalTitle] = useState("");
 
@@ -104,6 +103,7 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
                     secondPart={content.texts.about.SecondPart}
                     subtitle={content.texts.about.subtitle}
                     type="article"
+                    index={index}
                     colorMode={colorMode}
                   />
                   <MotionDivDownToUp>
@@ -116,13 +116,13 @@ function AboutNovoTemplate({ ButtonModal, colorMode, benefits }) {
 
                   <MotionDivDownToUp>
                     {ButtonModal && (
-                      <Button
+                      <ButtonReflexo
                         onClick={onClick}
                         className={`bg-transparent mt-4 border-none shadow-primary/20 font-secondFont py-0 uppercase font-bold transition-all px-0 scale-100 hover:scale-95 duration-500 outline-none flex items-center gap-2 ${textDestaque}`}
                       >
                         {content.texts.about.buttonModalLabelAbout}
                         <ArrowRight width={24} height={24} />
-                      </Button>
+                      </ButtonReflexo>
                     )}
                   </MotionDivDownToUp>
                 </div>
